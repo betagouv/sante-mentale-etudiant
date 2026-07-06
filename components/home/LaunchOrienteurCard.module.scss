@@ -1,0 +1,56 @@
+.cardWrapper {
+  position: relative;
+}
+
+.card {
+  margin-top: 1.5rem;
+  max-width: 454px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  text-align: center;
+
+  .hint {
+    font-size: 0.875rem;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .desc {
+    font-size: 1.125rem;
+  }
+}
+
+.badge {
+  background-color: #fddfdb;
+  color: #6e445a;
+}
+
+.fullWidthBtn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* DSFR "md" breakpoint = 768px */
+@media (min-width: 768px) {
+  .cardWrapper {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    pointer-events: none; /* let clicks pass through empty space */
+  }
+
+  .card {
+    margin-top: 0;
+    pointer-events: auto; /* re-enable clicks on the card itself */
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    margin-right: 7.5rem;
+  }
+}

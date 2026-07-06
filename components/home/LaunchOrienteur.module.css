@@ -1,0 +1,22 @@
+.hero {
+  position: relative;
+}
+
+.picture {
+  display: block;
+  width: 100%;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: 256px; /* mobile */
+  object-fit: cover;
+}
+
+/* DSFR "md" breakpoint = 768px */
+@media (min-width: 768px) {
+  .heroImage {
+    height: 580px;
+  }
+}
