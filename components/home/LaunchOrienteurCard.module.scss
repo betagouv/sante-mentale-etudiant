@@ -1,10 +1,10 @@
 .cardWrapper {
-  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .card {
-  margin-top: 1.5rem;
-  max-width: 454px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,18 +39,14 @@
 /* DSFR "md" breakpoint = 768px */
 @media (min-width: 768px) {
   .cardWrapper {
-    position: absolute;
-    inset: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     pointer-events: none; /* let clicks pass through empty space */
   }
 
   .card {
-    margin-top: 0;
+    max-width: 454px;
     pointer-events: auto; /* re-enable clicks on the card itself */
     padding: 2.5rem 2.5rem 1.5rem 2.5rem;
-    margin-right: 7.5rem;
   }
 }
