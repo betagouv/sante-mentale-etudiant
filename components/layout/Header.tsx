@@ -1,39 +1,27 @@
 "use client";
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
+import type { MainNavigationProps } from "@codegouvfr/react-dsfr/MainNavigation/MainNavigation";
 import { usePathname } from "next/navigation";
 
-const navItems = [
-  {
-    title: "Je ressens...",
-    paths: [
-      {
-        path: "/je-ressens/anxiete",
-        title: "Je ressens du stress ou de l'anxieté",
-      },
-      {
-        path: "/je-ressens/fatigue",
-        title: "Je ressens de l'épuisement ou un manque d'énergie ",
-      },
-    ],
-  },
-  {
-    title: "Trouver du soutien",
-    path: "/trouver-du-soutien",
-  },
-  {
-    title: "S'informer",
-    path: "/articles",
-  },
-  {
-    title: "Aider un proche",
-    path: "/aider-un-proche",
-  },
-];
 
 export function Header() {
   const pathname = usePathname();
-  console.log("pathname", pathname);
+
+  // use dsfr nav items structure directly
+  const navigation: MainNavigationProps.Item[] = [
+    {
+      text: "Je ressens...",
+      isActive: pathname.startsWith("/je-ressens"),
+      menuLinks: [
+        { text: "Je ressens du stress ou de l'anxiété", linkProps: { href: "/je-ressens/anxiete" } },
+        { text: "Je ressens de l'épuisement ou un manque d'énergie", linkProps: { href: "/je-ressens/fatigue" } },
+      ],
+    },
+    { text: "Trouver du soutien", linkProps: { href: "/trouver-du-soutien" }, isActive: pathname === "/trouver-du-soutien" },
+    { text: "S'informer", linkProps: { href: "/articles" }, isActive: pathname === "/articles" },
+    { text: "Aider un proche", linkProps: { href: "/aider-un-proche" }, isActive: pathname === "/aider-un-proche" },
+  ];
 
   return (
     <DsfrHeader
@@ -48,20 +36,7 @@ export function Header() {
         href: "/",
         title: "Accueil",
       }}
-      navigation={navItems.map((item) => ({
-        text: item.title,
-        ...(item.path
-          ? { linkProps: { target: "self", href: item.path } }
-          : {
-              menuLinks: item.paths?.map((it) => ({
-                linkProps: {
-                  href: it.path,
-                },
-                text: it.title,
-              })),
-            }),
-        isActive: pathname === item.path,
-      }))}
+      navigation={navigation}
       serviceTagline="Prendre soin de sa santé mentale quand on est étudiant"
       serviceTitle={
         <>
