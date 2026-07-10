@@ -23,7 +23,7 @@ export default function OrienteurUrgent({ backButton }: Props) {
             <div>
                 <Tile
                     imageSvg
-                    imageUrl="/images/icons/warning.svg"
+                    imageUrl="/images/pictograms/system/warning.svg"
                     orientation="horizontal"
                     start={<Badge noIcon severity="success">En cas de pensées suicidaires</Badge>}
                     title="Appelle le 3114"
@@ -32,7 +32,7 @@ export default function OrienteurUrgent({ backButton }: Props) {
                 />
                 <Tile
                     imageSvg
-                    imageUrl="/images/icons/warning.svg"
+                    imageUrl="/images/pictograms/system/warning.svg"
                     orientation="horizontal"
                     start={<Badge noIcon severity="success">en cas d’urgence vitale</Badge>}
                     title="Appelle le 15 (Samu) ou écris au 114"

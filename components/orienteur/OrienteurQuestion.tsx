@@ -41,7 +41,7 @@ export default function OrienteurQuestion({ question, backButton, onAnswer }: Pr
                 options={question.options.map((option) => ({
                     label: option.label,
                     illustration: option.illustration ? (
-                        <img src={`/images/icons/${option.illustration}.svg`} alt="" />
+                        <img src={`/images/pictograms/system/${option.illustration}.svg`} alt="" />
                     ) : undefined,
                     hintText: option.hint,
                     nativeInputProps: {
