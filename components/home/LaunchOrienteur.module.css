@@ -20,8 +20,8 @@
 .title {
   color: #fff;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
   letter-spacing: 0%;
   padding-left: 2rem;
   margin: 0;
@@ -62,8 +62,8 @@
   }
 
   .title {
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 3.5rem;
+    line-height: 4rem;
   }
 
   .heroImage {
