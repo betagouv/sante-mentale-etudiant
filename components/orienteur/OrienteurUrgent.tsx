@@ -19,10 +19,10 @@ export default function OrienteurUrgent() {
       <div>
         <Tile
           imageSvg
-          imageUrl="/images/icons/warning.svg"
+          imageUrl="/images/pictograms/leisure/community.svg"
           orientation="horizontal"
           start={
-            <Badge noIcon severity="success">
+            <Badge noIcon severity="info">
               En cas de pensées suicidaires
             </Badge>
           }
@@ -32,10 +32,10 @@ export default function OrienteurUrgent() {
         />
         <Tile
           imageSvg
-          imageUrl="/images/icons/warning.svg"
+          imageUrl="/images/pictograms/health/hospital.svg"
           orientation="horizontal"
           start={
-            <Badge noIcon severity="success">
+            <Badge noIcon severity="error">
               en cas d’urgence vitale
             </Badge>
           }
