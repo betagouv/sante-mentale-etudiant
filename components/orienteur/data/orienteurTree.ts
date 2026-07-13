@@ -46,8 +46,8 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         title: "As-tu des pensées suicidaires, ou crains-tu pour la sécurité d'un proche ?",
         showMedicalDisclaimer: true,
         options: [
-            { label: "Oui", value: "yes", next: "urgence", illustration: "warning" },
-            { label: "Non", value: "no", next: "pour-qui", illustration: "warning" },
+            { label: "Oui, j'ai besoin d'aide immédiatement", hint: "Pour moi ou pour aider une personne de mon entourage", value: "yes", next: "urgence", illustration: "warning" },
+            { label: "Non, mais je ne me sens pas bien en ce moment.", hint: "Je cherche du soutien, sans urgence vitale.", value: "no", next: "pour-qui", illustration: "warning" },
         ],
     },
 

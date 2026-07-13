@@ -25,7 +25,7 @@ export default function OrienteurQuestion({ node, onAnswer }: Props) {
         </p>
       )}
 
-      <h1 className={styles.title}>{node.title}</h1>
+      <h1>{node.title}</h1>
 
       <p>
         {node.legend} <span className={styles.error}>*</span>
