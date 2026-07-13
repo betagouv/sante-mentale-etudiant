@@ -1,15 +1,9 @@
-import type { ReactNode } from "react";
 import { Tile } from "@codegouvfr/react-dsfr/Tile";
 import Badge from "@codegouvfr/react-dsfr/Badge";
 
-type Props = {
-  backButton?: ReactNode;
-};
-
-export default function OrienteurUrgent({ backButton }: Props) {
+export default function OrienteurUrgent() {
   return (
     <>
-      {backButton}
       <h1>Parlons-en tout de suite.</h1>
       <p>
         Ce que tu ressens compte, et ça ne doit pas attendre. Le <strong>3114</strong> est le numéro

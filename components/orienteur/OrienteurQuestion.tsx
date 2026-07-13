@@ -1,44 +1,40 @@
 "use client";
 import Button from "@codegouvfr/react-dsfr/Button";
 import { RadioButtons } from "@codegouvfr/react-dsfr/RadioButtons";
-import { useState, type ReactNode } from "react";
-import OrienteurWrapper from "./OrienteurWrapper";
+import { useState } from "react";
 import styles from "./Orienteur.module.scss";
 import type { OrienteurOption, OrienteurQuestionNode } from "./data/orienteurTree";
 
 type Props = {
-  question: OrienteurQuestionNode;
-  backButton?: ReactNode;
+  node: OrienteurQuestionNode;
   onAnswer: (option: OrienteurOption) => void;
 };
 
-export default function OrienteurQuestion({ question, backButton, onAnswer }: Props) {
+export default function OrienteurQuestion({ node, onAnswer }: Props) {
   const [value, setValue] = useState<string>();
-  const selected = question.options.find((option) => option.value === value);
+  const selected = node.options.find((option) => option.value === value);
 
   return (
-    <OrienteurWrapper image={question.image}>
-      {backButton}
-
+    <>
       <p className={styles.hint}>
         Les champs marqués du symbole <span className={styles.error}>*</span> sont obligatoires.
       </p>
-      {question.showMedicalDisclaimer && (
+      {node.showMedicalDisclaimer && (
         <p className={styles.hint}>
           Ce questionnaire t'oriente et ne pose en aucun cas un diagnostic médical.
         </p>
       )}
 
-      <h1 className={styles.title}>{question.title}</h1>
+      <h1 className={styles.title}>{node.title}</h1>
 
       <p>
-        {question.legend} <span className={styles.error}>*</span>
+        {node.legend} <span className={styles.error}>*</span>
       </p>
 
       <RadioButtons
-        name={question.id}
+        name={node.id}
         state="default"
-        options={question.options.map((option) => ({
+        options={node.options.map((option) => ({
           label: option.label,
           illustration: option.illustration ? (
             <img src={`/images/icons/${option.illustration}.svg`} alt="" />
@@ -60,6 +56,6 @@ export default function OrienteurQuestion({ question, backButton, onAnswer }: Pr
       >
         Continuer
       </Button>
-    </OrienteurWrapper>
+    </>
   );
 }
