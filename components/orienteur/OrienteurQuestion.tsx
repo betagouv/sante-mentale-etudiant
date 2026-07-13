@@ -37,7 +37,7 @@ export default function OrienteurQuestion({ node, onAnswer }: Props) {
         options={node.options.map((option) => ({
           label: option.label,
           illustration: option.illustration ? (
-            <img src={`/images/icons/${option.illustration}.svg`} alt="" />
+            <img src={`/images/pictograms/${option.illustration}.svg`} alt="" />
           ) : undefined,
           hintText: option.hint,
           nativeInputProps: {

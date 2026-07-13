@@ -46,8 +46,8 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         title: "As-tu des pensées suicidaires, ou crains-tu pour la sécurité d'un proche ?",
         showMedicalDisclaimer: true,
         options: [
-            { label: "Oui, j'ai besoin d'aide immédiatement", hint: "Pour moi ou pour aider une personne de mon entourage", value: "yes", next: "urgence", illustration: "warning" },
-            { label: "Non, mais je ne me sens pas bien en ce moment.", hint: "Je cherche du soutien, sans urgence vitale.", value: "no", next: "pour-qui", illustration: "warning" },
+            { label: "Oui, j'ai besoin d'aide immédiatement", hint: "Pour moi ou pour aider une personne de mon entourage", value: "yes", next: "urgence", illustration: "system/warning" },
+            { label: "Non, mais je ne me sens pas bien en ce moment.", hint: "Je cherche du soutien, sans urgence vitale.", value: "no", next: "pour-qui", illustration: "system/success" },
         ],
     },
 
@@ -58,11 +58,11 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         legend: "Personne concernée",
         title: "Pour qui recherches-tu de l'aide ?",
         options: [
-            { label: "Pour moi", value: "moi", next: "aide-moi", illustration: "warning" },
+            { label: "Pour moi", value: "moi", next: "aide-moi", illustration: "digital/avatar" },
             {
                 label: "Pour un proche",
                 value: "proche", next: "aide-proche",
-                illustration: "warning",
+                illustration: "digital/ecosystem",
                 hint: "Par exemple, un ami ou un membre de ma famille"
             },
         ],
@@ -78,7 +78,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
             {
                 label: "Me confier maintenant et être orienté",
                 hint: "Une personne à l'écoute, qui peut t'aider à trouver l'aide la plus adaptée",
-                illustration: "warning",
+                illustration: "leisure/community",
                 value: "maintenant",
                 next: "canal-echange",
                 answer: { mode: "immediat" },
@@ -86,7 +86,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
             {
                 label: "Un suivi psy gratuit, près de chez moi",
                 hint: "Des rendez-vous réguliers avec un professionnel",
-                illustration: "warning",
+                illustration: "digital/calendar",
                 value: "psy",
                 next: "suivi-psy",
                 answer: { mode: "psy" },
@@ -103,13 +103,13 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         options: [
             {
                 label: "Je recherche des ressources ou des témoignages pour soutenir un proche",
-                illustration: "warning",
+                illustration: "digital/self-training",
                 value: "ressources",
                 next: "a-venir", // TODO: destination à définir
             },
             {
                 label: "J'ai besoin de me confier maintenant",
-                illustration: "warning",
+                illustration: "leisure/community",
                 value: "confier",
                 next: "a-venir", // TODO: destination à définir
             },
@@ -126,7 +126,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
             {
                 label: "À l'écrit",
                 hint: "Par Tchat (uniquement le soir et la nuit)",
-                illustration: "warning",
+                illustration: "digital/self-training",
                 value: "ecrit",
                 next: "location",
                 answer: { canal: "ecrit" }
@@ -134,7 +134,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
             {
                 label: "À l'oral",
                 hint: "Par téléphone ou en personne",
-                illustration: "warning",
+                illustration: "digital/smartphone",
                 value: "oral",
                 next: "location",
                 answer: { canal: "oral" }
@@ -152,7 +152,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
             {
                 label: "Être suivi sur mon campus (ou tout près)",
                 hint: "Par une équipe habituée aux étudiants",
-                illustration: "warning",
+                illustration: "buildings/city-hall",
                 value: "campus",
                 next: "location",
                 answer: { lieu: "campus" }
@@ -160,7 +160,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
             {
                 label: "Choisir moi-même mon psy",
                 hint: "La spécialité et le lieu qui me conviennent",
-                illustration: "warning",
+                illustration: "digital/search",
                 value: "libre",
                 next: "location",
                 answer: { lieu: "libre" }
