@@ -8,14 +8,21 @@ import { ReactNode } from "react";
 type Props = {
   node: OrienteurNode;
   backButton?: ReactNode;
-  onAnswer?: (option: OrienteurOption) => void;
+  onAnswer?: (id: string, option: OrienteurOption) => void;
+  answers: Record<string, string>;
 };
 
-export default function OrienteurWrapper({ node, backButton, onAnswer }: Props) {
+export default function OrienteurWrapper({ node, backButton, onAnswer, answers }: Props) {
   const renderContent = () => {
-    console.log("renderContent node", node);
     if (node.type === "question" && onAnswer) {
-      return <OrienteurQuestion node={node} onAnswer={onAnswer} />;
+      return (
+        <OrienteurQuestion
+          key={node.id}
+          node={node}
+          onAnswer={onAnswer}
+          defaultAnswer={answers[node.id]}
+        />
+      );
     }
     if (node.type !== "terminal") {
       return <p>Une erreur est survenue, reviens à l'accueil de l'orienteur.</p>;

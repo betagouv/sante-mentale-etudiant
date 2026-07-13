@@ -7,11 +7,12 @@ import type { OrienteurOption, OrienteurQuestionNode } from "./data/orienteurTre
 
 type Props = {
   node: OrienteurQuestionNode;
-  onAnswer: (option: OrienteurOption) => void;
+  onAnswer?: (id: string, option: OrienteurOption) => void;
+  defaultAnswer: string;
 };
 
-export default function OrienteurQuestion({ node, onAnswer }: Props) {
-  const [value, setValue] = useState<string>();
+export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Props) {
+  const [value, setValue] = useState<string>(defaultAnswer);
   const selected = node.options.find((option) => option.value === value);
 
   return (
@@ -52,7 +53,7 @@ export default function OrienteurQuestion({ node, onAnswer }: Props) {
         iconId="fr-icon-arrow-right-line"
         iconPosition="right"
         disabled={!selected}
-        onClick={() => selected && onAnswer(selected)}
+        onClick={() => selected && onAnswer(node.id, selected)}
       >
         Continuer
       </Button>
