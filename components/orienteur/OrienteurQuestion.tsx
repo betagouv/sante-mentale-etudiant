@@ -1,9 +1,9 @@
 "use client";
-import Button from "@codegouvfr/react-dsfr/Button";
 import { RadioButtons } from "@codegouvfr/react-dsfr/RadioButtons";
 import { useState } from "react";
 import styles from "./Orienteur.module.scss";
 import type { OrienteurOption, OrienteurQuestionNode } from "./data/orienteurTree";
+import { ButtonsGroup } from "@codegouvfr/react-dsfr/ButtonsGroup";
 
 type Props = {
   node: OrienteurQuestionNode;
@@ -48,15 +48,20 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
           },
         }))}
       />
-
-      <Button
-        iconId="fr-icon-arrow-right-line"
-        iconPosition="right"
-        disabled={!selected}
-        onClick={() => selected && onAnswer(node.id, selected)}
-      >
-        Continuer
-      </Button>
+      <ButtonsGroup
+        buttonsIconPosition="right"
+        buttonsSize="large"
+        inlineLayoutWhen="md and up"
+        alignment="right"
+        buttons={[
+          {
+            children: "Continuer",
+            iconId: "fr-icon-arrow-right-line",
+            disabled: !selected,
+            onClick: () => selected && onAnswer(node.id, selected),
+          },
+        ]}
+      />
     </>
   );
 }
