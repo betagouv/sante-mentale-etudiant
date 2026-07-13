@@ -14,17 +14,21 @@ export default function Orienteur() {
 
   const node = orienteurTree[currentId];
 
-  function goTo(questionId: string, option: { next: string; value: string }) {
+  function goTo(questionId: string, option: { next: string; value: string }, lastQuestion = false) {
     const { next, value } = option;
-    if (next.startsWith("/")) {
-      router.push(next);
+    const newAnswers = {
+      ...answers,
+      [questionId]: value,
+    };
+    if (lastQuestion) {
+      const params = new URLSearchParams(
+        Object.fromEntries(Object.entries(newAnswers).filter(([, value]) => !!value))
+      );
+      router.push(`/trouver-du-soutien?${params.toString()}`);
       return;
     }
     setHistory((h) => [...h, next]);
-    setAnswers((currentAnswers) => ({
-      ...currentAnswers,
-      [questionId]: value,
-    }));
+    setAnswers(newAnswers);
   }
 
   function goBack() {

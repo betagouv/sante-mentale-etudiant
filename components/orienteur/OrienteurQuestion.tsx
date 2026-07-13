@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "./Orienteur.module.scss";
 import type { OrienteurQuestionNode } from "./data/orienteurTree";
 import { ButtonsGroup } from "@codegouvfr/react-dsfr/ButtonsGroup";
+import { ButtonProps } from "@codegouvfr/react-dsfr/Button";
 
 type Props = {
   node: OrienteurQuestionNode;
@@ -16,6 +17,25 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
   const selected = node.options.find((option) => option.value === value);
 
   const skip = node.skip;
+
+  const buttonsList: ButtonProps[] = [
+    ...(skip
+      ? [
+          {
+            children: skip.label,
+            priority: "secondary" as const,
+            onClick: () => onAnswer(node.id, { next: skip.next, value: skip.value }),
+          },
+        ]
+      : []),
+    {
+      children: "Continuer",
+      iconId: "fr-icon-arrow-right-line",
+      disabled: !selected,
+      onClick: () => selected && onAnswer(node.id, selected),
+    },
+  ];
+
   return (
     <>
       <p className={styles.hint}>
@@ -54,23 +74,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
         buttonsSize="large"
         inlineLayoutWhen="md and up"
         alignment="right"
-        buttons={[
-          ...(skip
-            ? [
-                {
-                  children: skip.label,
-                  priority: "secondary",
-                  onClick: () => onAnswer(node.id, { next: skip.next, value: skip.value }),
-                } as const,
-              ]
-            : []),
-          {
-            children: "Continuer",
-            iconId: "fr-icon-arrow-right-line",
-            disabled: !selected,
-            onClick: () => selected && onAnswer(node.id, selected),
-          },
-        ]}
+        buttons={buttonsList as [ButtonProps, ...ButtonProps[]]}
       />
     </>
   );

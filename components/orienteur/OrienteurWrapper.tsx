@@ -2,13 +2,13 @@ import styles from "./Orienteur.module.scss";
 import OrienteurLocation from "./OrienteurLocation";
 import OrienteurQuestion from "./OrienteurQuestion";
 import OrienteurUrgent from "./OrienteurUrgent";
-import { OrienteurNode, OrienteurOption } from "./data/orienteurTree";
+import { OrienteurNode } from "./data/orienteurTree";
 import { ReactNode } from "react";
 
 type Props = {
   node: OrienteurNode;
   backButton?: ReactNode;
-  onAnswer?: (id: string, option: OrienteurOption) => void;
+  onAnswer: (id: string, option: { next: string; value: string }) => void;
   answers: Record<string, string>;
 };
 
@@ -28,7 +28,7 @@ export default function OrienteurWrapper({ node, backButton, onAnswer, answers }
       return <p>Une erreur est survenue, reviens à l'accueil de l'orienteur.</p>;
     }
     if (node.component === "location") {
-      return <OrienteurLocation />;
+      return <OrienteurLocation onAnswer={onAnswer} />;
     }
     if (node.component === "urgence") {
       return <OrienteurUrgent />;
