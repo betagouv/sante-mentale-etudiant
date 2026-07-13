@@ -1,22 +1,72 @@
 .hero {
-  position: relative;
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.firstGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 2rem;
+  justify-content: end;
+}
+
+.secondGrid {
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: 0%;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.highlight {
+  color: var(--yellow);
 }
 
 .picture {
-  display: block;
+  display: flex;
   width: 100%;
 }
 
 .heroImage {
   display: block;
   width: 100%;
-  height: 256px; /* mobile */
+  max-height: 256px; /* mobile */
   object-fit: cover;
 }
 
-/* DSFR "md" breakpoint = 768px */
 @media (min-width: 768px) {
-  .heroImage {
+  .hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     height: 580px;
+    padding-top: 0;
+  }
+
+  .firstGrid {
+    width: 60%;
+    padding: 0 3rem;
+  }
+
+  .secondGrid {
+    width: 40%;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .heroImage {
+    max-height: 400px;
   }
 }

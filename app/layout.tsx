@@ -6,6 +6,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Newsletter } from "@/components/layout/Newsletter";
 import { Suspense } from "react";
+import "@/styles/colors.css";
 
 export const metadata: Metadata = {
   title: "Mon application",
@@ -24,9 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <StartDsfrOnHydration />
           <Header />
           <div className="fr-container" style={{ paddingLeft: 0, paddingRight: 0 }}>
-            <Suspense>
-              {children}
-            </Suspense>
+            <Suspense>{children}</Suspense>
           </div>
           <Newsletter />
           <Footer />
