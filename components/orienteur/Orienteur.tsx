@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import Button from "@codegouvfr/react-dsfr/Button";
 import OrienteurWrapper from "./OrienteurWrapper";
-import { orienteurTree, ORIENTEUR_ROOT_ID, OrienteurOption } from "./data/orienteurTree";
+import { orienteurTree, ORIENTEUR_ROOT_ID } from "./data/orienteurTree";
 
 export default function Orienteur() {
   const router = useRouter();
@@ -14,7 +14,7 @@ export default function Orienteur() {
 
   const node = orienteurTree[currentId];
 
-  function goTo(questionId: string, option: OrienteurOption) {
+  function goTo(questionId: string, option: { next: string; value: string }) {
     const { next, value } = option;
     if (next.startsWith("/")) {
       router.push(next);

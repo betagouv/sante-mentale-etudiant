@@ -2,12 +2,12 @@
 import { RadioButtons } from "@codegouvfr/react-dsfr/RadioButtons";
 import { useState } from "react";
 import styles from "./Orienteur.module.scss";
-import type { OrienteurOption, OrienteurQuestionNode } from "./data/orienteurTree";
+import type { OrienteurQuestionNode } from "./data/orienteurTree";
 import { ButtonsGroup } from "@codegouvfr/react-dsfr/ButtonsGroup";
 
 type Props = {
   node: OrienteurQuestionNode;
-  onAnswer?: (id: string, option: OrienteurOption) => void;
+  onAnswer: (id: string, option: { next: string; value: string }) => void;
   defaultAnswer: string;
 };
 
@@ -15,6 +15,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
   const [value, setValue] = useState<string>(defaultAnswer);
   const selected = node.options.find((option) => option.value === value);
 
+  const skip = node.skip;
   return (
     <>
       <p className={styles.hint}>
@@ -54,6 +55,15 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
         inlineLayoutWhen="md and up"
         alignment="right"
         buttons={[
+          ...(skip
+            ? [
+                {
+                  children: skip.label,
+                  priority: "secondary",
+                  onClick: () => onAnswer(node.id, { next: skip.next, value: skip.value }),
+                } as const,
+              ]
+            : []),
           {
             children: "Continuer",
             iconId: "fr-icon-arrow-right-line",

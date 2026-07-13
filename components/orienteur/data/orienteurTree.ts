@@ -20,6 +20,11 @@ export type OrienteurQuestionNode = {
     legend: string;
     title: string;
     showMedicalDisclaimer?: boolean;
+    skip?: {
+        label: string,
+        value: string,
+        next: string
+    }
     options: OrienteurOption[];
 };
 
@@ -74,6 +79,11 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         image: IMAGE_DEFAULT,
         legend: "Mon besoin",
         title: "Qu'est-ce qui t'aiderait le mieux en ce moment ?",
+        skip: {
+            label: "Je ne sais pas trop",
+            value: "doesnt-know",
+            next: "location"
+        },
         options: [
             {
                 label: "Me confier maintenant et être orienté",
