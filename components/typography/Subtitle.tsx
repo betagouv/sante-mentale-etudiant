@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
+import styles from "./Subtitle.module.scss";
 
 type Props = {
   children: string | ReactNode;
 };
 export function Subtitle({ children }: Props) {
-  return <p style={{ color: "#3A3A3A", fontSize: "1.25rem" }}>{children}</p>;
+  return <p className={styles.subtitle}>{children}</p>;
 }
