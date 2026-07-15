@@ -2,29 +2,29 @@ import { Input } from "@codegouvfr/react-dsfr/Input";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import { Select } from "@codegouvfr/react-dsfr/Select";
 import styles from "./FindHelp.module.scss";
-import { OPTIONS_I_WANT } from "./data/findHelp";
+import { OPTIONS_I_NEED } from "./data/findHelp";
 import { Dispatch, SetStateAction } from "react";
 type Props = {
   postcode: string;
   setPostcode: Dispatch<SetStateAction<string>>;
-  whatIWant: string;
-  setWhatIWant: Dispatch<SetStateAction<string>>;
+  whatINeed: string;
+  setWhatINeed: Dispatch<SetStateAction<string>>;
   format: string;
   setFormat: Dispatch<SetStateAction<string>>;
 };
 export default function FindHelpFilters({
   postcode,
   setPostcode,
-  whatIWant,
-  setWhatIWant,
+  whatINeed,
+  setWhatINeed,
   format,
   setFormat,
 }: Props) {
-  const formatOptions = whatIWant ? OPTIONS_I_WANT[whatIWant].formatOptions : [];
+  const formatOptions = whatINeed ? OPTIONS_I_NEED[whatINeed].formatOptions : [];
 
-  function handleWhatIWantChange(newWhatIWant: string) {
-    setWhatIWant(newWhatIWant);
-    const newFormatOptions = newWhatIWant ? OPTIONS_I_WANT[newWhatIWant].formatOptions : [];
+  function handleWhatINeedChange(newWhatINeed: string) {
+    setWhatINeed(newWhatINeed);
+    const newFormatOptions = newWhatINeed ? OPTIONS_I_NEED[newWhatINeed].formatOptions : [];
     const stillValid = newFormatOptions.some((o) => o.value === format);
 
     if (!stillValid) {
@@ -44,14 +44,14 @@ export default function FindHelpFilters({
       <Select
         label="Ce que je cherche"
         nativeSelectProps={{
-          onChange: (event) => handleWhatIWantChange(event.target.value),
-          value: whatIWant,
+          onChange: (event) => handleWhatINeedChange(event.target.value),
+          value: whatINeed,
         }}
       >
         <option value="" disabled hidden>
           Selectionnez une option
         </option>
-        {Object.values(OPTIONS_I_WANT).map(({ value, label }) => (
+        {Object.values(OPTIONS_I_NEED).map(({ value, label }) => (
           <option key={value} value={value}>
             {label}
           </option>

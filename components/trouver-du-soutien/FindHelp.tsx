@@ -10,12 +10,12 @@ import { Badge } from "@codegouvfr/react-dsfr/Badge";
 
 type Props = {
   defaultPostcode: string;
-  defaultWhatIWant: string;
+  defaultWhatINeed: string;
   defaultFormat: string;
 };
-export default function FindHelp({ defaultPostcode, defaultWhatIWant, defaultFormat }: Props) {
+export default function FindHelp({ defaultPostcode, defaultWhatINeed, defaultFormat }: Props) {
   const [postcode, setPostcode] = useState(defaultPostcode);
-  const [whatIWant, setWhatIWant] = useState(defaultWhatIWant);
+  const [whatINeed, setWhatINeed] = useState(defaultWhatINeed);
   const [format, setFormat] = useState(defaultFormat);
 
   return (
@@ -25,8 +25,8 @@ export default function FindHelp({ defaultPostcode, defaultWhatIWant, defaultFor
       <FindHelpFilters
         postcode={postcode}
         setPostcode={setPostcode}
-        whatIWant={whatIWant}
-        setWhatIWant={setWhatIWant}
+        whatINeed={whatINeed}
+        setWhatINeed={setWhatINeed}
         format={format}
         setFormat={setFormat}
       />
