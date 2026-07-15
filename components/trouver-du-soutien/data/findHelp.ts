@@ -1,35 +1,57 @@
-
-type OPTIONS = {
+type OPTION = {
     label: string;
     value: string;
 };
 
-export const OPTIONS_I_WANT = [
-    {
-        label: "Peu importe",
-        value: "whatever",
-    },
-    {
-        label: "Parler à quelqu'un",
-        value: "talk",
-    },
-] as OPTIONS[];
+type MAIN_OPTION = OPTION & {
+    formatOptions: OPTION[]
+}
 
-export const OPTIONS_FORMAT = [
-    {
-        label: "Tous",
-        value: "all",
+type MAIN_OPTIONS = {
+    [key: string]: MAIN_OPTION
+}
+
+export const OPTIONS_I_WANT: MAIN_OPTIONS = {
+    whatever: {
+        label: "Peu importe",
+        value: 'whatever',
+        formatOptions: [
+        ]
     },
-    {
-        label: "Psychologue, psychiatre",
-        value: "psy",
+    talk: {
+        label: 'Me confier et être orienté',
+        value: "talk",
+        formatOptions: [
+            {
+                label: "Tous",
+                value: 'all'
+            },
+            {
+                label: "A l'écrit",
+                value: 'writing'
+            },
+            {
+                label: "A l'oral / en personne",
+                value: 'talking'
+            }
+        ]
     },
-    {
-        label: "En ligne / Téléphone",
-        value: "online",
-    },
-    {
-        label: "Tchat",
-        value: "chat",
-    },
-] as OPTIONS[];
+    psy: {
+        label: "Un suivi psy gratuit",
+        value: 'psy',
+        formatOptions: [
+            {
+                label: "Tous",
+                value: 'all'
+            },
+            {
+                label: "Suivi sur un campus",
+                value: 'campus'
+            },
+            {
+                label: "Choisir moi-même mon praticien",
+                value: 'choose'
+            }
+        ]
+    }
+}

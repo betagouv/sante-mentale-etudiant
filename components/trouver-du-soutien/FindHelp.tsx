@@ -17,6 +17,7 @@ export default function FindHelp({ defaultPostcode, defaultWhatIWant, defaultFor
   const [postcode, setPostcode] = useState(defaultPostcode);
   const [whatIWant, setWhatIWant] = useState(defaultWhatIWant);
   const [format, setFormat] = useState(defaultFormat);
+
   return (
     <div className={styles.container}>
       <Title>Trouve du soutien en fonction de ta situation</Title>

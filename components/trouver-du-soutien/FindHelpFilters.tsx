@@ -2,7 +2,7 @@ import { Input } from "@codegouvfr/react-dsfr/Input";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import { Select } from "@codegouvfr/react-dsfr/Select";
 import styles from "./FindHelp.module.scss";
-import { OPTIONS_FORMAT, OPTIONS_I_WANT } from "./data/findHelp";
+import { OPTIONS_I_WANT } from "./data/findHelp";
 import { Dispatch, SetStateAction } from "react";
 type Props = {
   postcode: string;
@@ -20,6 +20,17 @@ export default function FindHelpFilters({
   format,
   setFormat,
 }: Props) {
+  const formatOptions = whatIWant ? OPTIONS_I_WANT[whatIWant].formatOptions : [];
+
+  function handleWhatIWantChange(newWhatIWant: string) {
+    setWhatIWant(newWhatIWant);
+    const newFormatOptions = newWhatIWant ? OPTIONS_I_WANT[newWhatIWant].formatOptions : [];
+    const stillValid = newFormatOptions.some((o) => o.value === format);
+
+    if (!stillValid) {
+      setFormat("");
+    }
+  }
   return (
     <div className={styles.filters}>
       <Input
@@ -33,35 +44,37 @@ export default function FindHelpFilters({
       <Select
         label="Ce que je cherche"
         nativeSelectProps={{
-          onChange: (event) => setWhatIWant(event.target.value),
+          onChange: (event) => handleWhatIWantChange(event.target.value),
           value: whatIWant,
         }}
       >
         <option value="" disabled hidden>
           Selectionnez une option
         </option>
-        {OPTIONS_I_WANT.map(({ value, label }) => (
+        {Object.values(OPTIONS_I_WANT).map(({ value, label }) => (
           <option key={value} value={value}>
             {label}
           </option>
         ))}
       </Select>
-      <Select
-        label="Format"
-        nativeSelectProps={{
-          onChange: (event) => setFormat(event.target.value),
-          value: format,
-        }}
-      >
-        <option value="" disabled hidden>
-          Selectionnez une option
-        </option>
-        {OPTIONS_FORMAT.map(({ value, label }) => (
-          <option key={value} value={value}>
-            {label}
+      {formatOptions && formatOptions.length > 0 && (
+        <Select
+          label="Format"
+          nativeSelectProps={{
+            onChange: (event) => setFormat(event.target.value),
+            value: format,
+          }}
+        >
+          <option value="" disabled hidden>
+            Selectionnez une option
           </option>
-        ))}
-      </Select>
+          {formatOptions.map(({ value, label }) => (
+            <option key={value} value={value}>
+              {label}
+            </option>
+          ))}
+        </Select>
+      )}
       <Button priority="secondary">Plus de filtres</Button>
     </div>
   );
