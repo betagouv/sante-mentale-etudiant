@@ -27,10 +27,11 @@
 .content {
   width: 100%;
   background-color: var(--background-alt-beige-gris-galet);
-  padding: 4.66rem 7.5rem 5.5rem 6.375rem;
+  padding: 2rem;
 
   @media (min-width: 992px) {
     width: 55%;
+    padding: 4.66rem 7.5rem 5.5rem 6.375rem;
   }
 }
 
