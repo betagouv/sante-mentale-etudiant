@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     flex-direction: row;
   }
 }
@@ -10,7 +10,7 @@
 .imageWrapper {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: block;
     width: 45%;
     flex-shrink: 0;
@@ -27,10 +27,10 @@
 .content {
   width: 100%;
   background-color: var(--background-alt-beige-gris-galet);
+  padding: 4.66rem 7.5rem 5.5rem 6.375rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     width: 55%;
-    padding: 4.66rem 7.5rem 5.5rem 6.375rem;
   }
 }
 
@@ -38,12 +38,9 @@
   font-size: 0.875rem;
   margin: 0;
   color: #666666;
+  margin-bottom: 0.5rem;
 }
 
 .error {
   color: var(--text-default-error);
-}
-
-.title {
-  margin-top: 1rem;
 }

@@ -1,31 +1,55 @@
 "use client";
+import { useRouter } from "next/navigation";
+import { useMemo, useState } from "react";
 import Button from "@codegouvfr/react-dsfr/Button";
-import styles from "./Orienteur.module.scss";
+import OrienteurWrapper from "./OrienteurWrapper";
+import { orienteurTree, ORIENTEUR_ROOT_ID } from "./data/orienteurTree";
 
 export default function Orienteur() {
-  return (
-    <section className={styles.section}>
-      <div className={styles.imageWrapper}>
-        <img src="https://placehold.co/630x664" alt="" className={styles.image} />
-      </div>
+  const router = useRouter();
+  const [history, setHistory] = useState<string[]>([ORIENTEUR_ROOT_ID]);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
 
-      <div className={styles.content}>
-        <p className={styles.hint}>
-          Les champs marqués du symbole <span className={styles.error}>*</span> sont obligatoires.
-        </p>
-        <p className={styles.hint}>
-          Ce questionnaire t'oriente et ne pose en aucun cas un diagnostic médical.
-        </p>
-        <h1 className={styles.title}>
-          As-tu des pensées suicidaires, ou crains-tu pour la sécurité d'un proche ?
-        </h1>
-        <p>
-          Ma situation <span className={styles.error}>*</span>
-        </p>
-        <p>checkbox 1</p>
-        <p>checkbox 2</p>
-        <Button>Continuer</Button>
-      </div>
-    </section>
+  const currentId = useMemo(() => history.at(-1) ?? ORIENTEUR_ROOT_ID, [history]);
+
+  const node = orienteurTree[currentId];
+
+  function goTo(questionId: string, option: { next: string; value: string }, lastQuestion = false) {
+    const { next, value } = option;
+    const newAnswers = {
+      ...answers,
+      [questionId]: value,
+    };
+    if (lastQuestion) {
+      const params = new URLSearchParams(
+        Object.fromEntries(Object.entries(newAnswers).filter(([, value]) => !!value))
+      );
+      router.push(`/trouver-du-soutien?${params.toString()}`);
+      return;
+    }
+    setHistory((h) => [...h, next]);
+    setAnswers(newAnswers);
+  }
+
+  function goBack() {
+    if (history.length > 1) {
+      setHistory((h) => [...h.slice(0, -1)]);
+    }
+    setAnswers((currentAnswers) => {
+      const { [currentId]: _, ...rest } = currentAnswers;
+      return rest;
+    });
+  }
+
+  const backButton = history.length > 1 && (
+    <Button
+      priority="tertiary no outline"
+      iconId="fr-icon-arrow-left-line"
+      onClick={() => goBack()}
+    >
+      Retour
+    </Button>
   );
+
+  return <OrienteurWrapper node={node} backButton={backButton} onAnswer={goTo} answers={answers} />;
 }
