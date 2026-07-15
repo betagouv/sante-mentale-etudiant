@@ -1,18 +1,14 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { CallOut } from "@codegouvfr/react-dsfr/CallOut";
+import FindHelp from "@/components/trouver-du-soutien/FindHelp";
 
 export default function FindHelpPage() {
   const searchParams = useSearchParams();
   const postcode = searchParams.get("location") ?? "";
+  const whatINeed = searchParams.get("what-i-need") ?? "";
+  const format = searchParams.get("format") ?? "";
+
   return (
-    <>
-      <h2>{postcode}</h2>
-      <CallOut title="Trouver du soutien">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam doloribus,
-        voluptas modi vitae soluta ducimus. Minus veritatis eius ut maxime, mollitia maiores atque,
-        iste nulla obcaecati repellendus perspiciatis placeat.
-      </CallOut>
-    </>
+    <FindHelp defaultPostcode={postcode} defaultWhatINeed={whatINeed} defaultFormat={format} />
   );
 }
