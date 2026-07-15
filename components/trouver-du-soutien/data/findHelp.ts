@@ -26,7 +26,7 @@ export const OPTIONS_I_NEED: MAIN_OPTIONS = {
     value: "whatever",
     formatOptions: [],
   },
-  [NEED_PSY]: {
+  [NEED_COUNSELING]: {
     label: "Me confier et être orienté",
     value: NEED_COUNSELING,
     formatOptions: [
@@ -44,7 +44,7 @@ export const OPTIONS_I_NEED: MAIN_OPTIONS = {
       },
     ],
   },
-  [NEED_COUNSELING]: {
+  [NEED_PSY]: {
     label: "Un suivi psy gratuit",
     value: NEED_PSY,
     formatOptions: [
