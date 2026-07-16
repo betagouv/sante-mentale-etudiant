@@ -1,0 +1,32 @@
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #161616;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.index {
+  font-size: 1.125rem;
+  font-weight: 400;
+  border: 1px solid #dfdfdf;
+  padding: 0.375rem 0.625rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .results {
+    justify-content: flex-start;
+  }
+  .title {
+    margin-bottom: 2.25rem;
+    margin-top: 2.25rem;
+  }
+}

@@ -1,0 +1,25 @@
+.day {
+  color: var(--text-color-purple);
+  background-color: var(--bg-color-purple);
+}
+
+.night {
+  color: #ffffff;
+  background-color: var(--bg-color-dark-purple);
+}
+
+.pro {
+  color: var(--text-color-yellow);
+  background-color: var(--bg-color-yellow);
+}
+
+.student {
+  color: var(--text-color-yellow);
+  background-color: var(--bg-color-light-yellow);
+}
+
+.h24 {
+  color: var(--text-color-dark-purple);
+  background-color: white;
+  border: solid 1px var(--text-color-dark-purple);
+}

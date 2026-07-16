@@ -7,9 +7,9 @@ type Props = {
   title: string;
   subtitle: string;
   description: string;
-  image: StaticImageData | string;
+  image?: StaticImageData | string;
   imageAlt?: string;
-  button: ReactNode;
+  button?: ReactNode;
   badges: ReactElement<BadgeProps>[];
   location?: string;
   openingHours?: string;
@@ -32,7 +32,17 @@ export default function CustomCard({
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.subtitle}>{subtitle}</p>
         </div>
-        <Image src={image} alt={imageAlt} className={styles.logo} width={87} height={64} />
+        {image && (
+          <Image
+            src={image}
+            alt={imageAlt}
+            className={styles.logo}
+            width={87}
+            height={0}
+            style={{ width: "87px", height: "auto" }}
+            sizes="87px"
+          />
+        )}
       </div>
       <p className={styles.description}>{description}</p>
       <div className={styles.footer}>
@@ -58,7 +68,7 @@ export default function CustomCard({
             </div>
           )}
         </div>
-        <div className={styles.button}>{button}</div>
+        {button && <div className={styles.button}>{button}</div>}
       </div>
     </div>
   );

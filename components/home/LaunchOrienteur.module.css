@@ -28,7 +28,7 @@
 }
 
 .highlight {
-  color: var(--yellow);
+  color: var(--bg-color-yellow);
 }
 
 .picture {

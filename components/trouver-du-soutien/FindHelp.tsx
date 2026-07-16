@@ -3,10 +3,7 @@ import { Title } from "../typography/Title";
 import { useState } from "react";
 import styles from "./FindHelp.module.scss";
 import FindHelpFilters from "./FindHelpFilters";
-import CustomCard from "../common/CustomCard";
-import logo from "@/public/images/logos/3040.png";
-import { Button } from "@codegouvfr/react-dsfr/Button";
-import { Badge } from "@codegouvfr/react-dsfr/Badge";
+import FindHelpResults from "./FindHelpResults";
 
 type Props = {
   defaultPostcode: string;
@@ -30,20 +27,7 @@ export default function FindHelp({ defaultPostcode, defaultWhatINeed, defaultFor
         format={format}
         setFormat={setFormat}
       />
-      <br></br>
-      <CustomCard
-        title="Appelle le 3040"
-        subtitle="Le numéro pour la santé mentale des étudiants"
-        description="Des psychologues et travailleurs sociaux à ton écoute pour t'informer et t'orienter vers les services adaptés."
-        image={logo}
-        button={<Button priority="secondary">Appeler le 3040</Button>}
-        badges={[
-          <Badge key="professionels">PROFESSIONNELS</Badge>,
-          <Badge key="de-jour">De jour</Badge>,
-        ]}
-        location="A distance"
-        openingHours="7j/7 • 9h-23h"
-      />
+      <FindHelpResults postcode={postcode} whatINeed={whatINeed} format={format} />
     </div>
   );
 }
