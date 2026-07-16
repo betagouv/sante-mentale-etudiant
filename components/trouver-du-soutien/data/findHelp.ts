@@ -6,6 +6,8 @@ import {
   NEED_COUNSELING,
   NEED_PSY,
 } from "@/components/orienteur/data/orienteurTree";
+import { ReactNode } from "react";
+import { CARD_3040 } from "./resultCards";
 
 type OPTION = {
   label: string;
@@ -62,4 +64,22 @@ export const OPTIONS_I_NEED: MAIN_OPTIONS = {
       },
     ],
   },
+};
+
+type Result = {
+  title: string;
+  cards: ReactNode[];
+};
+
+export const getResults = (postcode: string, whatINeed: string, format: string) => {
+  return [
+    {
+      title: "Pouvoir te confier et être orienté",
+      cards: [CARD_3040, CARD_3040, CARD_3040],
+    },
+    {
+      title: "Consulter un professionnel de la santé mentale",
+      cards: [CARD_3040, CARD_3040, CARD_3040],
+    },
+  ] as Result[];
 };
