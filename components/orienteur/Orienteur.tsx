@@ -20,8 +20,11 @@ export default function Orienteur() {
 
   const node = orienteurTree[currentId];
 
-  function goTo(questionId: string, option: { next: string; value: string }, lastQuestion = false) {
-    const { next, value } = option;
+  function goTo(
+    option: { next: string; patchAnswers: Record<string, string> },
+    lastQuestion = false
+  ) {
+    const { next, patchAnswers } = option;
 
     if (next.startsWith("/")) {
       router.push(next);
@@ -29,7 +32,7 @@ export default function Orienteur() {
     }
     const newAnswers = {
       ...answers,
-      [questionId]: value,
+      ...patchAnswers,
     };
     if (lastQuestion) {
       const paramMap: Record<string, string> = {
@@ -37,6 +40,9 @@ export default function Orienteur() {
         [WHAT_I_NEED_ID]: "what-i-need",
         [FORMAT_PSY_ID]: "format",
         [FORMAT_ECHANGE_ID]: "format",
+        longitude: "lon",
+        latitude: "lat",
+        addressLabel: "addressLabel",
       };
 
       const params: Record<string, string> = {};

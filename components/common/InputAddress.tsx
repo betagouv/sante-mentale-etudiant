@@ -1,4 +1,4 @@
-import { AddressResult, findAddresses } from "@/services/address";
+import { AddressResult, Coordinate, findAddresses } from "@/services/address";
 import Input from "@codegouvfr/react-dsfr/Input";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import styles from "./InputAddress.module.scss";
@@ -7,15 +7,17 @@ import RequiredField from "./RequiredField";
 const DEBOUCE_MS = 300;
 
 type Props = {
-  postcode: string;
-  setPostcode: Dispatch<SetStateAction<string>>;
+  addressLabel: string;
+  setAddresslabel: Dispatch<SetStateAction<string>>;
+  setCoordinates: Dispatch<SetStateAction<Coordinate | undefined>>;
   label?: string;
   required?: boolean;
 };
 
 export default function InputAddress({
-  postcode,
-  setPostcode,
+  addressLabel,
+  setAddresslabel,
+  setCoordinates,
   label = "Ville, code postal",
   required = false,
 }: Props) {
@@ -23,7 +25,7 @@ export default function InputAddress({
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   const [results, setResults] = useState<AddressResult[]>([]);
-  const [inputValue, setInputValue] = useState(postcode);
+  const [inputValue, setInputValue] = useState(addressLabel);
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -61,7 +63,8 @@ export default function InputAddress({
 
   const onSelect = (result: AddressResult) => {
     setInputValue(result.label);
-    setPostcode(result.postcode);
+    setAddresslabel(result.label);
+    setCoordinates(result.coordinates);
     setResults([]);
     setIsOpen(false);
   };

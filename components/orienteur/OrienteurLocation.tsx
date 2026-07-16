@@ -3,15 +3,20 @@ import styles from "./Orienteur.module.scss";
 import { useState } from "react";
 import InputAddress from "../common/InputAddress";
 import RequiredField from "../common/RequiredField";
+import { Coordinate } from "@/services/address";
 
 type Props = {
-  onAnswer: (id: string, option: { next: string; value: string }, lastQuestion?: boolean) => void;
+  onAnswer: (
+    option: { next: string; patchAnswers: Record<string, string> },
+    lastQuestion?: boolean
+  ) => void;
 };
 
 export default function OrienteurLocation({ onAnswer }: Props) {
-  const [postcode, setPostcode] = useState<string>("");
+  const [coordinates, setCoordinates] = useState<Coordinate>();
+  const [addressLabel, setAddresslabel] = useState<string>("");
 
-  const isValid = postcode.length === 5;
+  const isValid = coordinates && addressLabel;
   return (
     <>
       <p className={styles.hint}>
@@ -22,8 +27,9 @@ export default function OrienteurLocation({ onAnswer }: Props) {
       <p>Indique ta ville pour trouver les dispositifs les plus proches.</p>
       <div className={styles.address}>
         <InputAddress
-          postcode={postcode}
-          setPostcode={setPostcode}
+          addressLabel={addressLabel}
+          setAddresslabel={setAddresslabel}
+          setCoordinates={setCoordinates}
           label="Ta ville ou code postal"
           required
         />
@@ -37,13 +43,24 @@ export default function OrienteurLocation({ onAnswer }: Props) {
           {
             children: "Je préfère ne pas préciser",
             priority: "secondary",
-            onClick: () => onAnswer("location", { next: "", value: "" }, true),
+            onClick: () => onAnswer({ next: "", patchAnswers: {} }, true),
           },
           {
             children: "Voir les résultats",
             iconId: "fr-icon-arrow-right-line",
             disabled: !isValid,
-            onClick: () => onAnswer("location", { next: "", value: postcode }, true),
+            onClick: () =>
+              onAnswer(
+                {
+                  next: "",
+                  patchAnswers: {
+                    addressLabel,
+                    longitude: coordinates?.longitude.toString() ?? "",
+                    latitude: coordinates?.latitude.toString() ?? "",
+                  },
+                },
+                true
+              ),
           },
         ]}
       />

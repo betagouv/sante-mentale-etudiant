@@ -9,7 +9,7 @@ import RequiredField from "../common/RequiredField";
 
 type Props = {
   node: OrienteurQuestionNode;
-  onAnswer: (id: string, option: { next: string; value: string }) => void;
+  onAnswer: (option: { next: string; patchAnswers: Record<string, string> }) => void;
   defaultAnswer: string;
 };
 
@@ -25,7 +25,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
           {
             children: skip.label,
             priority: "secondary" as const,
-            onClick: () => onAnswer(node.id, { next: skip.next, value: skip.value }),
+            onClick: () => onAnswer({ next: skip.next, patchAnswers: { [node.id]: skip.value } }),
           },
         ]
       : []),
@@ -33,7 +33,8 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
       children: "Continuer",
       iconId: "fr-icon-arrow-right-line",
       disabled: !selected,
-      onClick: () => selected && onAnswer(node.id, selected),
+      onClick: () =>
+        selected && onAnswer({ next: selected.next, patchAnswers: { [node.id]: selected.value } }),
     },
   ];
 

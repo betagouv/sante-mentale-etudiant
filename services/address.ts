@@ -1,7 +1,7 @@
 const ADDRESS_API_URL = "https://data.geopf.fr/geocodage/search/";
 const TIMEOUT_MS = 5000;
 
-type Coordinate = {
+export type Coordinate = {
   longitude: number;
   latitude: number;
 };
