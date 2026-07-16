@@ -95,7 +95,29 @@ export const CARD_DOCTOR = (
   <CustomCard
     title="Parles-en à ton médecin généraliste"
     subtitle="Il peut t'écouter et t'orienter"
-    description="Aucun dispositif ne te convient ? Tu as du mal à trouver des disponibilités ? Ne reste pas seul"
+    description="Aucun dispositif ne te convient ? Tu as du mal à trouver des disponibilités ? Ne reste pas seul."
     badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+  />
+);
+
+export const CARD_SSE = (
+  <CustomCard
+    title="Contacte le SSE de Nice"
+    subtitle="Service de santé de l'université la plus proche"
+    description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
+    button={<Button priority="secondary">Infos et contacts</Button>}
+    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+    location="Près de Nice"
+  />
+);
+
+export const CARD_BAPU = (
+  <CustomCard
+    title="Contacte le BAPU Nice"
+    subtitle="Bureau d'aide psychologique universitaire"
+    description="Consultations gratuites avec des psychologues et psychiatres, sans limite de séances, prises en charge à 100% par la Sécu."
+    button={<Button priority="secondary">Infos et contacts</Button>}
+    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+    location="Près de Nice"
   />
 );

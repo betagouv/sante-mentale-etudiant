@@ -11,10 +11,12 @@ import {
   CARD_3018,
   CARD_3040,
   CARD_3919,
+  CARD_BAPU,
   CARD_DOCTOR,
   CARD_NIGHTLINE_CALL,
   CARD_NIGHTLINE_CHAT,
   CARD_SPE,
+  CARD_SSE,
 } from "./resultCards";
 
 type OPTION = {
@@ -87,11 +89,18 @@ export const getResults = (postcode: string, whatINeed: string, format: string):
     return [
       {
         title: "Pouvoir te confier et être orienté",
-        cards: [CARD_3040, CARD_NIGHTLINE_CALL, CARD_NIGHTLINE_CHAT, CARD_3018, CARD_3919],
+        cards: [
+          CARD_3040,
+          CARD_SSE,
+          CARD_NIGHTLINE_CALL,
+          CARD_NIGHTLINE_CHAT,
+          CARD_3018,
+          CARD_3919,
+        ],
       },
       {
         title: "Consulter un professionnel de la santé mentale",
-        cards: [CARD_SPE, CARD_DOCTOR],
+        cards: [CARD_SPE, CARD_SSE, CARD_BAPU, CARD_DOCTOR],
       },
     ];
   }
@@ -103,12 +112,12 @@ export const getResults = (postcode: string, whatINeed: string, format: string):
     recommandations = [
       ...([FORMAT_WRITE, FORMAT_ALL].includes(format) ? [CARD_NIGHTLINE_CHAT] : []),
       ...([FORMAT_TALK, FORMAT_ALL].includes(format)
-        ? [CARD_3040, CARD_NIGHTLINE_CALL, CARD_3018, CARD_3919]
+        ? [CARD_3040, CARD_SSE, CARD_NIGHTLINE_CALL, CARD_3018, CARD_3919]
         : []),
     ];
   } else {
     recommandations = [
-      ...([FORMAT_CAMPUS, FORMAT_ALL].includes(format) ? [] : []),
+      ...(!format || [FORMAT_CAMPUS, FORMAT_ALL].includes(format) ? [CARD_SSE, CARD_BAPU] : []),
       ...([FORMAT_CHOOSE, FORMAT_ALL].includes(format) ? [CARD_SPE] : []),
     ];
   }
@@ -128,8 +137,8 @@ export const getResults = (postcode: string, whatINeed: string, format: string):
     ];
   } else {
     otherRecommandations = [
-      ...([FORMAT_CAMPUS].includes(format) ? [CARD_SPE] : []),
-      ...([FORMAT_CHOOSE].includes(format) ? [] : []),
+      ...(!format || [FORMAT_CAMPUS].includes(format) ? [CARD_SPE] : []),
+      ...([FORMAT_CHOOSE].includes(format) ? [CARD_SSE, CARD_BAPU] : []),
     ];
   }
   results.push({
@@ -140,7 +149,7 @@ export const getResults = (postcode: string, whatINeed: string, format: string):
   // third section
   let rest;
   if (whatINeed === NEED_COUNSELING) {
-    rest = [CARD_SPE, CARD_DOCTOR];
+    rest = [CARD_SPE, CARD_SSE, CARD_BAPU, CARD_DOCTOR];
   } else {
     rest = [CARD_3040, CARD_NIGHTLINE_CALL, CARD_3919, CARD_3018, CARD_NIGHTLINE_CHAT, CARD_DOCTOR];
   }
