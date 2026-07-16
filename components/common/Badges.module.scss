@@ -1,25 +1,25 @@
 .day {
-  color: var(--text-color-purple);
-  background-color: var(--bg-color-purple);
+  color: var(--text-purple);
+  background-color: var(--bg-purple);
 }
 
 .night {
   color: #ffffff;
-  background-color: var(--bg-color-dark-purple);
+  background-color: var(--bg-dark-purple);
 }
 
 .pro {
-  color: var(--text-color-yellow);
-  background-color: var(--bg-color-yellow);
+  color: var(--text-yellow);
+  background-color: var(--bg-yellow);
 }
 
 .student {
-  color: var(--text-color-yellow);
-  background-color: var(--bg-color-light-yellow);
+  color: var(--text-yellow);
+  background-color: var(--bg-light-yellow);
 }
 
 .h24 {
-  color: var(--text-color-dark-purple);
+  color: var(--text-dark-purple);
   background-color: white;
-  border: solid 1px var(--text-color-dark-purple);
+  border: solid 1px var(--text-dark-purple);
 }
