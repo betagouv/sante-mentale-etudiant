@@ -9,7 +9,7 @@ type Props = {
   description: string;
   image?: StaticImageData | string;
   imageAlt?: string;
-  button: ReactNode;
+  button?: ReactNode;
   badges: ReactElement<BadgeProps>[];
   location?: string;
   openingHours?: string;
@@ -68,7 +68,7 @@ export default function CustomCard({
             </div>
           )}
         </div>
-        <div className={styles.button}>{button}</div>
+        {button && <div className={styles.button}>{button}</div>}
       </div>
     </div>
   );

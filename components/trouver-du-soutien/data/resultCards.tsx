@@ -90,3 +90,12 @@ export const CARD_NIGHTLINE_CHAT = (
     openingHours="De 21h00 à 2h30"
   />
 );
+
+export const CARD_DOCTOR = (
+  <CustomCard
+    title="Parles-en à ton médecin généraliste"
+    subtitle="Il peut t'écouter et t'orienter"
+    description="Aucun dispositif ne te convient ? Tu as du mal à trouver des disponibilités ? Ne reste pas seul"
+    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+  />
+);
