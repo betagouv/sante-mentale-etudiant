@@ -1,25 +1,25 @@
 .day {
-  color: #3d3d80;
-  background-color: #e4e4f5;
+  color: var(--text-color-purple);
+  background-color: var(--bg-color-purple);
 }
 
 .night {
   color: #ffffff;
-  background-color: #5151a1;
+  background-color: var(--bg-color-dark-purple);
 }
 
 .pro {
-  color: #5c3d00;
-  background-color: #fcc63a;
+  color: var(--text-color-yellow);
+  background-color: var(--bg-color-yellow);
 }
 
 .student {
-  color: #5c3d00;
-  background-color: #fde7b8;
+  color: var(--text-color-yellow);
+  background-color: var(--bg-color-light-yellow);
 }
 
 .h24 {
-  color: #5151a1;
+  color: var(--text-color-dark-purple);
   background-color: white;
-  border: solid 1px #5151a1;
+  border: solid 1px var(--text-color-dark-purple);
 }

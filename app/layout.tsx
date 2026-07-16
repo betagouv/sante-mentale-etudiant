@@ -6,7 +6,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Newsletter } from "@/components/layout/Newsletter";
 import { Suspense } from "react";
-import "@/styles/colors.css";
+import "@/styles/colors.scss";
 
 export const metadata: Metadata = {
   title: "Mon application",
