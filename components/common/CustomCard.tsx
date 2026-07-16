@@ -7,7 +7,7 @@ type Props = {
   title: string;
   subtitle: string;
   description: string;
-  image: StaticImageData | string;
+  image?: StaticImageData | string;
   imageAlt?: string;
   button: ReactNode;
   badges: ReactElement<BadgeProps>[];
@@ -32,7 +32,17 @@ export default function CustomCard({
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.subtitle}>{subtitle}</p>
         </div>
-        <Image src={image} alt={imageAlt} className={styles.logo} width={87} height={64} />
+        {image && (
+          <Image
+            src={image}
+            alt={imageAlt}
+            className={styles.logo}
+            width={87}
+            height={0}
+            style={{ width: "87px", height: "auto" }}
+            sizes="87px"
+          />
+        )}
       </div>
       <p className={styles.description}>{description}</p>
       <div className={styles.footer}>
