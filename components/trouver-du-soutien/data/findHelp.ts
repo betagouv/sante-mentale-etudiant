@@ -7,7 +7,14 @@ import {
   NEED_PSY,
 } from "@/components/orienteur/data/orienteurTree";
 import { ReactNode } from "react";
-import { CARD_3040 } from "./resultCards";
+import {
+  CARD_3018,
+  CARD_3040,
+  CARD_3919,
+  CARD_NIGHTLINE_CALL,
+  CARD_NIGHTLINE_CHAT,
+  CARD_SPE,
+} from "./resultCards";
 
 type OPTION = {
   label: string;
@@ -75,11 +82,11 @@ export const getResults = (postcode: string, whatINeed: string, format: string) 
   return [
     {
       title: "Pouvoir te confier et être orienté",
-      cards: [CARD_3040, CARD_3040, CARD_3040],
+      cards: [CARD_3040, CARD_NIGHTLINE_CALL, CARD_NIGHTLINE_CHAT, CARD_3018, CARD_3919],
     },
     {
       title: "Consulter un professionnel de la santé mentale",
-      cards: [CARD_3040, CARD_3040, CARD_3040],
+      cards: [CARD_SPE],
     },
   ] as Result[];
 };
