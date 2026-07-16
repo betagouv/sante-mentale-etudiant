@@ -1,9 +1,9 @@
-import { Input } from "@codegouvfr/react-dsfr/Input";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import { Select } from "@codegouvfr/react-dsfr/Select";
 import styles from "./FindHelp.module.scss";
 import { OPTIONS_I_NEED } from "./data/findHelp";
 import { Dispatch, SetStateAction } from "react";
+import InputAddress from "../common/InputAddress";
 type Props = {
   postcode: string;
   setPostcode: Dispatch<SetStateAction<string>>;
@@ -33,14 +33,7 @@ export default function FindHelpFilters({
   }
   return (
     <div className={styles.filters}>
-      <Input
-        iconId="fr-icon-map-pin-2-line"
-        label="Code postal"
-        nativeInputProps={{
-          value: postcode,
-          onChange: (e) => setPostcode(e.target.value),
-        }}
-      ></Input>
+      <InputAddress postcode={postcode} setPostcode={setPostcode} />
       <Select
         label="Ce que je cherche"
         nativeSelectProps={{
