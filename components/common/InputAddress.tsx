@@ -2,15 +2,23 @@ import { AddressResult, findAddresses } from "@/services/address";
 import Input from "@codegouvfr/react-dsfr/Input";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import styles from "./InputAddress.module.scss";
+import RequiredField from "./RequiredField";
 
 const DEBOUCE_MS = 300;
 
 type Props = {
   postcode: string;
   setPostcode: Dispatch<SetStateAction<string>>;
+  label?: string;
+  required?: boolean;
 };
 
-export default function InputAddress({ postcode, setPostcode }: Props) {
+export default function InputAddress({
+  postcode,
+  setPostcode,
+  label = "Ville, code postal",
+  required = false,
+}: Props) {
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -62,7 +70,12 @@ export default function InputAddress({ postcode, setPostcode }: Props) {
     <div className={styles.wrapper} ref={wrapperRef}>
       <Input
         iconId="fr-icon-map-pin-2-line"
-        label="Ville, code postal"
+        label={
+          <>
+            {label}
+            {required && <RequiredField />}
+          </>
+        }
         nativeInputProps={{
           onChange: (e) => onInternalChange(e.target.value),
           value: inputValue,
