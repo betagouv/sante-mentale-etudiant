@@ -16,9 +16,10 @@ import {
   CARD_NIGHTLINE_CALL,
   CARD_NIGHTLINE_CHAT,
   CARD_SPE,
-  CARD_SSE,
+  get_CARD_SSE,
 } from "./resultCards";
 import { Coordinate } from "@/services/address";
+import { fetchClosestSSE } from "@/app/actions";
 
 type OPTION = {
   label: string;
@@ -80,18 +81,22 @@ export const OPTIONS_I_NEED: MAIN_OPTIONS = {
   },
 };
 
-type Result = {
+export type Result = {
   title: string;
   cards: ReactNode[];
 };
 
-export const getResults = (
+export const getResults = async (
   addressLabel: string,
   whatINeed: string,
   format: string,
   coordinates?: Coordinate
-): Result[] => {
-  console.log("coordinates", coordinates);
+): Promise<Result[]> => {
+  let CARD_SSE = null;
+  if (coordinates) {
+    const closestSSE = await fetchClosestSSE(coordinates);
+    CARD_SSE = closestSSE ? get_CARD_SSE(closestSSE, addressLabel) : null;
+  }
   if (!whatINeed || whatINeed === I_NEED_DEFAULT) {
     return [
       {

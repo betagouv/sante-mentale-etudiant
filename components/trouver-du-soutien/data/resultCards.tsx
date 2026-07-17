@@ -13,6 +13,7 @@ import {
   BADGE_PROFESSIONELLES,
   BADGE_PROFESSIONELS,
 } from "@/components/common/Badges";
+import { SSE } from "@/lib/sse";
 
 const REMOTE_TEXT = "À distance";
 
@@ -100,14 +101,14 @@ export const CARD_DOCTOR = (
   />
 );
 
-export const CARD_SSE = (
+export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
   <CustomCard
-    title="Contacte le SSE de Nice"
+    title={`Contacte le SSE de ${sse.city}`}
     subtitle="Service de santé de l'université la plus proche"
     description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
     button={<Button priority="secondary">Infos et contacts</Button>}
     badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
-    location="Près de Nice"
+    location={`Près de ${addressLabel}`}
   />
 );
 
