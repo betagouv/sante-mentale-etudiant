@@ -18,6 +18,7 @@ import {
   CARD_SPE,
   CARD_SSE,
 } from "./resultCards";
+import { Coordinate } from "@/services/address";
 
 type OPTION = {
   label: string;
@@ -84,7 +85,13 @@ type Result = {
   cards: ReactNode[];
 };
 
-export const getResults = (postcode: string, whatINeed: string, format: string): Result[] => {
+export const getResults = (
+  addressLabel: string,
+  whatINeed: string,
+  format: string,
+  coordinates?: Coordinate
+): Result[] => {
+  console.log("coordinates", coordinates);
   if (!whatINeed || whatINeed === I_NEED_DEFAULT) {
     return [
       {

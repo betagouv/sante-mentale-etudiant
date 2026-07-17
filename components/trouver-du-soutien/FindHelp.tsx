@@ -4,30 +4,44 @@ import { useState } from "react";
 import styles from "./FindHelp.module.scss";
 import FindHelpFilters from "./FindHelpFilters";
 import FindHelpResults from "./FindHelpResults";
+import { Coordinate } from "@/services/address";
 
 type Props = {
-  defaultPostcode: string;
+  defaultAddressLabel: string;
   defaultWhatINeed: string;
   defaultFormat: string;
+  defaultCoordinates?: Coordinate;
 };
-export default function FindHelp({ defaultPostcode, defaultWhatINeed, defaultFormat }: Props) {
-  const [postcode, setPostcode] = useState(defaultPostcode);
+export default function FindHelp({
+  defaultAddressLabel,
+  defaultWhatINeed,
+  defaultFormat,
+  defaultCoordinates,
+}: Props) {
+  const [addressLabel, setAddressLabel] = useState(defaultAddressLabel);
   const [whatINeed, setWhatINeed] = useState(defaultWhatINeed);
   const [format, setFormat] = useState(defaultFormat);
+  const [coordinates, setCoordinates] = useState(defaultCoordinates);
 
   return (
     <div className={styles.container}>
       <Title>Trouve du soutien en fonction de ta situation</Title>
       <Subtitle>Gratuit et sans avance de frais. Tu parles toujours à un humain.</Subtitle>
       <FindHelpFilters
-        postcode={postcode}
-        setPostcode={setPostcode}
+        addressLabel={addressLabel}
+        setAddressLabel={setAddressLabel}
         whatINeed={whatINeed}
         setWhatINeed={setWhatINeed}
         format={format}
         setFormat={setFormat}
+        setCoordinates={setCoordinates}
       />
-      <FindHelpResults postcode={postcode} whatINeed={whatINeed} format={format} />
+      <FindHelpResults
+        addressLabel={addressLabel}
+        coordinates={coordinates}
+        whatINeed={whatINeed}
+        format={format}
+      />
     </div>
   );
 }

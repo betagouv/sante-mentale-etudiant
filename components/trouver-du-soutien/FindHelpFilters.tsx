@@ -1,24 +1,27 @@
-import { Input } from "@codegouvfr/react-dsfr/Input";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import { Select } from "@codegouvfr/react-dsfr/Select";
 import styles from "./FindHelp.module.scss";
 import { OPTIONS_I_NEED } from "./data/findHelp";
 import { Dispatch, SetStateAction } from "react";
+import InputAddress from "../common/InputAddress";
+import { Coordinate } from "@/services/address";
 type Props = {
-  postcode: string;
-  setPostcode: Dispatch<SetStateAction<string>>;
+  addressLabel: string;
+  setAddressLabel: Dispatch<SetStateAction<string>>;
   whatINeed: string;
   setWhatINeed: Dispatch<SetStateAction<string>>;
   format: string;
   setFormat: Dispatch<SetStateAction<string>>;
+  setCoordinates: Dispatch<SetStateAction<Coordinate | undefined>>;
 };
 export default function FindHelpFilters({
-  postcode,
-  setPostcode,
+  addressLabel,
+  setAddressLabel,
   whatINeed,
   setWhatINeed,
   format,
   setFormat,
+  setCoordinates,
 }: Props) {
   const formatOptions = whatINeed ? OPTIONS_I_NEED[whatINeed].formatOptions : [];
 
@@ -33,14 +36,11 @@ export default function FindHelpFilters({
   }
   return (
     <div className={styles.filters}>
-      <Input
-        iconId="fr-icon-map-pin-2-line"
-        label="Code postal"
-        nativeInputProps={{
-          value: postcode,
-          onChange: (e) => setPostcode(e.target.value),
-        }}
-      ></Input>
+      <InputAddress
+        addressLabel={addressLabel}
+        setAddresslabel={setAddressLabel}
+        setCoordinates={setCoordinates}
+      />
       <Select
         label="Ce que je cherche"
         nativeSelectProps={{

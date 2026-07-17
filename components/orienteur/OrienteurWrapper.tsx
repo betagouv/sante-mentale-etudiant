@@ -8,7 +8,7 @@ import { ReactNode } from "react";
 type Props = {
   node: OrienteurNode;
   backButton?: ReactNode;
-  onAnswer: (id: string, option: { next: string; value: string }) => void;
+  onAnswer: (option: { next: string; patchAnswers: Record<string, string> }) => void;
   answers: Record<string, string>;
 };
 

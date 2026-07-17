@@ -97,7 +97,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
     title: "Qu'est-ce qui t'aiderait le mieux en ce moment ?",
     skip: {
       label: "Je ne sais pas trop",
-      value: "doesnt-know",
+      value: "",
       next: "location",
     },
     options: [

@@ -1,12 +1,14 @@
 import styles from "./findHelpResults.module.scss";
 import { getResults } from "./data/findHelp";
+import { Coordinate } from "@/services/address";
 type Props = {
-  postcode: string;
+  addressLabel: string;
+  coordinates?: Coordinate;
   whatINeed: string;
   format: string;
 };
-export default function FindHelpResults({ postcode, whatINeed, format }: Props) {
-  const results = getResults(postcode, whatINeed, format);
+export default function FindHelpResults({ addressLabel, coordinates, whatINeed, format }: Props) {
+  const results = getResults(addressLabel, whatINeed, format, coordinates);
 
   return results
     .filter((result) => result.cards.length > 0)

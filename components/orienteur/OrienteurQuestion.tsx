@@ -5,10 +5,11 @@ import styles from "./Orienteur.module.scss";
 import type { OrienteurQuestionNode } from "./data/orienteurTree";
 import { ButtonsGroup } from "@codegouvfr/react-dsfr/ButtonsGroup";
 import { ButtonProps } from "@codegouvfr/react-dsfr/Button";
+import RequiredField from "../common/RequiredField";
 
 type Props = {
   node: OrienteurQuestionNode;
-  onAnswer: (id: string, option: { next: string; value: string }) => void;
+  onAnswer: (option: { next: string; patchAnswers: Record<string, string> }) => void;
   defaultAnswer: string;
 };
 
@@ -24,7 +25,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
           {
             children: skip.label,
             priority: "secondary" as const,
-            onClick: () => onAnswer(node.id, { next: skip.next, value: skip.value }),
+            onClick: () => onAnswer({ next: skip.next, patchAnswers: { [node.id]: skip.value } }),
           },
         ]
       : []),
@@ -32,14 +33,16 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
       children: "Continuer",
       iconId: "fr-icon-arrow-right-line",
       disabled: !selected,
-      onClick: () => selected && onAnswer(node.id, selected),
+      onClick: () =>
+        selected && onAnswer({ next: selected.next, patchAnswers: { [node.id]: selected.value } }),
     },
   ];
 
   return (
     <>
       <p className={styles.hint}>
-        Les champs marqués du symbole <span className={styles.error}>*</span> sont obligatoires.
+        Les champs marqués du symbole
+        <RequiredField /> sont obligatoires.
       </p>
       {node.showMedicalDisclaimer && (
         <p className={styles.hint}>
@@ -50,7 +53,8 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
       <h1>{node.title}</h1>
 
       <p>
-        {node.legend} <span className={styles.error}>*</span>
+        {node.legend}
+        <RequiredField />
       </p>
 
       <RadioButtons
