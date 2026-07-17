@@ -15,7 +15,7 @@ import {
   CARD_DOCTOR,
   CARD_NIGHTLINE_CALL,
   CARD_NIGHTLINE_CHAT,
-  CARD_SPE,
+  get_CARD_SPE,
   get_CARD_SSE,
 } from "./resultCards";
 import { Coordinate } from "@/services/address";
@@ -97,6 +97,7 @@ export const getResults = async (
     const closestSSE = await fetchClosestSSE(coordinates);
     CARD_SSE = closestSSE ? get_CARD_SSE(closestSSE, addressLabel) : null;
   }
+  const CARD_SPE = get_CARD_SPE(addressLabel, coordinates);
   if (!whatINeed || whatINeed === I_NEED_DEFAULT) {
     return [
       {

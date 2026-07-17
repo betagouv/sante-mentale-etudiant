@@ -14,6 +14,7 @@ import {
   BADGE_PROFESSIONELS,
 } from "@/components/common/Badges";
 import { SSE } from "@/lib/sse";
+import { Coordinate } from "@/services/address";
 
 const REMOTE_TEXT = "À distance";
 
@@ -30,17 +31,44 @@ export const CARD_3040 = (
   />
 );
 
-export const CARD_SPE = (
-  <CustomCard
-    title="Consulte un psychologue libéral"
-    subtitle="Consultations gratuites avec le psy de ton choix"
-    description="12 séances gratuites avec un psychologue de ton choix parmi plus de 1500 partout en France, en présentiel ou à distance"
-    image={logo_spe}
-    button={<Button priority="secondary">Trouver un psychologue</Button>}
-    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
-    location="Près de Nice"
-  />
-);
+export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => {
+  const params = new URLSearchParams();
+
+  if (addressLabel) {
+    params.set("address", addressLabel);
+  }
+  if (coordinates) {
+    params.set("lat", coordinates.latitude.toString());
+    params.set("lon", coordinates.longitude.toString());
+  }
+
+  const queryString = params.toString();
+  const url = queryString
+    ? `${process.env.NEXT_PUBLIC_SPE_URL}trouver-un-psychologue?${queryString}`
+    : `${process.env.NEXT_PUBLIC_SPE_URL}trouver-un-psychologue`;
+
+  return (
+    <CustomCard
+      title="Consulte un psychologue libéral"
+      subtitle="Consultations gratuites avec le psy de ton choix"
+      description="12 séances gratuites avec un psychologue de ton choix parmi plus de 1500 partout en France, en présentiel ou à distance"
+      image={logo_spe}
+      button={
+        <Button
+          priority="secondary"
+          linkProps={{
+            href: url,
+            target: "_blank",
+          }}
+        >
+          Trouver un psychologue
+        </Button>
+      }
+      badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+      location={`Près de ${addressLabel ?? "chez toi"}`}
+    />
+  );
+};
 
 export const CARD_3018 = (
   <CustomCard
