@@ -4,6 +4,7 @@ import HelpSigns from "./HelpSigns";
 import styles from "./Help.module.scss";
 import HelpWords from "./HelpWords";
 import HelpYourself from "./HelpYourself";
+import NeedToTalkBanner from "../need-to-talk-banner/NeedToTalkBanner";
 
 export default function Help() {
   return (
@@ -19,6 +20,7 @@ export default function Help() {
       <HelpReact />
       <HelpWords />
       <HelpYourself />
+      <NeedToTalkBanner />
     </div>
   )
 }
