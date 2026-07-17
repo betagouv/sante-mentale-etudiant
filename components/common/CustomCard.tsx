@@ -13,6 +13,7 @@ type Props = {
   badges: ReactElement<BadgeProps>[];
   location?: string;
   openingHours?: string;
+  className?: string;
 };
 export default function CustomCard({
   title,
@@ -24,9 +25,10 @@ export default function CustomCard({
   badges,
   location = "",
   openingHours = "",
+  className,
 }: Props) {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${className ?? ""}`}>
       <div className={styles.header}>
         <div>
           <h3 className={styles.title}>{title}</h3>

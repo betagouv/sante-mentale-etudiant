@@ -31,3 +31,13 @@ export const BADGE_H24 = (
     24h/24
   </Badge>
 );
+export const BADGE_GRATUIT = (
+  <Badge key="gratuit" className={styles.pink}>
+    Gratuit
+  </Badge>
+);
+export const BADGE_CONFIDENTIEL = (
+  <Badge key="confidentiel" className={styles.pink}>
+    Confidentiel
+  </Badge>
+);
