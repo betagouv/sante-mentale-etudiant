@@ -1,0 +1,80 @@
+.section {
+  background-color: var(--bg-dark-purple);
+  padding: 2rem;;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.badge {
+  margin-bottom: 1rem;
+  color: var(--text-dark-pink);
+  background-color: var(--bg-light-pink);
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 70rem;
+}
+
+.card {
+  background-color: white;
+  padding: 2.5rem;
+  color: black;
+  text-align: left;
+  width: 24rem;
+  height: 32rem;
+}
+
+.cardIcon {
+  width: 3rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardSubtitle {
+  font-size: 1.125rem;
+  margin: 0 0 2rem;
+  font-weight: 700;
+}
+
+.cardList {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  list-style-type: none;
+  line-height: 1.75;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section {
+    padding: 4rem 7.5rem;
+  }
+}
