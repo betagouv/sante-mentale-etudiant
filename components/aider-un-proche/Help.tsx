@@ -2,6 +2,7 @@ import HelpCall from "./HelpCall";
 import HelpReact from "./HelpReact";
 import HelpSigns from "./HelpSigns";
 import styles from "./Help.module.scss";
+import HelpWords from "./HelpWords";
 
 export default function Help() {
   return (
@@ -15,6 +16,7 @@ export default function Help() {
       <HelpSigns />
       <HelpCall />
       <HelpReact />
+      <HelpWords />
     </div>
   )
 }
