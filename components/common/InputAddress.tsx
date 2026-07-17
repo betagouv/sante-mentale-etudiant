@@ -4,7 +4,7 @@ import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import styles from "./InputAddress.module.scss";
 import RequiredField from "./RequiredField";
 
-const DEBOUCE_MS = 300;
+const DEBOUNCE_MS = 300;
 
 type Props = {
   addressLabel: string;
@@ -58,7 +58,7 @@ export default function InputAddress({
       setResults(res);
       setLoading(false);
       setIsOpen(true);
-    }, DEBOUCE_MS);
+    }, DEBOUNCE_MS);
   };
 
   const onSelect = (result: AddressResult) => {
