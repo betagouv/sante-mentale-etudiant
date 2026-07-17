@@ -1,0 +1,49 @@
+[
+  {
+    "universityId": "0952259P",
+    "name": "SSE Les Chênes",
+    "universityName": "CY Cergy Paris Université",
+    "city": "Cergy-Pontoise",
+    "phone": "01.34.25.60.77",
+    "email": "sante@cyu.fr",
+    "latitude": 49.0390914839421,
+    "longitude": 2.07503444503032
+  },
+
+  {
+    "universityId": "0301687W",
+    "name": "SSE Nîmes",
+    "city": "Nîmes",
+    "phone": "04 66 36 46 46",
+    "email": "sse@unimes.fr",
+    "latitude": 43.842830942618,
+    "longitude": 4.35749823969776
+  },
+  {
+    "universityId": "0350936C",
+    "name": "Campus de Villejean - Rennes",
+    "city": "Rennes",
+    "phone": "02 23 23 70 85",
+    "email": "sse@univ-rennes.fr",
+    "latitude": 48.1190229405694,
+    "longitude": -1.70167896827475
+  },
+  {
+    "universityId": "0673021V",
+    "name": "Campus Esplanade",
+    "city": "Strasbourg",
+    "phone": "03 68 85 50 24",
+    "email": "sante.etudiants@unistra.fr",
+    "latitude": 48.5768977434086,
+    "longitude": 7.76433356935538
+  },
+  {
+    "universityId": "0311384L",
+    "name": "SSE Toulouse",
+    "city": "Toulouse",
+    "phone": "05 61 55 73 67",
+    "email": "",
+    "latitude": 43.5679963443643,
+    "longitude": 1.4650726401996
+  }
+]
