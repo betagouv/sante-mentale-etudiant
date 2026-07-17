@@ -41,3 +41,7 @@ export const BADGE_CONFIDENTIEL = (
     Confidentiel
   </Badge>
 );
+
+export const LightBrownBadge = ({ children }: { children: string }) => (
+  <Badge className={styles.lightBrown}>{children}</Badge>
+);

@@ -1,11 +1,13 @@
 import Badge from "@codegouvfr/react-dsfr/Badge";
 import styles from "./HelpSigns.module.scss";
 import { signCategories } from "./data/signs";
+import { LightBrownBadge } from "@/components/common/Badges";
+
 
 export default function HelpSigns() {
   return (
     <section className={styles.section} aria-labelledby="signs-title">
-      <Badge noIcon className={styles.badge}>Étape 1</Badge>
+      <LightBrownBadge>Étape 1</LightBrownBadge>
       <div className={styles.titlesWrapper}>
         <h2 id="signs-title" className={styles.title}>
           Repérer les premiers signes
