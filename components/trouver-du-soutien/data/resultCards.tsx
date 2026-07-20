@@ -15,6 +15,7 @@ import {
 } from "@/components/common/Badges";
 import { SSE } from "@/lib/sse";
 import { Coordinate } from "@/services/address";
+import { sseModal } from "../sseModal";
 
 const REMOTE_TEXT = "À distance";
 
@@ -130,14 +131,30 @@ export const CARD_DOCTOR = (
 );
 
 export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
-  <CustomCard
-    title={`Contacte le SSE de ${sse.city}`}
-    subtitle="Service de santé de l'université la plus proche"
-    description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
-    button={<Button priority="secondary">Infos et contacts</Button>}
-    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
-    location={`Près de ${addressLabel}`}
-  />
+  <>
+    <CustomCard
+      title={`Contacte le SSE de ${sse.city}`}
+      subtitle="Service de santé de l'université la plus proche"
+      description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
+      button={
+        <Button priority="secondary" nativeButtonProps={sseModal.buttonProps}>
+          Infos et contacts
+        </Button>
+      }
+      badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+      location={`Près de ${addressLabel}`}
+    />
+    <sseModal.Component title={`SSE de ${sse.city}`}>
+      <p>{sse.universityName}</p>
+      {/* <p>{sse.address}</p> */}
+      <p>
+        <a href={`tel:${sse.phone}`}>{sse.phone}</a>
+      </p>
+      <p>
+        <a href={`mailto:${sse.email}`}>{sse.email}</a>
+      </p>
+    </sseModal.Component>
+  </>
 );
 
 export const CARD_BAPU = (
