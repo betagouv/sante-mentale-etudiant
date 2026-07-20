@@ -15,7 +15,7 @@ import {
 } from "@/components/common/Badges";
 import { SSE } from "@/lib/sse";
 import { Coordinate } from "@/services/address";
-import { sseModal } from "../sseModal";
+import { sseModal } from "@/components/modals";
 
 const REMOTE_TEXT = "À distance";
 
