@@ -13,6 +13,9 @@ import {
   BADGE_PROFESSIONELLES,
   BADGE_PROFESSIONELS,
 } from "@/components/common/Badges";
+import { SSE } from "@/lib/sse";
+import { Coordinate } from "@/services/address";
+import { sseModal } from "../sseModal";
 
 const REMOTE_TEXT = "À distance";
 
@@ -29,17 +32,44 @@ export const CARD_3040 = (
   />
 );
 
-export const CARD_SPE = (
-  <CustomCard
-    title="Consulte un psychologue libéral"
-    subtitle="Consultations gratuites avec le psy de ton choix"
-    description="12 séances gratuites avec un psychologue de ton choix parmi plus de 1500 partout en France, en présentiel ou à distance"
-    image={logo_spe}
-    button={<Button priority="secondary">Trouver un psychologue</Button>}
-    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
-    location="Près de Nice"
-  />
-);
+export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => {
+  const params = new URLSearchParams();
+
+  if (addressLabel) {
+    params.set("address", addressLabel);
+  }
+  if (coordinates) {
+    params.set("lat", coordinates.latitude.toString());
+    params.set("lon", coordinates.longitude.toString());
+  }
+
+  const queryString = params.toString();
+  const url = queryString
+    ? `${process.env.NEXT_PUBLIC_SPE_URL}trouver-un-psychologue?${queryString}`
+    : `${process.env.NEXT_PUBLIC_SPE_URL}trouver-un-psychologue`;
+
+  return (
+    <CustomCard
+      title="Consulte un psychologue libéral"
+      subtitle="Consultations gratuites avec le psy de ton choix"
+      description="12 séances gratuites avec un psychologue de ton choix parmi plus de 1500 partout en France, en présentiel ou à distance"
+      image={logo_spe}
+      button={
+        <Button
+          priority="secondary"
+          linkProps={{
+            href: url,
+            target: "_blank",
+          }}
+        >
+          Trouver un psychologue
+        </Button>
+      }
+      badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+      location={`Près de ${addressLabel ?? "chez toi"}`}
+    />
+  );
+};
 
 export const CARD_3018 = (
   <CustomCard
@@ -100,15 +130,31 @@ export const CARD_DOCTOR = (
   />
 );
 
-export const CARD_SSE = (
-  <CustomCard
-    title="Contacte le SSE de Nice"
-    subtitle="Service de santé de l'université la plus proche"
-    description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
-    button={<Button priority="secondary">Infos et contacts</Button>}
-    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
-    location="Près de Nice"
-  />
+export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
+  <>
+    <CustomCard
+      title={`Contacte le SSE de ${sse.city}`}
+      subtitle="Service de santé de l'université la plus proche"
+      description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
+      button={
+        <Button priority="secondary" nativeButtonProps={sseModal.buttonProps}>
+          Infos et contacts
+        </Button>
+      }
+      badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+      location={`Près de ${addressLabel}`}
+    />
+    <sseModal.Component title={`SSE de ${sse.city}`}>
+      <p>{sse.universityName}</p>
+      {/* <p>{sse.address}</p> */}
+      <p>
+        <a href={`tel:${sse.phone}`}>{sse.phone}</a>
+      </p>
+      <p>
+        <a href={`mailto:${sse.email}`}>{sse.email}</a>
+      </p>
+    </sseModal.Component>
+  </>
 );
 
 export const CARD_BAPU = (

@@ -1,6 +1,8 @@
+"use client";
 import styles from "./findHelpResults.module.scss";
-import { getResults } from "./data/findHelp";
+import { getResults, Result } from "./data/findHelp";
 import { Coordinate } from "@/services/address";
+import { useEffect, useState } from "react";
 type Props = {
   addressLabel: string;
   coordinates?: Coordinate;
@@ -8,7 +10,19 @@ type Props = {
   format: string;
 };
 export default function FindHelpResults({ addressLabel, coordinates, whatINeed, format }: Props) {
-  const results = getResults(addressLabel, whatINeed, format, coordinates);
+  const [results, setResults] = useState<Result[]>([]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    getResults(addressLabel, whatINeed, format, coordinates).then((r) => {
+      if (!cancelled) setResults(r);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [addressLabel, whatINeed, format, coordinates]);
 
   return results
     .filter((result) => result.cards.length > 0)

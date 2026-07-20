@@ -1,3 +1,4 @@
+"use client";
 import { Subtitle } from "../typography/Subtitle";
 import { Title } from "../typography/Title";
 import { useState } from "react";
