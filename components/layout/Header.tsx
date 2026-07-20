@@ -89,6 +89,7 @@ export function Header() {
             iconId: "fr-icon-alarm-warning-line",
             buttonProps: {
               ...needHelpModal.buttonProps,
+              className: "fr-primary",
             },
             text: "Besoin d'aide urgente",
           },
