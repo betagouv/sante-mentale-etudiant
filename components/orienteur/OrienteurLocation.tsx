@@ -24,13 +24,13 @@ export default function OrienteurLocation({ onAnswer }: Props) {
         <RequiredField /> sont obligatoires.
       </p>
       <h1>Dans quelle zone recherches-tu de l'aide ?</h1>
-      <p>Indique ta ville pour trouver les dispositifs les plus proches.</p>
+      <p>Indique ta ville ou ton code postal pour trouver les dispositifs les plus proches.</p>
       <div className={styles.address}>
         <InputAddress
           addressLabel={addressLabel}
           setAddresslabel={setAddresslabel}
           setCoordinates={setCoordinates}
-          label="Ta ville ou code postal"
+          label="Ta ville ou ton code postal"
           required
         />
       </div>
