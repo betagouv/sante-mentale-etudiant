@@ -1,7 +1,7 @@
 import { Tile } from "@codegouvfr/react-dsfr/Tile";
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import { Title } from "../typography/Title";
-import { PinkBadge } from "../common/Badges";
+import { TILE_3114 } from "../common/Tiles";
 
 export default function OrienteurUrgent() {
   return (
@@ -19,17 +19,7 @@ export default function OrienteurUrgent() {
       </p>
 
       <div className="flex-container">
-        <Tile
-          imageSvg
-          imageUrl="/images/pictograms/leisure/community.svg"
-          orientation="horizontal"
-          start={
-            <PinkBadge key="suicidal-thoughts">en cas de pensées suicidaires</PinkBadge>
-          }
-          title="Appelle le 3114"
-          titleAs="h3"
-          desc="Temps d'attente possible. Reste en ligne, un professionnel te répond dès que possible."
-        />
+        {TILE_3114}
         <Tile
           imageSvg
           imageUrl="/images/pictograms/health/hospital.svg"
