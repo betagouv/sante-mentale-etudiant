@@ -39,3 +39,8 @@ export const LightPinkBadge = ({ children }: { children: string }) => (
 export const PinkBadge = ({ children }: { children: string }) => (
   <Badge className={styles.pink}>{children}</Badge>
 );
+export const BADGE_DEAFS = (
+  <Badge key="deafs" className={styles.mustard}>
+    sourds et malentendants
+  </Badge>
+);
