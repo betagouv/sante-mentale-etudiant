@@ -31,3 +31,8 @@ export const BADGE_H24 = (
     24h/24
   </Badge>
 );
+export const BADGE_SUICIDAL_THOUGHTS = (
+  <Badge key="suicidal-thoughts" className={styles.suicidalThoughts}>
+    en cas de pensées suicidaires
+  </Badge>
+);
