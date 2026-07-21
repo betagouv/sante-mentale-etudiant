@@ -1,9 +1,15 @@
-.banner {
-  background-image: url("/images/illustrations/need-to-talk-bg.svg");
+.section {
   background-color: var(--bg-dark-purple);
-  background-position: center;
+  // TODO replace by right illustrations when known
+  // background-image: url("/images/illustrations/need-to-talk-bg.svg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+}
+
+.container {
   height: 26rem;
   text-align: center;
+  padding: 0;
 }
 
 .content {

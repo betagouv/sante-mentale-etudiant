@@ -1,4 +1,4 @@
-import Badge from "@codegouvfr/react-dsfr/Badge";
+import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./HelpSigns.module.scss";
 import { signCategories } from "./data/signs";
 import { LightBrownBadge } from "@/components/common/Badges";
@@ -6,7 +6,7 @@ import { LightBrownBadge } from "@/components/common/Badges";
 
 export default function HelpSigns() {
   return (
-    <section className={styles.section} aria-labelledby="signs-title">
+    <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="signs-title">
       <LightBrownBadge>Étape 1</LightBrownBadge>
       <div className={styles.titlesWrapper}>
         <h2 id="signs-title" className={styles.title}>
@@ -32,6 +32,6 @@ export default function HelpSigns() {
           </div>
         ))}
       </div>
-    </section>
+    </FullBleedSection>
   );
 }

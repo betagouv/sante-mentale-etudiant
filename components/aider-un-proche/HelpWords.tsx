@@ -1,5 +1,6 @@
 import Badge from "@codegouvfr/react-dsfr/Badge";
 import styles from "./HelpWords.module.scss";
+import FullBleedSection from "../wrapper/FullBleedSection";
 
 const TO_SAY = [
   "« J'ai remarqué que tu sembles différent en ce moment. Tu veux qu'on en parle ? »",
@@ -15,7 +16,7 @@ const TO_AVOID = [
 
 export default function HelpWords() {
   return (
-    <div className={styles.container}>
+    <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="words-title">
       <div className={styles.textWrapper}>
         <h2 className={styles.title}>
           Ce qu'on peut dire <span className={styles.regular}>(et ce qu'il vaut mieux éviter)</span>
@@ -39,6 +40,6 @@ export default function HelpWords() {
           </div>
         </div>
       </div>
-    </div>
+    </FullBleedSection>
   );
 }

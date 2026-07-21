@@ -5,6 +5,7 @@ import styles from "./FindHelp.module.scss";
 import FindHelpFilters from "./FindHelpFilters";
 import FindHelpResults from "./FindHelpResults";
 import { Coordinate } from "@/services/address";
+import FullBleedSection from "../wrapper/FullBleedSection";
 
 type Props = {
   defaultAddressLabel: string;
@@ -24,7 +25,7 @@ export default function FindHelp({
   const [coordinates, setCoordinates] = useState(defaultCoordinates);
 
   return (
-    <div className={styles.container}>
+    <FullBleedSection className={styles.section} aria-labelledby="find-help">
       <Title>Trouve du soutien en fonction de ta situation</Title>
       <Subtitle>Gratuit et sans avance de frais. Tu parles toujours à un humain.</Subtitle>
       <FindHelpFilters
@@ -42,6 +43,6 @@ export default function FindHelp({
         whatINeed={whatINeed}
         format={format}
       />
-    </div>
+    </FullBleedSection>
   );
 }

@@ -2,10 +2,11 @@ import Image from "next/image";
 import styles from "./HelpYourself.module.scss";
 import careImage from "@/public/images/pictures/psy.png";
 import { LightBrownBadge } from "../common/Badges";
+import FullBleedSection from "../wrapper/FullBleedSection";
 
 export default function HelpYourself() {
   return (
-    <div className={styles.container}>
+    <FullBleedSection className={styles.section} containerClassName={styles.container} >
       <div className={styles.textColumn}>
         <LightBrownBadge>étape 3</LightBrownBadge>
         <h2 className={styles.title}>Prends soin de toi</h2>
@@ -19,8 +20,8 @@ export default function HelpYourself() {
         </p>
       </div>
       <div className={styles.imageColumn}>
-        <Image src={careImage} alt="" fill className={styles.image} sizes="(max-width: 768px) 100vw, 50vw" />
+        <Image src={careImage} alt="" fill className={styles.image} />
       </div>
-    </div>
+    </FullBleedSection>
   );
 }

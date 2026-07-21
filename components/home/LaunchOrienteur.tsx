@@ -1,9 +1,10 @@
-import styles from "./LaunchOrienteur.module.css";
+import FullBleedSection from "../wrapper/FullBleedSection";
+import styles from "./LaunchOrienteur.module.scss";
 import LaunchOrienteurCard from "./LaunchOrienteurCard";
 
 export default function LaunchOrienteur() {
   return (
-    <section className={styles.hero}>
+    <FullBleedSection className={styles.hero} containerClassName={styles.heroContainer} aria-labelledby="cta-hero">
       <div className={styles.firstGrid}>
         <h1 className={styles.title}>
           La santé mentale des étudiants,{" "}
@@ -20,6 +21,6 @@ export default function LaunchOrienteur() {
       <div className={styles.secondGrid}>
         <LaunchOrienteurCard />
       </div>
-    </section>
+    </FullBleedSection>
   );
 }

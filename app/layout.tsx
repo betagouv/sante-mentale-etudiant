@@ -1,7 +1,6 @@
 import { getHtmlAttributes, DsfrHead } from "../dsfr-bootstrap/server-only-index";
 import { DsfrProvider, StartDsfrOnHydration } from "../dsfr-bootstrap";
 import type { Metadata } from "next";
-import "./globals.scss";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Newsletter } from "@/components/layout/Newsletter";
@@ -24,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <DsfrProvider lang={lang}>
           <StartDsfrOnHydration />
           <Header />
-          <div className="fr-container" style={{ paddingLeft: 0, paddingRight: 0 }}>
+          <div style={{ paddingLeft: 0, paddingRight: 0 }}>
             <Suspense>{children}</Suspense>
           </div>
           <Newsletter />

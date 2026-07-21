@@ -1,5 +1,12 @@
+.section {
+  background-color: var(--bg-light-grey);
+}
+
 .container {
   display: flex;
+  flex-direction: row;
+  gap: 7.5rem;
+  padding: 0;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -10,7 +17,7 @@
 .textColumn {
   display: flex;
   flex: 1;
-  padding: 5rem 7.5rem;
+  padding: 5rem 0;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;

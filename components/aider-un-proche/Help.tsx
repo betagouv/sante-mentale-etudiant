@@ -8,7 +8,7 @@ import NeedToTalkBanner from "../need-to-talk-banner/NeedToTalkBanner";
 
 export default function Help() {
   return (
-    <div className={styles.container}>
+    <div>
       <div className={styles.topBanner}>
         <h1 className={styles.title}>Tu t'inquiètes <br /> pour un proche ?</h1>
         <p className={styles.subtitle}>

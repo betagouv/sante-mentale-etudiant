@@ -1,11 +1,11 @@
 .section {
   background-color: var(--bg-dark-purple);
-  padding: 2rem;;
-  color: white;
-  text-align: center;
-  width: 100%;
 }
 
+.container {
+  color: white;
+  text-align: center;
+}
 
 .title {
   color: white;
@@ -23,6 +23,7 @@
   display: grid;
   gap: 1.5rem;
   max-width: 70rem;
+  margin: 0 auto;
 }
 
 .card {

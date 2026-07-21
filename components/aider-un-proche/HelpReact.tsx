@@ -1,11 +1,11 @@
-import Badge from "@codegouvfr/react-dsfr/Badge";
 import styles from "./HelpReact.module.scss";
 import { lienSteps } from "./data/lienSteps";
 import { LightBrownBadge } from "../common/Badges";
+import FullBleedSection from "../wrapper/FullBleedSection";
 
 export default function HelpReact() {
   return (
-    <section className={styles.section} aria-labelledby="react-title">
+    <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="react-title">
       <div className={styles.header}>
         <LightBrownBadge>Étape 2</LightBrownBadge>
         <h2 id="react-title">Comment réagir ?</h2>
@@ -33,6 +33,6 @@ export default function HelpReact() {
           ))}
         </ul>
       </div>
-    </section>
+    </FullBleedSection>
   );
 }

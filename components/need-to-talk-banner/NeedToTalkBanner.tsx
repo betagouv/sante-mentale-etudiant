@@ -1,9 +1,10 @@
 import Button from "@codegouvfr/react-dsfr/Button";
 import styles from "./NeedToTalkBanner.module.scss";
+import FullBleedSection from "../wrapper/FullBleedSection";
 
 export default function NeedToTalkBanner() {
   return (
-    <div className={styles.banner}>
+    <FullBleedSection className={styles.section} containerClassName={styles.container}>
       <div className={styles.content}>
         <h2 className={styles.title}>Besoin de parler à quelqu'un ?</h2>
         <p className={styles.subtitle}>
@@ -18,6 +19,6 @@ export default function NeedToTalkBanner() {
         </Button>
         <p className={styles.hint}>Moins de <b>30 secondes</b> pour trouver des solutions 👌</p>
       </div>
-    </div>
+    </FullBleedSection>
   );
 }
