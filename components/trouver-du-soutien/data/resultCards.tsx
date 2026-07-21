@@ -42,6 +42,7 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
     params.set("lat", coordinates.latitude.toString());
     params.set("lon", coordinates.longitude.toString());
   }
+  params.set("page", "1");
 
   const queryString = params.toString();
   const url = queryString
