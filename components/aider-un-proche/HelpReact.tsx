@@ -9,7 +9,7 @@ export default function HelpReact() {
       <div className={styles.header}>
         <LightPinkBadge>Étape 2</LightPinkBadge>
         <h2 id="react-title">Comment réagir ?</h2>
-        <p>
+        <p className={styles.subtitle}>
           <b>Utilise la méthode L.I.E.N.</b> en 4 étapes, inspirée des approches de prévention par les
           pairs. <br /> Tu n'as pas besoin d'être expert, ta présence compte énormément.
         </p>

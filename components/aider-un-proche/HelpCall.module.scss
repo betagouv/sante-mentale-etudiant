@@ -6,9 +6,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3.5rem 0;
+  padding: 3.5rem 7.5rem;
+  max-width: 100%;
+  margin: 0;
   gap: 2rem;
-  margin: 0 auto;
 }
 
 .text {
@@ -28,5 +29,7 @@
 
   .text {
     max-width: 100%;
+    margin-bottom: 0;
+    font-size: x-large;
   }
 }

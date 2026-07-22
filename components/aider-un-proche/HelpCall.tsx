@@ -17,7 +17,14 @@ export default function HelpCall() {
         description="Un professionnel de santé formé à la prévention du suicide sera à ton écoute. Ça peut prendre quelques minutes. Reste en ligne, tu fais bien d'appeler. 
           En danger immédiat ? Appelle le 15 (SAMU) sans attendre."
         image={logo_3114}
-        button={<Button priority="secondary">Consulter le site du 3114</Button>}
+        button={<Button
+          priority="secondary"
+          linkProps={{
+            href: "https://3114.fr/",
+            target: "_blank",
+            rel: "noopener noreferrer",
+          }}>Consulter le site du 3114
+        </Button>}
         badges={[
           <PinkBadge key="free">Gratuit</PinkBadge>,
           <PinkBadge key="confidential">Confidentiel</PinkBadge>

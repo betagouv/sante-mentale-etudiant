@@ -5,17 +5,24 @@
 .container {
   display: flex;
   flex-direction: row;
-  gap: 7.5rem;
   padding: 0;
+  max-width: 100%;
 }
 
 .textColumn {
   display: flex;
   flex: 1;
-  padding: 5rem 0;
+  padding: 4rem 4.5rem 4rem 7.5rem;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  max-width: 44.5rem;
+
+  p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
 }
 
 .title {
@@ -27,11 +34,6 @@
 .intro {
   font-weight: 700;
   margin: 0;
-}
-
-.textColumn p {
-  margin: 0;
-  line-height: 1.6;
 }
 
 .imageColumn {
@@ -52,6 +54,7 @@
 
   .textColumn {
     padding: 1rem;
+    max-width: 100%;
 
     .title {
       font-size: x-large;

@@ -4,31 +4,32 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-
-  padding: 3rem;
   gap: 1rem;
+  padding: 4.5rem 18.75rem 5rem;
 
   .title {
     font-size: 3.5rem;
-    max-width: 52.5rem;
     line-height: 4rem;
+    margin: 0;
   }
 
   .subtitle {
-    max-width: 52.5rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
+}
 
-  @media (max-width: 425px) {
+@media (max-width: 728px) {
+  .topBanner {
+    padding: 2rem;
+
     .title {
       font-size: x-large;
-      max-width: 100%;
       line-height: normal
     }
-
+    
     .subtitle {
       font-size: large;
     }
-  };
+  }
 }
