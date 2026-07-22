@@ -15,7 +15,10 @@ import {
 } from "@/components/common/Badges";
 import { SSE } from "@/lib/sse";
 import { Coordinate } from "@/services/address";
-import { sseModal } from "@/components/modals";
+import { sseModal, bapuModal } from "@/components/modals";
+import { BAPU } from "@/lib/bapu";
+import { ModalBapu } from "@/components/modals/ModalBapu";
+import { ModalSse } from "@/components/modals/ModalSse";
 
 const REMOTE_TEXT = "À distance";
 
@@ -134,8 +137,8 @@ export const CARD_DOCTOR = (
 export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
   <>
     <CustomCard
-      title={`Contacte le SSE de ${sse.city}`}
-      subtitle="Service de santé de l'université la plus proche"
+      title={`Contacte le ${sse.name}`}
+      subtitle={`Service de santé de l'${sse.universityName}`}
       description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
       button={
         <Button priority="secondary" nativeButtonProps={sseModal.buttonProps}>
@@ -145,26 +148,42 @@ export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
       badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
       location={`Près de ${addressLabel}`}
     />
-    <sseModal.Component title={`SSE de ${sse.city}`}>
-      <p>{sse.universityName}</p>
-      {/* <p>{sse.address}</p> */}
-      <p>
-        <a href={`tel:${sse.phone}`}>{sse.phone}</a>
-      </p>
-      <p>
-        <a href={`mailto:${sse.email}`}>{sse.email}</a>
-      </p>
-    </sseModal.Component>
+    <ModalSse sse={sse} />
   </>
 );
 
-export const CARD_BAPU = (
+export const CARD_DEFAULT_SSE = (
   <CustomCard
-    title="Contacte le BAPU Nice"
+    title="Rends-toi au SSE le plus proche"
+    subtitle="Service de santé de l'université la plus proche"
+    description="Viens te confier à un professionnel de santé qui t'écoute et t'oriente vers la prise en charge adaptée à ta situation."
+    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+  />
+);
+
+export const get_CARD_BAPU = (bapu: BAPU, addressLabel: string) => (
+  <>
+    <CustomCard
+      title={`Contacte le ${bapu.name}`}
+      subtitle="Bureau d'aide psychologique universitaire"
+      description="Consultations gratuites avec des psychologues et psychiatres, sans limite de séances, prises en charge à 100% par la Sécu."
+      button={
+        <Button priority="secondary" nativeButtonProps={bapuModal.buttonProps}>
+          Infos et contacts
+        </Button>
+      }
+      badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
+      location={`Près de ${addressLabel}`}
+    />
+    <ModalBapu bapu={bapu} />
+  </>
+);
+
+export const CARD_DEFAULT_BAPU = (
+  <CustomCard
+    title="Rends-toi au BAPU le plus proche"
     subtitle="Bureau d'aide psychologique universitaire"
     description="Consultations gratuites avec des psychologues et psychiatres, sans limite de séances, prises en charge à 100% par la Sécu."
-    button={<Button priority="secondary">Infos et contacts</Button>}
     badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
-    location="Près de Nice"
   />
 );
