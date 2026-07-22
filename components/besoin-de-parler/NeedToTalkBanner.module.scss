@@ -49,3 +49,18 @@
   line-height: 1.5rem;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .container {
+    height: fit-content;
+    padding: 0 2rem;
+  }
+
+  .title {
+    font-size: x-large;
+  }
+
+  .subtitle {
+    font-size: large;
+  }
+}

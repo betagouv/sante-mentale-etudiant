@@ -5,6 +5,7 @@
 .container {
   color: white;
   text-align: center;
+  padding: 1rem;
 }
 
 .title {
@@ -22,17 +23,13 @@
 .cards {
   display: grid;
   gap: 1.5rem;
-  max-width: 70rem;
   margin: 0 auto;
 }
 
 .card {
   background-color: white;
-  padding: 2.5rem;
   color: black;
   text-align: left;
-  width: 24rem;
-  height: 32rem;
 }
 
 .cardIcon {
@@ -65,12 +62,50 @@
   }
 }
 
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  @media (max-width: 425px) {
+    .title {
+      font-size: x-large;
+      max-width: 100%;
+      line-height: normal
+    }
 
-  .section {
-    padding: 4rem 7.5rem;
+    .subtitle {
+      font-size: large;
+    }
+
+    .cardTitle {
+      font-size: x-large;
+    }
+
+    .cardSubtitle {
+      font-size: large;
+    }
+
+    .cardList {
+      font-size: medium
+    }
+
+    .card {
+      padding: 1rem;
+    }
+  };
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 4rem 0;
+    }
+    
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .card {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+@media (min-width: 420px) {
+  .card {
+    padding: 3rem;
   }
 }

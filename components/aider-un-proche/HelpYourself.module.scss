@@ -7,11 +7,6 @@
   flex-direction: row;
   gap: 7.5rem;
   padding: 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    min-height: auto;
-  }
 }
 
 .textColumn {
@@ -21,10 +16,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-
-  @media (max-width: 768px) {
-    padding: 2rem;
-  }
 }
 
 .title {
@@ -46,12 +37,28 @@
 .imageColumn {
   flex: 1;
   position: relative;
-
-  @media (max-width: 768px) {
-    height: 320px;
-  }
 }
 
 .image {
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-height: auto;
+    gap: 0;
+  }
+
+  .textColumn {
+    padding: 1rem;
+
+    .title {
+      font-size: x-large;
+    }
+  }
+
+  .imageColumn {
+    height: 320px;
+  }
 }

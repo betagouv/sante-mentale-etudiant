@@ -3,45 +3,34 @@
 }
 
 .container {
-  padding: 3.5rem 0;
+  padding: 2rem;
   margin: 0 auto;
-
 }
 
 .header {
   text-align: center;
   margin: 0 auto 2.5rem;
 
-  h2 {
-    font-size: 3rem;
-    margin: 1rem 0;
-    line-height: 3.5rem;
-  }
+    h2 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      line-height: normal;
+    }
 
-  p {
-    font-size: 1.25rem;
-    line-height: 2rem;
-  }
+    p {
+      font-size: 1rem;
+      line-height: normal;
+    }
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: flex-start;
-  }
 }
 
 .photo {
   display: none;
-
-  @media (min-width: 768px) {
-    display: block;
-    width: 40%;
-  }
 }
 
 .steps {
@@ -50,10 +39,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
-  @media (min-width: 768px) {
-    width: 60%;
-  }
+  list-style: none;
 }
 
 .stepNumber {
@@ -70,4 +56,40 @@
 .stepTitle {
   margin: 0.5rem 0;
   font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 3.5rem 0;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .header {
+    text-align: center;
+    margin: 0 auto 2.5rem;
+
+      h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+      }
+  }
+
+  .photo {
+    display: block;
+    width: 40%;
+  }
+
+  .steps {
+    width: 60%;
+    list-style: initial;
+  }
 }

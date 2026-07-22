@@ -1,5 +1,6 @@
 .card {
   width: 420px;
+  max-width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -60,6 +61,7 @@
   .card {
     width: 588px;
     padding: 2.25rem 3rem 2rem 3rem;
+    max-width: 100%;
   }
 
   .footer {

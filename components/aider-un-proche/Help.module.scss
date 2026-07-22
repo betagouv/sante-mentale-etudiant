@@ -19,4 +19,16 @@
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  @media (max-width: 425px) {
+    .title {
+      font-size: x-large;
+      max-width: 100%;
+      line-height: normal
+    }
+
+    .subtitle {
+      font-size: large;
+    }
+  };
 }

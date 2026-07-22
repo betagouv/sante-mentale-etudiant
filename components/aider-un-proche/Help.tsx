@@ -4,7 +4,7 @@ import HelpSigns from "./HelpSigns";
 import styles from "./Help.module.scss";
 import HelpWords from "./HelpWords";
 import HelpYourself from "./HelpYourself";
-import NeedToTalkBanner from "../need-to-talk-banner/NeedToTalkBanner";
+import NeedToTalkBanner from "../besoin-de-parler/NeedToTalkBanner";
 
 export default function Help() {
   return (
