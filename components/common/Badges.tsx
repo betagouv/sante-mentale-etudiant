@@ -45,3 +45,8 @@ export const BADGE_CONFIDENTIEL = (
 export const LightBrownBadge = ({ children }: { children: string }) => (
   <Badge className={styles.lightBrown}>{children}</Badge>
 );
+export const BADGE_SUICIDAL_THOUGHTS = (
+  <Badge key="suicidal-thoughts" className={styles.suicidalThoughts}>
+    en cas de pensées suicidaires
+  </Badge>
+);
