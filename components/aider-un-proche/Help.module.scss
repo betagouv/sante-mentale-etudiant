@@ -1,5 +1,8 @@
-.topBanner {
+.section {
   background-color: var(--bg-light-grey);
+}
+
+.container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -20,7 +23,7 @@
 }
 
 @media (max-width: 728px) {
-  .topBanner {
+  .container {
     padding: 2rem;
 
     .title {
