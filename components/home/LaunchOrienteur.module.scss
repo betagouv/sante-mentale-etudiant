@@ -1,8 +1,11 @@
 .hero {
   background-color: var(--purple);
+  padding-top: 1rem;
+}
+
+.heroContainer {
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
 }
 
 .firstGrid {
@@ -45,11 +48,12 @@
 
 @media (min-width: 768px) {
   .hero {
-    position: relative;
-    display: flex;
+    padding-top: 0;
+  }
+
+  .heroContainer {
     flex-direction: row;
     height: 580px;
-    padding-top: 0;
   }
 
   .firstGrid {

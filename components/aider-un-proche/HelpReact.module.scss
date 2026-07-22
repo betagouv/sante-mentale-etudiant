@@ -1,0 +1,97 @@
+.section {
+  background-color: white;
+}
+
+.container {
+  padding: 1rem;
+  margin: 0;
+  max-width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto 3.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+      line-height: normal;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      line-height: normal;
+    }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.photo {
+  display: none;
+}
+
+.steps {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.stepNumber {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: grey;
+  margin-bottom: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.stepTitle {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding: 4rem 7.5rem 3.5rem;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .header {
+    text-align: center;
+
+      h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+        line-height: 2rem;
+      }
+  }
+
+  .photo {
+    display: block;
+  }
+
+  .steps {
+    list-style: initial;
+  }
+
+  .stepTitle {
+    font-size: 1.5rem;
+  }
+}

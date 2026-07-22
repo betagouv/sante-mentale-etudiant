@@ -1,0 +1,66 @@
+.section {
+  background-color: var(--bg-dark-purple);
+  // TODO replace by right illustrations when known
+  // background-image: url("/images/illustrations/need-to-talk-bg.svg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+}
+
+.container {
+  height: 26rem;
+  text-align: center;
+  padding: 0;
+}
+
+.content {
+  max-width: 52rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 6rem 0;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.button {
+  background-color: #fff;
+  color: var(--text-title-blue-france);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 1rem 2.2rem;
+}
+
+.hint {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: fit-content;
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: x-large;
+  }
+
+  .subtitle {
+    font-size: large;
+  }
+}

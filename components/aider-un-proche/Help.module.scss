@@ -1,0 +1,35 @@
+.topBanner {
+  background-color: var(--bg-light-grey);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 4.5rem 18.75rem 5rem;
+
+  .title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 728px) {
+  .topBanner {
+    padding: 2rem;
+
+    .title {
+      font-size: x-large;
+      line-height: normal
+    }
+    
+    .subtitle {
+      font-size: large;
+    }
+  }
+}

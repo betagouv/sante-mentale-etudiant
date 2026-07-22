@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <DsfrProvider lang={lang}>
           <StartDsfrOnHydration />
           <Header />
-          <div className="fr-container" style={{ paddingLeft: 0, paddingRight: 0 }}>
+          <div style={{ paddingLeft: 0, paddingRight: 0 }}>
             <Suspense>{children}</Suspense>
           </div>
           <Newsletter />
