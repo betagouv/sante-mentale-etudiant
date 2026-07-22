@@ -44,3 +44,8 @@ export const BADGE_DEAFS = (
     sourds et malentendants
   </Badge>
 );
+export const BADGE_SUICIDAL_THOUGHTS = (
+  <Badge key="suicidal-thoughts" className={styles.pink}>
+    en cas de pensées suicidaires
+  </Badge>
+);
