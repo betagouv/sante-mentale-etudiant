@@ -1,14 +1,14 @@
 import Image from "next/image";
 import styles from "./HelpYourself.module.scss";
 import careImage from "@/public/images/pictures/psy.png";
-import { LightBrownBadge } from "../common/Badges";
+import { LightPinkBadge } from "../common/Badges";
 import FullBleedSection from "../wrapper/FullBleedSection";
 
 export default function HelpYourself() {
   return (
     <FullBleedSection className={styles.section} containerClassName={styles.container} >
       <div className={styles.textColumn}>
-        <LightBrownBadge>étape 3</LightBrownBadge>
+        <LightPinkBadge>étape 3</LightPinkBadge>
         <h2 className={styles.title}>Prends soin de toi</h2>
         <p className={styles.intro}>
           Accompagner un proche en difficulté peut être pesant. Tes émotions sont légitimes. Tu as aussi le droit d'en parler à quelqu'un, et de poser des limites.

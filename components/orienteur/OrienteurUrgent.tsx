@@ -1,7 +1,7 @@
 import { Tile } from "@codegouvfr/react-dsfr/Tile";
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import { Title } from "../typography/Title";
-import { BADGE_SUICIDAL_THOUGHTS } from "../common/Badges";
+import { PinkBadge } from "../common/Badges";
 
 export default function OrienteurUrgent() {
   return (
@@ -23,7 +23,9 @@ export default function OrienteurUrgent() {
           imageSvg
           imageUrl="/images/pictograms/leisure/community.svg"
           orientation="horizontal"
-          start={BADGE_SUICIDAL_THOUGHTS}
+          start={
+            <PinkBadge key="suicidal-thoughts">en cas de pensées suicidaires</PinkBadge>
+          }
           title="Appelle le 3114"
           titleAs="h3"
           desc="Temps d'attente possible. Reste en ligne, un professionnel te répond dès que possible."

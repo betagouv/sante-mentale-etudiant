@@ -1,13 +1,13 @@
 import styles from "./HelpReact.module.scss";
 import { lienSteps } from "./data/lienSteps";
-import { LightBrownBadge } from "../common/Badges";
+import { LightPinkBadge } from "../common/Badges";
 import FullBleedSection from "../wrapper/FullBleedSection";
 
 export default function HelpReact() {
   return (
     <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="react-title">
       <div className={styles.header}>
-        <LightBrownBadge>Étape 2</LightBrownBadge>
+        <LightPinkBadge>Étape 2</LightPinkBadge>
         <h2 id="react-title">Comment réagir ?</h2>
         <p>
           <b>Utilise la méthode L.I.E.N.</b> en 4 étapes, inspirée des approches de prévention par les
@@ -25,7 +25,7 @@ export default function HelpReact() {
         <ul className={styles.steps}>
           {lienSteps.map((step) => (
             <li key={step.step} className={styles.step}>
-              <LightBrownBadge>{step.letter}</LightBrownBadge>
+              <LightPinkBadge>{step.letter}</LightPinkBadge>
               <span className={styles.stepNumber}>Étape {step.step}</span>
               <h3 className={styles.stepTitle}>{step.title}</h3>
               <p>{step.description}</p>

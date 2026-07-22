@@ -2,8 +2,8 @@ import Button from "@codegouvfr/react-dsfr/Button";
 import styles from "./HelpCall.module.scss";
 import CustomCard from "../common/CustomCard";
 import logo_3114 from "@/public/images/logos/3114.png";
-import { BADGE_CONFIDENTIEL, BADGE_GRATUIT } from "@/components/common/Badges";
 import FullBleedSection from "../wrapper/FullBleedSection";
+import { PinkBadge } from "../common/Badges";
 
 export default function HelpCall() {
   return (
@@ -18,7 +18,10 @@ export default function HelpCall() {
           En danger immédiat ? Appelle le 15 (SAMU) sans attendre."
         image={logo_3114}
         button={<Button priority="secondary">Consulter le site du 3114</Button>}
-        badges={[BADGE_GRATUIT, BADGE_CONFIDENTIEL]}
+        badges={[
+          <PinkBadge key="free">Gratuit</PinkBadge>,
+          <PinkBadge key="confidential">Confidentiel</PinkBadge>
+        ]}
         location="A distance"
         openingHours="7j/7 • 24h/24"
         className={styles.card}

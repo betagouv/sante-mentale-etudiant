@@ -31,22 +31,11 @@ export const BADGE_H24 = (
     24h/24
   </Badge>
 );
-export const BADGE_GRATUIT = (
-  <Badge key="gratuit" className={styles.pink}>
-    Gratuit
-  </Badge>
-);
-export const BADGE_CONFIDENTIEL = (
-  <Badge key="confidentiel" className={styles.pink}>
-    Confidentiel
-  </Badge>
+
+export const LightPinkBadge = ({ children }: { children: string }) => (
+  <Badge className={styles.lightPink}>{children}</Badge>
 );
 
-export const LightBrownBadge = ({ children }: { children: string }) => (
-  <Badge className={styles.lightBrown}>{children}</Badge>
-);
-export const BADGE_SUICIDAL_THOUGHTS = (
-  <Badge key="suicidal-thoughts" className={styles.suicidalThoughts}>
-    en cas de pensées suicidaires
-  </Badge>
+export const PinkBadge = ({ children }: { children: string }) => (
+  <Badge className={styles.pink}>{children}</Badge>
 );

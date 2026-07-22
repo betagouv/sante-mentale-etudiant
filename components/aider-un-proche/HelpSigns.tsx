@@ -1,13 +1,13 @@
 import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./HelpSigns.module.scss";
 import { signCategories } from "./data/signs";
-import { LightBrownBadge } from "@/components/common/Badges";
+import { LightPinkBadge } from "@/components/common/Badges";
 
 
 export default function HelpSigns() {
   return (
     <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="signs-title">
-      <LightBrownBadge>Étape 1</LightBrownBadge>
+      <LightPinkBadge>Étape 1</LightPinkBadge>
       <div className={styles.titlesWrapper}>
         <h2 id="signs-title" className={styles.title}>
           Repérer les premiers signes
