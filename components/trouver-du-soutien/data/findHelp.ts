@@ -11,15 +11,17 @@ import {
   CARD_3018,
   CARD_3040,
   CARD_3919,
-  CARD_BAPU,
+  CARD_DEFAULT_BAPU,
+  CARD_DEFAULT_SSE,
   CARD_DOCTOR,
   CARD_NIGHTLINE_CALL,
   CARD_NIGHTLINE_CHAT,
+  get_CARD_BAPU,
   get_CARD_SPE,
   get_CARD_SSE,
 } from "./resultCards";
 import { Coordinate } from "@/services/address";
-import { fetchClosestSSE } from "@/app/actions";
+import { fetchClosestBAPU, fetchClosestSSE } from "@/app/actions";
 
 type OPTION = {
   label: string;
@@ -93,23 +95,23 @@ export const getResults = async (
   coordinates?: Coordinate
 ): Promise<Result[]> => {
   let CARD_SSE = null;
+  let CARD_BAPU = null;
   if (coordinates) {
+    const closestBAPU = await fetchClosestBAPU(coordinates);
+    CARD_BAPU = closestBAPU ? get_CARD_BAPU(closestBAPU, addressLabel) : null;
+
     const closestSSE = await fetchClosestSSE(coordinates);
     CARD_SSE = closestSSE ? get_CARD_SSE(closestSSE, addressLabel) : null;
+  } else {
+    CARD_SSE = CARD_DEFAULT_SSE;
+    CARD_BAPU = CARD_DEFAULT_BAPU;
   }
   const CARD_SPE = get_CARD_SPE(addressLabel, coordinates);
   if (!whatINeed || whatINeed === I_NEED_DEFAULT) {
     return [
       {
         title: "Pouvoir te confier et être orienté",
-        cards: [
-          CARD_3040,
-          CARD_SSE,
-          CARD_NIGHTLINE_CALL,
-          CARD_NIGHTLINE_CHAT,
-          CARD_3018,
-          CARD_3919,
-        ],
+        cards: [CARD_3040, CARD_NIGHTLINE_CALL, CARD_NIGHTLINE_CHAT, CARD_3018, CARD_3919],
       },
       {
         title: "Consulter un professionnel de la santé mentale",

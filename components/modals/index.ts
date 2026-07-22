@@ -9,3 +9,8 @@ export const sseModal = createModal({
   id: "sse-modal",
   isOpenedByDefault: false,
 });
+
+export const bapuModal = createModal({
+  id: "bapu-modal",
+  isOpenedByDefault: false,
+});
