@@ -1,6 +1,7 @@
 import { getHtmlAttributes, DsfrHead } from "../dsfr-bootstrap/server-only-index";
 import { DsfrProvider, StartDsfrOnHydration } from "../dsfr-bootstrap";
 import type { Metadata } from "next";
+import "./globals.scss";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Newsletter } from "@/components/layout/Newsletter";

@@ -2,6 +2,7 @@ import styles from "./HelpReact.module.scss";
 import { lienSteps } from "./data/lienSteps";
 import { LightPinkBadge } from "../common/Badges";
 import FullBleedSection from "../wrapper/FullBleedSection";
+import Image from "next/image";
 
 export default function HelpReact() {
   return (
@@ -16,10 +17,12 @@ export default function HelpReact() {
       </div>
 
       <div className={styles.content}>
-        <img
-          src="/images/pictures/woman-phone.png"
+        <Image
+          src="/images/pictures/woman-phone.jpg"
           alt=""
           className={styles.photo}
+          width={408}
+          height={600}
         />
 
         <ul className={styles.steps}>

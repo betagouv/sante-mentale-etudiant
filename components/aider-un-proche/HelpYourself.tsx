@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./HelpYourself.module.scss";
-import careImage from "@/public/images/pictures/psy.png";
+import careImage from "@/public/images/pictures/psy.jpg";
 import { LightPinkBadge } from "../common/Badges";
 import FullBleedSection from "../wrapper/FullBleedSection";
 
