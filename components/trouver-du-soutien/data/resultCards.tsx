@@ -15,7 +15,7 @@ import {
 } from "@/components/common/Badges";
 import { SSE } from "@/lib/sse";
 import { Coordinate } from "@/services/address";
-import { sseModal } from "../sseModal";
+import { sseModal } from "@/components/modals";
 
 const REMOTE_TEXT = "À distance";
 
@@ -42,6 +42,7 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
     params.set("lat", coordinates.latitude.toString());
     params.set("lon", coordinates.longitude.toString());
   }
+  params.set("page", "1");
 
   const queryString = params.toString();
   const url = queryString

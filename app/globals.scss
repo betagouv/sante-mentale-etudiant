@@ -7,3 +7,11 @@
   flex-direction: column;
   row-gap: 2rem;
 }
+
+.fr-header__tools-links .fr-btn.fr-primary {
+  background-color: var(--background-action-high-blue-france);
+  --idle: transparent;
+  --hover: var(--background-action-high-blue-france-hover);
+  --active: var(--background-action-high-blue-france-active);
+  color: var(--text-inverted-blue-france);
+}
