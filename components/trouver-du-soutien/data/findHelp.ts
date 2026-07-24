@@ -121,6 +121,10 @@ export const getResults = async (
   }
   const results = [] as Result[];
 
+  if (!format) {
+    format = FORMAT_ALL;
+  }
+
   //first section
   let recommandations = [] as ReactNode[];
   if (whatINeed === NEED_COUNSELING) {
