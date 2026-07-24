@@ -1,4 +1,3 @@
-import { Button } from "@codegouvfr/react-dsfr/Button";
 import { Select } from "@codegouvfr/react-dsfr/Select";
 import styles from "./FindHelp.module.scss";
 import { OPTIONS_I_NEED } from "./data/findHelp";
@@ -75,7 +74,6 @@ export default function FindHelpFilters({
           ))}
         </Select>
       )}
-      <Button priority="secondary">Plus de filtres</Button>
     </div>
   );
 }
