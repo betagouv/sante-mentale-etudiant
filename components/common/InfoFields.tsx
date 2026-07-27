@@ -13,20 +13,20 @@ export const AddressField = (address: string, lat: number, lon: number, zoom = 1
   );
 };
 
-export const EmailField = (email: string) => (
+export const EmailField = (email: string, idx?: number) => (
   <div>
     <span className="fr-icon--sm fr-icon-mail-line" />
-    <span className={styles.title}>E-mail :</span>
+    <span className={styles.title}>E-mail {idx && idx >= 1 ? (idx + 1).toString() : ""}:</span>
     <a href={`mailto:${email}`} className={styles.link}>
       {email}
     </a>
   </div>
 );
 
-export const PhoneField = (phone: string) => (
+export const PhoneField = (phone: string, idx?: number) => (
   <div>
     <span className="fr-icon--sm fr-icon-phone-line" />
-    <span className={styles.title}>Téléphone :</span>
+    <span className={styles.title}>Téléphone {idx && idx >= 1 ? (idx + 1).toString() : ""}:</span>
     <a href={`tel:${phone}`} className={styles.link}>
       {phone}
     </a>
