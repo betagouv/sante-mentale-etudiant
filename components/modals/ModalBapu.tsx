@@ -1,3 +1,4 @@
+import React from "react";
 import { bapuModal } from ".";
 import { BAPU } from "@/lib/bapu";
 import {
@@ -10,7 +11,7 @@ import {
 } from "../common/InfoFields";
 import styles from "./Modals.module.scss";
 import { splitAndCleanString } from "@/utils/misc";
-import React from "react";
+import { Tag } from "@codegouvfr/react-dsfr/Tag";
 
 type Props = {
   bapu: BAPU;
@@ -18,6 +19,15 @@ type Props = {
 export const ModalBapu = ({ bapu }: Props) => (
   <bapuModal.Component title={bapu.name}>
     <p>Bureau d'aide psychologique universitaire de {bapu.city}</p>
+    {bapu.professionels && (
+      <div className={styles.tagList}>
+        {splitAndCleanString(bapu.professionels).map((pro) => (
+          <Tag className={styles.tag} key={`tag__${pro}`}>
+            {pro}
+          </Tag>
+        ))}
+      </div>
+    )}
     <div className={styles.list}>
       {bapu.openingHours && OpeningHoursField(bapu.openingHours)}
       {bapu.address && AddressField(bapu.address, bapu.latitude, bapu.longitude)}

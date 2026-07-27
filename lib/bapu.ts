@@ -14,6 +14,7 @@ export type BAPU = {
   phone: string;
   email: string;
   website: string;
+  professionels: string;
   latitude: number;
   longitude: number;
 };
