@@ -9,20 +9,28 @@ import {
   WebsiteField,
 } from "../common/InfoFields";
 import styles from "./Modals.module.scss";
+import { splitAndCleanString } from "@/utils/misc";
+import React from "react";
 
 type Props = {
   bapu: BAPU;
 };
 export const ModalBapu = ({ bapu }: Props) => (
   <bapuModal.Component title={bapu.name}>
-    <p>Bureau d'aide psychologique universitaire</p>
+    <p>Bureau d'aide psychologique universitaire de {bapu.city}</p>
     <div className={styles.list}>
-      {OpeningHoursField(bapu.openingHours)}
-      {AddressField(bapu.address)}
-      {EmailField(bapu.email)}
-      {PhoneField(bapu.phone)}
+      {bapu.openingHours && OpeningHoursField(bapu.openingHours)}
+      {bapu.address && AddressField(bapu.address, bapu.latitude, bapu.longitude)}
+      {bapu.email &&
+        splitAndCleanString(bapu.email).map((e, idx) => (
+          <React.Fragment key={`email__${idx}`}> {EmailField(e, idx)}</React.Fragment>
+        ))}
+      {bapu.phone &&
+        splitAndCleanString(bapu.phone).map((p, idx) => (
+          <React.Fragment key={`phone__${idx}`}> {PhoneField(p, idx)}</React.Fragment>
+        ))}
       {WebsiteField(bapu.website)}
-      {EligibilityField(bapu.eligibility)}
+      {bapu.eligibility && EligibilityField(bapu.eligibility)}
     </div>
   </bapuModal.Component>
 );
