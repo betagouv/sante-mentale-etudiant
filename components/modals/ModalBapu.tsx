@@ -19,9 +19,9 @@ type Props = {
 export const ModalBapu = ({ bapu }: Props) => (
   <bapuModal.Component title={bapu.name}>
     <p>Bureau d'aide psychologique universitaire de {bapu.city}</p>
-    {bapu.professionels && (
+    {bapu.professionals && (
       <div className={styles.tagList}>
-        {splitAndCleanString(bapu.professionels).map((pro) => (
+        {splitAndCleanString(bapu.professionals).map((pro) => (
           <Tag className={styles.tag} key={`tag__${pro}`}>
             {pro}
           </Tag>

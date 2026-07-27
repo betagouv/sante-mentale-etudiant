@@ -9,7 +9,7 @@
     "eligibility": "Tous les étudiants de 18 à 28 ans sont admis",
     "phone": "02.31.86.78.88 ",
     "email": "secretariat.bapu@acsea.asso.fr",
-    "professionels": "Psychiatre;Psychologues",
+    "professionals": "Psychiatre;Psychologues",
     "website": ""
   },
   {
@@ -22,7 +22,7 @@
     "eligibility": "Tous les étudiants sont admis de 20 à 27 ans. Conditions : avoir une carte étudiante, fournir une attestation de droit à la sécurité sociale en cours de validité",
     "phone": "03.81.81.19.67",
     "email": "cmpp.bapu@charlesbried.fr",
-    "professionels": "Psychiatres;Psychologues;Neuropsychologues",
+    "professionals": "Psychiatres;Psychologues;Neuropsychologues",
     "website": "https://www.charlesbried.fr/newpage"
   },
   {
@@ -35,7 +35,7 @@
     "eligibility": "Tous les étudiants ou jeunes en formation de 17 à 28 ans",
     "phone": "03.20.54.85.26",
     "email": "bapulille@gmail.com",
-    "professionels": "Psychiatres;Psychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://bapulille.com/"
   },
   {
@@ -48,7 +48,7 @@
     "eligibility": "Tous les étudiants de 18 à 32 ans sont admis",
     "phone": "04.93.87.72.78",
     "email": "contact@bapunice.org",
-    "professionels": "",
+    "professionals": "",
     "website": "tps://www.bapunice.org/ + instagram : https://www.instagram.com/bapunice/"
   },
   {
@@ -61,7 +61,7 @@
     "eligibility": "Tous les étudiants à partir de 17 ans sont admis",
     "phone": "04.91.50.01.13 ; 07.57.01.47.03",
     "email": "bapu-marseille@wanadoo.fr",
-    "professionels": "Psychiatres\nPsychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://bapuaixmarseille.fr/"
   },
   {
@@ -74,7 +74,7 @@
     "eligibility": "Tous les étudiants à partir de 17 ans sont admis",
     "phone": "04.91.50.01.13 ; 07.57.01.47.03",
     "email": "bapu-marseille@wanadoo.fr",
-    "professionels": "Psychiatres\nPsychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://bapuaixmarseille.fr/"
   },
   {
@@ -87,7 +87,7 @@
     "eligibility": "",
     "phone": "04.73.34.97.20",
     "email": "ssu@uca.fr",
-    "professionels": "",
+    "professionals": "",
     "website": "https://sante.uca.fr/soutienpsy"
   },
   {
@@ -100,7 +100,7 @@
     "eligibility": "Tous les étudiants sont admis",
     "phone": "01.43.77.22.22",
     "email": "cmpp.creteil@apsi.fr",
-    "professionels": "Psychiatres\nPsychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": ""
   },
   {
@@ -113,7 +113,7 @@
     "eligibility": "Tous les étudiants de 18 à 27 ans sont admis",
     "phone": "01.42.24.52.29",
     "email": "cmpp@centreclaudebernard.asso.fr",
-    "professionels": "Psychiatres;Psychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://cmpp-claudebernard.fr/"
   },
   {
@@ -126,7 +126,7 @@
     "eligibility": "Tous les étudiants de 18 à 27 ans sont admis",
     "phone": "01.43.37.16.16",
     "email": "cmpp@centreclaudebernard.asso.fr",
-    "professionels": "Psychiatres\nPsychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://cmpp-claudebernard.fr/"
   },
   {
@@ -139,7 +139,7 @@
     "eligibility": "Tous les étudiants sont admis, à partir de 18 ans et sans limite d'âge",
     "phone": "01.47.45.92.15",
     "email": "bapu@institut-claparede.fr",
-    "professionels": "Psychiatres\nPsychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://institut-claparede.fr/b-a-p-u/"
   },
   {
@@ -152,7 +152,7 @@
     "eligibility": "Tous les étudiants sont admis",
     "phone": "01 43 29 65 72 ",
     "email": "bapu.paris@croix-rouge.fr",
-    "professionels": "Psychiatres\nPsychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://bapuluxembourg.net/"
   },
   {
@@ -165,7 +165,7 @@
     "eligibility": "Tous les étudiants sont admis",
     "phone": "01.46.65.62.22",
     "email": "cmpp.cachan@apsi.fr",
-    "professionels": "Psychiatres\nPsychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://www.bapu94.fr/"
   },
   {
@@ -178,7 +178,7 @@
     "eligibility": "Tous les étudiants de 18 à 28 ans sont admis",
     "phone": "02.31.26.49.00",
     "email": "bapu@mialaret.asso.fr",
-    "professionels": "Psychiatres;Psychologues",
+    "professionals": "Psychiatres;Psychologues",
     "website": "https://mialaret.asso.fr/bapu-structures/"
   }
 ]
