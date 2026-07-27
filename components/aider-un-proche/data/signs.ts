@@ -11,11 +11,11 @@ export const signCategories: SignCategory[] = [
     title: "Ce qu'elle ou il dit",
     subtitle: "Des phrases qui reviennent",
     items: [
-      "« Je ne sers à rien »",
-      "« Tout le monde s'en fout de moi »",
-      "« Je suis épuisé en permanence »",
-      "« Je n'arrive plus à rien »",
-      "« Je ne sais plus pourquoi je continue »",
+      "«\u00A0Je ne sers à rien\u00A0»",
+      "«\u00A0Tout le monde s'en fout de moi\u00A0»",
+      "«\u00A0Je suis épuisé en permanence\u00A0»",
+      "«\u00A0Je n'arrive plus à rien\u00A0»",
+      "«\u00A0Je ne sais plus pourquoi je continue\u00A0»",
     ],
   },
   {
