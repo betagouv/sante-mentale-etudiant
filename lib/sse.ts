@@ -7,11 +7,12 @@ const filePath = path.join(process.cwd(), "data/sse.json");
 
 export type SSE = {
   universityId: string;
-  name: string;
-  universityName: string;
-  city: string;
+  displayName: string;
+  displayUniversityName: string;
+  address: string;
   phone: string;
-  email: string;
+  email?: string;
+  website?: string;
   latitude: number;
   longitude: number;
 };

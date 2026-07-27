@@ -137,8 +137,8 @@ export const CARD_DOCTOR = (
 export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
   <>
     <CustomCard
-      title={`Contacte le ${sse.name}`}
-      subtitle={`Service de santé de l'${sse.universityName}`}
+      title={`Contacte le ${sse.displayName}`}
+      subtitle={`Service de santé de ${sse.displayUniversityName}`}
       description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
       button={
         <Button priority="secondary" nativeButtonProps={sseModal.buttonProps}>
@@ -165,7 +165,7 @@ export const get_CARD_BAPU = (bapu: BAPU, addressLabel: string) => (
   <>
     <CustomCard
       title={`Contacte le ${bapu.name}`}
-      subtitle="Bureau d'aide psychologique universitaire"
+      subtitle={`Bureau d'aide psychologique universitaire de ${bapu.city}`}
       description="Consultations gratuites avec des psychologues et psychiatres, sans limite de séances, prises en charge à 100% par la Sécu."
       button={
         <Button priority="secondary" nativeButtonProps={bapuModal.buttonProps}>
