@@ -70,7 +70,7 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
         </Button>
       }
       badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
-      location={`Près de ${addressLabel ?? "chez toi"}`}
+      location={`Près de ${addressLabel || "chez toi"}`}
     />
   );
 };
