@@ -13,7 +13,7 @@ export default function NeedToTalkBanner() {
         </p>
         <Button
           className={styles.button}
-          linkProps={{ href: "/trouver-du-soutien" }}
+          linkProps={{ href: "/orienteur" }}
         >
           Trouver l'aide adaptée
         </Button>
