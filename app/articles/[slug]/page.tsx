@@ -4,6 +4,7 @@ import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import styles from "./Page.module.scss";
 import Image from "next/image";
 import ReadingTime from "@/components/articles/ReadingTime";
+import ArticleInfo from "@/components/articles/ArticleInfo";
 
 export async function generateStaticParams() {
   return getAllArticleSlugs().map((slug) => ({ slug }));
@@ -22,6 +23,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <article className={styles.container}>
         <h1>{article.title}</h1>
         <p className={styles.intro} dangerouslySetInnerHTML={{ __html: article.intro }} />
+        <ArticleInfo article={article} />
         <div className={styles.body}>
           <div className={styles.heroWrapper}>
             <Image
