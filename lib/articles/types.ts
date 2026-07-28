@@ -1,3 +1,5 @@
+import { Topic } from "../topics/types";
+
 export interface ArticleMeta {
   slug: string;
   title: string;
@@ -9,4 +11,5 @@ export interface ArticleMeta {
   heroImage: string;
   heroCredits: string;
   readingTime: number; // in minutes
+  topics: Topic[];
 }

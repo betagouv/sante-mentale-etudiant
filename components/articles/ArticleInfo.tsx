@@ -1,5 +1,6 @@
 "use client";
-import { Tag } from "@codegouvfr/react-dsfr/Tag";
+import { TagProps } from "@codegouvfr/react-dsfr/Tag";
+import { TagsGroup } from "@codegouvfr/react-dsfr/TagsGroup";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import { ArticleMeta } from "@/lib/articles/types";
 import styles from "./ArticleInfo.module.scss";
@@ -11,6 +12,14 @@ type Props = {
 export default function ArticleInfo({ article }: Props) {
   return (
     <div className={styles.wrapper}>
+      <TagsGroup
+        className={styles.tags}
+        tags={
+          article.topics.map((t) => ({
+            children: t.name,
+          })) as [TagProps, ...TagProps[]]
+        }
+      />
       <div className={styles.published}>
         Publié le {displayDate(article.publishedAt)}
         {article.updatedAt ? ` • Mis à jour ${displayDate(article.updatedAt)}` : ""}

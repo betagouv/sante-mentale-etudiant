@@ -1,3 +1,4 @@
+import { TOPIC_ANXIETY } from "../topics/data";
 import type { ArticleMeta } from "./types";
 
 export const articles: ArticleMeta[] = [
@@ -13,5 +14,6 @@ export const articles: ArticleMeta[] = [
     heroCredits:
       "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
     readingTime: 4,
+    topics: [TOPIC_ANXIETY],
   },
 ];
