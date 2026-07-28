@@ -86,3 +86,23 @@
   right: 1rem;
   z-index: 1;
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding-top: 1rem;
+  }
+
+  .header {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .pageContainer {
+    padding: 0;
+  }
+
+  .body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

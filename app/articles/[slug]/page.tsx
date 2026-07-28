@@ -19,23 +19,26 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <FullBleedSection className={styles.section}>
+    <FullBleedSection className={styles.section} containerClassName={styles.pageContainer}>
       <article className={styles.container}>
-        <h1>{article.title}</h1>
-        <p className={styles.intro} dangerouslySetInnerHTML={{ __html: article.intro }} />
-        <ArticleInfo article={article} />
+        <div className={styles.header}>
+          <h1>{article.title}</h1>
+          <p className={styles.intro} dangerouslySetInnerHTML={{ __html: article.intro }} />
+          <ArticleInfo article={article} />
+        </div>
+
+        <div className={styles.heroWrapper}>
+          <Image
+            src={article.heroImage}
+            alt={article.title}
+            fill
+            sizes="100vw"
+            style={{ objectFit: "cover" }}
+            priority
+          />
+          <ReadingTime className={styles.heroBadge} time={4} />
+        </div>
         <div className={styles.body}>
-          <div className={styles.heroWrapper}>
-            <Image
-              src={article.heroImage}
-              alt={article.title}
-              fill
-              sizes="100vw"
-              style={{ objectFit: "cover" }}
-              priority
-            />
-            <ReadingTime className={styles.heroBadge} time={4} />
-          </div>
           <div
             className={styles.heroCredits}
             dangerouslySetInnerHTML={{ __html: article.heroCredits }}
