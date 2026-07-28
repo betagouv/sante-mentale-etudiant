@@ -16,4 +16,18 @@ export const articles: ArticleMeta[] = [
     readingTime: 4,
     topics: [TOPIC_ANXIETY],
   },
+  {
+    slug: "le-blues-du-dimanche-soir",
+    title: "Le blues du dimanche soir : pourquoi cette angoisse revient chaque semaine ?",
+    intro:
+      "Le week-end touche à sa fin, la nuit tombe, et une boule au ventre commence à apparaître.<br>Tu regardes l’heure, tu penses au réveil du lundi matin, aux cours, aux mails, aux transports, aux responsabilités qui reviennent… et l’angoisse monte progressivement.",
+    author: "Vickie Ache",
+    publishedAt: "2026-07-20",
+    markdownFile: "le-blues-du-dimanche-soir.md",
+    heroImage: "/articles/le-blues-du-dimanche-soir/hero.jpg",
+    heroCredits:
+      "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
+    readingTime: 5,
+    topics: [TOPIC_ANXIETY],
+  },
 ];
