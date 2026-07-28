@@ -1,10 +1,6 @@
 import { notFound } from "next/navigation";
 import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
-import FullBleedSection from "@/components/wrapper/FullBleedSection";
-import styles from "./Page.module.scss";
-import Image from "next/image";
-import ReadingTime from "@/components/articles/ReadingTime";
-import ArticleInfo from "@/components/articles/ArticleInfo";
+import Article from "@/components/articles/Article";
 
 export async function generateStaticParams() {
   return getAllArticleSlugs().map((slug) => ({ slug }));
@@ -18,34 +14,5 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     notFound();
   }
 
-  return (
-    <FullBleedSection className={styles.section} containerClassName={styles.pageContainer}>
-      <article className={styles.container}>
-        <div className={styles.header}>
-          <h1>{article.title}</h1>
-          <p className={styles.intro} dangerouslySetInnerHTML={{ __html: article.intro }} />
-          <ArticleInfo article={article} />
-        </div>
-
-        <div className={styles.heroWrapper}>
-          <Image
-            src={article.heroImage}
-            alt={article.title}
-            fill
-            sizes="100vw"
-            style={{ objectFit: "cover" }}
-            priority
-          />
-          <ReadingTime className={styles.heroBadge} time={4} />
-        </div>
-        <div className={styles.body}>
-          <div
-            className={styles.heroCredits}
-            dangerouslySetInnerHTML={{ __html: article.heroCredits }}
-          />
-          <div className={styles.article} dangerouslySetInnerHTML={{ __html: article.html }} />
-        </div>
-      </article>
-    </FullBleedSection>
-  );
+  return <Article article={article} />;
 }

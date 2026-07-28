@@ -7,4 +7,5 @@ export interface ArticleMeta {
   markdownFile: string; // filename inside content/articles/
   heroImage: string;
   heroCredits: string;
+  readingTime: number; // in minutes
 }

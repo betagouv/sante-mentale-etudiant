@@ -62,12 +62,6 @@
   max-width: 800px;
 }
 
-.heroWrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
-
 .heroCredits {
   max-width: 800px;
   margin: auto;
@@ -78,13 +72,6 @@
   br {
     margin: 0;
   }
-}
-
-.heroBadge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1;
 }
 
 @media (max-width: 600px) {

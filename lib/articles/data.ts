@@ -12,5 +12,6 @@ export const articles: ArticleMeta[] = [
     heroImage: "/articles/stress-avant-un-examen/hero.jpg",
     heroCredits:
       "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
+    readingTime: 4,
   },
 ];
