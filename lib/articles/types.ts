@@ -4,6 +4,7 @@ export interface ArticleMeta {
   intro: string;
   author: string;
   publishedAt: string;
+  updatedAt?: string;
   markdownFile: string; // filename inside content/articles/
   heroImage: string;
   heroCredits: string;

@@ -23,6 +23,7 @@ Cette réaction déclenche alors plusieurs mécanismes physiologiques :
 À petite dose, cette réaction peut améliorer la vigilance et la concentration.
 
 Mais lorsque le stress devient trop important, le cerveau peut avoir plus de difficultés à accéder aux informations mémorisées.
+
 Selon plusieurs recherches en neurosciences, un niveau de stress trop élevé peut perturber la mémoire de travail et les capacités d’attention.
 
 ## Un phénomène très fréquent chez les étudiant·es
