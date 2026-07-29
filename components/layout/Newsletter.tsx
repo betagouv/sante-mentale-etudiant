@@ -41,7 +41,8 @@ export function Newsletter() {
         form: {
           success: status === "success",
           successMessage: "Ton inscription a bien été prise en compte.",
-          consentHint: "En renseignant ton adresse e-mail, tu acceptes de recevoir nos actualités par courrier électronique. Tu peux te désinscrire à tout moment via le lien de désinscription présent dans chaque e-mail ou en nous contactant.",
+          consentHint:
+            "En renseignant ton adresse e-mail, tu acceptes de recevoir nos actualités par courrier électronique. Tu peux te désinscrire à tout moment via le lien de désinscription présent dans chaque e-mail ou en nous contactant.",
           formComponent: ({ children }) => (
             <form
               onSubmit={(event) => {
@@ -70,6 +71,7 @@ export function Newsletter() {
         },
       }}
       social={{
+        title: "Suis-nous sur les réseaux sociaux",
         buttons: [
           {
             linkProps: {

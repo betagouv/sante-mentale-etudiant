@@ -21,7 +21,10 @@ export const ModalSse = ({ sse }: Props) => (
         splitAndCleanString(sse.phone).map((p, idx) => (
           <React.Fragment key={`phone__${idx}`}> {PhoneField(p, idx)}</React.Fragment>
         ))}
-      {sse.website && WebsiteField(sse.website)}
+      {sse.website &&
+        splitAndCleanString(sse.website).map((w, idx) => (
+          <React.Fragment key={`website__${idx}`}> {WebsiteField(w, idx)}</React.Fragment>
+        ))}
     </div>
   </sseModal.Component>
 );
