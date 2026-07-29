@@ -16,7 +16,9 @@ export const AddressField = (address: string, lat: number, lon: number, zoom = 1
 export const EmailField = (email: string, idx?: number) => (
   <div>
     <span className="fr-icon--sm fr-icon-mail-line" />
-    <span className={styles.title}>E-mail {idx && idx >= 1 ? (idx + 1).toString() : ""}:</span>
+    <span className={styles.title}>
+      E-mail {idx && idx >= 1 ? `${(idx + 1).toString()} ` : ""}:
+    </span>
     <a href={`mailto:${email}`} className={styles.link}>
       {email}
     </a>
@@ -26,17 +28,21 @@ export const EmailField = (email: string, idx?: number) => (
 export const PhoneField = (phone: string, idx?: number) => (
   <div>
     <span className="fr-icon--sm fr-icon-phone-line" />
-    <span className={styles.title}>Téléphone {idx && idx >= 1 ? (idx + 1).toString() : ""}:</span>
+    <span className={styles.title}>
+      Téléphone {idx && idx >= 1 ? `${(idx + 1).toString()} ` : ""}:
+    </span>
     <a href={`tel:${phone}`} className={styles.link}>
       {phone}
     </a>
   </div>
 );
 
-export const WebsiteField = (website: string) => (
+export const WebsiteField = (website: string, idx?: number) => (
   <div>
     <span className="fr-icon--sm fr-icon-global-line" />
-    <span className={styles.title}>Site internet :</span>
+    <span className={styles.title}>
+      Site internet {idx && idx >= 1 ? `${(idx + 1).toString()} ` : ""}:
+    </span>
     <a href={website} target="_blank" rel="noopener noreferrer" className={styles.link}>
       {website}
     </a>

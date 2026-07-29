@@ -137,7 +137,7 @@ export const CARD_DOCTOR = (
 export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
   <>
     <CustomCard
-      title={`Contacte le ${sse.displayName}`}
+      title={`Contacte le SSE ${sse.displayName}`}
       subtitle={`Service de santé de ${sse.displayUniversityName}`}
       description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
       button={

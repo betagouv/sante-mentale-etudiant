@@ -39,7 +39,10 @@ export const ModalBapu = ({ bapu }: Props) => (
         splitAndCleanString(bapu.phone).map((p, idx) => (
           <React.Fragment key={`phone__${idx}`}> {PhoneField(p, idx)}</React.Fragment>
         ))}
-      {WebsiteField(bapu.website)}
+      {bapu.website &&
+        splitAndCleanString(bapu.website).map((w, idx) => (
+          <React.Fragment key={`website__${idx}`}> {WebsiteField(w, idx)}</React.Fragment>
+        ))}
       {bapu.eligibility && EligibilityField(bapu.eligibility)}
     </div>
   </bapuModal.Component>
