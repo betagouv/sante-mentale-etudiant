@@ -5,14 +5,16 @@
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0;
-  padding-top: 3.3rem;
+  padding-top: 1.5rem;
 }
 
 .list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .recap {
@@ -27,4 +29,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+    padding-top: 3.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .list {
+    justify-content: center;
+  }
 }
