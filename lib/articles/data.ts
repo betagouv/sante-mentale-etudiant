@@ -1,4 +1,4 @@
-import { TOPIC_ANXIETY } from "../topics/data";
+import { FEELING_ANXIETY } from "../feelings/data";
 import type { ArticleMeta } from "./types";
 
 export const articles: ArticleMeta[] = [
@@ -14,7 +14,7 @@ export const articles: ArticleMeta[] = [
     heroCredits:
       "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
     readingTime: 4,
-    topics: [TOPIC_ANXIETY],
+    mainFeeling: FEELING_ANXIETY,
   },
   {
     slug: "le-blues-du-dimanche-soir",
@@ -28,6 +28,6 @@ export const articles: ArticleMeta[] = [
     heroCredits:
       "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
     readingTime: 5,
-    topics: [TOPIC_ANXIETY],
+    mainFeeling: FEELING_ANXIETY,
   },
 ];

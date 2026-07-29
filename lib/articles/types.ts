@@ -1,4 +1,4 @@
-import { Topic } from "../topics/types";
+import { Feeling } from "../feelings/types";
 
 export interface ArticleMeta {
   slug: string;
@@ -11,5 +11,5 @@ export interface ArticleMeta {
   heroImage: string;
   heroCredits: string;
   readingTime: number; // in minutes
-  topics: Topic[];
+  mainFeeling: Feeling;
 }
