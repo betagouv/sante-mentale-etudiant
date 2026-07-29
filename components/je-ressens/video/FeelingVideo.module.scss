@@ -11,7 +11,8 @@
 .content {
   max-width: 1200px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  row-gap: 2rem;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 0 4rem 0;
@@ -20,6 +21,7 @@
 }
 
 .illustration {
+  display: none;
   position: absolute;
   right: 0;
   top: 0px;
@@ -61,9 +63,12 @@
   background-color: gray;
 }
 
-.help {
-  width: 384px;
-  height: 600px;
-  background-color: gray;
-  z-index: 1;
+@media (min-width: 1200px) {
+  .illustration {
+    display: inline-block;
+  }
+
+  .content {
+    flex-direction: row;
+  }
 }

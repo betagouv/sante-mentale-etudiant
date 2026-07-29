@@ -1,5 +1,5 @@
 import { Feeling as FeelingType } from "@/lib/feelings/types";
-import FeelingVideo from "./FeelingVideo";
+import FeelingVideo from "./video/FeelingVideo";
 import FeelingRecap from "./FeelingRecap";
 
 type Props = {
