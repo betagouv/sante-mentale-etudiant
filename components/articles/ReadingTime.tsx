@@ -1,5 +1,6 @@
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import styles from "./ReadingTime.module.scss";
+import { renderReadingTime } from "../common/Helper";
 
 type Props = {
   time: number;
@@ -13,12 +14,7 @@ export default function ReadingTime({ time, className, ...rest }: Props) {
       className={`${styles.badge} ${className ? ` ${className}` : ""}`}
       {...rest}
     >
-      <span
-        className="fr-icon--sm fr-icon-timer-line"
-        aria-hidden="true"
-        style={{ marginRight: "4px" }}
-      />
-      {time.toString()} minutes de lecture
+      {renderReadingTime(time)}
     </Badge>
   );
 }
