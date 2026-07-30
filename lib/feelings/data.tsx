@@ -173,6 +173,128 @@ export const FEELING_ANXIETY: Feeling = {
       },
     ],
   },
+  tips: [
+    {
+      title: "S’observer pour connaître ses besoins",
+      items: [
+        {
+          title: "L’action",
+          desc: (
+            <>
+              essaye d’estimer quel dormeur tu es, quels sont tes besoins. Pour déterminer ton
+              chronotype, la période idéale est celle des vacances : après 8 à 10 jours de repos, il
+              est possible d’évaluer son besoin réel de sommeil en observant la durée du sommeil, la
+              régularité des horaires et la satisfaction ressentie au réveil (source INSV)
+            </>
+          ),
+        },
+        {
+          title: "Commence petit",
+          desc: (
+            <>
+              remplis{" "}
+              <Link
+                href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/ASTEN_depliant-sommeil_INSV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ton agenda du sommeil
+              </Link>
+            </>
+          ),
+        },
+      ],
+    },
+    {
+      title: "Recale ton horloge interne",
+      items: [
+        {
+          title: "L’action",
+          desc: (
+            <>
+              Lève-toi à peu près à la même heure tous les jours, y compris le week-end, avec une
+              heure d'écart maximum et prends la lumière du matin
+            </>
+          ),
+        },
+        {
+          title: "Commence petit",
+          desc: (
+            <>
+              descends un arrêt de bus plus tôt, prends ton café près de la fenêtre, révise dehors.
+              Même par temps gris.
+            </>
+          ),
+        },
+      ],
+    },
+    {
+      title: "Evite les écrans",
+      items: [
+        {
+          title: "L’action",
+          desc: (
+            <>
+              Coupe les écrans dans la demi-heure qui précède le coucher, ou au moins arrête de
+              réviser sur écran au lit. La lumière des écrans repousse le signal du sommeil. S'y
+              ajoute le contenu lui-même : le scroll, les notifications et les messages maintiennent
+              le cerveau en éveil au moment où il devrait ralentir.
+            </>
+          ),
+        },
+        {
+          title: "Commence petit",
+          desc: (
+            <>
+              charge ton téléphone loin du lit, hors de portée de main, passe l'appareil en mode
+              sombre et baisse la luminosité au minimum.
+            </>
+          ),
+        },
+      ],
+    },
+    {
+      title: "Pratique une activité physique",
+      items: [
+        {
+          title: "L’action",
+          desc: (
+            <>
+              une activité physique régulière, sans viser la performance. Bouger dans la journée
+              améliore la qualité du sommeil et agit sur le moral.
+            </>
+          ),
+        },
+        {
+          title: "Commence petit",
+          desc: (
+            <>
+              Pas besoin de salle de sport ni d'abonnement. Marcher jusqu'à la fac, prendre les
+              escaliers, faire un trajet à vélo : ça compte. Et si le seul créneau possible est tard
+              le soir, garde-le quand même. Bouger tard reste préférable à ne pas bouger du tout (
+              <Link
+                href="https://reseau-morphee.fr/sommeil-et-activite-physique"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Réseau Morphée
+              </Link>
+              ), et un exercice modéré une heure avant le coucher n'altère que légèrement le sommeil
+              (
+              <Link
+                href="https://www.inserm.fr/actualite/un-exercice-physique-modere-avant-la-nuit-nempeche-pas-de-bien-dormir/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Inserm
+              </Link>
+              )
+            </>
+          ),
+        },
+      ],
+    },
+  ],
 };
 
 export const feelings = [FEELING_ANXIETY];

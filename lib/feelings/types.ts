@@ -23,6 +23,14 @@ type FAQ = {
   intro: ReactNode;
   items: FAQ_Item[];
 };
+export type TipItem = {
+  title: string;
+  desc: ReactNode;
+};
+export type Tip = {
+  title: string;
+  items: TipItem[];
+};
 export interface Feeling {
   slug: string;
   name: string;
@@ -30,4 +38,5 @@ export interface Feeling {
   video: Video;
   recap: string[];
   faq: FAQ;
+  tips: Tip[];
 }
