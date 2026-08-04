@@ -30,3 +30,7 @@ export async function getArticleBySlug(
     html: processed.toString(),
   };
 }
+
+export async function getArticlesByFeeling(feelingSlug: string): Promise<ArticleMeta[]> {
+  return articles.filter((a) => a.mainFeeling.slug === feelingSlug);
+}

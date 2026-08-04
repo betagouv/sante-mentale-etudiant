@@ -5,6 +5,7 @@ import type { MainNavigationProps } from "@codegouvfr/react-dsfr/MainNavigation/
 import { usePathname } from "next/navigation";
 import { needHelpModal } from "@/components/modals";
 import { EmergencyModal } from "./EmergencyModal";
+import { feelings } from "@/lib/feelings/data";
 
 export function Header() {
   const pathname = usePathname();
@@ -14,23 +15,21 @@ export function Header() {
     {
       text: "Je ressens...",
       isActive: pathname.startsWith("/je-ressens"),
-      menuLinks: [
-        {
-          text: "Je ressens du stress ou de l'anxiété",
-          linkProps: { href: "/je-ressens/anxiete" },
-        },
-        {
-          text: "Je ressens de l'épuisement ou un manque d'énergie",
-          linkProps: { href: "/je-ressens/fatigue" },
-        },
-      ],
+      menuLinks: feelings.map((feeling) => ({
+        text: feeling.catch.description,
+        linkProps: { href: `/je-ressens/${feeling.slug}` },
+      })),
     },
     {
       text: "Trouver du soutien",
       linkProps: { href: "/trouver-du-soutien" },
       isActive: pathname === "/trouver-du-soutien",
     },
-    { text: "S'informer", linkProps: { href: "/articles" }, isActive: pathname === "/articles" },
+    {
+      text: "S'informer",
+      linkProps: { href: "/articles" },
+      isActive: pathname.startsWith("/articles"),
+    },
     {
       text: "Aider un proche",
       linkProps: { href: "/aider-un-proche" },

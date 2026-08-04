@@ -1,0 +1,26 @@
+.section {
+  background-color: var(--purple);
+}
+
+.container {
+  max-width: 1440px;
+  position: relative;
+}
+
+.innerContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+
+  h2 {
+    color: white;
+  }
+}
+
+.cardsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}

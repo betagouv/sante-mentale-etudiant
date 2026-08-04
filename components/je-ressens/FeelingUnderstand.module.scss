@@ -1,0 +1,18 @@
+.section {
+  background-color: var(--bg-light-grey);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  padding-top: 3.3rem;
+  padding-bottom: 3.5rem;
+}
+
+.card {
+  border: 1px solid #dfdfdf;
+  background-color: white;
+  max-width: 755px;
+  padding: 2.5rem 3rem;
+}
