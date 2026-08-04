@@ -6,3 +6,5 @@ export const splitAndCleanString = (s: string, separator = ";"): string[] => {
         .filter((v) => v.length > 0)
     : [];
 };
+
+export const displayDate = (d: string) => new Date(d).toLocaleDateString("fr-FR");

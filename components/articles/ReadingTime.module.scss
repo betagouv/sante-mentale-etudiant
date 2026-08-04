@@ -1,0 +1,6 @@
+.badge {
+  &:global(.fr-badge--success) {
+    background-color: var(--bg-light-mustard);
+    color: var(--text-mustard);
+  }
+}

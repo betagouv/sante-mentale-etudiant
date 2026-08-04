@@ -1,0 +1,95 @@
+.section {
+  background-color: #f9f6f2;
+}
+
+.container {
+  max-width: 996px;
+  margin: auto;
+  padding-top: 3rem;
+  color: #161616;
+
+  strong {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #3a3a3a;
+  }
+
+  br {
+    display: block;
+    content: "";
+    margin-top: 0.4rem; // adjust to taste
+  }
+
+  h2 {
+    border-top: 1px solid #dddddd;
+    padding-top: 2rem; // space between the line and the text
+    margin-top: 2rem; // space above the line, separating from previous content
+    font-size: 1.75rem;
+    color: #14060a;
+  }
+  p {
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    color: #161616;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.intro {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.body {
+  background-color: white;
+  color: #3a3a3a;
+  border: 1px solid #dddddd;
+}
+
+.article {
+  margin: auto;
+  border-top: 1px solid #dddddd;
+  padding-top: 2rem; // space between the line and the text
+  margin-top: 2rem;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 2rem; // space between the line and the text
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.heroCredits {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #666666;
+  line-height: 1.2rem;
+  br {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-top: 1rem;
+  }
+
+  .header {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .pageContainer {
+    padding: 0;
+  }
+
+  .body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

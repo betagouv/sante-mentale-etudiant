@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 1rem;
+}
+
+.published {
+  color: #3a3a3a;
+  font-size: 0.875rem;
+}
+
+.separator {
+  border-top: 1px solid #ddd;
+  flex-grow: 1;
+  align-self: center;
+}
+
+.tags {
+  margin-top: 12px;
+}
