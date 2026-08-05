@@ -1,7 +1,7 @@
 "use client";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 
-export default function CGU() {
+export default function Gcu() {
   return (
     <FullBleedSection>
       <section>

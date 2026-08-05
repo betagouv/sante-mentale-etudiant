@@ -1,6 +1,6 @@
 import FullBleedSection from "@/components/wrapper/FullBleedSection"
 
-export default function MentionsLegales() {
+export default function LegalNotices() {
   return (
     <FullBleedSection>
       <section>

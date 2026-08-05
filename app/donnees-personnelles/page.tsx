@@ -2,7 +2,7 @@
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { Table } from "@codegouvfr/react-dsfr/Table";
 
-export default function DonneesPersonnelles() {
+export default function PersonalData() {
   return (
     <FullBleedSection>
       <section>
