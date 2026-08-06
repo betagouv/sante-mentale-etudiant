@@ -1,6 +1,7 @@
 "use client";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { Table } from "@codegouvfr/react-dsfr/Table";
+import Link from "next/link";
 
 export default function PersonalData() {
   return (
@@ -71,25 +72,41 @@ export default function PersonalData() {
           </ul>
           <p>
             Par voie électronique : envoyez-nous un courriel à{" "}
-            <a href="mailto:support-santepsyetudiant@beta.gouv" >
+            <Link
+              href="mailto:support-santepsyetudiant@beta.gouv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               support-santepsyetudiant@beta.gouv
-            </a>{" "}
+            </Link>{" "}
             ou contactez-nous sur{" "}
-            <a href="https://santepsy.etudiant.gouv.fr/contact/formulaire" >
+            <Link
+              href="https://santepsy.etudiant.gouv.fr/contact/formulaire"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               santepsy.etudiant.gouv.fr/contact/formulaire
-            </a>
+            </Link>
           </p>
           <p>
             Vous pouvez prendre attache avec le délégué à la protection des données à l’adresse suivante :{" "}
-            <a href="mailto:dpd@education.gouv.fr">
+            <Link
+              href="mailto:dpd@education.gouv.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               dpd@education.gouv.fr
-            </a>
+            </Link>
           </p>
           <p>
             Via le formulaire de saisine en ligne :{" "}
-            <a href="https://www.enseignementsup-recherche.gouv.fr/fr/nous-contacter-49937#dpd" >
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.enseignementsup-recherche.gouv.fr/fr/nous-contacter-49937#dpd"
+            >
               https://www.enseignementsup-recherche.gouv.fr/fr/nous-contacter-49937#dpd
-            </a>
+            </Link>
           </p>
           <p>
             Ou par voie postale :
@@ -104,7 +121,7 @@ export default function PersonalData() {
           </p>
           <p>
             En raison de l’obligation de sécurité et de confidentialité dans le traitement des données à caractère personnel qui incombe au responsable de traitement, votre demande ne sera traitée que si vous apportez la preuve de votre identité.
-            Pour vous aider dans votre démarche, vous trouverez <a href="https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces">ici</a> un modèle de courrier élaboré par la CNIL.
+            Pour vous aider dans votre démarche, vous trouverez <Link target="_blank" rel="noopener noreferrer" href="https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces">ici</Link> un modèle de courrier élaboré par la CNIL.
           </p>
           <p>
             Le responsable de traitement s’engage à répondre dans un délai raisonnable qui ne saurait dépasser 1 mois à compter de la réception de votre demande.
@@ -130,17 +147,26 @@ export default function PersonalData() {
                 "Scalingo",
                 "France",
                 "Hébergeur",
-                <a href="https://scalingo.com/fr/contrat-gestion-traitements-donnees-personnelles" key="scalingo">
+                <Link
+                  href="https://scalingo.com/fr/contrat-gestion-traitements-donnees-personnelles"
+                  key="scalingo"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   Lien
-                </a>,
+                </Link>,
               ],
               [
                 "Crisp",
                 "France",
                 "Outil de support et de chat",
-                <a href="https://help.crisp.chat/en/article/how-to-sign-my-gdpr-data-processing-agreement-dpa-1wfmngo" key="crisp">
+                <Link
+                  href="https://help.crisp.chat/en/article/how-to-sign-my-gdpr-data-processing-agreement-dpa-1wfmngo"
+                  key="crisp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Lien
-                </a>,
+                </Link>,
               ],
             ]}
           />
@@ -169,17 +195,22 @@ export default function PersonalData() {
                 "Google Ads",
                 "Outil de gestion de balises permettant de suivre et mesurer les publicités. Il mesure l’efficacité des campagnes sponsorisées.",
                 "Consentement",
-                <a href="https://www.google.com/analytics/terms/dpa/dataprocessingamendment_20200816.html" key="google">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.google.com/analytics/terms/dpa/dataprocessingamendment_20200816.html"
+                  key="google"
+                >
                   Lien vers le DPA
-                </a>,
+                </Link>,
               ],
               [
                 "Facebook Cookie Pixel",
                 "Outil de gestion de balises permettant de suivre et mesurer les publicités. Il identifie les visiteurs en provenance de publications Facebook.",
                 "Consentement",
-                <a href="https://www.facebook.com/legal/terms/dataprocessing" key="facebook">
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/legal/terms/dataprocessing" key="facebook">
                   Lien vers le DPA
-                </a>,
+                </Link>,
               ],
             ]}
           />
@@ -191,14 +222,14 @@ export default function PersonalData() {
           </p>
           <ul>
             <li>
-              <a href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-et-traceurs-que-dit-la-loi" >
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-et-traceurs-que-dit-la-loi" >
                 Cookies et traceurs : que dit la loi ?
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/outils/maitriser-vos-cookies" >
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/outils/maitriser-vos-cookies" >
                 Cookies : les outils pour les maîtriser
-              </a>
+              </Link>
             </li>
           </ul>
         </section>

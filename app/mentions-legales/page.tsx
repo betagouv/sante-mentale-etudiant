@@ -1,4 +1,5 @@
 import FullBleedSection from "@/components/wrapper/FullBleedSection"
+import Link from "next/link";
 
 export default function LegalNotices() {
   return (
@@ -32,9 +33,13 @@ export default function LegalNotices() {
             13 rue Jacques Peirotes<br />
             67000 Strasbourg<br />
             France<br />
-            <a href="mailto:support@scalingo.com" className="fr-link">
+            <Link
+              href="mailto:support@scalingo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               support@scalingo.com
-            </a>
+            </Link>
           </p>
         </section>
       </section>

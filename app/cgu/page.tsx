@@ -1,5 +1,6 @@
 "use client";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
+import Link from "next/link";
 
 export default function Gcu() {
   return (
@@ -116,13 +117,21 @@ export default function Gcu() {
           <h2>Article 7 – Contact</h2>
           <p>
             En cas de problème avec le dispositif, envoyez-nous un email à{" "}
-            <a href="mailto:support-santepsyetudiant@beta.gouv.fr" >
+            <Link
+              href="mailto:support-santepsyetudiant@beta.gouv.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               support-santepsyetudiant@beta.gouv.fr
-            </a>{" "}
+            </Link>{" "}
             ou contactez-nous sur{" "}
-            <a href="https://santepsy.etudiant.gouv.fr/contact" >
+            <Link
+              href="https://santepsy.etudiant.gouv.fr/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               https://santepsy.etudiant.gouv.fr/contact
-            </a>
+            </Link>
           </p>
         </section>
       </section>
