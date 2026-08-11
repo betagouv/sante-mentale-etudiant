@@ -1,5 +1,5 @@
 import { ArticleMeta } from "@/lib/articles/types";
-import FullBleedSection from "../wrapper/FullBleedSection";
+import FullBleedSection from "../../wrapper/FullBleedSection";
 import ArticleInfo from "./ArticleInfo";
 import ArticleHeroImage from "./ArticleHeroImage";
 import styles from "./Article.module.scss";
