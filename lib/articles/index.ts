@@ -34,12 +34,3 @@ export async function getArticleBySlug(
 export async function getArticlesByFeeling(feelingSlug: string): Promise<ArticleMeta[]> {
   return articles.filter((a) => a.mainFeeling.slug === feelingSlug);
 }
-
-export async function searchArticles(
-  feelingSlugs: string[],
-  textSearch: string
-): Promise<ArticleMeta[]> {
-  return articles
-    .filter((a) => feelingSlugs.length === 0 || feelingSlugs.includes(a.mainFeeling.slug))
-    .filter((a) => a.title.includes(textSearch));
-}
