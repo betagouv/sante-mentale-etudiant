@@ -1,9 +1,10 @@
 .hero {
   background-color: var(--purple);
-  padding-top: 1rem;
+  border-bottom: 6px solid var(--bg-yellow);
 }
 
 .heroContainer {
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
 }

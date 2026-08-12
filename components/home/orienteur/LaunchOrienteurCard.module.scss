@@ -26,27 +26,21 @@
   }
 }
 
-.badge {
-  background-color: var(--bg-light-pink);
-  color: var(--text-dark-pink);
-}
-
 .fullWidthBtn {
   width: 100%;
   justify-content: center;
 }
 
-/* DSFR "md" breakpoint = 768px */
 @media (min-width: 768px) {
   .cardWrapper {
     display: flex;
     align-items: center;
-    pointer-events: none; /* let clicks pass through empty space */
+    pointer-events: none;
   }
 
   .card {
     max-width: 454px;
-    pointer-events: auto; /* re-enable clicks on the card itself */
+    pointer-events: auto;
     padding: 2.5rem 2.5rem 1.5rem 2.5rem;
   }
 }
