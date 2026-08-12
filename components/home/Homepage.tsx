@@ -1,3 +1,4 @@
+import NeedToTalkBanner from "../besoin-de-parler/NeedToTalkBanner";
 import HomeFeelings from "./HomeFeelings";
 import HomeHero from "./HomeHero";
 import HomeStudentsStat from "./HomeStudentsStat";
@@ -8,6 +9,7 @@ export default function Homepage() {
       <HomeHero />
       <HomeStudentsStat />
       <HomeFeelings />
+      <NeedToTalkBanner />
     </>
   );
 }
