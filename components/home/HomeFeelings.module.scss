@@ -59,6 +59,32 @@
   background-color: var(--bg-light-grey);
   text-align: center;
   text-decoration: none;
+
+  // TODO when using <Tile>
+  // :global(.fr-tile__img) {
+  //   width: 56px;
+  //   height: 56px;
+  //   margin: 0;
+  // }
+
+  // :global(.fr-tile__body) {
+  //   padding: 0;
+  // }
+
+  // :global(.fr-tile__title) {
+  //   margin: 0;
+  //   text-align: center;
+  //   font-size: 1.5rem;
+  //   line-height: 2rem;
+  // }
+
+  // :global(.fr-tile__title a) {
+  //   color: #161616;
+  // }
+
+  //   :global(.fr-tile__link) {
+  //   position: relative;
+  // }
 }
 
 .icon {

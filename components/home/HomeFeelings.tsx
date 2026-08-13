@@ -3,13 +3,14 @@ import styles from "./HomeFeelings.module.scss";
 import { feelings } from "@/lib/feelings/data";
 import { FEELING_TILES } from "./feelings/feelings.config";
 import FullBleedSection from "../wrapper/FullBleedSection";
+// import Tile from "@codegouvfr/react-dsfr/Tile";
 
 export default function HomeFeelings() {
   return (
     <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="feelings-grid-title">
       <div className={styles.header}>
         <h2>Mettre des mots sur ce que tu ressens</h2>
-        <p>Des fiches pour comprendre, reconnaître et et trouver de l'aide</p>
+        <p>Des fiches pour comprendre, reconnaître et trouver de l'aide</p>
       </div>
 
       <ul className={styles.grid}>
@@ -33,6 +34,28 @@ export default function HomeFeelings() {
                   <h3 className={styles.label}>{label}</h3>
                   <span className={styles.note}>bientôt disponible</span>
                 </span>
+
+                //TODO replace Link and span above by one tile - style must be updated
+                //   <Tile
+                //   className={styles.card}
+                //   enlargeLinkOrButton
+                //   imageUrl={tile.icon}
+                //   title={label}
+                //   orientation="vertical"
+                //   titleAs="h4"
+                //   {...(feeling
+                //     ? {
+                //       linkProps: {
+                //         href: `/je-ressens/${feeling.slug}`,
+                //       },
+                //     }
+                //     : {
+                //       disabled: true,
+                //       buttonProps: {
+                //         type: "button",
+                //       },
+                //     })}
+                // />
               )}
             </li>
           );
