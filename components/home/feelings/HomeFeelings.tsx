@@ -1,8 +1,8 @@
 import Link from "next/link";
 import styles from "./HomeFeelings.module.scss";
 import { feelings } from "@/lib/feelings/data";
-import { FEELING_TILES } from "./feelings/feelings.config";
-import FullBleedSection from "../wrapper/FullBleedSection";
+import { FEELING_TILES } from "./feelings.config";
+import FullBleedSection from "../../wrapper/FullBleedSection";
 // import Tile from "@codegouvfr/react-dsfr/Tile";
 
 export default function HomeFeelings() {
@@ -15,6 +15,7 @@ export default function HomeFeelings() {
 
       <ul className={styles.grid}>
         {FEELING_TILES.map((tile) => {
+          // TODO can we use getFeelingBySlug here?
           const feeling = feelings.find((feeling) => feeling.slug === tile.slug);
           const label = feeling?.name ?? tile.fallbackLabel;
 
