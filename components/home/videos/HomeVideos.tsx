@@ -79,7 +79,7 @@ export default function HomeVideos({
           </div>
         </div>
 
-        œœœœœœœ// for screen readers
+        {/* for screen readers */}
         <p className="fr-sr-only" role="status" aria-live="polite">
           Témoignage {activeIndex + 1} sur {testimonials.length}
         </p>
