@@ -1,8 +1,8 @@
 import FullBleedSection from "../wrapper/FullBleedSection";
-import styles from "./LaunchOrienteur.module.scss";
-import LaunchOrienteurCard from "./LaunchOrienteurCard";
+import styles from "./HomeHero.module.scss";
+import LaunchOrienteurCard from "./orienteur/LaunchOrienteurCard";
 
-export default function LaunchOrienteur() {
+export default function HomeHero() {
   return (
     <FullBleedSection className={styles.hero} containerClassName={styles.heroContainer} aria-labelledby="cta-hero">
       <div className={styles.firstGrid}>
