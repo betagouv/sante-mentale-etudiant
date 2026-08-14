@@ -2,7 +2,10 @@ import { useEffect, useRef } from "react";
 
 export function useVideoModalDismissed(modalId: string, onDismiss: () => void) {
   const onDismissRef = useRef(onDismiss);
-  onDismissRef.current = onDismiss;
+
+  useEffect(() => {
+    onDismissRef.current = onDismiss;
+  });
 
   useEffect(() => {
     const observer = new MutationObserver((mutations) => {
