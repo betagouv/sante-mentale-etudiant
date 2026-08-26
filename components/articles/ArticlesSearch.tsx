@@ -43,6 +43,11 @@ export default function ArticlesSearch({ allArticles, feelings }: Props) {
         addon={<Button onClick={() => setSearchTerm(inputValue)}>Rechercher</Button>}
         nativeInputProps={{
           onChange: (e) => setInputValue(e.target.value),
+          onKeyDown: (e) => {
+            if (e.key === "Enter") {
+              setSearchTerm(inputValue);
+            }
+          },
           value: inputValue,
         }}
       />
