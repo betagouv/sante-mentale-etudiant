@@ -1,6 +1,6 @@
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import styles from "./ReadingTime.module.scss";
-import { renderReadingTime } from "../common/Helper";
+import { renderReadingTime } from "../../common/Helper";
 
 type Props = {
   time: number;

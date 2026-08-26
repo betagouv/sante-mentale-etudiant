@@ -1,0 +1,39 @@
+.section {
+  background-color: #f9f6f2;
+}
+
+.title {
+  font-size: 3.5rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+  color: #161616;
+}
+
+.desc {
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  color: "#3A3A3A";
+}
+
+.pageContainer {
+  padding-top: 4.5rem;
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    padding-top: 1.5rem;
+  }
+  .title {
+    font-size: 2.15rem;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+  .desc {
+    text-align: left;
+    font-size: 1.25rem;
+  }
+}

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
-import Article from "@/components/articles/Article";
+import Article from "@/components/articles/article/Article";
 
 export async function generateStaticParams() {
   return getAllArticleSlugs().map((slug) => ({ slug }));
