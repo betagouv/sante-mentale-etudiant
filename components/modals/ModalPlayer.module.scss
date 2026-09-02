@@ -1,0 +1,9 @@
+.video {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100dvh - 10rem);
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}

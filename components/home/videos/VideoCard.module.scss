@@ -1,0 +1,57 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 600px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--outline);
+  outline-offset: 2px;
+}
+
+.thumbnail {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.citation {
+  display: flex;
+  align-items: center;
+  height: 112px;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-title-blue-france);
+}
