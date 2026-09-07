@@ -2,7 +2,6 @@ import { ButtonsGroup } from "@codegouvfr/react-dsfr/ButtonsGroup";
 import styles from "./Orienteur.module.scss";
 import { useState } from "react";
 import InputAddress from "../common/InputAddress";
-import RequiredField from "../common/RequiredField";
 import { Coordinate } from "@/services/address";
 
 type Props = {
@@ -20,8 +19,7 @@ export default function OrienteurLocation({ onAnswer }: Props) {
   return (
     <>
       <p className={styles.hint}>
-        Les champs marqués du symbole
-        <RequiredField /> sont obligatoires.
+        Sauf mention contraire “optionnel”, tous les champs sont obligatoires.
       </p>
       <h1>Dans quelle zone recherches-tu de l'aide ?</h1>
       <p>Indique ta ville ou ton code postal pour trouver les dispositifs les plus proches.</p>
@@ -31,7 +29,6 @@ export default function OrienteurLocation({ onAnswer }: Props) {
           setAddresslabel={setAddresslabel}
           setCoordinates={setCoordinates}
           label="Ta ville ou ton code postal"
-          required
         />
       </div>
       <ButtonsGroup
