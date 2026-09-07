@@ -67,15 +67,6 @@ export function Header() {
             </Badge>
           </>
         }
-        operatorLogo={{
-          alt: "Santé Mentale. Etudiant",
-          imgUrl: "images/logos/sme.png",
-          linkProps: {
-            href: "/",
-            title: "Accueil - Santé Mentale. Etudiant - République Française",
-          },
-          orientation: "horizontal",
-        }}
         quickAccessItems={[
           {
             iconId: "fr-icon-question-line",
