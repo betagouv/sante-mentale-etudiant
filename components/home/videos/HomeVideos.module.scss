@@ -56,6 +56,11 @@
   margin-top: 2rem;
 }
 
+.linkButton {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
 @media (max-width: 425px) {
   .header {
     h2 {

@@ -87,7 +87,24 @@ export default function HomeVideos({
       </div>
 
       <videoModal.Component
+        size="small"
         title={activeTestimonial ? `« ${activeTestimonial.citation} »` : "Témoignage vidéo"}
+        buttons={
+          activeTestimonial?.link
+            ? {
+              children: (
+                <>
+                  En savoir plus
+                </>
+              ),
+              linkProps: {
+                href: activeTestimonial.link,
+                target: "_blank",
+                rel: "noopener noreferrer",
+              },
+            }
+            : undefined
+        }
       >
         {activeTestimonial && <VideoPlayer key={activeTestimonial.key} testimonial={activeTestimonial} />}
       </videoModal.Component>

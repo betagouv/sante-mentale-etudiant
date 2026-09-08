@@ -7,6 +7,7 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/tmp/preview.mp4",
     posterUrl: "/images/tmp/tmp_homepage_video.png",
     citation: "J'ai fini par en parler",
+    link: '/aider-un-proche'
   },
   {
     key: "temoignage-2",
@@ -14,6 +15,7 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/tmp/preview.mp4",
     posterUrl: "/images/tmp/tmp_homepage_video.png",
     citation: "Je ne suis plus seul avec ça",
+    link: '/articles'
   },
   {
     key: "temoignage-3",

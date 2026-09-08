@@ -4,4 +4,5 @@ export interface VideoTestimonial {
   previewUrl?: string;
   posterUrl?: string;
   citation?: string;
+  link?: string;
 }
