@@ -20,10 +20,6 @@ export function Footer() {
           linkProps: { href: "/donnees-personnelles" },
         },
         {
-          text: "CGU",
-          linkProps: { href: "/cgu" },
-        },
-        {
           text: "Gestion des cookies",
           linkProps: { href: "/gestion-cookies" },
         },
