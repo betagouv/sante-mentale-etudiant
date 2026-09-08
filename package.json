@@ -4,6 +4,7 @@
   "engines": {
     "node": "24.x"
   },
+  "packageManager": "pnpm@11.24.0",
   "private": true,
   "scripts": {
     "dev": "react-dsfr update-icons && next dev --turbopack",
