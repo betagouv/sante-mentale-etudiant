@@ -1,11 +1,11 @@
-import { ArticleMeta } from "@/lib/articles/types";
+import { InternalArticleMeta } from "@/lib/articles/types";
 import FullBleedSection from "../../wrapper/FullBleedSection";
 import ArticleInfo from "./ArticleInfo";
 import ArticleHeroImage from "./ArticleHeroImage";
 import styles from "./Article.module.scss";
 
 type Props = {
-  article: ArticleMeta & { html: string };
+  article: InternalArticleMeta & { html: string };
 };
 export default function Article({ article }: Props) {
   return (
