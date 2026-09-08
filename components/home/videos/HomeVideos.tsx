@@ -30,12 +30,13 @@ export default function HomeVideos({
   title = "Une histoire qui pourrait être la tienne",
   description = "Des étudiants racontent, simplement, ce qu'ils ont vécu.",
 }: HomeVideosProps) {
-  const { trackRef, activeIndex, scrollToIndex } = useCarouselScroll(testimonials.length, STEP);
-  const [activeTestimonial, setActiveTestimonial] = useState<VideoTestimonials | null>(null);
+  const { trackRef, activeIndex, scrollToIndex, canScrollPrev, canScrollNext } =
+    useCarouselScroll(testimonials.length, STEP);
+  const [activeTestimonial, setActiveTestimonial] = useState<VideoTestimonial | null>(null);
 
   useVideoModalDismissed(videoModal.id, () => setActiveTestimonial(null));
 
-  const openVideo = (testimonial: VideoTestimonials) => {
+  const openVideo = (testimonial: VideoTestimonial) => {
     setActiveTestimonial(testimonial);
     videoModal.open();
   };
@@ -67,14 +68,14 @@ export default function HomeVideos({
               priority="secondary"
               title="Témoignages précédents"
               onClick={() => scrollToIndex(activeIndex - 1)}
-              disabled={activeIndex === 0}
+              disabled={!canScrollPrev}
             />
             <Button
               iconId="fr-icon-arrow-right-line"
               priority="secondary"
               title="Témoignages suivants"
               onClick={() => scrollToIndex(activeIndex + 1)}
-              disabled={activeIndex === testimonials.length - 1}
+              disabled={!canScrollNext}
             />
           </div>
         </div>
