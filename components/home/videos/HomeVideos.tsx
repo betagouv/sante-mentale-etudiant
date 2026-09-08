@@ -5,12 +5,12 @@ import { createModal } from "@codegouvfr/react-dsfr/Modal";
 import Button from "@codegouvfr/react-dsfr/Button";
 import styles from "./HomeVideos.module.scss";
 import { useVideoModalDismissed } from "@/hooks/useVideoModalDismissed";
-import { VideoTestimonials } from "./types";
+import { VideoTestimonial } from "./types";
 import { useCarouselScroll } from "@/hooks/useCarouselScroll";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { VideoCard } from "./VideoCard";
-import { ModalPlayer } from "@/components/modals/ModalPlayer";
-import { testimonials } from "./data";
+import { testimonials } from "../../../data/videos";
+import { VideoPlayer } from "@/components/video-player/VideoPlayer";
 
 const videoModal = createModal({
   id: "video-card-modal",
@@ -88,7 +88,7 @@ export default function HomeVideos({
       <videoModal.Component
         title={activeTestimonial ? `« ${activeTestimonial.citation} »` : "Témoignage vidéo"}
       >
-        {activeTestimonial && <ModalPlayer key={activeTestimonial.key} testimonial={activeTestimonial} />}
+        {activeTestimonial && <VideoPlayer key={activeTestimonial.key} testimonial={activeTestimonial} />}
       </videoModal.Component>
     </FullBleedSection>
   );

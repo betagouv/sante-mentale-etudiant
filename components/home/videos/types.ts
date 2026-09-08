@@ -1,4 +1,4 @@
-export interface VideoTestimonials {
+export interface VideoTestimonial {
   key: string;
   videoUrl: string;
   previewUrl?: string;

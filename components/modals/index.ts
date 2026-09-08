@@ -14,3 +14,8 @@ export const bapuModal = createModal({
   id: "bapu-modal",
   isOpenedByDefault: false,
 });
+
+export const videoModal = createModal({
+  id: "video-card-modal",
+  isOpenedByDefault: false,
+});

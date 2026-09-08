@@ -1,10 +1,11 @@
 import { useState } from "react";
+import Image from "next/image";
 import styles from "./VideoCard.module.scss";
-import { VideoTestimonials } from "./types";
+import { VideoTestimonial } from "./types";
 
 export interface VideoCardProps {
-  testimonial: VideoTestimonials;
-  onOpen: (testimonial: VideoTestimonials) => void;
+  testimonial: VideoTestimonial;
+  onOpen: (testimonial: VideoTestimonial) => void;
 }
 
 export function VideoCard({ testimonial, onOpen }: VideoCardProps) {
@@ -35,8 +36,13 @@ export function VideoCard({ testimonial, onOpen }: VideoCardProps) {
           />
         ) : (
           testimonial.posterUrl && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={testimonial.posterUrl} alt="" className={styles.poster} />
+            <Image
+              src={testimonial.posterUrl}
+              alt=""
+              width={320}
+              height={500}
+              className={styles.poster}
+            />
           )
         )}
         <span className={`${styles.playIcon} fr-icon-play-fill`} aria-hidden="true" />

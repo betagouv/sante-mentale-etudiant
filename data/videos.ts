@@ -1,6 +1,6 @@
-import type { VideoTestimonials } from "./types";
+import type { VideoTestimonial } from "../components/home/videos/types";
 
-export const testimonials: VideoTestimonials[] = [
+export const testimonials: VideoTestimonial[] = [
   {
     key: "temoignage-1",
     videoUrl: "https://sme-staging.s3.fr-par.scw.cloud/videos/test_video_longue.mp4",

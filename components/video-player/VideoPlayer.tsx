@@ -1,11 +1,12 @@
-import { VideoTestimonials } from "../home/videos/types";
-import styles from "./ModalPlayer.module.scss";
 
-export interface ModalPlayerProps {
-  testimonial: VideoTestimonials;
+import { VideoTestimonial } from "../home/videos/types";
+import styles from "./VideoPlayer.module.scss";
+
+export interface VideoPlayerProps {
+  testimonial: VideoTestimonial;
 }
 
-export function ModalPlayer({ testimonial }: ModalPlayerProps) {
+export function VideoPlayer({ testimonial }: VideoPlayerProps) {
   return (
     <video
       src={testimonial.videoUrl}
