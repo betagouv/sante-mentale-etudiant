@@ -45,7 +45,7 @@ export function VideoCard({ testimonial, onOpen }: VideoCardProps) {
             />
           )
         )}
-        <span className={`${styles.playIcon} fr-icon-play-fill`} aria-hidden="true" />
+        <span className={`${styles.playIcon} fr-icon-play-fill fr-icon--lg`} aria-hidden="true" />
       </span>
 
       <span className={styles.citation}>« {testimonial.citation} »</span>
