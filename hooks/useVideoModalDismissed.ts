@@ -8,6 +8,7 @@ export function useVideoModalDismissed(modalId: string, onDismiss: () => void) {
   });
 
   useEffect(() => {
+    // watch the modal DOM node so we can stop the video when the modal is closed
     const observer = new MutationObserver((mutations) => {
       for (const mutation of mutations) {
         const target = mutation.target;

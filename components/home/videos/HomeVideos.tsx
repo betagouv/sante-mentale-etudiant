@@ -34,6 +34,7 @@ export default function HomeVideos({
     useCarouselScroll(testimonials.length, STEP);
   const [activeTestimonial, setActiveTestimonial] = useState<VideoTestimonial | null>(null);
 
+  // we use this to stop de video auto when not on modal
   useVideoModalDismissed(videoModal.id, () => setActiveTestimonial(null));
 
   const openVideo = (testimonial: VideoTestimonial) => {
