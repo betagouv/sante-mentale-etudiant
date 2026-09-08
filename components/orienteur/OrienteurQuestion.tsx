@@ -5,7 +5,6 @@ import styles from "./Orienteur.module.scss";
 import type { OrienteurQuestionNode } from "./data/orienteurTree";
 import { ButtonsGroup } from "@codegouvfr/react-dsfr/ButtonsGroup";
 import { ButtonProps } from "@codegouvfr/react-dsfr/Button";
-import RequiredField from "../common/RequiredField";
 
 type Props = {
   node: OrienteurQuestionNode;
@@ -41,8 +40,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
   return (
     <>
       <p className={styles.hint}>
-        Les champs marqués du symbole
-        <RequiredField /> sont obligatoires.
+        Sauf mention contraire “optionnel”, tous les champs sont obligatoires.
       </p>
       {node.showMedicalDisclaimer && (
         <p className={styles.hint}>
@@ -52,10 +50,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
 
       <h1>{node.title}</h1>
 
-      <p>
-        {node.legend}
-        <RequiredField />
-      </p>
+      <p>{node.legend}</p>
 
       <RadioButtons
         name={node.id}
