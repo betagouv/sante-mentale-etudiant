@@ -7,7 +7,7 @@ import type { ArticleMeta, InternalArticleMeta } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data/articles");
 
-export function getAllInteralArticleSlugs(): string[] {
+export function getAllInternalArticleSlugs(): string[] {
   return articles.filter((a) => a.type === "internal").map((a) => a.slug);
 }
 
