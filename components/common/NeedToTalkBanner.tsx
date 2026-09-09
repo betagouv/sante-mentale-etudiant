@@ -11,13 +11,12 @@ export default function NeedToTalkBanner() {
           Ligne d'écoute, psychologue universitaire, structure près de chez toi : trouve
           l'interlocuteur qui te correspond.
         </p>
-        <Button
-          className={styles.button}
-          linkProps={{ href: "/orienteur" }}
-        >
+        <Button className={styles.button} linkProps={{ href: "/orienteur" }}>
           Trouver l'aide adaptée
         </Button>
-        <p className={styles.hint}>Moins de <b>30 secondes</b> pour trouver des solutions 👌</p>
+        <p className={styles.hint}>
+          Moins de <b>30 secondes</b> pour trouver des solutions
+        </p>
       </div>
     </FullBleedSection>
   );
