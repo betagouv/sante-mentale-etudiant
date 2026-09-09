@@ -49,11 +49,7 @@ export default function HomeVideos({
   };
 
   return (
-    <FullBleedSection
-      containerClassName={styles.container}
-      aria-labelledby="video-testimonials-title"
-      bgColor="grey"
-    >
+    <FullBleedSection aria-labelledby="video-testimonials-title" bgColor="grey">
       <IllustrationHomeTestimonials1 />
       <IllustrationHomeTestimonials2 />
       <div className={styles.header}>

@@ -1,18 +1,10 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  position: relative;
-}
-
 .textColumn {
   display: flex;
   flex: 1;
-  padding: 4rem 4.5rem 4rem 7.5rem;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  max-width: 712px;
+  max-width: 540px;
 
   p {
     margin: 0;
@@ -33,14 +25,7 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    min-height: auto;
-    gap: 0;
-  }
-
   .textColumn {
-    padding: 1rem;
     max-width: 100%;
 
     .title {

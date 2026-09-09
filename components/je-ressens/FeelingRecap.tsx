@@ -7,7 +7,7 @@ type Props = {
 };
 export default function FeelingRecap({ feeling }: Props) {
   return (
-    <FullBleedSection containerClassName={styles.container} bgColor="grey">
+    <FullBleedSection innerContainerClassName={styles.container} bgColor="grey">
       <h2>À retenir de cette vidéo</h2>
       <div className={styles.list}>
         {feeling.recap.map((r, index) => (

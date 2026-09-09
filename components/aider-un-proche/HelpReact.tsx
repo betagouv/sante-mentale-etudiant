@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function HelpReact() {
   return (
-    <FullBleedSection containerClassName={styles.container} aria-labelledby="react-title">
+    <FullBleedSection aria-labelledby="react-title">
       <div className={styles.header}>
         <LightPinkBadge>Étape 2</LightPinkBadge>
         <h2 id="react-title">Comment réagir ?</h2>

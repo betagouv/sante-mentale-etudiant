@@ -11,7 +11,7 @@ import {
 
 export default function NeedToTalkBanner() {
   return (
-    <FullBleedSection containerClassName={styles.container} bgColor="purple">
+    <FullBleedSection bgColor="purple">
       <IllustrationNeedToTalkWave />
       <IllustrationNeedToTalkStandingLeft />
       <IllustrationNeedToTalkSittingLeft />

@@ -1,7 +1,6 @@
 .container {
   max-width: 996px;
   margin: auto;
-  padding-top: 3rem;
   color: #161616;
 
   strong {
@@ -70,7 +69,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .container {
     padding-top: 1rem;
   }

@@ -5,7 +5,7 @@ import { IllustrationHelpCare } from "../illustrations";
 
 export default function HelpYourself() {
   return (
-    <FullBleedSection containerClassName={styles.container} bgColor="grey">
+    <FullBleedSection bgColor="grey">
       <IllustrationHelpCare />
       <div className={styles.textColumn}>
         <LightPinkBadge>étape 3</LightPinkBadge>

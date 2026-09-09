@@ -12,7 +12,7 @@ import LaunchOrienteurCard from "./orienteur/LaunchOrienteurCard";
 export default function HomeHero() {
   return (
     <FullBleedSection
-      containerClassName={styles.heroContainer}
+      innerContainerClassName={styles.heroContainer}
       aria-labelledby="cta-hero"
       bgColor="purple"
       borderColor="yellow"

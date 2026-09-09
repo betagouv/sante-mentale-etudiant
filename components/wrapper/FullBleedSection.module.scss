@@ -5,6 +5,11 @@
 
   &.purple {
     background-color: var(--purple);
+    color: white;
+  }
+
+  &.light-purple {
+    background-color: #f5f5fe;
   }
 
   &.border-yellow {
@@ -18,4 +23,16 @@
 
 .container {
   position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.innerContainer {
+  padding: 3.5rem 7.5rem;
+}
+
+@media (max-width: 728px) {
+  .innerContainer {
+    padding: 1.5rem;
+  }
 }

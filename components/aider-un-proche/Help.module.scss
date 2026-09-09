@@ -4,7 +4,7 @@
   text-align: center;
   align-items: center;
   gap: 1rem;
-  padding: 4.5rem 18.75rem 5rem;
+  padding: 0rem 12rem;
 
   .title {
     font-size: 3.5rem;
@@ -18,10 +18,15 @@
   }
 }
 
-@media (max-width: 728px) {
+@media (max-width: 1200px) {
   .container {
     padding: 2rem;
+  }
+}
 
+@media (max-width: 728px) {
+  .container {
+    padding: 0px;
     .title {
       font-size: x-large;
       line-height: normal;

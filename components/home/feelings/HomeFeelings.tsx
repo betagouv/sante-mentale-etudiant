@@ -8,12 +8,7 @@ import { IllustrationHomeFeelingsWave } from "@/components/illustrations";
 
 export default function HomeFeelings() {
   return (
-    <FullBleedSection
-      containerClassName={styles.container}
-      aria-labelledby="feelings-grid-title"
-      bgColor="purple"
-      borderColor="green"
-    >
+    <FullBleedSection aria-labelledby="feelings-grid-title" bgColor="purple" borderColor="green">
       <IllustrationHomeFeelingsWave />
       <div className={styles.header}>
         <h2>Mettre des mots sur ce que tu ressens</h2>

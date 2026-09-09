@@ -9,7 +9,7 @@ type Props = {
 };
 export default function FeelingUnderstand({ feeling }: Props) {
   return (
-    <FullBleedSection containerClassName={styles.container} bgColor="grey">
+    <FullBleedSection bgColor="grey">
       <div className={styles.card}>
         <h2>{feeling.faq.title}</h2>
         <p>{feeling.faq.intro}</p>
