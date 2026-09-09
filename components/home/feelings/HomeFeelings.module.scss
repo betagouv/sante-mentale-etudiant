@@ -1,11 +1,12 @@
 .section {
   background-color: var(--purple);
-    border-bottom: 6px solid var(--light-green);
+  border-bottom: 6px solid var(--light-green);
 }
 
 .container {
   color: white;
   padding-bottom: 6rem;
+  position: relative;
 }
 
 .header {

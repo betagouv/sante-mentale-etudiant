@@ -73,3 +73,66 @@ export const IllustrationFeelingVideo = () => (
     className={styles.feelingVideo}
   />
 );
+
+export const IllustrationHomeWave = () => (
+  <RenderImage
+    src="/images/illustrations/home/wave.svg"
+    width={1110}
+    height={608}
+    className={styles.homeWave}
+  />
+);
+
+export const IllustrationHomeFeelingsWave = () => (
+  <RenderImage
+    src="/images/illustrations/home/wave2.svg"
+    width={1190}
+    height={754}
+    className={styles.homeWave2}
+  />
+);
+
+export const IllustrationHomeMozaic = () => (
+  <RenderImage
+    src="/images/illustrations/home/mozaic.svg"
+    width={367}
+    height={424}
+    className={styles.homeMozaic}
+  />
+);
+
+export const IllustrationHomePeopleDesktop = () => (
+  <RenderImage
+    src="/images/illustrations/home/people-desktop.png"
+    width={562}
+    height={344}
+    className={styles.homePeopleDesktop}
+  />
+);
+
+export const IllustrationHomeGirlDesktop = () => (
+  <RenderImage
+    src="/images/illustrations/home/girl-desktop.png"
+    width={313}
+    height={392}
+    className={styles.homeGirlDesktop}
+  />
+);
+
+export const IllustrationHomeTestimonials1 = () => (
+  <RenderImage
+    src="/images/illustrations/home/question1.svg"
+    width={239}
+    height={217}
+    className={styles.homeTestimonial1}
+  />
+);
+
+export const IllustrationHomeTestimonials2 = () => (
+  <RenderImage
+    src="/images/illustrations/home/question2.svg"
+    width={163}
+    height={168}
+    className={styles.homeTestimonial2}
+  />
+);

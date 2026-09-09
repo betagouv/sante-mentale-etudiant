@@ -3,11 +3,17 @@ import styles from "./HomeFeelings.module.scss";
 import { feelings } from "@/lib/feelings/data";
 import { FEELING_TILES } from "./feelings.config";
 import FullBleedSection from "../../wrapper/FullBleedSection";
+import { IllustrationHomeFeelingsWave } from "@/components/illustrations";
 // import Tile from "@codegouvfr/react-dsfr/Tile";
 
 export default function HomeFeelings() {
   return (
-    <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="feelings-grid-title">
+    <FullBleedSection
+      className={styles.section}
+      containerClassName={styles.container}
+      aria-labelledby="feelings-grid-title"
+    >
+      <IllustrationHomeFeelingsWave />
       <div className={styles.header}>
         <h2>Mettre des mots sur ce que tu ressens</h2>
         <p>Des fiches pour comprendre, reconnaître et trouver de l'aide</p>

@@ -4,17 +4,15 @@
 }
 
 .heroContainer {
-  padding-top: 1rem;
+  padding-top: 5.5rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .firstGrid {
-  display: flex;
-  flex-direction: column;
+  margin-top: 1rem;
   width: 100%;
-  padding: 0 2rem;
-  justify-content: end;
 }
 
 .secondGrid {
@@ -35,11 +33,6 @@
   color: var(--bg-yellow);
 }
 
-.picture {
-  display: flex;
-  width: 100%;
-}
-
 .heroImage {
   display: block;
   width: 100%;
@@ -54,6 +47,7 @@
 
   .heroContainer {
     flex-direction: row;
+    align-items: flex-start;
     height: 580px;
   }
 
