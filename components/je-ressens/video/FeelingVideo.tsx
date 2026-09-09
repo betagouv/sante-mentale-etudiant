@@ -9,7 +9,7 @@ type Props = {
 };
 export default function FeelingVideo({ feeling }: Props) {
   return (
-    <FullBleedSection bgColor="purple" containerClassName={styles.container} borderColor="yellow">
+    <FullBleedSection bgColor="purple" borderColor="yellow">
       <IllustrationFeelingVideo />
       <div className={styles.content}>
         <div className={styles.desc}>

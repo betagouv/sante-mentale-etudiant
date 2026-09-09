@@ -28,7 +28,9 @@ export default function FullBleedSection({
       className={`${styles.section} ${bgColorClass} ${borderColorClass} ${className ?? ""}`.trim()}
       aria-labelledby={ariaLabelledBy}
     >
-      <div className={`fr-container ${containerClassName ?? ""}`}>{children}</div>
+      <div className={`fr-container ${styles.container} ${containerClassName ?? ""}`}>
+        {children}
+      </div>
     </section>
   );
 }

@@ -12,7 +12,6 @@ import LaunchOrienteurCard from "./orienteur/LaunchOrienteurCard";
 export default function HomeHero() {
   return (
     <FullBleedSection
-      className={styles.hero}
       containerClassName={styles.heroContainer}
       aria-labelledby="cta-hero"
       bgColor="purple"
