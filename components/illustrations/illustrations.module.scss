@@ -1,8 +1,15 @@
 .illustration {
+  display: none;
   position: absolute;
   pointer-events: none;
   z-index: 0;
   max-height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .illustration {
+    display: inline-block;
+  }
 }
 
 .needToTalkSittingLeft {
