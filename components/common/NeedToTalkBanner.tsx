@@ -1,10 +1,18 @@
 import Button from "@codegouvfr/react-dsfr/Button";
 import styles from "./NeedToTalkBanner.module.scss";
 import FullBleedSection from "../wrapper/FullBleedSection";
+import {
+  IllustrationNeedToTalkSittingLeft,
+  IllustrationNeedToTalkStandingLeft,
+  IllustrationWave,
+} from "../illustrations";
 
 export default function NeedToTalkBanner() {
   return (
     <FullBleedSection className={styles.section} containerClassName={styles.container}>
+      <IllustrationWave />
+      <IllustrationNeedToTalkStandingLeft />
+      <IllustrationNeedToTalkSittingLeft />
       <div className={styles.content}>
         <h2 className={styles.title}>Besoin de parler à quelqu'un ?</h2>
         <p className={styles.subtitle}>

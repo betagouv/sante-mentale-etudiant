@@ -1,0 +1,21 @@
+.illustration {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  max-height: 100%;
+}
+
+.needToTalkSittingLeft {
+  left: 85px;
+  bottom: 0px;
+}
+
+.needToTalkStandingLeft {
+  left: 0px;
+  bottom: 0px;
+}
+
+.needToTalkWave {
+  left: 0px;
+  bottom: 0px;
+}
