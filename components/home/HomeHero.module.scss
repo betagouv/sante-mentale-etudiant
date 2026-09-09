@@ -4,29 +4,28 @@
 }
 
 .heroContainer {
-  padding-top: 5.5rem;
+  padding: 1rem 0 0 0;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.firstGrid {
+.title {
   margin-top: 1rem;
   width: 100%;
-}
+  text-align: center;
+  padding-bottom: 9.2rem;
+  position: relative;
 
-.secondGrid {
-  width: 100%;
-}
-
-.title {
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-  letter-spacing: 0%;
-  padding-left: 2rem;
-  margin: 0;
+  h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: 0%;
+    padding-left: 2rem;
+    margin: 0;
+  }
 }
 
 .highlight {
@@ -45,27 +44,30 @@
     padding-top: 0;
   }
 
-  .heroContainer {
-    flex-direction: row;
-    align-items: flex-start;
-    height: 580px;
-  }
-
-  .firstGrid {
-    width: 60%;
-    padding: 0 3rem;
-  }
-
-  .secondGrid {
-    width: 40%;
-  }
-
-  .title {
-    font-size: 3.5rem;
-    line-height: 4rem;
+  .orienteur {
+    min-width: 454px;
   }
 
   .heroImage {
     max-height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    text-align: left;
+    h1 {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+  }
+  .heroContainer {
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 2rem;
+    padding-top: 5.5rem;
+    padding-left: 5.5rem;
+    padding-right: 7.75rem;
+    height: 580px;
   }
 }

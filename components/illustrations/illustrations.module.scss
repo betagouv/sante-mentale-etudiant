@@ -4,11 +4,21 @@
   pointer-events: none;
   z-index: 0;
   max-height: 100%;
+
+  &.homePeopleMobile {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 1200px) {
   .illustration {
     display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .homePeopleMobile {
+    display: none !important;
   }
 }
 
@@ -65,6 +75,12 @@
 .homeGirlDesktop {
   left: 561px;
   bottom: 0px;
+}
+
+.homePeopleMobile {
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .homeTestimonial1 {

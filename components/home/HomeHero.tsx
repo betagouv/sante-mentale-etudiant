@@ -2,6 +2,7 @@ import {
   IllustrationHomeGirlDesktop,
   IllustrationHomeMozaic,
   IllustrationHomePeopleDesktop,
+  IllustrationHomePeopleMobile,
   IllustrationHomeWave,
 } from "../illustrations";
 import FullBleedSection from "../wrapper/FullBleedSection";
@@ -19,12 +20,13 @@ export default function HomeHero() {
       <IllustrationHomeMozaic />
       <IllustrationHomeGirlDesktop />
       <IllustrationHomePeopleDesktop />
-      <div className={styles.firstGrid}>
-        <h1 className={styles.title}>
+      <div className={styles.title}>
+        <IllustrationHomePeopleMobile />
+        <h1>
           La santé mentale des étudiants, <span className={styles.highlight}>parlons-en.</span>
         </h1>
       </div>
-      <div className={styles.secondGrid}>
+      <div className={styles.orienteur}>
         <LaunchOrienteurCard />
       </div>
     </FullBleedSection>

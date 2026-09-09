@@ -110,6 +110,15 @@ export const IllustrationHomePeopleDesktop = () => (
   />
 );
 
+export const IllustrationHomePeopleMobile = () => (
+  <RenderImage
+    src="/images/illustrations/home/mobile.png"
+    width={327}
+    height={147}
+    className={styles.homePeopleMobile}
+  />
+);
+
 export const IllustrationHomeGirlDesktop = () => (
   <RenderImage
     src="/images/illustrations/home/girl-desktop.png"
