@@ -182,6 +182,15 @@ export const IllustrationHelpSigns = () => (
   />
 );
 
+export const IllustrationHelpCare = () => (
+  <RenderImage
+    src="/images/illustrations/help/care.svg"
+    width={676}
+    height={518}
+    className={styles.helpCare}
+  />
+);
+
 export const IllustrationArticlesLeft1 = () => (
   <RenderImage
     src="/images/illustrations/articles/left1.svg"
