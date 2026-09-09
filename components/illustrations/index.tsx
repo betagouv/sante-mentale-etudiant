@@ -172,3 +172,30 @@ export const IllustrationHelpSigns = () => (
     className={styles.helpSigns}
   />
 );
+
+export const IllustrationArticlesLeft1 = () => (
+  <RenderImage
+    src="/images/illustrations/articles/left1.svg"
+    width={320}
+    height={467}
+    className={styles.articlesLeft1}
+  />
+);
+
+export const IllustrationArticlesLeft2 = () => (
+  <RenderImage
+    src="/images/illustrations/articles/left2.svg"
+    width={244}
+    height={248}
+    className={styles.articlesLeft2}
+  />
+);
+
+export const IllustrationArticlesRight = () => (
+  <RenderImage
+    src="/images/illustrations/articles/right.svg"
+    width={318}
+    height={467}
+    className={styles.articlesRight}
+  />
+);
