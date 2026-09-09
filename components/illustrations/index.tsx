@@ -38,6 +38,23 @@ export const IllustrationNeedToTalkStandingLeft = () => (
     className={styles.needToTalkStandingLeft}
   />
 );
+export const IllustrationNeedToTalkSittingRight = () => (
+  <RenderImage
+    src="/images/illustrations/needToTalkBanner/sitting-right.png"
+    width={294}
+    height={214}
+    className={styles.needToTalkSittingRight}
+  />
+);
+
+export const IllustrationNeedToTalkStandingRight = () => (
+  <RenderImage
+    src="/images/illustrations/needToTalkBanner/standing-right.png"
+    width={129}
+    height={430}
+    className={styles.needToTalkStandingRight}
+  />
+);
 
 export const IllustrationNeedToTalkWave = () => (
   <RenderImage
