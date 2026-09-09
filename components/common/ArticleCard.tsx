@@ -10,6 +10,15 @@ type Props = {
 };
 
 export const ArticleCard = ({ article }: Props) => {
+  const link =
+    article.type === "internal"
+      ? { href: `/articles/${article.slug}` }
+      : {
+          href: article.url,
+          referrerPolicy: "no-referrer" as const,
+          target: "_blank" as const,
+          rel: "noopener noreferrer",
+        };
   return (
     <Card
       className={styles.card}
@@ -23,9 +32,7 @@ export const ArticleCard = ({ article }: Props) => {
       enlargeLink
       imageAlt=""
       imageUrl={article.heroImage}
-      linkProps={{
-        href: `/articles/${article.slug}`,
-      }}
+      linkProps={link}
       size="small"
       start={
         <ul className="fr-tags-group">
@@ -36,7 +43,12 @@ export const ArticleCard = ({ article }: Props) => {
       }
       title={article.title}
       titleAs="h3"
-      endDetail={<>{renderReadingTime(article.readingTime)}</>}
+      endDetail={
+        <>
+          {renderReadingTime(article.readingTime)}
+          {article.type === "external" ? " • Lien externe" : ""}
+        </>
+      }
     />
   );
 };
