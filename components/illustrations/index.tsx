@@ -47,3 +47,12 @@ export const IllustrationWave = () => (
     className={styles.needToTalkStandingLeft}
   />
 );
+
+export const IllustrationFeelingVideo = () => (
+  <RenderImage
+    src="/images/illustrations/feeling-video.svg"
+    width={369}
+    height={740}
+    className={styles.feelingVideo}
+  />
+);

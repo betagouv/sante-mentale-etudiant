@@ -20,16 +20,6 @@
   overflow: hidden;
 }
 
-.illustration {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0px;
-  pointer-events: none;
-  z-index: 0;
-  max-height: 100%;
-}
-
 .desc {
   max-width: 360px;
   * {
@@ -64,10 +54,6 @@
 }
 
 @media (min-width: 1200px) {
-  .illustration {
-    display: inline-block;
-  }
-
   .content {
     flex-direction: row;
   }

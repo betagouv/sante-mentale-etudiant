@@ -1,8 +1,8 @@
-import Image from "next/image";
 import FullBleedSection from "../../wrapper/FullBleedSection";
 import styles from "./FeelingVideo.module.scss";
 import { Feeling as FeelingType } from "@/lib/feelings/types";
 import NeedHelp from "./NeedHelp";
+import { IllustrationFeelingVideo } from "@/components/illustrations";
 
 type Props = {
   feeling: FeelingType;
@@ -10,14 +10,7 @@ type Props = {
 export default function FeelingVideo({ feeling }: Props) {
   return (
     <FullBleedSection className={styles.section} containerClassName={styles.container}>
-      <Image
-        src="/images/illustrations/feeling-video.svg"
-        alt=""
-        aria-hidden="true"
-        width={369}
-        height={740}
-        className={styles.illustration}
-      />
+      <IllustrationFeelingVideo />
       <div className={styles.content}>
         <div className={styles.desc}>
           <h1>{feeling.catch.description}</h1>
