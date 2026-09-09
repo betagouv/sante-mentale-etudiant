@@ -39,7 +39,7 @@ export const IllustrationNeedToTalkStandingLeft = () => (
   />
 );
 
-export const IllustrationWave = () => (
+export const IllustrationNeedToTalkWave = () => (
   <RenderImage
     src="/images/illustrations/needToTalkBanner/wave.svg"
     width={1440}

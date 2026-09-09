@@ -4,13 +4,13 @@ import FullBleedSection from "../wrapper/FullBleedSection";
 import {
   IllustrationNeedToTalkSittingLeft,
   IllustrationNeedToTalkStandingLeft,
-  IllustrationWave,
+  IllustrationNeedToTalkWave,
 } from "../illustrations";
 
 export default function NeedToTalkBanner() {
   return (
     <FullBleedSection className={styles.section} containerClassName={styles.container}>
-      <IllustrationWave />
+      <IllustrationNeedToTalkWave />
       <IllustrationNeedToTalkStandingLeft />
       <IllustrationNeedToTalkSittingLeft />
       <div className={styles.content}>
