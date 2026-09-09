@@ -1,20 +1,25 @@
+import { IllustrationHelpSigns } from "../illustrations";
 import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./HelpSigns.module.scss";
 import { signCategories } from "./data/signs";
 import { LightPinkBadge } from "@/components/common/Badges";
 
-
 export default function HelpSigns() {
   return (
-    <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="signs-title">
+    <FullBleedSection
+      className={styles.section}
+      containerClassName={styles.container}
+      aria-labelledby="signs-title"
+    >
+      <IllustrationHelpSigns />
       <LightPinkBadge>Étape 1</LightPinkBadge>
       <div className={styles.titlesWrapper}>
         <h2 id="signs-title" className={styles.title}>
           Repérer les premiers signes
         </h2>
         <p className={styles.subtitle}>
-          <b>Pas besoin d'être expert.</b> Souvent, ce sont plusieurs petits signaux qui s'accumulent. <br /> Si
-          quelque chose t'inquiète, fais confiance à ton ressenti.
+          <b>Pas besoin d'être expert.</b> Souvent, ce sont plusieurs petits signaux qui
+          s'accumulent. <br /> Si quelque chose t'inquiète, fais confiance à ton ressenti.
         </p>
       </div>
 

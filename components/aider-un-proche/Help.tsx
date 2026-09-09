@@ -6,11 +6,19 @@ import HelpWords from "./HelpWords";
 import HelpYourself from "./HelpYourself";
 import NeedToTalkBanner from "../common/NeedToTalkBanner";
 import FullBleedSection from "../wrapper/FullBleedSection";
+import {
+  IllustrationHelpLeft1,
+  IllustrationHelpLeft2,
+  IllustrationHelpRight,
+} from "../illustrations";
 
 export default function Help() {
   return (
     <div>
       <FullBleedSection className={styles.section} containerClassName={styles.container}>
+        <IllustrationHelpLeft1 />
+        <IllustrationHelpLeft2 />
+        <IllustrationHelpRight />
         <h1 className={styles.title}>
           Tu t'inquiètes <br /> pour un proche ?
         </h1>

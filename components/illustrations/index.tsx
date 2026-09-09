@@ -136,3 +136,39 @@ export const IllustrationHomeTestimonials2 = () => (
     className={styles.homeTestimonial2}
   />
 );
+
+export const IllustrationHelpLeft1 = () => (
+  <RenderImage
+    src="/images/illustrations/help/left1.svg"
+    width={141}
+    height={414}
+    className={styles.helpLeft1}
+  />
+);
+
+export const IllustrationHelpLeft2 = () => (
+  <RenderImage
+    src="/images/illustrations/help/left2.svg"
+    width={247}
+    height={387}
+    className={styles.helpLeft2}
+  />
+);
+
+export const IllustrationHelpRight = () => (
+  <RenderImage
+    src="/images/illustrations/help/right.svg"
+    width={327}
+    height={393}
+    className={styles.helpRight}
+  />
+);
+
+export const IllustrationHelpSigns = () => (
+  <RenderImage
+    src="/images/illustrations/help/signs.svg"
+    width={532}
+    height={776}
+    className={styles.helpSigns}
+  />
+);

@@ -3,6 +3,7 @@
 }
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -28,9 +29,9 @@
 
     .title {
       font-size: x-large;
-      line-height: normal
+      line-height: normal;
     }
-    
+
     .subtitle {
       font-size: large;
     }

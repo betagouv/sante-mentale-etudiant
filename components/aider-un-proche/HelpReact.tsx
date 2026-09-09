@@ -6,19 +6,23 @@ import Image from "next/image";
 
 export default function HelpReact() {
   return (
-    <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="react-title">
+    <FullBleedSection
+      className={styles.section}
+      containerClassName={styles.container}
+      aria-labelledby="react-title"
+    >
       <div className={styles.header}>
         <LightPinkBadge>Étape 2</LightPinkBadge>
         <h2 id="react-title">Comment réagir ?</h2>
         <p className={styles.subtitle}>
-          <b>Utilise la méthode L.I.E.N.</b> en 4 étapes, inspirée des approches de prévention par les
-          pairs. <br /> Tu n'as pas besoin d'être expert, ta présence compte énormément.
+          <b>Utilise la méthode L.I.E.N.</b> en 4 étapes, inspirée des approches de prévention par
+          les pairs. <br /> Tu n'as pas besoin d'être expert, ta présence compte énormément.
         </p>
       </div>
 
       <div className={styles.content}>
         <Image
-          src="/images/pictures/woman-phone.jpg"
+          src="/images/pictures/help.jpg"
           alt=""
           className={styles.photo}
           width={408}
