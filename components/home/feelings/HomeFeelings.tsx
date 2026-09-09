@@ -9,9 +9,10 @@ import { IllustrationHomeFeelingsWave } from "@/components/illustrations";
 export default function HomeFeelings() {
   return (
     <FullBleedSection
-      className={styles.section}
       containerClassName={styles.container}
       aria-labelledby="feelings-grid-title"
+      bgColor="purple"
+      borderColor="green"
     >
       <IllustrationHomeFeelingsWave />
       <div className={styles.header}>

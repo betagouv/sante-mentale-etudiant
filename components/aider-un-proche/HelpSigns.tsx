@@ -7,9 +7,9 @@ import { LightPinkBadge } from "@/components/common/Badges";
 export default function HelpSigns() {
   return (
     <FullBleedSection
-      className={styles.section}
       containerClassName={styles.container}
       aria-labelledby="signs-title"
+      bgColor="purple"
     >
       <IllustrationHelpSigns />
       <LightPinkBadge>Étape 1</LightPinkBadge>

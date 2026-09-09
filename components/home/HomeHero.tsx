@@ -15,6 +15,8 @@ export default function HomeHero() {
       className={styles.hero}
       containerClassName={styles.heroContainer}
       aria-labelledby="cta-hero"
+      bgColor="purple"
+      borderColor="yellow"
     >
       <IllustrationHomeWave />
       <IllustrationHomeMozaic />

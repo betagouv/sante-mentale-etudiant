@@ -16,14 +16,16 @@ const TO_AVOID = [
 
 export default function HelpWords() {
   return (
-    <FullBleedSection className={styles.section} containerClassName={styles.container} aria-labelledby="words-title">
+    <FullBleedSection containerClassName={styles.container} aria-labelledby="words-title">
       <div className={styles.textWrapper}>
         <h2 className={styles.title}>
           Ce qu'on peut dire <span className={styles.regular}>(et ce qu'il vaut mieux éviter)</span>
         </h2>
         <div className={styles.columns}>
           <div className={styles.column}>
-            <Badge severity="success" noIcon>À PRIVILÉGIER</Badge>
+            <Badge severity="success" noIcon>
+              À PRIVILÉGIER
+            </Badge>
             <ul className={styles.list}>
               {TO_SAY.map((text) => (
                 <li key={text}>{text}</li>
@@ -31,7 +33,9 @@ export default function HelpWords() {
             </ul>
           </div>
           <div className={styles.column}>
-            <Badge severity="error" noIcon>À ÉVITER</Badge>
+            <Badge severity="error" noIcon>
+              À ÉVITER
+            </Badge>
             <ul className={styles.list}>
               {TO_AVOID.map((text) => (
                 <li key={text}>{text}</li>

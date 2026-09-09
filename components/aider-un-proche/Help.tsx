@@ -15,7 +15,7 @@ import {
 export default function Help() {
   return (
     <div>
-      <FullBleedSection className={styles.section} containerClassName={styles.container}>
+      <FullBleedSection containerClassName={styles.container} bgColor="grey">
         <IllustrationHelpLeft1 />
         <IllustrationHelpLeft2 />
         <IllustrationHelpRight />

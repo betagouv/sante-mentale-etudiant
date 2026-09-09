@@ -1,0 +1,17 @@
+.section {
+  &.grey {
+    background-color: var(--bg-light-grey);
+  }
+
+  &.purple {
+    background-color: var(--purple);
+  }
+
+  &.border-yellow {
+    border-bottom: 6px solid var(--bg-yellow);
+  }
+
+  &.border-green {
+    border-bottom: 6px solid var(--light-green);
+  }
+}

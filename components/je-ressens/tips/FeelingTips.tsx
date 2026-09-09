@@ -8,7 +8,7 @@ type Props = {
 };
 export default function FeelingTips({ feeling }: Props) {
   return (
-    <FullBleedSection className={styles.section} containerClassName={styles.container}>
+    <FullBleedSection containerClassName={styles.container} bgColor="purple">
       <div className={styles.innerContainer}>
         <h2>À tester au quotidien</h2>
         <div className={styles.cardsList}>

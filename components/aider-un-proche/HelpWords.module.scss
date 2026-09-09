@@ -1,13 +1,9 @@
-.section {
-  background-color: white;
-}
-
 .container {
   padding: 0 7.5rem 3.5rem;
 }
 
 .textWrapper {
-  background-color: #F5F5FE;
+  background-color: #f5f5fe;
   padding: 2.5rem 3.5rem;
 }
 
@@ -36,7 +32,7 @@
   padding: 0 1.5rem;
 
   &:first-child {
-    border-right: 1px solid #DFDFDF;
+    border-right: 1px solid #dfdfdf;
     padding-left: 0;
   }
 
@@ -75,7 +71,7 @@
   .column {
     &:first-child {
       border-right: none;
-      border-bottom: 1px solid #DFDFDF;
+      border-bottom: 1px solid #dfdfdf;
       padding-bottom: 1.5rem;
     }
 
