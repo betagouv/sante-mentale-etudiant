@@ -1,16 +1,3 @@
-.section {
-  background-color: white;
-}
-
-.container {
-  padding: 0 7.5rem 3.5rem;
-}
-
-.textWrapper {
-  background-color: #F5F5FE;
-  padding: 2.5rem 3.5rem;
-}
-
 .title {
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -36,7 +23,7 @@
   padding: 0 1.5rem;
 
   &:first-child {
-    border-right: 1px solid #DFDFDF;
+    border-right: 1px solid #dfdfdf;
     padding-left: 0;
   }
 
@@ -60,14 +47,6 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
-
-  .textWrapper {
-    padding: 1rem;
-  }
-
   .title {
     font-size: x-large;
   }
@@ -75,7 +54,7 @@
   .column {
     &:first-child {
       border-right: none;
-      border-bottom: 1px solid #DFDFDF;
+      border-bottom: 1px solid #dfdfdf;
       padding-bottom: 1.5rem;
     }
 

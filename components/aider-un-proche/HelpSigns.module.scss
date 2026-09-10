@@ -1,11 +1,5 @@
-.section {
-  background-color: var(--bg-dark-purple);
-}
-
 .container {
-  color: white;
   text-align: center;
-  padding: 1rem;
 }
 
 .title {
@@ -100,11 +94,5 @@
 
   .card {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    padding: 3.5rem 7.5rem 4rem;
   }
 }

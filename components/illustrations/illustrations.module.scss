@@ -1,0 +1,137 @@
+.illustration {
+  display: none;
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  max-height: 100%;
+
+  &.homePeopleMobile {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .illustration {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .homePeopleMobile {
+    display: none !important;
+  }
+}
+
+.needToTalkSittingLeft {
+  left: 85px;
+  bottom: 0px;
+}
+
+.needToTalkStandingLeft {
+  left: 0px;
+  bottom: 0px;
+}
+
+.needToTalkSittingRight {
+  right: 58px;
+  bottom: 0px;
+}
+
+.needToTalkStandingRight {
+  right: 0px;
+  bottom: 0px;
+}
+
+.needToTalkWave {
+  left: 0px;
+  bottom: 0px;
+}
+
+.feelingVideo {
+  right: 0px;
+  top: 0px;
+}
+
+.homeWave {
+  left: 0px;
+  bottom: 0px;
+}
+
+.homeWave2 {
+  left: 0px;
+  bottom: 0px;
+}
+
+.homeMozaic {
+  right: 0px;
+  bottom: 0px;
+}
+
+.homePeopleDesktop {
+  left: 55px;
+  bottom: 0px;
+}
+
+.homeGirlDesktop {
+  left: 561px;
+  bottom: 0px;
+}
+
+.homePeopleMobile {
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.homeTestimonial1 {
+  right: 40px;
+  top: 40px;
+}
+
+.homeTestimonial2 {
+  left: 40px;
+  bottom: 100px;
+}
+
+.helpLeft1 {
+  left: 130px;
+  bottom: -80px;
+}
+
+.helpLeft2 {
+  left: 0px;
+  bottom: -150px;
+}
+
+.helpRight {
+  right: 0px;
+  bottom: -82px;
+}
+
+.helpSigns {
+  top: 0px;
+  right: 0px;
+}
+
+.helpCare {
+  bottom: 0px;
+  right: 0px;
+}
+
+.articlesLeft1 {
+  bottom: 0px;
+  left: 0px;
+  max-height: none;
+}
+
+.articlesLeft2 {
+  bottom: 0px;
+  left: 100px;
+  max-height: none;
+}
+
+.articlesRight {
+  bottom: 0px;
+  right: 0px;
+  max-height: none;
+}
