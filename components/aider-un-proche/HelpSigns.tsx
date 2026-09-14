@@ -15,11 +15,13 @@ export default function HelpSigns() {
       <LightPinkBadge>Étape 1</LightPinkBadge>
       <div className={styles.titlesWrapper}>
         <h2 id="signs-title" className={styles.title}>
-          Repérer les premiers signes
+          Repérer les premiers signes de mal-être
         </h2>
         <p className={styles.subtitle}>
-          <b>Pas besoin d'être expert.</b> Souvent, ce sont plusieurs petits signaux qui
-          s'accumulent. <br /> Si quelque chose t'inquiète, fais confiance à ton ressenti.
+          Souvent, ce sont plusieurs petits signaux qui s'accumulent. Pris isolément, ces
+          comportements ne sont pas forcément inquiétants, surtout lorsqu’ils sont passagers. En
+          revanche, leur accumulation ou un changement soudain dans les habitudes ou le comportement
+          peut traduire une situation de mal-être.
         </p>
       </div>
 
