@@ -1,4 +1,4 @@
-import { FEELING_ANXIETY } from "../feelings/data";
+import { FEELING_ANXIETY } from "../feelings/anxiety";
 import type { ArticleMeta } from "./types";
 
 export const articles: ArticleMeta[] = [
