@@ -19,3 +19,8 @@ export const videoModal = createModal({
   id: "video-card-modal",
   isOpenedByDefault: false,
 });
+
+export const readMoreModal = createModal({
+  id: "feeling-read-more-modal",
+  isOpenedByDefault: false,
+});
