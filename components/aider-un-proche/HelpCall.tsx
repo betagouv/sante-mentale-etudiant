@@ -13,21 +13,20 @@ export default function HelpCall() {
           Tu es témoin de propos suicidaires ? Parles-en pour être écouté et orienté
         </h2>
         <CustomCard
-          title="Consulte le site du 3114"
-          subtitle="Prévention du suicide"
-          description="Un professionnel de santé formé à la prévention du suicide sera à ton écoute. Ça peut prendre quelques minutes. Reste en ligne, tu fais bien d'appeler. 
+          title="Appelle le 3114"
+          subtitle="Numéro National de prévention du suicide"
+          description="Un professionnel de santé formé à la prévention du suicide sera à ton écoute. Ça peut prendre plusieurs minutes. Reste en ligne, tu fais bien d'appeler. 
           En danger immédiat ? Appelle le 15 (SAMU) sans attendre."
           image={logo_3114}
           button={
             <Button
               priority="secondary"
               linkProps={{
-                href: "https://3114.fr/",
-                target: "_blank",
-                rel: "noopener noreferrer",
+                href: "tel:3114",
+                "aria-label": "Appeler le 3114, numéro national de prévention du suicide",
               }}
             >
-              Consulter le site du 3114
+              Appeler le 3114
             </Button>
           }
           badges={[
