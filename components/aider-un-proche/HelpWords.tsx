@@ -6,12 +6,14 @@ const TO_SAY = [
   "« J'ai remarqué que tu sembles différent en ce moment. Tu veux qu'on en parle ? »",
   "« Je ne sais pas quoi te dire, mais je suis là. »",
   "« Tu n'as pas à porter ça tout seul. »",
+  "« Est-ce que tu penses parfois à te suicider, à mourir ? Tu peux m’en parler. »",
 ];
 
 const TO_AVOID = [
   "« T'inquiète, ça va aller »",
   "« D'autres ont vécu pire. »",
   "« Tu devrais juste sortir un peu plus »",
+  "Éviter le sujet, de peur de « lui donner l’idée »",
 ];
 
 export default function HelpWords() {

@@ -24,8 +24,9 @@ export default function Help() {
             Tu t'inquiètes <br /> pour un proche ?
           </h1>
           <p className={styles.subtitle}>
-            C'est déjà beaucoup de t'en préoccuper. Voici comment reconnaître les signes, comment
-            agir et comment prendre soin de toi aussi.
+            C'est déjà beaucoup de t'en préoccuper. Voici comment reconnaître les signes de
+            détresse, comment réagir et comment prendre soin de toi aussi.<br></br>Pas besoin d'être
+            expert. Si quelque chose t’inquiète, fais confiance à ton ressenti.
           </p>
         </div>
       </FullBleedSection>

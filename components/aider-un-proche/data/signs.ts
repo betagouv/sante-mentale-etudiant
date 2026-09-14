@@ -16,6 +16,8 @@ export const signCategories: SignCategory[] = [
       "«\u00A0Je suis épuisé en permanence\u00A0»",
       "«\u00A0Je n'arrive plus à rien\u00A0»",
       "«\u00A0Je ne sais plus pourquoi je continue\u00A0»",
+      "«\u00A0Je voudrais ne plus être là\u00A0»",
+      "«\u00A0ça serait plus simple si je n’étais plus là\u00A0»",
     ],
   },
   {
