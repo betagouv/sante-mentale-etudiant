@@ -1,19 +1,8 @@
-.section {
-  background-color: var(--bg-light-grey);
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding-top: 1.5rem;
-}
-
 .list {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -33,8 +22,7 @@
 
 @media (min-width: 1200px) {
   .container {
-    padding: 0;
-    padding-top: 3.3rem;
+    padding-bottom: 0;
   }
 }
 

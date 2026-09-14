@@ -1,4 +1,4 @@
-import NeedToTalkBanner from "../besoin-de-parler/NeedToTalkBanner";
+import NeedToTalkBanner from "../common/NeedToTalkBanner";
 import HomeFeelings from "./feelings/HomeFeelings";
 import HomeHero from "./HomeHero";
 import HomeVideos from "./videos/HomeVideos";

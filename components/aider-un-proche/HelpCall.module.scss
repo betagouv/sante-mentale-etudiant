@@ -1,12 +1,7 @@
-.section {
-  background-color: var(--bg-light-grey);
-}
-
 .container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3.5rem 7.5rem;
   gap: 2rem;
 }
 
@@ -22,7 +17,6 @@
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    padding: 1rem;
   }
 
   .text {

@@ -9,7 +9,7 @@ type Props = {
 };
 export default function Article({ article }: Props) {
   return (
-    <FullBleedSection className={styles.section} containerClassName={styles.pageContainer}>
+    <FullBleedSection innerContainerClassName={styles.pageContainer} bgColor="grey">
       <article className={styles.container}>
         <div className={styles.header}>
           <h1>{article.title}</h1>

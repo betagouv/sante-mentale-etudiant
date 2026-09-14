@@ -1,25 +1,17 @@
-.section {
-  background-color: white;
-}
-
-.container {
-  padding: 1rem;
-}
-
 .header {
   text-align: center;
   margin: 0 auto 3.5rem;
 
-    h2 {
-      font-size: 1.5rem;
-      margin: 0.5rem 0;
-      line-height: normal;
-    }
+  h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    line-height: normal;
+  }
 
-    .subtitle {
-      font-size: 1rem;
-      line-height: normal;
-    }
+  .subtitle {
+    font-size: 1rem;
+    line-height: normal;
+  }
 }
 
 .content {
@@ -58,10 +50,6 @@
 }
 
 @media (min-width: 769px) {
-  .container {
-    padding: 4rem 7.5rem 3.5rem;
-  }
-
   .content {
     flex-direction: row;
     align-items: flex-start;
@@ -70,15 +58,15 @@
   .header {
     text-align: center;
 
-      h2 {
-        font-size: 3rem;
-        line-height: 3.5rem;
-      }
+    h2 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
 
-      .subtitle {
-        font-size: 1.25rem;
-        line-height: 2rem;
-      }
+    .subtitle {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
   }
 
   .photo {

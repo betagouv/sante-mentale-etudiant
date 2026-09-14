@@ -11,6 +11,10 @@ import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { VideoCard } from "./VideoCard";
 import { testimonials } from "../../../data/videos";
 import { VideoPlayer } from "@/components/video-player/VideoPlayer";
+import {
+  IllustrationHomeTestimonials1,
+  IllustrationHomeTestimonials2,
+} from "@/components/illustrations";
 
 const videoModal = createModal({
   id: "video-card-modal",
@@ -30,8 +34,10 @@ export default function HomeVideos({
   title = "Une histoire qui pourrait être la tienne",
   description = "Des étudiants racontent, simplement, ce qu'ils ont vécu.",
 }: HomeVideosProps) {
-  const { trackRef, activeIndex, scrollToIndex, canScrollPrev, canScrollNext } =
-    useCarouselScroll(testimonials.length, STEP);
+  const { trackRef, activeIndex, scrollToIndex, canScrollPrev, canScrollNext } = useCarouselScroll(
+    testimonials.length,
+    STEP
+  );
   const [activeTestimonial, setActiveTestimonial] = useState<VideoTestimonial | null>(null);
 
   // we use this to stop de video auto when not on modal
@@ -43,11 +49,9 @@ export default function HomeVideos({
   };
 
   return (
-    <FullBleedSection
-      className={styles.section}
-      containerClassName={styles.container}
-      aria-labelledby="video-testimonials-title"
-    >
+    <FullBleedSection aria-labelledby="video-testimonials-title" bgColor="grey">
+      <IllustrationHomeTestimonials1 />
+      <IllustrationHomeTestimonials2 />
       <div className={styles.header}>
         <h2 id="video-testimonials-title">{title}</h2>
         {description && <p className={styles.description}>{description}</p>}
@@ -93,21 +97,19 @@ export default function HomeVideos({
         buttons={
           activeTestimonial?.link
             ? {
-              children: (
-                <>
-                  En savoir plus
-                </>
-              ),
-              linkProps: {
-                href: activeTestimonial.link,
-                target: "_blank",
-                rel: "noopener noreferrer",
-              },
-            }
+                children: <>En savoir plus</>,
+                linkProps: {
+                  href: activeTestimonial.link,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                },
+              }
             : undefined
         }
       >
-        {activeTestimonial && <VideoPlayer key={activeTestimonial.key} testimonial={activeTestimonial} />}
+        {activeTestimonial && (
+          <VideoPlayer key={activeTestimonial.key} testimonial={activeTestimonial} />
+        )}
       </videoModal.Component>
     </FullBleedSection>
   );

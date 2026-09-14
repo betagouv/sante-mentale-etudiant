@@ -43,7 +43,7 @@ export const FORMAT_WRITE = "write";
 export const FORMAT_CAMPUS = "campus";
 export const FORMAT_CHOOSE = "choose-myself";
 
-const IMAGE_DEFAULT = "/images/illustrations/student-mood.svg";
+const IMAGE_DEFAULT = "/images/illustrations/orienteur/image.jpg";
 
 export const orienteurTree: Record<string, OrienteurNode> = {
   [ORIENTEUR_ROOT_ID]: {

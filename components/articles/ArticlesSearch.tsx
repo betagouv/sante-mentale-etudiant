@@ -7,6 +7,11 @@ import { useMemo, useState } from "react";
 import { ArticlesList } from "../common/ArticlesList";
 import styles from "./ArticlesSearch.module.scss";
 import { Feeling } from "@/lib/feelings/types";
+import {
+  IllustrationArticlesLeft1,
+  IllustrationArticlesLeft2,
+  IllustrationArticlesRight,
+} from "../illustrations";
 
 type Props = {
   allArticles: ArticleMeta[];
@@ -37,34 +42,39 @@ export default function ArticlesSearch({ allArticles, feelings }: Props) {
   );
   return (
     <>
-      <Input
-        label=""
-        className={styles.search}
-        addon={<Button onClick={() => setSearchTerm(inputValue)}>Rechercher</Button>}
-        nativeInputProps={{
-          onChange: (e) => setInputValue(e.target.value),
-          onKeyDown: (e) => {
-            if (e.key === "Enter") {
-              setSearchTerm(inputValue);
-            }
-          },
-          value: inputValue,
-        }}
-      />
-      <ul className="fr-tags-group">
-        {feelings.map((f) => (
-          <li key={f.slug}>
-            <Tag
-              nativeButtonProps={{
-                onClick: () => toggleFeelingSlug(f.slug),
-              }}
-              pressed={selectedFeelingSlugs.includes(f.slug)}
-            >
-              {f.name}
-            </Tag>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.wrapper}>
+        <IllustrationArticlesLeft1 />
+        <IllustrationArticlesLeft2 />
+        <IllustrationArticlesRight />
+        <Input
+          label=""
+          className={styles.search}
+          addon={<Button onClick={() => setSearchTerm(inputValue)}>Rechercher</Button>}
+          nativeInputProps={{
+            onChange: (e) => setInputValue(e.target.value),
+            onKeyDown: (e) => {
+              if (e.key === "Enter") {
+                setSearchTerm(inputValue);
+              }
+            },
+            value: inputValue,
+          }}
+        />
+        <ul className={`${styles.tags} fr-tags-group`}>
+          {feelings.map((f) => (
+            <li key={f.slug}>
+              <Tag
+                nativeButtonProps={{
+                  onClick: () => toggleFeelingSlug(f.slug),
+                }}
+                pressed={selectedFeelingSlugs.includes(f.slug)}
+              >
+                {f.name}
+              </Tag>
+            </li>
+          ))}
+        </ul>
+      </div>
       <ArticlesList articles={filteredArticles} />
     </>
   );

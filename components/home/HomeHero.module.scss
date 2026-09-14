@@ -1,77 +1,52 @@
-.hero {
-  background-color: var(--purple);
-  border-bottom: 6px solid var(--bg-yellow);
-}
-
 .heroContainer {
-  padding-top: 1rem;
   display: flex;
   flex-direction: column;
-}
-
-.firstGrid {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 2rem;
-  justify-content: end;
-}
-
-.secondGrid {
-  width: 100%;
+  padding: 0px;
 }
 
 .title {
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-  letter-spacing: 0%;
-  padding-left: 2rem;
-  margin: 0;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 9.2rem;
+  position: relative;
+
+  h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: 0%;
+    padding-left: 2rem;
+    margin: 0;
+  }
 }
 
 .highlight {
   color: var(--bg-yellow);
 }
 
-.picture {
-  display: flex;
-  width: 100%;
-}
-
-.heroImage {
-  display: block;
-  width: 100%;
-  max-height: 256px; /* mobile */
-  object-fit: cover;
-}
-
 @media (min-width: 768px) {
-  .hero {
-    padding-top: 0;
+  .orienteur {
+    min-width: 454px;
   }
+}
 
+@media (min-width: 992px) {
+  .title {
+    text-align: left;
+    h1 {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+  }
   .heroContainer {
     flex-direction: row;
+    align-items: flex-start;
+    column-gap: 2rem;
+    padding-top: 5.5rem;
+    padding-left: 5.5rem;
+    padding-right: 7.75rem;
     height: 580px;
-  }
-
-  .firstGrid {
-    width: 60%;
-    padding: 0 3rem;
-  }
-
-  .secondGrid {
-    width: 40%;
-  }
-
-  .title {
-    font-size: 3.5rem;
-    line-height: 4rem;
-  }
-
-  .heroImage {
-    max-height: 400px;
   }
 }
