@@ -5,8 +5,19 @@ export const FEELING_ANXIETY: Feeling = {
   name: "Anxiété",
   catch: {
     description: "Je ressens du stress, de l'anxiété",
-    sentence:
-      "Tu as l'impression que ton cerveau ne s'arrête jamais. Tu penses à tes cours, à ton avenir, à ton budget, à tout en même temps. Tu dors mal, ton cœur s'emballe parfois sans raison et tu te sens tendu presque toute la journée.Le stress fait partie de la vie.<br>Mais lorsqu'il dure ou prend toute la place, il mérite d'être écouté. Il existe des solutions pour retrouver un peu d'apaisement.",
+    sentence: (
+      <>
+        <p>
+          Tu as l'impression que ton cerveau ne s'arrête jamais. Tu penses à tes cours, à ton
+          avenir, à ton budget, à tout en même temps. Tu dors mal, ton cœur s'emballe parfois sans
+          raison et tu te sens tendu presque toute la journée.Le stress fait partie de la vie.
+        </p>
+        <p>
+          Mais lorsqu'il dure ou prend toute la place, il mérite d'être écouté. Il existe des
+          solutions pour retrouver un peu d'apaisement.
+        </p>
+      </>
+    ),
   },
   video: {
     duration: 5,

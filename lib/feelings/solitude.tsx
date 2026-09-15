@@ -5,8 +5,20 @@ export const FEELING_SOLITUDE: Feeling = {
   name: "Solitude",
   catch: {
     description: "Je me sens seul / isolé",
-    sentence:
-      "Tu es entouré de monde en cours, mais tu as l'impression de n'avoir personne à qui parler vraiment. Tu regardes les autres rire ensemble et tu te demandes pourquoi tu n'y arrives pas. Tu as parfois l'impression que tout le monde a trouvé sa place… sauf toi.<br>Se sentir seul ne veut pas forcément dire être seul. C'est un ressenti que beaucoup d'étudiants connaissent, surtout lors des périodes de changement. Et il est possible d'en sortir.",
+    sentence: (
+      <>
+        <p>
+          Tu es entouré de monde en cours, mais tu as l'impression de n'avoir personne à qui parler
+          vraiment. Tu regardes les autres rire ensemble et tu te demandes pourquoi tu n'y arrives
+          pas. Tu as parfois l'impression que tout le monde a trouvé sa place… sauf toi.
+        </p>
+        <p>
+          Se sentir seul ne veut pas forcément dire être seul. C'est un ressenti que beaucoup
+          d'étudiants connaissent, surtout lors des périodes de changement. Et il est possible d'en
+          sortir.
+        </p>
+      </>
+    ),
   },
   video: {
     duration: 5,

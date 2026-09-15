@@ -14,7 +14,7 @@ export default function FeelingVideo({ feeling }: Props) {
       <div className={styles.content}>
         <div className={styles.desc}>
           <h1>{feeling.catch.description}</h1>
-          <p dangerouslySetInnerHTML={{ __html: feeling.catch.sentence }} />
+          {feeling.catch.sentence}
           <div className={styles.duration}>
             <span className="fr-icon--md fr-icon-time-line" />
             <span>{feeling.video.duration} minutes</span>

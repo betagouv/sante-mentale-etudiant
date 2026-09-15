@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 type Intro = {
-  sentence: string;
+  sentence: ReactNode;
   description: string;
 };
 

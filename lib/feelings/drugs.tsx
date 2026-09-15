@@ -5,8 +5,20 @@ export const FEELING_DRUGS: Feeling = {
   name: "Substances",
   catch: {
     description: "Je m'interroge sur mon rapport à certaines substances",
-    sentence:
-      "Tu bois plus souvent qu'avant pour te détendre. Tu fumes un joint pour réussir à dormir. Tu as l'impression que les cigarettes, les boissons énergisantes ou une autre substance t'aident à tenir le coup.<br>Il est normal de se poser des questions sur sa consommation. Le plus important n'est pas uniquement ce que tu consommes, mais la place que cela prend dans ta vie et les raisons qui te poussent à y avoir recours.",
+    sentence: (
+      <>
+        <p>
+          Tu bois plus souvent qu'avant pour te détendre. Tu fumes un joint pour réussir à dormir.
+          Tu as l'impression que les cigarettes, les boissons énergisantes ou une autre substance
+          t'aident à tenir le coup.
+        </p>
+        <p>
+          Il est normal de se poser des questions sur sa consommation. Le plus important n'est pas
+          uniquement ce que tu consommes, mais la place que cela prend dans ta vie et les raisons
+          qui te poussent à y avoir recours.
+        </p>
+      </>
+    ),
   },
   video: {
     duration: 5,

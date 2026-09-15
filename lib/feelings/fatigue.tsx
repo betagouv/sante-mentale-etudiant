@@ -6,8 +6,18 @@ export const FEELING_FATIGUE: Feeling = {
   name: "Épuisement",
   catch: {
     description: "Je ressens de l'épuisement",
-    sentence:
-      "Tu dors, mais tu te réveilles épuisé. Tu relis trois fois la même page sans rien retenir. Tout te demande un effort, même répondre à un message.<br>La fatigue ou l’épuisement qui durent n'est pas un manque de volonté. C'est un signal, et il y a des choses à faire.",
+    sentence: (
+      <>
+        <p>
+          Tu dors, mais tu te réveilles épuisé. Tu relis trois fois la même page sans rien retenir.
+          Tout te demande un effort, même répondre à un message.
+        </p>
+        <p>
+          La fatigue ou l’épuisement qui durent n'est pas un manque de volonté. C'est un signal, et
+          il y a des choses à faire.
+        </p>
+      </>
+    ),
   },
   video: {
     duration: 5,
