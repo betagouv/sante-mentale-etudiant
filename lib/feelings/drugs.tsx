@@ -252,4 +252,8 @@ export const FEELING_DRUGS: Feeling = {
       ],
     },
   ],
+  whatIf: {
+    title: "",
+    content: <></>,
+  },
 };

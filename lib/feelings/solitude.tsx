@@ -264,4 +264,8 @@ export const FEELING_SOLITUDE: Feeling = {
       ],
     },
   ],
+  whatIf: {
+    title: "Et si ça ne passe pas ?",
+    content: <></>,
+  },
 };

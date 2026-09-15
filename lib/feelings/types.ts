@@ -31,6 +31,10 @@ export type Tip = {
   title: string;
   items: TipItem[];
 };
+export type WhatIf = {
+  title: string;
+  content: ReactNode;
+};
 export interface Feeling {
   slug: string;
   name: string;
@@ -39,4 +43,5 @@ export interface Feeling {
   recap: string[];
   faq: FAQ;
   tips: Tip[];
+  whatIf: WhatIf;
 }

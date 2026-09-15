@@ -2,6 +2,7 @@ import styles from "./FeelingTips.module.scss";
 import { Feeling as FeelingType } from "@/lib/feelings/types";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import TipCard from "./TipCard";
+import WhatIfCard from "./WhatIfCard";
 
 type Props = {
   feeling: FeelingType;
@@ -15,6 +16,7 @@ export default function FeelingTips({ feeling }: Props) {
           {feeling.tips.map((tip, index) => (
             <TipCard key={`tip__${index}`} tip={tip} />
           ))}
+          <WhatIfCard whatIf={feeling.whatIf} />
         </div>
       </div>
     </FullBleedSection>

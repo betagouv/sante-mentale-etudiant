@@ -305,4 +305,8 @@ export const FEELING_FATIGUE: Feeling = {
       ],
     },
   ],
+  whatIf: {
+    title: "",
+    content: <></>,
+  },
 };

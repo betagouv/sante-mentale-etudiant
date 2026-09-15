@@ -228,4 +228,22 @@ export const FEELING_ANXIETY: Feeling = {
       ],
     },
   ],
+  whatIf: {
+    title: "Et si ça ne passe pas ?",
+    content: (
+      <>
+        <p>
+          <b>
+            Il est normal d'être fatigué par périodes. Mais si la fatigue dure, si elle touche tes
+            études, tes relations ou ton moral, tu n'as pas à rester seul avec ça.
+          </b>
+        </p>
+        <p>
+          Un tiers des étudiants présentent des signes de détresse psychologique, et parmi eux, la
+          moitié n'a consulté aucun professionnel (OVE 2024). Demander de l'aide n'est pas un aveu
+          de faiblesse.
+        </p>
+      </>
+    ),
+  },
 };
