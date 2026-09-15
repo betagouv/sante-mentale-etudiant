@@ -32,7 +32,7 @@ export type Tip = {
   items: TipItem[];
 };
 export type WhatIf = {
-  title: string;
+  title?: string;
   content: ReactNode;
 };
 export interface Feeling {

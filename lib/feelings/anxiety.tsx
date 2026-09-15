@@ -229,7 +229,6 @@ export const FEELING_ANXIETY: Feeling = {
     },
   ],
   whatIf: {
-    title: "Et si ça ne passe pas ?",
     content: (
       <>
         <p>
