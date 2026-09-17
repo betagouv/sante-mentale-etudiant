@@ -1,5 +1,6 @@
+"use client";
 import styles from "./FeelingTips.module.scss";
-import { Feeling as FeelingType } from "@/lib/feelings/types";
+import { Feeling as FeelingType, Tip } from "@/lib/feelings/types";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import TipCard from "./TipCard";
 import WhatIfCard from "./WhatIfCard";
@@ -8,11 +9,15 @@ import {
   IllustrationFeelingsTipsMozaic,
   IllustrationFeelingsWave,
 } from "@/components/illustrations";
+import { useState } from "react";
+import { readMoreModal } from "@/components/modals";
 
 type Props = {
   feeling: FeelingType;
 };
 export default function FeelingTips({ feeling }: Props) {
+  const [activeTip, setActiveTip] = useState<Tip | null>(null);
+  console.log("activeTip", activeTip);
   return (
     <FullBleedSection bgColor="purple">
       <IllustrationFeelingsTipsMozaic />
@@ -22,9 +27,28 @@ export default function FeelingTips({ feeling }: Props) {
         <h2>À tester au quotidien</h2>
         <div className={styles.cardsList}>
           {feeling.tips.map((tip, index) => (
-            <TipCard key={`tip__${index}`} tip={tip} />
+            <TipCard
+              key={`tip__${index}`}
+              tip={tip}
+              onReadMore={() => {
+                setActiveTip(tip);
+                readMoreModal.open();
+              }}
+            />
           ))}
           <WhatIfCard whatIf={feeling.whatIf} />
+          <readMoreModal.Component title={activeTip?.title ?? ""}>
+            {activeTip && (
+              <div className={styles.tips}>
+                {activeTip.items.map((tipItem, idx) => (
+                  <div key={`tip_item_${idx}`}>
+                    <b>{tipItem.title}: </b>
+                    {tipItem.desc}
+                  </div>
+                ))}
+              </div>
+            )}
+          </readMoreModal.Component>
         </div>
       </div>
     </FullBleedSection>
