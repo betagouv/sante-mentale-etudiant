@@ -17,7 +17,6 @@ type Props = {
 };
 export default function FeelingTips({ feeling }: Props) {
   const [activeTip, setActiveTip] = useState<Tip | null>(null);
-  console.log("activeTip", activeTip);
   return (
     <FullBleedSection bgColor="purple">
       <IllustrationFeelingsTipsMozaic />

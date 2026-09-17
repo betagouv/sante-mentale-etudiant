@@ -11,7 +11,14 @@ export default function WhatIfCard({ whatIf }: Props) {
       <div className={styles.card}>
         <h4>{whatIf.title ?? "Et si ça ne passe pas ?"}</h4>
         {whatIf.content}
-        <Button priority="primary">Voir les dispositifs d’aide</Button>
+        <Button
+          priority="primary"
+          linkProps={{
+            href: "/orienteur",
+          }}
+        >
+          Voir les dispositifs d’aide
+        </Button>
       </div>
     </>
   );
