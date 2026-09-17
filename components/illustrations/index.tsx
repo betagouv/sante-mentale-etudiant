@@ -69,7 +69,7 @@ export const IllustrationFeelingVideo = () => (
   <RenderImage
     src="/images/illustrations/feeling-video.svg"
     width={369}
-    height={740}
+    height={780}
     className={styles.feelingVideo}
   />
 );
