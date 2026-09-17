@@ -1,3 +1,6 @@
+import { getLink } from ".";
+import { FEELING_FATIGUE } from "./fatigue";
+import { FEELING_FEELING_MANAGEMENT } from "./feeling-management";
 import { Feeling } from "./types";
 
 export const FEELING_PAINFUL_EVENT: Feeling = {
@@ -114,8 +117,8 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
               beaucoup d'énergie pour faire face à cette épreuve.
             </p>
             <p>
-              → Voir aussi les pages "Je suis épuisé / fatigué" et "J'ai du mal à gérer mes
-              émotions"
+              → Voir aussi les pages {getLink(FEELING_FATIGUE)} et{" "}
+              {getLink(FEELING_FEELING_MANAGEMENT)}.
             </p>
           </>
         ),

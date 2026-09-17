@@ -1,3 +1,5 @@
+import { getLink } from ".";
+import { FEELING_FEELING_MANAGEMENT } from "./feeling-management";
 import { Feeling } from "./types";
 
 export const FEELING_EATING_DISORDER: Feeling = {
@@ -89,7 +91,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
                 <li>Mon rapport à la nourriture devient plus difficile</li>
               </ul>
             </p>
-            <p>→ Voir aussi la page « J’ai du mal à gérer mes émotions »</p>
+            <p>→ Voir aussi la page {getLink(FEELING_FEELING_MANAGEMENT)}.</p>
           </>
         ),
       },

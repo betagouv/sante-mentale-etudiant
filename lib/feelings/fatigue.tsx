@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { Feeling } from "./types";
+import { FEELING_DRUGS } from "./drugs";
+import { getLink } from ".";
+import { FEELING_ANXIETY } from "./anxiety";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -120,14 +123,14 @@ export const FEELING_FATIGUE: Feeling = {
               Le sommeil se dérègle aussi par ce qui l'entoure : les écrans tard le soir, la
               pression des études et le stress des partiels, une chambre mal isolée où le bruit
               fragmente les cycles de récupération, le café, la cigarette, et même le sport pratiqué
-              juste avant de se coucher. Chacun mis bout à bout retarde l'endormissement. → *Voir la
-              page "J'ai un rapport compliqué à certaines substances".
+              juste avant de se coucher. Chacun mis bout à bout retarde l'endormissement. → Voir la
+              page {getLink(FEELING_DRUGS)}.
             </p>
             <h5>3. La fatigue de l'anxiété.</h5>
             <p>
               Rester en alerte consomme énormément d'énergie. Les pensées qui tournent la nuit, la
               tension musculaire, l'anticipation : tout cela fatigue, même sans effort physique. →
-              *Voir la page "Je me sens stressé, anxieux".
+              Voir la page {getLink(FEELING_ANXIETY)}.
             </p>
             <h5>4. Une fatigue qui cache autre chose.</h5>
             <p>

@@ -1,3 +1,7 @@
+import { getLink } from ".";
+import { FEELING_FATIGUE } from "./fatigue";
+import { FEELING_PAINFUL_EVENT } from "./painful-event";
+import { FEELING_SOLITUDE } from "./solitude";
 import { Feeling } from "./types";
 
 export const FEELING_SUICIDE: Feeling = {
@@ -84,8 +88,8 @@ export const FEELING_SUICIDE: Feeling = {
               ou un autre événement de vie.
             </p>
             <p>
-              → Voir aussi les pages "Je traverse un événement douloureux", "Je me sens seul /
-              isolé", "Je me sens stressé / anxieux" et "Je suis épuisé / fatigué".
+              → Voir aussi les pages {getLink(FEELING_PAINFUL_EVENT)}, {getLink(FEELING_SOLITUDE)},{" "}
+              {getLink(FEELING_FATIGUE)}.
             </p>
           </>
         ),

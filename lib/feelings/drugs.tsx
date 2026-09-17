@@ -1,4 +1,9 @@
+import Link from "next/link";
 import { Feeling } from "./types";
+import { FEELING_ANXIETY } from "./anxiety";
+import { getLink } from ".";
+import { FEELING_FATIGUE } from "./fatigue";
+import { FEELING_FEELING_MANAGEMENT } from "./feeling-management";
 
 export const FEELING_DRUGS: Feeling = {
   slug: "substances",
@@ -60,8 +65,8 @@ export const FEELING_DRUGS: Feeling = {
               étape pour retrouver d'autres façons d'y répondre.
             </p>
             <p>
-              → Voir aussi les pages "Je me sens stressé / anxieux", "Je suis épuisé / fatigué" et
-              "J'ai du mal à gérer mes émotions".
+              → Voir aussi les pages {getLink(FEELING_ANXIETY)}, {getLink(FEELING_FATIGUE)} et{" "}
+              {getLink(FEELING_FEELING_MANAGEMENT)}.
             </p>
           </>
         ),
