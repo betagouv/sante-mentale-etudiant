@@ -254,6 +254,25 @@ export const FEELING_DRUGS: Feeling = {
     },
   ],
   whatIf: {
-    content: <></>,
+    content: (
+      <>
+        <p>
+          <b>Il est normal de s'interroger sur sa consommation.</b>
+        </p>
+        <p>
+          En revanche, si tu as l'impression qu'une substance devient indispensable pour gérer tes
+          émotions, ton stress, ton sommeil ou ton quotidien, ou si tu n'arrives plus à réduire
+          malgré tes efforts, il est important d'en parler.
+        </p>
+        <p>
+          Un médecin, un psychologue, un Service de santé étudiante ou une structure spécialisée
+          peut t'accompagner sans jugement.
+        </p>
+        <p>
+          Demander de l'aide ne signifie pas que tu as échoué. C'est souvent le premier pas pour
+          retrouver davantage de liberté face à ta consommation.
+        </p>
+      </>
+    ),
   },
 };

@@ -265,6 +265,24 @@ export const FEELING_SOLITUDE: Feeling = {
     },
   ],
   whatIf: {
-    content: <></>,
+    content: (
+      <>
+        <p>
+          Il est normal de traverser des périodes où l'on se sent plus seul, notamment lorsqu'on
+          change de ville, de formation ou que l'on vit un événement difficile. Il est important de
+          ne pas rester seul avec ce que tu ressens. Parler à un proche peut t'aider à comprendre ce
+          qui se passe et à retrouver progressivement des liens qui te font du bien.
+        </p>
+        <p>
+          En revanche, si ce sentiment dure, t'amène à t'isoler de plus en plus, affecte ton moral
+          ou te donne l'impression de perdre espoir, il est important de prendre contact avec un
+          professionnel (médecin ou psychologue). Ils pourront t'aider à te sentir mieux.
+        </p>
+        <p>
+          La solitude n'est pas une faiblesse. C'est un signal que ton besoin de lien mérite d'être
+          entendu.
+        </p>
+      </>
+    ),
   },
 };

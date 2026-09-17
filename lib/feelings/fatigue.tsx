@@ -307,6 +307,18 @@ export const FEELING_FATIGUE: Feeling = {
     },
   ],
   whatIf: {
-    content: <></>,
+    content: (
+      <>
+        <p>
+          <b>Il est normal d'être fatigué par périodes.</b>
+        </p>
+        <p>
+          Mais si la fatigue dure, si elle touche tes études, tes relations ou ton moral, tu n'as
+          pas à rester seul avec ça. Un tiers des étudiants présentent des signes de détresse
+          psychologique, et parmi eux, la moitié n'a consulté aucun professionnel (OVE 2024).
+        </p>
+        <p>Demander de l'aide n'est pas un aveu de faiblesse.</p>
+      </>
+    ),
   },
 };
