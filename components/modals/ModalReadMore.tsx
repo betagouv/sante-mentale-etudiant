@@ -10,10 +10,10 @@ export const ModalReadMore = ({ tip }: Props) => (
   <readMoreModal.Component title={tip.title}>
     <div className={styles.tips}>
       {tip.items.map((tipItem, idx) => (
-        <p key={`tip_item_${idx}`}>
+        <div key={`tip_item_${idx}`}>
           <b>{tipItem.title}: </b>
           {tipItem.desc}
-        </p>
+        </div>
       ))}
     </div>
   </readMoreModal.Component>
