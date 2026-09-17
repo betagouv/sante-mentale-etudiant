@@ -1,10 +1,9 @@
 import { Feeling } from "./types";
-import Health from "@codegouvfr/react-dsfr/picto/Health";
 
 export const FEELING_ANXIETY: Feeling = {
   slug: "anxiety",
   name: "Anxiété",
-  picto: Health,
+  picto: "Health",
   catch: {
     description: "Je ressens du stress, de l'anxiété",
     sentence: (

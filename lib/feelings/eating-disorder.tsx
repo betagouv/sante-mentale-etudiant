@@ -1,11 +1,10 @@
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
-import Food from "@codegouvfr/react-dsfr/picto/Food";
 
 export const FEELING_EATING_DISORDER: Feeling = {
   slug: "eating-disorder",
   name: "Rapport compliqué à la nourriture",
-  picto: Food,
+  picto: "Food",
   catch: {
     description: "J’ai un rapport compliqué à la nourriture",
     sentence: (

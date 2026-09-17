@@ -1,10 +1,9 @@
 import { Feeling } from "./types";
-import Avatar from "@codegouvfr/react-dsfr/picto/Avatar";
 
 export const FEELING_SOLITUDE: Feeling = {
   slug: "solitude",
   name: "Solitude",
-  picto: Avatar,
+  picto: "Avatar",
   catch: {
     description: "Je me sens seul / isolé",
     sentence: (

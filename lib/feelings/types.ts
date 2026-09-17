@@ -1,3 +1,4 @@
+import { PictoName } from "@/components/home/feelings/HomeFeelings";
 import { PictoProps } from "@codegouvfr/react-dsfr/picto/utils/PictoWrapper";
 import { FC, ReactNode } from "react";
 
@@ -39,7 +40,7 @@ export type WhatIf = {
 export interface Feeling {
   slug: string;
   name: string;
-  picto: FC<PictoProps>;
+  picto: PictoName;
   catch: Intro;
   video: Video;
   recap: string[];

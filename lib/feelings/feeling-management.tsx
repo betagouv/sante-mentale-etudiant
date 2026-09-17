@@ -1,10 +1,9 @@
 import { Feeling } from "./types";
-import System from "@codegouvfr/react-dsfr/picto/System";
 
 export const FEELING_FEELING_MANAGEMENT: Feeling = {
   slug: "feeling-management",
   name: "Gestion des émotions",
-  picto: System,
+  picto: "System",
   catch: {
     description: "J’ai du mal à gérer mes émotions",
     sentence: (

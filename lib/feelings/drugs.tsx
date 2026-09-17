@@ -1,11 +1,10 @@
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
-import Notification from "@codegouvfr/react-dsfr/picto/Notification";
 
 export const FEELING_DRUGS: Feeling = {
   slug: "substances",
   name: "Substances",
-  picto: Notification,
+  picto: "Notification",
   catch: {
     description: "Je m'interroge sur mon rapport à certaines substances",
     sentence: (

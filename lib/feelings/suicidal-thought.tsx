@@ -1,11 +1,10 @@
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
-import Warning from "@codegouvfr/react-dsfr/picto/Warning";
 
 export const FEELING_SUICIDE: Feeling = {
   slug: "suicidal-thought",
   name: "Idées suicidaires",
-  picto: Warning,
+  picto: "Warning",
   catch: {
     description: "J’ai des idées suicidaires",
     sentence: (

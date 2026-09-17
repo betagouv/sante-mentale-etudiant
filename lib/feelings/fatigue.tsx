@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
-import Health from "@codegouvfr/react-dsfr/picto/Health";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
   name: "Épuisement",
-  picto: Health,
+  picto: "Moon",
   catch: {
     description: "Je ressens de l'épuisement",
     sentence: (
