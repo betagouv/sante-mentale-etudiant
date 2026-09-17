@@ -10,6 +10,8 @@ export function getFeelingBySlug(slug: string): Feeling | undefined {
   return feelings.find((t) => t.slug === slug);
 }
 
-export function getLink(feeling: Feeling) {
+export function FeelingLink({ slug }: { slug: string }) {
+  const feeling = getFeelingBySlug(slug);
+  if (!feeling) return null;
   return <Link href={`/je-ressens/${feeling.slug}`}>{feeling.catch.description}</Link>;
 }

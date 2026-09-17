@@ -1,9 +1,5 @@
-import Link from "next/link";
+import { FeelingLink } from ".";
 import { Feeling } from "./types";
-import { FEELING_ANXIETY } from "./anxiety";
-import { getLink } from ".";
-import { FEELING_FATIGUE } from "./fatigue";
-import { FEELING_FEELING_MANAGEMENT } from "./feeling-management";
 
 export const FEELING_DRUGS: Feeling = {
   slug: "substances",
@@ -44,7 +40,7 @@ export const FEELING_DRUGS: Feeling = {
       <>
         Nous consommons parfois certaines substances pour faire la fête, nous détendre, mieux dormir
         ou calmer une émotion difficile (mieux contrôler ma colère, ne plus avoir peur, fuir la
-        tristesse, ne pas être déstabilisé par des moments de joie. Le problème n'est pas toujours
+        tristesse, ne pas être déstabilisé par des moments de joie). Le problème n'est pas toujours
         la substance elle-même, mais la place qu'elle prend progressivement dans notre quotidien et
         le rôle qu'on lui fait jouer.
       </>
@@ -65,8 +61,8 @@ export const FEELING_DRUGS: Feeling = {
               étape pour retrouver d'autres façons d'y répondre.
             </p>
             <p>
-              → Voir aussi les pages {getLink(FEELING_ANXIETY)}, {getLink(FEELING_FATIGUE)} et{" "}
-              {getLink(FEELING_FEELING_MANAGEMENT)}.
+              → Voir aussi les pages <FeelingLink slug="drugs" />, <FeelingLink slug="fatigue" /> et{" "}
+              <FeelingLink slug="feeling-management" />.
             </p>
           </>
         ),

@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { Feeling } from "./types";
-import { FEELING_DRUGS } from "./drugs";
-import { getLink } from ".";
-import { FEELING_ANXIETY } from "./anxiety";
+import { FeelingLink } from ".";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -124,13 +122,13 @@ export const FEELING_FATIGUE: Feeling = {
               pression des études et le stress des partiels, une chambre mal isolée où le bruit
               fragmente les cycles de récupération, le café, la cigarette, et même le sport pratiqué
               juste avant de se coucher. Chacun mis bout à bout retarde l'endormissement. → Voir la
-              page {getLink(FEELING_DRUGS)}.
+              page <FeelingLink slug="drugs" />.
             </p>
             <h5>3. La fatigue de l'anxiété.</h5>
             <p>
               Rester en alerte consomme énormément d'énergie. Les pensées qui tournent la nuit, la
               tension musculaire, l'anticipation : tout cela fatigue, même sans effort physique. →
-              Voir la page {getLink(FEELING_ANXIETY)}.
+              Voir la page <FeelingLink slug="anxiety" />.
             </p>
             <h5>4. Une fatigue qui cache autre chose.</h5>
             <p>

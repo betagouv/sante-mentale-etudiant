@@ -1,6 +1,4 @@
-import { getLink } from ".";
-import { FEELING_FATIGUE } from "./fatigue";
-import { FEELING_FEELING_MANAGEMENT } from "./feeling-management";
+import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
 export const FEELING_PAINFUL_EVENT: Feeling = {
@@ -117,8 +115,8 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
               beaucoup d'énergie pour faire face à cette épreuve.
             </p>
             <p>
-              → Voir aussi les pages {getLink(FEELING_FATIGUE)} et{" "}
-              {getLink(FEELING_FEELING_MANAGEMENT)}.
+              → Voir aussi les pages <FeelingLink slug="fatigue" /> et{" "}
+              <FeelingLink slug="feeling_management" />.
             </p>
           </>
         ),
