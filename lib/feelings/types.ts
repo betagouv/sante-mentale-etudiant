@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import { PictoProps } from "@codegouvfr/react-dsfr/picto/utils/PictoWrapper";
+import { FC, ReactNode } from "react";
 
 type Intro = {
   sentence: ReactNode;
@@ -38,6 +39,7 @@ export type WhatIf = {
 export interface Feeling {
   slug: string;
   name: string;
+  picto: FC<PictoProps>;
   catch: Intro;
   video: Video;
   recap: string[];

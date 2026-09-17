@@ -1,9 +1,11 @@
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
+import Error from "@codegouvfr/react-dsfr/picto/Error";
 
 export const FEELING_PAINFUL_EVENT: Feeling = {
   slug: "painful-event",
   name: "Évènement douloureux",
+  picto: Error,
   catch: {
     description: "Je traverse un événement douloureux",
     sentence: (
