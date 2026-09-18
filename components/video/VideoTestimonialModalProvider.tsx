@@ -28,7 +28,7 @@ export function VideoTestimonialModalProvider({ children }: { children: ReactNod
 
       <videoModal.Component
         size="small"
-        title={activeTestimonial ? `« ${activeTestimonial.citation} »` : "Témoignage vidéo"}
+        title={`« ${activeTestimonial?.citation} »` || activeTestimonial?.guest?.name}
         buttons={
           activeTestimonial?.link
             ? {
