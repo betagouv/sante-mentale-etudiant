@@ -1,13 +1,21 @@
+"use client";
+
+import Image from "next/image";
 import FullBleedSection from "../../wrapper/FullBleedSection";
 import styles from "./FeelingVideo.module.scss";
 import { Feeling as FeelingType } from "@/lib/feelings/types";
 import NeedHelp from "./NeedHelp";
 import { IllustrationFeelingVideo } from "@/components/illustrations";
+import { useVideoTestimonialModal } from "@/components/video/VideoTestimonialModalProvider";
+import { VideoCard } from "@/components/video/VideoCard";
 
 type Props = {
   feeling: FeelingType;
 };
+
 export default function FeelingVideo({ feeling }: Props) {
+  const { openVideo } = useVideoTestimonialModal();
+
   return (
     <FullBleedSection
       bgColor="purple"
@@ -26,15 +34,13 @@ export default function FeelingVideo({ feeling }: Props) {
           <div className={styles.guest}>
             <div className="fr-icon--md fr-icon-user-line" />
             <div>
-              Avec <b>{feeling.video.guest.name}</b>
+              Avec <b>{feeling.video.guest?.name}</b>
               <br />
-              {feeling.video.guest.role}
+              {feeling.video.guest?.role}
             </div>
           </div>
         </div>
-        <div className={styles.video}>
-          <img src="/images/tmp/tmp_video.jpg" />
-        </div>
+        <VideoCard testimonial={feeling.video} onOpen={openVideo} />
         <NeedHelp />
       </div>
     </FullBleedSection>

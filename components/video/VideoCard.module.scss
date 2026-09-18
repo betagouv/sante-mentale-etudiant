@@ -2,8 +2,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 600px;
   padding: 0;
   border: none;
   background-color: white;
@@ -20,15 +18,24 @@
 
 .thumbnail {
   position: relative;
-  flex: 1 1 auto;
-  min-height: 0;
+  aspect-ratio: 9 / 16;
   overflow: hidden;
 }
 
 .poster {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
+}
+
+.previewVideo {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+.previewVisible {
   display: block;
 }
 
