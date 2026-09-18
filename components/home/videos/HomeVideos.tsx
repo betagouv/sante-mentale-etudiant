@@ -1,14 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { createModal } from "@codegouvfr/react-dsfr/Modal";
 import Button from "@codegouvfr/react-dsfr/Button";
 import styles from "./HomeVideos.module.scss";
-import { useVideoModalDismissed } from "@/hooks/useVideoModalDismissed";
-import { VideoTestimonial } from "./types";
 import { useCarouselScroll } from "@/hooks/useCarouselScroll";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
-import { VideoCard } from "./VideoCard";
 import { testimonials } from "../../../data/videos";
 import { VideoPlayer } from "@/components/video-player/VideoPlayer";
 import {
@@ -16,10 +11,8 @@ import {
   IllustrationHomeTestimonials2,
 } from "@/components/illustrations";
 
-const videoModal = createModal({
-  id: "video-card-modal",
-  isOpenedByDefault: false,
-});
+import { useVideoTestimonialModal } from "@/components/video/VideoTestimonialModalProvider";
+import { VideoCard } from "@/components/video/VideoCard";
 
 const CARD_WIDTH = 320;
 const CARD_GAP = 32;
@@ -31,22 +24,14 @@ export interface HomeVideosProps {
 }
 
 export default function HomeVideos({
-  title = "Une histoire qui pourrait être la tienne",
-  description = "Des étudiants racontent, simplement, ce qu'ils ont vécu.",
+  title = "Un premier pas, ça peut être ça",
+  description = "Des dispositifs gratuits et confidentiels pour t’accompagner, quand tu en as besoin",
 }: HomeVideosProps) {
   const { trackRef, activeIndex, scrollToIndex, canScrollPrev, canScrollNext } = useCarouselScroll(
     testimonials.length,
     STEP
   );
-  const [activeTestimonial, setActiveTestimonial] = useState<VideoTestimonial | null>(null);
-
-  // we use this to stop de video auto when not on modal
-  useVideoModalDismissed(videoModal.id, () => setActiveTestimonial(null));
-
-  const openVideo = (testimonial: VideoTestimonial) => {
-    setActiveTestimonial(testimonial);
-    videoModal.open();
-  };
+  const { openVideo } = useVideoTestimonialModal();
 
   return (
     <FullBleedSection aria-labelledby="video-testimonials-title" bgColor="grey">
@@ -90,27 +75,6 @@ export default function HomeVideos({
           Témoignage {activeIndex + 1} sur {testimonials.length}
         </p>
       </div>
-
-      <videoModal.Component
-        size="small"
-        title={activeTestimonial ? `« ${activeTestimonial.citation} »` : "Témoignage vidéo"}
-        buttons={
-          activeTestimonial?.link
-            ? {
-                children: <>En savoir plus</>,
-                linkProps: {
-                  href: activeTestimonial.link,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                },
-              }
-            : undefined
-        }
-      >
-        {activeTestimonial && (
-          <VideoPlayer key={activeTestimonial.key} testimonial={activeTestimonial} />
-        )}
-      </videoModal.Component>
     </FullBleedSection>
   );
 }
