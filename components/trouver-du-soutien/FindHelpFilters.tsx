@@ -48,7 +48,7 @@ export default function FindHelpFilters({
         }}
       >
         <option value="" disabled hidden>
-          Selectionner une option
+          Sélectionner une option
         </option>
         {Object.values(OPTIONS_I_NEED).map(({ value, label }) => (
           <option key={value} value={value}>
@@ -65,7 +65,7 @@ export default function FindHelpFilters({
           }}
         >
           <option value="" disabled hidden>
-            Selectionner une option
+            Sélectionner une option
           </option>
           {formatOptions.map(({ value, label }) => (
             <option key={value} value={value}>

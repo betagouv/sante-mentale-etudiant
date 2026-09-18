@@ -16,19 +16,9 @@ export const BADGE_PROFESSIONELS = (
     Professionels
   </Badge>
 );
-export const BADGE_PROFESSIONELLES = (
-  <Badge key="professionelles" className={styles.pro}>
-    Professionelles
-  </Badge>
-);
 export const BADGE_ETUDIANTS_BENEVOLES = (
   <Badge key="etudiants-benevoles" className={styles.student}>
     ETUDIANTS BENEVOLES
-  </Badge>
-);
-export const BADGE_H24 = (
-  <Badge key="24-24" className={styles.h24}>
-    24h/24
   </Badge>
 );
 

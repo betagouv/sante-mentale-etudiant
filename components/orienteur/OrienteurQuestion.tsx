@@ -17,6 +17,7 @@ import SelfTraining from "@codegouvfr/react-dsfr/picto/SelfTraining";
 import Smartphone from "@codegouvfr/react-dsfr/picto/Smartphone";
 import Success from "@codegouvfr/react-dsfr/picto/Success";
 import Community from "@codegouvfr/react-dsfr/picto/Community";
+import Information from "@codegouvfr/react-dsfr/picto/Information";
 
 export const orienteurPictoMap = {
   Warning,
@@ -30,6 +31,7 @@ export const orienteurPictoMap = {
   Smartphone,
   Success,
   Community,
+  Information,
 };
 
 export type OrienteurPictoName = keyof typeof orienteurPictoMap;

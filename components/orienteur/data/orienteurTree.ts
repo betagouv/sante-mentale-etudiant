@@ -166,7 +166,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
       },
       {
         label: "Les deux / je ne sais pas trop",
-        illustration: "Search",
+        illustration: "Information",
         value: "",
         next: "location",
       },

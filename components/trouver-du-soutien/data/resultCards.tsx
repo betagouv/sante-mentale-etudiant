@@ -1,16 +1,11 @@
 import CustomCard from "@/components/common/CustomCard";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import logo_3040 from "@/public/images/logos/3040.png";
-import logo_nightline from "@/public/images/logos/nightline.png";
-import logo_3919 from "@/public/images/logos/3919.png";
-import logo_3018 from "@/public/images/logos/3018.png";
 import logo_spe from "@/public/images/logos/SPE.png";
 import {
   BADGE_DAY,
   BADGE_ETUDIANTS_BENEVOLES,
-  BADGE_H24,
   BADGE_NIGHT,
-  BADGE_PROFESSIONELLES,
   BADGE_PROFESSIONELS,
 } from "@/components/common/Badges";
 import { SSE } from "@/lib/sse";
@@ -75,45 +70,7 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
   );
 };
 
-export const CARD_3018 = (
-  <CustomCard
-    title="Appelle le 3018"
-    subtitle="Aide contre le harcèlement"
-    description="Des psychologues, juristes, experts du numérique te conseillent et t'orientent face au harcèlement, à l'école ou en ligne."
-    image={logo_3018}
-    button={<Button priority="secondary">Appeler le 3018 </Button>}
-    badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
-    location={REMOTE_TEXT}
-    openingHours="7j/7 • 9h-23h"
-  />
-);
-export const CARD_3919 = (
-  <CustomCard
-    title="Appelle le 3919"
-    subtitle="Violences sexistes et sexuelles"
-    description="Des professionnelles à l'écoute, pour t'informer et t'orienter en cas de violences conjugales, sexuelles ou sexistes."
-    image={logo_3919}
-    button={<Button priority="secondary">Appeler le 3919</Button>}
-    badges={[BADGE_PROFESSIONELLES, BADGE_H24]}
-    location={REMOTE_TEXT}
-    openingHours="7j/7 • 24h/24"
-  />
-);
-
-export const CARD_NIGHTLINE_CALL = (
-  <CustomCard
-    title="Appelle Nightline"
-    subtitle="Service d'écoute entre étudiants la nuit 🌙"
-    description="Des étudiants bénévoles formés à l'écoute active, disponibles la nuit pendant l'année universitaire."
-    image={logo_nightline}
-    button={<Button priority="secondary">Appeler Nightline</Button>}
-    badges={[BADGE_ETUDIANTS_BENEVOLES, BADGE_NIGHT]}
-    location={REMOTE_TEXT}
-    openingHours="De 21h00 à 2h30"
-  />
-);
-
-export const CARD_NIGHTLINE_CHAT = (
+export const CARD_NIGHTLINE = (
   <CustomCard
     title="Contacte Nightline par tchat"
     subtitle="Service d'écoute entre étudiants la nuit 🌙"
