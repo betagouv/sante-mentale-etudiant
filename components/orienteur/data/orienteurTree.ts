@@ -1,8 +1,10 @@
+import { OrienteurPictoName } from "../OrienteurQuestion";
+
 export type OrienteurOption = {
   label: string;
   value: string;
   next: string;
-  illustration: string;
+  illustration: OrienteurPictoName;
   hint?: string;
 };
 
@@ -38,8 +40,6 @@ export const FORMAT_PSY_ID = "format-psy";
 
 export const NEED_COUNSELING = "counseling";
 export const NEED_PSY = "psy";
-export const FORMAT_TALK = "talk";
-export const FORMAT_WRITE = "write";
 export const FORMAT_CAMPUS = "campus";
 export const FORMAT_CHOOSE = "choose-myself";
 
@@ -51,7 +51,8 @@ export const orienteurTree: Record<string, OrienteurNode> = {
     id: ORIENTEUR_ROOT_ID,
     image: IMAGE_DEFAULT,
     legend: "Ma situation",
-    title: "As-tu des pensées suicidaires, ou crains-tu pour la sécurité d'un proche ?",
+    title:
+      "Avant de commencer : as-tu des pensées suicidaires, ou crains-tu pour la sécurité d'un proche, là, maintenant ?",
     showMedicalDisclaimer: true,
     options: [
       {
@@ -59,14 +60,14 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         hint: "Pour moi ou pour aider une personne de mon entourage",
         value: "yes",
         next: "urgence",
-        illustration: "system/warning",
+        illustration: "Warning",
       },
       {
         label: "Non, mais je ne me sens pas bien en ce moment.",
         hint: "Je cherche du soutien, sans urgence vitale.",
         value: "no",
         next: "pour-qui",
-        illustration: "system/success",
+        illustration: "Success",
       },
     ],
   },
@@ -78,12 +79,12 @@ export const orienteurTree: Record<string, OrienteurNode> = {
     legend: "Personne concernée",
     title: "Pour qui recherches-tu de l'aide ?",
     options: [
-      { label: "Pour moi", value: "moi", next: WHAT_I_NEED_ID, illustration: "digital/avatar" },
+      { label: "Pour moi", value: "moi", next: WHAT_I_NEED_ID, illustration: "Avatar" },
       {
         label: "Pour un proche",
         value: "proche",
         next: "aide-proche",
-        illustration: "digital/ecosystem",
+        illustration: "Ecosystem",
         hint: "Par exemple, un ami ou un membre de ma famille",
       },
     ],
@@ -94,26 +95,29 @@ export const orienteurTree: Record<string, OrienteurNode> = {
     id: WHAT_I_NEED_ID,
     image: IMAGE_DEFAULT,
     legend: "Mon besoin",
-    title: "Qu'est-ce qui t'aiderait le mieux en ce moment ?",
-    skip: {
-      label: "Je ne sais pas trop",
-      value: "",
-      next: "location",
-    },
+    title: "Pour t'accompagner du mieux qu'on peut, qu'est-ce qui te correspond le plus ?",
     options: [
       {
-        label: "Me confier maintenant et être orienté",
-        hint: "Une personne à l'écoute, qui peut t'aider à trouver l'aide la plus adaptée",
-        illustration: "leisure/community",
-        value: NEED_COUNSELING,
-        next: FORMAT_ECHANGE_ID,
-      },
-      {
-        label: "Un suivi psy gratuit, près de chez moi",
-        hint: "Des rendez-vous réguliers avec un professionnel",
-        illustration: "digital/calendar",
+        label:
+          "Je souhaite trouver un accompagnement psychologique dans la durée, dès que possible",
+        hint: "Je pense que c'est ce qu'il me faut et je sais que cela implique de prendre rendez-vous",
+        illustration: "Calendar",
         value: NEED_PSY,
         next: FORMAT_PSY_ID,
+      },
+      {
+        label: "Je ne sais pas trop ce qui me conviendrait",
+        hint: "J'aimerais l'avis d'un professionnel pour m'orienter",
+        illustration: "Search",
+        value: "",
+        next: "location",
+      },
+      {
+        label: "J'aimerais être écouté rapidement sur ce que je traverse",
+        hint: "Avoir quelqu'un au téléphone dans un premier temps me convient",
+        illustration: "Community",
+        value: NEED_COUNSELING,
+        next: "location",
       },
     ],
   },
@@ -123,42 +127,18 @@ export const orienteurTree: Record<string, OrienteurNode> = {
     id: "aide-proche",
     image: IMAGE_DEFAULT,
     legend: "Mon besoin",
-    title: "Comment peut-on t'aider ?",
+    title: "Pour un proche — Comment peut-on t'aider ?",
     options: [
       {
         label: "Je recherche des ressources ou des témoignages pour soutenir un proche",
-        illustration: "digital/self-training",
+        illustration: "SelfTraining",
         value: "ressources",
         next: "/aider-un-proche",
       },
       {
         label: "J'ai besoin de me confier maintenant",
-        illustration: "leisure/community",
+        illustration: "Community",
         value: "confier",
-        next: "location",
-      },
-    ],
-  },
-
-  [FORMAT_ECHANGE_ID]: {
-    type: "question",
-    id: FORMAT_ECHANGE_ID,
-    image: IMAGE_DEFAULT,
-    legend: "Soutien",
-    title: "Pour parler tout de suite, tu es plus à l'aise...",
-    options: [
-      {
-        label: "À l'écrit",
-        hint: "Par Tchat (uniquement le soir et la nuit)",
-        illustration: "digital/self-training",
-        value: FORMAT_WRITE,
-        next: "location",
-      },
-      {
-        label: "À l'oral",
-        hint: "Par téléphone ou en personne",
-        illustration: "digital/smartphone",
-        value: FORMAT_TALK,
         next: "location",
       },
     ],
@@ -172,17 +152,22 @@ export const orienteurTree: Record<string, OrienteurNode> = {
     title: "Pour ce suivi psy, tu préfères...",
     options: [
       {
-        label: "Être suivi sur mon campus (ou tout près)",
-        hint: "Par une équipe habituée aux étudiants",
-        illustration: "buildings/city-hall",
+        label: "Être suivi sur mon campus (ou tout près), par une équipe habituée aux étudiants",
+        illustration: "CityHall",
         value: FORMAT_CAMPUS,
         next: "location",
       },
       {
-        label: "Choisir moi-même mon psy",
-        hint: "La spécialité et le lieu qui me conviennent",
-        illustration: "digital/search",
+        label:
+          "Choisir moi-même mon psy : la spécialité, le lieu et les horaires qui me conviennent",
+        illustration: "Search",
         value: FORMAT_CHOOSE,
+        next: "location",
+      },
+      {
+        label: "Les deux / je ne sais pas trop",
+        illustration: "Information",
+        value: "",
         next: "location",
       },
     ],
@@ -190,6 +175,4 @@ export const orienteurTree: Record<string, OrienteurNode> = {
 
   urgence: { type: "terminal", id: "urgence", image: IMAGE_DEFAULT, component: "urgence" },
   location: { type: "terminal", id: "location", image: IMAGE_DEFAULT, component: "location" },
-  // TODO modifier le a venir dès que plus d'infos
-  "a-venir": { type: "terminal", id: "a-venir", image: IMAGE_DEFAULT, component: "placeholder" },
 };

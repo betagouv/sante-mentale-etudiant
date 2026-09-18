@@ -1,21 +1,15 @@
 import {
   FORMAT_CAMPUS,
   FORMAT_CHOOSE,
-  FORMAT_TALK,
-  FORMAT_WRITE,
   NEED_COUNSELING,
   NEED_PSY,
 } from "@/components/orienteur/data/orienteurTree";
-import { ReactNode } from "react";
+import { JSX, ReactNode } from "react";
 import {
-  CARD_3018,
   CARD_3040,
-  CARD_3919,
   CARD_DEFAULT_BAPU,
   CARD_DEFAULT_SSE,
   CARD_DOCTOR,
-  CARD_NIGHTLINE_CALL,
-  CARD_NIGHTLINE_CHAT,
   get_CARD_BAPU,
   get_CARD_SPE,
   get_CARD_SSE,
@@ -41,27 +35,14 @@ const FORMAT_ALL = "all";
 
 export const OPTIONS_I_NEED: MAIN_OPTIONS = {
   [I_NEED_DEFAULT]: {
-    label: "Peu importe",
+    label: "Je ne sais pas trop",
     value: I_NEED_DEFAULT,
     formatOptions: [],
   },
   [NEED_COUNSELING]: {
-    label: "Me confier et être orienté",
+    label: "Être écouté rapidemment",
     value: NEED_COUNSELING,
-    formatOptions: [
-      {
-        label: "Tous",
-        value: FORMAT_ALL,
-      },
-      {
-        label: "A l'écrit",
-        value: FORMAT_WRITE,
-      },
-      {
-        label: "A l'oral / en personne",
-        value: FORMAT_TALK,
-      },
-    ],
+    formatOptions: [],
   },
   [NEED_PSY]: {
     label: "Un suivi psy gratuit",
@@ -107,18 +88,6 @@ export const getResults = async (
     CARD_BAPU = CARD_DEFAULT_BAPU;
   }
   const CARD_SPE = get_CARD_SPE(addressLabel, coordinates);
-  if (!whatINeed || whatINeed === I_NEED_DEFAULT) {
-    return [
-      {
-        title: "Pouvoir te confier et être orienté",
-        cards: [CARD_3040, CARD_NIGHTLINE_CALL, CARD_NIGHTLINE_CHAT, CARD_3018, CARD_3919],
-      },
-      {
-        title: "Consulter un professionnel de la santé mentale",
-        cards: [CARD_SPE, CARD_SSE, CARD_BAPU, CARD_DOCTOR],
-      },
-    ];
-  }
   const results = [] as Result[];
 
   if (!format) {
@@ -128,12 +97,9 @@ export const getResults = async (
   //first section
   let recommandations = [] as ReactNode[];
   if (whatINeed === NEED_COUNSELING) {
-    recommandations = [
-      ...([FORMAT_WRITE, FORMAT_ALL].includes(format) ? [CARD_NIGHTLINE_CHAT] : []),
-      ...([FORMAT_TALK, FORMAT_ALL].includes(format)
-        ? [CARD_3040, CARD_SSE, CARD_NIGHTLINE_CALL, CARD_3018, CARD_3919]
-        : []),
-    ];
+    recommandations = [CARD_3040];
+  } else if (!whatINeed || whatINeed === I_NEED_DEFAULT) {
+    recommandations = [CARD_DOCTOR, CARD_SSE, CARD_3040];
   } else {
     recommandations = [
       ...(!format || [FORMAT_CAMPUS, FORMAT_ALL].includes(format) ? [CARD_SSE, CARD_BAPU] : []),
@@ -141,19 +107,16 @@ export const getResults = async (
     ];
   }
   results.push({
-    title: "D'après tes réponses, voici ce qu'on te recommande",
+    title: "D'après tes réponses, voici les professionnels de santé qu'on te recommande",
     cards: recommandations,
   });
 
   // second section
   let otherRecommandations;
   if (whatINeed === NEED_COUNSELING) {
-    otherRecommandations = [
-      ...([FORMAT_WRITE].includes(format)
-        ? [CARD_3040, CARD_NIGHTLINE_CALL, CARD_3018, CARD_3919]
-        : []),
-      ...([FORMAT_TALK].includes(format) ? [CARD_NIGHTLINE_CHAT] : []),
-    ];
+    otherRecommandations = [CARD_SSE, CARD_DOCTOR];
+  } else if (!whatINeed || whatINeed === I_NEED_DEFAULT) {
+    otherRecommandations = [CARD_SPE, CARD_BAPU];
   } else {
     otherRecommandations = [
       ...(!format || [FORMAT_CAMPUS].includes(format) ? [CARD_SPE] : []),
@@ -166,11 +129,13 @@ export const getResults = async (
   });
 
   // third section
-  let rest;
+  let rest: (JSX.Element | null)[];
   if (whatINeed === NEED_COUNSELING) {
-    rest = [CARD_SPE, CARD_SSE, CARD_BAPU, CARD_DOCTOR];
+    rest = [CARD_SPE, CARD_BAPU];
+  } else if (whatINeed === NEED_PSY) {
+    rest = [CARD_3040, CARD_DOCTOR];
   } else {
-    rest = [CARD_3040, CARD_NIGHTLINE_CALL, CARD_3919, CARD_3018, CARD_NIGHTLINE_CHAT, CARD_DOCTOR];
+    rest = [];
   }
   results.push({
     title: "Toutes les autres ressources disponibles",
