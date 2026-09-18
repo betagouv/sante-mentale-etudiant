@@ -5,7 +5,6 @@ import styles from "./HomeVideos.module.scss";
 import { useCarouselScroll } from "@/hooks/useCarouselScroll";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { testimonials } from "../../../data/videos";
-import { VideoPlayer } from "@/components/video-player/VideoPlayer";
 import {
   IllustrationHomeTestimonials1,
   IllustrationHomeTestimonials2,
