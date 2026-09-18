@@ -2,6 +2,7 @@ import { Tile } from "@codegouvfr/react-dsfr/Tile";
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import { Title } from "../typography/Title";
 import { TILE_3114 } from "../common/Tiles";
+import Hospital from "@codegouvfr/react-dsfr/picto/Hospital";
 
 export default function OrienteurUrgent() {
   return (
@@ -21,8 +22,7 @@ export default function OrienteurUrgent() {
       <div className="flex-container">
         {TILE_3114}
         <Tile
-          imageSvg
-          imageUrl="/images/pictograms/health/hospital.svg"
+          pictogram={<Hospital color="blue-ecume" />}
           orientation="horizontal"
           start={
             <Badge noIcon severity="error">

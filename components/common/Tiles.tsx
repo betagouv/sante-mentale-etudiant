@@ -1,11 +1,13 @@
 import { Tile } from "@codegouvfr/react-dsfr/Tile";
 import { BADGE_DEAFS, BADGE_SUICIDAL_THOUGHTS } from "./Badges";
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
+import Hospital from "@codegouvfr/react-dsfr/picto/Hospital";
+import Community from "@codegouvfr/react-dsfr/picto/Community";
+import EarOff from "@codegouvfr/react-dsfr/picto/EarOff";
 
 export const TILE_3114 = (
   <Tile
-    imageSvg
-    imageUrl="/images/pictograms/leisure/community.svg"
+    pictogram={<Community color="blue-ecume" />}
     orientation="horizontal"
     start={BADGE_SUICIDAL_THOUGHTS}
     title="Appelle le 3114"
@@ -21,8 +23,7 @@ export const TILE_3114 = (
 
 export const TILE_SAMU = (
   <Tile
-    imageSvg
-    imageUrl="/images/pictograms/health/hospital.svg"
+    pictogram={<Hospital color="blue-ecume" />}
     orientation="horizontal"
     start={
       <Badge severity="error" noIcon>
@@ -42,8 +43,7 @@ export const TILE_SAMU = (
 
 export const TILE_114 = (
   <Tile
-    imageSvg
-    imageUrl="/images/pictograms/accessibility/ear-off.svg"
+    pictogram={<EarOff color="blue-ecume" />}
     orientation="horizontal"
     start={BADGE_DEAFS}
     title="Appelle le 114"

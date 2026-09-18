@@ -6,6 +6,34 @@ import type { OrienteurQuestionNode } from "./data/orienteurTree";
 import { ButtonsGroup } from "@codegouvfr/react-dsfr/ButtonsGroup";
 import { ButtonProps } from "@codegouvfr/react-dsfr/Button";
 
+import Warning from "@codegouvfr/react-dsfr/picto/Warning";
+import EarOff from "@codegouvfr/react-dsfr/picto/EarOff";
+import CityHall from "@codegouvfr/react-dsfr/picto/CityHall";
+import Avatar from "@codegouvfr/react-dsfr/picto/Avatar";
+import Calendar from "@codegouvfr/react-dsfr/picto/Calendar";
+import Ecosystem from "@codegouvfr/react-dsfr/picto/Ecosystem";
+import Search from "@codegouvfr/react-dsfr/picto/Search";
+import SelfTraining from "@codegouvfr/react-dsfr/picto/SelfTraining";
+import Smartphone from "@codegouvfr/react-dsfr/picto/Smartphone";
+import Success from "@codegouvfr/react-dsfr/picto/Success";
+import Community from "@codegouvfr/react-dsfr/picto/Community";
+
+export const orienteurPictoMap = {
+  Warning,
+  EarOff,
+  CityHall,
+  Avatar,
+  Calendar,
+  Ecosystem,
+  Search,
+  SelfTraining,
+  Smartphone,
+  Success,
+  Community,
+};
+
+export type OrienteurPictoName = keyof typeof orienteurPictoMap;
+
 type Props = {
   node: OrienteurQuestionNode;
   onAnswer: (option: { next: string; patchAnswers: Record<string, string> }) => void;
@@ -55,18 +83,19 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
       <RadioButtons
         name={node.id}
         state="default"
-        options={node.options.map((option) => ({
-          label: option.label,
-          illustration: option.illustration ? (
-            <img src={`/images/pictograms/${option.illustration}.svg`} alt="" />
-          ) : undefined,
-          hintText: option.hint,
-          nativeInputProps: {
-            value: option.value,
-            checked: value === option.value,
-            onChange: () => setValue(option.value),
-          },
-        }))}
+        options={node.options.map((option) => {
+          const Picto = orienteurPictoMap[option.illustration];
+          return {
+            label: option.label,
+            illustration: <Picto fontSize="large" />,
+            hintText: option.hint,
+            nativeInputProps: {
+              value: option.value,
+              checked: value === option.value,
+              onChange: () => setValue(option.value),
+            },
+          };
+        })}
       />
       <ButtonsGroup
         buttonsIconPosition="right"

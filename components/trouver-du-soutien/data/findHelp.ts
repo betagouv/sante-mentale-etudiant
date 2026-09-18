@@ -1,8 +1,6 @@
 import {
   FORMAT_CAMPUS,
   FORMAT_CHOOSE,
-  FORMAT_TALK,
-  FORMAT_WRITE,
   NEED_COUNSELING,
   NEED_PSY,
 } from "@/components/orienteur/data/orienteurTree";
@@ -52,14 +50,6 @@ export const OPTIONS_I_NEED: MAIN_OPTIONS = {
       {
         label: "Tous",
         value: FORMAT_ALL,
-      },
-      {
-        label: "A l'écrit",
-        value: FORMAT_WRITE,
-      },
-      {
-        label: "A l'oral / en personne",
-        value: FORMAT_TALK,
       },
     ],
   },
@@ -129,8 +119,8 @@ export const getResults = async (
   let recommandations = [] as ReactNode[];
   if (whatINeed === NEED_COUNSELING) {
     recommandations = [
-      ...([FORMAT_WRITE, FORMAT_ALL].includes(format) ? [CARD_NIGHTLINE_CHAT] : []),
-      ...([FORMAT_TALK, FORMAT_ALL].includes(format)
+      ...([FORMAT_ALL].includes(format) ? [CARD_NIGHTLINE_CHAT] : []),
+      ...([FORMAT_ALL].includes(format)
         ? [CARD_3040, CARD_SSE, CARD_NIGHTLINE_CALL, CARD_3018, CARD_3919]
         : []),
     ];
@@ -148,12 +138,12 @@ export const getResults = async (
   // second section
   let otherRecommandations;
   if (whatINeed === NEED_COUNSELING) {
-    otherRecommandations = [
-      ...([FORMAT_WRITE].includes(format)
-        ? [CARD_3040, CARD_NIGHTLINE_CALL, CARD_3018, CARD_3919]
-        : []),
-      ...([FORMAT_TALK].includes(format) ? [CARD_NIGHTLINE_CHAT] : []),
-    ];
+    otherRecommandations = [CARD_NIGHTLINE_CHAT];
+    //   ...([FORMAT_WRITE].includes(format)
+    //     ? [CARD_3040, CARD_NIGHTLINE_CALL, CARD_3018, CARD_3919]
+    //     : []),
+    //   ...([FORMAT_TALK].includes(format) ? [CARD_NIGHTLINE_CHAT] : []),
+    // ];
   } else {
     otherRecommandations = [
       ...(!format || [FORMAT_CAMPUS].includes(format) ? [CARD_SPE] : []),
