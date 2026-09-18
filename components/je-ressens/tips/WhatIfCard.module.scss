@@ -1,0 +1,13 @@
+.card {
+  color: #161616;
+  background-color: white;
+  max-width: 588px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  h4 {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+}

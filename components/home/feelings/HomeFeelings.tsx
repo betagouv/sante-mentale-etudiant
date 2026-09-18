@@ -1,10 +1,29 @@
-import Link from "next/link";
 import styles from "./HomeFeelings.module.scss";
 import { feelings } from "@/lib/feelings/data";
-import { FEELING_TILES } from "./feelings.config";
 import FullBleedSection from "../../wrapper/FullBleedSection";
 import { IllustrationHomeFeelingsWave } from "@/components/illustrations";
-// import Tile from "@codegouvfr/react-dsfr/Tile";
+import { Tile } from "@codegouvfr/react-dsfr/Tile";
+import Health from "@codegouvfr/react-dsfr/picto/Health";
+import Notification from "@codegouvfr/react-dsfr/picto/Notification";
+import Food from "@codegouvfr/react-dsfr/picto/Food";
+import Moon from "@codegouvfr/react-dsfr/picto/Moon";
+import System from "@codegouvfr/react-dsfr/picto/System";
+import Error from "@codegouvfr/react-dsfr/picto/Error";
+import Avatar from "@codegouvfr/react-dsfr/picto/Avatar";
+import Warning from "@codegouvfr/react-dsfr/picto/Warning";
+
+export const pictoMap = {
+  Health,
+  Notification,
+  Food,
+  Moon,
+  System,
+  Error,
+  Avatar,
+  Warning,
+};
+
+export type PictoName = keyof typeof pictoMap;
 
 export default function HomeFeelings() {
   return (
@@ -16,51 +35,20 @@ export default function HomeFeelings() {
       </div>
 
       <ul className={styles.grid}>
-        {FEELING_TILES.map((tile) => {
-          // TODO can we use getFeelingBySlug here?
-          const feeling = feelings.find((feeling) => feeling.slug === tile.slug);
-          const label = feeling?.name ?? tile.fallbackLabel;
-
+        {feelings.map((feeling) => {
+          const Picto = pictoMap[feeling.picto];
           return (
-            <li key={tile.slug} className={styles.item}>
-              {feeling ? (
-                <Link href={`/je-ressens/${feeling.slug}`} className={styles.card}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={tile.icon} alt="" className={styles.icon} aria-hidden="true" />
-                  <h3 className={styles.label}>{label}</h3>
-                  <span className={`${styles.arrow} fr-icon-arrow-right-line`} aria-hidden="true" />
-                </Link>
-              ) : (
-                <span className={`${styles.card} ${styles.cardDisabled}`} aria-disabled="true">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={tile.icon} alt="" className={styles.icon} aria-hidden="true" />
-                  <h3 className={styles.label}>{label}</h3>
-                  <span className={styles.note}>bientôt disponible</span>
-                </span>
-
-                //TODO replace Link and span above by one tile - style must be updated
-                //   <Tile
-                //   className={styles.card}
-                //   enlargeLinkOrButton
-                //   imageUrl={tile.icon}
-                //   title={label}
-                //   orientation="vertical"
-                //   titleAs="h4"
-                //   {...(feeling
-                //     ? {
-                //       linkProps: {
-                //         href: `/je-ressens/${feeling.slug}`,
-                //       },
-                //     }
-                //     : {
-                //       disabled: true,
-                //       buttonProps: {
-                //         type: "button",
-                //       },
-                //     })}
-                // />
-              )}
-            </li>
+            <Tile
+              key={`feeling_${feeling.slug}`}
+              enlargeLinkOrButton
+              pictogram={<Picto color="blue-ecume" />}
+              linkProps={{
+                href: `je-ressens/${feeling.slug}`,
+              }}
+              orientation="vertical"
+              title={feeling.name}
+              titleAs="h4"
+            />
           );
         })}
       </ul>

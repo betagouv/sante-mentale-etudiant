@@ -69,7 +69,7 @@ export const IllustrationFeelingVideo = () => (
   <RenderImage
     src="/images/illustrations/feeling-video.svg"
     width={369}
-    height={740}
+    height={780}
     className={styles.feelingVideo}
   />
 );
@@ -215,5 +215,32 @@ export const IllustrationArticlesRight = () => (
     width={318}
     height={467}
     className={styles.articlesRight}
+  />
+);
+
+export const IllustrationFeelingsTipsMozaic = () => (
+  <RenderImage
+    src="/images/illustrations/feelings/tips-mozaic.svg"
+    width={676}
+    height={289}
+    className={styles.feelingsMozaic}
+  />
+);
+
+export const IllustrationFeelingsWave = () => (
+  <RenderImage
+    src="/images/illustrations/feelings/tips-wave.svg"
+    width={1122}
+    height={670}
+    className={styles.feelingsWave}
+  />
+);
+
+export const IllustrationFeelingsPeople = () => (
+  <RenderImage
+    src="/images/illustrations/feelings/tips-people.svg"
+    width={641}
+    height={463}
+    className={styles.feelingsPeople}
   />
 );
