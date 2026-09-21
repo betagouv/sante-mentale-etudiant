@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import FullBleedSection from "../../wrapper/FullBleedSection";
 import styles from "./FeelingVideo.module.scss";
 import { Feeling as FeelingType } from "@/lib/feelings/types";
