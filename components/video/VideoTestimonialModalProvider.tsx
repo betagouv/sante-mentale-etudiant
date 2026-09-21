@@ -26,28 +26,10 @@ export function VideoTestimonialModalProvider({ children }: { children: ReactNod
     <VideoTestimonialModalContext.Provider value={{ openVideo }}>
       {children}
 
-      <videoModal.Component
-        size="small"
-        title={`« ${activeTestimonial?.citation} »` || activeTestimonial?.guest?.name}
-        buttons={
-          activeTestimonial?.link
-            ? {
-              children: <>En savoir plus</>,
-              linkProps: {
-                href: activeTestimonial.link,
-                target: "_blank",
-                rel: "noopener noreferrer",
-              },
-            }
-            : undefined
-        }
-      >
+      <videoModal.Component size="small" title="">
         {activeTestimonial && (
           <div>
-            <VideoPlayer
-              key={activeTestimonial.key}
-              testimonial={activeTestimonial}
-            />
+            <VideoPlayer key={activeTestimonial.key} testimonial={activeTestimonial} />
           </div>
         )}
       </videoModal.Component>
