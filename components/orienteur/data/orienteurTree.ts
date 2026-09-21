@@ -109,7 +109,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         label: "Je ne sais pas trop ce qui me conviendrait",
         hint: "J'aimerais l'avis d'un professionnel pour m'orienter",
         illustration: "Search",
-        value: "",
+        value: "whatever",
         next: "location",
       },
       {
@@ -127,7 +127,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
     id: "aide-proche",
     image: IMAGE_DEFAULT,
     legend: "Mon besoin",
-    title: "Pour un proche — Comment peut-on t'aider ?",
+    title: "Pour un proche - Comment peut-on t'aider ?",
     options: [
       {
         label: "Je recherche des ressources ou des témoignages pour soutenir un proche",

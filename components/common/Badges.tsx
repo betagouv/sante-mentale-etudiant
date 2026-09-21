@@ -8,7 +8,7 @@ export const BADGE_DAY = (
 );
 export const BADGE_PROFESSIONELS = (
   <Badge key="professionels" className={styles.pro}>
-    Professionels
+    Professionnels
   </Badge>
 );
 
