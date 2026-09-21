@@ -2,7 +2,6 @@
 import { Subtitle } from "../typography/Subtitle";
 import { Title } from "../typography/Title";
 import { useState } from "react";
-import styles from "./FindHelp.module.scss";
 import FindHelpFilters from "./FindHelpFilters";
 import FindHelpResults from "./FindHelpResults";
 import { Coordinate } from "@/services/address";
