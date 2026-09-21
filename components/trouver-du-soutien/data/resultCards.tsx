@@ -2,20 +2,13 @@ import CustomCard from "@/components/common/CustomCard";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import logo_3040 from "@/public/images/logos/3040.png";
 import logo_spe from "@/public/images/logos/SPE.png";
-import {
-  BADGE_DAY,
-  BADGE_ETUDIANTS_BENEVOLES,
-  BADGE_NIGHT,
-  BADGE_PROFESSIONELS,
-} from "@/components/common/Badges";
+import { BADGE_DAY, BADGE_PROFESSIONELS } from "@/components/common/Badges";
 import { SSE } from "@/lib/sse";
 import { Coordinate } from "@/services/address";
 import { sseModal, bapuModal } from "@/components/modals";
 import { BAPU } from "@/lib/bapu";
 import { ModalBapu } from "@/components/modals/ModalBapu";
 import { ModalSse } from "@/components/modals/ModalSse";
-
-const REMOTE_TEXT = "À distance";
 
 export const CARD_3040 = (
   <CustomCard
@@ -69,18 +62,6 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
     />
   );
 };
-
-export const CARD_NIGHTLINE = (
-  <CustomCard
-    title="Contacte Nightline par tchat"
-    subtitle="Service d'écoute entre étudiants la nuit 🌙"
-    description="Des étudiants bénévoles formés à l'écoute active, disponibles la nuit par tchat pendant l'année universitaire."
-    button={<Button priority="secondary">Ouvrir le tchat</Button>}
-    badges={[BADGE_ETUDIANTS_BENEVOLES, BADGE_NIGHT]}
-    location={REMOTE_TEXT}
-    openingHours="De 21h00 à 2h30"
-  />
-);
 
 export const CARD_DOCTOR = (
   <CustomCard

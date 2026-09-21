@@ -3,6 +3,7 @@ import styles from "./findHelpResults.module.scss";
 import { getResults, Result } from "./data/findHelp";
 import { Coordinate } from "@/services/address";
 import { useEffect, useState } from "react";
+import NightLineCard from "../common/NightLineCard";
 type Props = {
   addressLabel: string;
   coordinates?: Coordinate;
@@ -32,6 +33,13 @@ export default function FindHelpResults({ addressLabel, coordinates, whatINeed, 
           <span className={styles.index}>{String(index + 1).padStart(2, "0")}</span> {result.title}
         </h2>
         <div className={styles.results}>{result.cards.map((card) => card)}</div>
+        <div className={styles.separator} />
+        {index === 0 && (
+          <div className={styles.nightline}>
+            {<NightLineCard />}
+            <div className={styles.separator} />
+          </div>
+        )}
       </div>
     ));
 }
