@@ -19,7 +19,7 @@ export const CARD_3040 = (
     button={<Button priority="secondary">Appeler le 3040</Button>}
     badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
     location="A distance"
-    openingHours="7j/7 • 9h-23h"
+    openingHours="Lun-ven: 10h-21h • Sam: 10h-14h"
   />
 );
 
