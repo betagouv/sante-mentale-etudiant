@@ -66,8 +66,8 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
 export const CARD_DOCTOR = (
   <CustomCard
     title="Parles-en à ton médecin généraliste"
-    subtitle="Il peut t'écouter et t'orienter"
-    description="Aucun dispositif ne te convient ? Tu as du mal à trouver des disponibilités ? Ne reste pas seul."
+    subtitle="Un bon premier interlocuteur si tu ne te sens pas bien"
+    description="C'est souvent un bon premier réflexe : il peut t'écouter, t'orienter, et si besoin te mettre en lien avec un spécialiste de la santé mentale."
     badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
   />
 );
