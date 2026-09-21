@@ -15,8 +15,8 @@ export default function OrienteurUrgent() {
       </p>
       <p>
         Ce numéro est aussi là pour toi si tu t'inquiètes pour un proche en crise. Les personnes qui
-        répondent peuvent t'aider à comprendre la situation et à savoir quoi faire. en cas de
-        pensées suicidaires
+        répondent peuvent t'aider à comprendre la situation et à savoir quoi faire en cas de pensées
+        suicidaires
       </p>
 
       <div className="flex-container">

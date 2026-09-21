@@ -127,7 +127,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
     id: "aide-proche",
     image: IMAGE_DEFAULT,
     legend: "Mon besoin",
-    title: "Pour un proche — Comment peut-on t'aider ?",
+    title: "Pour un proche - Comment peut-on t'aider ?",
     options: [
       {
         label: "Je recherche des ressources ou des témoignages pour soutenir un proche",
