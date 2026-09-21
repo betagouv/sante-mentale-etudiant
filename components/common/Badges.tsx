@@ -6,19 +6,9 @@ export const BADGE_DAY = (
     De jour
   </Badge>
 );
-export const BADGE_NIGHT = (
-  <Badge key="de-nuit" className={styles.night}>
-    De nuit
-  </Badge>
-);
 export const BADGE_PROFESSIONELS = (
   <Badge key="professionels" className={styles.pro}>
     Professionels
-  </Badge>
-);
-export const BADGE_ETUDIANTS_BENEVOLES = (
-  <Badge key="etudiants-benevoles" className={styles.student}>
-    ETUDIANTS BENEVOLES
   </Badge>
 );
 
