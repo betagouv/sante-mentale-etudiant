@@ -1,4 +1,4 @@
-import FullBleedSection from "../wrapper/FullBleedSection";
+import FullBleedSection from "../../wrapper/FullBleedSection";
 import styles from "./HomeStudentsStat.module.scss";
 
 export default function HomeStudentsStat() {

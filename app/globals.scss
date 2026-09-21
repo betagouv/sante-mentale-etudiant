@@ -15,3 +15,33 @@
   --active: var(--background-action-high-blue-france-active);
   color: var(--text-inverted-blue-france);
 }
+
+#video-card-modal {
+  .fr-modal__body {
+    background-color: transparent;
+    max-height: none;
+    overflow: visible;
+  }
+  .fr-container--fluid {
+    overflow: visible;
+    background-color: #00000066;
+  }
+  .fr-modal__content {
+    margin-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .fr-btn--close {
+    color: white !important;
+    &:hover {
+      background-color: inherit;
+    }
+    &:active {
+      background-color: inherit;
+    }
+  }
+  iframe {
+    margin: auto;
+    height: 80vh;
+  }
+}

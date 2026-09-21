@@ -27,6 +27,10 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
     ),
   },
   video: {
+    key: 'painful-event',
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
+    previewUrl: "/videos/tmp/preview.mp4",
+    posterUrl: "/images/tmp/tmp_homepage_video.jpg",
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",

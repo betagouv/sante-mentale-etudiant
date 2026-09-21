@@ -1,6 +1,5 @@
 .innerContainer {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0px 1rem;
 }
 
 .content {
@@ -40,12 +39,6 @@
     flex-direction: row;
     column-gap: 12px;
   }
-}
-
-.video {
-  width: 397px;
-  height: 600px;
-  background-color: gray;
 }
 
 @media (min-width: 1200px) {
