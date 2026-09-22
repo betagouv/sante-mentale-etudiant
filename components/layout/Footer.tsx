@@ -6,14 +6,16 @@ export function Footer() {
     <FooterDsfr
       id="footer"
       accessibility="partially compliant"
-      operatorLogo={{
-        orientation: "horizontal",
-        imgUrl: "/images/logos/sme.png",
-        alt: "",
-      }}
       contentDescription="Des ressources et des repères pour mieux comprendre et prendre soin de sa santé mentale pendant les études."
       accessibilityLinkProps={{ href: "/accessibilite" }}
       termsLinkProps={{ href: "/mentions-legales" }}
+      domains={[
+        "info.gouv.fr",
+        "service-public.gouv.fr",
+        "legifrance.gouv.fr",
+        "data.gouv.fr",
+        "etudiant.gouv.fr",
+      ]}
       bottomItems={[
         {
           text: "Données personnelles",
