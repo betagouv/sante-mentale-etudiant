@@ -1,0 +1,57 @@
+.top {
+  * {
+    color: white;
+    line-height: 2rem;
+  }
+  max-width: 890px;
+}
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+}
+.desc {
+  font-size: 1.2rem;
+}
+
+.experts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.expert {
+  max-width: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  row-gap: 1rem;
+  border: 1px solid #dddddd;
+  * {
+    margin-bottom: 0px;
+  }
+  h4 {
+    color: black;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+    color: #3a3a3a;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .experts {
+    justify-content: flex-start;
+  }
+}
