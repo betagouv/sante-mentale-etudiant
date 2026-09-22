@@ -3,6 +3,7 @@ import styles from "./FeelingUnderstand.module.scss";
 import { Feeling as FeelingType } from "@/lib/feelings/types";
 import { Accordion } from "@codegouvfr/react-dsfr/Accordion";
 import { fr } from "@codegouvfr/react-dsfr";
+import { IllustrationFeelingsWomanCat, IllustrationHelpRight } from "../illustrations";
 
 type Props = {
   feeling: FeelingType;
@@ -10,15 +11,18 @@ type Props = {
 export default function FeelingUnderstand({ feeling }: Props) {
   return (
     <FullBleedSection bgColor="grey">
-      <div className={styles.card}>
-        <h2>{feeling.faq.title}</h2>
-        <p>{feeling.faq.intro}</p>
-        <div className={fr.cx("fr-accordions-group")}>
-          {feeling.faq.items.map((item, index) => (
-            <Accordion key={`faq__${index}`} label={item.question}>
-              {item.answer ?? <></>}
-            </Accordion>
-          ))}
+      <div className={styles.container}>
+        <IllustrationFeelingsWomanCat />
+        <div className={styles.card}>
+          <h2>{feeling.faq.title}</h2>
+          <p>{feeling.faq.intro}</p>
+          <div className={fr.cx("fr-accordions-group")}>
+            {feeling.faq.items.map((item, index) => (
+              <Accordion key={`faq__${index}`} label={item.question}>
+                {item.answer ?? <></>}
+              </Accordion>
+            ))}
+          </div>
         </div>
       </div>
     </FullBleedSection>
