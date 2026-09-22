@@ -59,6 +59,9 @@
 }
 
 @media (min-width: 1200px) {
+  .container {
+    row-gap: 5rem;
+  }
   .title {
     font-size: 3rem;
   }
