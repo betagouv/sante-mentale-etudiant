@@ -1,11 +1,11 @@
 import React from "react";
 import WhoAreWe from "./WhoAreWe";
-import WhatsOnThisSite from "./WhatsOnThisSite";
 import Experts from "./Experts";
 import NeedToTalkBanner from "../common/NeedToTalkBanner";
 import Link from "next/link";
 import Button from "@codegouvfr/react-dsfr/Button";
 import WhyThisSite from "./WhyThisSite";
+import WhatsOnThisSite from "./WhatsOnThisSite";
 export default function AboutUs() {
   return (
     <>

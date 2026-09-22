@@ -1,0 +1,33 @@
+:global(h2) {
+  color: #161616;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+@media (min-width: 1200px) {
+  :global(h2) {
+    font-size: 3rem;
+  }
+  .cards {
+    flex-direction: row;
+    margin-top: 4rem;
+    column-gap: 2rem;
+    :global(.fr-tile) {
+      width: 384px;
+    }
+  }
+  .container {
+    row-gap: 4rem;
+  }
+}
