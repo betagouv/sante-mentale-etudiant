@@ -23,7 +23,7 @@ export const testimonials: VideoTestimonial[] = [
     citation: "Ça fait du bien de sentir qu’on est pas seul",
   },
   {
-    key: "temoignage-4",
+    key: "SSE",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9tcsChqX84VCs6QNjcnyK9",
     previewUrl: "/videos/preview/SSE.mp4",
     posterUrl: "/images/vignettes/SSE.jpg",
