@@ -13,6 +13,50 @@ const experts: Expert[] = [
     name: "Marion Albouy",
     desc: "Vice-présidente santé, bien-être et prévention, Université de Poitiers",
   },
+  {
+    name: "Arnaud Carré",
+    desc: "Enseignant-chercheur en psychologie, Université Savoie Mont Blanc ; expert Santé publique France",
+  },
+  {
+    name: "Valérie Casin",
+    desc: "Médecin directrice, service de santé des étudiant·e·s, Université Rennes 1 / Rennes 2",
+  },
+  {
+    name: "Maxime Gignon",
+    desc: "Professeur des universités en épidémiologie, prévention et économie de la santé, Université de Picardie Jules Verne.",
+  },
+  {
+    name: "Ruxandra Jorioz",
+    desc: "Déléguée aux partenariats, 3114 ; présidente du Fonds de dotation Prévention Suicide France",
+  },
+  {
+    name: "Jérôme Lacinga",
+    desc: "Psychologue clinicien, dispositif Santé Psy Étudiant",
+  },
+  {
+    name: "Katell Le Scouarnec",
+    desc: "Psychologue au service de santé étudiante de Rennes ; psychologue du dispositif Santé Psy Étudiant",
+  },
+  {
+    name: "Yannick Morvan",
+    desc: "Professeur de psychologie différentielle, docteur en psychologie cognitive",
+  },
+  {
+    name: "Maria Pereira Da Costa",
+    desc: "Psychiatre spécialisée en addictologie ; praticienne hospitalière, unité de liaison et d'urgence de psychiatrie et d'addictologie,",
+  },
+  {
+    name: "Romain Sicot",
+    desc: "Conseiller scientifique à la DGESIP ; vice-président du conseil d'administration, Université Paris Cité",
+  },
+  {
+    name: "Hélène Vulser",
+    desc: "Maîtresse de conférences en psychologie, Université Paris Nanterre",
+  },
+  {
+    name: "Julia Zanforlin",
+    desc: "Maîtresse de conférences et praticienne hospitalière, responsable du centre du neurodéveloppement adulte, service de psychiatrie adulte.",
+  },
 ];
 export default function Experts() {
   return (
@@ -34,12 +78,9 @@ export default function Experts() {
         </p>
       </div>
       <div className={styles.experts}>
-        {Array(14)
-          .fill([...experts])
-          .reduce((a, b) => a.concat(b))
-          .map((e: Expert, idx: number) => (
-            <Expert key={`expert_${idx}`} expert={e} />
-          ))}{" "}
+        {experts.map((e: Expert, idx: number) => (
+          <Expert key={`expert_${idx}`} expert={e} />
+        ))}{" "}
       </div>
     </FullBleedSection>
   );
