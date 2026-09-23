@@ -4,10 +4,12 @@ import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { Tile } from "@codegouvfr/react-dsfr/Tile";
 import EyeOff from "@codegouvfr/react-dsfr/picto/EyeOff";
 import Error from "@codegouvfr/react-dsfr/picto/Error";
+import { IllustrationWhoAreWeBottom } from "@/components/illustrations";
 
 export default function WhyThisSite() {
   return (
     <FullBleedSection bgColor="purple">
+      <IllustrationWhoAreWeBottom />
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.text}>

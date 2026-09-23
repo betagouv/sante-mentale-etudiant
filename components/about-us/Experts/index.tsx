@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Experts.module.scss";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
+import { IllustrationWhoAreWeMozaic } from "@/components/illustrations";
 
 type Expert = {
   name: string;
@@ -16,6 +17,7 @@ const experts: Expert[] = [
 export default function Experts() {
   return (
     <FullBleedSection bgColor="purple">
+      <IllustrationWhoAreWeMozaic />
       <div className={styles.top}>
         <h2 className={styles.title}>Un comité d'experts se mobilise</h2>
         <p className={styles.subtitle}>
