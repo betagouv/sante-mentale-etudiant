@@ -8,8 +8,15 @@ import {
   IllustrationNeedToTalkStandingRight,
   IllustrationNeedToTalkWave,
 } from "../illustrations";
+import { ReactNode } from "react";
 
-export default function NeedToTalkBanner() {
+type Props = {
+  title?: ReactNode;
+  subtitle?: string;
+  hint?: ReactNode;
+  button?: ReactNode;
+};
+export default function NeedToTalkBanner({ title, subtitle, hint, button }: Props) {
   return (
     <FullBleedSection bgColor="purple">
       <IllustrationNeedToTalkWave />
@@ -18,16 +25,18 @@ export default function NeedToTalkBanner() {
       <IllustrationNeedToTalkStandingRight />
       <IllustrationNeedToTalkSittingRight />
       <div className={styles.content}>
-        <h2 className={styles.title}>Besoin de parler à quelqu'un ?</h2>
+        <h2 className={styles.title}>{title ?? "Besoin de parler à quelqu'un ?"}</h2>
         <p className={styles.subtitle}>
-          Ligne d'écoute, psychologue universitaire, structure près de chez toi : trouve
-          l'interlocuteur qui te correspond.
+          {subtitle ??
+            "Ligne d'écoute, psychologue universitaire, structure près de chez toi : trouve l'interlocuteur qui te correspond."}
         </p>
-        <Button className={styles.button} linkProps={{ href: "/orienteur" }}>
-          Trouver l'aide adaptée
-        </Button>
+        {button ?? <Button linkProps={{ href: "/orienteur" }}>Trouver l'aide adaptée</Button>}
         <p className={styles.hint}>
-          Moins de <b>30 secondes</b> pour trouver des solutions
+          {hint ?? (
+            <>
+              Moins de <b>30 secondes</b> pour trouver des solutions
+            </>
+          )}
         </p>
       </div>
     </FullBleedSection>

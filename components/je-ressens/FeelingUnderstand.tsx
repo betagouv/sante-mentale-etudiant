@@ -3,7 +3,7 @@ import styles from "./FeelingUnderstand.module.scss";
 import { Feeling as FeelingType } from "@/lib/feelings/types";
 import { Accordion } from "@codegouvfr/react-dsfr/Accordion";
 import { fr } from "@codegouvfr/react-dsfr";
-import { IllustrationFeelingsWomanCat, IllustrationHelpRight } from "../illustrations";
+import { IllustrationFeelingsWomanCat } from "../illustrations";
 
 type Props = {
   feeling: FeelingType;

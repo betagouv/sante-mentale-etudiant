@@ -245,6 +245,23 @@ export const IllustrationFeelingsPeople = () => (
   />
 );
 
+export const IllustrationWhoAreWeMozaic = () => (
+  <RenderImage
+    src="/images/illustrations/qui-sommes-nous/mozaic.svg"
+    width={597}
+    height={323}
+    className={styles.whoAreWeMozaic}
+  />
+);
+
+export const IllustrationWhoAreWeBottom = () => (
+  <RenderImage
+    src="/images/illustrations/qui-sommes-nous/bottom.svg"
+    width={1440}
+    height={209}
+    className={styles.whoAreWeBottom}
+  />
+);
 export const IllustrationFeelingsWomanCat = () => (
   <RenderImage
     src="/images/illustrations/feelings/understand-woman-cat.svg"
@@ -252,4 +269,4 @@ export const IllustrationFeelingsWomanCat = () => (
     height={450}
     className={styles.feelingsWomanCat}
   />
-)
+);

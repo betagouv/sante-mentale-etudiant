@@ -6,6 +6,21 @@
   align-items: center;
   gap: 1rem;
   color: #fff;
+  h2,
+  p {
+    text-align: center;
+  }
+  :global(.fr-btn) {
+    background-color: #fff;
+    color: var(--text-title-blue-france);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding: 0.75rem 2.2rem;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
 .title {
@@ -20,18 +35,6 @@
   line-height: 2rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-}
-
-.button {
-  background-color: #fff;
-  color: var(--text-title-blue-france);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  padding: 0.75rem 2.2rem;
-
-  &:hover {
-    color: #fff;
-  }
 }
 
 .hint {

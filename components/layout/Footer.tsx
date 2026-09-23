@@ -25,6 +25,10 @@ export function Footer() {
           text: "Gestion des cookies",
           linkProps: { href: "/gestion-cookies" },
         },
+        {
+          text: "Qui sommes-nous",
+          linkProps: { href: "/qui-sommes-nous" },
+        },
       ]}
     />
   );
