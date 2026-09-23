@@ -262,3 +262,11 @@ export const IllustrationWhoAreWeBottom = () => (
     className={styles.whoAreWeBottom}
   />
 );
+export const IllustrationFeelingsWomanCat = () => (
+  <RenderImage
+    src="/images/illustrations/feelings/understand-woman-cat.svg"
+    width={400}
+    height={450}
+    className={styles.feelingsWomanCat}
+  />
+);
