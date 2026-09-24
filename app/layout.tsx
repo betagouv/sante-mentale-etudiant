@@ -12,7 +12,10 @@ import { MatomoAnalytics } from "@/analytics/Matomo";
 import { SkipLinks } from "@codegouvfr/react-dsfr/SkipLinks";
 
 export const metadata: Metadata = {
-  title: "Mon application",
+  title: {
+    default: "Santé Mentale Étudiant",
+    template: "%s | Santé Mentale Étudiant",
+  },
   description: "",
 };
 
