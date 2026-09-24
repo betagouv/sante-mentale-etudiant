@@ -10,7 +10,7 @@ export default function HelpCall() {
     <FullBleedSection aria-labelledby="witness-title" bgColor="grey">
       <div className={styles.container}>
         <h2 id="witness-title" className={styles.text}>
-          Tu es témoin de propos suicidaires ? Parles-en pour être écouté et orienté
+          Tu es témoin de propos suicidaires&nbsp;? Parles-en pour être écouté et orienté
         </h2>
         <CustomCard
           title="Appelle le 3114"

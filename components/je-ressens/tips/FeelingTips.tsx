@@ -40,8 +40,8 @@ export default function FeelingTips({ feeling }: Props) {
             {activeTip && (
               <div className={styles.tips}>
                 {activeTip.items.map((tipItem, idx) => (
-                  <div key={`tip_item_${idx}`}>
-                    <b>{tipItem.title}: </b>
+                  <div key={`tip_item_${idx}`} className={styles.margin}>
+                    <b>{tipItem.title} : </b>
                     {tipItem.desc}
                   </div>
                 ))}

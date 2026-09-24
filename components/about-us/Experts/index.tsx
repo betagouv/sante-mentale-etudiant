@@ -11,7 +11,7 @@ type Expert = {
 const experts: Expert[] = [
   {
     name: "Marion Albouy",
-    desc: "Vice-présidente santé, bien-être et prévention, Université de Poitiers",
+    desc: "Médecin de santé publique et enseignante, Vice-présidente santé, bien-être et prévention, Université de Poitiers",
   },
   {
     name: "Arnaud Carré",
@@ -19,11 +19,11 @@ const experts: Expert[] = [
   },
   {
     name: "Valérie Casin",
-    desc: "Médecin directrice, service de santé des étudiant·e·s, Université Rennes 1 / Rennes 2",
+    desc: "Médecin directrice, service de santé des étudiants, Université Rennes 1 / Rennes 2",
   },
   {
     name: "Maxime Gignon",
-    desc: "Professeur des universités en épidémiologie, prévention et économie de la santé, Université de Picardie Jules Verne.",
+    desc: "Ancien conseiller scientifique DGESIP ; Président de l'Observatoire Régional de la Santé et du Social ; Chef de service CHU Amiens Picardie",
   },
   {
     name: "Ruxandra Jorioz",
@@ -39,23 +39,23 @@ const experts: Expert[] = [
   },
   {
     name: "Yannick Morvan",
-    desc: "Professeur de psychologie différentielle, docteur en psychologie cognitive",
+    desc: "Maître de conférences en psychologie à Paris Nanterre ;  Psychologue clinicien ; Conseil scientifique de l’Observatoire de la Vie étudiante (OVE)",
   },
   {
     name: "Maria Pereira Da Costa",
-    desc: "Psychiatre spécialisée en addictologie ; praticienne hospitalière, unité de liaison et d'urgence de psychiatrie et d'addictologie,",
+    desc: "Conseillère scientifique à la DGESIP ; Vice-présidente du Conseil d’Administration de l’Université Paris Cité ; Professeur de psychologie différentielle",
   },
   {
     name: "Romain Sicot",
-    desc: "Conseiller scientifique à la DGESIP ; vice-président du conseil d'administration, Université Paris Cité",
+    desc: "Psychiatre spécialisé en addictologie ; Praticien hospitalier, responsable de l’unité de Liaison / Urgence de psychiatrie et d’addictologie (hôpitaux universitaires Saint-Louis Lariboisière Fernand Widal)",
   },
   {
     name: "Hélène Vulser",
-    desc: "Maîtresse de conférences en psychologie, Université Paris Nanterre",
+    desc: "Médecin psychiatre à l’Hôpital Pitié-Salpêtrière, Maitresse de conférence à Sorbonne Université et chercheuse à l’Institut du Cerveau.",
   },
   {
     name: "Julia Zanforlin",
-    desc: "Maîtresse de conférences et praticienne hospitalière, responsable du centre du neurodéveloppement adulte, service de psychiatrie adulte.",
+    desc: "Psychiatre au SSE et BAPU de Clermont-Ferrand",
   },
 ];
 export default function Experts() {

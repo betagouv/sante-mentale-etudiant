@@ -49,7 +49,7 @@ export default function NeedHelp() {
       <CustomLink
         href={{ pathname: "/trouver-du-soutien", query: { [WHAT_I_NEED_ID]: NEED_COUNSELING } }}
         pictogram={Community}
-        title="Me confier et être orienté"
+        title="Être écouté rapidement"
         desc="Parle à quelqu’un maintenant"
       />
       <Separator />

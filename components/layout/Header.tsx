@@ -42,15 +42,9 @@ export function Header() {
       <DsfrHeader
         brandTop={
           <>
-            Ministère de
+            République
             <br />
-            l'Enseignement
-            <br />
-            Supérieur, de
-            <br />
-            la Recherche
-            <br />
-            et de l'Espace
+            française
           </>
         }
         homeLinkProps={{

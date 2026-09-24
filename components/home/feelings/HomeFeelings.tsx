@@ -10,7 +10,7 @@ export default function HomeFeelings() {
       <IllustrationHomeFeelingsWave />
       <div className={styles.header}>
         <h2>Mettre des mots sur ce que tu ressens</h2>
-        <p>Des fiches pour comprendre, reconnaître et trouver de l'aide</p>
+        <p>Des fiches pour reconnaître, comprendre ce que tu ressens et trouver de l'aide</p>
       </div>
 
       <ul className={styles.grid}>

@@ -1,10 +1,11 @@
+import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
 export const FEELING_SOLITUDE: Feeling = {
   slug: "solitude",
   name: "Solitude",
   catch: {
-    description: "Je me sens seul / isolé",
+    description: "Je ressens de la solitude, de l'isolement",
     sentence: (
       <>
         <p>
@@ -114,8 +115,8 @@ export const FEELING_SOLITUDE: Feeling = {
               l'épuisement.
             </p>
             <p>
-              Voir aussi les pages "Je me sens stressé / anxieux", "Je suis épuisé / fatigué" et
-              "J'ai du mal à gérer mes émotions".
+              Voir aussi les pages <FeelingLink slug="anxiety" />, <FeelingLink slug="fatigue" /> et{" "}
+              <FeelingLink slug="feeling-management" />.
             </p>
           </>
         ),

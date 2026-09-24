@@ -35,7 +35,13 @@ export function VideoCard({ testimonial, onOpen }: VideoCardProps) {
     >
       <span className={styles.thumbnail}>
         {testimonial.posterUrl && (
-          <Image src={testimonial.posterUrl} alt="" width={320} height={500} className={styles.poster} />
+          <Image
+            src={testimonial.posterUrl}
+            alt=""
+            width={320}
+            height={500}
+            className={styles.poster}
+          />
         )}
 
         {testimonial.previewUrl && (
@@ -54,7 +60,9 @@ export function VideoCard({ testimonial, onOpen }: VideoCardProps) {
         <span className={`${styles.playIcon} fr-icon-play-fill fr-icon--lg`} aria-hidden="true" />
       </span>
 
-      {testimonial.citation && <span className={styles.citation}>« {testimonial.citation} »</span>}
+      {testimonial.citation && (
+        <span className={styles.citation}>«&nbsp;{testimonial.citation}&nbsp;»</span>
+      )}
     </button>
   );
 }

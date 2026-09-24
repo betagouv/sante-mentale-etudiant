@@ -20,7 +20,7 @@ export const testimonials: VideoTestimonial[] = [
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/mC7EjD3tY5XwkbhdCVQiQQ",
     previewUrl: "/videos/preview/BAPU.mp4",
     posterUrl: "/images/vignettes/BAPU.jpg",
-    citation: "Ça fait du bien de sentir qu’on est pas seul",
+    citation: "Ça fait du bien de sentir qu’on n’est pas seul",
   },
   {
     key: "SSE",

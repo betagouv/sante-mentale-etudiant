@@ -10,11 +10,11 @@ export const FEELING_ANXIETY: Feeling = {
         <p>
           Tu as l'impression que ton cerveau ne s'arrête jamais. Tu penses à tes cours, à ton
           avenir, à ton budget, à tout en même temps. Tu dors mal, ton cœur s'emballe parfois sans
-          raison et tu te sens tendu presque toute la journée.Le stress fait partie de la vie.
+          raison et tu te sens tendu presque toute la journée.
         </p>
         <p>
-          Mais lorsqu'il dure ou prend toute la place, il mérite d'être écouté. Il existe des
-          solutions pour retrouver un peu d'apaisement.
+          Le stress fait partie de la vie. Mais lorsqu'il dure ou prend toute la place, il mérite
+          d'être écouté. Il existe des solutions pour retrouver un peu d'apaisement.
         </p>
       </>
     ),
@@ -32,7 +32,7 @@ export const FEELING_ANXIETY: Feeling = {
   },
   recap: [
     "Le stress est une réaction normale face à une difficulté",
-    "L'anxiété est différente: elle peut persister même sans danger immédiat",
+    "L'anxiété est différente : elle peut persister même sans danger immédiat",
     "Le stress agit autant sur le corps que sur le mental",
     "Quelques habitudes simples peuvent déjà aider à retrouver un équilibre",
   ],
@@ -40,9 +40,11 @@ export const FEELING_ANXIETY: Feeling = {
     title: "Comprendre le stress et l'anxiété",
     intro: (
       <>
-        Le stress est une réaction normale de notre organisme face à une difficulté ou à une menace.
-        Il devient plus difficile à vivre lorsqu'il dure dans le temps ou qu'il apparaît sans raison
-        apparente. Comprendre ce qui se passe dans ton corps permet souvent de moins en avoir peur.
+        Le stress est une réaction normale de ton organisme face à une situation précise, comme un
+        examen, et s'apaise généralement quand elle passe. On parle plutôt d'anxiété lorsque les
+        symptômes deviennent plus fréquents, plus durables ou plus intenses, parfois sans cause
+        identifiable. Comprendre ce qui se passe dans ton corps permet souvent de moins en avoir
+        peur.
       </>
     ),
     items: [
@@ -237,14 +239,21 @@ export const FEELING_ANXIETY: Feeling = {
       <>
         <p>
           <b>
-            Il est normal d'être fatigué par périodes. Mais si la fatigue dure, si elle touche tes
-            études, tes relations ou ton moral, tu n'as pas à rester seul avec ça.
+            Il est normal de traverser des périodes de stress, surtout pendant les études. En
+            revanche, si ton anxiété dure plusieurs semaines, t'empêche de dormir, de suivre tes
+            cours, de passer tes examens ou de profiter de ton quotidien, il est important de ne pas
+            rester seul.
           </b>
         </p>
         <p>
-          Un tiers des étudiants présentent des signes de détresse psychologique, et parmi eux, la
-          moitié n'a consulté aucun professionnel (OVE 2024). Demander de l'aide n'est pas un aveu
-          de faiblesse.
+          Les étudiants qui ont bénéficié de Santé Psy Étudiant témoignent des effets positifs d'un
+          accompagnement. Parmi eux, 14 % déclarent mieux gérer leur stress et leurs émotions au
+          quotidien, et plus de la moitié estiment que le dispositif a beaucoup contribué à
+          améliorer leur santé mentale.
+        </p>
+        <p>
+          Demander de l'aide n'est pas un aveu de faiblesse. C'est une façon de prendre soin de toi
+          avant que la situation ne devienne plus difficile.
         </p>
       </>
     ),

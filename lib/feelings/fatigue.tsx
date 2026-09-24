@@ -111,7 +111,7 @@ export const FEELING_FATIGUE: Feeling = {
               qui donne le signal du sommeil. Jusqu'à une vingtaine d'années, ce signal arrive plus
               tard dans la soirée (
               <Link
-                href="https://institut-sommeil-vigilance.org/le-sommeil-des-adolescents/"
+                href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Carnet-11-Sommeil-des-jeunes-15-25-ans.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -138,9 +138,9 @@ export const FEELING_FATIGUE: Feeling = {
             <p>
               Quand la fatigue s'accompagne d'une perte d'envie, d'un moral bas, d'un sentiment de
               vide qui dure plus de deux semaines, ce n'est plus seulement de la fatigue. Un tiers
-              des étudiant·es présentent les signes d’une détresse psychologique et la moitié a vécu
-              une période d’au moins deux semaines consécutives pendant laquelle ils se sont
-              senti·es tristes, déprimé·es, sans espoir, au cours des 12 derniers mois (
+              des étudiants présentent les signes d’une détresse psychologique et la moitié a vécu
+              une période d’au moins deux semaines consécutives pendant laquelle ils se sont sentis
+              tristes, déprimés, sans espoir, au cours des 12 derniers mois (
               <Link
                 href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
                 target="_blank"

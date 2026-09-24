@@ -28,7 +28,7 @@ export default function NeedToTalkBanner({ title, subtitle, hint, button }: Prop
         <h2 className={styles.title}>{title ?? "Besoin de parler à quelqu'un ?"}</h2>
         <p className={styles.subtitle}>
           {subtitle ??
-            "Ligne d'écoute, psychologue universitaire, structure près de chez toi : trouve l'interlocuteur qui te correspond."}
+            "Ligne d'écoute, professionnel de la santé mentale, structure près de chez toi : trouve l'interlocuteur qui te correspond."}
         </p>
         {button ?? <Button linkProps={{ href: "/orienteur" }}>Trouver l'aide adaptée</Button>}
         <p className={styles.hint}>
