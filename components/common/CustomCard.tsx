@@ -6,7 +6,7 @@ import { BadgeProps } from "@codegouvfr/react-dsfr/Badge";
 type Props = {
   title: string;
   subtitle: string;
-  description: string;
+  description: string | ReactNode;
   image?: StaticImageData | string;
   imageAlt?: string;
   button?: ReactNode;
@@ -46,7 +46,7 @@ export default function CustomCard({
           />
         )}
       </div>
-      <p className={styles.description}>{description}</p>
+      <div className={styles.description}>{description}</div>
       <div className={styles.footer}>
         <div>
           <div className={styles.badges}>
