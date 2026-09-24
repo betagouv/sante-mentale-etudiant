@@ -41,10 +41,9 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
     "Il n'existe pas de calendrier ni de 'bonne façon' de vivre un deuil, une rupture ou un traumatisme.",
     "Les émotions peuvent évoluer d'un jour à l'autre.",
     "Le temps aide, mais il ne suffit pas toujours.",
-    "Si la souffrance dure ou devient trop envahissante, il est important d'en parler.",
   ],
   faq: {
-    title: "??",
+    title: "Comprendre ce que je vis",
     intro: (
       <>
         Un événement douloureux peut bouleverser notre équilibre. Il est fréquent qu'il affecte nos
