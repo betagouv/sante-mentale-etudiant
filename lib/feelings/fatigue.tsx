@@ -5,7 +5,6 @@ import { FeelingLink } from ".";
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
   name: "Épuisement",
-  picto: "Moon",
   catch: {
     description: "Je ressens de l'épuisement",
     sentence: (
@@ -22,7 +21,7 @@ export const FEELING_FATIGUE: Feeling = {
     ),
   },
   video: {
-    key: 'fatigue',
+    key: "fatigue",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
     previewUrl: "/videos/tmp/preview.mp4",
     posterUrl: "/images/tmp/tmp_homepage_video.jpg",

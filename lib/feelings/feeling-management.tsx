@@ -3,7 +3,6 @@ import { Feeling } from "./types";
 export const FEELING_MANAGEMENT: Feeling = {
   slug: "feeling-management",
   name: "Gestion des émotions",
-  picto: "System",
   catch: {
     description: "J’ai du mal à gérer mes émotions",
     sentence: (
@@ -27,7 +26,7 @@ export const FEELING_MANAGEMENT: Feeling = {
     ),
   },
   video: {
-    key: 'feeling-management',
+    key: "feeling-management",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
     previewUrl: "/videos/tmp/preview.mp4",
     posterUrl: "/images/tmp/tmp_homepage_video.jpg",

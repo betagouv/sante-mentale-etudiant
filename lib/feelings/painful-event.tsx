@@ -4,7 +4,6 @@ import { Feeling } from "./types";
 export const FEELING_PAINFUL_EVENT: Feeling = {
   slug: "painful-event",
   name: "Évènement douloureux",
-  picto: "Error",
   catch: {
     description: "Je traverse un événement douloureux",
     sentence: (
@@ -27,7 +26,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
     ),
   },
   video: {
-    key: 'painful-event',
+    key: "painful-event",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
     previewUrl: "/videos/tmp/preview.mp4",
     posterUrl: "/images/tmp/tmp_homepage_video.jpg",
