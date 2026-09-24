@@ -32,7 +32,7 @@ export const FEELING_ANXIETY: Feeling = {
   },
   recap: [
     "Le stress est une réaction normale face à une difficulté",
-    "L'anxiété est différente: elle peut persister même sans danger immédiat",
+    "L'anxiété est différente : elle peut persister même sans danger immédiat",
     "Le stress agit autant sur le corps que sur le mental",
     "Quelques habitudes simples peuvent déjà aider à retrouver un équilibre",
   ],

@@ -38,7 +38,7 @@ export const FEELING_MANAGEMENT: Feeling = {
   },
   recap: [
     "Toutes les émotions ont une fonction.",
-    "Ressentir des émotions fortes ne signifie pas que tu es 'trop sensible'.",
+    "Ressentir des émotions fortes ne signifie pas que tu es “trop sensible”.",
     "Les accueillir est souvent plus efficace que de chercher à les repousser.",
     "Il est possible d'apprendre à mieux les comprendre et les réguler.",
   ],
