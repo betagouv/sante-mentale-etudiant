@@ -10,7 +10,7 @@ const RECAP_PICTOS = [
   "anxiety",
   "feeling-management",
   "solitude",
-  "feeling-management",
+  "fatigue",
 ];
 
 export default function FeelingRecap({ feeling }: Props) {
