@@ -9,9 +9,9 @@ export const FEELING_DRUGS: Feeling = {
     sentence: (
       <>
         <p>
-          Tu bois plus souvent qu'avant pour te détendre. Tu fumes un joint pour réussir à dormir.
-          Tu as l'impression que les cigarettes, les boissons énergisantes ou une autre substance
-          t'aident à tenir le coup.
+          Tu bois plus souvent qu'avant pour te détendre. Tu consommes du cannabis (résine, herbe,
+          CBD). Tu as l'impression que les cigarettes, les boissons énergisantes ou une autre
+          substance t'aident à tenir le coup.
         </p>
         <p>
           Il est normal de se poser des questions sur sa consommation. Le plus important n'est pas
@@ -35,18 +35,18 @@ export const FEELING_DRUGS: Feeling = {
   recap: [
     "Consommer une substance ne signifie pas forcément être dépendant.",
     "Ne pas réussir à s'arrêter seul de consommer n'est pas un signe de faiblesse",
-    "Utiliser une substance de manière 'thérapeutique' (pour dormir, se calmer, prendre la parole ...) est un des déterminant d'un trouble addictif et justifie d'en parler et d'être aidé",
+    "Utiliser une substance de manière “thérapeutique” (pour dormir, se calmer …) est un signal d’alerte d’addiction.",
     "Parler de ses consommations est le premier pas pour en sortir. Il est possible de demander de l'aide sans être jugé.",
   ],
   faq: {
     title: "Comprendre sa consommation",
     intro: (
       <>
-        Nous consommons parfois certaines substances pour faire la fête, nous détendre, mieux dormir
-        ou calmer une émotion difficile (mieux contrôler ma colère, ne plus avoir peur, fuir la
-        tristesse, ne pas être déstabilisé par des moments de joie). Le problème n'est pas toujours
-        la substance elle-même, mais la place qu'elle prend progressivement dans notre quotidien et
-        le rôle qu'on lui fait jouer.
+        Certaines substances sont très disponibles lorsque nous faisons la fête, parfois nous
+        consommons pour nous détendre, pour mieux dormir ou gérer nos émotions (Contrôler sa colère,
+        ne pas ressentir la peur, fuir la tristesse, ne pas se sentir déstabilisés par des moments
+        de joie). Le problème n'est pas uniquement lié à la substance mais aussi à la place qu'elle
+        prend progressivement dans notre quotidien et les besoins auxquels elle répond.
       </>
     ),
     items: [
@@ -65,8 +65,8 @@ export const FEELING_DRUGS: Feeling = {
               étape pour retrouver d'autres façons d'y répondre.
             </p>
             <p>
-              → Voir aussi les pages <FeelingLink slug="drugs" />, <FeelingLink slug="fatigue" /> et{" "}
-              <FeelingLink slug="feeling-management" />.
+              → Voir aussi les pages <FeelingLink slug="anxiety" />, <FeelingLink slug="fatigue" />{" "}
+              et <FeelingLink slug="feeling-management" />.
             </p>
           </>
         ),
@@ -96,10 +96,15 @@ export const FEELING_DRUGS: Feeling = {
             <p>
               Tu peux avoir l'impression de ne plus réussir à :
               <ul>
-                <li>te détendre sans consommer</li>
+                <li>te détendre sans consommer (ou sans produit)</li>
                 <li>t'endormir sans une substance</li>
-                <li>sortir avec tes amis sans boire</li>
-                <li>faire face à une émotion difficile autrement</li>
+                <li>
+                  sortir avec tes amis sans consommer (ou faire la fête sans utiliser alcool et/ou
+                  drogue)
+                </li>
+                <li>gérer tes émotions autrement</li>
+                <li>à avoir des rapports sexuels sans produit</li>
+                <li>à te stimuler sans le boost d'un dopant (ou sans coup de pouce)</li>
               </ul>
             </p>
             <p>
@@ -151,18 +156,23 @@ export const FEELING_DRUGS: Feeling = {
         question: "Comment ça se manifeste concrètement",
         answer: (
           <ul>
+            <li>J'ai l'impression d'avoir besoin d'une substance pour me détendre.</li>
+            <li>Je consomme plus qu'avant.</li>
+            <li>J'ai essayé de réduire, mais c'est difficile.</li>
+            <li>Je bois ou je fume pour gérer mon stress ou mes émotions.</li>
+            <li>Je culpabilise après avoir consommé.</li>
             <li>
               Ma consommation prend de plus en plus de place dans mon quotidien : j'ai déjà été en
               retard un lendemain de consommation (j'ai oublié de me réveiller), je n'ai pas
               respecté une obligation suite à des consommations, mes consommations me coûtent de
-              plus en plus cher
+              plus en plus cher.
             </li>
             <li>Je cache parfois ma consommation à mes proches.</li>
             <li>Je continue à consommer alors que cela me pose déjà des problèmes.</li>
-            <li>Je me dis souvent : « Ce sera la dernière fois. »</li>
-            <li>J'ai l'impression de perdre un peu le contrôle. </li>
-            <li>Mes consommations sont responsables de disputes/ conflit avec mes proches </li>
-            <li>Mes proches s'inquiètent de mes consommations</li>
+            <li>Je me dis souvent : « Ce sera la dernière fois. ».</li>
+            <li>J'ai l'impression de perdre un peu le contrôle.</li>
+            <li>Mes consommations sont responsables de disputes/ conflits avec mes proches.</li>
+            <li>Mes proches s'inquiètent de mes consommations.</li>
           </ul>
         ),
       },
@@ -204,9 +214,9 @@ export const FEELING_DRUGS: Feeling = {
           title: "Commence petit",
           desc: (
             <>
-              pose-toi cette question : Est ce que je pourrai faire autre chose pour obtenir le même
-              effet (aller faire du sport / écouter de la musique / lire / discuter avec un.e
-              ami.e). Comprendre ce besoin est une première étape pour trouver d'autres façons d'y
+              pose-toi cette question : Est ce que je pourrais faire autre chose pour obtenir le
+              même effet (aller faire du sport / écouter de la musique / lire / discuter avec un
+              ami). Comprendre ce besoin est une première étape pour trouver d'autres façons d'y
               répondre.
             </>
           ),
