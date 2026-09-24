@@ -2,11 +2,15 @@
   background-color: white;
   max-width: 588px;
   max-height: 291px;
-  padding: 88px 2.5rem 2rem 2.5rem;
+  padding: 1.5rem 2.5rem 2rem 2.5rem;
   display: flex;
   flex-direction: column;
   z-index: 100;
 
+  img {
+    margin-bottom: 0.5rem;
+  }
+  
   h4 {
     font-size: 1.5rem;
     flex-shrink: 0;

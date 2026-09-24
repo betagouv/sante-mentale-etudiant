@@ -5,6 +5,14 @@ import { Feeling as FeelingType } from "@/lib/feelings/types";
 type Props = {
   feeling: FeelingType;
 };
+
+const RECAP_PICTOS = [
+  "anxiety",
+  "feeling-management",
+  "solitude",
+  "feeling-management",
+];
+
 export default function FeelingRecap({ feeling }: Props) {
   return (
     <FullBleedSection innerContainerClassName={styles.container} bgColor="grey">
@@ -14,7 +22,7 @@ export default function FeelingRecap({ feeling }: Props) {
           <div key={`recap__${index}`} className={styles.recap}>
             <div>
               <img
-                src="https://www.systeme-de-design.gouv.fr/v1.14/storybook/img/placeholder.1x1.png"
+                src={`/images/pictograms/${RECAP_PICTOS[index]}.svg`}
                 alt=""
                 width={50}
                 height={50}

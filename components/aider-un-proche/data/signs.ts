@@ -7,7 +7,7 @@ export type SignCategory = {
 
 export const signCategories: SignCategory[] = [
   {
-    icon: "https://www.systeme-de-design.gouv.fr/v1.14/storybook/img/placeholder.1x1.png",
+    icon: "/images/pictograms/suicidal-thought.svg",
     title: "Ce qu'elle ou il dit",
     subtitle: "Des phrases qui reviennent",
     items: [
@@ -21,7 +21,7 @@ export const signCategories: SignCategory[] = [
     ],
   },
   {
-    icon: "https://www.systeme-de-design.gouv.fr/v1.14/storybook/img/placeholder.1x1.png",
+    icon: "/images/pictograms/substances.svg",
     title: "Ce qu'elle ou il fait",
     subtitle: "Des changements d'humeur",
     items: [
@@ -33,7 +33,7 @@ export const signCategories: SignCategory[] = [
     ],
   },
   {
-    icon: "https://www.systeme-de-design.gouv.fr/v1.14/storybook/img/placeholder.1x1.png",
+    icon: "/images/pictograms/solitude.svg",
     title: "Ce qu'elle ou il vit",
     subtitle: "Un contexte qui pèse",
     items: [

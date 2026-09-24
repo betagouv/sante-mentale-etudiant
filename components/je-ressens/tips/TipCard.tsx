@@ -4,12 +4,21 @@ import { Tip } from "@/lib/feelings/types";
 
 type Props = {
   tip: Tip;
+  picto?: string;
   onReadMore: () => void;
 };
-export default function TipCard({ tip, onReadMore }: Props) {
+export default function TipCard({ tip, picto, onReadMore }: Props) {
   return (
     <>
       <div className={styles.card}>
+        {picto && (
+          <img
+            src={`/images/pictograms/${picto}.svg`}
+            alt=""
+            width={50}
+            height={50}
+          />
+        )}
         <h4>{tip.title}</h4>
         <div className={styles.itemsList}>
           {
