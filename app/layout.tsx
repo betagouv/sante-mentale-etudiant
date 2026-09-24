@@ -13,7 +13,7 @@ import { SkipLinks } from "@codegouvfr/react-dsfr/SkipLinks";
 
 export const metadata: Metadata = {
   title: {
-    default: "Santé Mentale Étudiant",
+    default: "Santé Mentale Étudiant | Soutien, Ressources et Orientation",
     template: "%s | Santé Mentale Étudiant",
   },
   description: "",
