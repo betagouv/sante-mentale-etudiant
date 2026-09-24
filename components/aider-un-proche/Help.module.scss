@@ -6,15 +6,16 @@
   gap: 1rem;
   padding: 0rem 12rem;
 
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+
   .title {
     font-size: 3.5rem;
     line-height: 4rem;
     margin: 0;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 

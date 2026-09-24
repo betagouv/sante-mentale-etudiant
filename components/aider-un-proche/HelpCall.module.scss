@@ -8,6 +8,8 @@
 .text {
   flex: 1;
   max-width: 352px;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 .card {
@@ -22,6 +24,5 @@
   .text {
     max-width: 100%;
     margin-bottom: 0;
-    font-size: x-large;
   }
 }

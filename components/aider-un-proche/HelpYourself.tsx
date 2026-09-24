@@ -17,7 +17,8 @@ export default function HelpYourself() {
         <p>Tu n’es pas thérapeute, tu n’as pas à porter seul cette situation.</p>
         <p>Repose-toi, garde tes propres activités, parle à un ami ou un professionnel.</p>
         <p>
-          Si la situation te dépasse, contacte toi-même une ligne d'écoute : c'est aussi pour toi.
+          N’attends pas que la situation te dépasse, tu peux être orienté ou aidé en en parlant à
+          ton SSE ou à une ligne d’écoute
         </p>
       </div>
     </FullBleedSection>
