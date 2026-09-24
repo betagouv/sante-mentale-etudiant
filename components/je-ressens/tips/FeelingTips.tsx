@@ -15,6 +15,9 @@ import { readMoreModal } from "@/components/modals";
 type Props = {
   feeling: FeelingType;
 };
+
+const TIP_PICTOS = ["fatigue", "fatigue", "substances", "painful-event"];
+
 export default function FeelingTips({ feeling }: Props) {
   const [activeTip, setActiveTip] = useState<Tip | null>(null);
   return (
@@ -29,6 +32,7 @@ export default function FeelingTips({ feeling }: Props) {
             <TipCard
               key={`tip__${index}`}
               tip={tip}
+              picto={TIP_PICTOS[index]}
               onReadMore={() => {
                 setActiveTip(tip);
                 readMoreModal.open();
