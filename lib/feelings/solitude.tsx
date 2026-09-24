@@ -14,9 +14,8 @@ export const FEELING_SOLITUDE: Feeling = {
           pas. Tu as parfois l'impression que tout le monde a trouvé sa place… sauf toi.
         </p>
         <p>
-          Se sentir seul ne veut pas forcément dire être seul. C'est un ressenti que beaucoup
-          d'étudiants connaissent, surtout lors des périodes de changement. Et il est possible d'en
-          sortir.
+          Parfois, on se sent seul alors qu'on est entouré. Parfois, on est réellement isolé, avec
+          peu de contacts au quotidien. Dans les deux cas, il est possible d'en sortir.
         </p>
       </>
     ),

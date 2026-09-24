@@ -18,14 +18,14 @@ export const lienSteps: LienStep[] = [
     letter: "I",
     title: "Inviter à parler",
     description:
-      "Écoute sans juger ni minimiser. Tu n'es pas là pour résoudre — juste pour comprendre. Reformule parfois pour montrer que tu entends. N’hésite pas à poser la question directement : « Est-ce que tu as pensé à te suicider, à mourir ? » Cette question ne provoque ni n’aggrave rien — c’est prouvé. Elle peut au contraire soulager la personne de pouvoir enfin en parler.",
+      "Écoute sans juger ni minimiser. Tu n'es pas là pour résoudre, juste pour comprendre. Reformule parfois pour montrer que tu entends. N’hésite pas à poser la question directement : « Est-ce que tu as pensé à te suicider, à mourir ? » Cette question ne provoque ni n’aggrave rien, c’est prouvé. Elle peut au contraire soulager la personne de pouvoir enfin en parler.",
   },
   {
     step: 3,
     letter: "E",
     title: "Encourager l'aide",
     description:
-      "Propose ensemble des pistes : ligne d'écoute, médecin, service de santé étudiants, psychologue. Tu peux l'aider à prendre rendez-vous si besoin.",
+      "Propose des pistes : ligne d'écoute, médecin, service de santé étudiants, psychologue. Tu peux l'aider à prendre rendez-vous si besoin.",
   },
   {
     step: 4,

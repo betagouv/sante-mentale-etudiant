@@ -25,8 +25,9 @@ export const signCategories: SignCategory[] = [
     title: "Ce qu'elle ou il fait",
     subtitle: "Des changements d'humeur",
     items: [
+      "Change brutalement de comportement, d’habitudes ou de routine.",
       "Se replie, ne répond plus à ses amis.",
-      "Sautes d'humeur.",
+      "Saute des cours.",
       "Dort beaucoup plus, ou moins.",
       "Néglige son apparence / hygiène.",
       "Augmente sa consommation d'alcool, d'écrans, de tabac.",

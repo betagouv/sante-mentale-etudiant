@@ -15,8 +15,8 @@ export const FEELING_SUICIDE: Feeling = {
         </p>
         <p>
           Avoir des idées suicidaires peut faire très peur. Pourtant, elles ne signifient pas que tu
-          es "fou", "faible" ou que tu veux forcément mourir. Elles sont souvent le signe d'une
-          souffrance devenue trop difficile à porter seul.
+          es "faible" ou que tu veux forcément mourir. Elles sont souvent le signe d'une souffrance
+          devenue trop difficile à porter seul.
         </p>
         <p>Tu n'as pas à traverser ça sans aide.</p>
       </>
@@ -37,7 +37,7 @@ export const FEELING_SUICIDE: Feeling = {
     "Les idées suicidaires sont le signe d'une souffrance, pas d'une faiblesse.",
     "Elles peuvent concerner beaucoup plus de personnes qu'on ne l'imagine.",
     "Avoir des idées suicidaires ne veut pas forcément dire que tu veux mourir.",
-    "Il existe des professionnels formés pour t'écouter et t'aider, sans te juger.",
+    "Si tu te sens en danger, demande de l'aide immédiatement.",
   ],
   faq: {
     title: "Comprendre les idées suicidaires",
@@ -59,8 +59,8 @@ export const FEELING_SUICIDE: Feeling = {
               jeunes.
             </p>
             <p>
-              L'enquête Bien-être et santé 2024 de l'OVE va dans le même sens : 16 % des étudiantes
-              et étudiants déclarent avoir pensé au suicide au cours des douze derniers mois, un
+              L'enquête Bien-être et santé 2024 de l'OVE le montre : 16 % des étudiantes et
+              étudiants déclarent avoir pensé au suicide au cours des douze derniers mois, un
               chiffre qui rappelle que la souffrance psychique peut toucher n'importe qui.
             </p>
             <p>
