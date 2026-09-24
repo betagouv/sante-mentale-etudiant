@@ -41,7 +41,7 @@ export default function HomeFeelings() {
             <Tile
               key={`feeling_${feeling.slug}`}
               enlargeLinkOrButton
-              pictogram={<Picto color="blue-ecume" />}
+              imageUrl={`/images/pictograms/${feeling.slug}.svg`}
               linkProps={{
                 href: `je-ressens/${feeling.slug}`,
               }}
