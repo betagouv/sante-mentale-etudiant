@@ -67,7 +67,7 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         hint: "Je cherche du soutien, sans urgence vitale.",
         value: "no",
         next: "pour-qui",
-        illustration: "Success",
+        illustration: "HumanCooperation",
       },
     ],
   },
