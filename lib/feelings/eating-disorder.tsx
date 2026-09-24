@@ -84,7 +84,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
               surtout lorsqu’elles deviennent le principal moyen de gérer ses émotions, qu’elles se
               répètent ou qu’elles s’accompagnent d’une forte culpabilité.
             </p>
-            <p>
+            <div>
               Cela peut alors créer une boucle :
               <ul>
                 <li>Je ne vais pas bien</li>
@@ -93,7 +93,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
                 <li>Je me sens encore plus mal</li>
                 <li>Mon rapport à la nourriture devient plus difficile</li>
               </ul>
-            </p>
+            </div>
             <p>
               → Voir aussi la page <FeelingLink slug="feeling-management" />.
             </p>
@@ -104,17 +104,19 @@ export const FEELING_EATING_DISORDER: Feeling = {
         question: "Les règles alimentaires peuvent prendre beaucoup de place",
         answer: (
           <>
-            <p>
+            <div>
               Faire attention à son alimentation n’est pas forcément problématique. Mais certaines
-              règles deviennent parfois de plus en plus rigides :<ul></ul>
-              <li>s’interdire certains aliments ;</li>
-              <li>classer les aliments entre « bons » et « mauvais » ;</li>
-              <li>sauter un repas pour « compenser » ;</li>
-              <li>compter constamment les calories ;</li>
-              <li>se sentir obligé de faire du sport après avoir mangé ;</li>
-              <li>éviter de manger devant les autres ;</li>
-              <li>organiser sa journée entière autour des repas ou de son po</li>ids.
-            </p>
+              règles deviennent parfois de plus en plus rigides :
+              <ul>
+                <li>s’interdire certains aliments ;</li>
+                <li>classer les aliments entre « bons » et « mauvais » ;</li>
+                <li>sauter un repas pour « compenser » ;</li>
+                <li>compter constamment les calories ;</li>
+                <li>se sentir obligé de faire du sport après avoir mangé ;</li>
+                <li>éviter de manger devant les autres ;</li>
+                <li>organiser sa journée entière autour des repas ou de son poids</li>.
+              </ul>
+            </div>
             <p>
               Plus ces règles se multiplient, plus il devient difficile de manger en fonction de ses
               besoins réels. La nourriture peut alors occuper une place envahissante dans les
@@ -127,14 +129,14 @@ export const FEELING_EATING_DISORDER: Feeling = {
         question: "La culpabilité entretient souvent les difficultés",
         answer: (
           <>
-            <p>
+            <div>
               Après avoir mangé, tu peux te dire :
               <ul>
                 <li>« Je n’aurais pas dû. »</li>
                 <li>« Je manque de contrôle. »</li>
                 <li>« Il faut que je me rattrape demain. »</li>
               </ul>
-            </p>
+            </div>
             <p>
               Ces pensées peuvent pousser à se restreindre davantage, puis rendre les épisodes de
               perte de contrôle plus probables. Ce n’est donc pas forcément une question de

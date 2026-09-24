@@ -78,7 +78,7 @@ export const FEELING_MANAGEMENT: Feeling = {
         answer: (
           <>
             <p>Une émotion ne se passe pas uniquement dans notre tête.</p>
-            <p>
+            <div>
               Elle peut aussi provoquer :
               <ul>
                 <li>un cœur qui bat plus vite ;</li>
@@ -87,7 +87,7 @@ export const FEELING_MANAGEMENT: Feeling = {
                 <li>des tensions musculaires ;</li>
                 <li>des mains moites ou des tremblements.</li>
               </ul>
-            </p>
+            </div>
             <p>
               Elle influence également nos pensées ( "Je n'y arriverai jamais" ) et nos envies
               d'agir (partir, crier, s'isoler, demander de l'aide...).
@@ -146,14 +146,14 @@ export const FEELING_MANAGEMENT: Feeling = {
         answer: (
           <>
             <p>Une émotion est souvent le signe qu'un besoin mérite ton attention.</p>
-            <p>
+            <div>
               Par exemple :
               <ul>
                 <li>la peur peut révéler un besoin de sécurité ;</li>
                 <li>la colère peut signaler qu'une limite a été dépassée ;</li>
                 <li>la tristesse peut traduire un besoin de soutien ou de réconfort.</li>
               </ul>
-            </p>
+            </div>
             <p>
               Te poser la question : "De quoi ai-je besoin en ce moment ?" peut parfois être plus
               utile que de te demander : "Pourquoi est-ce que je ressens ça ?"

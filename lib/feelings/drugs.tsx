@@ -79,7 +79,7 @@ export const FEELING_DRUGS: Feeling = {
               Une consommation devient préoccupante lorsqu'elle n'est plus seulement un choix, mais
               qu'elle semble progressivement devenir une nécessité.
             </p>
-            <p>
+            <div>
               On peut notamment se référer aux symptômes (DSM 5) de la perte de contrôle :
               <ul>
                 <li>je consomme plus ou plus longtemps que ce que j'avais prévu.</li>
@@ -92,8 +92,8 @@ export const FEELING_DRUGS: Feeling = {
                   effets
                 </li>
               </ul>
-            </p>
-            <p>
+            </div>
+            <div>
               Tu peux avoir l'impression de ne plus réussir à :
               <ul>
                 <li>te détendre sans consommer (ou sans produit)</li>
@@ -106,7 +106,7 @@ export const FEELING_DRUGS: Feeling = {
                 <li>à avoir des rapports sexuels sans produit</li>
                 <li>à te stimuler sans le boost d'un dopant (ou sans coup de pouce)</li>
               </ul>
-            </p>
+            </div>
             <p>
               Plus une substance devient la seule réponse à un problème, plus le risque qu'elle
               prenne une place importante augmente.
