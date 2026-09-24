@@ -1,4 +1,3 @@
-
 import Homepage from "@/components/home/Homepage";
 import { StartDsfrOnHydration } from "../dsfr-bootstrap";
 

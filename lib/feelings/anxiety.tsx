@@ -81,7 +81,7 @@ export const FEELING_ANXIETY: Feeling = {
             <p>Cette réaction est utile… tant qu'elle reste ponctuelle.</p>
             <h5>2. Les études... mais pas seulement.</h5>
             <p>Le stress ne vient pas uniquement des cours.</p>
-            <p>
+            <div>
               Dans notre enquête Santé Psy Étudiant, les étudiants évoquent principalement :
               <ul>
                 <li>la pression des études, des examens ou de l'orientation ;</li>
@@ -90,7 +90,7 @@ export const FEELING_ANXIETY: Feeling = {
                 <li>le contexte général (actualité, avenir, climat) ;</li>
                 <li>un deuil, une séparation ou un autre événement de vie difficile.</li>
               </ul>
-            </p>
+            </div>
             <p>
               Le plus souvent, ce n'est pas une seule difficulté qui explique ton mal-être, mais
               plusieurs qui s'accumulent.

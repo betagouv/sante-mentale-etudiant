@@ -12,7 +12,7 @@ type Props = {
 export const ArticleCard = ({ article }: Props) => {
   const link =
     article.type === "internal"
-      ? { href: `/articles/${article.slug}` }
+      ? { href: `/s-informer/${article.slug}` }
       : {
           href: article.url,
           referrerPolicy: "no-referrer" as const,

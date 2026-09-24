@@ -59,7 +59,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
         answer: (
           <>
             <p>Lorsqu'on parle de souffrance, on pense souvent à la perte d'un proche.</p>
-            <p>
+            <div>
               Mais d'autres événements peuvent être tout aussi bouleversants :
               <ul>
                 <li>une rupture amoureuse</li>
@@ -71,7 +71,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
                 <li>la perte de son logement ou de son emploi </li>
                 <li>ou toute autre situation qui vient bouleverser tes repères</li>
               </ul>
-            </p>
+            </div>
             <p>
               Ce qui compte, ce n'est pas seulement l'événement lui-même, mais la manière dont tu le
               vis.
@@ -103,7 +103,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
         question: "Le corps réagit lui aussi",
         answer: (
           <>
-            <p>
+            <div>
               Après un événement difficile, il est fréquent de constater :
               <ul>
                 <li>des difficultés à dormir</li>
@@ -113,7 +113,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
                 <li>une sensation d'être "à côté de soi"</li>
                 <li>des tensions physiques ou des douleurs</li>
               </ul>
-            </p>
+            </div>
             <p>
               Ces réactions sont fréquentes. Elles reflètent le fait que ton organisme mobilise
               beaucoup d'énergie pour faire face à cette épreuve.

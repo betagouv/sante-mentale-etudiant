@@ -27,8 +27,8 @@ export function Header() {
     },
     {
       text: "S'informer",
-      linkProps: { href: "/articles" },
-      isActive: pathname.startsWith("/articles"),
+      linkProps: { href: "/s-informer" },
+      isActive: pathname.startsWith("/s-informer"),
     },
     {
       text: "Aider un proche",

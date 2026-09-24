@@ -1,6 +1,11 @@
 import FindHelp from "@/components/trouver-du-soutien/FindHelp";
+import { Metadata } from "next";
 
 type SearchParams = { [key: string]: string | string[] | undefined };
+
+export const metadata: Metadata = {
+  title: "Trouver du soutien",
+};
 
 export default async function FindHelpPage({
   searchParams,
