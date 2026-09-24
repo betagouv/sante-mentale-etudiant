@@ -20,7 +20,7 @@ export default function WhatsOnThisSite() {
           <div className={styles.cards}>
             <Tile
               title="Un orienteur"
-              desc="À partir de quelques questions, l'outil identifie le dispositif le plus adapté à la situation de chacun. Les dispositifs sont toujours destinés aux étudiants, gratuits et sans avance de frais."
+              desc="À partir de quelques questions, l'outil identifie le dispositif le plus adapté à la situation de chacun. Les dispositifs sont principalement destinés aux étudiants, gratuits et sans avance de frais."
               pictogram={<EyeOff />}
             />
             <Tile
@@ -56,12 +56,11 @@ export default function WhatsOnThisSite() {
           </div>
         </div>
         <div>
-          <h2>Le mot du directeur de la DGESIP</h2>
+          <h2>Le mot du directeur de la DGESUP</h2>
           <Quote
             className=""
             imageUrl="/images/illustrations/qui-sommes-nous/director_dgesip.jpg"
             size="xlarge"
-            source={<>Directeur général de l'enseignement et de l'insertion professionnelle</>}
             text="Sed maximum est in amicitia parem esse inferiori. Saepe enim excellentiae quaedam sunt, qualis erat Scipionis in nostro, ut ita dicam, grege. Numquam se ille Philo, numquam Rupilio, numquam Mummio anteposuit, numquam inferioris ordinis amicis, Q."
           />
         </div>

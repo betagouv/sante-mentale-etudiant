@@ -21,7 +21,7 @@ export default function WhyThisSite() {
           <div className={styles.tile}>
             <Tile
               title="Le manque de lisibilité"
-              desc="Beaucoup d'étudiants ne savent pas vers quel dispositif se tourner, ni ce que ces dispositifs proposent réellement."
+              desc="Beaucoup d'étudiants ne savent pas vers quels dispositifs se tourner, ni ce que ces dispositifs proposent réellement."
               titleAs="h3"
               orientation="vertical"
               pictogram={<EyeOff />}
@@ -45,8 +45,8 @@ export default function WhyThisSite() {
             3114, les BAPU, Nightline, Santé Psy Étudiant…
           </div>
           <div className={styles.card}>
-            Les dispositifs sont là, mais ils sont peu lisibles.Ce que les étudiants nous ont dit
-            vouloir : passer de l'information à l'action. C'est ce constat qui a guidé la
+            Les dispositifs sont là, mais ils sont peu lisibles. Ce que les étudiants nous ont
+            dit&nbsp;: vouloir passer de l'information à l'action. C'est ce constat qui a guidé la
             construction de Santé Mentale Étudiant.
           </div>
         </div>
