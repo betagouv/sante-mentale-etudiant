@@ -4,7 +4,6 @@ import { Feeling } from "./types";
 export const FEELING_DRUGS: Feeling = {
   slug: "substances",
   name: "Substances",
-  picto: "Notification",
   catch: {
     description: "Je m'interroge sur mon rapport à certaines substances",
     sentence: (
@@ -23,7 +22,7 @@ export const FEELING_DRUGS: Feeling = {
     ),
   },
   video: {
-    key: 'drugs',
+    key: "drugs",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
     previewUrl: "/videos/tmp/preview.mp4",
     posterUrl: "/images/tmp/tmp_homepage_video.jpg",

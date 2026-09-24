@@ -1,7 +1,5 @@
 import { VideoTestimonial } from "@/components/video/types";
-import { PictoName } from "@/components/home/feelings/HomeFeelings";
-import { PictoProps } from "@codegouvfr/react-dsfr/picto/utils/PictoWrapper";
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 
 type Intro = {
   sentence: ReactNode;
@@ -37,7 +35,6 @@ export type WhatIf = {
 export interface Feeling {
   slug: string;
   name: string;
-  picto: PictoName;
   catch: Intro;
   video: VideoTestimonial;
   recap: string[];

@@ -4,7 +4,6 @@ import { Feeling } from "./types";
 export const FEELING_SUICIDE: Feeling = {
   slug: "suicidal-thought",
   name: "Idées suicidaires",
-  picto: "Warning",
   catch: {
     description: "J’ai des idées suicidaires",
     sentence: (
@@ -24,7 +23,7 @@ export const FEELING_SUICIDE: Feeling = {
     ),
   },
   video: {
-    key: 'suicidal-thoughts',
+    key: "suicidal-thoughts",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
     previewUrl: "/videos/tmp/preview.mp4",
     posterUrl: "/images/tmp/tmp_homepage_video.jpg",

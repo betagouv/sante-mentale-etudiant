@@ -3,7 +3,6 @@ import { Feeling } from "./types";
 export const FEELING_SOLITUDE: Feeling = {
   slug: "solitude",
   name: "Solitude",
-  picto: "Avatar",
   catch: {
     description: "Je me sens seul / isolé",
     sentence: (
@@ -22,7 +21,7 @@ export const FEELING_SOLITUDE: Feeling = {
     ),
   },
   video: {
-    key: 'solitude',
+    key: "solitude",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
     previewUrl: "/videos/tmp/preview.mp4",
     posterUrl: "/images/tmp/tmp_homepage_video.jpg",

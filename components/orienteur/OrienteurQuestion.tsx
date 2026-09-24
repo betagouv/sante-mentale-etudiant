@@ -15,7 +15,7 @@ import Ecosystem from "@codegouvfr/react-dsfr/picto/Ecosystem";
 import Search from "@codegouvfr/react-dsfr/picto/Search";
 import SelfTraining from "@codegouvfr/react-dsfr/picto/SelfTraining";
 import Smartphone from "@codegouvfr/react-dsfr/picto/Smartphone";
-import Success from "@codegouvfr/react-dsfr/picto/Success";
+import HumanCooperation from "@codegouvfr/react-dsfr/picto/HumanCooperation";
 import Community from "@codegouvfr/react-dsfr/picto/Community";
 import Information from "@codegouvfr/react-dsfr/picto/Information";
 
@@ -29,7 +29,7 @@ export const orienteurPictoMap = {
   Search,
   SelfTraining,
   Smartphone,
-  Success,
+  HumanCooperation,
   Community,
   Information,
 };
@@ -89,7 +89,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
           const Picto = orienteurPictoMap[option.illustration];
           return {
             label: option.label,
-            illustration: <Picto fontSize="large" />,
+            illustration: <Picto fontSize="large" color="blue-ecume" />,
             hintText: option.hint,
             nativeInputProps: {
               value: option.value,
