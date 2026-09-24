@@ -21,9 +21,9 @@ export const FEELING_ANXIETY: Feeling = {
   },
   video: {
     key: "anxiety",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
-    previewUrl: "/videos/tmp/preview.mp4",
-    posterUrl: "/images/tmp/tmp_homepage_video.jpg",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/69Gv4zEK4X8nZLBqwJkvzY",
+    previewUrl: "/videos/preview/feelings/anxiety.mp4",
+    posterUrl: "/images/vignettes/feelings/anxiety.jpg",
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",

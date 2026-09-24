@@ -22,9 +22,9 @@ export const FEELING_FATIGUE: Feeling = {
   },
   video: {
     key: "fatigue",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
-    previewUrl: "/videos/tmp/preview.mp4",
-    posterUrl: "/images/tmp/tmp_homepage_video.jpg",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/62xj5E1dsFjSurrmLAuRkG",
+    previewUrl: "/videos/preview/feelings/fatigue.mp4",
+    posterUrl: "/images/vignettes/feelings/fatigue.jpg",
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",

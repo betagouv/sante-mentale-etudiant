@@ -23,9 +23,9 @@ export const FEELING_SOLITUDE: Feeling = {
   },
   video: {
     key: "solitude",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
-    previewUrl: "/videos/tmp/preview.mp4",
-    posterUrl: "/images/tmp/tmp_homepage_video.jpg",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/mb2XUWbAqrDcxWMbxBwuEN",
+    previewUrl: "/videos/preview/feelings/solitude.mp4",
+    posterUrl: "/images/vignettes/feelings/solitude.jpg",
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
