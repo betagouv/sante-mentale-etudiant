@@ -8,6 +8,7 @@ import { Newsletter } from "@/components/layout/Newsletter";
 import { Suspense } from "react";
 import "@/styles/colors.scss";
 import { VideoTestimonialModalProvider } from "@/components/video/VideoTestimonialModalProvider";
+import { MatomoAnalytics } from "@/analytics/Matomo";
 
 export const metadata: Metadata = {
   title: "Mon application",
@@ -33,6 +34,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Newsletter />
           <Footer />
         </DsfrProvider>
+        <Suspense fallback={null}>
+          <MatomoAnalytics />
+        </Suspense>
       </body>
     </html>
   );
