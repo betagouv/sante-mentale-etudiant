@@ -40,6 +40,7 @@ export function Header() {
   return (
     <>
       <DsfrHeader
+        id="menu"
         brandTop={
           <>
             République

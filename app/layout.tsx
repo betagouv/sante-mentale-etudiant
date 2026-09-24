@@ -9,6 +9,7 @@ import { Suspense } from "react";
 import "@/styles/colors.scss";
 import { VideoTestimonialModalProvider } from "@/components/video/VideoTestimonialModalProvider";
 import { MatomoAnalytics } from "@/analytics/Matomo";
+import { SkipLinks } from "@codegouvfr/react-dsfr/SkipLinks";
 
 export const metadata: Metadata = {
   title: "Mon application",
@@ -25,6 +26,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <DsfrProvider lang={lang}>
           <StartDsfrOnHydration />
+          <SkipLinks
+            links={[
+              { label: "Contenu", anchor: "#content" },
+              { label: "Menu", anchor: "#menu" },
+              { label: "Pied de page", anchor: "#footer" },
+            ]}
+          />
           <Header />
           <div style={{ paddingLeft: 0, paddingRight: 0 }}>
             <VideoTestimonialModalProvider>
