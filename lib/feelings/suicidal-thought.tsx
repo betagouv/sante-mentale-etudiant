@@ -24,9 +24,9 @@ export const FEELING_SUICIDE: Feeling = {
   },
   video: {
     key: "suicidal-thoughts",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
-    previewUrl: "/videos/tmp/preview.mp4",
-    posterUrl: "/images/tmp/tmp_homepage_video.jpg",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/fswSe5qjZtxwP1gufYc8oC",
+    previewUrl: "/videos/preview/feelings/suicidal-thoughts.mp4",
+    posterUrl: "/images/vignettes/feelings/suicidal-thoughts.jpg",
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",

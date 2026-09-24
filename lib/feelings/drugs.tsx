@@ -23,9 +23,9 @@ export const FEELING_DRUGS: Feeling = {
   },
   video: {
     key: "drugs",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
-    previewUrl: "/videos/tmp/preview.mp4",
-    posterUrl: "/images/tmp/tmp_homepage_video.jpg",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/8KBMfic6rSAGDwZ95qeoQr",
+    previewUrl: "/videos/preview/feelings/drugs.mp4",
+    posterUrl: "/images/vignettes/feelings/drugs.jpg",
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
