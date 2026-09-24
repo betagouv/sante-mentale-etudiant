@@ -59,14 +59,9 @@ export const FEELING_SUICIDE: Feeling = {
               jeunes.
             </p>
             <p>
-              Selon le Baromètre Santé publique France 2024, 8,6 % des 18-29 ans déclarent avoir eu
-              des pensées suicidaires au cours des douze derniers mois, ce qui en fait la tranche
-              d'âge la plus concernée.
-            </p>
-            <p>
-              L'enquête Bien-être et santé 2024 de l'OVE montre également que les pensées
-              suicidaires font partie des difficultés rapportées par les étudiants, rappelant que la
-              souffrance psychique peut toucher n'importe qui.
+              L'enquête Bien-être et santé 2024 de l'OVE va dans le même sens : 16 % des étudiantes
+              et étudiants déclarent avoir pensé au suicide au cours des douze derniers mois, un
+              chiffre qui rappelle que la souffrance psychique peut toucher n'importe qui.
             </p>
             <p>
               Parler de ces pensées est donc essentiel. Tu n'es pas le seul à vivre cela, même si tu
@@ -109,7 +104,7 @@ export const FEELING_SUICIDE: Feeling = {
               l'isolement et d'accéder plus rapidement à une aide adaptée.
             </p>
             <p>
-              Les professionnels qui accompagnent ces situations sont formés pour écouter sans
+              Les professionnels qui accompagnent ces situations sont formés pour écouter sans te
               juger.
             </p>
           </>
@@ -206,7 +201,8 @@ export const FEELING_SUICIDE: Feeling = {
               besoin :
               <ul>
                 <li>
-                  le <b>3114</b>, disponible 24h/24 et 7j/7 ;
+                  le <b>3114</b>, disponible 24h/24 et 7j/7, des professionnels du soin sont à ton
+                  écoute ;
                 </li>
                 <li>le Service de santé étudiante ;</li>
                 <li>Santé Psy Étudiant ;</li>
@@ -226,7 +222,7 @@ export const FEELING_SUICIDE: Feeling = {
           desc: (
             <>
               si tu penses que tu pourrais passer à l'acte ou que tu ne te sens plus en sécurité,
-              n'attends pas.
+              n'attends pas, appelle le <b>15</b>.
             </>
           ),
         },
@@ -234,8 +230,8 @@ export const FEELING_SUICIDE: Feeling = {
           title: "Commence petit",
           desc: (
             <>
-              appelle immédiatement le <b>3114</b>, parle à une personne de confiance ou rends-toi
-              aux urgences les plus proches. Tu mérites d'être aidé.
+              parle à une personne de confiance ou rends-toi aux urgences les plus proches. Tu
+              mérites d'être aidé.
             </>
           ),
         },
