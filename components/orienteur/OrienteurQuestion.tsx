@@ -89,7 +89,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
           const Picto = orienteurPictoMap[option.illustration];
           return {
             label: option.label,
-            illustration: <Picto fontSize="large" />,
+            illustration: <Picto fontSize="large" color="blue-ecume" />,
             hintText: option.hint,
             nativeInputProps: {
               value: option.value,
