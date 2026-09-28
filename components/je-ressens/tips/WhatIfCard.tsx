@@ -9,7 +9,7 @@ export default function WhatIfCard({ whatIf }: Props) {
   return (
     <>
       <div className={styles.card}>
-        <h4>{whatIf.title ?? "Et si ça ne passe pas ?"}</h4>
+        <h3>{whatIf.title ?? "Et si ça ne passe pas ?"}</h3>
         {whatIf.content}
         <Button
           priority="primary"

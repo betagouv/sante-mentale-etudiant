@@ -11,13 +11,18 @@
   height: 252px;
   border: 1px solid #dfdfdf;
   background-color: white;
-  font-size: 1.2em;
-  font-weight: 700;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1200px) {

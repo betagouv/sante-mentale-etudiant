@@ -36,7 +36,7 @@ const Separator = () => <div aria-hidden="true" className={styles.separator} />;
 export default function NeedHelp() {
   return (
     <div className={styles.container}>
-      <h3>Besoin d’aide ?</h3>
+      <h2>Besoin d’aide ?</h2>
       <p>Tu n’es pas seul. Des solutions existent.</p>
       <Separator />
       <CustomLink

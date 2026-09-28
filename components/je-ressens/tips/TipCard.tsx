@@ -11,15 +11,8 @@ export default function TipCard({ tip, picto, onReadMore }: Props) {
   return (
     <>
       <div className={styles.card}>
-        {picto && (
-          <img
-            src={`/images/pictograms/${picto}.svg`}
-            alt=""
-            width={50}
-            height={50}
-          />
-        )}
-        <h4>{tip.title}</h4>
+        {picto && <img src={`/images/pictograms/${picto}.svg`} alt="" width={50} height={50} />}
+        <h3>{tip.title}</h3>
         <div className={styles.itemsList}>
           {
             <span>
