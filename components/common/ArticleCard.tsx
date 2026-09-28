@@ -7,9 +7,10 @@ import { renderReadingTime } from "./Helper";
 
 type Props = {
   article: ArticleMeta;
+  titleAs?: "h3" | "h2" | "h4" | "h5" | "h6" | undefined;
 };
 
-export const ArticleCard = ({ article }: Props) => {
+export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
   const link =
     article.type === "internal"
       ? { href: `/s-informer/${article.slug}` }
@@ -42,7 +43,7 @@ export const ArticleCard = ({ article }: Props) => {
         </ul>
       }
       title={article.title}
-      titleAs="h3"
+      titleAs={titleAs}
       endDetail={
         <>
           {renderReadingTime(article.readingTime)}
