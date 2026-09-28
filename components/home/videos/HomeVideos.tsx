@@ -4,7 +4,7 @@ import Button from "@codegouvfr/react-dsfr/Button";
 import styles from "./HomeVideos.module.scss";
 import { useCarouselScroll } from "@/hooks/useCarouselScroll";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
-import { testimonials } from "../../../data/videos";
+import { testimonials } from "../../../data/videos/videos";
 import {
   IllustrationHomeTestimonials1,
   IllustrationHomeTestimonials2,
