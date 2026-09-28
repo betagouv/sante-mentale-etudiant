@@ -89,7 +89,7 @@ export default function Experts() {
 function Expert({ expert }: { expert: Expert }) {
   return (
     <div className={styles.expert}>
-      <h4>{expert.name}</h4>
+      <h3>{expert.name}</h3>
       <p>{expert.desc}</p>
     </div>
   );
