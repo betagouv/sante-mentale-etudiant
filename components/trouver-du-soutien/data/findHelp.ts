@@ -107,7 +107,7 @@ export const getResults = async (
     ];
   }
   results.push({
-    title: "D'après tes réponses, voici les professionnels de santé qu'on te recommande",
+    title: "D'après tes réponses, voici les professionnels qu'on te recommande",
     cards: recommandations,
   });
 
