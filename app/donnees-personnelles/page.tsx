@@ -5,6 +5,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Données personnelles",
+  description:
+    "Découvrez comment vos données sont collectées, utilisées et protégées sur Santé Mentale Étudiant, et comment exercer vos droits.",
 };
 
 export default function PersonalData() {

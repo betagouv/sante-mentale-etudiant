@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     default: "Santé Mentale Étudiant | Soutien, Ressources et Orientation",
     template: "%s | Santé Mentale Étudiant",
   },
-  description: "",
+  description:
+    "Soutien, ressources fiables et orientation adaptée : prenez soin de votre santé mentale d'étudiant",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
