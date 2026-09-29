@@ -4,6 +4,11 @@ import { Feeling } from "./types";
 export const FEELING_DRUGS: Feeling = {
   slug: "substances",
   name: "Substances",
+  metadata: {
+    title: "Mon rapport aux substances",
+    description:
+      "Comprendre son rapport aux substances, ce qui l'influence et ses effets : des pistes et des ressources pour y voir plus clair, sans jugement.",
+  },
   catch: {
     description: "Je m'interroge sur mon rapport à certaines substances",
     sentence: (

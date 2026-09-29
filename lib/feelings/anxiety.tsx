@@ -3,6 +3,11 @@ import { Feeling } from "./types";
 export const FEELING_ANXIETY: Feeling = {
   slug: "anxiety",
   name: "Anxiété",
+  metadata: {
+    title: "Je ressens de l’anxiété",
+    description:
+      "Inquiétudes, stress qui monte, pensées qui tournent en boucle : comprenez ce que vous vivez et découvrez des ressources pour vous apaiser et trouver du soutien.",
+  },
   catch: {
     description: "Je ressens du stress, de l'anxiété",
     sentence: (

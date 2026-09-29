@@ -4,6 +4,11 @@ import { Feeling } from "./types";
 export const FEELING_SOLITUDE: Feeling = {
   slug: "solitude",
   name: "Solitude",
+  metadata: {
+    title: "Je ressens de la solitude",
+    description:
+      "Se sentir seul ou isolé pendant ses études est plus fréquent qu'on ne le croit : découvrez des ressources et des pistes pour créer du lien et trouver du soutien.",
+  },
   catch: {
     description: "Je ressens de la solitude, de l'isolement",
     sentence: (

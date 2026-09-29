@@ -4,6 +4,11 @@ import { Feeling } from "./types";
 export const FEELING_EATING_DISORDER: Feeling = {
   slug: "eating-disorder",
   name: "Rapport compliqué à la nourriture",
+  metadata: {
+    title: "Mon rapport à la nourriture",
+    description:
+      "Comprendre son rapport à la nourriture : des pistes et des ressources pour y voir plus clair, sans jugement.",
+  },
   catch: {
     description: "J’ai un rapport compliqué à la nourriture",
     sentence: (
