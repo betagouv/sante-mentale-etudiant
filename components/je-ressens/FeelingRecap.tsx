@@ -6,12 +6,7 @@ type Props = {
   feeling: FeelingType;
 };
 
-const RECAP_PICTOS = [
-  "anxiety",
-  "feeling-management",
-  "solitude",
-  "fatigue",
-];
+const RECAP_PICTOS = ["anxiety", "feeling-management", "solitude", "fatigue"];
 
 export default function FeelingRecap({ feeling }: Props) {
   return (
@@ -28,7 +23,7 @@ export default function FeelingRecap({ feeling }: Props) {
                 height={50}
               />
             </div>
-            {r}
+            <h3>{r}</h3>
           </div>
         ))}
       </div>

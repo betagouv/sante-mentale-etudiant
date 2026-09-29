@@ -6,8 +6,10 @@ export default function LaunchOrienteurCard() {
   return (
     <div className={`${styles.cardWrapper}`}>
       <div className={`fr-card fr-card--shadow ${styles.card}`}>
-        <Badge severity="new" noIcon>Gratuit et confidentiel</Badge>
-        <h3 className={styles.title}>Trouve du soutien en quelques clics</h3>
+        <Badge severity="new" noIcon>
+          Gratuit et confidentiel
+        </Badge>
+        <h2 className={styles.title}>Trouve du soutien en quelques clics</h2>
         <p className={styles.desc}>
           Réponds à quelques questions pour trouver l'aide la plus adaptée à ta situation (ou pour
           aider un proche)

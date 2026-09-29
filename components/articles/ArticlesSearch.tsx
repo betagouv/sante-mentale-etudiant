@@ -75,7 +75,7 @@ export default function ArticlesSearch({ allArticles, feelings }: Props) {
           ))}
         </ul>
       </div>
-      <ArticlesList articles={filteredArticles} />
+      <ArticlesList articles={filteredArticles} titleAs="h2" />
     </>
   );
 }

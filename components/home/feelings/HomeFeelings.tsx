@@ -25,7 +25,7 @@ export default function HomeFeelings() {
               }}
               orientation="vertical"
               title={feeling.name}
-              titleAs="h4"
+              titleAs="h3"
             />
           );
         })}
