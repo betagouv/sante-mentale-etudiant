@@ -5,6 +5,11 @@ import { FeelingLink } from ".";
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
   name: "Épuisement",
+  metadata: {
+    title: "Je ressens de l’épuisement",
+    description:
+      "Fatigue constante, manque d'énergie, sentiment d'être à bout : comprenez ce qui se passe et découvrez des ressources pour trouver du soutien.",
+  },
   catch: {
     description: "Je ressens de l'épuisement",
     sentence: (

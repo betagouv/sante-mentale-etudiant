@@ -4,6 +4,11 @@ import { Feeling } from "./types";
 export const FEELING_SUICIDE: Feeling = {
   slug: "suicidal-thought",
   name: "Idées suicidaires",
+  metadata: {
+    title: "J’ai des idées suicidaires",
+    description:
+      "Vous pensez au suicide ? Vous n'êtes pas seul(e). Le 3114 est joignable 24h/24 et gratuitement. Découvrez aussi d'autres ressources pour être aidé(e).",
+  },
   catch: {
     description: "J’ai des idées suicidaires",
     sentence: (

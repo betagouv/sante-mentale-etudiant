@@ -4,6 +4,11 @@ import { Feeling } from "./types";
 export const FEELING_PAINFUL_EVENT: Feeling = {
   slug: "painful-event",
   name: "Évènement douloureux",
+  metadata: {
+    title: "Je traverse un événement douloureux",
+    description:
+      "Deuil, rupture, échec, événement qui bouleverse tout : découvrez des ressources et des pistes pour traverser cette période et trouver du soutien.",
+  },
   catch: {
     description: "Je traverse un événement douloureux",
     sentence: (

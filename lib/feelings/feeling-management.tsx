@@ -3,6 +3,11 @@ import { Feeling } from "./types";
 export const FEELING_MANAGEMENT: Feeling = {
   slug: "feeling-management",
   name: "Gestion des émotions",
+  metadata: {
+    title: "Ma gestion des émotions",
+    description:
+      "Colère, tristesse, émotions qui débordent : apprenez à mieux les comprendre et découvrez des ressources pour retrouver de l'équilibre.",
+  },
   catch: {
     description: "J’ai du mal à gérer mes émotions",
     sentence: (

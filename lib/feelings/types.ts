@@ -32,7 +32,12 @@ export type WhatIf = {
   title?: string;
   content: ReactNode;
 };
+export type Metadata = {
+  description: string;
+  title: string;
+};
 export interface Feeling {
+  metadata: Metadata;
   slug: string;
   name: string;
   catch: Intro;

@@ -4,6 +4,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
+  description:
+    "Informations légales du site Santé Mentale Étudiant : éditeur, hébergeur, directeur de publication.",
 };
 
 export default function LegalNotices() {
