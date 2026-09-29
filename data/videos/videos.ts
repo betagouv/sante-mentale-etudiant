@@ -16,7 +16,7 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/preview/3114.mp4",
     posterUrl: "/images/vignettes/3114.jpg",
     citation: "N’attendez pas d’être dans une situation grave",
-    transcription: 'kikoooo'
+    transcription: transcriptions["3114"],
   },
   {
     key: "BAPU",
@@ -24,7 +24,7 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/preview/BAPU.mp4",
     posterUrl: "/images/vignettes/BAPU.jpg",
     citation: "Ça fait du bien de sentir qu’on n’est pas seul",
-    transcription: 'kikoooo'
+    transcription: transcriptions["BAPU"],
   },
   {
     key: "SSE",
@@ -32,6 +32,6 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/preview/SSE.mp4",
     posterUrl: "/images/vignettes/SSE.jpg",
     citation: "C’est un lieu de repère et de soutien",
-    transcription: 'kikoooo'
+    transcription: transcriptions["SSE"],
   },
 ];
