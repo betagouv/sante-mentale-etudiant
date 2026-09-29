@@ -3,8 +3,8 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 import { videoModal } from "@/components/modals";
 import { useVideoModalDismissed } from "@/hooks/useVideoModalDismissed";
-import { VideoPlayer } from "./VideoPlayer";
 import { VideoTestimonial } from "./types";
+import { VideoModalContent } from "./VideoModalContent";
 
 interface VideoTestimonialModalContextValue {
   openVideo: (testimonial: VideoTestimonial) => void;
@@ -26,11 +26,9 @@ export function VideoTestimonialModalProvider({ children }: { children: ReactNod
     <VideoTestimonialModalContext.Provider value={{ openVideo }}>
       {children}
 
-      <videoModal.Component size="small" title="">
+      <videoModal.Component size="small" title={<span className="fr-sr-only">Témoignage vidéo</span>}>
         {activeTestimonial && (
-          <div>
-            <VideoPlayer key={activeTestimonial.key} testimonial={activeTestimonial} />
-          </div>
+          <VideoModalContent key={activeTestimonial.key} testimonial={activeTestimonial} />
         )}
       </videoModal.Component>
     </VideoTestimonialModalContext.Provider>

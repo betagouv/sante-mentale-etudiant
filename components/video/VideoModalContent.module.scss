@@ -1,0 +1,29 @@
+.toolbar {
+  display: flex;
+  margin-top: -4rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.player {
+  position: relative;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 2rem;
+  overflow-y: auto;
+  background: white;
+  white-space: pre-line;
+}
+
+.transcriptionBtn {
+  color: #fff;
+}
+
+.transcriptionBtn:hover,
+.transcriptionBtn:active {
+  color: var(--text-title-blue-france);
+}
