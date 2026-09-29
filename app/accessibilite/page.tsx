@@ -10,7 +10,9 @@ export const metadata: Metadata = {
 export default async function AccessibilityDeclaration() {
   return (
     <FullBleedSection>
-      <h1>Déclaration d'accessibilité</h1>
+      <section className="static-page">
+        <h1>Déclaration d'accessibilité</h1>
+      </section>
     </FullBleedSection>
   );
 }

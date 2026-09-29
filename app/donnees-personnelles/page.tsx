@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function PersonalData() {
   return (
     <FullBleedSection>
-      <section>
+      <section className="static-page">
         <h1>Politique de confidentialité</h1>
 
         <section>

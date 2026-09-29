@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function LegalNotices() {
   return (
     <FullBleedSection>
-      <section>
+      <section className="static-page">
         <h1>Mentions légales</h1>
 
         <section>
