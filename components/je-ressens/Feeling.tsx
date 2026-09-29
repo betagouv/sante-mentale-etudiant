@@ -4,18 +4,19 @@ import FeelingRecap from "./FeelingRecap";
 import FeelingUnderstand from "./FeelingUnderstand";
 import FeelingTips from "./tips/FeelingTips";
 import FeelingArticles from "./FeelingArticles";
+import styles from "./Feeling.module.scss";
 
 type Props = {
   feeling: FeelingType;
 };
 export default function Feeling({ feeling }: Props) {
   return (
-    <>
+    <div className={styles.container}>
       <FeelingVideo feeling={feeling} />
       <FeelingRecap feeling={feeling} />
       <FeelingUnderstand feeling={feeling} />
       <FeelingTips feeling={feeling} />
       <FeelingArticles feeling={feeling} />
-    </>
+    </div>
   );
 }

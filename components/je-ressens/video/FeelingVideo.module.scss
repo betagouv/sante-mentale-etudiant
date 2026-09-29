@@ -20,7 +20,8 @@
     color: white;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   p {
     font-size: 1rem;
@@ -44,5 +45,11 @@
 @media (min-width: 1200px) {
   .content {
     flex-direction: row;
+  }
+  .desc {
+    h1 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
   }
 }
