@@ -43,11 +43,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             ]}
           />
           <Header />
-          <div style={{ paddingLeft: 0, paddingRight: 0 }}>
+          <main style={{ paddingLeft: 0, paddingRight: 0 }}>
             <VideoTestimonialModalProvider>
               <Suspense>{children}</Suspense>
             </VideoTestimonialModalProvider>
-          </div>
+          </main>
           <Newsletter />
           <Footer />
         </DsfrProvider>
