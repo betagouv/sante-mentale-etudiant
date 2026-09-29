@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   },
   description:
     "Soutien, ressources fiables et orientation adaptée : prenez soin de votre santé mentale d'étudiant",
+  openGraph: {
+    siteName: "Santé Mentale Étudiant",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
