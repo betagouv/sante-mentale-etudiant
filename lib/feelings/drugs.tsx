@@ -1,3 +1,4 @@
+import { transcriptionDrugs } from "@/data/videos/transcriptions/feelings/drugs";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
@@ -31,6 +32,7 @@ export const FEELING_DRUGS: Feeling = {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
     },
+    transcription: transcriptionDrugs,
   },
   recap: [
     "Consommer une substance ne signifie pas forcément être dépendant.",

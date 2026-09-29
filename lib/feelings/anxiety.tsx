@@ -1,3 +1,4 @@
+import { transcriptionAnxiety } from "@/data/videos/transcriptions/feelings/anxiety";
 import { Feeling } from "./types";
 
 export const FEELING_ANXIETY: Feeling = {
@@ -29,6 +30,7 @@ export const FEELING_ANXIETY: Feeling = {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
     },
+    transcription: transcriptionAnxiety,
   },
   recap: [
     "Le stress est une réaction normale face à une difficulté",

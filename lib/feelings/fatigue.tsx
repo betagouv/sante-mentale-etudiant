@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
+import { transcriptionFatigue } from "@/data/videos/transcriptions/feelings/fatigue";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -30,6 +31,7 @@ export const FEELING_FATIGUE: Feeling = {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
     },
+    transcription: transcriptionFatigue,
   },
   recap: [
     "Un stress qui dure use le corps autant que la tête",

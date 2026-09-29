@@ -1,3 +1,4 @@
+import { transcriptionSolitude } from "@/data/videos/transcriptions/feelings/solitude";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
@@ -30,6 +31,7 @@ export const FEELING_SOLITUDE: Feeling = {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
     },
+    transcription: transcriptionSolitude,
   },
   recap: [
     "On peut se sentir seul même lorsqu'on est entouré",
