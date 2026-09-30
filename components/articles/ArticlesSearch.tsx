@@ -36,7 +36,7 @@ export default function ArticlesSearch({ allArticles, feelings }: Props) {
         .filter((a) => a.title.includes(searchTerm))
         .filter(
           (a) =>
-            selectedFeelingSlugs.length === 0 || selectedFeelingSlugs.includes(a.mainFeeling.slug)
+            selectedFeelingSlugs.length === 0 || selectedFeelingSlugs.includes(a.mainFeelingSlug)
         ),
     [searchTerm, allArticles, selectedFeelingSlugs]
   );

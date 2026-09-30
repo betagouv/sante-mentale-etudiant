@@ -7,6 +7,19 @@ import { FEELING_PAINFUL_EVENT } from "./painful-event";
 import { FEELING_SOLITUDE } from "./solitude";
 import { FEELING_SUICIDE } from "./suicidal-thought";
 
+export const FEELING_SLUGS = [
+  "anxiety",
+  "drugs",
+  "fatigue",
+  "solitude",
+  "eating-disorder",
+  "painful-event",
+  "feeling-management",
+  "suicidal-thought",
+] as const;
+
+export type FeelingSlug = (typeof FEELING_SLUGS)[number];
+
 export const feelings = [
   FEELING_ANXIETY,
   FEELING_DRUGS,

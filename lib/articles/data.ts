@@ -1,7 +1,3 @@
-import { FEELING_ANXIETY } from "../feelings/anxiety";
-import { FEELING_DRUGS } from "../feelings/drugs";
-import { FEELING_FATIGUE } from "../feelings/fatigue";
-import { FEELING_SOLITUDE } from "../feelings/solitude";
 import type { ArticleMeta } from "./types";
 
 export const articles: ArticleMeta[] = [
@@ -18,7 +14,7 @@ export const articles: ArticleMeta[] = [
     heroCredits:
       "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
     readingTime: 4,
-    mainFeeling: FEELING_ANXIETY,
+    mainFeelingSlug: "anxiety",
   },
   {
     type: "internal",
@@ -33,7 +29,7 @@ export const articles: ArticleMeta[] = [
     heroCredits:
       "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
     readingTime: 5,
-    mainFeeling: FEELING_ANXIETY,
+    mainFeelingSlug: "anxiety",
   },
   {
     type: "external",
@@ -43,7 +39,7 @@ export const articles: ArticleMeta[] = [
       "La qualité de nos nuits peut favoriser ou au contraire fragiliser notre santé mentale. Voici des pistes pour l'améliorer.",
     readingTime: 4,
     title: "Psycom - Quand le sommeil s'en mêle",
-    mainFeeling: FEELING_FATIGUE,
+    mainFeelingSlug: "fatigue",
     heroImage: "/articles/quand-le-sommeil-s-en-mele/hero.jpg",
   },
   {
@@ -53,7 +49,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Santé Psy Jeunes - Mieux vivre avec un trouble anxieux",
-    mainFeeling: FEELING_ANXIETY,
+    mainFeelingSlug: "anxiety",
     heroImage: "/articles/mieux-vivre-avec-un-trouble-anxieux/hero.jpg",
   },
   {
@@ -63,7 +59,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Psycom - Troubles anxieux et phobies",
-    mainFeeling: FEELING_ANXIETY,
+    mainFeelingSlug: "anxiety",
     heroImage: "/articles/troubles-anxieux-et-phobies/hero.jpg",
   },
   {
@@ -73,7 +69,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Radio France - Comment mieux vivre avec nos angoisses ?",
-    mainFeeling: FEELING_ANXIETY,
+    mainFeelingSlug: "anxiety",
     heroImage: "/articles/comment-mieux-vivre-avec-nos-angoisses/hero.jpg",
   },
   {
@@ -83,7 +79,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Santé Psy Jeunes - Mieux comprendre le sommeil à l’adolescence & chez le jeune adulte",
-    mainFeeling: FEELING_FATIGUE,
+    mainFeelingSlug: "fatigue",
     heroImage: "/articles/mieux-comprendre-le-sommeil/hero.jpg",
   },
   {
@@ -94,7 +90,7 @@ export const articles: ArticleMeta[] = [
     readingTime: 4,
     title:
       "Santé Publique France - Sommeil : temps moyen sur 24 heures et plainte d’insomnie (édition 2024)",
-    mainFeeling: FEELING_FATIGUE,
+    mainFeelingSlug: "fatigue",
     heroImage: "/articles/sommeil-temps-moyen-sur/hero.jpg",
   },
   {
@@ -104,7 +100,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Réseau Morphée - Le sommeil et ses troubles",
-    mainFeeling: FEELING_FATIGUE,
+    mainFeelingSlug: "fatigue",
     heroImage: "/articles/le-sommeil-et-ses-troubles/hero.jpg",
   },
   {
@@ -114,7 +110,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Assurance maladie - Asthénie (fatigue) : que faire et quand consulter ?",
-    mainFeeling: FEELING_FATIGUE,
+    mainFeelingSlug: "fatigue",
     heroImage: "/articles/asthenie/hero.jpg",
   },
   {
@@ -124,7 +120,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Santé Psy Jeunes - Comprendre les addictions",
-    mainFeeling: FEELING_DRUGS,
+    mainFeelingSlug: "drugs",
     heroImage: "/articles/comprendre-les-addictions/hero.jpg",
   },
   {
@@ -135,7 +131,7 @@ export const articles: ArticleMeta[] = [
     readingTime: 4,
     title:
       "Drogues Info Service : service national d’aide à distance en matière de drogues et de dépendances",
-    mainFeeling: FEELING_DRUGS,
+    mainFeelingSlug: "drugs",
     heroImage: "/articles/drogues-info-service/hero.jpg",
   },
   {
@@ -145,7 +141,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Psycom - Les trouves addictifs",
-    mainFeeling: FEELING_DRUGS,
+    mainFeelingSlug: "drugs",
     heroImage: "/articles/les-trouves-addictifs/hero.jpg",
   },
   {
@@ -155,7 +151,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Psycom - La solitude des jeunes",
-    mainFeeling: FEELING_SOLITUDE,
+    mainFeelingSlug: "solitude",
     heroImage: "/articles/la-solitude-des-jeunes/hero.jpg",
   },
   {
@@ -165,7 +161,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Info.gouv - Jeunes : hyperconnectés mais seuls",
-    mainFeeling: FEELING_SOLITUDE,
+    mainFeelingSlug: "solitude",
     heroImage: "/articles/hyperconnectes-mais-seuls/hero.jpg",
   },
   {
@@ -175,7 +171,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "OMS - Solitude et isolement : une menace cachée pour la santé mondiale",
-    mainFeeling: FEELING_SOLITUDE,
+    mainFeelingSlug: "solitude",
     heroImage: "/articles/une-menace-cachee-pour/hero.jpg",
   },
   {
@@ -185,7 +181,7 @@ export const articles: ArticleMeta[] = [
     intro: "",
     readingTime: 4,
     title: "Etudiant.gouv : Deviens bénévole avec Je Veux Aider",
-    mainFeeling: FEELING_SOLITUDE,
+    mainFeelingSlug: "solitude",
     heroImage: "/articles/deviens-benevole-avec-je-veux-aider/hero.jpg",
   },
 ];
