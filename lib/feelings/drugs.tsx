@@ -2,7 +2,7 @@ import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
 export const FEELING_DRUGS: Feeling = {
-  slug: "substances",
+  slug: "drugs",
   name: "Substances",
   metadata: {
     title: "Mon rapport aux substances",
