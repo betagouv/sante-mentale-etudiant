@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <FooterDsfr
       id="footer"
-      accessibility="partially compliant"
+      accessibility="non compliant"
       contentDescription="Des ressources et des repères pour mieux comprendre et prendre soin de sa santé mentale pendant les études."
       accessibilityLinkProps={{ href: "/accessibilite" }}
       termsLinkProps={{ href: "/mentions-legales" }}
