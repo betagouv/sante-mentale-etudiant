@@ -1,11 +1,11 @@
-import { Feeling } from "../feelings/types";
+import { FeelingSlug } from "../feelings/data";
 
 interface BaseArticleMeta {
   slug: string;
   title: string;
   intro: string;
   readingTime: number; // in minutes
-  mainFeeling: Feeling;
+  mainFeelingSlug: FeelingSlug;
   heroImage: string;
 }
 

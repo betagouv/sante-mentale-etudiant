@@ -1,5 +1,6 @@
 import { VideoTestimonial } from "@/components/video/types";
 import { ReactNode } from "react";
+import { FeelingSlug } from "./data";
 
 type Intro = {
   sentence: ReactNode;
@@ -38,7 +39,7 @@ export type Metadata = {
 };
 export interface Feeling {
   metadata: Metadata;
-  slug: string;
+  slug: FeelingSlug;
   name: string;
   catch: Intro;
   video: VideoTestimonial;

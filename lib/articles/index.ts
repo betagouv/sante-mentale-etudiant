@@ -33,5 +33,5 @@ export async function getArticleBySlug(
 }
 
 export async function getArticlesByFeeling(feelingSlug: string): Promise<ArticleMeta[]> {
-  return articles.filter((a) => a.mainFeeling.slug === feelingSlug);
+  return articles.filter((a) => a.mainFeelingSlug === feelingSlug);
 }

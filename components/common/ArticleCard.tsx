@@ -4,6 +4,7 @@ import { Card } from "@codegouvfr/react-dsfr/Card";
 import { Tag } from "@codegouvfr/react-dsfr/Tag";
 import styles from "./ArticleCard.module.scss";
 import { renderReadingTime } from "./Helper";
+import { getFeelingBySlug } from "@/lib/feelings";
 
 type Props = {
   article: ArticleMeta;
@@ -20,6 +21,8 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
           target: "_blank" as const,
           rel: "noopener noreferrer",
         };
+
+  const mainFeeling = getFeelingBySlug(article.mainFeelingSlug);
   return (
     <Card
       className={styles.card}
@@ -38,7 +41,7 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       start={
         <ul className="fr-tags-group">
           <li>
-            <Tag>{article.mainFeeling.name}</Tag>
+            <Tag>{mainFeeling?.name}</Tag>
           </li>
         </ul>
       }
