@@ -288,12 +288,3 @@ export const IllustrationDispositifDesktop = () => (
     className={styles.dispositifsHeroPeopleDesktop}
   />
 );
-
-export const IllustrationDispositifAudienceWave = () => (
-  <RenderImage
-    src="/images/illustrations/dispositifs/audience/wave.svg"
-    width={1235}
-    height={628}
-    className={styles.dispositifAudienceWave}
-  />
-);

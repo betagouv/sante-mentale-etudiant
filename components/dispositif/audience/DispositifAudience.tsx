@@ -2,7 +2,6 @@ import { AudienceItem, Dispositif } from "@/lib/dispositifs/types";
 import styles from "./DispositifAudience.module.scss";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import Image from "next/image";
-import { IllustrationDispositifAudienceWave } from "@/components/illustrations";
 type Props = {
   dispositif: Dispositif;
 };
@@ -10,7 +9,6 @@ type Props = {
 export default function DispositifAudience({ dispositif }: Props) {
   return (
     <FullBleedSection bgColor="grey">
-      <IllustrationDispositifAudienceWave />
       <div style={{ position: "relative" }}>
         <h2>{dispositif.audience.title}</h2>
         <div className={styles.cards}>
