@@ -2,6 +2,7 @@ import { useState } from "react";
 import { VideoPlayer } from "./VideoPlayer";
 import { VideoTestimonial } from "./types";
 import styles from "./VideoModalContent.module.scss";
+import Button from "@codegouvfr/react-dsfr/Button";
 
 export function VideoModalContent({ testimonial }: { testimonial: VideoTestimonial }) {
   const [isTranscriptionOpen, setIsTranscriptionOpen] = useState(false);
@@ -12,15 +13,20 @@ export function VideoModalContent({ testimonial }: { testimonial: VideoTestimoni
     <div>
       {transcription && (
         <div className={styles.toolbar}>
-          <button
-            type="button"
-            className={`fr-btn fr-btn--sm fr-btn--tertiary-no-outline fr-btn--icon-right fr-icon-arrow-right-line ${styles.transcriptionBtn}`}
-            aria-expanded={isTranscriptionOpen}
-            aria-controls={panelId}
+          <Button
+            priority="tertiary no outline"
+            size="small"
+            iconId="fr-icon-arrow-right-line"
+            iconPosition="right"
             onClick={() => setIsTranscriptionOpen((open) => !open)}
+            nativeButtonProps={{
+              "aria-expanded": isTranscriptionOpen,
+              "aria-controls": panelId,
+            }}
+            className={styles.transcriptionBtn}
           >
             Transcription
-          </button>
+          </Button>
         </div>
       )}
 
