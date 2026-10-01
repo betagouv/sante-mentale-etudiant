@@ -36,7 +36,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/7FwPbevV3sLY486aB4ZLLY",
     previewUrl: "/videos/preview/feelings/painful-event.mp4",
     posterUrl: "/images/vignettes/feelings/painful-event.jpg",
-    duration: 5,
+    duration: 8,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
