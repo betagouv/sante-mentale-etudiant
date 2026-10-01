@@ -1,4 +1,5 @@
 import { VideoTestimonial } from "@/components/video/types";
+import { dispositifsTranscriptions } from "./transcriptions";
 
 export const testimonials: VideoTestimonial[] = [
   {
@@ -7,6 +8,7 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/preview/3040.mp4",
     posterUrl: "/images/vignettes/3040.jpg",
     citation: "C’est normal de pas toujours se sentir bien",
+    transcription: dispositifsTranscriptions["3040"],
   },
   {
     key: "3114",
@@ -14,6 +16,7 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/preview/3114.mp4",
     posterUrl: "/images/vignettes/3114.jpg",
     citation: "N’attendez pas d’être dans une situation grave",
+    transcription: dispositifsTranscriptions["3114"],
   },
   {
     key: "BAPU",
@@ -21,6 +24,7 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/preview/BAPU.mp4",
     posterUrl: "/images/vignettes/BAPU.jpg",
     citation: "Ça fait du bien de sentir qu’on n’est pas seul",
+    transcription: dispositifsTranscriptions["BAPU"],
   },
   {
     key: "SSE",
@@ -28,5 +32,6 @@ export const testimonials: VideoTestimonial[] = [
     previewUrl: "/videos/preview/SSE.mp4",
     posterUrl: "/images/vignettes/SSE.jpg",
     citation: "C’est un lieu de repère et de soutien",
+    transcription: dispositifsTranscriptions["SSE"],
   },
 ];

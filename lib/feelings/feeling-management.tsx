@@ -1,3 +1,4 @@
+import { transcriptionFeelingManagement } from "@/data/videos/transcriptions/feelings/feeling-management";
 import { Feeling } from "./types";
 
 export const FEELING_MANAGEMENT: Feeling = {
@@ -40,6 +41,7 @@ export const FEELING_MANAGEMENT: Feeling = {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
     },
+    transcription: transcriptionFeelingManagement,
   },
   recap: [
     "Toutes les émotions ont une fonction.",

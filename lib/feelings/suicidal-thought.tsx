@@ -1,3 +1,4 @@
+import { transcriptionSuicidalThoughts } from "@/data/videos/transcriptions/feelings/suicidal-thought";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
@@ -37,6 +38,7 @@ export const FEELING_SUICIDE: Feeling = {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
     },
+    transcription: transcriptionSuicidalThoughts,
   },
   recap: [
     "Les idées suicidaires sont le signe d'une souffrance, pas d'une faiblesse.",

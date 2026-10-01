@@ -1,3 +1,4 @@
+import { transcriptionPainfulEvent } from "@/data/videos/transcriptions/feelings/painful-event";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
@@ -32,7 +33,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
   },
   video: {
     key: "painful-event",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9qy5gDdpGJw2AMTLcHi7YG",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/7FwPbevV3sLY486aB4ZLLY",
     previewUrl: "/videos/preview/feelings/painful-event.mp4",
     posterUrl: "/images/vignettes/feelings/painful-event.jpg",
     duration: 5,
@@ -40,6 +41,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
     },
+    transcription: transcriptionPainfulEvent,
   },
   recap: [
     "Chacun réagit différemment à un événement difficile.",

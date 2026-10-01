@@ -1,3 +1,4 @@
+import { transcriptionEatingDisorder } from "@/data/videos/transcriptions/feelings/eating-disorder";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
@@ -37,6 +38,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
     },
+    transcription: transcriptionEatingDisorder,
   },
   recap: [
     "Nos émotions peuvent modifier notre appétit et notre façon de manger.",

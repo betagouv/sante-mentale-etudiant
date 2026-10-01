@@ -2,7 +2,8 @@ import { Guest } from "@/lib/feelings/types";
 
 export interface VideoTestimonial {
   key: string;
-  videoUrl?: string;
+  videoUrl: string;
+  transcription: string;
   previewUrl?: string;
   posterUrl?: string;
   citation?: string;
