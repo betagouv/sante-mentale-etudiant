@@ -65,30 +65,4 @@ export const transcriptionAnxiety = `
 5:26 Oui.
 5:27 Je pense que pour commencer à aller mieux, l'idée, c'est déjà d'en parler, que ce soit un proche, s'il est en mesure de pouvoir comprendre et accompagner.
 5:36 Sinon, c'est d'en parler à son médecin, peut être le médecin généraliste, peut être d'aller voir un médecin psychiatre si on sent que c'est très envahissant ou alors prendre rendez vous avec un psychologue.
-5:48 À partir de là, l'idée, ça va être à la fois de décortiquer un petit peu les symptômes.
-5:53 Si on est vraiment dans du stress, si on est davantage dans de l'anxiété.
-5:56 Si c'est de l'anxiété, c'est de comprendre pourquoi il y a ces manifestations là.
-6:00 Et après, c'est des petites actions peut être au quotidien.
-6:03 Quand on est une personne dite anxieuse, l'idée, c'est d'amener des petites routines peut être au quotidien.
-6:09 Je pense notamment aux techniques de respiration.
-6:12 On va beaucoup parler en psychologie et en thérapie comportementale et cognitive de méditation de pleine conscience.
-6:19 Mais en gros, c'est des petites techniques de respiration.
-6:22 Moi, je conseille très souvent ce qu'on va appeler la cohérence cardiaque.
-6:26 Démarrage, alors pas sur le moment de la crise.
-6:28 J'insiste toujours sur ça, c'est à dire que la crise, quand elle est là, il faut la laisser passer.
-6:34 Mais c'est plus de mettre ça en place dans son quotidien.
-6:38 La pratique du sport aussi, on sait que ça a un effet plutôt bénéfique sur les troubles anxieux.
-6:45 D'autres pratiques, c'est à dire de se réserver des temps calmes, des temps autour d'outils créatifs.
-6:52 Je pense aux dessins, je pense à la lecture, peut être la photographie.
-6:55 Enfin voilà, de reprendre.
-6:56 Prendre comme ça des temps, des petits temps pour soi, même 10 minutes, ça peut suffire.
-7:00 Et il y a aussi l'écriture qui peut, qui peut aider, notamment quand on est envahi par les pensées, des pensées anxieuses.
-7:07 Ça permet aussi de faire un petit pas, un petit pas de côté.
-7:10 Je pense que s'il faut retenir une chose pour accompagner un étudiant qui se poserait la question,
-7:17 qui se reconnaîtrait peut être dans ce témoignage là, ça serait peut être la première chose, c'est de se dire que c'est normal.
-7:26 En fait, et que le stress fait partie de la vie et que c'est normal de ressentir du stress.
-7:31 Dans un deuxième temps, je lui conseillerais peut être d'aller en parler, peut être à un proche ou à son médecin généraliste qui pourra peut être l'orienter davantage, le guider.
-7:42 Savoir si effectivement, ça relève d'un accompagnement, d'un suivi et à ce moment là, de mettre en place un accompagnement thérapeutique.
-7:51 Si tu t'es reconnu dans ce témoignage, sache que comprendre ce que tu ressens est souvent le premier pas.
-7:56 Sur santé mentale étudiant, tu trouveras d'autres ressources pour t'aider à mettre des mots sur ce que tu vis et découvrir les solutions qui existent.
 `;
