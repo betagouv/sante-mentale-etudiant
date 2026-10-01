@@ -1,0 +1,32 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1.2rem;
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  width: 377px;
+  border: 1px solid #dfdfdf;
+  background-color: white;
+}
+
+.cardBody {
+  padding: 1.5rem 2rem;
+  h3 {
+    font-size: 1.375rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1.125rem;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardBody {
+    padding: 0.5rem 2rem;
+  }
+}

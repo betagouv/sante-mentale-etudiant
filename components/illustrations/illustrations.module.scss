@@ -13,7 +13,7 @@
   }
 }
 
-@media (min-width: 1285px) {
+@media (min-width: 1385px) {
   .illustration {
     display: inline-block;
   }
@@ -176,4 +176,10 @@
 .dispositifsHeroPeopleDesktop {
   bottom: 0px;
   right: 0px;
+}
+
+.dispositifAudienceWave {
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
