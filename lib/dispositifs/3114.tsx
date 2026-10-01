@@ -25,5 +25,31 @@ export const DISPOSITIF_3114: Dispositif = {
   },
   contact: {
     title: "Comment contacter le 3114 ?",
+    tiles: [
+      {
+        title: "Par téléphone",
+        desc: (
+          <>
+            Compose le 3114 depuis toute la France (métropolitaine et les départements d’outre-mer).
+          </>
+        ),
+        badge: "24h/24 - 7j/7",
+        picto: "Smartphone",
+        linkProps: {
+          href: "tel:3114",
+          "aria-label": "Appeler le 3114, numéro national de prévention du suicide",
+        },
+      },
+      {
+        title: "Par e-mail",
+        badge: "Réponse sous 24h",
+        desc: <>Écris via un formulaire de contact sur le site www.3114.fr</>,
+        picto: "MainSend",
+        linkProps: {
+          href: "tel:3114",
+          "aria-label": "Appeler le 3114, numéro national de prévention du suicide",
+        },
+      },
+    ],
   },
 };

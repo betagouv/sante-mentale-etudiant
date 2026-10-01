@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { DispositifSlug } from "./data";
+import { DispositifContactPictoName } from "@/components/dispositif/DispositifHowTo";
 
 interface Button {
   text: string;
@@ -15,8 +16,19 @@ interface Audience {
   items: AudienceItem[];
 }
 
+export interface ContactTile {
+  title: string;
+  badge: string;
+  desc: ReactNode;
+  picto: DispositifContactPictoName;
+  linkProps: {
+    href: string;
+    "aria-label"?: string;
+  };
+}
 interface Contact {
   title: string;
+  tiles: ContactTile[];
 }
 
 export interface Dispositif {
