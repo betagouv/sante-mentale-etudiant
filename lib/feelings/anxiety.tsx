@@ -30,7 +30,7 @@ export const FEELING_ANXIETY: Feeling = {
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/69Gv4zEK4X8nZLBqwJkvzY",
     previewUrl: "/videos/preview/feelings/anxiety.mp4",
     posterUrl: "/images/vignettes/feelings/anxiety.jpg",
-    duration: 5,
+    duration: 6,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",

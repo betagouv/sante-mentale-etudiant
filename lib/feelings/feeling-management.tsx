@@ -36,7 +36,7 @@ export const FEELING_MANAGEMENT: Feeling = {
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/gFMQYqditxorxyooNfUNH5",
     previewUrl: "/videos/preview/feelings/feeling-management.mp4",
     posterUrl: "/images/vignettes/feelings/feeling-management.jpg",
-    duration: 5,
+    duration: 7,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",

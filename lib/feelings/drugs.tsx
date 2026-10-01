@@ -32,7 +32,7 @@ export const FEELING_DRUGS: Feeling = {
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/8KBMfic6rSAGDwZ95qeoQr",
     previewUrl: "/videos/preview/feelings/drugs.mp4",
     posterUrl: "/images/vignettes/feelings/drugs.jpg",
-    duration: 5,
+    duration: 6,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue clinicien",
