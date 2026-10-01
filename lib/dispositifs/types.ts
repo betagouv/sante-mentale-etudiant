@@ -31,10 +31,16 @@ interface Contact {
   tiles: ContactTile[];
 }
 
+interface WhatIsIt {
+  title: string;
+  desc: ReactNode;
+}
+
 export interface Dispositif {
   slug: DispositifSlug;
   catchPhrase: string;
   button: Button;
   audience: Audience;
   contact: Contact;
+  whatIsIt: WhatIsIt;
 }

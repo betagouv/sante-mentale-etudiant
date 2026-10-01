@@ -52,4 +52,23 @@ export const DISPOSITIF_3114: Dispositif = {
       },
     ],
   },
+  whatIsIt: {
+    title: "Qu’est ce que le 3114 ?",
+    desc: (
+      <>
+        <p>
+          <b>Le 3114 est le numéro national de prévention du suicide.</b>
+        </p>
+        <p>
+          Gratuit, confidentiel et accessible 24h/24 et 7j/7, il permet à toute personne en détresse
+          ou inquiète pour un proche, d’échanger avec des professionnels de la santé mentale.
+        </p>
+        <p>
+          L’objectif : écouter, soutenir, évaluer la situation et orienter vers les solutions
+          adaptées.
+        </p>
+        <p>En cas de besoin, une intervention peut être coordonnée avec les services d’urgence.</p>
+      </>
+    ),
+  },
 };
