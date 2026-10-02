@@ -9,6 +9,8 @@ import MainSend from "@codegouvfr/react-dsfr/picto/MainSend";
 import Calendar from "@codegouvfr/react-dsfr/picto/Calendar";
 import Ecosystem from "@codegouvfr/react-dsfr/picto/Ecosystem";
 import SelfTraining from "@codegouvfr/react-dsfr/picto/SelfTraining";
+import Map from "@codegouvfr/react-dsfr/picto/Map";
+import Community from "@codegouvfr/react-dsfr/picto/Community";
 
 export const dispositifContactPictoMap = {
   Smartphone,
@@ -16,6 +18,8 @@ export const dispositifContactPictoMap = {
   Calendar,
   Ecosystem,
   SelfTraining,
+  Map,
+  Community,
 };
 
 export type DispositifContactPictoName = keyof typeof dispositifContactPictoMap;
