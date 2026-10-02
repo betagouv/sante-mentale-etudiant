@@ -19,6 +19,22 @@
   }
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #161616;
+  margin-top: 3rem;
+  row-gap: 1rem;
+}
+.card {
+  width: 240px;
+  min-width: 240px;
+  :global(.fr-tile) {
+    height: 100%;
+  }
+}
+
 .logo {
   max-width: 100%;
   height: auto;
@@ -40,5 +56,10 @@
     p {
       font-size: 1.125rem;
     }
+  }
+  .cards {
+    flex-direction: col;
+    margin-top: 2rem;
+    justify-content: center;
   }
 }

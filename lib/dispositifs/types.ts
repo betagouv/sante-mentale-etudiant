@@ -34,6 +34,10 @@ interface Contact {
 interface WhatIsIt {
   title: string;
   desc: ReactNode;
+  items: {
+    title: string;
+    desc: ReactNode;
+  }[];
 }
 
 export interface Dispositif {

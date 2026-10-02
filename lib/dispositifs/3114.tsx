@@ -70,5 +70,12 @@ export const DISPOSITIF_3114: Dispositif = {
         <p>En cas de besoin, une intervention peut être coordonnée avec les services d’urgence.</p>
       </>
     ),
+    items: [
+      { title: "Gratuit", desc: <></> },
+      { title: "24h/24 7j/7", desc: <>Y compris les week-ends et jours fériés</> },
+      { title: "Confidentiel", desc: <>Tu peux parler librement sans donner ton identité</> },
+      { title: "Des professionnels", desc: <>Des professionnels</> },
+      { title: "Partout en France", desc: <>Accessible depuis tout le territoire</> },
+    ],
   },
 };

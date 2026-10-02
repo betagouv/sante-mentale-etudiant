@@ -3,9 +3,13 @@ import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./DispositifWhatIsIt.module.scss";
 import { testimonials } from "@/data/videos";
 import DispositifVideo from "./DispositifVideo";
+import { ReactNode } from "react";
+import { Tile } from "@codegouvfr/react-dsfr/Tile";
 type Props = {
   dispositif: Dispositif;
 };
+
+const pictoArray = ["feeling-management", "eating-disorder", "solitude", "anxiety", "substances"];
 
 export default function DispositifWhatIsIt({ dispositif }: Props) {
   return (
@@ -27,7 +31,25 @@ export default function DispositifWhatIsIt({ dispositif }: Props) {
           <DispositifVideo video={testimonials[0]} />
         </div>
       </div>
-      <div className={styles.cards}></div>
+      <div className={styles.cards}>
+        {dispositif.whatIsIt.items.map((it, idx) => (
+          <div key={`item_${idx}`} className={styles.card}>
+            <ItemCard title={it.title} desc={it.desc} picto={pictoArray[idx]} />
+          </div>
+        ))}
+      </div>
     </FullBleedSection>
+  );
+}
+
+function ItemCard({ title, desc, picto }: { title: string; desc: ReactNode; picto: string }) {
+  return (
+    <Tile
+      imageUrl={`/images/pictograms/${picto}.svg`}
+      orientation="vertical"
+      title={title}
+      desc={desc}
+      titleAs="h3"
+    />
   );
 }
