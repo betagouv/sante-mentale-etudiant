@@ -12,7 +12,7 @@ export const FEELING_FATIGUE: Feeling = {
       "Fatigue constante, manque d'énergie, sentiment d'être à bout : comprenez ce qui se passe et découvrez des ressources pour trouver du soutien.",
   },
   catch: {
-    description: "Je ressens de l'épuisement",
+    description: "Je ressens de la fatigue",
     sentence: (
       <>
         <p>
@@ -20,8 +20,7 @@ export const FEELING_FATIGUE: Feeling = {
           Tout te demande un effort, même répondre à un message.
         </p>
         <p>
-          La fatigue ou l’épuisement qui durent n'est pas un manque de volonté. C'est un signal, et
-          il y a des choses à faire.
+          La fatigue qui dure n'est pas un manque de volonté. C'est un signal, et il y a des choses à faire.
         </p>
       </>
     ),
@@ -39,10 +38,10 @@ export const FEELING_FATIGUE: Feeling = {
     transcription: transcriptionFatigue,
   },
   recap: [
-    "Un stress qui dure use le corps autant que la tête",
-    "Une fatigue qui ne passe pas malgré le repos mérite un avis médical",
-    "Des leviers simples existent, à commencer par la régularité de tes horaires",
-    "Si ça ne passe pas, n’hésite pas à en parler à un médecin, un psy ou à un proche",
+    "La fatigue ne se règle pas toujours en dormant plus.",
+    "Un stress qui dure use le corps autant que la tête.",
+    "Des leviers simples existent, à commencer par la régularité de tes horaires.",
+    "Si ça ne passe pas, n'hésite pas à en parler à un médecin, un psy ou à un proche.",
   ],
   faq: {
     title: "Comprendre l'épuisement",
@@ -99,11 +98,11 @@ export const FEELING_FATIGUE: Feeling = {
               ).
             </p>
             <p>
-              Et l'épuisement est loin d'être un cas isolé : chez les étudiants qui consultent un
-              psychologue via Santé Psy Étudiant, l'épuisement mental et le sentiment d'être à bout
-              constituent le deuxième motif de consultation (18 % des réponses), et les troubles du
-              sommeil sont un motif non négligeable de consultation (8 %) - enquête auprès des
-              bénéficiaires de Santé Psy Étudiant, juin 2026, 1 443 répondants.
+              Chez les étudiants qui consultent un psychologue via Santé Psy Étudiant, l'épuisement
+              mental et le sentiment d'être à bout constituent le deuxième motif de consultation
+              (18 % des réponses), et les troubles du sommeil sont un motif non négligeable de
+              consultation (8 % - enquête auprès des bénéficiaires de Santé Psy Étudiant, juin 2026,
+              1 416 répondants).
             </p>
           </>
         ),
@@ -146,8 +145,8 @@ export const FEELING_FATIGUE: Feeling = {
               Quand la fatigue s'accompagne d'une perte d'envie, d'un moral bas, d'un sentiment de
               vide qui dure plus de deux semaines, ce n'est plus seulement de la fatigue. Un tiers
               des étudiants présentent les signes d’une détresse psychologique et la moitié a vécu
-              une période d’au moins deux semaines consécutives pendant laquelle ils se sont sentis
-              tristes, déprimés, sans espoir, au cours des 12 derniers mois (
+              une période d’au moins deux semaines consécutives pendant laquelle ils se sont
+              sentis tristes, déprimés, sans espoir, au cours des 12 derniers mois (
               <Link
                 href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
                 target="_blank"
@@ -174,39 +173,79 @@ export const FEELING_FATIGUE: Feeling = {
         ),
       },
       {
+        question: "Comment ça s'entretient",
+        answer: (
+          <>
+            <p>
+              L'épuisement fonctionne en boucle. Tu es fatigué, donc tu es moins efficace.
+              Tu es moins efficace, donc tu travailles plus tard. Tu travailles plus tard, donc tu dors moins.
+              Et la fatigue augmente.
+              La fatigue peut aussi toucher ce qui te permettrait d'aller mieux : tu annules les sorties, tu vois moins de monde, tu bouges moins. L'isolement peut s'installer.
+            </p>
+            <p>→ Voir la page <FeelingLink slug="solitude" /></p>
+          </>
+        ),
+      },
+      {
         question: "Comment ça se manifeste concrètement",
         answer: (
-          <ul>
-            <li>Je me réveille déjà fatigué, même après une longue nuit.</li>
-            <li>Je m'endors en cours l'après-midi, mais impossible de dormir le soir.</li>
-            <li>Je relis le même paragraphe sans le comprendre.</li>
-            <li>Je mets deux heures à faire ce qui m'en prenait une.</li>
-            <li>
-              Je repousse des tâches simples pendant des jours : un mail, un rendez-vous, une
-              inscription.
-            </li>
-            <li>Je carbure au café la semaine, je m'écroule le week-end.</li>
-            <li>Je m'énerve pour rien, ou je pleure pour rien.</li>
-            <li>Je n'ai plus envie de voir personne, même les gens que j'aime.</li>
-            <li>Je mange n'importe quoi, ou je saute des repas sans y penser.</li>
-            <li>Je me dis "je suis nul" alors que je suis surtout épuisé.</li>
-          </ul>
+          <div>
+            <h5>Cognitif</h5>
+            <ul>
+              <li>Je peux relire le même paragraphe sans le comprendre.</li>
+              <li>Je peux mettre deux heures à faire ce qui m'en prenait une.</li>
+              <li>Je peux ne pas réfléchir comme d'habitude, perdre en capacité de raisonnement logique.</li>
+            </ul>
+
+            <h5>Physique</h5>
+            <ul>
+              <li>Je peux me réveiller déjà fatigué, même après une longue nuit.</li>
+              <li>Je peux m'endormir en cours l'après-midi, mais impossible de dormir le soir.</li>
+            </ul>
+
+            <h5>Émotionnel</h5>
+            <ul>
+              <li>Je peux m'énerver pour rien, ou pleurer pour rien.</li>
+              <li>Je peux me dévaloriser.</li>
+            </ul>
+
+            <h5>Comportemental</h5>
+            <ul>
+              <li>
+                Je peux repousser des tâches simples pendant des jours : un mail, un rendez-vous, une
+                inscription.
+              </li>
+              <li>Je peux carburer au café la semaine, je m'écroule le week-end.</li>
+              <li>Je peux avoir moins envie de voir les gens.</li>
+              <li>Je peux sauter des repas ou manger n'importe quoi sans y penser.</li>
+            </ul>
+          </div>
         ),
       },
     ],
   },
   tips: [
     {
-      title: "S’observer pour connaître ses besoins",
+      title: "Objectiver son temps de sommeil, comprendre quel dormeur on est, viser la qualité",
       items: [
         {
           title: "L’action",
           desc: (
             <>
-              essaye d’estimer quel dormeur tu es, quels sont tes besoins. Pour déterminer ton
-              chronotype, la période idéale est celle des vacances : après 8 à 10 jours de repos, il
-              est possible d’évaluer son besoin réel de sommeil en observant la durée du sommeil, la
-              régularité des horaires et la satisfaction ressentie au réveil (source INSV)
+              <p>Estimer quel dormeur tu es, quels sont tes besoins.</p>
+              <p>
+                Le recueil, via un agenda du sommeil, permet de savoir comment on dort, d'avoir un regard objectif sur son propre sommeil — une pratique dont l'usage en évaluation comportementale du sommeil est ancien et bien établi (Bootzin & Engle-Friedman, 1981). Attention à ne pas vouloir trop bien faire et le remplir la nuit, l'idée est de le remplir le matin au réveil, même si cela est approximatif. Cela peut aussi permettre de préparer une consultation à laquelle on amène l'agenda.{" "}
+                <Link
+                  href="https://www.reseau-morphee.fr/wp-content/uploads/2009/01/agenda_2p.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Agenda du sommeil (Réseau Morphée)
+                </Link>
+              </p>
+              <p>
+                La qualité du sommeil ne tient pas nécessairement à la quantité : ne pas chercher à récupérer absolument, essayer de respecter son rythme, ne pas traîner au lit, ne pas rester trop longtemps dans le lit si on ne dort pas — un principe qui trouve son origine dans la thérapie de contrôle du stimulus, l'une des interventions comportementales les plus anciennes et les mieux validées contre les difficultés de sommeil (Bootzin, 1972).
+              </p>
             </>
           ),
         },
@@ -228,14 +267,15 @@ export const FEELING_FATIGUE: Feeling = {
       ],
     },
     {
-      title: "Recale ton horloge interne",
+      title: "Recaler son horloge interne",
       items: [
         {
           title: "L’action",
           desc: (
             <>
-              lève-toi à peu près à la même heure tous les jours, y compris le week-end, avec une
-              heure d'écart maximum et prends la lumière du matin
+              Se lever à peu près à la même heure tous les jours même le lendemain d'une mauvaise
+              nuit, y compris le week-end, avec une heure d'écart maximum/semaine, essayer d'éviter
+              les siestes ou pas trop longues, prendre la lumière du matin.
             </>
           ),
         },
@@ -244,39 +284,52 @@ export const FEELING_FATIGUE: Feeling = {
           desc: (
             <>
               descends un arrêt de bus plus tôt, prends ton café près de la fenêtre, révise dehors.
-              Même par temps gris.
+              Même par temps gris. Planifier des activités le matin peut aider à respecter l'heure
+              de réveil.
             </>
           ),
         },
       ],
     },
     {
-      title: "Evite les écrans",
+      title: "Attendre d'être somnolent pour aller au lit, et sortir du lit si on ne s'endort pas",
       items: [
         {
           title: "L’action",
           desc: (
             <>
-              coupe les écrans dans la demi-heure qui précède le coucher, ou au moins arrête de
-              réviser sur écran au lit. La lumière des écrans repousse le signal du sommeil. S'y
-              ajoute le contenu lui-même : le scroll, les notifications et les messages maintiennent
-              le cerveau en éveil au moment où il devrait ralentir.
+              Guetter un signe de somnolence pour aller au lit. Cela diminue les chances de rester
+              éveillé après être allé au lit (signes de somnolence : pensées décousues ou confuses,
+              bâillements, difficultés à se concentrer ou à garder les yeux ouverts, agitation ou
+              irritabilité — signes reconnus par les autorités de santé au travail comme
+              indicateurs que le cerveau approche de l'endormissement).
             </>
           ),
         },
         {
-          title: "Commence petit",
+          title: "L’action",
           desc: (
             <>
-              charge ton téléphone loin du lit, hors de portée de main, passe l'appareil en mode
-              sombre et baisse la luminosité au minimum.
+              Si on ne s'est pas endormi après avoir passé plus de 15 minutes au lit, sortir du lit
+              et aller dans une autre pièce jusqu'à ce que vous vous sentiez somnolent. Répéter cela
+              autant de fois que nécessaire pendant la nuit. Privilégier des activités relaxantes
+              (lecture, musique, mots croisés) plutôt que des activités stimulantes.
+            </>
+          ),
+        },
+        {
+          title: "Attention",
+          desc: (
+            <>
+              Cela augmente certes la probabilité d'être fatigué le lendemain, mais aide à se
+              recaler. (Bootzin, 1972)
             </>
           ),
         },
       ],
     },
     {
-      title: "Pratique une activité physique",
+      title: "Pratiquer une activité physique",
       items: [
         {
           title: "L’action",
@@ -325,10 +378,28 @@ export const FEELING_FATIGUE: Feeling = {
         </p>
         <p>
           Mais si la fatigue dure, si elle touche tes études, tes relations ou ton moral, tu n'as
-          pas à rester seul avec ça. Un tiers des étudiants présentent des signes de détresse
+          pas à rester seul avec ça. Un tiers des étudiant·es présentent des signes de détresse
           psychologique, et parmi eux, la moitié n'a consulté aucun professionnel (OVE 2024).
         </p>
-        <p>Demander de l'aide n'est pas un aveu de faiblesse.</p>
+        <p>Demander de l'aide, c'est prendre soin de soi, c'est permis, et c'est même une bonne idée.</p>
+        <p>
+          <b>Les signaux qui doivent t'amener à consulter</b> (critères issus de l'Assurance
+          Maladie, "Asthénie : que faire et quand consulter ?") :
+        </p>
+        <ul>
+          <li>La fatigue persiste malgré le repos, ou dure depuis plus de quatre semaines.</li>
+          <li>
+            Elle s'accompagne d'autres symptômes physiques : fièvre, douleurs, perte d'appétit,
+            essoufflement.
+          </li>
+          <li>Tu es triste, découragé ou sans envie de rien depuis plus de deux semaines.</li>
+          <li>Elle t'empêche de suivre tes cours, de travailler, de voir des gens.</li>
+          <li>
+            Tu as des idées noires. → Dans ce cas, ne reste pas seul : voir la
+            page <FeelingLink slug="suicidal-thought" />, et le 3114 est joignable 24h/24, gratuitement.
+          </li>
+        </ul>
+        <p>L'épuisement est un signal. L'écouter, c'est déjà agir.</p>
       </>
     ),
   },
