@@ -4,9 +4,9 @@ interface BaseArticleMeta {
   slug: string;
   title: string;
   intro: string;
-  readingTime: number; // in minutes
   mainFeelingSlug: FeelingSlug;
   heroImage: string;
+  readingTime?: number; // in minutes
 }
 
 export interface InternalArticleMeta extends BaseArticleMeta {
@@ -15,7 +15,9 @@ export interface InternalArticleMeta extends BaseArticleMeta {
   publishedAt: string;
   updatedAt?: string;
   markdownFile: string; // filename inside content/articles/
-  heroCredits: string;
+  heroCredits?: string;
+  podcastUrl?: string;
+  transcription?: string;
 }
 
 export interface ExternalArticleMeta extends BaseArticleMeta {
