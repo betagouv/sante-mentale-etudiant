@@ -13,7 +13,7 @@ type Props = {
 
 export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
   const link =
-    article.type === "internal"
+    article.type === "internal" || article.type === "podcast"
       ? { href: `/s-informer/${article.slug}` }
       : {
         href: article.url,
