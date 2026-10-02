@@ -1,6 +1,7 @@
 import { transcriptionSolitude } from "@/data/videos/transcriptions/feelings/solitude";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
+import Link from "next/link";
 
 export const FEELING_SOLITUDE: Feeling = {
   slug: "solitude",
@@ -20,8 +21,9 @@ export const FEELING_SOLITUDE: Feeling = {
           pas. Tu as parfois l'impression que tout le monde a trouvé sa place… sauf toi.
         </p>
         <p>
-          Parfois, on se sent seul alors qu'on est entouré. Parfois, on est réellement isolé, avec
-          peu de contacts au quotidien. Dans les deux cas, il est possible d'en sortir.
+          Se sentir seul ne veut pas forcément dire être seul.
+          C'est un ressenti que beaucoup d'étudiants connaissent, surtout lors des périodes de changement.
+          Et avec les bons appuis, il est possible d’en sortir progressivement.
         </p>
       </>
     ),
@@ -39,10 +41,11 @@ export const FEELING_SOLITUDE: Feeling = {
     transcription: transcriptionSolitude,
   },
   recap: [
-    "On peut se sentir seul même lorsqu'on est entouré",
-    "La solitude est un ressenti, pas un nombre d'amis",
-    "Ce sentiment est fréquent pendant les études et les périodes de transition",
-    "La solitude peut s'installer progressivement, mais il est possible de recréer du lien",
+    "On peut se sentir seul au milieu des autres, sans forcément être isolé",
+    "Quand on se sent seul, on a tendance à moins voir les autres, et on finit par s'isoler vraiment",
+    "Examens, deuil, période difficile : certains moments de vie peuvent créer un décalage avec les autres",
+    "Si le sentiment de solitude dure ou devient trop douloureux, il est important d'en parler",
+
   ],
   faq: {
     title: "Comprendre le sentiment de solitude",
@@ -73,36 +76,43 @@ export const FEELING_SOLITUDE: Feeling = {
         question: "Pourquoi ce sentiment apparaît-il ?",
         answer: (
           <>
-            <p>Les études sont souvent synonymes de changements.</p>
+            <p>L’entrée dans l’enseignement supérieur correspond souvent à une phase de transition. </p>
             <p>
-              Entrer dans une nouvelle ville, quitter sa famille, perdre ses repères, changer de
-              promotion, vivre une rupture ou avoir l'impression de ne pas trouver sa place… toutes
-              ces situations peuvent fragiliser les liens sociaux.
+              C’est souvent un moment où on quitte son foyer familial, on change d’environnement, de rythme.
+              En 2023, deux tiers des étudiants vivent hors du domicile familial (ESR, 2023).
             </p>
             <p>
-              Les réseaux sociaux peuvent également accentuer ce sentiment. En voyant les autres
-              partager leurs sorties, leurs réussites ou leurs amitiés, il est facile d'avoir
-              l'impression d'être le seul à vivre cette solitude.
+              Entrer dans une nouvelle ville, quitter sa famille, perdre ses repères, changer de promotion,
+              vivre une rupture ou avoir l'impression de ne pas trouver sa place…
+              Toutes ces situations peuvent fragiliser les liens sociaux.
             </p>
             <p>
-              Pourtant, cette impression est souvent trompeuse : chacun montre surtout les moments
-              qu'il choisit de partager.
+              Les réseaux sociaux peuvent également accentuer ce sentiment. En voyant les autres partager leurs sorties,
+              leurs “réussites” ou leurs “amitiés”, on a parfois  l'impression d'être le seul à vivre cette solitude.
+              Pourtant, cette impression est souvent trompeuse : chacun montre surtout les moments qu'il choisit de partager.
+            </p>
+            <p>
+              Paradoxalement, les jeunes n’ont jamais été aussi connectés,
+              et ils ne se sont jamais sentis aussi seuls (voir page jeunes, mais hyper connectés).
+            </p>
+            <p>
+              Certaines situations peuvent aussi renforcer le sentiment de solitude (accompagné ou non d'un isolement réel) : venir d'un autre pays, vivre avec un handicap, faire partie d’une minorité de genre. Ce sont souvent les obstacles rencontrés, comme la barrière de la langue, la peur d'être jugé, l’éloignement du cercle familial, qui rendent les liens plus difficiles à créer.
             </p>
           </>
         ),
       },
       {
-        question: "La solitude peut s'installer progressivement",
+        question: "Du sentiment de solitude à l’isolement réel",
         answer: (
           <>
             <p>
-              On ne devient pas isolé du jour au lendemain. Parfois, on refuse une invitation parce
-              qu'on est fatigué, puis une deuxième, puis on répond moins aux messages. On se dit
-              qu'on recontactera les autres plus tard.
+              Quand on ressent de la solitude (sans forcément être isolé), on peut créer un cercle qui va s’auto entretenir : au début, on va en cours, on voit du monde, mais on commence à ressentir un décalage entre “les autres” et ce que l’on vit (une anxiété liée aux partiels, un évènement douloureux qu’on tente de cacher… les causes racines peuvent être multiples).
             </p>
             <p>
-              Petit à petit, les liens se distendent, et reprendre contact peut sembler de plus en
-              plus difficile. Ce cercle peut entretenir la solitude.
+              Ce décalage donne moins envie de partager, on a l’impression qu’on les “autres” n’écoutent pas, alors à quoi bon parler ?
+            </p>
+            <p>
+              Au fur et à mesure, les liens se distendent. Et plus le temps passe, plus il est compliqué d’aller vers les autres. On finit par s’isoler vraiment.
             </p>
           </>
         ),
@@ -112,9 +122,15 @@ export const FEELING_SOLITUDE: Feeling = {
         answer: (
           <>
             <p>
-              Lorsque l'on se sent seul pendant longtemps, il est fréquent de perdre confiance en
-              soi ou de commencer à se demander si l'on est "intéressant", "aimable" ou "à sa
-              place".
+              Quand on se sent seul, on a 2,5 fois plus de risques de souffrir de détresse psychologique (
+              <Link
+                href="https://etude-mentalo.fr/diplemeo/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Etude participative Mentalo
+              </Link>
+              sur la santé mentale des jeunes de 11 à 24 ans).
             </p>
             <p>
               La solitude peut également favoriser le stress, l'anxiété, la tristesse ou
@@ -150,14 +166,19 @@ export const FEELING_SOLITUDE: Feeling = {
           <>
             <p>Le sentiment de solitude est loin d'être rare.</p>
             <p>
-              En France, 62 % des 18-24 ans déclarent se sentir régulièrement seuls, selon une étude
-              de l'IFOP publiée en 2024 et relayée par Le Monde .
+              En France, 62 % des 18-24 ans déclarent se sentir régulièrement seuls, selon une
+              <Link
+                href="https://www.ifopgroup.com/article/limpact-de-la-solitude-sur-la-vie-des-francais/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                étude de l'IFOP en 2024
+              </Link>
+              .
             </p>
             <p>
-              Les données de Santé Psy Étudiant montrent également que les difficultés
-              relationnelles, familiales ou amoureuses représentent 18 % des raisons évoquées par
-              les étudiants au moment de consulter. Elles font ainsi partie des difficultés les plus
-              fréquemment exprimées par les bénéficiaires du dispositif.
+              Chez Santé Psy Etudiant, le sentiment de solitude / l’isolement est le 5e motif de consultation
+              (après l’anxiété, l’épuisement, la tristesse, l’envie de mieux se comprendre) - Source : enquête SPE Juin 2024.
             </p>
             <p>
               Le sentiment de solitude est fréquent chez les étudiants, notamment lors des périodes
@@ -218,15 +239,17 @@ export const FEELING_SOLITUDE: Feeling = {
       items: [
         {
           title: "L’action",
-          desc: <>lorsqu'on se sent isolé, on attend souvent que les autres viennent vers nous.</>,
+          desc: <>lorsqu'on se sent isolé, on attend souvent que les autres viennent vers nous. On peut perdre confiance en soi, l’envie de voir les autres, l’envie de bouger. </>,
         },
         {
           title: "Commence petit",
           desc: (
             <>
               envoie un message à une personne que tu apprécies, propose un café après les cours ou
-              réponds à une invitation que tu aurais peut-être refusée auparavant. Il ne s'agit pas
-              de multiplier les rencontres, mais de rouvrir progressivement la porte aux autres.
+              réponds à une invitation à laquelle tu aurais dit “non” auparavant.
+              Tu peux aussi changer de place en amphi, rejoindre une asso, t’inscrire à une activité
+              (regarde celle proposée par ta fac ou ton école)… l’idée n’est pas de multiplier les rencontres,
+              mais de sortir un peu de ta routine et de t’ouvrir progressivement aux autres.
             </>
           ),
         },
@@ -286,12 +309,16 @@ export const FEELING_SOLITUDE: Feeling = {
         </p>
         <p>
           En revanche, si ce sentiment dure, t'amène à t'isoler de plus en plus, affecte ton moral
-          ou te donne l'impression de perdre espoir, il est important de prendre contact avec un
-          professionnel (médecin ou psychologue). Ils pourront t'aider à te sentir mieux.
+          ou te donne l'impression de perdre espoir, il est important de ne pas rester seul avec ce que tu ressens..
         </p>
         <p>
-          La solitude n'est pas une faiblesse. C'est un signal que ton besoin de lien mérite d'être
-          entendu.
+          Parler à un proche ou à un professionnel peut t'aider à comprendre ce qui se passe et à retrouver progressivement des liens qui te font du bien.
+        </p>
+        <p>
+          Des lignes d’écoute existent, comme le 3040 (tu seras reçu par un professionnel - psychologue,
+          travailleur social, juriste - qui saura t’orienter), Nightline
+          (où des étudiants écoutent d’autres étudiants en situation de mal être, la nuit), ou le 3114
+          (en cas de pensées suicidaires). N’hésite pas à les contacter.
         </p>
       </>
     ),

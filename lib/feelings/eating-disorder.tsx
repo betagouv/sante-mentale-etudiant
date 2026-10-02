@@ -1,6 +1,6 @@
 import { transcriptionEatingDisorder } from "@/data/videos/transcriptions/feelings/eating-disorder";
-import { FeelingLink } from ".";
 import { Feeling } from "./types";
+import Link from "next/link";
 
 export const FEELING_EATING_DISORDER: Feeling = {
   slug: "eating-disorder",
@@ -15,15 +15,14 @@ export const FEELING_EATING_DISORDER: Feeling = {
     sentence: (
       <>
         <p>
-          Certains jours, tu sautes des repas sans vraiment t’en rendre compte. D’autres fois, tu
-          manges pour calmer ton stress, ta tristesse ou ton ennui, puis tu culpabilises. Tu penses
-          beaucoup à ce que tu as mangé, à ce que tu « devrais » manger ou à l’apparence de ton
-          corps.
+          Tu penses sans cesse à ce que tu as mangé / à ce que tu devrais manger ?
+          Manger te fait culpabiliser ou génère des frustrations ? Il t’arrive de te priver de manger ou au contraire de ressentir
+          le “besoin de te remplir” ?
         </p>
         <p>
-          Notre façon de manger peut changer selon les périodes et les émotions que nous traversons.
-          Mais lorsque la nourriture devient une source de contrôle, de honte, d’angoisse ou de
-          souffrance, il est important de ne pas rester seul avec ça.
+          Notre façon de manger varie naturellement selon les périodes.
+          Mais lorsque la nourriture prend trop de place dans ta vie, qu’elle empiète sur tes projets, tes études, tes activités,
+          cela mérite qu’on s’en occupe.
         </p>
       </>
     ),
@@ -41,74 +40,73 @@ export const FEELING_EATING_DISORDER: Feeling = {
     transcription: transcriptionEatingDisorder,
   },
   recap: [
-    "Nos émotions peuvent modifier notre appétit et notre façon de manger.",
-    "Ce n’est pas ton poids ou ton apparence qui permet, à eux seuls, de savoir si tu as besoin d’aide.",
-    "Plus la nourriture occupe tes pensées ou influence ton quotidien, plus il est utile d’en parler.",
-    "Il ne faut pas attendre qu’un trouble soit installé pour demander de l’aide.",
+    "Manger est d'abord une source de plaisir, de partage et d'habitudes.",
+    "Le rapport à la nourriture peut changer lors des périodes difficiles.",
+    "Un besoin de se priver ou de se remplir peut devenir un signal d'alerte.",
+    "Quand la nourriture fait souffrir, en parler à un professionnel aide à comprendre ce qui se passe.",
   ],
   faq: {
     title: "Comprendre son rapport à la nourriture",
     intro: (
       <>
-        Manger ne répond pas uniquement à un besoin physique. Notre alimentation est également
-        influencée par nos émotions, nos habitudes, notre environnement, notre rapport au corps et
-        les périodes que nous traversons. Une difficulté ponctuelle n’est pas forcément inquiétante,
-        mais elle mérite de l’attention lorsqu’elle dure ou fait souffrir.
+        Manger ne répond pas uniquement à un besoin physique. C’est aussi un moment de partage, de plaisir et de vie en société.
+        Un changement passager dans notre rapport à la nourriture n’est pas forcément inquiétant (on peut manger davantage lors d’une période intense de révisions par exemple).
+        Ce changement mérite de l’attention lorsque la nourriture prend une place trop importante dans les pensées ou dans le quotidien.
       </>
     ),
     items: [
       {
-        question: "Manger, ce n’est pas seulement avoir faim",
+        question: "Manger n'est pas seulement une nécessité vitale",
         answer: (
           <>
             <p>
-              La faim est un signal physique, mais elle n’est pas la seule chose qui influence notre
-              alimentation.
+              C’est aussi une pratique sociale, familiale et culturelle qui permet à la personne de prendre place dans son environnement.
             </p>
             <p>
-              On peut aussi manger pour partager un moment, se réconforter, s’occuper, se calmer ou
-              retrouver une sensation agréable. À l’inverse, le stress, la tristesse, l’anxiété ou
-              l’épuisement peuvent couper l’appétit chez certaines personnes.
-            </p>
-            <p>
-              Il n’existe donc pas une seule manière de réagir : une même émotion peut pousser une
-              personne à manger davantage et une autre à ne presque plus manger.
+              Le rapport à l’alimentation évolue au fil de la vie : un déménagement, une période d'examens,
+              un changement de rythme peuvent bousculer nos habitudes alimentaires.
+              On mange plus, ou moins, ou à des heures inhabituelles. Souvent, ces perturbations sont passagères.
             </p>
           </>
         ),
       },
       {
-        question: "Les émotions peuvent modifier notre façon de manger",
+        question: "Quand manger passe au second plan ",
         answer: (
           <>
             <p>
-              Après une journée difficile, la nourriture peut devenir une manière de trouver
-              rapidement du réconfort ou de faire baisser la tension. À d’autres moments, le corps
-              peut sembler « noué » et rendre l’idée même de manger difficile.
+              Sauter un repas, grignoter, préférer les fast foods ou aliments ultra transformés & sodas
+              aux aliments cuisinés soi-même…
             </p>
             <p>
-              Ces réactions ne sont pas, à elles seules, le signe d’un trouble. Le problème apparaît
-              surtout lorsqu’elles deviennent le principal moyen de gérer ses émotions, qu’elles se
-              répètent ou qu’elles s’accompagnent d’une forte culpabilité.
+              Entre les cours, les petits boulots, les soirées, les révisions et un budget serré, les repas passent souvent après tout le reste.
             </p>
-            <div>
-              Cela peut alors créer une boucle :
-              <ul>
-                <li>Je ne vais pas bien</li>
-                <li>Je mange beaucoup ou je me prive</li>
-                <li>Je culpabilise ou je me juge</li>
-                <li>Je me sens encore plus mal</li>
-                <li>Mon rapport à la nourriture devient plus difficile</li>
-              </ul>
-            </div>
             <p>
-              → Voir aussi la page <FeelingLink slug="feeling-management" />.
+              Des repas peu variés et faiblement nutritifs peuvent favoriser la prise de poids et l’apparition de maladies chroniques
+              (obésité, diabète, maladie cardio vasculaires, etc.). La fatigue et les baisses de concentration peuvent aussi
+              s'installer plus vite.
+            </p>
+            <p>
+              Ainsi, un tiers des étudiants déclare avoir assez à manger mais pas toujours tous les aliments qu’ils souhaiteraient
+              et 9 % déclarent parfois ne pas avoir assez à manger (3 % manquent souvent de nourriture) - source :
+              OVE Bien être Santé 2024.
+            </p>
+            <p>
+              Depuis mai 2026, le repas à 1 € est ouvert à tous les étudiants, boursiers ou non. Un plat et deux accompagnements,
+              le midi, et le soir dans les restos U qui sont ouverts. En savoir plus sur
+              <Link
+                href="https://www.etudiant.gouv.fr/fr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                etudiant.gouv.fr
+              </Link>
             </p>
           </>
         ),
       },
       {
-        question: "Les règles alimentaires peuvent prendre beaucoup de place",
+        question: "Quand les règles alimentaires prennent trop de place",
         answer: (
           <>
             <div>
@@ -117,8 +115,6 @@ export const FEELING_EATING_DISORDER: Feeling = {
               <ul>
                 <li>s’interdire certains aliments ;</li>
                 <li>classer les aliments entre « bons » et « mauvais » ;</li>
-                <li>sauter un repas pour « compenser » ;</li>
-                <li>compter constamment les calories ;</li>
                 <li>se sentir obligé de faire du sport après avoir mangé ;</li>
                 <li>éviter de manger devant les autres ;</li>
                 <li>organiser sa journée entière autour des repas ou de son poids</li>.
@@ -133,63 +129,63 @@ export const FEELING_EATING_DISORDER: Feeling = {
         ),
       },
       {
-        question: "La culpabilité entretient souvent les difficultés",
+        question: "La question de la relation au corps et de la culpabilité",
         answer: (
           <>
-            <div>
-              Après avoir mangé, tu peux te dire :
-              <ul>
-                <li>« Je n’aurais pas dû. »</li>
-                <li>« Je manque de contrôle. »</li>
-                <li>« Il faut que je me rattrape demain. »</li>
-              </ul>
-            </div>
+            <p>La relation à la nourriture est parfois liée à la façon dont on perçoit son corps.</p>
             <p>
-              Ces pensées peuvent pousser à se restreindre davantage, puis rendre les épisodes de
-              perte de contrôle plus probables. Ce n’est donc pas forcément une question de
-              discipline : la restriction, la culpabilité et la perte de contrôle peuvent se
-              renforcer mutuellement.
+              Les remarques de l’entourage, les comparaisons ou des injonctions à la minceur ou
+              à la performance peuvent inciter à contrôler son alimentation de manière excessive.
             </p>
             <p>
-              Les crises de boulimie ou d’hyperphagie sont notamment caractérisées par une sensation
-              de ne plus pouvoir maîtriser ce que l’on mange. Dans la boulimie, elles sont suivies
-              de comportements destinés à compenser ; dans l’hyperphagie boulimique, ces
-              compensations ne sont pas présentes. Ces situations nécessitent un accompagnement
-              professionnel.
+              On peut par exemple se laisser convaincre par des régimes miracles vantés sur les réseaux sociaux, sans
+              fondement scientifique, qui peuvent se révéler dangereux pour la santé à terme.
+            </p>
+            <p>
+              Ces restrictions installent aussi souvent un cercle qui s'entretient tout seul. On se prive, l'envie de
+              manger grandit (frustration), on finit par craquer. Puis vient la culpabilité :
+              « Je n'aurais pas dû. » « Je manque de contrôle. » Alors on se prive à nouveau.
+            </p>
+            <p>
+              C'est finalement la privation elle-même qui rend le craquage plus probable.
+            </p>
+            <p>
+              Ce n’est pas un manque de volonté, c’est un mécanisme, et il se soigne.
+            </p>
+            <p>
+              En parler avec un professionnel aide à s’en sortir.
             </p>
           </>
         ),
       },
       {
-        question: "Le rapport au corps peut aussi entrer en jeu",
+        question: "Quand mon rapport à la nourriture évolue en trouble des conduites alimentaires",
         answer: (
           <>
             <p>
-              La relation à la nourriture est souvent liée à la façon dont on perçoit son corps.
+              Parfois, les difficultés s'installent et deviennent un trouble des conduites alimentaires (TCA).
+              Les plus connus sont l'anorexie mentale, la boulimie ou la frénésie alimentaire (anciennement appelée hyperphagie boulimique)
+              ou même l’orthorexie.
             </p>
             <p>
-              Les remarques de l’entourage, les comparaisons, les injonctions à la minceur ou à la
-              performance et les contenus vus sur les réseaux sociaux peuvent renforcer l’idée qu’il
-              faudrait contrôler son alimentation pour avoir le « bon » corps.
+              L'anorexie mentale se caractérise par une restriction alimentaire importante,
+              associée à une peur intense de prendre du poids.
             </p>
             <p>
-              Pourtant, une souffrance alimentaire ne se voit pas toujours. On peut avoir besoin
-              d’aide quel que soit son poids, son genre ou son apparence. Les troubles des conduites
-              alimentaires ont des conséquences à la fois psychiques et physiques et peuvent
-              concerner des profils très différents.
+              La boulimie et la frénésie alimentaire se caractérisent par des crises, vécues
+              avec une sensation de perte de contrôle. Dans la boulimie, ces crises sont suivies
+              de comportements destinés à compenser.
             </p>
-          </>
-        ),
-      },
-      {
-        question: "Une difficulté fréquente chez les étudiants accompagnés",
-        answer: (
-          <>
             <p>
-              Dans l’enquête réalisée auprès des bénéficiaires de Santé Psy Étudiant, les
-              difficultés avec l’alimentation ou le rapport au corps représentent 6 % des ressentis
-              exprimés au moment de consulter. Cela montre que ces difficultés ne sont ni rares ni
-              honteuses, même si elles restent souvent difficiles à évoquer.
+              L’orthorexie est un trouble du comportement alimentaire caractérisé par une obsession pathologique de manger sainement.
+            </p>
+            <p>
+              Ces troubles ont rarement une seule cause. Ils naissent d'un ensemble de facteurs biologiques, familiaux, psychologiques et sociaux.
+              Ils s'accompagnent parfois d'autres difficultés, comme l'anxiété, la dépression ou des troubles du sommeil.
+            </p>
+            <p>
+              Ces troubles ont des conséquences psychiques et physiques. Ils se soignent, et un accompagnement précoce favorise le rétablissement.
+              Il est important d’en parler à un professionnel rapidement.
             </p>
           </>
         ),
@@ -228,6 +224,29 @@ export const FEELING_EATING_DISORDER: Feeling = {
     ],
   },
   tips: [
+    {
+      title: "Ne pas garder ça pour toi",
+      items: [
+        {
+          title: "L’action",
+          desc: (
+            <>
+              les difficultés alimentaires se développent souvent dans le secret et la honte.
+              En parler permet de commencer à rompre cette boucle.
+            </>
+          ),
+        },
+        {
+          title: "Commence petit",
+          desc: (
+            <>
+              choisis une personne avec laquelle tu te sens en sécurité. Tu peux aussi te tourner directement vers un médecin,
+              un psychologue, un Service de santé étudiante ou un professionnel spécialisé.
+            </>
+          ),
+        },
+      ],
+    },
     {
       title: "Observer sans compter ni te juger",
       items: [
@@ -299,30 +318,6 @@ export const FEELING_EATING_DISORDER: Feeling = {
               n’y a pas de bonne ou de mauvaise réponse. L’objectif n’est pas de t’empêcher de
               manger, mais de mieux comprendre ce qui se passe pour pouvoir choisir ce qui
               t’aiderait vraiment à cet instant.
-            </>
-          ),
-        },
-      ],
-    },
-    {
-      title: "Ne pas garder ça pour toi",
-      items: [
-        {
-          title: "L’action",
-          desc: (
-            <>
-              les difficultés alimentaires se développent souvent dans le secret et la honte. En
-              parler permet de commencer à rompre cette boucle.
-            </>
-          ),
-        },
-        {
-          title: "Commence petit",
-          desc: (
-            <>
-              choisis une personne avec laquelle tu te sens en sécurité. Tu peux aussi te tourner
-              directement vers un médecin, un psychologue, un Service de santé étudiante ou un
-              professionnel spécialisé.
             </>
           ),
         },
