@@ -12,6 +12,10 @@
     background-color: #f5f5fe;
   }
 
+  &.yellow {
+    background-color: var(--bg-yellow);
+  }
+
   &.border-yellow {
     border-bottom: 6px solid var(--bg-yellow);
   }

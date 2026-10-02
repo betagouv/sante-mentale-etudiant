@@ -270,3 +270,21 @@ export const IllustrationFeelingsWomanCat = () => (
     className={styles.feelingsWomanCat}
   />
 );
+
+export const IllustrationDispositifMobile = () => (
+  <RenderImage
+    src="/images/illustrations/dispositifs/hero/people-mobile.svg"
+    width={355}
+    height={289}
+    className={styles.dispositifsHeroPeopleMobile}
+  />
+);
+
+export const IllustrationDispositifDesktop = () => (
+  <RenderImage
+    src="/images/illustrations/dispositifs/hero/people-desktop.svg"
+    width={678}
+    height={587}
+    className={styles.dispositifsHeroPeopleDesktop}
+  />
+);

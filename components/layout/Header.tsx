@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { needHelpModal } from "@/components/modals";
 import { EmergencyModal } from "./EmergencyModal";
 import { feelings } from "@/lib/feelings/data";
+import { dispositifs } from "@/lib/dispositifs/data";
 
 export function Header() {
   const pathname = usePathname();
@@ -34,6 +35,14 @@ export function Header() {
       text: "Aider un proche",
       linkProps: { href: "/aider-un-proche" },
       isActive: pathname === "/aider-un-proche",
+    },
+    {
+      text: "Dispositifs",
+      isActive: pathname.startsWith("/dispositif"),
+      menuLinks: dispositifs.map((dispositif) => ({
+        text: dispositif.slug,
+        linkProps: { href: `/dispositif/${dispositif.slug}` },
+      })),
     },
   ];
 

@@ -1,0 +1,41 @@
+.container {
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: var(--purple);
+}
+
+:global(.fr-btn--secondary) {
+  &:hover,
+  &:active {
+    background-color: var(--purple) !important;
+    color: white !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-bottom: 289px;
+  }
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
