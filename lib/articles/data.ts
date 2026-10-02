@@ -33,6 +33,45 @@ export const articles: ArticleMeta[] = [
   //   mainFeelingSlug: "anxiety",
   // },
   {
+    type: "internal",
+    slug: "podcast-cyril-dion",
+    title: "Anxiété, crise environnementale : comment garder espoir ? Avec Cyril Dion",
+    intro:
+      "",
+    author: "Vickie Ache",
+    publishedAt: "2025-11-19",
+    markdownFile: "cyril-dion.md",
+    heroImage: "/articles/podcast/cyril-dion.jpg",
+    mainFeelingSlug: "anxiety",
+    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/cyril-dion-anxiete-crise-environnementale-comment-garder-esp?"
+  },
+  {
+    type: "internal",
+    slug: "podcast-ludovic-dujardin",
+    title: "Et si s’arrêter, c’était avancer ? avec Ludovic Dujardin, fondateur de Petit Bambou",
+    intro:
+      "",
+    author: "Vickie Ache",
+    publishedAt: "2025-04-09",
+    markdownFile: "ludovic-dujardin.md",
+    heroImage: "/articles/podcast/ludovic-dujardin.jpg",
+    mainFeelingSlug: "fatigue",
+    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/et-si-sarreter-cetait-avancer?"
+  },
+  {
+    type: "internal",
+    slug: "podcast-noemie-lenoir",
+    title: "Alcool, dépression : la descente aux enfers. Avec Noémie Lenoir. ",
+    intro:
+      "",
+    author: "Vickie Ache",
+    publishedAt: "2025-10-22",
+    markdownFile: "noemie-lenoir.md",
+    heroImage: "/articles/podcast/noemie-lenoir.jpg",
+    mainFeelingSlug: "drugs",
+    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/noemie-lenoir-alcool-depression-la-descente-aux-enfers?"
+  },
+  {
     type: "external",
     slug: "quand-le-sommeil-s-en-mele",
     url: "https://www.psycom.org/sinformer/la-sante-mentale/quand-le-sommeil-sen-mele/",
