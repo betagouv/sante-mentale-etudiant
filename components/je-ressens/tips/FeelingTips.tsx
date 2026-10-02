@@ -16,7 +16,7 @@ type Props = {
   feeling: FeelingType;
 };
 
-const TIP_PICTOS = ["fatigue", "feeling-management", "substances", "painful-event"];
+const TIP_PICTOS = ["fatigue", "feeling-management", "drugs", "painful-event"];
 
 export default function FeelingTips({ feeling }: Props) {
   const [activeTip, setActiveTip] = useState<Tip | null>(null);
