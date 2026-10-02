@@ -3,6 +3,11 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_3040: Dispositif = {
   slug: "3040",
   catchPhrase: "Le numéro dédié au bien-être des étudiants",
+  metadata: {
+    title: "3040",
+    description:
+      "Le 3040, numéro d'écoute pour les étudiants : parlez à un professionnel en cas de mal-être, stress ou isolement. Un soutien accessible et confidentiel.",
+  },
   button: {
     text: "Contacter le 3040",
   },

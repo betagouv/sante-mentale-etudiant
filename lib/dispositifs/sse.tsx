@@ -3,6 +3,11 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_SSE: Dispositif = {
   slug: "SSE",
   catchPhrase: "Le service de santé dédié aux étudiants",
+  metadata: {
+    title: "SSE",
+    description:
+      "Le Service de Santé Étudiante (SSE) accompagne les étudiants : consultations médicales, soutien psychologique et prévention, sur votre campus et gratuitement.",
+  },
   button: {
     text: "Trouver mon SSE",
   },

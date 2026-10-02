@@ -3,6 +3,11 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_BAPU: Dispositif = {
   slug: "BAPU",
   catchPhrase: "Un accompagnement psychologique dédié aux étudiants",
+  metadata: {
+    title: "BAPU",
+    description:
+      "Les BAPU (Bureaux d'Aide Psychologique Universitaire) offrent des consultations psychologiques aux étudiants, gratuitement et sans limitation de durée.",
+  },
   button: {
     text: "Trouver mon BAPU",
   },

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { DispositifSlug } from "./data";
 import { DispositifContactPictoName } from "@/components/dispositif/DispositifHowTo";
+import { Metadata } from "../feelings/types";
 
 interface Button {
   text: string;
@@ -47,4 +48,5 @@ export interface Dispositif {
   audience: Audience;
   contact: Contact;
   whatIsIt: WhatIsIt;
+  metadata: Metadata;
 }

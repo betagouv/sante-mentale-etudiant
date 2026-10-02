@@ -10,7 +10,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const dispositif = await getDispositifBySlug(slug);
-  //   return { title: feeling?.metadata.title, description: feeling?.metadata.description };
+  return { title: dispositif?.metadata.title, description: dispositif?.metadata.description };
   return {};
 }
 

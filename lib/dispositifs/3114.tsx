@@ -3,6 +3,11 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_3114: Dispositif = {
   slug: "3114",
   catchPhrase: "Le numéro national de prévention du suicide",
+  metadata: {
+    title: "3114",
+    description:
+      "Le 3114, numéro national de prévention du suicide : gratuit, confidentiel et accessible 24h/24 et 7j/7. Des professionnels vous écoutent et vous orientent.",
+  },
   button: {
     text: "Contacter le 3114",
   },

@@ -3,6 +3,11 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_NIGHTLINE: Dispositif = {
   slug: "nightline",
   catchPhrase: "Le service d'écoute nocturne par et pour les étudiants",
+  metadata: {
+    title: "Nightline",
+    description:
+      "Nightline : une ligne d'écoute nocturne gérée par des étudiants bénévoles. Anonyme, confidentielle et sans jugement, pour parler quand ça ne va pas.",
+  },
   button: {
     text: "Contacter Nighline",
   },
