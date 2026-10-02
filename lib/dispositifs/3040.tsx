@@ -95,10 +95,19 @@ export const DISPOSITIF_3040: Dispositif = {
     ),
     items: [
       { title: "Gratuit", desc: <></> },
-      { title: "24h/24 7j/7", desc: <>Y compris les week-ends et jours fériés</> },
-      { title: "Confidentiel", desc: <>Tu peux parler librement sans donner ton identité</> },
-      { title: "Des professionnels", desc: <>Des professionnels</> },
-      { title: "Partout en France", desc: <>Accessible depuis tout le territoire</> },
+      {
+        title: "Disponible",
+        desc: <>du lundi au vendredi de 10h à 21h et le samedi de 10h à 14h</>,
+      },
+      { title: "Confidentiel", desc: <> Tu peux parler librement de ta situation</> },
+      {
+        title: "Des professionnels",
+        desc: <>Psychologues, professionnels du travail social et juristes.</>,
+      },
+      {
+        title: "Pour tous les étudiants",
+        desc: <>Quel que soit ton établissement ou ta situation</>,
+      },
     ],
   },
 };

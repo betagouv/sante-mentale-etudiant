@@ -21,7 +21,7 @@ export interface ContactTile {
   badge: string;
   desc: ReactNode;
   picto: DispositifContactPictoName;
-  linkProps: {
+  linkProps?: {
     href: string;
     "aria-label"?: string;
   };
