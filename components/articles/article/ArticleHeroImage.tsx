@@ -17,7 +17,7 @@ export default function ArticleHeroImage({ article }: Props) {
         style={{ objectFit: "cover" }}
         priority
       />
-      <ReadingTime className={styles.heroBadge} time={article.readingTime} />
+      {article.readingTime && <ReadingTime className={styles.heroBadge} time={article.readingTime} />}
     </div>
   );
 }

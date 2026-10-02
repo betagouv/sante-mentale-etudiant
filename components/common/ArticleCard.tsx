@@ -16,11 +16,11 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
     article.type === "internal"
       ? { href: `/s-informer/${article.slug}` }
       : {
-          href: article.url,
-          referrerPolicy: "no-referrer" as const,
-          target: "_blank" as const,
-          rel: "noopener noreferrer",
-        };
+        href: article.url,
+        referrerPolicy: "no-referrer" as const,
+        target: "_blank" as const,
+        rel: "noopener noreferrer",
+      };
 
   const mainFeeling = getFeelingBySlug(article.mainFeelingSlug);
   return (
@@ -49,7 +49,7 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       titleAs={titleAs}
       endDetail={
         <>
-          {renderReadingTime(article.readingTime)}
+          {article.readingTime && renderReadingTime(article.readingTime)}
           {article.type === "external" ? " • Lien externe" : ""}
         </>
       }
