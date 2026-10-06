@@ -1,0 +1,18 @@
+.tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #3a3a3a;
+  justify-content: center;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.tile {
+  min-width: 370px;
+  max-width: 584px;
+
+  :global(.fr-tile) {
+    height: 100%;
+  }
+}
