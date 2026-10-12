@@ -34,10 +34,10 @@ export default function WhoAreWe() {
         <Statistics />
         <ul style={{ listStyleType: "none", width: "100%" }}>
           <li>
-            <i>(1) OVE Repères BSE 2024</i>
+            <i>(1) OVE, Repères Bien être santé des étudiants, 2024</i>
           </li>
           <li>
-            <i>(2) Enquête Santé Psy Etudiant, juin 2026</i>
+            <i>(2) Enquête Santé Psy Etudiant, juin 2026 (1413 répondants)</i>
           </li>
         </ul>
       </div>
@@ -60,13 +60,16 @@ function Who() {
       <h1 className={styles.title}>Qui sommes-nous ?</h1>
       <p>
         <b>
-          Santé Mentale Étudiant est le site national du Ministère de l'Enseignement Supérieur, de
-          la Recherche et de l'Espace dédié à la santé mentale des étudiants.
+          Santé Mentale Étudiant est un site national du Ministère de l’Enseignement Supérieur, de
+          la Recherche et de l’Espace, dédié à la santé mentale des étudiants, qui informe, oriente
+          et outille les étudiants.
         </b>
       </p>
       <p>
-        Il informe, oriente et outille pour prendre soin de sa santé mentale. Il s'adresse aussi
-        bien aux étudiants directement concernés qu'à ceux qui souhaitent aider un proche.
+        Ce site ne s'ajoute pas aux ressources existantes : il a été conçu spécifiquement pour les
+        étudiants et pour les réalités propres à cette période de vie. Il s'appuie sur les
+        ressources fiables déjà disponibles lorsqu'elles existent et propose des contenus adaptés
+        lorsque les problématiques rencontrées par les étudiants ne sont pas encore couvertes.
       </p>
     </div>
   );
@@ -81,6 +84,10 @@ function Objectives() {
         <li>Trouver la ressource la plus adaptée à une situation donnée, à proximité.</li>
         <li>Agir, grâce à des outils concrets à mobiliser au quotidien.</li>
       </ul>
+      <p>
+        Le site s'adresse aussi bien aux étudiants directement concernés ainsi qu'à ceux qui
+        souhaiteraient aider un proche.
+      </p>
     </div>
   );
 }
