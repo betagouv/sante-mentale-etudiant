@@ -23,7 +23,7 @@ const experts: Expert[] = [
   },
   {
     name: "Maxime Gignon",
-    desc: "Ancien conseiller scientifique DGESIP ; Président de l'Observatoire Régional de la Santé et du Social ; Chef de service CHU Amiens Picardie",
+    desc: "Ancien conseiller scientifique DGESUP ; Président de l'Observatoire Régional de la Santé et du Social ; Chef de service CHU Amiens Picardie",
   },
   {
     name: "Ruxandra Jorioz",
@@ -43,7 +43,7 @@ const experts: Expert[] = [
   },
   {
     name: "Maria Pereira Da Costa",
-    desc: "Conseillère scientifique à la DGESIP ; Vice-présidente du Conseil d’Administration de l’Université Paris Cité ; Professeur de psychologie différentielle",
+    desc: "Conseillère scientifique à la DGESUP ; Vice-présidente du Conseil d’Administration de l’Université Paris Cité ; Professeur de psychologie différentielle",
   },
   {
     name: "Romain Sicot",
