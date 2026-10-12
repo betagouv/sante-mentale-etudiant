@@ -44,7 +44,7 @@ export const FEELING_FATIGUE: Feeling = {
     "Si ça ne passe pas, n'hésite pas à en parler à un médecin, un psy ou à un proche.",
   ],
   faq: {
-    title: "Comprendre l'épuisement",
+    title: "Comprendre la fatigue",
     intro: (
       <>
         La fatigue devient anormale quand elle persiste malgré le repos (
@@ -56,7 +56,7 @@ export const FEELING_FATIGUE: Feeling = {
           Assurance Maladie
         </Link>
         ). Elle n'a pas une cause unique : le manque de sommeil, la charge des études, l'anxiété, un
-        état dépressif ou un problème physique peuvent tous produire la même sensation de vide.
+        état dépressif ou un problème physique peuvent tous produire la même sensation de fatigue.
         Comprendre laquelle te concerne change ce qu'il faut faire.
       </>
     ),
@@ -78,7 +78,7 @@ export const FEELING_FATIGUE: Feeling = {
             </p>
             <p>
               Sauf que la moyenne cache tout le reste : 18,9 % des 18-29 ans dorment 6 heures ou
-              moins, et 29 % déclarent des difficultés à s'endormir ou des réveils nocturnes (
+              moins, et 29 % déclarent avoir des difficultés à s'endormir ou des réveils nocturnes (
               <Link
                 href="https://www.santepubliquefrance.fr/sommeil/rapportsynthese/sommeil-temps-moyen-sur-24-heures-et-plainte-dinsomnie-barometre-de-sante-publique-france-resultats"
                 target="_blank"
@@ -234,7 +234,7 @@ export const FEELING_FATIGUE: Feeling = {
             <>
               <p>Estimer quel dormeur tu es, quels sont tes besoins.</p>
               <p>
-                Le recueil, via un agenda du sommeil, permet de savoir comment on dort, d'avoir un regard objectif sur son propre sommeil — une pratique dont l'usage en évaluation comportementale du sommeil est ancien et bien établi (Bootzin & Engle-Friedman, 1981). Attention à ne pas vouloir trop bien faire et le remplir la nuit, l'idée est de le remplir le matin au réveil, même si cela est approximatif. Cela peut aussi permettre de préparer une consultation à laquelle on amène l'agenda.{" "}
+                Le recueil, via un agenda du sommeil, permet de savoir comment on dort, d'avoir un regard objectif sur son propre sommeil. C'est une pratique dont l'usage en évaluation comportementale du sommeil est ancien et bien établi (Bootzin & Engle-Friedman, 1981). Attention à ne pas vouloir trop bien faire et le remplir la nuit, l'idée est de le remplir le matin au réveil, même si cela est approximatif. Cela peut aussi permettre de préparer une consultation à laquelle on amène l'agenda.{" "}
                 <Link
                   href="https://www.reseau-morphee.fr/wp-content/uploads/2009/01/agenda_2p.pdf"
                   target="_blank"
@@ -244,7 +244,11 @@ export const FEELING_FATIGUE: Feeling = {
                 </Link>
               </p>
               <p>
-                La qualité du sommeil ne tient pas nécessairement à la quantité : ne pas chercher à récupérer absolument, essayer de respecter son rythme, ne pas traîner au lit, ne pas rester trop longtemps dans le lit si on ne dort pas — un principe qui trouve son origine dans la thérapie de contrôle du stimulus, l'une des interventions comportementales les plus anciennes et les mieux validées contre les difficultés de sommeil (Bootzin, 1972).
+                La qualité du sommeil ne tient pas nécessairement à la quantité : ne pas chercher à récupérer absolument,
+                essayer de respecter son rythme, ne pas traîner au lit, ne pas rester trop longtemps dans le lit si
+                on ne dort pas. C'est un principe qui trouve son origine dans la thérapie de contrôle du stimulus,
+                l'une des interventions comportementales les plus anciennes et les mieux validées contre les difficultés
+                de sommeil (Bootzin, 1972).
               </p>
             </>
           ),
@@ -301,7 +305,7 @@ export const FEELING_FATIGUE: Feeling = {
               Guetter un signe de somnolence pour aller au lit. Cela diminue les chances de rester
               éveillé après être allé au lit (signes de somnolence : pensées décousues ou confuses,
               bâillements, difficultés à se concentrer ou à garder les yeux ouverts, agitation ou
-              irritabilité — signes reconnus par les autorités de santé au travail comme
+              irritabilité. Ce sont des signes reconnus par les autorités de santé au travail comme
               indicateurs que le cerveau approche de l'endormissement).
             </>
           ),
