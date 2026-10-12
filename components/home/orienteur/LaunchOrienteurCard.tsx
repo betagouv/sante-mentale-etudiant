@@ -18,7 +18,7 @@ export default function LaunchOrienteurCard() {
           Trouver l'aide adaptée
         </Button>
         <p className={styles.hint}>
-          Moins de <b>30 secondes</b> pour trouver des solutions
+          <b>1 minute</b> pour savoir vers qui te tourner
         </p>
       </div>
     </div>

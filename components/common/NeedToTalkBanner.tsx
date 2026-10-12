@@ -34,7 +34,7 @@ export default function NeedToTalkBanner({ title, subtitle, hint, button }: Prop
         <p className={styles.hint}>
           {hint ?? (
             <>
-              Moins de <b>30 secondes</b> pour trouver des solutions
+              <b>1 minute</b> pour savoir vers qui te tourner
             </>
           )}
         </p>
