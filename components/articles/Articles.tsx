@@ -10,7 +10,9 @@ export default function Articles() {
       <div className={styles.pageContainer}>
         <h1 className={styles.title}>S’informer pour prendre soin de sa santé mentale</h1>
         <p className={styles.desc}>
-          Des informations fiables pour t’accompagner : articles, vidéos, podcasts
+          Des informations et des témoignages pour t’accompagner&nbsp;:
+          <br />
+          sites, articles, vidéos, podcasts
         </p>
         <ArticlesSearch allArticles={articles} feelings={feelings} />
       </div>
