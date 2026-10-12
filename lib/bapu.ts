@@ -1,5 +1,5 @@
 import { Coordinate } from "@/services/address";
-import { getDistanceKm } from "@/utils/distance";
+import { getClosestItem } from "@/utils/distance";
 import fs from "fs/promises";
 import path from "path";
 
@@ -28,12 +28,7 @@ export async function getClosestBAPU(c: Coordinate): Promise<BAPU | null> {
   const bapus = await getBAPUs();
   if (bapus.length === 0) return null;
 
-  const closest = bapus
-    .map((bapu) => ({
-      bapu,
-      distance: getDistanceKm(c, { latitude: bapu.latitude, longitude: bapu.longitude }),
-    }))
-    .sort((a, b) => a.distance - b.distance)[0];
+  const closest = getClosestItem(c, bapus);
 
-  return closest.bapu;
+  return closest;
 }

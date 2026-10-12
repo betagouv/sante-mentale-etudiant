@@ -1,5 +1,5 @@
 import { Coordinate } from "@/services/address";
-import { getDistanceKm } from "@/utils/distance";
+import { getClosestItem } from "@/utils/distance";
 import fs from "fs/promises";
 import path from "path";
 
@@ -26,12 +26,7 @@ export async function getClosestSSE(c: Coordinate): Promise<SSE | null> {
   const sses = await getSSEs();
   if (sses.length === 0) return null;
 
-  const closest = sses
-    .map((sse) => ({
-      sse,
-      distance: getDistanceKm(c, { latitude: sse.latitude, longitude: sse.longitude }),
-    }))
-    .sort((a, b) => a.distance - b.distance)[0];
+  const closest = getClosestItem(c, sses);
 
-  return closest.sse;
+  return closest;
 }
