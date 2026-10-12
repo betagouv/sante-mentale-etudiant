@@ -14,7 +14,7 @@ export default function HelpCall() {
         </h2>
         <CustomCard
           title="Appelle le 3114"
-          subtitle="Numéro National de prévention du suicide"
+          subtitle="Numéro national de prévention du suicide"
           description={
             <>
               Un professionnel de santé formé à la prévention du suicide sera à ton écoute. Ça peut

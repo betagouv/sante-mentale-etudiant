@@ -27,7 +27,14 @@ export default function FindHelp({
   return (
     <FullBleedSection aria-labelledby="find-help" bgColor="grey">
       <Title>Trouve du soutien en fonction de ta situation</Title>
-      <Subtitle>Gratuit et sans avance de frais. Tu parles toujours à un humain.</Subtitle>
+      <Subtitle>Gratuit et confidentiel. Tu parles toujours à un humain.</Subtitle>
+      <p>
+        <i>
+          Cet orienteur présente une sélection de dispositifs d'accompagnement gratuits ou pris en
+          charge, publics, conventionnés ou associatifs. Cette sélection n'est pas exhaustive de
+          l'ensemble de l'offre existante.
+        </i>
+      </p>
       <FindHelpFilters
         addressLabel={addressLabel}
         setAddressLabel={setAddressLabel}

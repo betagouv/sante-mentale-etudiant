@@ -25,16 +25,16 @@ export default function AboutUs() {
           <>
             ou en écrivant à{" "}
             <Link
-              href="mailto:boiteaidees@santementale.etudiant.gouv.fr"
+              href="mailto:santementaleetudiant@enseignementsup.gouv.fr"
               target="_blank"
               rel="noopener noreferrer"
             >
-              boiteaidees@santementale.etudiant.gouv.fr
+              santementaleetudiant@enseignementsup.gouv.fr
             </Link>
           </>
         }
         button={
-          <Button linkProps={{ href: "mailto:boiteaidees@santementale.etudiant.gouv.fr" }}>
+          <Button linkProps={{ href: "mailto:santementaleetudiant@enseignementsup.gouv.fr" }}>
             Contacter l’équipe
           </Button>
         }

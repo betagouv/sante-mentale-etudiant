@@ -11,8 +11,9 @@ export default function HelpReact() {
         <LightPinkBadge>Étape 2</LightPinkBadge>
         <h2 id="react-title">Comment réagir ?</h2>
         <p className={styles.subtitle}>
-          <b>Utilise la méthode L.I.E.N.</b> en 4 étapes, inspirée des approches de prévention par
-          les pairs. <br /> Tu n'as pas besoin d'être expert, ta présence compte énormément.
+          <b>Voici 4 gestes simples, résumés par le mot L.I.E.N.</b> en 4 étapes, inspirée des
+          approches de prévention par les pairs. <br /> Tu n'as pas besoin d'être expert, ta
+          présence compte énormément.
         </p>
       </div>
 
@@ -29,7 +30,7 @@ export default function HelpReact() {
           {lienSteps.map((step) => (
             <li key={step.step} className={styles.step}>
               <LightPinkBadge>{step.letter}</LightPinkBadge>
-              <span className={styles.stepNumber}>Étape {step.step}</span>
+              <span className={styles.stepNumber}>Geste {step.step}</span>
               <h3 className={styles.stepTitle}>{step.title}</h3>
               <p>{step.description}</p>
             </li>

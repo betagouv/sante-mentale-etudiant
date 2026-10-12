@@ -14,32 +14,29 @@ export default async function AccessibilityDeclaration() {
         <h1>Déclaration d&apos;accessibilité</h1>
         <p>Établie le 29 septembre 2026.</p>
         <p>
-          Le Ministère de l&apos;Enseignement supérieur, de la Recherche et de
-          l&apos;Espace s&apos;engage à rendre son service accessible,
-          conformément à l&apos;article 47 de la loi n° 2005-102 du 11 février
-          2005.
+          Le Ministère de l&apos;Enseignement supérieur, de la Recherche et de l&apos;Espace
+          s&apos;engage à rendre son service accessible, conformément à l&apos;article 47 de la loi
+          n° 2005-102 du 11 février 2005.
         </p>
         <p>
-          Cette déclaration d&apos;accessibilité s&apos;applique à Santé Mentale
-          Etudiant (
-          <a href="https://santementale.etudiant.gouv.fr">
-            https://santementale.etudiant.gouv.fr
+          Cette déclaration d&apos;accessibilité s&apos;applique à Santé Mentale Étudiant (
+          <a href="https://www.santementale.etudiant.gouv.fr">
+            https://www.santementale.etudiant.gouv.fr
           </a>
           ).
         </p>
 
         <h2>État de conformité</h2>
         <p>
-          Santé Mentale Etudiant est <strong>non conforme</strong> avec le
-          RGAA. Le site n&apos;a encore pas été audité.
+          Santé Mentale Étudiant est <b>non conforme </b>avec le RGAA. Le site n&apos;a encore pas
+          été audité.
         </p>
 
         <h2>Amélioration et contact</h2>
         <p>
-          Si vous n&apos;arrivez pas à accéder à un contenu ou à un service,
-          vous pouvez contacter le responsable de Santé Mentale Etudiant pour
-          être orienté vers une alternative accessible ou obtenir le contenu
-          sous une autre forme.
+          Si vous n&apos;arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter
+          le responsable de Santé Mentale Étudiant pour être orienté vers une alternative accessible
+          ou obtenir le contenu sous une autre forme.
         </p>
         <ul>
           <li>
@@ -52,10 +49,9 @@ export default async function AccessibilityDeclaration() {
 
         <h2>Voie de recours</h2>
         <p>
-          Cette procédure est à utiliser dans le cas suivant : vous avez
-          signalé au responsable du site internet un défaut d&apos;accessibilité
-          qui vous empêche d&apos;accéder à un contenu ou à un des services du
-          portail et vous n&apos;avez pas obtenu de réponse satisfaisante.
+          Cette procédure est à utiliser dans le cas suivant : vous avez signalé au responsable du
+          site internet un défaut d&apos;accessibilité qui vous empêche d&apos;accéder à un contenu
+          ou à un des services du portail et vous n&apos;avez pas obtenu de réponse satisfaisante.
         </p>
         <p>Vous pouvez :</p>
         <ul>
@@ -78,13 +74,11 @@ export default async function AccessibilityDeclaration() {
               rel="noopener noreferrer"
               title="Délégué du Défenseur des droits dans votre région - nouvelle fenêtre"
             >
-              le délégué du Défenseur des droits dans votre région (nouvelle
-              fenêtre)
+              le délégué du Défenseur des droits dans votre région (nouvelle fenêtre)
             </a>
           </li>
           <li>
-            Envoyer un courrier par la poste (gratuit, ne pas mettre de
-            timbre) :
+            Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) :
             <address>
               Défenseur des droits
               <br />
@@ -96,8 +90,7 @@ export default async function AccessibilityDeclaration() {
         </ul>
 
         <p>
-          Cette déclaration d&apos;accessibilité a été créée le 10 septembre
-          2026 grâce au{" "}
+          Cette déclaration d&apos;accessibilité a été créée le 10 septembre 2026 grâce au{" "}
           <a
             href="https://betagouv.github.io/a11y-generateur-declaration/#create"
             target="_blank"
