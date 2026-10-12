@@ -26,7 +26,7 @@ export default function FeelingTips({ feeling }: Props) {
       <IllustrationFeelingsWave />
       <IllustrationFeelingsPeople />
       <div className={styles.innerContainer}>
-        <h2>À tester au quotidien</h2>
+        <h2>Quelques idées que tu peux tester</h2>
         <div className={styles.cardsList}>
           {feeling.tips.map((tip, index) => (
             <TipCard
