@@ -9,13 +9,7 @@ export function Footer() {
       contentDescription="Des ressources et des repères pour mieux comprendre et prendre soin de sa santé mentale pendant les études."
       accessibilityLinkProps={{ href: "/accessibilite" }}
       termsLinkProps={{ href: "/mentions-legales" }}
-      domains={[
-        "info.gouv.fr",
-        "service-public.gouv.fr",
-        "legifrance.gouv.fr",
-        "data.gouv.fr",
-        "etudiant.gouv.fr",
-      ]}
+      domains={["info.gouv.fr", "service-public.gouv.fr", "legifrance.gouv.fr", "data.gouv.fr"]}
       bottomItems={[
         {
           text: "Données personnelles",
