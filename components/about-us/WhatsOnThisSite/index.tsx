@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./WhatsOnThisSite.module.scss";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import Tile from "@codegouvfr/react-dsfr/Tile";
-import { Quote } from "@codegouvfr/react-dsfr/Quote";
 
 import EyeOff from "@codegouvfr/react-dsfr/picto/EyeOff";
 import Community from "@codegouvfr/react-dsfr/picto/Community";
@@ -54,15 +53,6 @@ export default function WhatsOnThisSite() {
               pictogram={<Ecosystem />}
             />
           </div>
-        </div>
-        <div>
-          <h2>Le mot du directeur de la DGESUP</h2>
-          <Quote
-            className=""
-            imageUrl="/images/illustrations/qui-sommes-nous/director_dgesip.jpg"
-            size="xlarge"
-            text="Sed maximum est in amicitia parem esse inferiori. Saepe enim excellentiae quaedam sunt, qualis erat Scipionis in nostro, ut ita dicam, grege. Numquam se ille Philo, numquam Rupilio, numquam Mummio anteposuit, numquam inferioris ordinis amicis, Q."
-          />
         </div>
       </div>
     </FullBleedSection>
