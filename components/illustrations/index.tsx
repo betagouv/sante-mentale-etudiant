@@ -68,8 +68,8 @@ export const IllustrationNeedToTalkWave = () => (
 export const IllustrationFeelingVideo = () => (
   <RenderImage
     src="/images/illustrations/feeling-video.svg"
-    width={369}
-    height={780}
+    width={389}
+    height={900}
     className={styles.feelingVideo}
   />
 );
