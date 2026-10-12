@@ -15,14 +15,14 @@ export const FEELING_SUICIDE: Feeling = {
     sentence: (
       <>
         <p>
-          Depuis quelque temps, tu as parfois l'impression que tout est devenu trop lourd. Tu te
-          surprends à penser que ce serait plus simple si tu n'étais plus là, ou tu n'arrives plus à
-          imaginer que les choses puissent s'améliorer.
+          Depuis quelque temps, tu as l'impression que tout est devenu trop lourd. Tu te surprends à
+          penser que ce serait plus simple si tu n'étais plus là, tu n'arrives plus à imaginer que les
+          choses puissent s'améliorer, ou tu as parfois des pensées plus précises sur le fait de mettre fin à ta vie.
         </p>
         <p>
-          Avoir des idées suicidaires peut faire très peur. Pourtant, elles ne signifient pas que tu
-          es "faible" ou que tu veux forcément mourir. Elles sont souvent le signe d'une souffrance
-          devenue trop difficile à porter seul.
+          Avoir des idées suicidaires peut faire très peur. Si elles ne signifient pas que tu es "faible" ou
+          que tu veux forcément mourir, ces idées sont à prendre au sérieux. Elles sont souvent le signe
+          d'une souffrance devenue trop difficile à porter seul.
         </p>
         <p>Tu n'as pas à traverser ça sans aide.</p>
       </>
@@ -67,7 +67,7 @@ export const FEELING_SUICIDE: Feeling = {
             </p>
             <p>
               L'enquête Bien-être et santé 2024 de l'OVE le montre : 16 % des étudiantes et
-              étudiants déclarent avoir pensé au suicide au cours des douze derniers mois, un
+              étudiants déclarent avoir pensé à se suicider au cours des douze derniers mois précédant l’enquête,, un
               chiffre qui rappelle que la souffrance psychique peut toucher n'importe qui.
             </p>
             <p>
@@ -88,11 +88,12 @@ export const FEELING_SUICIDE: Feeling = {
             <p>
               Cette souffrance peut être liée à de nombreux facteurs : une dépression, un deuil, une
               rupture, un stress intense, une accumulation de difficultés, un sentiment de solitude
-              ou un autre événement de vie.
+              ou un autre événement de vie. La consommation d’alcool ou d’autres produits peut également
+              déclencher ou intensifier cette souffrance.
             </p>
             <p>
               → Voir aussi les pages <FeelingLink slug="painful-event" />,{" "}
-              <FeelingLink slug="solitude" />, <FeelingLink slug="fatigue" />.
+              <FeelingLink slug="solitude" />, <FeelingLink slug="fatigue" />, <FeelingLink slug="drugs" />.
             </p>
           </>
         ),
@@ -129,6 +130,10 @@ export const FEELING_SUICIDE: Feeling = {
               Avec un accompagnement adapté, il est possible de retrouver progressivement des
               solutions, même lorsque l'on a aujourd'hui l'impression qu'il n'en existe aucune.
             </p>
+            <p>
+              Certaines choses peuvent aider à tenir, par exemple des liens avec des personnes en
+              qui tu as confiance, l’accès à des soins, le sentiment d’appartenir à un groupe, ce qui compte pour toi.
+            </p>
             <p>Le plus important est de ne pas rester seul avec cette souffrance.</p>
           </>
         ),
@@ -147,6 +152,7 @@ export const FEELING_SUICIDE: Feeling = {
             <li>J'ai du mal à demander de l'aide.</li>
             <li>Je cache ce que je ressens à mon entourage.</li>
             <li>Je me sens seul face à mes pensées.</li>
+            <li>J’ai envie de dire au revoir.</li>
           </ul>
         ),
       },
@@ -154,19 +160,61 @@ export const FEELING_SUICIDE: Feeling = {
   },
   tips: [
     {
-      title: "Mettre des mots sur ce que tu ressens",
+      title: "Si tu te sens en danger / si tu as des idées suicidaires",
       items: [
         {
           title: "L’action",
-          desc: <>les pensées suicidaires s'accompagnent souvent d'une grande solitude.</>,
+          desc: (
+            <>
+              si tu ne te sens plus en sécurité, n'attends pas, appelle le <b>15</b>
+              (ou envoie un SMS au 114 - pour les malentendants).
+              Si tu as des idées suicidaires ou que tu as besoin de parler, appelle le 3114.
+            </>
+          ),
         },
         {
           title: "Commence petit",
           desc: (
             <>
-              si tu t'en sens capable, essaie d'écrire ce que tu ressens ou de le dire à une
-              personne de confiance, même avec une phrase très simple : "En ce moment, ça ne va
-              vraiment pas." Tu n'es pas obligé de tout expliquer d'un coup.
+              Rends-toi aux urgences les plus proches. Tu mérites d'être aidé.
+            </>
+          ),
+        },
+      ],
+    },
+    {
+      title: "Chercher une aide professionnelle",
+      items: [
+        {
+          title: "L’action",
+          desc: (
+            <>
+              <p>Demander de l'aide est une démarche de protection, pas un échec.</p>
+              <p>
+                Commence petit&nbsp;: enregistre dans ton téléphone les ressources
+                qui pourront t'aider si tu en ressens le besoin&nbsp;:
+              </p>
+              <ul>
+                <li>
+                  Pour parler maintenant, de jour comme de nuit&nbsp;: le 3114
+                  &nbsp;: gratuit, 24h/24, 7j/7. Des professionnels formés à la
+                  prévention du suicide te répondent.
+                </li>
+                <li>
+                  Pour être accompagné, orienté&nbsp;:
+                  <ul>
+                    <li>le Service de santé étudiante de ton établissement&nbsp;;</li>
+                    <li>
+                      le 3040, ligne d’écoute dédiée aux étudiants en mal-être&nbsp;;
+                    </li>
+                    <li>
+                      Santé Psy Étudiant, pour des séances gratuites avec un
+                      psychologue&nbsp;;
+                    </li>
+                    <li>ton médecin traitant.</li>
+                  </ul>
+                </li>
+              </ul>
             </>
           ),
         },
@@ -178,7 +226,7 @@ export const FEELING_SUICIDE: Feeling = {
         {
           title: "L’action",
           desc: (
-            <>lorsque la souffrance devient très intense, notre cerveau a tendance à nous isoler.</>
+            <>lorsque la souffrance devient très intense, on peut avoir tendance à s’isoler.</>
           ),
         },
         {
@@ -194,51 +242,19 @@ export const FEELING_SUICIDE: Feeling = {
       ],
     },
     {
-      title: "Chercher une aide professionnelle ",
+      title: "Mettre des mots sur ce que tu ressens",
       items: [
         {
           title: "L’action",
-          desc: <>demander de l'aide est une démarche de protection, pas un échec.</>,
+          desc: <>les pensées suicidaires s'accompagnent souvent d'une grande solitude.</>,
         },
         {
           title: "Commence petit",
           desc: (
             <>
-              enregistre dans ton téléphone les ressources qui pourront t'aider si tu en ressens le
-              besoin :
-              <ul>
-                <li>
-                  le <b>3114</b>, disponible 24h/24 et 7j/7, des professionnels du soin sont à ton
-                  écoute ;
-                </li>
-                <li>le Service de santé étudiante ;</li>
-                <li>Santé Psy Étudiant ;</li>
-                <li>ton médecin.</li>
-              </ul>
-              <p>Le jour où tu en auras besoin, tu n'auras pas à les chercher.</p>
-            </>
-          ),
-        },
-      ],
-    },
-    {
-      title: "Si tu te sens en danger",
-      items: [
-        {
-          title: "L’action",
-          desc: (
-            <>
-              si tu penses que tu pourrais passer à l'acte ou que tu ne te sens plus en sécurité,
-              n'attends pas, appelle le <b>15</b>.
-            </>
-          ),
-        },
-        {
-          title: "Commence petit",
-          desc: (
-            <>
-              parle à une personne de confiance ou rends-toi aux urgences les plus proches. Tu
-              mérites d'être aidé.
+              si tu t'en sens capable, essaie d'écrire ce que tu ressens ou de le dire à une
+              personne de confiance, même avec une phrase très simple : "En ce moment, ça ne va
+              vraiment pas." Tu n'es pas obligé de tout expliquer d'un coup.
             </>
           ),
         },
@@ -262,8 +278,7 @@ export const FEELING_SUICIDE: Feeling = {
           proches.
         </p>
         <p>
-          Tu n'as pas à porter cette souffrance seul. Même si aujourd'hui tu ne vois plus d'issue,
-          il existe des personnes formées pour t'aider à traverser cette période.
+          Tu n'as pas à porter cette souffrance seul.
         </p>
       </>
     ),

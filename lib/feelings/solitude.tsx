@@ -65,7 +65,7 @@ export const FEELING_SOLITUDE: Feeling = {
             <p>Le sentiment de solitude est loin d'être rare chez les étudiants, notamment lors des périodes de transition comme
               l'entrée dans les études supérieures, un déménagement, une rupture ou un changement de repères.</p>
             <p>
-              En France, 62 % des 18-24 ans déclarent se sentir régulièrement seuls, selon une
+              En France, 62 % des 18-24 ans déclarent se sentir régulièrement seuls, selon une{" "}
               <Link
                 href="https://www.ifopgroup.com/article/limpact-de-la-solitude-sur-la-vie-des-francais/"
                 target="_blank"
@@ -77,7 +77,7 @@ export const FEELING_SOLITUDE: Feeling = {
             </p>
             <p>
               Chez Santé Psy Etudiant, le sentiment de solitude / l’isolement est le 5e motif de consultation
-              (après l’anxiété, l’épuisement, la tristesse, l’envie de mieux se comprendre) - Source : enquête SPE Juin 2024.
+              (après l’anxiété, l’épuisement, la tristesse, l’envie de mieux se comprendre) - Source : enquête SPE Juin 2026.
             </p>
           </>
         ),
@@ -99,15 +99,14 @@ export const FEELING_SOLITUDE: Feeling = {
             </p>
             <p>
               Les réseaux sociaux peuvent également accentuer ce sentiment.
-              Paradoxalement, les jeunes n’ont jamais été aussi connectés, et ils ne se sont jamais sentis aussi seuls
+              Paradoxalement, les jeunes n’ont jamais été aussi connectés, et ils ne se sont jamais sentis aussi seuls{" "}
               <Link
                 href="https://www.info.gouv.fr/actualite/hyperconnectes-mais-seuls-la-solitude-chez-les-jeunes"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Voir article : "Jeunes : hyperconnectés, mais seuls"
-              </Link>
-              Voir article : "Jeunes : hyperconnectés, mais seuls.
+              </Link>.
               En voyant les autres partager leurs sorties, leurs “réussites” ou leurs “amitiés”,
               on a parfois l'impression d'être le seul à vivre cette solitude.
               Pourtant, cette impression est souvent trompeuse : chacun montre surtout les moments qu'il choisit de partager.
