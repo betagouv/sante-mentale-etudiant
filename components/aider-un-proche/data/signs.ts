@@ -21,7 +21,7 @@ export const signCategories: SignCategory[] = [
     ],
   },
   {
-    icon: "/images/pictograms/substances.svg",
+    icon: "/images/pictograms/drugs.svg",
     title: "Ce qu'elle ou il fait",
     subtitle: "Des changements d'humeur",
     items: [

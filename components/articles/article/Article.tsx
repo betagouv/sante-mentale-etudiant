@@ -1,42 +1,60 @@
-import { InternalArticleMeta } from "@/lib/articles/types";
+import {
+  InternalArticleMeta,
+  PodcastArticleMeta,
+} from "@/lib/articles/types";
 import FullBleedSection from "../../wrapper/FullBleedSection";
 import ArticleInfo from "./ArticleInfo";
 import ArticleHeroImage from "./ArticleHeroImage";
 import styles from "./Article.module.scss";
+import PodcastPlayer from "@/components/podcast-player/PodcastPlayer";
 
 type Props = {
-  article: InternalArticleMeta & { html: string };
+  article: (InternalArticleMeta | PodcastArticleMeta) & {
+    html: string;
+  };
 };
+
 export default function Article({ article }: Props) {
-  const { title, intro, html, podcastUrl, heroCredits } = article;
+  const { title, html, type } = article;
+  const isInternal = type === "internal";
+  const isPodcast = type === "podcast";
 
   return (
     <FullBleedSection innerContainerClassName={styles.pageContainer} bgColor="grey">
       <article className={styles.container}>
-        <div className={styles.header}>
+        <header className={styles.header}>
           <h1>{title}</h1>
-          <p className={styles.intro} dangerouslySetInnerHTML={{ __html: intro }} />
-          <ArticleInfo article={article} />
-        </div>
-
-        {!podcastUrl && <ArticleHeroImage article={article} />}
-
-        <div className={styles.body}>
-          {!podcastUrl && heroCredits && (
+          {isInternal && (
             <div
-              className={styles.heroCredits}
-              dangerouslySetInnerHTML={{ __html: heroCredits }}
+              className={styles.intro}
+              dangerouslySetInnerHTML={{ __html: article.intro }}
             />
           )}
-          {podcastUrl &&
-            <iframe
-              src={podcastUrl}
-              width="100%"
-              height="200px"
-              title={title}
+          <ArticleInfo article={article} />
+        </header>
+
+        {isInternal && <ArticleHeroImage article={article} />}
+
+        <div className={styles.body}>
+          {isInternal && article.heroCredits && (
+            <div
+              className={styles.heroCredits}
+              dangerouslySetInnerHTML={{
+                __html: article.heroCredits,
+              }}
             />
-          }
-          <div className={styles.article} dangerouslySetInnerHTML={{ __html: html }} />
+          )}
+          {isPodcast && (
+            <PodcastPlayer
+              title={title}
+              podcastUrl={article.podcastUrl}
+              transcription={article.transcription}
+            />
+          )}
+          <div
+            className={styles.article}
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </div>
       </article>
     </FullBleedSection>
