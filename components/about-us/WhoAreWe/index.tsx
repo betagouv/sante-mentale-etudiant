@@ -10,19 +10,19 @@ type Stat = {
 const Stats: Stat[] = [
   {
     title: "1 sur 3",
-    desc: "étudiants présentent des signes de détresse psychologique",
+    desc: "étudiant présente des signes de détresse psychologique (1)",
   },
   {
     title: "44 %",
-    desc: "ne savent pas où trouver de l'information en cas de difficulté",
+    desc: "jugent difficile de trouver des informations en cas de problèmes psychologiques (1)",
   },
   {
     title: "50 %",
-    desc: "de ceux qui présentent des signes de détresse n'ont consulté aucun professionnel",
+    desc: "de ceux qui présentent des signes de détresse n'ont consulté aucun professionnel (1)",
   },
   {
     title: "3 sur 10",
-    desc: "bénéficiaires de Santé Psy Étudiant n'auraient engagé aucune démarche sans le dispositif",
+    desc: "bénéficiaires de Santé Psy Étudiant n'auraient engagé aucune démarche sans le dispositif (2)",
   },
 ];
 
@@ -32,6 +32,14 @@ export default function WhoAreWe() {
       <div className={styles.container}>
         <TopSection />
         <Statistics />
+        <ul style={{ listStyleType: "none", width: "100%" }}>
+          <li>
+            <i>(1) OVE Repères BSE 2024</i>
+          </li>
+          <li>
+            <i>(2) Enquête Santé Psy Etudiant, juin 2026</i>
+          </li>
+        </ul>
       </div>
     </FullBleedSection>
   );
