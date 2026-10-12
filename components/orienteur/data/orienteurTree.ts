@@ -63,8 +63,8 @@ export const orienteurTree: Record<string, OrienteurNode> = {
         illustration: "Warning",
       },
       {
-        label: "Non, mais je ne me sens pas bien en ce moment.",
-        hint: "Je cherche du soutien, sans urgence vitale.",
+        label: "Non, mais je ne me sens pas bien en ce moment",
+        hint: "Je cherche du soutien, sans urgence vitale, pour moi ou pour un proche",
         value: "no",
         next: "pour-qui",
         illustration: "HumanCooperation",
