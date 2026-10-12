@@ -67,7 +67,7 @@ function Who() {
 function Objectives() {
   return (
     <div className={styles.objectives}>
-      <h2>Les objectifs de Santé mentale étudiant </h2>
+      <h2>Les objectifs de Santé Mentale Étudiant </h2>
       <ul>
         <li>Comprendre ce que recouvre une situation de mal-être, avec des mots simples.</li>
         <li>Trouver la ressource la plus adaptée à une situation donnée, à proximité.</li>
