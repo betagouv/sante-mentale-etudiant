@@ -14,19 +14,19 @@ export const FEELING_MANAGEMENT: Feeling = {
     sentence: (
       <>
         <p>
-          Tu pleures sans vraiment comprendre pourquoi. Tu t'énerves pour des détails. Tu as
-          l'impression que tes émotions prennent toute la place. Ou au contraire, tu as l'impression
-          de ne plus rien ressentir.
+          Tu as l’impression que tes émotions débordent et prennent toute la place : tu t’énerves facilement,
+          tu pleures souvent… Ou, à l’inverse, tu as le sentiment de ne rien ressentir.
         </p>
         <p>
-          Face à certaines émotions, on aimerait parfois appuyer sur un bouton "pause". Pourtant,
-          nos émotions ne sont pas un problème. Elles sont là pour nous transmettre une information.
-          Mais lorsqu'elles deviennent trop intenses ou difficiles à gérer, elles peuvent finir par
-          épuiser.
+          Parfois, on aimerait pouvoir appuyer sur un bouton “pause” face à certaines émotions. Quand elles
+          deviennent trop intenses, il peut être difficile de les gérer.
         </p>
         <p>
-          Apprendre à mieux les comprendre, c'est souvent la première étape pour mieux les vivre et
-          les accepter.
+          Pourtant, les émotions ont une fonction : elles transmettent des informations. Apprendre à mieux les
+          connaître et les comprendre peut nous aider à vivre mieux.
+        </p>
+        <p>
+          Si elles deviennent trop intenses, se faire accompagner par un professionnel peut être un début de solution.
         </p>
       </>
     ),
@@ -44,67 +44,23 @@ export const FEELING_MANAGEMENT: Feeling = {
     transcription: transcriptionFeelingManagement,
   },
   recap: [
-    "Toutes les émotions ont une fonction.",
-    "Ressentir des émotions fortes ne signifie pas que tu es “trop sensible”.",
+    "Les émotions ont, de manière générale, une fonction.",
     "Les accueillir est souvent plus efficace que de chercher à les repousser.",
     "Il est possible d'apprendre à mieux les comprendre et les réguler.",
+    "Si cela te fait souffrir ou impacte ton quotidien, tu peux demander de l'aide.",
   ],
   faq: {
     title: "Comprendre ses émotions",
     intro: (
       <>
-        Les émotions font partie de notre quotidien. Elles apparaissent automatiquement en réaction
-        à ce que nous vivons et nous aident à nous adapter à notre environnement. C’est une réaction
-        chimique et spontanée du corps. Le problème n'est pas d'avoir des émotions, mais de ne pas
-        toujours savoir comment les écouter, les comprendre ou y répondre.
+        Les émotions sont des réactions naturelles et spontanées du corps et du cerveau, qui  apparaissent
+        en fonction de ce que l’on vit, et qui aident à s’adapter à son environnement.
+        Plutôt que de vouloir les faire taire, il est plus utile d’apprendre à les écouter, les comprendre ou y répondre.
       </>
     ),
     items: [
       {
-        question: "Les émotions sont des messagères",
-        answer: (
-          <>
-            <p>
-              On parle souvent des émotions comme si certaines étaient positives (la joie) et
-              d'autres négatives (la colère, la peur ou la tristesse).
-            </p>
-            <p>
-              En réalité, toutes les émotions ont une utilité. Elles nous aident à comprendre ce qui
-              se passe en nous et autour de nous. Elles peuvent nous protéger, nous alerter
-              lorsqu'une limite est dépassée ou nous signaler qu'un besoin n'est pas satisfait.
-            </p>
-            <p>
-              On peut les voir comme un GPS : elles ne décident pas à notre place, mais elles nous
-              indiquent qu'il est peut-être temps de regarder ce qui se passe.
-            </p>
-          </>
-        ),
-      },
-      {
-        question: "Une émotion se vit dans tout le corps",
-        answer: (
-          <>
-            <p>Une émotion ne se passe pas uniquement dans notre tête.</p>
-            <div>
-              Elle peut aussi provoquer :
-              <ul>
-                <li>un cœur qui bat plus vite ;</li>
-                <li>une respiration plus rapide ;</li>
-                <li>une boule au ventre ;</li>
-                <li>des tensions musculaires ;</li>
-                <li>des mains moites ou des tremblements.</li>
-              </ul>
-            </div>
-            <p>
-              Elle influence également nos pensées ( "Je n'y arriverai jamais" ) et nos envies
-              d'agir (partir, crier, s'isoler, demander de l'aide...).
-            </p>
-            <p>Observer ces réactions permet souvent de mieux comprendre ce que l'on ressent.</p>
-          </>
-        ),
-      },
-      {
-        question: "Toutes les émotions méritent d'être écoutées",
+        question: "Les émotions méritent d'être écoutées",
         answer: (
           <>
             <p>
@@ -119,7 +75,28 @@ export const FEELING_MANAGEMENT: Feeling = {
               personne faible ou "trop sensible".
             </p>
             <p>
-              Ces émotions cherchent souvent à attirer ton attention sur quelque chose d'important
+              Ces émotions ont une utilité : elles cherchent souvent à attirer ton attention sur
+              quelque chose d'important, par exemple alerter lorsqu'une limite est dépassée.
+            </p>
+          </>
+        ),
+      },
+      {
+        question: "Derrière une émotion, il y a souvent un besoin",
+        answer: (
+          <>
+            <p>Une émotion est souvent le signe qu'un besoin mérite ton attention.</p>
+            <div>
+              Par exemple :
+              <ul>
+                <li>la peur peut révéler un besoin de sécurité ;</li>
+                <li>la colère peut signaler qu'une limite a été dépassée ;</li>
+                <li>la tristesse peut traduire un besoin de soutien ou de réconfort.</li>
+              </ul>
+            </div>
+            <p>
+              Te poser la question : "De quoi ai-je besoin en ce moment ?" peut parfois être plus
+              utile que de te demander : "Pourquoi est-ce que je ressens ça ?"
             </p>
           </>
         ),
@@ -149,22 +126,25 @@ export const FEELING_MANAGEMENT: Feeling = {
         ),
       },
       {
-        question: "Les émotions peuvent aussi révéler nos besoins",
+        question: "Observer son corps pour comprendre ses émotions",
         answer: (
           <>
-            <p>Une émotion est souvent le signe qu'un besoin mérite ton attention.</p>
+            <p>Une émotion influence nos pensées. Mais cela ne se passe pas uniquement dans notre tête. </p>
             <div>
-              Par exemple :
+              Elle peut aussi provoquer :
               <ul>
-                <li>la peur peut révéler un besoin de sécurité ;</li>
-                <li>la colère peut signaler qu'une limite a été dépassée ;</li>
-                <li>la tristesse peut traduire un besoin de soutien ou de réconfort.</li>
+                <li>un cœur qui bat plus vite ;</li>
+                <li>une respiration plus rapide ;</li>
+                <li>une boule au ventre ;</li>
+                <li>des tensions musculaires ;</li>
+                <li>des mains moites ou des tremblements.</li>
               </ul>
             </div>
             <p>
-              Te poser la question : "De quoi ai-je besoin en ce moment ?" peut parfois être plus
-              utile que de te demander : "Pourquoi est-ce que je ressens ça ?"
+              Elle influence également nos pensées ( "Je n'y arriverai jamais" ) et nos envies
+              d'agir (partir, crier, s'isoler, demander de l'aide...).
             </p>
+            <p>Observer ces réactions permet souvent de mieux comprendre ce que l'on ressent.</p>
           </>
         ),
       },
@@ -281,6 +261,10 @@ export const FEELING_MANAGEMENT: Feeling = {
         <p>
           Parler avec un proche ou un professionnel peut t'aider à mieux comprendre ce que tu
           traverses et à développer des stratégies pour réguler tes émotions.
+        </p>
+        <p>
+          Si une émotion devient trop importante, n’hésite pas à contacter le 3040, numéro national gratuit,
+          pour étudiant en mal-être. Un professionnel t’écoutera et t’orientera.
         </p>
       </>
     ),

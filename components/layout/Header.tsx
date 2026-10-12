@@ -65,7 +65,7 @@ export function Header() {
         serviceTagline="Trouver les bons repères pour prendre soin de ta santé mentale"
         serviceTitle={
           <>
-            Santé Mentale. Étudiant{" "}
+            Santé Mentale Étudiant{" "}
             <Badge as="span" noIcon severity="success">
               Beta
             </Badge>

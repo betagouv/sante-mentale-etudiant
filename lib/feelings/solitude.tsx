@@ -59,15 +59,25 @@ export const FEELING_SOLITUDE: Feeling = {
     ),
     items: [
       {
-        question: "Être seul ne veut pas dire se sentir seul",
+        question: "Un phénomène qui touche beaucoup de jeunes",
         answer: (
           <>
+            <p>Le sentiment de solitude est loin d'être rare chez les étudiants, notamment lors des périodes de transition comme
+              l'entrée dans les études supérieures, un déménagement, une rupture ou un changement de repères.</p>
             <p>
-              Il est tout à fait possible d'apprécier des moments de solitude. À l'inverse, on peut
-              être entouré de sa promotion, vivre en colocation ou sortir régulièrement… et
-              ressentir malgré tout un profond sentiment d'isolement. La solitude ne dépend donc pas
-              du nombre de personnes autour de toi, mais de la qualité des liens que tu ressens avec
-              elles.
+              En France, 62 % des 18-24 ans déclarent se sentir régulièrement seuls, selon une
+              <Link
+                href="https://www.ifopgroup.com/article/limpact-de-la-solitude-sur-la-vie-des-francais/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                étude de l'IFOP en 2024
+              </Link>
+              .
+            </p>
+            <p>
+              Chez Santé Psy Etudiant, le sentiment de solitude / l’isolement est le 5e motif de consultation
+              (après l’anxiété, l’épuisement, la tristesse, l’envie de mieux se comprendre) - Source : enquête SPE Juin 2024.
             </p>
           </>
         ),
@@ -78,41 +88,29 @@ export const FEELING_SOLITUDE: Feeling = {
           <>
             <p>L’entrée dans l’enseignement supérieur correspond souvent à une phase de transition. </p>
             <p>
-              C’est souvent un moment où on quitte son foyer familial, on change d’environnement, de rythme.
+              C’est souvent un moment où l'on quitte son foyer familial, on change d’environnement, de rythme.
               En 2023, deux tiers des étudiants vivent hors du domicile familial (ESR, 2023).
             </p>
             <p>
-              Entrer dans une nouvelle ville, quitter sa famille, perdre ses repères, changer de promotion,
-              vivre une rupture ou avoir l'impression de ne pas trouver sa place…
-              Toutes ces situations peuvent fragiliser les liens sociaux.
+              Certaines situations peuvent aussi renforcer le sentiment de solitude (accompagné ou non d'un isolement réel) :
+              venir d'un autre pays, vivre avec un handicap, etc.
+              Ce sont souvent les obstacles rencontrés, comme la barrière de la langue, la peur d'être jugé,
+              l’éloignement du cercle familial, qui rendent les liens plus difficiles à créer.
             </p>
             <p>
-              Les réseaux sociaux peuvent également accentuer ce sentiment. En voyant les autres partager leurs sorties,
-              leurs “réussites” ou leurs “amitiés”, on a parfois  l'impression d'être le seul à vivre cette solitude.
+              Les réseaux sociaux peuvent également accentuer ce sentiment.
+              Paradoxalement, les jeunes n’ont jamais été aussi connectés, et ils ne se sont jamais sentis aussi seuls
+              <Link
+                href="https://www.info.gouv.fr/actualite/hyperconnectes-mais-seuls-la-solitude-chez-les-jeunes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir article : "Jeunes : hyperconnectés, mais seuls"
+              </Link>
+              Voir article : "Jeunes : hyperconnectés, mais seuls.
+              En voyant les autres partager leurs sorties, leurs “réussites” ou leurs “amitiés”,
+              on a parfois l'impression d'être le seul à vivre cette solitude.
               Pourtant, cette impression est souvent trompeuse : chacun montre surtout les moments qu'il choisit de partager.
-            </p>
-            <p>
-              Paradoxalement, les jeunes n’ont jamais été aussi connectés,
-              et ils ne se sont jamais sentis aussi seuls (voir page jeunes, mais hyper connectés).
-            </p>
-            <p>
-              Certaines situations peuvent aussi renforcer le sentiment de solitude (accompagné ou non d'un isolement réel) : venir d'un autre pays, vivre avec un handicap, faire partie d’une minorité de genre. Ce sont souvent les obstacles rencontrés, comme la barrière de la langue, la peur d'être jugé, l’éloignement du cercle familial, qui rendent les liens plus difficiles à créer.
-            </p>
-          </>
-        ),
-      },
-      {
-        question: "Du sentiment de solitude à l’isolement réel",
-        answer: (
-          <>
-            <p>
-              Quand on ressent de la solitude (sans forcément être isolé), on peut créer un cercle qui va s’auto entretenir : au début, on va en cours, on voit du monde, mais on commence à ressentir un décalage entre “les autres” et ce que l’on vit (une anxiété liée aux partiels, un évènement douloureux qu’on tente de cacher… les causes racines peuvent être multiples).
-            </p>
-            <p>
-              Ce décalage donne moins envie de partager, on a l’impression qu’on les “autres” n’écoutent pas, alors à quoi bon parler ?
-            </p>
-            <p>
-              Au fur et à mesure, les liens se distendent. Et plus le temps passe, plus il est compliqué d’aller vers les autres. On finit par s’isoler vraiment.
             </p>
           </>
         ),
@@ -133,6 +131,10 @@ export const FEELING_SOLITUDE: Feeling = {
               sur la santé mentale des jeunes de 11 à 24 ans).
             </p>
             <p>
+              Lorsque l'on se sent seul pendant longtemps, il est fréquent de perdre confiance en soi ou
+              de commencer à se demander si l'on est "intéressant", "aimable" ou "à sa place".
+            </p>
+            <p>
               La solitude peut également favoriser le stress, l'anxiété, la tristesse ou
               l'épuisement.
             </p>
@@ -148,7 +150,7 @@ export const FEELING_SOLITUDE: Feeling = {
         answer: (
           <>
             <p>
-              Lorsqu'on se sent isolé, on peut avoir envie que tout change rapidement. En réalité,
+              Lorsqu'on se sent seul, on peut avoir envie que tout change rapidement. En réalité,
               retrouver un sentiment d'appartenance se construit souvent petit à petit. Une
               discussion, un message, une activité ou une rencontre ne changent pas tout d'un coup.
               Mais ces petits pas permettent progressivement de recréer des liens.
@@ -156,34 +158,6 @@ export const FEELING_SOLITUDE: Feeling = {
             <p>
               Il n'est pas nécessaire d'avoir beaucoup d'amis pour se sentir moins seul. Une seule
               relation de confiance peut parfois faire une grande différence.
-            </p>
-          </>
-        ),
-      },
-      {
-        question: "Un phénomène qui touche beaucoup de jeunes",
-        answer: (
-          <>
-            <p>Le sentiment de solitude est loin d'être rare.</p>
-            <p>
-              En France, 62 % des 18-24 ans déclarent se sentir régulièrement seuls, selon une
-              <Link
-                href="https://www.ifopgroup.com/article/limpact-de-la-solitude-sur-la-vie-des-francais/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                étude de l'IFOP en 2024
-              </Link>
-              .
-            </p>
-            <p>
-              Chez Santé Psy Etudiant, le sentiment de solitude / l’isolement est le 5e motif de consultation
-              (après l’anxiété, l’épuisement, la tristesse, l’envie de mieux se comprendre) - Source : enquête SPE Juin 2024.
-            </p>
-            <p>
-              Le sentiment de solitude est fréquent chez les étudiants, notamment lors des périodes
-              de transition comme l'entrée dans les études supérieures, un déménagement, une rupture
-              ou un changement de repères.
             </p>
           </>
         ),
@@ -303,22 +277,11 @@ export const FEELING_SOLITUDE: Feeling = {
       <>
         <p>
           Il est normal de traverser des périodes où l'on se sent plus seul, notamment lorsqu'on
-          change de ville, de formation ou que l'on vit un événement difficile. Il est important de
-          ne pas rester seul avec ce que tu ressens. Parler à un proche peut t'aider à comprendre ce
-          qui se passe et à retrouver progressivement des liens qui te font du bien.
+          change de ville, de formation ou que l'on vit un événement difficile.
         </p>
         <p>
           En revanche, si ce sentiment dure, t'amène à t'isoler de plus en plus, affecte ton moral
-          ou te donne l'impression de perdre espoir, il est important de ne pas rester seul avec ce que tu ressens..
-        </p>
-        <p>
-          Parler à un proche ou à un professionnel peut t'aider à comprendre ce qui se passe et à retrouver progressivement des liens qui te font du bien.
-        </p>
-        <p>
-          Des lignes d’écoute existent, comme le 3040 (tu seras reçu par un professionnel - psychologue,
-          travailleur social, juriste - qui saura t’orienter), Nightline
-          (où des étudiants écoutent d’autres étudiants en situation de mal être, la nuit), ou le 3114
-          (en cas de pensées suicidaires). N’hésite pas à les contacter.
+          ou te donne l'impression de perdre espoir, il est important de ne pas rester seul avec ce que tu ressens.
         </p>
       </>
     ),
