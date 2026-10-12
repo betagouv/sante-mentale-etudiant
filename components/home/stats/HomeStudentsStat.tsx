@@ -6,7 +6,9 @@ export default function HomeStudentsStat() {
   return (
     <FullBleedSection innerContainerClassName={styles.container}>
       <h2 className={styles.title}>
-        1 étudiant sur 3 traverse <br /> une période difficile durant ses études.
+        Près d’un étudiant sur trois rencontre
+        <br />
+        des difficultés psychologiques durant ses études.
       </h2>
       <p className={styles.subtitle}>
         <b>Tu n'es pas seul</b> et de nombreux dispositifs existent pour t'accompagner
