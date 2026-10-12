@@ -31,7 +31,7 @@ const experts: Expert[] = [
   },
   {
     name: "Jérôme Lacinga",
-    desc: "Psychologue clinicien, dispositif Santé Psy Étudiant",
+    desc: "Psychologue de Santé Psy Etudiant",
   },
   {
     name: "Katell Le Scouarnec",
@@ -39,15 +39,15 @@ const experts: Expert[] = [
   },
   {
     name: "Yannick Morvan",
-    desc: "Maître de conférences en psychologie à Paris Nanterre ;  Psychologue clinicien ; Conseil scientifique de l’Observatoire de la Vie étudiante (OVE)",
+    desc: "Professeur des Universités en psychologie clinique à Paris Nanterre ; Psychologue clinicien ; Conseil scientifique de l’Observatoire de la Vie étudiante (OVE)",
   },
   {
     name: "Maria Pereira Da Costa",
-    desc: "Conseillère scientifique à la DGESUP ; Vice-présidente du Conseil d’Administration de l’Université Paris Cité ; Professeur de psychologie différentielle",
+    desc: "Conseillère scientifique à la DGESUP ; Professeur des Universités en psychologie différentielle à Paris Cité",
   },
   {
     name: "Romain Sicot",
-    desc: "Psychiatre spécialisé en addictologie ; Praticien hospitalier, responsable de l’unité de Liaison / Urgence de psychiatrie et d’addictologie (hôpitaux universitaires Saint-Louis Lariboisière Fernand Widal)",
+    desc: "Psychiatre spécialisé en addictologie ; Praticien hospitalier, responsable de l’Unité de Liaison et Urgence de Psychiatrie et d’Addictologie (APHP Nord) ou (Assistance Publique des Hôpitaux de Paris NORD)",
   },
   {
     name: "Hélène Vulser",
