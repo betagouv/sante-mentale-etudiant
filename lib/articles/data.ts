@@ -1,6 +1,5 @@
 import type { ArticleMeta } from "./types";
 import { transcriptionCyrilDion } from "@/data/articles/transcriptions/cyril-dion";
-import { transcriptionLudovicDujardin } from "@/data/articles/transcriptions/ludovic-dujardin";
 import { transcriptionNoemieLenoir } from "@/data/articles/transcriptions/noemie-lenoir";
 
 export const articles: ArticleMeta[] = [
@@ -45,17 +44,6 @@ export const articles: ArticleMeta[] = [
     mainFeelingSlug: "anxiety",
     podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/cyril-dion-anxiete-crise-environnementale-comment-garder-esp?",
     transcription: transcriptionCyrilDion
-  },
-  {
-    type: "podcast",
-    slug: "podcast-ludovic-dujardin",
-    title: "Et si s’arrêter, c’était avancer ? avec Ludovic Dujardin, fondateur de Petit Bambou",
-    publishedAt: "2025-04-09",
-    markdownFile: "ludovic-dujardin.md",
-    heroImage: "/articles/podcast/ludovic-dujardin.jpg",
-    mainFeelingSlug: "fatigue",
-    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/et-si-sarreter-cetait-avancer?",
-    transcription: transcriptionLudovicDujardin
   },
   {
     type: "podcast",
