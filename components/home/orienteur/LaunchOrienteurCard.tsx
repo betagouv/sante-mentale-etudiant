@@ -9,7 +9,7 @@ export default function LaunchOrienteurCard() {
         <Badge severity="new" noIcon>
           Gratuit et confidentiel
         </Badge>
-        <h2 className={styles.title}>Trouve du soutien en quelques clics</h2>
+        <h2 className={styles.title}>Trouve l’aide qui te correspond en quelques clics</h2>
         <p className={styles.desc}>
           Réponds à quelques questions pour trouver l'aide la plus adaptée à ta situation (ou pour
           aider un proche)
