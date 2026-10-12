@@ -20,14 +20,16 @@ export default async function AccessibilityDeclaration() {
         </p>
         <p>
           Cette déclaration d&apos;accessibilité s&apos;applique à Santé Mentale Étudiant (
-          <a href="https://santementale.etudiant.gouv.fr">https://santementale.etudiant.gouv.fr</a>
+          <a href="https://www.santementale.etudiant.gouv.fr">
+            https://www.santementale.etudiant.gouv.fr
+          </a>
           ).
         </p>
 
         <h2>État de conformité</h2>
         <p>
-          Santé Mentale Étudiant est <strong>non conforme</strong> avec le RGAA. Le site n&apos;a
-          encore pas été audité.
+          Santé Mentale Étudiant est <b>non conforme </b>avec le RGAA. Le site n&apos;a encore pas
+          été audité.
         </p>
 
         <h2>Amélioration et contact</h2>
