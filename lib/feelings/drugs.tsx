@@ -91,27 +91,27 @@ export const FEELING_DRUGS: Feeling = {
               <ul>
                 <li>je consomme plus ou plus longtemps que ce que j'avais prévu.</li>
                 <li>
-                  je ne réussi pas à réduire ou arrêter malgré mes efforts ou mon souhait d'y
-                  parvenir
+                  je ne réussis pas à réduire ou arrêter malgré mes efforts ou mon souhait d'y
+                  parvenir.
                 </li>
                 <li>
                   je passe de plus en plus de temps à consommer la substance ou à me remettre de ses
-                  effets
+                  effets.
                 </li>
               </ul>
             </div>
             <div>
               Tu peux avoir l'impression de ne plus réussir à :
               <ul>
-                <li>te détendre sans consommer (ou sans produit)</li>
-                <li>t'endormir sans une substance</li>
+                <li>te détendre sans consommer (ou sans produit) ;</li>
+                <li>t'endormir sans une substance ;</li>
                 <li>
                   sortir avec tes amis sans consommer (ou faire la fête sans utiliser alcool et/ou
-                  drogue)
+                  drogue) ;
                 </li>
-                <li>gérer tes émotions autrement qu’avec des produits</li>
-                <li>à avoir des rapports sexuels sans produit</li>
-                <li>à te stimuler sans le boost d'un dopant</li>
+                <li>gérer tes émotions autrement qu’avec des produits ;</li>
+                <li>à avoir des rapports sexuels sans produit ;</li>
+                <li>à te stimuler sans le boost d'un dopant.</li>
               </ul>
             </div>
           </>

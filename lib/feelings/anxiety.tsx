@@ -42,7 +42,7 @@ export const FEELING_ANXIETY: Feeling = {
   },
   recap: [
     "Le stress est une réaction normale face à une difficulté",
-    "L'anxiété est différente : elle peut persister même sans danger immédiat",
+    "L'anxiété est différente\u00A0: elle peut persister même sans danger immédiat",
     "Le stress et l’anxiété agissent autant sur le corps que sur le mental",
     "Quelques habitudes simples peuvent déjà aider à retrouver un équilibre",
   ],
@@ -88,7 +88,7 @@ export const FEELING_ANXIETY: Feeling = {
               Beaucoup de musiciens, comédiens, sportifs ressentent du trac avant une performance. </p>
             <p>
               Sarah Bernhardt aurait même dit à une jeune comédienne qui se vantait de ne pas avoir de trac :
-              « Ne vous en faites pas, le trac, cela viendra avec le talent »
+              « Ne vous en faites pas, le trac, cela viendra avec le talent ».
             </p>
             <p>
               Ce qui se complique, c’est quand cette alerte ne s’éteint plus ou qu’elle ne se contrôle plus.
