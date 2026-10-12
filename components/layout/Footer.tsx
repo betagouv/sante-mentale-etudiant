@@ -24,6 +24,16 @@ export function Footer() {
           linkProps: { href: "/qui-sommes-nous" },
         },
       ]}
+      partnersLogos={{
+        main: {
+          alt: "",
+          imgUrl: "images/logos/parlons-sante-mentale.svg",
+          linkProps: {
+            href: "https://santementale.gouv.fr",
+            title: "Lien vers Parlons Santé Mentale",
+          },
+        },
+      }}
     />
   );
 }
