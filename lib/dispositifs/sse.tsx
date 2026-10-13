@@ -3,11 +3,13 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_SSE: Dispositif = {
   slug: "SSE",
   catchPhrase: "Le service de santé dédié aux étudiants",
+  menuPhrase: "service de santé de ton campus",
   metadata: {
     title: "SSE",
     description:
       "Le Service de Santé Étudiante (SSE) accompagne les étudiants : consultations médicales, soutien psychologique et prévention, sur votre campus et gratuitement.",
   },
+  videoKey: "SSE",
   button: {
     text: "Trouver mon SSE",
   },
@@ -104,6 +106,10 @@ export const DISPOSITIF_SSE: Dispositif = {
           Santé mentale, santé sexuelle, addictions, nutrition, sommeil, vaccination, sport-santé…
           Les équipes peuvent t'accompagner sur de nombreux sujets et t'orienter vers d'autres
           professionnels ou dispositifs lorsque c'est nécessaire.
+        </p>
+        <p>
+          Les SSE n’ont pas tous les mêmes conditions d’éligibilité. Vérifie bien si tu es éligible
+          avant de te déplacer.
         </p>
       </>
     ),

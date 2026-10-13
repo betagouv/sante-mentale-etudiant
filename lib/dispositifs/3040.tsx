@@ -2,12 +2,15 @@ import { Dispositif } from "./types";
 
 export const DISPOSITIF_3040: Dispositif = {
   slug: "3040",
-  catchPhrase: "Le numéro dédié au bien-être des étudiants",
+  catchPhrase:
+    "Le numéro dédié aux étudiantes et aux étudiants en difficulté ou en situation de mal-être",
+  menuPhrase: "ligne d’écoute pour étudiants en mal-être",
   metadata: {
     title: "3040",
     description:
       "Le 3040, numéro d'écoute pour les étudiants : parlez à un professionnel en cas de mal-être, stress ou isolement. Un soutien accessible et confidentiel.",
   },
+  videoKey: "3040",
   button: {
     text: "Contacter le 3040",
   },
@@ -55,7 +58,7 @@ export const DISPOSITIF_3040: Dispositif = {
             Du lundi au vendredi : 10h - 21h - Le samedi : 10h - 14h
           </>
         ),
-        badge: "24h/24 - 7j/7",
+        badge: "Du lundi au samedi",
         picto: "Smartphone",
         linkProps: {
           href: "tel:3040",
@@ -64,7 +67,7 @@ export const DISPOSITIF_3040: Dispositif = {
       },
       {
         title: "Par e-mail",
-        badge: "Réponse sous 24h",
+        badge: "Réponse sous 24h (jours ouvrés)",
         desc: (
           <>Écris à 3040@enseignementsup.gouv.fr pour expliquer ta situation et être accompagné.</>
         ),
@@ -88,13 +91,13 @@ export const DISPOSITIF_3040: Dispositif = {
         </p>
         <p>
           Au bout du fil, une équipe pluridisciplinaire composée notamment de psychologues, de
-          professionnels du travail social et de juristes est là pour t’écouter, répondre à tes
-          questions et t’aider à trouver la solution adaptée à ta situation.
+          professionnels du travail social et de juristes est là pour t’écouter, t’apporter du
+          soutien répondre à tes questions et t’aider à trouver la solution adaptée à ta situation.
         </p>
         <p>
-          Selon tes besoins, tu peux être orienté vers Santé Psy Étudiant, un Service de santé
-          étudiante (SSE), un Centre médico-psychologique (CMP), un BAPU ou une association
-          spécialisée.
+          Le 3040 permet également de signaler des situations de discrimination, de harcèlement ou
+          de violences sexistes et sexuelles. Pour rappel, un signalement représente un fait
+          pénalement répréhensible (violence sexiste et sexuelle, harcèlement, ...).
         </p>
       </>
     ),

@@ -20,7 +20,7 @@ export default function NightLineCard() {
       <div className={styles.text}>
         <div className={styles.title}>Coup de blues la nuit ?</div>
         <div className={styles.subtitle}>
-          Tu peux aussi parler avec un étudiant avec <b>Nightline</b>
+          Tu peux aussi parler à un étudiant avec <b>Nightline</b>
         </div>
       </div>
       <div className={styles.footer}>

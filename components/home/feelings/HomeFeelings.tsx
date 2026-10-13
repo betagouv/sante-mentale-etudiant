@@ -1,13 +1,11 @@
 import styles from "./HomeFeelings.module.scss";
 import { feelings } from "@/lib/feelings/data";
 import FullBleedSection from "../../wrapper/FullBleedSection";
-import { IllustrationHomeFeelingsWave } from "@/components/illustrations";
 import { Tile } from "@codegouvfr/react-dsfr/Tile";
 
 export default function HomeFeelings() {
   return (
     <FullBleedSection aria-labelledby="feelings-grid-title" bgColor="purple" borderColor="green">
-      <IllustrationHomeFeelingsWave />
       <div className={styles.header}>
         <h2>Mettre des mots sur ce que tu ressens</h2>
         <p>Des fiches pour identifier ce que tu ressens, mieux comprendre et trouver de l'aide</p>

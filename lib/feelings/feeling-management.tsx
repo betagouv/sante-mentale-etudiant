@@ -1,4 +1,3 @@
-import { transcriptionFeelingManagement } from "@/data/videos/transcriptions/feelings/feeling-management";
 import { Feeling } from "./types";
 
 export const FEELING_MANAGEMENT: Feeling = {
@@ -14,35 +13,25 @@ export const FEELING_MANAGEMENT: Feeling = {
     sentence: (
       <>
         <p>
-          Tu as l’impression que tes émotions débordent et prennent toute la place : tu t’énerves facilement,
-          tu pleures souvent… Ou, à l’inverse, tu as le sentiment de ne rien ressentir.
+          Tu as l’impression que tes émotions débordent et prennent toute la place : tu t’énerves
+          facilement, tu pleures souvent… Ou, à l’inverse, tu as le sentiment de ne rien ressentir.
         </p>
         <p>
-          Parfois, on aimerait pouvoir appuyer sur un bouton “pause” face à certaines émotions. Quand elles
-          deviennent trop intenses, il peut être difficile de les gérer.
+          Parfois, on aimerait pouvoir appuyer sur un bouton “pause” face à certaines émotions.
+          Quand elles deviennent trop intenses, il peut être difficile de les gérer.
         </p>
         <p>
-          Pourtant, les émotions ont une fonction : elles transmettent des informations. Apprendre à mieux les
-          connaître et les comprendre peut nous aider à vivre mieux.
+          Pourtant, les émotions ont une fonction : elles transmettent des informations. Apprendre à
+          mieux les connaître et les comprendre peut nous aider à vivre mieux.
         </p>
         <p>
-          Si elles deviennent trop intenses, se faire accompagner par un professionnel peut être un début de solution.
+          Si elles deviennent trop intenses, se faire accompagner par un professionnel peut être un
+          début de solution.
         </p>
       </>
     ),
   },
-  video: {
-    key: "feeling-management",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/gFMQYqditxorxyooNfUNH5",
-    previewUrl: "/videos/preview/feelings/feeling-management.mp4",
-    posterUrl: "/images/vignettes/feelings/feeling-management.jpg",
-    duration: 7,
-    guest: {
-      name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
-    },
-    transcription: transcriptionFeelingManagement,
-  },
+  videoKey: "feeling-management",
   recap: [
     "Les émotions ont, de manière générale, une fonction.",
     "Les accueillir est souvent plus efficace que de chercher à les repousser.",
@@ -53,9 +42,10 @@ export const FEELING_MANAGEMENT: Feeling = {
     title: "Comprendre ses émotions",
     intro: (
       <>
-        Les émotions sont des réactions naturelles et spontanées du corps et du cerveau, qui  apparaissent
-        en fonction de ce que l’on vit, et qui aident à s’adapter à son environnement.
-        Plutôt que de vouloir les faire taire, il est plus utile d’apprendre à les écouter, les comprendre ou y répondre.
+        Les émotions sont des réactions naturelles et spontanées du corps et du cerveau, qui
+        apparaissent en fonction de ce que l’on vit, et qui aident à s’adapter à son environnement.
+        Plutôt que de vouloir les faire taire, il est plus utile d’apprendre à les écouter, les
+        comprendre ou y répondre.
       </>
     ),
     items: [
@@ -129,7 +119,10 @@ export const FEELING_MANAGEMENT: Feeling = {
         question: "Observer son corps pour comprendre ses émotions",
         answer: (
           <>
-            <p>Une émotion influence nos pensées. Mais cela ne se passe pas uniquement dans notre tête. </p>
+            <p>
+              Une émotion influence nos pensées. Mais cela ne se passe pas uniquement dans notre
+              tête.{" "}
+            </p>
             <div>
               Elle peut aussi provoquer :
               <ul>
@@ -263,8 +256,8 @@ export const FEELING_MANAGEMENT: Feeling = {
           traverses et à développer des stratégies pour réguler tes émotions.
         </p>
         <p>
-          Si une émotion devient trop importante, n’hésite pas à contacter le 3040, numéro national gratuit,
-          pour étudiant en mal-être. Un professionnel t’écoutera et t’orientera.
+          Si une émotion devient trop importante, n’hésite pas à contacter le 3040, numéro national
+          gratuit, pour étudiant en mal-être. Un professionnel t’écoutera et t’orientera.
         </p>
       </>
     ),

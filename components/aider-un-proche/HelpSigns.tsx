@@ -1,4 +1,3 @@
-import { IllustrationHelpSigns } from "../illustrations";
 import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./HelpSigns.module.scss";
 import { signCategories } from "./data/signs";
@@ -11,7 +10,6 @@ export default function HelpSigns() {
       aria-labelledby="signs-title"
       bgColor="purple"
     >
-      <IllustrationHelpSigns />
       <LightPinkBadge>Étape 1</LightPinkBadge>
       <div className={styles.titlesWrapper}>
         <h2 id="signs-title" className={styles.title}>

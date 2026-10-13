@@ -1,6 +1,6 @@
-import { VideoTestimonial } from "@/components/video/types";
 import { ReactNode } from "react";
 import { FeelingSlug } from "./data";
+import { VideoKey } from "@/data/videos/videos";
 
 type Intro = {
   sentence: ReactNode;
@@ -42,7 +42,7 @@ export interface Feeling {
   slug: FeelingSlug;
   name: string;
   catch: Intro;
-  video: VideoTestimonial;
+  videoKey: VideoKey;
   recap: string[];
   faq: FAQ;
   tips: Tip[];

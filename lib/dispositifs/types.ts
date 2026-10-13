@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { DispositifSlug } from "./data";
 import { DispositifContactPictoName } from "@/components/dispositif/DispositifHowTo";
 import { Metadata } from "../feelings/types";
+import { VideoKey } from "@/data/videos/videos";
 
 interface Button {
   text: string;
@@ -44,6 +45,9 @@ interface WhatIsIt {
 export interface Dispositif {
   slug: DispositifSlug;
   catchPhrase: string;
+  menuPhrase: string;
+  menuTitle?: string;
+  videoKey: VideoKey;
   button: Button;
   audience: Audience;
   contact: Contact;

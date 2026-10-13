@@ -1,4 +1,3 @@
-import { transcriptionDrugs } from "@/data/videos/transcriptions/feelings/drugs";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
@@ -15,30 +14,18 @@ export const FEELING_DRUGS: Feeling = {
     sentence: (
       <>
         <p>
-          Tu bois plus souvent qu’avant pour te détendre. Le cannabis t’aide à t’endormir.
-          La cocaïne, les cigarettes, les boissons énergisantes t’aident à tenir le coup…
+          Tu bois plus souvent qu’avant pour te détendre. Le cannabis t’aide à t’endormir. La
+          cocaïne, les cigarettes, les boissons énergisantes t’aident à tenir le coup…
         </p>
+        <p>S’interroger sur sa consommation, c’est aussi être attentif à soi.</p>
         <p>
-          S’interroger sur sa consommation, c’est aussi être attentif à soi.
-        </p>
-        <p>
-          Ce qui compte, c’est aussi la place que prennent les consommations dans ta vie et ce que tu en attends.
+          Ce qui compte, c’est aussi la place que prennent les consommations dans ta vie et ce que
+          tu en attends.
         </p>
       </>
     ),
   },
-  video: {
-    key: "drugs",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/8KBMfic6rSAGDwZ95qeoQr",
-    previewUrl: "/videos/preview/feelings/drugs.mp4",
-    posterUrl: "/images/vignettes/feelings/drugs.jpg",
-    duration: 6,
-    guest: {
-      name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
-    },
-    transcription: transcriptionDrugs,
-  },
+  videoKey: "drugs",
   recap: [
     "Consommer une substance ne signifie pas forcément être dépendant.",
     "Ne pas réussir à s’arrêter seul est fréquent. Ce n’est pas une faiblesse.",
@@ -49,12 +36,15 @@ export const FEELING_DRUGS: Feeling = {
     title: "Comprendre sa consommation",
     intro: (
       <>
-        <p>Certaines substances sont facilement accessibles et peuvent être présentes en soirée.
-          Il peut aussi arriver d’en consommer pour se détendre, pimenter sa sexualité, mieux dormir ou gérer ses émotions :
-          apaiser sa colère, diminuer son stress, ne pas ressentir la tristesse ou retrouver son calme.</p>
         <p>
-          Au-delà de la substance elle-même, il peut être intéressant de s’interroger sur la place qu’elle
-          prend peu à peu dans le quotidien et sur ce qu’elle apporte ou permet de gérer.
+          Certaines substances sont facilement accessibles et peuvent être présentes en soirée. Il
+          peut aussi arriver d’en consommer pour se détendre, pimenter sa sexualité, mieux dormir ou
+          gérer ses émotions : apaiser sa colère, diminuer son stress, ne pas ressentir la tristesse
+          ou retrouver son calme.
+        </p>
+        <p>
+          Au-delà de la substance elle-même, il peut être intéressant de s’interroger sur la place
+          qu’elle prend peu à peu dans le quotidien et sur ce qu’elle apporte ou permet de gérer.
         </p>
       </>
     ),
@@ -84,9 +74,7 @@ export const FEELING_DRUGS: Feeling = {
         question: "Qu’est-ce qu’une consommation qui prend trop de place ?",
         answer: (
           <>
-            <p>
-              Une consommation devient préoccupante lorsqu'elle n'est plus seulement un choix :
-            </p>
+            <p>Une consommation devient préoccupante lorsqu'elle n'est plus seulement un choix :</p>
             <div>
               <ul>
                 <li>je consomme plus ou plus longtemps que ce que j'avais prévu.</li>
@@ -139,13 +127,11 @@ export const FEELING_DRUGS: Feeling = {
         answer: (
           <>
             <p>
-              On imagine parfois qu'il faut attendre d'être dépendant pour consulter.
-              Avoir un avis extérieur permet d’aider à se situer et à trouver des solutions pour éviter
-              que la consommation devienne une addiction.
+              On imagine parfois qu'il faut attendre d'être dépendant pour consulter. Avoir un avis
+              extérieur permet d’aider à se situer et à trouver des solutions pour éviter que la
+              consommation devienne une addiction.
             </p>
-            <p>
-              S’interroger tôt sur sa consommation permet de préserver sa liberté de choix.
-            </p>
+            <p>S’interroger tôt sur sa consommation permet de préserver sa liberté de choix.</p>
           </>
         ),
       },
@@ -187,9 +173,9 @@ export const FEELING_DRUGS: Feeling = {
           title: "Commence petit",
           desc: (
             <>
-              pendant quelques jours, demande-toi : À quel moment est-ce que je consomme ?
-              Dans quel état d'esprit suis-je ? Qu'est-ce que m’apporte cette consommation ?
-              Observer sans se juger permet souvent de mieux comprendre ce que l’on recherche.
+              pendant quelques jours, demande-toi : À quel moment est-ce que je consomme ? Dans quel
+              état d'esprit suis-je ? Qu'est-ce que m’apporte cette consommation ? Observer sans se
+              juger permet souvent de mieux comprendre ce que l’on recherche.
             </>
           ),
         },
@@ -207,8 +193,8 @@ export const FEELING_DRUGS: Feeling = {
           desc: (
             <>
               Une question simple : Qu’est-ce que je pourrais faire pour obtenir le même effet
-              (faire du sport / écouter de la musique / lire / discuter avec un ami) ?
-              Comprendre ce besoin peut ouvrir la possibilité d’explorer d’autres façons d’y répondre.
+              (faire du sport / écouter de la musique / lire / discuter avec un ami) ? Comprendre ce
+              besoin peut ouvrir la possibilité d’explorer d’autres façons d’y répondre.
             </>
           ),
         },
@@ -225,9 +211,9 @@ export const FEELING_DRUGS: Feeling = {
           title: "Commence petit",
           desc: (
             <>
-              dans une situation où tu consommes habituellement tu peux te demander :
-              "Qu'est-ce que je pourrais essayer d'autre, juste cette fois ?".
-              Il ne s'agit pas de tout changer d'un coup, mais d'élargir progressivement tes ressources.
+              dans une situation où tu consommes habituellement tu peux te demander : "Qu'est-ce que
+              je pourrais essayer d'autre, juste cette fois ?". Il ne s'agit pas de tout changer
+              d'un coup, mais d'élargir progressivement tes ressources.
             </>
           ),
         },
@@ -249,9 +235,9 @@ export const FEELING_DRUGS: Feeling = {
           title: "Commence petit",
           desc: (
             <>
-              parles-en à une personne de confiance ou à un professionnel,
-              même si tu ne te considères pas comme addict.
-              Il n’est jamais trop tôt pour en parler ou se faire accompagner.
+              parles-en à une personne de confiance ou à un professionnel, même si tu ne te
+              considères pas comme addict. Il n’est jamais trop tôt pour en parler ou se faire
+              accompagner.
             </>
           ),
         },
@@ -270,11 +256,12 @@ export const FEELING_DRUGS: Feeling = {
           malgré tes efforts, il est important d'en parler.
         </p>
         <p>
-          Un médecin, un psychologue, un Service de santé étudiante ou une structure spécialisée peuvent t'accompagner sans jugement.
+          Un médecin, un psychologue, un Service de santé étudiante ou une structure spécialisée
+          peuvent t'accompagner sans jugement.
         </p>
         <p>
-          Demander de l'aide ne signifie pas que tu as échoué. C'est faire preuve de courage :
-          oser en parler pour choisir, à ton rythme, ce qui te convient le mieux.
+          Demander de l'aide ne signifie pas que tu as échoué. C'est faire preuve de courage : oser
+          en parler pour choisir, à ton rythme, ce qui te convient le mieux.
         </p>
       </>
     ),

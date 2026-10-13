@@ -1,4 +1,3 @@
-import { transcriptionAnxiety } from "@/data/videos/transcriptions/feelings/anxiety";
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
 
@@ -19,27 +18,16 @@ export const FEELING_ANXIETY: Feeling = {
           Tu penses à tes cours, ton avenir, ton budget, à tout en même temps ?
         </p>
         <p>Connaître des épisodes de stress fait partie de la vie.</p>
-        <p>Mais lorsque ce stress est de plus en plus fréquent, intense, durable, lorsqu’il concerne un futur proche ou même lointain,
-          ou qu’il n’a plus de cause précise, il s’agit peut être d’anxiété.
-        </p>
         <p>
-          Des solutions existent pour retrouver un peu d’apaisement.
+          Mais lorsque ce stress est de plus en plus fréquent, intense, durable, lorsqu’il concerne
+          un futur proche ou même lointain, ou qu’il n’a plus de cause précise, il s’agit peut être
+          d’anxiété.
         </p>
+        <p>Des solutions existent pour retrouver un peu d’apaisement.</p>
       </>
     ),
   },
-  video: {
-    key: "anxiety",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/69Gv4zEK4X8nZLBqwJkvzY",
-    previewUrl: "/videos/preview/feelings/anxiety.mp4",
-    posterUrl: "/images/vignettes/feelings/anxiety.jpg",
-    duration: 6,
-    guest: {
-      name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
-    },
-    transcription: transcriptionAnxiety,
-  },
+  videoKey: "anxiety",
   recap: [
     "Le stress est une réaction normale face à une difficulté",
     "L'anxiété est différente\u00A0: elle peut persister même sans danger immédiat",
@@ -51,8 +39,9 @@ export const FEELING_ANXIETY: Feeling = {
     intro: (
       <>
         Le stress est une réaction normale de notre organisme face à une difficulté ou à une menace.
-        Si cela dure dans le temps, ou apparaît sans raison apparente, on parle plutôt d’anxiété ou d’angoisse.
-        Cela peut être difficile à vivre, et comprendre ce qui se passe dans ton corps permet souvent de moins en avoir peur.
+        Si cela dure dans le temps, ou apparaît sans raison apparente, on parle plutôt d’anxiété ou
+        d’angoisse. Cela peut être difficile à vivre, et comprendre ce qui se passe dans ton corps
+        permet souvent de moins en avoir peur.
       </>
     ),
     items: [
@@ -68,8 +57,8 @@ export const FEELING_ANXIETY: Feeling = {
               consulter.
             </p>
             <p>
-              Chez les bénéficiaires de Santé Psy Étudiant (enquête Juin 2026),
-              le stress et l’anxiété sont le 1er motif de consultation (23%).
+              Chez les bénéficiaires de Santé Psy Étudiant (enquête Juin 2026), le stress et
+              l’anxiété sont le 1er motif de consultation (23%).
             </p>
           </>
         ),
@@ -80,25 +69,31 @@ export const FEELING_ANXIETY: Feeling = {
           <>
             <h5>1. Le stress est une réaction normale de l’organisme </h5>{" "}
             <p>
-              Face à un examen, un oral, un conflit ou une situation nouvelle,
-              ton cerveau déclenche une alerte pour permettre à ton corps de réagir vite :
-              ton rythme cardiaque s’accélère, tes muscles se tendent.
-            </p>
-            <p>Bien dosé, le stress peut devenir un allié : la veille d’un oral, il t’aide à rester concentré.
-              Beaucoup de musiciens, comédiens, sportifs ressentent du trac avant une performance. </p>
-            <p>
-              Sarah Bernhardt aurait même dit à une jeune comédienne qui se vantait de ne pas avoir de trac :
-              « Ne vous en faites pas, le trac, cela viendra avec le talent ».
+              Face à un examen, un oral, un conflit ou une situation nouvelle, ton cerveau déclenche
+              une alerte pour permettre à ton corps de réagir vite : ton rythme cardiaque
+              s’accélère, tes muscles se tendent.
             </p>
             <p>
-              Ce qui se complique, c’est quand cette alerte ne s’éteint plus ou qu’elle ne se contrôle plus.
-              Il peut alors s’agir d’anxiété.
+              Bien dosé, le stress peut devenir un allié : la veille d’un oral, il t’aide à rester
+              concentré. Beaucoup de musiciens, comédiens, sportifs ressentent du trac avant une
+              performance.{" "}
+            </p>
+            <p>
+              Sarah Bernhardt aurait même dit à une jeune comédienne qui se vantait de ne pas avoir
+              de trac : « Ne vous en faites pas, le trac, cela viendra avec le talent ».
+            </p>
+            <p>
+              Ce qui se complique, c’est quand cette alerte ne s’éteint plus ou qu’elle ne se
+              contrôle plus. Il peut alors s’agir d’anxiété.
             </p>
             <h5>2. Au-delà des études : des sources multiples de stress et d’anxiété</h5>
-            <p>Le stress ou l’anxiété ne viennent pas uniquement des cours, mais peuvent être la conséquence
-              de plusieurs situations qui s’accumulent.</p>
+            <p>
+              Le stress ou l’anxiété ne viennent pas uniquement des cours, mais peuvent être la
+              conséquence de plusieurs situations qui s’accumulent.
+            </p>
             <div>
-              Dans notre enquête Santé Psy Étudiant (Juin 2026), les étudiants évoquent principalement dans leurs motifs de consultation :
+              Dans notre enquête Santé Psy Étudiant (Juin 2026), les étudiants évoquent
+              principalement dans leurs motifs de consultation :
               <ul>
                 <li>la pression des études, des examens ou de l'orientation ;</li>
                 <li>les difficultés relationnelles, amicales ou amoureuses ;</li>
@@ -110,34 +105,45 @@ export const FEELING_ANXIETY: Feeling = {
               </ul>
             </div>
             <p>
-              L’anxiété prend, elle aussi, différentes formes : on peut être anxieux de manière générale
-              (peur de l’avenir, éco-anxieux, etc.), ou nourrir des anxiétés spécifiques, comme l’anxiété sociale
-              (peur du jugement de l’autre, peur de passer devant un amphi plein de monde).
-              D’autres peurs relèvent de la phobie (voir une araignée, prendre l’avion).
+              L’anxiété prend, elle aussi, différentes formes : on peut être anxieux de manière
+              générale (peur de l’avenir, éco-anxieux, etc.), ou nourrir des anxiétés spécifiques,
+              comme l’anxiété sociale (peur du jugement de l’autre, peur de passer devant un amphi
+              plein de monde). D’autres peurs relèvent de la phobie (voir une araignée, prendre
+              l’avion).
             </p>
-            <p>Certaines habitudes jouent aussi : l'alcool, le cannabis ou des horaires de sommeil très irréguliers
-              peuvent renforcer des situations d'anxiété,
-              même cela peut donner l’impression d’aider à se détendre sur le moment. </p>
+            <p>
+              Certaines habitudes jouent aussi : l'alcool, le cannabis ou des horaires de sommeil
+              très irréguliers peuvent renforcer des situations d'anxiété, même cela peut donner
+              l’impression d’aider à se détendre sur le moment.{" "}
+            </p>
             <h5>3. Les pensées qui tournent en boucle.</h5>
-            <p>Quand on est stressé ou anxieux, il est fréquent de ressasser sans cesse les mêmes pensées, sans réussir à les arrêter :
-              « Et si j'échoue ? », « Et si je déçois mes proches ? », « Et si quelque chose se passe mal ? ». </p>
             <p>
-              On a parfois l'impression de se préparer à l'avenir. En réalité, ces pensées entretiennent souvent
-              l'inquiétude et rendent le retour au calme plus difficile.
+              Quand on est stressé ou anxieux, il est fréquent de ressasser sans cesse les mêmes
+              pensées, sans réussir à les arrêter : « Et si j'échoue ? », « Et si je déçois mes
+              proches ? », « Et si quelque chose se passe mal ? ».{" "}
             </p>
             <p>
-              Si elles s'installent depuis plusieurs semaines, deviennent très envahissantes ou t'empêchent de suivre tes cours,
-              de dormir ou de voir tes proches, parles-en à un professionnel de santé.
-              Lui seul peut évaluer ta situation et, si besoin, poser un diagnostic.
+              On a parfois l'impression de se préparer à l'avenir. En réalité, ces pensées
+              entretiennent souvent l'inquiétude et rendent le retour au calme plus difficile.
+            </p>
+            <p>
+              Si elles s'installent depuis plusieurs semaines, deviennent très envahissantes ou
+              t'empêchent de suivre tes cours, de dormir ou de voir tes proches, parles-en à un
+              professionnel de santé. Lui seul peut évaluer ta situation et, si besoin, poser un
+              diagnostic.
             </p>
             <h5>4. L'anxiété peut révéler autre chose</h5>
             <p>
-              L'anxiété peut aussi parfois être le signe d’autres types de troubles, comme la dépression.
+              L'anxiété peut aussi parfois être le signe d’autres types de troubles, comme la
+              dépression.
             </p>
-            <p>→ Voir la page <FeelingLink slug="fatigue" /></p>
             <p>
-              Si ton anxiété dure depuis plusieurs semaines, devient très intense, impacte ton quotidien,
-              il est important d'en parler avec un professionnel : c’est lui qui pourra évaluer ta situation.
+              → Voir la page <FeelingLink slug="fatigue" />
+            </p>
+            <p>
+              Si ton anxiété dure depuis plusieurs semaines, devient très intense, impacte ton
+              quotidien, il est important d'en parler avec un professionnel : c’est lui qui pourra
+              évaluer ta situation.
             </p>
             <h5>5. L'anxiété peut parfois cacher autre chose.</h5>
             <p>

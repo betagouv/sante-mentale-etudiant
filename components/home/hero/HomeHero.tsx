@@ -3,7 +3,6 @@ import {
   IllustrationHomeMozaic,
   IllustrationHomePeopleDesktop,
   IllustrationHomePeopleMobile,
-  IllustrationHomeWave,
 } from "../../illustrations";
 import FullBleedSection from "../../wrapper/FullBleedSection";
 import LaunchOrienteurCard from "../orienteur/LaunchOrienteurCard";
@@ -17,7 +16,6 @@ export default function HomeHero() {
       bgColor="purple"
       borderColor="yellow"
     >
-      <IllustrationHomeWave />
       <IllustrationHomeMozaic />
       <IllustrationHomeGirlDesktop />
       <IllustrationHomePeopleDesktop />
