@@ -9,6 +9,7 @@ export const DISPOSITIF_3040: Dispositif = {
     description:
       "Le 3040, numéro d'écoute pour les étudiants : parlez à un professionnel en cas de mal-être, stress ou isolement. Un soutien accessible et confidentiel.",
   },
+  videoKey: "3040",
   button: {
     text: "Contacter le 3040",
   },

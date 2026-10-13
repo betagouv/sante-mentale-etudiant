@@ -9,6 +9,7 @@ export const DISPOSITIF_SSE: Dispositif = {
     description:
       "Le Service de Santé Étudiante (SSE) accompagne les étudiants : consultations médicales, soutien psychologique et prévention, sur votre campus et gratuitement.",
   },
+  videoKey: "SSE",
   button: {
     text: "Trouver mon SSE",
   },

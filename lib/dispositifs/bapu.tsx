@@ -9,6 +9,7 @@ export const DISPOSITIF_BAPU: Dispositif = {
     description:
       "Les BAPU (Bureaux d'Aide Psychologique Universitaire) offrent des consultations psychologiques aux étudiants, gratuitement et sans limitation de durée.",
   },
+  videoKey: "BAPU",
   button: {
     text: "Trouver mon BAPU",
   },

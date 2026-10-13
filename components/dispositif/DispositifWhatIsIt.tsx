@@ -4,7 +4,7 @@ import styles from "./DispositifWhatIsIt.module.scss";
 import DispositifVideo from "./DispositifVideo";
 import { ReactNode } from "react";
 import { Tile } from "@codegouvfr/react-dsfr/Tile";
-import { testimonials } from "@/data/videos/videos";
+import { getVideoByKey } from "@/data/videos/videos";
 type Props = {
   dispositif: Dispositif;
 };
@@ -28,7 +28,7 @@ export default function DispositifWhatIsIt({ dispositif }: Props) {
           </div>
         </div>
         <div className={styles.video}>
-          <DispositifVideo video={testimonials[0]} />
+          <DispositifVideo video={getVideoByKey(dispositif.videoKey)} />
         </div>
       </div>
       <div className={styles.cards}>

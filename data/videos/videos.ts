@@ -1,6 +1,13 @@
 import { VideoTestimonial } from "@/components/video/types";
 import { dispositifsTranscriptions } from "./transcriptions";
 
+export const VIDEO_KEYS = ["3040", "3114", "BAPU", "SSE"] as const;
+
+export type VideoKey = (typeof VIDEO_KEYS)[number];
+
+export const getVideoByKey = (key: VideoKey): VideoTestimonial =>
+  testimonials.find((video) => video.key === key) ?? testimonials[0];
+
 export const testimonials: VideoTestimonial[] = [
   {
     key: "3040",

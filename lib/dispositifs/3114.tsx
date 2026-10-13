@@ -9,6 +9,7 @@ export const DISPOSITIF_3114: Dispositif = {
     description:
       "Le 3114, numéro national de prévention du suicide : gratuit, confidentiel et accessible 24h/24 et 7j/7. Des professionnels vous écoutent et vous orientent.",
   },
+  videoKey: "3114",
   button: {
     text: "Contacter le 3114",
   },
