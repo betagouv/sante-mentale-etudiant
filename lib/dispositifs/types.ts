@@ -44,6 +44,8 @@ interface WhatIsIt {
 export interface Dispositif {
   slug: DispositifSlug;
   catchPhrase: string;
+  menuPhrase: string;
+  menuTitle?: string;
   button: Button;
   audience: Audience;
   contact: Contact;

@@ -3,6 +3,7 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_SSE: Dispositif = {
   slug: "SSE",
   catchPhrase: "Le service de santé dédié aux étudiants",
+  menuPhrase: "service de santé de ton campus",
   metadata: {
     title: "SSE",
     description:

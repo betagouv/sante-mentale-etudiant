@@ -3,6 +3,7 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_3114: Dispositif = {
   slug: "3114",
   catchPhrase: "Le numéro national de prévention du suicide",
+  menuPhrase: "ligne d’écoute suicide",
   metadata: {
     title: "3114",
     description:

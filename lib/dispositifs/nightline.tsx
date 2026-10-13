@@ -3,6 +3,8 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_NIGHTLINE: Dispositif = {
   slug: "nightline",
   catchPhrase: "Le service d'écoute nocturne par et pour les étudiants",
+  menuPhrase: "ligne d’écoute par des étudiants, de nuit",
+  menuTitle: "Nightline",
   metadata: {
     title: "Nightline",
     description:

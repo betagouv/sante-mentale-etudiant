@@ -3,6 +3,7 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_SPE: Dispositif = {
   slug: "SPE",
   catchPhrase: "12 séances gratuites avec un psychologue",
+  menuPhrase: "séances gratuites chez un psy de ton choix",
   metadata: {
     title: "Santé Psy Etudiant",
     description:

@@ -3,6 +3,7 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_BAPU: Dispositif = {
   slug: "BAPU",
   catchPhrase: "Un accompagnement psychologique dédié aux étudiants",
+  menuPhrase: "accompagnement psy pour étudiants",
   metadata: {
     title: "BAPU",
     description:

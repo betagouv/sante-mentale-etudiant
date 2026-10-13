@@ -3,6 +3,7 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_3040: Dispositif = {
   slug: "3040",
   catchPhrase: "Le numéro dédié au bien-être des étudiants",
+  menuPhrase: "ligne d’écoute pour étudiants en mal-être",
   metadata: {
     title: "3040",
     description:

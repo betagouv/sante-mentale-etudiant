@@ -27,6 +27,18 @@ export function Header() {
       isActive: pathname === "/trouver-du-soutien",
     },
     {
+      text: "Les dispositifs",
+      isActive: pathname.startsWith("/dispositif"),
+      menuLinks: dispositifs.map((dispositif) => ({
+        text: (
+          <span>
+            <b>{dispositif.menuTitle || dispositif.slug}</b> : {dispositif.menuPhrase}
+          </span>
+        ),
+        linkProps: { href: `/dispositif/${dispositif.slug}` },
+      })),
+    },
+    {
       text: "S'informer",
       linkProps: { href: "/s-informer" },
       isActive: pathname.startsWith("/s-informer"),
@@ -35,14 +47,6 @@ export function Header() {
       text: "Aider un proche",
       linkProps: { href: "/aider-un-proche" },
       isActive: pathname === "/aider-un-proche",
-    },
-    {
-      text: "Dispositifs",
-      isActive: pathname.startsWith("/dispositif"),
-      menuLinks: dispositifs.map((dispositif) => ({
-        text: dispositif.slug,
-        linkProps: { href: `/dispositif/${dispositif.slug}` },
-      })),
     },
   ];
 
