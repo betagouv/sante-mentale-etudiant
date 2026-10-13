@@ -56,39 +56,12 @@ export const IllustrationNeedToTalkStandingRight = () => (
   />
 );
 
-export const IllustrationNeedToTalkWave = () => (
-  <RenderImage
-    src="/images/illustrations/needToTalkBanner/wave.svg"
-    width={1440}
-    height={452}
-    className={styles.needToTalkStandingLeft}
-  />
-);
-
 export const IllustrationFeelingVideo = () => (
   <RenderImage
     src="/images/illustrations/feeling-video.svg"
     width={389}
     height={900}
     className={styles.feelingVideo}
-  />
-);
-
-export const IllustrationHomeWave = () => (
-  <RenderImage
-    src="/images/illustrations/home/wave.svg"
-    width={1110}
-    height={608}
-    className={styles.homeWave}
-  />
-);
-
-export const IllustrationHomeFeelingsWave = () => (
-  <RenderImage
-    src="/images/illustrations/home/wave2.svg"
-    width={1190}
-    height={754}
-    className={styles.homeWave2}
   />
 );
 
@@ -128,24 +101,6 @@ export const IllustrationHomeGirlDesktop = () => (
   />
 );
 
-export const IllustrationHomeTestimonials1 = () => (
-  <RenderImage
-    src="/images/illustrations/home/question1.svg"
-    width={239}
-    height={217}
-    className={styles.homeTestimonial1}
-  />
-);
-
-export const IllustrationHomeTestimonials2 = () => (
-  <RenderImage
-    src="/images/illustrations/home/question2.svg"
-    width={163}
-    height={168}
-    className={styles.homeTestimonial2}
-  />
-);
-
 export const IllustrationHelpLeft1 = () => (
   <RenderImage
     src="/images/illustrations/help/left1.svg"
@@ -170,15 +125,6 @@ export const IllustrationHelpRight = () => (
     width={327}
     height={393}
     className={styles.helpRight}
-  />
-);
-
-export const IllustrationHelpSigns = () => (
-  <RenderImage
-    src="/images/illustrations/help/signs.svg"
-    width={532}
-    height={776}
-    className={styles.helpSigns}
   />
 );
 

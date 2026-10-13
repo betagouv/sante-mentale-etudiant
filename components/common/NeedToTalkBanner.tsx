@@ -6,7 +6,6 @@ import {
   IllustrationNeedToTalkSittingRight,
   IllustrationNeedToTalkStandingLeft,
   IllustrationNeedToTalkStandingRight,
-  IllustrationNeedToTalkWave,
 } from "../illustrations";
 import { ReactNode } from "react";
 
@@ -19,7 +18,6 @@ type Props = {
 export default function NeedToTalkBanner({ title, subtitle, hint, button }: Props) {
   return (
     <FullBleedSection bgColor="purple">
-      <IllustrationNeedToTalkWave />
       <IllustrationNeedToTalkStandingLeft />
       <IllustrationNeedToTalkSittingLeft />
       <IllustrationNeedToTalkStandingRight />
