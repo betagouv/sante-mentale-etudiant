@@ -35,28 +35,6 @@ export const articles: ArticleMeta[] = [
   //   mainFeelingSlug: "anxiety",
   // },
   {
-    type: "podcast",
-    slug: "podcast-cyril-dion",
-    title: "Anxiété, crise environnementale : comment garder espoir ? Avec Cyril Dion",
-    publishedAt: "2025-11-19",
-    markdownFile: "cyril-dion.md",
-    heroImage: "/articles/podcast/cyril-dion.jpg",
-    mainFeelingSlug: "anxiety",
-    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/cyril-dion-anxiete-crise-environnementale-comment-garder-esp?",
-    transcription: transcriptionCyrilDion
-  },
-  {
-    type: "podcast",
-    slug: "podcast-noemie-lenoir",
-    title: "Alcool, dépression : la descente aux enfers. Avec Noémie Lenoir. ",
-    publishedAt: "2025-10-22",
-    markdownFile: "noemie-lenoir.md",
-    heroImage: "/articles/podcast/noemie-lenoir.jpg",
-    mainFeelingSlug: "drugs",
-    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/noemie-lenoir-alcool-depression-la-descente-aux-enfers?",
-    transcription: transcriptionNoemieLenoir
-  },
-  {
     type: "external",
     slug: "quand-le-sommeil-s-en-mele",
     url: "https://www.psycom.org/sinformer/la-sante-mentale/quand-le-sommeil-sen-mele/",
@@ -208,5 +186,27 @@ export const articles: ArticleMeta[] = [
     title: "Etudiant.gouv : Deviens bénévole avec Je Veux Aider",
     mainFeelingSlug: "solitude",
     heroImage: "/articles/deviens-benevole-avec-je-veux-aider/hero.jpg",
+  },
+  {
+    type: "podcast",
+    slug: "podcast-cyril-dion",
+    title: "Anxiété, crise environnementale : comment garder espoir ? Avec Cyril Dion",
+    publishedAt: "2025-11-19",
+    markdownFile: "cyril-dion.md",
+    heroImage: "/articles/podcast/cyril-dion.jpg",
+    mainFeelingSlug: "anxiety",
+    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/cyril-dion-anxiete-crise-environnementale-comment-garder-esp?",
+    transcription: transcriptionCyrilDion
+  },
+  {
+    type: "podcast",
+    slug: "podcast-noemie-lenoir",
+    title: "Alcool, dépression : la descente aux enfers. Avec Noémie Lenoir. ",
+    publishedAt: "2025-10-22",
+    markdownFile: "noemie-lenoir.md",
+    heroImage: "/articles/podcast/noemie-lenoir.jpg",
+    mainFeelingSlug: "drugs",
+    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/noemie-lenoir-alcool-depression-la-descente-aux-enfers?",
+    transcription: transcriptionNoemieLenoir
   },
 ];
