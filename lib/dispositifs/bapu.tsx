@@ -2,7 +2,8 @@ import { Dispositif } from "./types";
 
 export const DISPOSITIF_BAPU: Dispositif = {
   slug: "BAPU",
-  catchPhrase: "Un accompagnement psychologique dédié aux étudiants",
+  catchPhrase:
+    "Bureaux d'aide psychologique universitaires : un accompagnement psychologique dédié aux étudiants",
   menuPhrase: "accompagnement psy pour étudiants",
   metadata: {
     title: "BAPU",
@@ -101,10 +102,9 @@ export const DISPOSITIF_BAPU: Dispositif = {
           besoins.
         </p>
         <p>
-          Contrairement à Santé Psy Étudiant proposant un nombre déterminé de consultations, le
-          suivi en BAPU n'est pas limité à un nombre prédéfini de séances : sa durée est déterminée
-          en fonction de ta situation et de tes besoins. Les consultations sont prises en charge à
-          100 %, sans avance de frais, mais tu auras besoin de ta carte vitale.
+          Le suivi en BAPU n'est pas limité à un nombre prédéfini de séances : sa durée est
+          déterminée en fonction de ta situation et de tes besoins. Les consultations sont prises en
+          charge à 100 %, sans avance de frais, mais tu auras besoin de ta carte vitale.
         </p>
       </>
     ),
