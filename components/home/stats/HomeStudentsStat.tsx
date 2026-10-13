@@ -6,9 +6,7 @@ export default function HomeStudentsStat() {
   return (
     <FullBleedSection innerContainerClassName={styles.container}>
       <h2 className={styles.title}>
-        Près d’un étudiant sur trois rencontre
-        <br />
-        des difficultés psychologiques durant ses études.
+        40% des étudiants présentent des signes d'une santé psychologique dégradée
       </h2>
       <p className={styles.subtitle}>
         <b>Tu n'es pas seul</b> et de nombreux dispositifs existent pour t'accompagner
