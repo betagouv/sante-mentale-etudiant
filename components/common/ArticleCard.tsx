@@ -11,6 +11,12 @@ type Props = {
   titleAs?: "h3" | "h2" | "h4" | "h5" | "h6" | undefined;
 };
 
+const TYPE_LABELS: Record<ArticleMeta["type"], string> = {
+  internal: "Article",
+  external: "Article",
+  podcast: "Podcast",
+};
+
 export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
   const link =
     article.type === "internal" || article.type === "podcast"
@@ -29,7 +35,7 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       background
       badge={
         <Badge severity="new" noIcon>
-          Article
+          {TYPE_LABELS[article.type]}
         </Badge>
       }
       border
