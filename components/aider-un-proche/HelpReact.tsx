@@ -11,7 +11,7 @@ export default function HelpReact() {
         <LightPinkBadge>Étape 2</LightPinkBadge>
         <h2 id="react-title">Comment réagir ?</h2>
         <p className={styles.subtitle}>
-          <b>Voici 4 gestes simples, résumés par le mot L.I.E.N.</b> en 4 étapes, inspirée des
+          <b>Voici 4 gestes simples, résumés par le mot L.I.E.N.</b>, inspirés des
           approches de prévention par les pairs. <br /> Tu n'as pas besoin d'être expert, ta
           présence compte énormément.
         </p>

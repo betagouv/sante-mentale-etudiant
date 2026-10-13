@@ -67,7 +67,7 @@ export const FEELING_SUICIDE: Feeling = {
             </p>
             <p>
               L'enquête Bien-être et santé 2024 de l'OVE le montre : 16 % des étudiantes et
-              étudiants déclarent avoir pensé à se suicider au cours des douze derniers mois précédant l’enquête,, un
+              étudiants déclarent avoir pensé à se suicider au cours des douze derniers mois précédant l’enquête, un
               chiffre qui rappelle que la souffrance psychique peut toucher n'importe qui.
             </p>
             <p>
@@ -166,17 +166,9 @@ export const FEELING_SUICIDE: Feeling = {
           title: "L’action",
           desc: (
             <>
-              si tu ne te sens plus en sécurité, n'attends pas, appelle le <b>15</b>
+              si tu ne te sens plus en sécurité, n'attends pas, appelle le <b>15</b> {" "}
               (ou envoie un SMS au 114 - pour les malentendants).
               Si tu as des idées suicidaires ou que tu as besoin de parler, appelle le 3114.
-            </>
-          ),
-        },
-        {
-          title: "Commence petit",
-          desc: (
-            <>
-              Rends-toi aux urgences les plus proches. Tu mérites d'être aidé.
             </>
           ),
         },

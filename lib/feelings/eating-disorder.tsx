@@ -77,7 +77,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
             </p>
             <p>
               Depuis mai 2026, le repas à 1 € est ouvert à tous les étudiants, boursiers ou non. Un plat et deux accompagnements,
-              le midi, et le soir dans les restos U qui sont ouverts. En savoir plus sur
+              le midi, et le soir dans les restos U qui sont ouverts. En savoir plus sur{" "}
               <Link
                 href="https://www.etudiant.gouv.fr/fr"
                 target="_blank"
@@ -128,7 +128,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
             </p>
             <p>
               Ces restrictions installent aussi souvent un cercle qui s'entretient tout seul. On se prive, l'envie de
-              manger grandit (frustration), ce qui engendre de la frustration, et on finit par craquer. Puis vient la culpabilité :
+              manger grandit, ce qui engendre de la frustration, et on finit par craquer. Puis vient la culpabilité :
               « Je n'aurais pas dû. » « Je manque de contrôle. » Alors on se prive à nouveau.
             </p>
             <p>
@@ -212,7 +212,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
             <>
               choisis une personne avec laquelle tu te sens en sécurité.
               Tu peux aussi aller voir directement ton médecin : il vérifiera que ton corps va bien, et pourra t’orienter.
-              Un psychologue. Un Service de santé étudiante ou un professionnel spécialisé.
+              Cela peut également être un psychologue, un service de santé étudiante ou un professionnel spécialisé.
             </>
           ),
         },
