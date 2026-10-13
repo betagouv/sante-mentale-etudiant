@@ -1,5 +1,4 @@
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
-import { Table } from "@codegouvfr/react-dsfr/Table";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -73,19 +72,16 @@ export default function PersonalData() {
 
         <section>
           <h2>Pendant combien de temps conservons-nous vos données ?</h2>
-          <Table
-            headers={["Catégories de données", "Durée de conservation"]}
-            data={[
-              [
-                "Données relatives aux sollicitations par courriel",
-                "12 mois à compter de la réception du message",
-              ],
-              [
-                "Données relatives aux personnes qui souhaitent être tenues au courant des actualités de Santé Mentale Étudiant",
-                "à partir de la désinscription par l'utilisateur",
-              ],
-            ]}
-          />
+          <ul>
+            <li>
+              Données relatives aux sollicitations par courriel : 12 mois à compter de la réception
+              du message
+            </li>
+            <li>
+              Données relatives aux personnes qui souhaitent être tenues au courant des actualités
+              de Santé Mentale Étudiant : à partir de la désinscription par l'utilisateur
+            </li>
+          </ul>
         </section>
 
         <section>
@@ -146,85 +142,37 @@ export default function PersonalData() {
             ses sous-traitants de garanties adéquates et du respect de conditions strictes de
             confidentialité, d'usage et de protection des données.
           </p>
-          <Table
-            headers={["Partenaire", "Pays", "Traitement réalisé", "Garanties"]}
-            data={[
-              [
-                "Scalingo",
-                "France",
-                "Hébergement",
-                <Link
-                  href="https://scalingo.com/fr/contrat-gestion-traitements-donnees-personnelles"
-                  key="scalingo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Garanties
-                </Link>,
-              ],
-              [
-                "Brevo",
-                "France",
-                "infolettre",
-                <Link
-                  href="https://www.brevo.com/fr/legal/termsofuse/#accord-sur-le-traitement-des-donnees-a-caractere-personnel-dpa"
-                  key="crisp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Garanties
-                </Link>,
-              ],
-            ]}
-          />
+          <ul>
+            <li>
+              Scalingo - France - hébergement -{" "}
+              <Link
+                href="https://scalingo.com/fr/contrat-gestion-traitements-donnees-personnelles"
+                key="scalingo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Garanties
+              </Link>
+            </li>
+            <li>
+              Brevo - France - infolettre -{" "}
+              <Link
+                href="https://www.brevo.com/fr/legal/termsofuse/#accord-sur-le-traitement-des-donnees-a-caractere-personnel-dpa"
+                key="crisp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Garanties
+              </Link>
+            </li>
+          </ul>
         </section>
         <section>
           <h2>Témoins de connexion et traceurs</h2>
           <p>
-            Un témoin de connexion est un fichier déposé sur votre terminal lors de la visite d’un
-            site. Il a pour but de collecter des informations relatives à votre navigation et de
-            vous adresser des services adaptés à votre terminal (ordinateur, mobile ou tablette).
-            Santé Mentale Étudiant dépose des témoins de connexion, notamment pour la mesure
-            d’audience sur son service. Le dépôt s’effectue uniquement lorsque l’utilisateur a
-            consenti via le bandeau prévu à cet effet. L’utilisateur peut à tout moment revenir sur
-            son choix.
-          </p>
-          <p>Témoins de connexion déposés :</p>
-          <Table
-            headers={["Cookies", "Traitement réalisé", "Base juridique", "Garanties"]}
-            data={[
-              [
-                "Google Ads",
-                "Outil de gestion de balises permettant de suivre et mesurer les publicités. Il mesure l’efficacité des campagnes sponsorisées.",
-                "Consentement",
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.google.com/analytics/terms/dpa/dataprocessingamendment_20200816.html"
-                  key="google"
-                >
-                  Lien vers le DPA
-                </Link>,
-              ],
-              [
-                "Facebook Cookie Pixel",
-                "Outil de gestion de balises permettant de suivre et mesurer les publicités. Il identifie les visiteurs en provenance de publications Facebook.",
-                "Consentement",
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.facebook.com/legal/terms/dataprocessing"
-                  key="facebook"
-                >
-                  Lien vers le DPA
-                </Link>,
-              ],
-            ]}
-          />
-          <p>
-            Nous utilisons également l’outil de mesure d’audience Matomo, configuré en mode
-            “exempté” et ne nécessitant pas le recueil de votre consentement conformément aux
-            recommandations de la CNIL.
+            Nous utilisons l’outil de mesure d’audience Matomo, configuré en mode “exempté” et ne
+            nécessitant pas le recueil de votre consentement conformément aux recommandations de la
+            CNIL.
           </p>
           <p>
             Pour en savoir plus, vous pouvez consulter les fiches suivantes proposées par la CNIL :
