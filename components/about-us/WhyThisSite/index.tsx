@@ -52,13 +52,11 @@ export default function WhyThisSite() {
             d’écoute de nuit par des étudiants)...
           </div>
           <div className={styles.card}>
-            Les dispositifs sont là, mais ils sont peu lisibles. Ce que les étudiants nous ont
-            dit&nbsp;: vouloir passer de l'information à l'action. C'est ce constat qui a guidé la
-            construction de Santé Mentale Étudiant.
-            <br />
-            <br />
-            Les étudiants nous ont répondu (3) : ce qu’ils veulent, c’est passer de l’information à
+            Les dispositifs sont là, mais ils sont peu lisibles. Les étudiants nous ont répondu (3) : ce qu’ils veulent, c’est passer de l’information à
             l’action.
+            <br />
+            <br />
+            C'est ce constat qui a guidé la construction de Santé Mentale Étudiant.
             <br />
             <br />
             <i>

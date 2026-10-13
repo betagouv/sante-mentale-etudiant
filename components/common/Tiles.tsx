@@ -11,7 +11,7 @@ export const TILE_3114 = (
     orientation="horizontal"
     start={BADGE_SUICIDAL_THOUGHTS}
     title="Appelle le 3114"
-    titleAs="h3"
+    titleAs="h2"
     desc="Temps d'attente possible. Reste en ligne, un professionnel te répond dès que possible."
     noIcon
     linkProps={{
@@ -31,7 +31,7 @@ export const TILE_SAMU = (
       </Badge>
     }
     title="Appeler le 15 (Samu)"
-    titleAs="h3"
+    titleAs="h2"
     desc="Mise en relation rapide avec un soignant."
     noIcon
     linkProps={{
@@ -47,7 +47,7 @@ export const TILE_114 = (
     orientation="horizontal"
     start={BADGE_DEAFS}
     title="Appelle le 114"
-    titleAs="h3"
+    titleAs="h2"
     desc="Disponible également par SMS."
     noIcon
     linkProps={{

@@ -85,8 +85,8 @@ function Objectives() {
         <li>Agir, grâce à des outils concrets à mobiliser au quotidien.</li>
       </ul>
       <p>
-        Le site s'adresse aussi bien aux étudiants directement concernés ainsi qu'à ceux qui
-        souhaiteraient aider un proche.
+        Le site s'adresse aux étudiants directement concernés ainsi qu'à ceux
+        qui souhaiteraient aider un proche.
       </p>
     </div>
   );
