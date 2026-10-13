@@ -12,7 +12,7 @@ export const DISPOSITIF_NIGHTLINE: Dispositif = {
   },
   videoKey: "3040",
   button: {
-    text: "Contacter Nighline",
+    text: "Contacter Nightline",
   },
   audience: {
     title: "À qui s’adresse Nightline ?",

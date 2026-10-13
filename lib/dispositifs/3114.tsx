@@ -81,7 +81,7 @@ export const DISPOSITIF_3114: Dispositif = {
       { title: "Gratuit", desc: <></> },
       { title: "24h/24 7j/7", desc: <>Y compris les week-ends et jours fériés</> },
       { title: "Confidentiel", desc: <>Tu peux parler librement sans donner ton identité</> },
-      { title: "Des professionnels", desc: <>Des professionnels</> },
+      { title: "Des professionnels", desc: <>Formés à la prévention du suicide</> },
       { title: "Partout en France", desc: <>Accessible depuis tout le territoire</> },
     ],
   },
