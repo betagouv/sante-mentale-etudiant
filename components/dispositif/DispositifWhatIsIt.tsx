@@ -9,7 +9,7 @@ type Props = {
   dispositif: Dispositif;
 };
 
-const pictoArray = ["feeling-management", "eating-disorder", "solitude", "anxiety", "substances"];
+const pictoArray = ["feeling-management", "eating-disorder", "solitude", "anxiety", "drugs"];
 
 export default function DispositifWhatIsIt({ dispositif }: Props) {
   return (
