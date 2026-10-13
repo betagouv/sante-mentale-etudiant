@@ -15,7 +15,7 @@ export const VIDEO_KEYS = [
   "BAPU",
   "SSE",
   "SPE",
-  "Nightline",
+  "nightline",
   "anxiety",
   "drugs",
   "eating-disorder",
@@ -70,12 +70,12 @@ export const testimonials: VideoTestimonial[] = [
     transcription: dispositifsTranscriptions["SPE"],
   },
   {
-    key: "Nightline",
+    key: "nightline",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/dHk38kRQcezaA9ZZQRsJvX",
-    previewUrl: "/videos/preview/Nightline.mp4",
-    posterUrl: "/images/vignettes/Nightline.jpg",
+    previewUrl: "/videos/preview/nightline.mp4",
+    posterUrl: "/images/vignettes/nightline.jpg",
     citation: "Toute raison est légitime pour nous appeler",
-    transcription: dispositifsTranscriptions["Nightline"],
+    transcription: dispositifsTranscriptions["nightline"],
   },
 ];
 

@@ -9,7 +9,7 @@ export const DISPOSITIF_SPE: Dispositif = {
     description:
       "Étudiant en souffrance psychique ? Santé Psy Étudiant propose jusqu'à 12 séances gratuites chez un psychologue partenaire. Découvrez comment en bénéficier.",
   },
-  videoKey: "3040",
+  videoKey: "SPE",
   button: {
     text: "Trouver un psychologue",
   },
