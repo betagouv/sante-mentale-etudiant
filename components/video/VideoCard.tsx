@@ -6,9 +6,10 @@ import { VideoTestimonial } from "./types";
 export interface VideoCardProps {
   testimonial: VideoTestimonial;
   onOpen: (testimonial: VideoTestimonial) => void;
+  showCitation?: boolean;
 }
 
-export function VideoCard({ testimonial, onOpen }: VideoCardProps) {
+export function VideoCard({ testimonial, showCitation = true, onOpen }: VideoCardProps) {
   const [isPreviewActive, setIsPreviewActive] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -60,7 +61,7 @@ export function VideoCard({ testimonial, onOpen }: VideoCardProps) {
         <span className={`${styles.playIcon} fr-icon-play-fill fr-icon--lg`} aria-hidden="true" />
       </span>
 
-      {testimonial.citation && (
+      {testimonial.citation && showCitation && (
         <span className={styles.citation}>«&nbsp;{testimonial.citation}&nbsp;»</span>
       )}
     </button>

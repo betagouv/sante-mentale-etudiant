@@ -28,7 +28,7 @@ export default function DispositifWhatIsIt({ dispositif }: Props) {
           </div>
         </div>
         <div className={styles.video}>
-          <DispositifVideo video={getVideoByKey(dispositif.videoKey)} />
+          <DispositifVideo video={getVideoByKey(dispositif.videoKey)} showCitation={false} />
         </div>
       </div>
       <div className={styles.cards}>
