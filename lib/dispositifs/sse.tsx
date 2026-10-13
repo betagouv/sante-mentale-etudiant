@@ -107,6 +107,10 @@ export const DISPOSITIF_SSE: Dispositif = {
           Les équipes peuvent t'accompagner sur de nombreux sujets et t'orienter vers d'autres
           professionnels ou dispositifs lorsque c'est nécessaire.
         </p>
+        <p>
+          Les SSE n’ont pas tous les mêmes conditions d’éligibilité. Vérifie bien si tu es éligible
+          avant de te déplacer.
+        </p>
       </>
     ),
     items: [
