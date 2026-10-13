@@ -20,8 +20,9 @@ export const DISPOSITIF_SPE: Dispositif = {
         title: "Quand quelque chose devient difficile à gérer",
         desc: (
           <>
-            Stress, anxiété, épuisement, solitude, problèmes familiaux ou relationnels, difficultés
-            dans tes études… Tu peux consulter dès que tu ressens le besoin de parler.
+            Stress, anxiété, épuisement, solitude, tensions familiales, difficultés dans tes études…
+            Si ça dure et que tu as envie d’être accompagné, un psychologue peut t’aider à y voir
+            plus clair, séance après séance.
           </>
         ),
       },
@@ -101,6 +102,10 @@ export const DISPOSITIF_SPE: Dispositif = {
         <p>
           Tu peux choisir directement ton psychologue parmi les professionnels partenaires du
           dispositif et prendre rendez-vous sans passer au préalable par un médecin.
+        </p>
+        <p>
+          Santé Psy Étudiant n’est pas un service d’urgence : obtenir un rendez-vous peut prendre
+          quelques jours.
         </p>
       </>
     ),
