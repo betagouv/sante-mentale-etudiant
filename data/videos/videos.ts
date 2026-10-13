@@ -1,7 +1,28 @@
 import { VideoTestimonial } from "@/components/video/types";
 import { dispositifsTranscriptions } from "./transcriptions";
+import { transcriptionAnxiety } from "./transcriptions/feelings/anxiety";
+import { transcriptionDrugs } from "./transcriptions/feelings/drugs";
+import { transcriptionEatingDisorder } from "./transcriptions/feelings/eating-disorder";
+import { transcriptionFatigue } from "./transcriptions/feelings/fatigue";
+import { transcriptionFeelingManagement } from "./transcriptions/feelings/feeling-management";
+import { transcriptionPainfulEvent } from "./transcriptions/feelings/painful-event";
+import { transcriptionSolitude } from "./transcriptions/feelings/solitude";
+import { transcriptionSuicidalThoughts } from "./transcriptions/feelings/suicidal-thought";
 
-export const VIDEO_KEYS = ["3040", "3114", "BAPU", "SSE"] as const;
+export const VIDEO_KEYS = [
+  "3040",
+  "3114",
+  "BAPU",
+  "SSE",
+  "anxiety",
+  "drugs",
+  "eating-disorder",
+  "fatigue",
+  "feeling-management",
+  "painful-event",
+  "solitude",
+  "suicidal-thoughts",
+] as const;
 
 export type VideoKey = (typeof VIDEO_KEYS)[number];
 
@@ -40,5 +61,101 @@ export const testimonials: VideoTestimonial[] = [
     posterUrl: "/images/vignettes/SSE.jpg",
     citation: "C’est un lieu de repère et de soutien",
     transcription: dispositifsTranscriptions["SSE"],
+  },
+  {
+    key: "anxiety",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/69Gv4zEK4X8nZLBqwJkvzY",
+    previewUrl: "/videos/preview/feelings/anxiety.mp4",
+    posterUrl: "/images/vignettes/feelings/anxiety.jpg",
+    duration: 6,
+    guest: {
+      name: "Jérôme Lacinga",
+      role: "Psychologue clinicien",
+    },
+    transcription: transcriptionAnxiety,
+  },
+  {
+    key: "drugs",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/8KBMfic6rSAGDwZ95qeoQr",
+    previewUrl: "/videos/preview/feelings/drugs.mp4",
+    posterUrl: "/images/vignettes/feelings/drugs.jpg",
+    duration: 6,
+    guest: {
+      name: "Jérôme Lacinga",
+      role: "Psychologue clinicien",
+    },
+    transcription: transcriptionDrugs,
+  },
+  {
+    key: "eating-disorder",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/dBh8sEXhSAAUiBMRRdUK5k",
+    previewUrl: "/videos/preview/feelings/eating-disorder.mp4",
+    posterUrl: "/images/vignettes/feelings/eating-disorder.jpg",
+    duration: 5,
+    guest: {
+      name: "Jérôme Lacinga",
+      role: "Psychologue clinicien",
+    },
+    transcription: transcriptionEatingDisorder,
+  },
+  {
+    key: "fatigue",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/62xj5E1dsFjSurrmLAuRkG",
+    previewUrl: "/videos/preview/feelings/fatigue.mp4",
+    posterUrl: "/images/vignettes/feelings/fatigue.jpg",
+    duration: 5,
+    guest: {
+      name: "Jérôme Lacinga",
+      role: "Psychologue clinicien",
+    },
+    transcription: transcriptionFatigue,
+  },
+  {
+    key: "feeling-management",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/gFMQYqditxorxyooNfUNH5",
+    previewUrl: "/videos/preview/feelings/feeling-management.mp4",
+    posterUrl: "/images/vignettes/feelings/feeling-management.jpg",
+    duration: 7,
+    guest: {
+      name: "Jérôme Lacinga",
+      role: "Psychologue clinicien",
+    },
+    transcription: transcriptionFeelingManagement,
+  },
+  {
+    key: "painful-event",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/7FwPbevV3sLY486aB4ZLLY",
+    previewUrl: "/videos/preview/feelings/painful-event.mp4",
+    posterUrl: "/images/vignettes/feelings/painful-event.jpg",
+    duration: 8,
+    guest: {
+      name: "Jérôme Lacinga",
+      role: "Psychologue clinicien",
+    },
+    transcription: transcriptionPainfulEvent,
+  },
+  {
+    key: "solitude",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/mb2XUWbAqrDcxWMbxBwuEN",
+    previewUrl: "/videos/preview/feelings/solitude.mp4",
+    posterUrl: "/images/vignettes/feelings/solitude.jpg",
+    duration: 5,
+    guest: {
+      name: "Jérôme Lacinga",
+      role: "Psychologue clinicien",
+    },
+    transcription: transcriptionSolitude,
+  },
+  {
+    key: "suicidal-thoughts",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/fswSe5qjZtxwP1gufYc8oC",
+    previewUrl: "/videos/preview/feelings/suicidal-thoughts.mp4",
+    posterUrl: "/images/vignettes/feelings/suicidal-thoughts.jpg",
+    duration: 5,
+    guest: {
+      name: "Jérôme Lacinga",
+      role: "Psychologue clinicien",
+    },
+    transcription: transcriptionSuicidalThoughts,
   },
 ];

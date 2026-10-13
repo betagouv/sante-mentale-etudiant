@@ -1,4 +1,3 @@
-import { transcriptionPainfulEvent } from "@/data/videos/transcriptions/feelings/painful-event";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
 
@@ -31,18 +30,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
       </>
     ),
   },
-  video: {
-    key: "painful-event",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/7FwPbevV3sLY486aB4ZLLY",
-    previewUrl: "/videos/preview/feelings/painful-event.mp4",
-    posterUrl: "/images/vignettes/feelings/painful-event.jpg",
-    duration: 8,
-    guest: {
-      name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
-    },
-    transcription: transcriptionPainfulEvent,
-  },
+  videoKey: "painful-event",
   recap: [
     "Chacun réagit différemment à un événement difficile.",
     "Il n'existe pas de calendrier ni de 'bonne façon' de vivre un deuil, une rupture ou un traumatisme.",

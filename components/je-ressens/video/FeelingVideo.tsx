@@ -7,6 +7,7 @@ import NeedHelp from "./NeedHelp";
 import { IllustrationFeelingVideo } from "@/components/illustrations";
 import { useVideoTestimonialModal } from "@/components/video/VideoTestimonialModalProvider";
 import { VideoCard } from "@/components/video/VideoCard";
+import { getVideoByKey } from "@/data/videos/videos";
 
 type Props = {
   feeling: FeelingType;
@@ -14,6 +15,8 @@ type Props = {
 
 export default function FeelingVideo({ feeling }: Props) {
   const { openVideo } = useVideoTestimonialModal();
+
+  const video = getVideoByKey(feeling.videoKey);
 
   return (
     <FullBleedSection
@@ -28,18 +31,18 @@ export default function FeelingVideo({ feeling }: Props) {
           {feeling.catch.sentence}
           <div className={styles.duration}>
             <span className="fr-icon--md fr-icon-time-line" />
-            <span>{feeling.video.duration} minutes</span>
+            <span>{video.duration} minutes</span>
           </div>
           <div className={styles.guest}>
             <div className="fr-icon--md fr-icon-user-line" />
             <div>
-              Avec <b>{feeling.video.guest?.name}</b>
+              Avec <b>{video.guest?.name}</b>
               <br />
-              {feeling.video.guest?.role}
+              {video.guest?.role}
             </div>
           </div>
         </div>
-        <VideoCard testimonial={feeling.video} onOpen={openVideo} />
+        <VideoCard testimonial={video} onOpen={openVideo} />
         <NeedHelp />
       </div>
     </FullBleedSection>

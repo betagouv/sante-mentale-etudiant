@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
-import { transcriptionFatigue } from "@/data/videos/transcriptions/feelings/fatigue";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -20,23 +19,13 @@ export const FEELING_FATIGUE: Feeling = {
           Tout te demande un effort, même répondre à un message.
         </p>
         <p>
-          La fatigue qui dure n'est pas un manque de volonté. C'est un signal, et il y a des choses à faire.
+          La fatigue qui dure n'est pas un manque de volonté. C'est un signal, et il y a des choses
+          à faire.
         </p>
       </>
     ),
   },
-  video: {
-    key: "fatigue",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/62xj5E1dsFjSurrmLAuRkG",
-    previewUrl: "/videos/preview/feelings/fatigue.mp4",
-    posterUrl: "/images/vignettes/feelings/fatigue.jpg",
-    duration: 5,
-    guest: {
-      name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
-    },
-    transcription: transcriptionFatigue,
-  },
+  videoKey: "fatigue",
   recap: [
     "La fatigue ne se règle pas toujours en dormant plus.",
     "Un stress qui dure use le corps autant que la tête.",
@@ -99,8 +88,8 @@ export const FEELING_FATIGUE: Feeling = {
             </p>
             <p>
               Chez les étudiants qui consultent un psychologue via Santé Psy Étudiant, l'épuisement
-              mental et le sentiment d'être à bout constituent le deuxième motif de consultation
-              (18 % des réponses), et les troubles du sommeil sont un motif non négligeable de
+              mental et le sentiment d'être à bout constituent le deuxième motif de consultation (18
+              % des réponses), et les troubles du sommeil sont un motif non négligeable de
               consultation (8 % - enquête auprès des bénéficiaires de Santé Psy Étudiant, juin 2026,
               1 416 répondants).
             </p>
@@ -145,8 +134,8 @@ export const FEELING_FATIGUE: Feeling = {
               Quand la fatigue s'accompagne d'une perte d'envie, d'un moral bas, d'un sentiment de
               vide qui dure plus de deux semaines, ce n'est plus seulement de la fatigue. Un tiers
               des étudiants présentent les signes d’une détresse psychologique et la moitié a vécu
-              une période d’au moins deux semaines consécutives pendant laquelle ils se sont
-              sentis tristes, déprimés, sans espoir, au cours des 12 derniers mois (
+              une période d’au moins deux semaines consécutives pendant laquelle ils se sont sentis
+              tristes, déprimés, sans espoir, au cours des 12 derniers mois (
               <Link
                 href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
                 target="_blank"
@@ -177,12 +166,15 @@ export const FEELING_FATIGUE: Feeling = {
         answer: (
           <>
             <p>
-              L'épuisement fonctionne en boucle. Tu es fatigué, donc tu es moins efficace.
-              Tu es moins efficace, donc tu travailles plus tard. Tu travailles plus tard, donc tu dors moins.
-              Et la fatigue augmente.
-              La fatigue peut aussi toucher ce qui te permettrait d'aller mieux : tu annules les sorties, tu vois moins de monde, tu bouges moins. L'isolement peut s'installer.
+              L'épuisement fonctionne en boucle. Tu es fatigué, donc tu es moins efficace. Tu es
+              moins efficace, donc tu travailles plus tard. Tu travailles plus tard, donc tu dors
+              moins. Et la fatigue augmente. La fatigue peut aussi toucher ce qui te permettrait
+              d'aller mieux : tu annules les sorties, tu vois moins de monde, tu bouges moins.
+              L'isolement peut s'installer.
             </p>
-            <p>→ Voir la page <FeelingLink slug="solitude" /></p>
+            <p>
+              → Voir la page <FeelingLink slug="solitude" />
+            </p>
           </>
         ),
       },
@@ -194,7 +186,10 @@ export const FEELING_FATIGUE: Feeling = {
             <ul>
               <li>Je peux relire le même paragraphe sans le comprendre.</li>
               <li>Je peux mettre deux heures à faire ce qui m'en prenait une.</li>
-              <li>Je peux ne pas réfléchir comme d'habitude, perdre en capacité de raisonnement logique.</li>
+              <li>
+                Je peux ne pas réfléchir comme d'habitude, perdre en capacité de raisonnement
+                logique.
+              </li>
             </ul>
 
             <h5>Physique</h5>
@@ -212,8 +207,8 @@ export const FEELING_FATIGUE: Feeling = {
             <h5>Comportemental</h5>
             <ul>
               <li>
-                Je peux repousser des tâches simples pendant des jours : un mail, un rendez-vous, une
-                inscription.
+                Je peux repousser des tâches simples pendant des jours : un mail, un rendez-vous,
+                une inscription.
               </li>
               <li>Je peux carburer au café la semaine, je m'écroule le week-end.</li>
               <li>Je peux avoir moins envie de voir les gens.</li>
@@ -234,12 +229,12 @@ export const FEELING_FATIGUE: Feeling = {
             <>
               <p>Estimer quel dormeur tu es, quels sont tes besoins.</p>
               <p>
-                Le recueil, via un agenda du sommeil, permet de savoir comment on dort, d'avoir un regard
-                objectif sur son propre sommeil. C'est une pratique dont l'usage en évaluation comportementale
-                du sommeil est ancien et bien établi (Bootzin & Engle-Friedman, 1981). Attention à ne pas vouloir trop
-                bien faire et le remplir la nuit, l'idée est de le remplir le matin au réveil,
-                même si cela est approximatif. Cela peut aussi permettre de préparer une consultation à
-                laquelle on amène l'agenda.{" "}
+                Le recueil, via un agenda du sommeil, permet de savoir comment on dort, d'avoir un
+                regard objectif sur son propre sommeil. C'est une pratique dont l'usage en
+                évaluation comportementale du sommeil est ancien et bien établi (Bootzin &
+                Engle-Friedman, 1981). Attention à ne pas vouloir trop bien faire et le remplir la
+                nuit, l'idée est de le remplir le matin au réveil, même si cela est approximatif.
+                Cela peut aussi permettre de préparer une consultation à laquelle on amène l'agenda.{" "}
                 <Link
                   href="https://www.reseau-morphee.fr/wp-content/uploads/2009/01/agenda_2p.pdf"
                   target="_blank"
@@ -249,11 +244,12 @@ export const FEELING_FATIGUE: Feeling = {
                 </Link>
               </p>
               <p>
-                La qualité du sommeil ne tient pas nécessairement à la quantité : ne pas chercher à récupérer absolument,
-                essayer de respecter son rythme, ne pas traîner au lit, ne pas rester trop longtemps dans le lit si
-                on ne dort pas. C'est un principe qui trouve son origine dans la thérapie de contrôle du stimulus,
-                l'une des interventions comportementales les plus anciennes et les mieux validées contre les difficultés
-                de sommeil (Bootzin, 1972).
+                La qualité du sommeil ne tient pas nécessairement à la quantité : ne pas chercher à
+                récupérer absolument, essayer de respecter son rythme, ne pas traîner au lit, ne pas
+                rester trop longtemps dans le lit si on ne dort pas. C'est un principe qui trouve
+                son origine dans la thérapie de contrôle du stimulus, l'une des interventions
+                comportementales les plus anciennes et les mieux validées contre les difficultés de
+                sommeil (Bootzin, 1972).
               </p>
             </>
           ),
@@ -390,7 +386,9 @@ export const FEELING_FATIGUE: Feeling = {
           pas à rester seul avec ça. Un tiers des étudiant·es présentent des signes de détresse
           psychologique, et parmi eux, la moitié n'a consulté aucun professionnel (OVE 2024).
         </p>
-        <p>Demander de l'aide, c'est prendre soin de soi, c'est permis, et c'est même une bonne idée.</p>
+        <p>
+          Demander de l'aide, c'est prendre soin de soi, c'est permis, et c'est même une bonne idée.
+        </p>
         <p>
           <b>Les signaux qui doivent t'amener à consulter</b> (critères issus de l'Assurance
           Maladie, "Asthénie : que faire et quand consulter ?") :
@@ -404,8 +402,8 @@ export const FEELING_FATIGUE: Feeling = {
           <li>Tu es triste, découragé ou sans envie de rien depuis plus de deux semaines.</li>
           <li>Elle t'empêche de suivre tes cours, de travailler, de voir des gens.</li>
           <li>
-            Tu as des idées noires. → Dans ce cas, ne reste pas seul : voir la
-            page <FeelingLink slug="suicidal-thought" />, et le 3114 est joignable 24h/24, gratuitement.
+            Tu as des idées noires. → Dans ce cas, ne reste pas seul : voir la page{" "}
+            <FeelingLink slug="suicidal-thought" />, et le 3114 est joignable 24h/24, gratuitement.
           </li>
         </ul>
         <p>L'épuisement est un signal. L'écouter, c'est déjà agir.</p>
