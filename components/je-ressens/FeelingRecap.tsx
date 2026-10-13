@@ -1,3 +1,4 @@
+import { Disclaimer } from "../typography/Disclaimer";
 import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./FeelingRecap.module.scss";
 import { Feeling as FeelingType } from "@/lib/feelings/types";
@@ -12,10 +13,10 @@ export default function FeelingRecap({ feeling }: Props) {
   return (
     <FullBleedSection innerContainerClassName={styles.container} bgColor="grey">
       <h2>À retenir de cette vidéo</h2>
-      <p className={styles.disclaimer}>
+      <Disclaimer>
         Cette page et cette vidéo donnent des repères et conseils généraux et ne remplacent pas un
         échange individuel avec un professionnel qui tiendra compte de ta situation.
-      </p>
+      </Disclaimer>
       <div className={styles.list}>
         {feeling.recap.map((r, index) => (
           <div key={`recap__${index}`} className={styles.recap}>
