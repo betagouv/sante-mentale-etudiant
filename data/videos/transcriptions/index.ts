@@ -10,12 +10,16 @@ import { transcriptionFeelingManagement } from "./feelings/feeling-management";
 import { transcriptionPainfulEvent } from "./feelings/painful-event";
 import { transcriptionSolitude } from "./feelings/solitude";
 import { transcriptionSuicidalThoughts } from "./feelings/suicidal-thought";
+import { transcriptionSPE } from "./dispositifs/SPE";
+import { transcriptionNightline } from "./dispositifs/nightline";
 
 export const dispositifsTranscriptions: Record<string, string> = {
   "3040": transcription3040,
   "3114": transcription3114,
   BAPU: transcriptionBAPU,
   SSE: transcriptionSSE,
+  SPE: transcriptionSPE,
+  nightline: transcriptionNightline,
 };
 
 export const feelingTranscriptions = {

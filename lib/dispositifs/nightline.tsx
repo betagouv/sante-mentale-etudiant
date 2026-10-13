@@ -10,7 +10,7 @@ export const DISPOSITIF_NIGHTLINE: Dispositif = {
     description:
       "Nightline : une ligne d'écoute nocturne gérée par des étudiants bénévoles. Anonyme, confidentielle et sans jugement, pour parler quand ça ne va pas.",
   },
-  videoKey: "3040",
+  videoKey: "nightline",
   button: {
     text: "Contacter Nightline",
   },
