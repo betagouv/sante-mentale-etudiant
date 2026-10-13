@@ -14,6 +14,8 @@ export const VIDEO_KEYS = [
   "3114",
   "BAPU",
   "SSE",
+  "SPE",
+  "Nightline",
   "anxiety",
   "drugs",
   "eating-disorder",
@@ -25,9 +27,6 @@ export const VIDEO_KEYS = [
 ] as const;
 
 export type VideoKey = (typeof VIDEO_KEYS)[number];
-
-export const getVideoByKey = (key: VideoKey): VideoTestimonial =>
-  testimonials.find((video) => video.key === key) ?? testimonials[0];
 
 export const testimonials: VideoTestimonial[] = [
   {
@@ -62,6 +61,25 @@ export const testimonials: VideoTestimonial[] = [
     citation: "C’est un lieu de repère et de soutien",
     transcription: dispositifsTranscriptions["SSE"],
   },
+  {
+    key: "SPE",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/uWG4X3ejBaQaEkc8wvu1Z3",
+    previewUrl: "/videos/preview/SPE.mp4",
+    posterUrl: "/images/vignettes/SPE.jpg",
+    citation: "Vos problèmes ne sont pas moins importants",
+    transcription: dispositifsTranscriptions["SPE"],
+  },
+  {
+    key: "Nightline",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/dHk38kRQcezaA9ZZQRsJvX",
+    previewUrl: "/videos/preview/Nightline.mp4",
+    posterUrl: "/images/vignettes/Nightline.jpg",
+    citation: "Toute raison est légitime pour nous appeler",
+    transcription: dispositifsTranscriptions["Nightline"],
+  },
+];
+
+export const feelings: VideoTestimonial[] = [
   {
     key: "anxiety",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/69Gv4zEK4X8nZLBqwJkvzY",
@@ -159,3 +177,8 @@ export const testimonials: VideoTestimonial[] = [
     transcription: transcriptionSuicidalThoughts,
   },
 ];
+
+const allVideos: VideoTestimonial[] = [...testimonials, ...feelings];
+
+export const getVideoByKey = (key: VideoKey): VideoTestimonial =>
+  allVideos.find((video) => video.key === key) ?? testimonials[0];
