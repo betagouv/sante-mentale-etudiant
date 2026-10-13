@@ -19,34 +19,41 @@ export default function PersonalData() {
           <h2>Qui sommes-nous ?</h2>
           <p>
             Santé Mentale Étudiant est un service numérique porté par le ministère chargé de
-            l'Enseignement supérieur et de la Recherche (MESR). Il vise à informer les étudiants sur
-            les enjeux de santé mentale et à les aider à s'orienter vers les dispositifs
-            d'accompagnement psychologique existants.
+            l'Enseignement supérieur et de la Recherche et de l’Espace (MESRE). Il vise à informer
+            les étudiants sur les enjeux de santé mentale et à les aider à s'orienter vers les
+            dispositifs d’écoute ou d'accompagnement psychologique existants.
           </p>
         </section>
 
         <section>
           <h2>Pourquoi traitons-nous des données à caractère personnel ?</h2>
-          <p>Santé Mentale Étudiant traite de données à caractère personnel, dans le cadre de :</p>
-          <ul>
-            <li>
-              La mesure d'audience anonyme, afin d'améliorer la qualité et la pertinence du Site ;
-            </li>
-            <li>La réponse aux demandes de contact, le cas échéant.</li>
-          </ul>
+          <p>
+            Santé Mentale Étudiante traite des données à caractère personnel dans le cadre de la
+            réponse aux demandes de contact et de l'envoi d'actualités aux personnes ayant renseigné
+            leur adresse courriel.
+          </p>
           <p>
             Le Site ne nécessite aucune création de compte et ne collecte aucune donnée
             d'identification pour la consultation des contenus ou l'utilisation de l'outil
-            d'orientation. Les réponses apportées à l'outil d'orientation ne sont ni enregistrées ni
-            transmises à un tiers.
+            d'orientation.
           </p>
         </section>
 
         <section>
           <h2>Quelles sont les données à caractère personnel que nous traitons ?</h2>
           <p>
-            Données relatives au formulaire de contact (le cas échéant) : nom, prénom, adresse
-            courriel, champs libres.
+            Inscription aux actualités : adresse courriel. Cette adresse constitue une donnée à
+            caractère personnel, y compris lorsqu'elle ne contient pas explicitement de nom ou de
+            prénom.
+          </p>
+          <p>
+            Sollicitations par courriel : adresse courriel de l'expéditeur, ainsi que les
+            informations que vous choisissez de nous communiquer dans votre message (par exemple
+            votre nom ou votre prénom).
+          </p>
+          <p>
+            Nous vous invitons à ne pas communiquer de données de santé ou d'informations sensibles
+            dans vos messages.
           </p>
         </section>
 
@@ -70,8 +77,12 @@ export default function PersonalData() {
             headers={["Catégories de données", "Durée de conservation"]}
             data={[
               [
-                "Données relatives au formulaire de contact",
-                "6 mois à compter de la réception du message",
+                "Données relatives aux sollicitations par courriel",
+                "12 mois à compter de la réception du message",
+              ],
+              [
+                "Données relatives aux personnes qui souhaitent être tenues au courant des actualités de Santé Mentale Étudiant",
+                "à partir de la désinscription par l'utilisateur",
               ],
             ]}
           />
@@ -87,42 +98,14 @@ export default function PersonalData() {
             <li>Droit à la limitation du traitement de vos données.</li>
           </ul>
           <p>
-            Par voie électronique : envoyez-nous un courriel à{" "}
-            <Link
-              href="mailto:support-santepsyetudiant@beta.gouv"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              support-santepsyetudiant@beta.gouv
-            </Link>{" "}
-            ou contactez-nous sur{" "}
-            <Link
-              href="https://santepsy.etudiant.gouv.fr/contact/formulaire"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              santepsy.etudiant.gouv.fr/contact/formulaire
-            </Link>
-          </p>
-          <p>
             Vous pouvez prendre attache avec le délégué à la protection des données à l’adresse
-            suivante :{" "}
+            suivante :
             <Link href="mailto:dpd@education.gouv.fr" target="_blank" rel="noopener noreferrer">
               dpd@education.gouv.fr
-            </Link>
+            </Link>{" "}
           </p>
           <p>
-            Via le formulaire de saisine en ligne :{" "}
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.enseignementsup-recherche.gouv.fr/fr/nous-contacter-49937#dpd"
-            >
-              https://www.enseignementsup-recherche.gouv.fr/fr/nous-contacter-49937#dpd
-            </Link>
-          </p>
-          <p>
-            Ou par voie postale :
+            Ou écrire par voie postale à :
             <br />
             Ministère de l’Enseignement supérieur et de la Recherche
             <br />
@@ -136,15 +119,7 @@ export default function PersonalData() {
             En raison de l’obligation de sécurité et de confidentialité dans le traitement des
             données à caractère personnel qui incombe au responsable de traitement, votre demande ne
             sera traitée que si vous apportez la preuve de votre identité. Pour vous aider dans
-            votre démarche, vous trouverez{" "}
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces"
-            >
-              ici
-            </Link>{" "}
-            un modèle de courrier élaboré par la CNIL.
+            votre démarche, vous trouverez ici un modèle de courrier élaboré par la CNIL.
           </p>
           <p>
             Le responsable de traitement s’engage à répondre dans un délai raisonnable qui ne
@@ -156,8 +131,10 @@ export default function PersonalData() {
           <h2>Qui va avoir accès à vos données ?</h2>
           <p>
             Le responsable de traitement s'engage à ce que les données à caractère personnel soient
-            traitées par les seules personnes autorisées, à savoir les membres habilités de l'équipe
-            de Santé Mentale Étudiant.
+            traitées par les seules personnes autorisées, à savoir les membres de l'équipe Santé
+            Mentale Étudiant et les agents de la DGESIP pour les messages reçus, et les membres de
+            l'équipe Santé Mentale Étudiant pour les adresses courriel des personnes inscrites aux
+            actualités.
           </p>
         </section>
 
@@ -175,42 +152,32 @@ export default function PersonalData() {
               [
                 "Scalingo",
                 "France",
-                "Hébergeur",
+                "Hébergement",
                 <Link
                   href="https://scalingo.com/fr/contrat-gestion-traitements-donnees-personnelles"
                   key="scalingo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Lien
+                  Garanties
                 </Link>,
               ],
               [
-                "Crisp",
+                "Brevo",
                 "France",
-                "Outil de support et de chat",
+                "infolettre",
                 <Link
-                  href="https://help.crisp.chat/en/article/how-to-sign-my-gdpr-data-processing-agreement-dpa-1wfmngo"
+                  href="https://www.brevo.com/fr/legal/termsofuse/#accord-sur-le-traitement-des-donnees-a-caractere-personnel-dpa"
                   key="crisp"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Lien
+                  Garanties
                 </Link>,
               ],
             ]}
           />
         </section>
-
-        <section>
-          <h2>Sécurité et confidentialité des données</h2>
-          <p>
-            Le responsable de traitement prend les mesures techniques et opérationnelles nécessaires
-            afin d'assurer la sécurité et la confidentialité des données, telles que le chiffrement
-            et le cloisonnement des accès. Des audits et analyses de code sont également effectués.
-          </p>
-        </section>
-
         <section>
           <h2>Témoins de connexion et traceurs</h2>
           <p>
@@ -260,8 +227,7 @@ export default function PersonalData() {
             recommandations de la CNIL.
           </p>
           <p>
-            Pour aller plus loin, vous pouvez consulter les fiches proposées par la Commission
-            Nationale de l’Informatique et des Libertés (CNIL) :
+            Pour en savoir plus, vous pouvez consulter les fiches suivantes proposées par la CNIL :
           </p>
           <ul>
             <li>
