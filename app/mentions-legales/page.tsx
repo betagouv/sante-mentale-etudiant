@@ -14,6 +14,14 @@ export default function LegalNotices() {
       <section className="static-page">
         <h1>Mentions légales</h1>
 
+        <p>
+          Santé Mentale Étudiant est destiné au grand public et diffuse des informations dans le
+          domaine de la santé mentale. Aucune donnée sensible ou donnée de santé n’est collectée.
+          Les contenus diffusés ont vocation à sensibiliser les personnes sur les enjeux de la santé
+          mentale ou les rediriger vers les organismes compétents. Santé Mentale Étudiant ne se
+          substitue en aucun cas aux professionnels de santé.
+        </p>
+
         <section>
           <h2>Éditeur du Site</h2>
           <p>
