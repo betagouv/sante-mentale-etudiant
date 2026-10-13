@@ -12,7 +12,7 @@ export const TILE_3114 = (
     start={BADGE_SUICIDAL_THOUGHTS}
     title="Appelle le 3114"
     titleAs="h2"
-    desc="Temps d'attente possible. Reste en ligne, un professionnel te répond dès que possible."
+    desc="Temps d'attente possible. Reste en ligne, un professionnel te répondra dès que possible. En cas d'urgence ou d'impossibilité d'attendre, appelle le 15."
     noIcon
     linkProps={{
       href: "tel:3114",
