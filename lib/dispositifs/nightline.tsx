@@ -58,12 +58,12 @@ export const DISPOSITIF_NIGHTLINE: Dispositif = {
             Une ligne anglophone est disponible au 0 809 104 105.
           </>
         ),
-        badge: "24h/24 - 7j/7",
+        badge: "Tous les soirs",
         picto: "Smartphone",
       },
       {
         title: "Par Tchat",
-        badge: "24h/24 - 7j/7",
+        badge: "Tous les soirs",
         desc: (
           <>
             Le tchat Nightline est également accessible tous les soirs de 21h à 2h30 via leur site
@@ -90,6 +90,21 @@ export const DISPOSITIF_NIGHTLINE: Dispositif = {
           Tu peux parler de ce que tu veux, à ton rythme. L’écoutant n’est pas là pour remplacer un
           professionnel de santé : il t’écoute et t’aide à mettre des mots sur ce que tu traverses.
           Si tu le souhaites, il peut également t’orienter vers d’autres ressources adaptées.
+        </p>
+        <p>
+          Nightline oeuvre également sur le terrain, par le biais d'actions de promotion et de
+          prévention en santé mentale toujours portées par et pour des étudiants. La Fresque de la
+          Santé Mentale animée par un pair est un atelier de 3h d'intelligence collective pour
+          comprendre ce qu'est la santé mentale et comment en prendre soin.
+        </p>
+        <p>
+          Le dispositif "Sentinelles étudiantes", conçu en partenariat avec le GEPS, permet
+          d'apprendre à repérer et orienter des pairs en détresse.
+        </p>
+        <p>
+          Enfin Nightline anime sur les campus des actions de proximité (stands, ateliers courts...)
+          pour parler de santé mentale et informer sur les ressources, n'hésite pas à venir à leur
+          rencontre pour échanger.
         </p>
       </>
     ),
