@@ -1,3 +1,4 @@
+import { transcriptionClarisseCastan } from "@/data/articles/transcriptions/clarisse-castan";
 import type { ArticleMeta } from "./types";
 import { transcriptionCyrilDion } from "@/data/articles/transcriptions/cyril-dion";
 import { transcriptionNoemieLenoir } from "@/data/articles/transcriptions/noemie-lenoir";
@@ -201,12 +202,23 @@ export const articles: ArticleMeta[] = [
   {
     type: "podcast",
     slug: "podcast-noemie-lenoir",
-    title: "Alcool, dépression : la descente aux enfers. Avec Noémie Lenoir. ",
+    title: "Alcool, dépression : la descente aux enfers. Avec Noémie Lenoir",
     publishedAt: "2025-10-22",
     markdownFile: "noemie-lenoir.md",
     heroImage: "/articles/podcast/noemie-lenoir.jpg",
     mainFeelingSlug: "drugs",
     podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/noemie-lenoir-alcool-depression-la-descente-aux-enfers?",
     transcription: transcriptionNoemieLenoir
+  },
+  {
+    type: "podcast",
+    slug: "podcast-clarisse-castan",
+    title: "Peut-on tout vivre sans s’oublier ? avec Clarisse Castan",
+    publishedAt: "2026-09-23",
+    markdownFile: "clarisse-castan.md",
+    heroImage: "/articles/podcast/clarisse-castan.jpg",
+    mainFeelingSlug: "fatigue",
+    podcastUrl: "https://embed.acast.com/$/65cb7c6311e3e5001505d3e6/clarisse-castan-peut-on-tout-vivre-sans-soublier?",
+    transcription: transcriptionClarisseCastan
   },
 ];
