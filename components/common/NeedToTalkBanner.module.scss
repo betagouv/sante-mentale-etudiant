@@ -37,6 +37,11 @@
   margin-top: 1rem;
 }
 
+.button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
 .hint {
   font-size: 0.875rem;
   line-height: 1.5rem;

@@ -16,7 +16,17 @@ export const CARD_3040 = (
     subtitle="Le numéro pour la santé mentale des étudiants"
     description="Des psychologues et travailleurs sociaux à ton écoute pour t'informer et t'orienter vers les services adaptés."
     image={logo_3040}
-    button={<Button priority="secondary">Appeler le 3040</Button>}
+    button={
+      <Button
+        priority="secondary"
+        linkProps={{
+          href: "tel:3040",
+          "aria-label": "Appeler le 3040, le numéro pour la santé mentale des étudiants",
+        }}
+      >
+        Appeler le 3040
+      </Button>
+    }
     badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
     location="A distance"
     openingHours="Lun-ven: 10h-21h • Sam: 10h-14h"

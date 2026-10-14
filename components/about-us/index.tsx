@@ -6,6 +6,8 @@ import Link from "next/link";
 import Button from "@codegouvfr/react-dsfr/Button";
 import WhyThisSite from "./WhyThisSite";
 import WhatsOnThisSite from "./WhatsOnThisSite";
+import styles from "./index.module.scss"
+
 export default function AboutUs() {
   return (
     <>
@@ -34,7 +36,7 @@ export default function AboutUs() {
           </>
         }
         button={
-          <Button linkProps={{ href: "mailto:santementaleetudiant@enseignementsup.gouv.fr" }}>
+          <Button className={styles.button} linkProps={{ href: "mailto:santementaleetudiant@enseignementsup.gouv.fr" }}>
             Contacter l’équipe
           </Button>
         }
