@@ -23,6 +23,7 @@ export function Footer() {
           text: "Qui sommes-nous",
           linkProps: { href: "/qui-sommes-nous" },
         },
+        { text: "Plan du site", linkProps: { href: "/plan-du-site" } },
       ]}
       partnersLogos={{
         main: {
