@@ -15,6 +15,7 @@ export default function HomeFeelings() {
         {feelings.map((feeling) => {
           return (
             <Tile
+              className={styles.tile}
               key={`feeling_${feeling.slug}`}
               enlargeLinkOrButton
               imageUrl={`/images/pictograms/${feeling.slug}.svg`}
