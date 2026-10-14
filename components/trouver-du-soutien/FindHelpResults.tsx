@@ -34,7 +34,7 @@ export default function FindHelpResults({ addressLabel, coordinates, whatINeed, 
         </h2>
         <div className={styles.results}>{result.cards.map((card) => card)}</div>
         <div className={styles.separator} />
-        {index === 0 && (
+        {index === 1 && (
           <div className={styles.nightline}>
             {<NightLineCard />}
             <div className={styles.separator} />
