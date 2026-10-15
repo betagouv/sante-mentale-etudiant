@@ -27,11 +27,13 @@ export function Footer() {
       ]}
       partnersLogos={{
         main: {
-          alt: "",
-          imgUrl: "images/logos/parlons-sante-mentale.svg",
+          alt: "Parlons Santé Mentale",
+          imgUrl: "/images/logos/parlons-sante-mentale.svg",
           linkProps: {
             href: "https://santementale.gouv.fr",
-            title: "Lien vers Parlons Santé Mentale",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            title: "Parlons Santé Mentale - nouvelle fenêtre",
           },
         },
       }}
