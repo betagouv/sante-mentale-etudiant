@@ -47,7 +47,7 @@ export default function ArticlesSearch({ allArticles, feelings }: Props) {
         <IllustrationArticlesLeft2 />
         <IllustrationArticlesRight />
         <Input
-          label=""
+          label="Recherche dans tous les contenus du site"
           className={styles.search}
           addon={<Button onClick={() => setSearchTerm(inputValue)}>Rechercher</Button>}
           nativeInputProps={{

@@ -29,6 +29,8 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       };
 
   const mainFeeling = getFeelingBySlug(article.mainFeelingSlug);
+  const isExternal = article.type === "external";
+
   return (
     <Card
       className={styles.card}
@@ -56,7 +58,8 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       endDetail={
         <>
           {article.readingTime && renderReadingTime(article.readingTime)}
-          {article.type === "external" ? " • Lien externe" : ""}
+          {isExternal && article.pdfWeight && `PDF, ${article.pdfWeight} Mo`}
+          {isExternal && " • Lien externe (nouvelle fenêtre)"}
         </>
       }
     />
