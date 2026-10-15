@@ -1,9 +1,12 @@
 export const transcriptionFeelingManagement = `
+[Message vocal d’un étudiant]
 0:00 Bonjour Jérôme, j'ai l'impression de passer d'une émotion à l'autre en deux secondes, sans réussir à me contrôler.
 0:06 Parfois je me mets en colère pour presque rien, en deux secondes, il faut un rien pour que je disjoncte et puis après je vais être triste, d'un coup.
 0:16 Puis après je vais culpabiliser, je vais m'en vouloir de rien gérer, d'alterner les hauts et les bas.
 0:23 Puis il y a des moments où je suis complètement dépassée, c'est trop intense, il y a trop d'infos, trop d'infos en même temps.
 0:29 Je voudrais prendre du recul, tout le monde me conseille de prendre du recul, mais j'y arrive pas. Est-ce que c'est normal ?
+
+[Jérôme Lacinga]
 0:38 Alors oui c'est normal, et oui c'est normal d'avoir des émotions, d'avoir des émotions différentes dans une journée.
 0:47 On le vit tous au quotidien, après c'est comment elles s'expriment.
 0:51 Et là ce que j'entends c'est qu'elles s'expriment de manière assez intense.
@@ -19,7 +22,7 @@ export const transcriptionFeelingManagement = `
 1:40 Ça peut être de l'agacement, ça peut être s'énerver pour un petit détail,
 1:45 mais des fois quand on est au travail, qu'on a nos études,
 1:49 qu'on a les choses à préparer après à la maison, etc.,
-1:53 on peut vite se sentir finalement un peu submergé par tout.
+1:53 on peut vite se sentir finalement un peu submergé par tout un tas de choses.
 1:57 Et un petit rien, je fais tomber ma tasse de café,
 2:00 et ça déclenche quelque chose d'affreux, je me sens nul, énervé, etc.,
 2:05 et du coup ça me monte en pression.
@@ -38,7 +41,7 @@ export const transcriptionFeelingManagement = `
 2:48 C'est finalement tout ce qui va être associé après à l'émotion,
 2:51 et notamment en termes de pensée, de rumination.
 2:53 C'est-à-dire que la pensée va entretenir,
-2:55 retenir l'émotion qui va se redéclencher perpétuellement finalement dans le corps.
+2:55 l'émotion qui va se redéclencher perpétuellement finalement dans le corps.
 3:00 Donc en soi, l'émotion, elle vient décrire qu'il y a quelque chose qui se passe,
 3:04 je suis triste, j'ai besoin de décharger, donc je pleure.
 3:08 Je suis en colère, ça montre qu'il y a quelque chose là qui ne me convient pas.
@@ -75,7 +78,6 @@ export const transcriptionFeelingManagement = `
 4:43 Et à partir de là, ça me permet peut-être de mieux comprendre
 4:47 quel était le sens de cette émotion ou de ces émotions
 4:50 pour peut-être mettre en place des stratégies
-4:52 pour les aider à faire des choses.
 4:53 Les vivre différemment, c'est-à-dire que déjà de les comprendre,
 4:56 ça permet peut-être de mieux les accepter.
 4:59 Et de mieux les accepter, ça permet de faire en sorte

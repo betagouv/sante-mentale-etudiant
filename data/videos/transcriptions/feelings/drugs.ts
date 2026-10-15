@@ -1,15 +1,18 @@
 export const transcriptionDrugs = `
+[Message vocal d’un étudiant] 
 0:00 Bonjour Jérôme, je me pose une question parce que depuis quelques mois, j'ai l'impression de compter de plus en plus sur certaines choses pour tenir le coup.
 0:07 Ça peut être l'alcool en soirée, le cannabis, les cigarettes, même les boissons énergisantes.
 0:13 Au début, je me disais que c'était comme tout le monde, mais aujourd'hui, j'ai l'impression que j'en ai besoin pour décompresser, dormir ou juste arrêter de penser.
 0:19 Est-ce que c'est normal ou est-ce que je devrais commencer à me poser des questions ?
+
+[Jérôme Lacinga] 
 0:22 Alors, je pense qu'avoir envie de boire, avoir envie de fumer, avoir envie de consommer d'autres substances quand on est stressé, quand on est submergé.
 0:35 Parfois, c'est une solution qui va être, je ne dirais pas normale, mais ça va être une solution qu'on va trouver pour se sentir mieux et retrouver de l'apaisement.
 0:49 Comme ici, dans ce témoignage.
 0:52 Ce qui est intéressant, c'est que cet étudiant, il se rend compte qu'il commence à en avoir besoin pour cette fonction-là de décompresser.
 1:01 Et je trouve que c'est bien qu'il ait cette démarche-là déjà d'en parler.
 1:05 J'ai envie de dire, comme tout le monde, on va apprécier boire, parfois fumer en soirée pour peut-être faire sauter un petit peu cette barrière ou faire sauter un petit peu la timidité.
-1:19 Et puis ressentir un amusement beaucoup plus libre.
+1:19 Et puis ressentir un amusement beaucoup plus "libre".
 1:22 Je pense qu'il est nécessaire de commencer à se questionner.
 1:29 Comme ici, on se rend compte qu'on en a besoin pour s'amuser et que ça ne devient pas juste un moyen, finalement, juste d'être en société et de vivre une bonne soirée.
 1:42 Je parlais comme ça, entre guillemets, mais que ça devient vraiment un besoin pour commencer quelque chose.
@@ -40,7 +43,7 @@ export const transcriptionDrugs = `
 4:00 et peut-être orienter après la personne vers un addictologue, par exemple, vers un centre spécialisé,
 4:07 vers des groupes aussi, des groupes d'écoute et de parole qui sont très souvent anonymes.
 4:14 Donc, ça permet aussi peut-être de rencontrer d'autres personnes qui traversent les mêmes choses
-4:19 et des fois de se sentir moins.
+4:19 et des fois de se sentir moins seul
 4:20 Et d'en parler avec des gens qui comprennent ce qu'on peut ressentir,
 4:25 ça aide aussi à pouvoir avancer et commencer peut-être à travailler sur un arrêt,
 4:34 sur revoir sa consommation.

@@ -1,6 +1,6 @@
 export const transcription3114 = `
-0:00 Bonjour, je suis Lise Flevo, médecin psychiatre et responsable de l'une des 18 antennes du numéro national de prévention du suicide, le 31-14.
-0:08 Et je m'occupe donc de l'antenne parisienne qui gère toute l'île de France.
+0:00 Bonjour, je suis Lise Flevaud, médecin psychiatre et responsable de l'une des 18 antennes du numéro national de prévention du suicide, le 31-14.
+0:08 Et je m'occupe donc de l'antenne parisienne qui gère toute l'Île-de-France.
 0:13 Alors le 31-14, c'est le numéro national de prévention du suicide.
 0:17 C'est un numéro qui est ouvert 24 heures sur 24, 7 jours sur 7, et accessible partout en France.
 0:24 Il est gratuit, confidentiel.
@@ -16,12 +16,12 @@ export const transcription3114 = `
 1:12 Il y a, on le sait, un peu d'attente, mais on sait aussi que 90% des appels sont décrochés au bout de 7 minutes d'attente.
 1:20 Donc il ne faut pas se décourager, il faut attendre un petit peu et on décrochera.
 1:24 Pour appeler le 31-14, il ne faut pas attendre.
-1:27 Il ne faut pas attendre de se retrouver dans une situation extrêmement grave.
+1:27 De se retrouver dans une situation extrêmement grave.
 1:30 Au contraire, il faut appeler avant, à partir du moment où vous vous sentez seul, en difficulté et en souffrance.
 1:36 Et parfois, le fait de pouvoir parler à quelqu'un dans des moments où on se sent particulièrement seul et en difficulté
 1:42 peut déjà être quelque chose de très important.
 1:44 Dans certains cas, il est possible que le répondant identifie une certaine urgence.
-1:51 Et dans ces cas-là, on fait appel au CMU pour venir chercher la personne.
+1:51 Et dans ces cas-là, on fait appel au SAMU pour venir chercher la personne.
 1:55 C'est-à-dire la personne en crise, pour l'accompagner vers un service plus compétent que le nôtre, qui reste un service téléphonique.
 2:02 Le 31-14 s'articule avec l'offre de soins du terrain.
 2:07 Et donc plusieurs choses pourront vous être proposées à la fin de l'appel.

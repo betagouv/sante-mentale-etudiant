@@ -1,10 +1,13 @@
 export const transcriptionSuicidalThoughts = `
+[Message vocal d’un étudiant] 
 0:00 Bonjour Jérôme, je ne sais pas trop comment expliquer ce que je ressens et même laisser ce message me fait un peu peur.
-0:06 Depuis quelques temps ça va plus du tout, j'ai l'impression d'être épuisé, de plus voir d'issue, de dérangé.
+0:06 Depuis quelques temps ça va plus du tout, j'ai l'impression d'être épuisé, de plus voir d'issue, de déranger.
 0:12 Et parfois je me surprends à me dire que ça serait plus simple si j'étais pas là.
 0:16 Ça me fait peur parce que j'ai jamais pensé comme ça avant et j'ose en parler à personne.
 0:20 J'ai peur qu'on me juge ou qu'on me prenne pas au sérieux.
 0:22 Je voulais savoir si ça arrive à d'autres personnes et qu'est-ce que je suis censé faire.
+
+[Jérôme Lacinga] 
 0:26 Alors oui ça arrive à d'autres personnes, ça arrive plus souvent qu'il n'y paraît.
 0:33 Et finalement quand on y réfléchit peut-être un petit peu, ça nous arrive peut-être à tous aussi à des moments d'avoir ces idées qui peuvent traverser l'esprit.
 0:42 De se dire mais peut-être que ce serait mieux si j'étais pas là.
@@ -20,7 +23,7 @@ export const transcriptionSuicidalThoughts = `
 1:26 Est-ce que finalement ce que je fais, est-ce que la personne que j'ai envie d'être ou de devenir, est-ce que j'y suis et je suis dans cette phase-là ?
 1:34 Ça peut être aussi lié à des circonstances de vie.
 1:36 C'est-à-dire qu'on peut imaginer que si on manque d'argent, si on vit pas dans des bonnes conditions, si on a l'impression que finalement on va pas s'en sortir,
-1:50 si on traverse des périodes traumatisantes, on traverse des ruptures.
+1:50 si on traverse des périodes traumatisantes, on traverse des ruptures, des deuils.
 1:56 Et qu'on a l'impression qu'il n'y a pas d'issue, des fois on peut se dire peut-être que ce serait mieux si j'étais pas là.
 2:04 Si les émotions aussi parfois quand elles sont trop fortes et qu'elles deviennent douloureuses, on a envie qu'elles s'arrêtent.
 2:13 Des fois on va se dire mais il faut que je fasse quelque chose et peut-être le seul moyen c'est finalement de mettre fin à mes jours.
@@ -39,7 +42,7 @@ export const transcriptionSuicidalThoughts = `
 3:08 Il n'y a pas besoin de plus, mais juste de montrer qu'on est présent.
 3:12 Peut-être quand on n'a pas de proche direct, ça peut être aussi de solliciter des lignes d'écoute.
 3:17 Alors il y a le 31-14 qui est la ligne d'écoute nationale sur la prévention du suicide.
-3:23 Ou là pareil.
+3:23 Où là pareil.
 3:23 Il y a des professionnels qui peuvent nous entendre, qui peuvent peut-être nous orienter, nous guider par rapport à ces pensées.
 3:32 En tout cas, dès les premiers signes de ces pensées, si elles deviennent trop présentes, je pense qu'il ne faut pas hésiter à en parler.
 3:40 Si je me sens en danger, si les pensées deviennent trop envahissantes, si je commence à construire des scénarios.

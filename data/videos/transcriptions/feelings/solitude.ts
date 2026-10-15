@@ -40,8 +40,7 @@ export const transcriptionSolitude = `
 2:42 C'est-à-dire que progressivement, à force de se sentir en décalage,
 2:45 on va avoir moins de monde, on va avoir moins envie de voir du monde.
 2:49 Et du coup, on va vraiment se retrouver seul.
-2:53 Et un jour, on va...
-2:54 On va prendre conscience de ça.
+2:53 Et un jour, on va prendre conscience de ça.
 2:56 Et là, ça risque d'être...
 2:58 Comment dire ?
 2:59 Vécu comme un choc, finalement.

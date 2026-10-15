@@ -1,9 +1,12 @@
 export const transcriptionPainfulEvent = `
+[Message vocal d’un étudiant]
 0:00 Bonjour Jérôme, j'avais besoin d'un conseil parce que depuis quelques semaines ça va plus du tout.
 0:07 J'ai perdu quelqu'un de proche et j'ai l'impression que tout est comme devenu noir.
 0:13 J'arrive plus à me concentrer, je dors mal, je pleure souvent sans raison et d'autres fois je ressens vraiment plus rien.
 0:23 Mon entourage dit que ça passe avec le temps mais moi là j'avoue j'ai très peur de rester bloquée.
 0:28 Ok, est-ce que c'est normal de réagir comme ça ? Merci beaucoup.
+
+[Jérôme Lacinga]
 0:32 Alors à l'écoute de ce message, la première chose que j'ai envie de dire et que l'entourage de cette étudiante a déjà dit,
 0:41 c'est qu'effectivement ça prend du temps et ça passe avec le temps.
 0:45 Donc c'est normal là actuellement de ressentir ce genre d'émotion.
@@ -19,7 +22,7 @@ export const transcriptionPainfulEvent = `
 1:41 Puis après voilà, il y a la phase de je me rends compte que c'est vrai.
 1:45 Ça me provoque, comme on l'a entendu, de la tristesse, une tristesse profonde, parfois de la colère aussi.
 1:53 En tout cas, ça vient remuer tout un tas de choses et finalement au fond,
-1:57 ça vient réintégrer.
+1:57 ça vient réinterroger.
 1:58 Interroger aussi sa propre vie.
 2:00 Il y a quelque chose de se dire, si on perd quelqu'un, ça nous confronte à la mort et à notre propre mort.
 2:07 Si quelqu'un s'en va, ça confronte au fait que peut-être qu'on s'était projeté,
@@ -27,7 +30,7 @@ export const transcriptionPainfulEvent = `
 2:16 Donc il y a vraiment cette sidération et le fait déjà de reprendre pied, j'ai envie de dire,
 2:25 reprendre sa vie en main.
 2:26 Et ça, ça prend du temps.
-2:27 Un événement doux.
+2:27 Un événement
 2:28 Douloureux va provoquer des réactions différentes suivant les personnes parce que chaque personne est différente.
 2:34 On entend très souvent, par exemple, si je prends l'exemple des enterrements, des personnes qui vont pleurer,
 2:41 d'autres qui ne vont pas réagir, d'autres qui vont rigoler.
@@ -40,7 +43,7 @@ export const transcriptionPainfulEvent = `
 3:19 Il y a le déni.
 3:20 Il va y avoir les étapes liées à la colère, à la tristesse.
 3:25 À un moment donné, plutôt de la nostalgie.
-3:27 C'est-à-dire que finalement...
+3:27 C'est-à-dire que
 3:28 Finalement, on va pouvoir commencer à accepter ce qui s'est passé, tout en étant peut-être triste ou attristé des événements qui se sont passés.
 3:37 Peut-être se remémorer aussi des bons souvenirs vécus avec la personne qui est décédée ou qui est partie.
 3:44 Et puis, après, il y a la phase d'acceptation et puis celle où on peut rebondir et se reconstruire.

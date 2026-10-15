@@ -1,10 +1,10 @@
 export const transcriptionSSE = `
 0:00 Je suis Sophie Lac, je suis psychologue clinicienne au SSE de Sorbonne Université.
-0:05 Le SSE, c'est l'abréviation de Service de Santé Étudiante.
+0:05 Le SSE, c'est donc l'abréviation de Service de Santé Étudiante.
 0:10 Il y a un SSE par faculté ou par regroupement d'institutions de faculté.
 0:16 C'est un service de prévention avant tout pour les étudiants
 0:22 qui sont inscrits cette année universitaire dans ces lieux.
-0:27 Je m'appelle Camille Schlinger, je suis psychologue au Service de Santé Étudiante de Sorbonne Université.
+0:27 Je m'appelle Camille Schlienger, je suis psychologue au Service de Santé Étudiante de Sorbonne Université.
 0:32 Pour venir au SSE, il faut être étudiant ou inscrit forcément en tant qu'étudiant dans une université
 0:38 et du coup consulter dans l'université à laquelle on est inscrite
 0:43 puisque dans certaines villes, il y a plusieurs universités.
@@ -75,7 +75,7 @@ export const transcriptionSSE = `
 5:17 Ça peut aussi être totalement privé.
 5:19 Donc, ça, c'est une question que les étudiants nous posent beaucoup.
 5:22 Est-ce qu'on est obligé de parler de la fac ou des cours ou des profs,
-5:26 qui se passent à la fac ?
+5:26 de ce qui se passe à la fac ?
 5:27 Pas forcément.
 5:28 Bien sûr que oui, mais pas forcément.
 5:30 Ça peut aussi être lié à la famille, à des problèmes d'argent, à des problèmes sentimentaux.

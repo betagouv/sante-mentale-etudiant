@@ -1,10 +1,10 @@
 export const transcriptionSPE = `
-  0:00 Bonjour, je suis Vicky et je suis la responsable communication du dispositif Santé Psiétudiant.
-  0:05 Santé Psiétudiant, c'est un dispositif du ministère de l'enseignement supérieur de la Recherche et de l'Espace
+  0:00 Bonjour, je suis Vicky et je suis la responsable communication du dispositif Santé Psy Étudiant.
+  0:05 Santé Psy Étudiant, c'est un dispositif du ministère de l'enseignement supérieur de la Recherche et de l'Espace
   0:10 qui permet à tout étudiant de l'enseignement supérieur de bénéficier chaque année de 12 séances gratuites
   0:16 et surtout sans avance de frais avec un psychologue partenaire.
-  0:19 Pour bénéficier du dispositif Santé Psiétudiant, il suffit simplement de se créer un espace étudiant.
-  0:24 Comment faire ? Il suffit de se rendre directement sur le site Santé Psiétudiant ou sur le site Santé Mental Étudiant.
+  0:19 Pour bénéficier du dispositif Santé Psy Étudiant, il suffit simplement de se créer un espace étudiant.
+  0:24 Comment faire ? Il suffit de se rendre directement sur le site Santé Psy Étudiant ou Santé Mentale Étudiant.
   0:31 Vous allez pouvoir ensuite vous créer votre espace étudiant simplement avec une adresse mail, votre date de naissance et un numéro INE.
   0:37 Votre numéro INE, vous pouvez le retrouver directement sur votre certificat de scolarité ou sur votre attestation CVEC.
   0:44 Si jamais vous ne le retrouvez pas, pas d'inquiétude, vous pouvez vous adresser directement au secrétariat de votre école.
@@ -19,7 +19,7 @@ export const transcriptionSPE = `
   1:26 Pour prendre rendez-vous avec un psychologue, il ne faut pas forcément attendre d'aller très mal.
   1:30 Et surtout ne vous comparez pas aux autres et ne pensez pas que vos problèmes sont moins importants.
   1:34 Dès que vous ressentez le besoin de parler, vous pouvez prendre rendez-vous avec un professionnel de santé qui pourra vous accompagner.
-  1:40 Vous allez pouvoir retrouver une liste de psychologues cuniciens qui sont partenaires du dispositif Santé psyétudiant
+  1:40 Vous allez pouvoir retrouver une liste de psychologues cliniciens qui sont partenaires du dispositif Santé psyétudiant
   1:45 et qui pourront soit vous recevoir en présentiel dans leur cabinet, soit directement vous recevoir en visio si vous êtes plus à l'aise de le faire à distance.
   1:53 Si j'ai un seul conseil à donner aux étudiants, c'est surtout prenez soin de vous et soyez toujours à l'écoute de vos envies et de vos besoins.
   2:00 Surtout ne vous forcez jamais à faire quelque chose que vous n'avez pas envie de faire.

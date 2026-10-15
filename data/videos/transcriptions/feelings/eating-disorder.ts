@@ -1,9 +1,12 @@
 export const transcriptionEatingDisorder = `
+[Message vocal d’un étudiant]
 0:00 Bonjour Jérôme, j'avais envie de vous poser une question parce que je me rends compte que mon rapport à la nourriture a changé.
 0:09 Il y a des jours où j'ai presque pas faim, je saute des repas sans vraiment me rendre compte,
 0:14 et d'autres jours c'est complètement l'inverse, je mange énormément, dans des moments où je suis stressée ou quand je vais pas bien,
 0:23 je culpabilise beaucoup après, je me dis que je devrais me contrôler davantage,
 0:27 mais j'ai l'impression de tourner en rond, je ne sais pas si c'est juste une période compliquée ou s'il faut que je m'inquiète.
+
+[Jérôme Lacinga]
 0:34 Le rapport à la nourriture, c'est un rapport qui peut être complexe.
 0:40 En général, on va l'associer beaucoup à la notion de plaisir, mais il peut changer quand on traverse forcément des périodes difficiles.
 0:48 En séance, je vais beaucoup entendre ça, quand je traverse un deuil, quand je traverse un événement douloureux,
