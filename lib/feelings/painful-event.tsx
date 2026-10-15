@@ -164,7 +164,7 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
             <li> culpabilise.</li>
             <li>J'ai l'impression que personne ne peut comprendre ce que je ressens.</li>
             <li> n'ai plus envie de voir du monde.</li>
-            <li>J'ai parfois l'impression d'être "déconnecté" de moi-</li>même.
+            <li>J'ai parfois l'impression d'être "déconnecté" de moi-même.</li>
           </ul>
         ),
       },

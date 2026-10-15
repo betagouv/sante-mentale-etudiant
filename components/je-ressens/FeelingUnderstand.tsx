@@ -15,7 +15,7 @@ export default function FeelingUnderstand({ feeling }: Props) {
         <IllustrationFeelingsWomanCat />
         <div className={styles.card}>
           <h2>{feeling.faq.title}</h2>
-          <p>{feeling.faq.intro}</p>
+          <div>{feeling.faq.intro}</div>
           <div className={fr.cx("fr-accordions-group")}>
             {feeling.faq.items.map((item, index) => (
               <Accordion key={`faq__${index}`} label={item.question}>
