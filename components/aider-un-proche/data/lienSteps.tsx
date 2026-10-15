@@ -1,5 +1,4 @@
 import ExternalLink from "@/components/link/ExternalLink";
-import Link from "next/link";
 import { ReactNode } from "react";
 
 export type LienStep = {

@@ -22,6 +22,7 @@ export interface ExternalArticleMeta extends BaseArticleMeta {
   type: "external";
   url: string;
   intro: string;
+  pdfWeight?: number;
 }
 
 export interface PodcastArticleMeta extends BaseArticleMeta {
