@@ -22,10 +22,16 @@ export default function DispositifHero({ dispositif }: Props) {
         <h1 className={styles.title}>{dispositif.catchPhrase}</h1>
         <ButtonsGroup
           buttons={[
-            {
-              children: dispositif.button.text,
-              priority: "secondary",
-            },
+            dispositif.button.linkProps
+              ? {
+                  children: dispositif.button.text,
+                  priority: "secondary",
+                  linkProps: dispositif.button.linkProps,
+                }
+              : {
+                  children: dispositif.button.text,
+                  priority: "secondary",
+                },
           ]}
           inlineLayoutWhen="sm and up"
         />

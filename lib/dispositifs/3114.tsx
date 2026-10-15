@@ -11,7 +11,11 @@ export const DISPOSITIF_3114: Dispositif = {
   },
   videoKey: "3114",
   button: {
-    text: "Contacter le 3114",
+    text: "Appeler le 3114",
+    linkProps: {
+      href: "tel:3114",
+      "aria-label": "Appeler le 3114",
+    },
   },
   audience: {
     title: "À qui s’adresse le 3114 ?",

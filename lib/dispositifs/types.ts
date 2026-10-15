@@ -6,6 +6,10 @@ import { VideoKey } from "@/data/videos/videos";
 
 interface Button {
   text: string;
+  linkProps?: {
+    href: string;
+    "aria-label"?: string;
+  };
 }
 
 export interface AudienceItem {

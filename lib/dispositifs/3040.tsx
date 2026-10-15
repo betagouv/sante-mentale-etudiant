@@ -12,7 +12,11 @@ export const DISPOSITIF_3040: Dispositif = {
   },
   videoKey: "3040",
   button: {
-    text: "Contacter le 3040",
+    text: "Appeler le 3040",
+    linkProps: {
+      href: "tel:3040",
+      "aria-label": "Appeler le 3040",
+    },
   },
   audience: {
     title: "À qui s’adresse le 3040 ?",
@@ -73,8 +77,8 @@ export const DISPOSITIF_3040: Dispositif = {
         ),
         picto: "MainSend",
         linkProps: {
-          href: "tel:3114",
-          "aria-label": "Appeler le 3114, numéro national de prévention du suicide",
+          href: "mailto:3040@enseignementsup.gouv.fr",
+          "aria-label": "Envoyer un e-email à 3040@enseignementsup.gouv.fr",
         },
       },
     ],
