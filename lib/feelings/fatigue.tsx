@@ -74,7 +74,7 @@ export const FEELING_FATIGUE: Feeling = {
               <ExternalLink
                 href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
               >
-                OVE, enquête Bien-être et santé 2024
+                OVE, enquête Bien-être et santé 2024, PDF
               </ExternalLink>
               ).
             </p>
@@ -100,7 +100,7 @@ export const FEELING_FATIGUE: Feeling = {
               <ExternalLink
                 href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Carnet-11-Sommeil-des-jeunes-15-25-ans.pdf"
               >
-                INSV
+                Institut National Sommeil Vigilance, Le Sommeil des Jeunes, PDF, 11 Mo
               </ExternalLink>
               ). Sauf que les cours, eux, commencent tôt. Les nuits de semaine sont écourtées, le
               week-end sert de rattrapage, et ce va-et-vient fatigue autant qu'une nuit trop courte.
@@ -129,7 +129,7 @@ export const FEELING_FATIGUE: Feeling = {
               <ExternalLink
                 href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
               >
-                OVE 2024
+                OVE 2024, PDF
                 <span className="fr-sr-only">étude sur le bien-être des jeunes - nouvelle fenêtre</span>
               </ExternalLink>
               ). Cette fatigue peut se soigner, il faut en parler.
@@ -170,7 +170,7 @@ export const FEELING_FATIGUE: Feeling = {
         question: "Comment ça se manifeste concrètement",
         answer: (
           <div>
-            <h5>Cognitif</h5>
+            <h4>Cognitif</h4>
             <ul>
               <li>Je peux relire le même paragraphe sans le comprendre.</li>
               <li>Je peux mettre deux heures à faire ce qui m'en prenait une.</li>
@@ -180,19 +180,19 @@ export const FEELING_FATIGUE: Feeling = {
               </li>
             </ul>
 
-            <h5>Physique</h5>
+            <h4>Physique</h4>
             <ul>
               <li>Je peux me réveiller déjà fatigué, même après une longue nuit.</li>
               <li>Je peux m'endormir en cours l'après-midi, mais impossible de dormir le soir.</li>
             </ul>
 
-            <h5>Émotionnel</h5>
+            <h4>Émotionnel</h4>
             <ul>
               <li>Je peux m'énerver pour rien, ou pleurer pour rien.</li>
               <li>Je peux me dévaloriser.</li>
             </ul>
 
-            <h5>Comportemental</h5>
+            <h4>Comportemental</h4>
             <ul>
               <li>
                 Je peux repousser des tâches simples pendant des jours : un mail, un rendez-vous,
@@ -226,7 +226,7 @@ export const FEELING_FATIGUE: Feeling = {
                 <ExternalLink
                   href="https://www.reseau-morphee.fr/wp-content/uploads/2009/01/agenda_2p.pdf"
                 >
-                  Agenda du sommeil (Réseau Morphée)
+                  Agenda du sommeil (Réseau Morphée), PDF, 126 Ko
                 </ExternalLink>
               </p>
               <p>
@@ -248,7 +248,7 @@ export const FEELING_FATIGUE: Feeling = {
               <ExternalLink
                 href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/ASTEN_depliant-sommeil_INSV.pdf"
               >
-                ton agenda du sommeil
+                ton agenda du sommeil, PDF, 1 Mo
               </ExternalLink>
             </>
           ),

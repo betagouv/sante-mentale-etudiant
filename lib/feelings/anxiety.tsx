@@ -67,7 +67,7 @@ export const FEELING_ANXIETY: Feeling = {
         question: "Mais alors, d’où ça peut venir ?",
         answer: (
           <>
-            <h5>1. Le stress est une réaction normale de l’organisme </h5>{" "}
+            <h4>1. Le stress est une réaction normale de l’organisme </h4>{" "}
             <p>
               Face à un examen, un oral, un conflit ou une situation nouvelle, ton cerveau déclenche
               une alerte pour permettre à ton corps de réagir vite : ton rythme cardiaque
@@ -86,7 +86,7 @@ export const FEELING_ANXIETY: Feeling = {
               Ce qui se complique, c’est quand cette alerte ne s’éteint plus ou qu’elle ne se
               contrôle plus. Il peut alors s’agir d’anxiété.
             </p>
-            <h5>2. Au-delà des études : des sources multiples de stress et d’anxiété</h5>
+            <h4>2. Au-delà des études : des sources multiples de stress et d’anxiété</h4>
             <p>
               Le stress ou l’anxiété ne viennent pas uniquement des cours, mais peuvent être la
               conséquence de plusieurs situations qui s’accumulent.
@@ -116,7 +116,7 @@ export const FEELING_ANXIETY: Feeling = {
               très irréguliers peuvent renforcer des situations d'anxiété, même cela peut donner
               l’impression d’aider à se détendre sur le moment.{" "}
             </p>
-            <h5>3. Les pensées qui tournent en boucle.</h5>
+            <h4>3. Les pensées qui tournent en boucle.</h4>
             <p>
               Quand on est stressé ou anxieux, il est fréquent de ressasser sans cesse les mêmes
               pensées, sans réussir à les arrêter : « Et si j'échoue ? », « Et si je déçois mes
@@ -132,7 +132,7 @@ export const FEELING_ANXIETY: Feeling = {
               professionnel de santé. Lui seul peut évaluer ta situation et, si besoin, poser un
               diagnostic.
             </p>
-            <h5>4. L'anxiété peut révéler autre chose</h5>
+            <h4>4. L'anxiété peut révéler autre chose</h4>
             <p>
               L'anxiété peut aussi parfois être le signe d’autres types de troubles, comme la
               dépression.
@@ -145,7 +145,7 @@ export const FEELING_ANXIETY: Feeling = {
               quotidien, il est important d'en parler avec un professionnel : c’est lui qui pourra
               évaluer ta situation.
             </p>
-            <h5>5. L'anxiété peut parfois cacher autre chose.</h5>
+            <h4>5. L'anxiété peut parfois cacher autre chose.</h4>
             <p>
               L'anxiété peut apparaître seule, mais elle accompagne aussi parfois une dépression, un
               trouble anxieux ou certaines maladies physiques. Si elle dure plusieurs semaines,
