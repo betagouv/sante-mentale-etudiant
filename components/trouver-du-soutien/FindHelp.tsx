@@ -25,7 +25,7 @@ export default function FindHelp({
   const [coordinates, setCoordinates] = useState(defaultCoordinates);
 
   return (
-    <FullBleedSection aria-labelledby="find-help" bgColor="grey">
+    <FullBleedSection ariaLabelledBy="find-help" bgColor="grey">
       <Title>Trouve du soutien en fonction de ta situation</Title>
       <Subtitle>Gratuit et confidentiel. Tu parles toujours à un humain.</Subtitle>
       <p>

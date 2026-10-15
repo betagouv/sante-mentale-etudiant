@@ -5,7 +5,7 @@ import styles from "./HomeVideos.module.scss";
 import { useCarouselScroll } from "@/hooks/useCarouselScroll";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { testimonials } from "../../../data/videos/videos";
-import {} from "@/components/illustrations";
+import { } from "@/components/illustrations";
 
 import { useVideoTestimonialModal } from "@/components/video/VideoTestimonialModalProvider";
 import { VideoCard } from "@/components/video/VideoCard";
@@ -30,7 +30,7 @@ export default function HomeVideos({
   const { openVideo } = useVideoTestimonialModal();
 
   return (
-    <FullBleedSection aria-labelledby="video-testimonials-title" bgColor="grey">
+    <FullBleedSection ariaLabelledBy="video-testimonials-title" bgColor="grey">
       <div className={styles.header}>
         <h2 id="video-testimonials-title">{title}</h2>
         {description && <p className={styles.description}>{description}</p>}

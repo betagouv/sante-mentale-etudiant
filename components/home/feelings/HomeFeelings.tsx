@@ -5,7 +5,7 @@ import { Tile } from "@codegouvfr/react-dsfr/Tile";
 
 export default function HomeFeelings() {
   return (
-    <FullBleedSection aria-labelledby="feelings-grid-title" bgColor="purple" borderColor="green">
+    <FullBleedSection ariaLabelledBy="feelings-grid-title" bgColor="purple" borderColor="green">
       <div className={styles.header}>
         <h2 id="feelings-grid-title">Mettre des mots sur ce que tu ressens</h2>
         <p>Des fiches pour identifier ce que tu ressens, mieux comprendre et trouver de l'aide</p>

@@ -7,7 +7,7 @@ export default function HelpSigns() {
   return (
     <FullBleedSection
       containerClassName={styles.container}
-      aria-labelledby="signs-title"
+      ariaLabelledBy="signs-title"
       bgColor="purple"
     >
       <LightPinkBadge>Étape 1</LightPinkBadge>

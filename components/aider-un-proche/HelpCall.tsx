@@ -7,7 +7,7 @@ import { PinkBadge } from "../common/Badges";
 
 export default function HelpCall() {
   return (
-    <FullBleedSection aria-labelledby="witness-title" bgColor="grey">
+    <FullBleedSection ariaLabelledBy="witness-title" bgColor="grey">
       <div className={styles.container}>
         <h2 id="witness-title" className={styles.text}>
           Tu es témoin de propos suicidaires&nbsp;? Parles-en pour être écouté et orienté
