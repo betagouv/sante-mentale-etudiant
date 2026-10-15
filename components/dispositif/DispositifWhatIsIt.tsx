@@ -50,6 +50,7 @@ function ItemCard({ title, desc, picto }: { title: string; desc: ReactNode; pict
       title={title}
       desc={desc}
       titleAs="h3"
+      imageAlt=""
     />
   );
 }
