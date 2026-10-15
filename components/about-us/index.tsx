@@ -28,8 +28,6 @@ export default function AboutUs() {
             ou en écrivant à{" "}
             <Link
               href="mailto:santementaleetudiant@enseignementsup.gouv.fr"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               santementaleetudiant@enseignementsup.gouv.fr
             </Link>

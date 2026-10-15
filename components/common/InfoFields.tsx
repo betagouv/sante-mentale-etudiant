@@ -1,14 +1,15 @@
 import styles from "./InfoFields.module.scss";
+import ExternalLink from "@/components/link/ExternalLink";
 
 export const AddressField = (address: string, lat: number, lon: number, zoom = 17) => {
   const url = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=${zoom}/${lat}/${lon}`;
   return (
     <div>
-      <span className="fr-icon--sm fr-icon-map-pin-2-line" />
+      <span className="fr-icon--sm fr-icon-map-pin-2-line" aria-hidden="true" />
       <span className={styles.title}>Adresse :</span>
-      <a href={url} className={styles.link} target="_blank" rel="noopener noreferrer">
+      <ExternalLink href={url} className={styles.link}>
         {address}
-      </a>
+      </ExternalLink>
     </div>
   );
 };
@@ -43,9 +44,9 @@ export const WebsiteField = (website: string, idx?: number) => (
     <span className={styles.title}>
       Site internet {idx && idx >= 1 ? `${(idx + 1).toString()} ` : ""}:
     </span>
-    <a href={website} target="_blank" rel="noopener noreferrer" className={styles.link}>
+    <ExternalLink href={website} className={styles.link}>
       {website}
-    </a>
+    </ExternalLink>
   </div>
 );
 
