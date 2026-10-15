@@ -54,7 +54,7 @@ export default function LegalNotices() {
             <br />
             France
             <br />
-            <Link href="mailto:support@scalingo.com" target="_blank" rel="noopener noreferrer">
+            <Link href="mailto:support@scalingo.com">
               support@scalingo.com
             </Link>
           </p>

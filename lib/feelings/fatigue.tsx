@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
+import ExternalLink from "@/components/link/ExternalLink";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -37,13 +37,11 @@ export const FEELING_FATIGUE: Feeling = {
     intro: (
       <>
         La fatigue devient anormale quand elle persiste malgré le repos (
-        <Link
+        <ExternalLink
           href="https://www.ameli.fr/assure/sante/themes/asthenie-fatigue/definition-symptomes-causes"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Assurance Maladie
-        </Link>
+        </ExternalLink>
         ). Elle n'a pas une cause unique : le manque de sommeil, la charge des études, l'anxiété, un
         état dépressif ou un problème physique peuvent tous produire la même sensation de fatigue.
         Comprendre laquelle te concerne change ce qu'il faut faire.
@@ -56,34 +54,28 @@ export const FEELING_FATIGUE: Feeling = {
           <>
             <p>
               Les 18-29 ans dorment en moyenne 7h48 par nuit, plus que le reste de la population (
-              <Link
+              <ExternalLink
                 href="https://www.santepubliquefrance.fr/sommeil/rapportsynthese/sommeil-temps-moyen-sur-24-heures-et-plainte-dinsomnie-barometre-de-sante-publique-france-resultats"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Santé publique France, Baromètre 2024
-              </Link>
+              </ExternalLink>
               ).
             </p>
             <p>
               Sauf que la moyenne cache tout le reste : 18,9 % des 18-29 ans dorment 6 heures ou
               moins, et 29 % déclarent avoir des difficultés à s'endormir ou des réveils nocturnes (
-              <Link
+              <ExternalLink
                 href="https://www.santepubliquefrance.fr/sommeil/rapportsynthese/sommeil-temps-moyen-sur-24-heures-et-plainte-dinsomnie-barometre-de-sante-publique-france-resultats"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Santé publique France, Baromètre 2024
-              </Link>
+              </ExternalLink>
               ). Chez les étudiants, 21 % jugent leur sommeil mauvais ou très mauvais, et un tiers
               déclarent avoir rencontré des difficultés dans leurs études à cause de leur sommeil (
-              <Link
+              <ExternalLink
                 href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 OVE, enquête Bien-être et santé 2024
-              </Link>
+              </ExternalLink>
               ).
             </p>
             <p>
@@ -105,13 +97,11 @@ export const FEELING_FATIGUE: Feeling = {
               Nous avons tous une horloge interne. Le soir, elle déclenche la mélatonine, l'hormone
               qui donne le signal du sommeil. Jusqu'à une vingtaine d'années, ce signal arrive plus
               tard dans la soirée (
-              <Link
+              <ExternalLink
                 href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Carnet-11-Sommeil-des-jeunes-15-25-ans.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 INSV
-              </Link>
+              </ExternalLink>
               ). Sauf que les cours, eux, commencent tôt. Les nuits de semaine sont écourtées, le
               week-end sert de rattrapage, et ce va-et-vient fatigue autant qu'une nuit trop courte.
             </p>{" "}
@@ -136,26 +126,24 @@ export const FEELING_FATIGUE: Feeling = {
               des étudiants présentent les signes d’une détresse psychologique et la moitié a vécu
               une période d’au moins deux semaines consécutives pendant laquelle ils se sont sentis
               tristes, déprimés, sans espoir, au cours des 12 derniers mois (
-              <Link
+              <ExternalLink
                 href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 OVE 2024
-              </Link>
+                <span className="fr-sr-only">étude sur le bien-être des jeunes - nouvelle fenêtre</span>
+              </ExternalLink>
               ). Cette fatigue peut se soigner, il faut en parler.
             </p>
             <h5>5. Une cause physique.</h5>
             <p>
               La fatigue peut aussi venir du corps : anémie, trouble de la thyroïde, apnées du
               sommeil… Un médecin peut le vérifier avec un examen et, si besoin, une prise de sang ({" "}
-              <Link
+              <ExternalLink
                 href="https://www.ameli.fr/assure/sante/themes/asthenie-fatigue/consultation-medicale-traitement"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Assurance Maladie
-              </Link>
+                <span className="fr-sr-only">information sur l'asthénie - nouvelle fenêtre</span>
+              </ExternalLink>
               ). C'est une étape à ne pas sauter.
             </p>
           </>
@@ -235,13 +223,11 @@ export const FEELING_FATIGUE: Feeling = {
                 Engle-Friedman, 1981). Attention à ne pas vouloir trop bien faire et le remplir la
                 nuit, l'idée est de le remplir le matin au réveil, même si cela est approximatif.
                 Cela peut aussi permettre de préparer une consultation à laquelle on amène l'agenda.{" "}
-                <Link
+                <ExternalLink
                   href="https://www.reseau-morphee.fr/wp-content/uploads/2009/01/agenda_2p.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   Agenda du sommeil (Réseau Morphée)
-                </Link>
+                </ExternalLink>
               </p>
               <p>
                 La qualité du sommeil ne tient pas nécessairement à la quantité : ne pas chercher à
@@ -259,13 +245,11 @@ export const FEELING_FATIGUE: Feeling = {
           desc: (
             <>
               remplis{" "}
-              <Link
+              <ExternalLink
                 href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/ASTEN_depliant-sommeil_INSV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 ton agenda du sommeil
-              </Link>
+              </ExternalLink>
             </>
           ),
         },
@@ -352,22 +336,20 @@ export const FEELING_FATIGUE: Feeling = {
               pas besoin de salle de sport ni d'abonnement. Marcher jusqu'à la fac, prendre les
               escaliers, faire un trajet à vélo : ça compte. Et si le seul créneau possible est tard
               le soir, garde-le quand même. Bouger tard reste préférable à ne pas bouger du tout (
-              <Link
+              <ExternalLink
                 href="https://reseau-morphee.fr/sommeil-et-activite-physique"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Réseau Morphée
-              </Link>
+                <span className="fr-sr-only">information sur le lien entre activité physique et sommeil - nouvelle fenêtre</span>
+              </ExternalLink>
               ), et un exercice modéré une heure avant le coucher n'altère que légèrement le sommeil
               (
-              <Link
+              <ExternalLink
                 href="https://www.inserm.fr/actualite/un-exercice-physique-modere-avant-la-nuit-nempeche-pas-de-bien-dormir/"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Inserm
-              </Link>
+                <span className="fr-sr-only">article sur le lien entre sommeil et exercice physique modéré - nouvelle fenêtre</span>
+              </ExternalLink>
               )
             </>
           ),

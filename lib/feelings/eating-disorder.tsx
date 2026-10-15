@@ -1,3 +1,4 @@
+import ExternalLink from "@/components/link/ExternalLink";
 import { Feeling } from "./types";
 import Link from "next/link";
 
@@ -69,13 +70,11 @@ export const FEELING_EATING_DISORDER: Feeling = {
               Depuis mai 2026, le repas à 1 € est ouvert à tous les étudiants, boursiers ou non. Un
               plat et deux accompagnements, le midi, et le soir dans les restos U qui sont ouverts.
               En savoir plus sur{" "}
-              <Link
+              <ExternalLink
                 href="https://www.etudiant.gouv.fr/fr"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 etudiant.gouv.fr
-              </Link>
+              </ExternalLink>
             </p>
           </>
         ),

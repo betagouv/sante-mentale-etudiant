@@ -1,3 +1,4 @@
+import ExternalLink from "@/components/link/ExternalLink";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -94,11 +95,9 @@ export default function PersonalData() {
             <li>Droit à la limitation du traitement de vos données.</li>
           </ul>
           <p>
-            Vous pouvez prendre attache avec le délégué à la protection des données à l’adresse
-            suivante :
-            <Link href="mailto:dpd@education.gouv.fr" target="_blank" rel="noopener noreferrer">
-              dpd@education.gouv.fr
-            </Link>{" "}
+            Vous pouvez prendre attache avec le délégué à la protection des données à l&apos;adresse
+            suivante :{" "}
+            <Link href="mailto:dpd@education.gouv.fr">dpd@education.gouv.fr</Link>
           </p>
           <p>
             Ou écrire par voie postale à :
@@ -145,25 +144,19 @@ export default function PersonalData() {
           <ul>
             <li>
               Scalingo - France - hébergement -{" "}
-              <Link
+              <ExternalLink
                 href="https://scalingo.com/fr/contrat-gestion-traitements-donnees-personnelles"
-                key="scalingo"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Garanties
-              </Link>
+              </ExternalLink>
             </li>
             <li>
               Brevo - France - infolettre -{" "}
-              <Link
+              <ExternalLink
                 href="https://www.brevo.com/fr/legal/termsofuse/#accord-sur-le-traitement-des-donnees-a-caractere-personnel-dpa"
-                key="crisp"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Garanties
-              </Link>
+              </ExternalLink>
             </li>
           </ul>
         </section>
@@ -179,22 +172,16 @@ export default function PersonalData() {
           </p>
           <ul>
             <li>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-et-traceurs-que-dit-la-loi"
-              >
+              <ExternalLink href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/que-dit-la-loi">
                 Cookies et traceurs : que dit la loi ?
-              </Link>
+              </ExternalLink>
             </li>
             <li>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/outils/maitriser-vos-cookies"
+              <ExternalLink
+                href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/comment-se-proteger/maitriser-votre-navigateur"
               >
                 Cookies : les outils pour les maîtriser
-              </Link>
+              </ExternalLink>
             </li>
           </ul>
         </section>

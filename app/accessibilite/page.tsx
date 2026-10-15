@@ -1,3 +1,4 @@
+import ExternalLink from "@/components/link/ExternalLink";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
 import { Metadata } from "next";
 
@@ -57,25 +58,19 @@ export default async function AccessibilityDeclaration() {
         <ul>
           <li>
             Écrire un message au{" "}
-            <a
+            <ExternalLink
               href="https://formulaire.defenseurdesdroits.fr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Défenseur des droits - nouvelle fenêtre"
             >
               Défenseur des droits (nouvelle fenêtre)
-            </a>
+            </ExternalLink>
           </li>
           <li>
             Contacter{" "}
-            <a
+            <ExternalLink
               href="https://www.defenseurdesdroits.fr/saisir/delegues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Délégué du Défenseur des droits dans votre région - nouvelle fenêtre"
             >
               le délégué du Défenseur des droits dans votre région (nouvelle fenêtre)
-            </a>
+            </ExternalLink>
           </li>
           <li>
             Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) :
@@ -91,14 +86,11 @@ export default async function AccessibilityDeclaration() {
 
         <p>
           Cette déclaration d&apos;accessibilité a été créée le 10 septembre 2026 grâce au{" "}
-          <a
+          <ExternalLink
             href="https://betagouv.github.io/a11y-generateur-declaration/#create"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Générateur de Déclaration d'Accessibilité - nouvelle fenêtre"
           >
             Générateur de Déclaration d&apos;Accessibilité (nouvelle fenêtre)
-          </a>
+          </ExternalLink>
           .
         </p>
       </section>
