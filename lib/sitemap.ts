@@ -13,12 +13,15 @@ export const SITE_SECTIONS: SiteSection[] = [
   { title: "Orienteur", href: "/orienteur" },
   {
     title: "Je ressens...",
-    children: feelings.map((feeling) => ({ title: feeling.name, href: `/je-ressens/${feeling.slug}` })),
+    children: feelings.map((feeling) => ({ title: feeling.catch.description, href: `/je-ressens/${feeling.slug}` })),
   },
   { title: "Trouver du soutien", href: "/trouver-du-soutien" },
   {
     title: "Les dispositifs",
-    children: dispositifs.map((dispositif) => ({ title: dispositif.menuTitle || dispositif.slug, href: `/dispositif/${dispositif.slug}` })),
+    children: dispositifs.map((dispositif) => ({
+      title: `${dispositif.menuTitle || dispositif.slug} : ${dispositif.menuPhrase}`,
+      href: `/dispositif/${dispositif.slug}`,
+    })),
   },
   {
     title: "S'informer",
