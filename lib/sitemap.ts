@@ -13,7 +13,10 @@ export const SITE_SECTIONS: SiteSection[] = [
   { title: "Orienteur", href: "/orienteur" },
   {
     title: "Je ressens...",
-    children: feelings.map((feeling) => ({ title: feeling.catch.description, href: `/je-ressens/${feeling.slug}` })),
+    children: feelings.map((feeling) => ({
+      title: feeling.catch.description,
+      href: `/je-ressens/${feeling.slug}`,
+    })),
   },
   { title: "Trouver du soutien", href: "/trouver-du-soutien" },
   {
@@ -36,7 +39,6 @@ export const SITE_SECTIONS: SiteSection[] = [
   { title: "Aider un proche", href: "/aider-un-proche" },
   { title: "Mentions légales", href: "/mentions-legales" },
   { title: "Données personnelles", href: "/donnees-personnelles" },
-  { title: "Gestion des cookies", href: "/gestion-cookies" },
   { title: "Qui sommes-nous", href: "/qui-sommes-nous" },
   { title: "Accessibilité", href: "/accessibilite" },
 ];
