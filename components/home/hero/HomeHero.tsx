@@ -12,7 +12,7 @@ export default function HomeHero() {
   return (
     <FullBleedSection
       innerContainerClassName={styles.heroContainer}
-      aria-labelledby="cta-hero"
+      ariaLabelledBy="cta-hero"
       bgColor="purple"
       borderColor="yellow"
     >

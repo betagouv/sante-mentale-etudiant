@@ -15,10 +15,10 @@ export default function TipCard({ tip, picto, onReadMore }: Props) {
         <h3>{tip.title}</h3>
         <div className={styles.itemsList}>
           {
-            <span>
+            <div>
               <b>{tip.items[0].title} : </b>
               {tip.items[0].desc}{" "}
-            </span>
+            </div>
           }
         </div>
         <Button

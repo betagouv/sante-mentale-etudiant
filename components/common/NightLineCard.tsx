@@ -36,7 +36,7 @@ export default function NightLineCard() {
           <Button
             priority="secondary"
             linkProps={{
-              href: "tel:0 809 104 104",
+              href: "tel:0809104104",
               "aria-label": "Appeler Nightline",
             }}
           >

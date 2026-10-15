@@ -92,7 +92,7 @@ export const FEELING_FATIGUE: Feeling = {
         question: "Mais alors, d’où ça peut venir ?",
         answer: (
           <>
-            <h5>1. Ton horloge interne tourne en décalé.</h5>{" "}
+            <h4>1. Ton horloge interne tourne en décalé.</h4>{" "}
             <p>
               Nous avons tous une horloge interne. Le soir, elle déclenche la mélatonine, l'hormone
               qui donne le signal du sommeil. Jusqu'à une vingtaine d'années, ce signal arrive plus
@@ -105,7 +105,7 @@ export const FEELING_FATIGUE: Feeling = {
               ). Sauf que les cours, eux, commencent tôt. Les nuits de semaine sont écourtées, le
               week-end sert de rattrapage, et ce va-et-vient fatigue autant qu'une nuit trop courte.
             </p>{" "}
-            <h5>2. Ce qu'il y a autour.</h5>
+            <h4>2. Ce qu'il y a autour.</h4>
             <p>
               Le sommeil se dérègle aussi par ce qui l'entoure : les écrans tard le soir, la
               pression des études et le stress des partiels, une chambre mal isolée où le bruit
@@ -113,13 +113,13 @@ export const FEELING_FATIGUE: Feeling = {
               juste avant de se coucher. Chacun mis bout à bout retarde l'endormissement. → Voir la
               page <FeelingLink slug="drugs" />.
             </p>
-            <h5>3. La fatigue de l'anxiété.</h5>
+            <h4>3. La fatigue de l'anxiété.</h4>
             <p>
               Rester en alerte consomme énormément d'énergie. Les pensées qui tournent la nuit, la
               tension musculaire, l'anticipation : tout cela fatigue, même sans effort physique. →
               Voir la page <FeelingLink slug="anxiety" />.
             </p>
-            <h5>4. Une fatigue qui cache autre chose.</h5>
+            <h4>4. Une fatigue qui cache autre chose.</h4>
             <p>
               Quand la fatigue s'accompagne d'une perte d'envie, d'un moral bas, d'un sentiment de
               vide qui dure plus de deux semaines, ce n'est plus seulement de la fatigue. Un tiers
@@ -134,7 +134,7 @@ export const FEELING_FATIGUE: Feeling = {
               </ExternalLink>
               ). Cette fatigue peut se soigner, il faut en parler.
             </p>
-            <h5>5. Une cause physique.</h5>
+            <h4>5. Une cause physique.</h4>
             <p>
               La fatigue peut aussi venir du corps : anémie, trouble de la thyroïde, apnées du
               sommeil… Un médecin peut le vérifier avec un examen et, si besoin, une prise de sang ({" "}

@@ -18,7 +18,7 @@ const TO_AVOID = [
 
 export default function HelpWords() {
   return (
-    <FullBleedSection aria-labelledby="words-title" bgColor="light-purple">
+    <FullBleedSection ariaLabelledBy="words-title" bgColor="light-purple">
       <h2 className={styles.title}>
         Ce qu'on peut dire <span className={styles.regular}>(et ce qu'il vaut mieux éviter)</span>
       </h2>
