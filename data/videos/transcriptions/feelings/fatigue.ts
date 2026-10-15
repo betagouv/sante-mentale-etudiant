@@ -1,5 +1,8 @@
 export const transcriptionFatigue = `
+[Message vocal d’un étudiant] 
 0:00 Bonjour Jérôme, en ce moment je me sens épuisée, pas juste fatiguée parce que j'ai mal dormi mais vraiment j'ai l'impression d'être vidée, même après une bonne nuit, j'ai l'impression de jamais récupérer en fait, je me lève, je suis déjà fatiguée, j'arrive plus à me concentrer en cours, tout me demande un effort énorme, j'ai l'impression d'être devenue paresseuse alors qu'avant j'étais quelqu'un d'hyper motivé, là vraiment j'ai plus d'énergie pour rien, je sais pas comment y remédier.
+
+[Jérôme Lacinga] 
 0:27 La fatigue décrite dans ce message, elle vient pas d'un manque de motivation, de volonté. Ce que décrit là cet étudiant, c'est que finalement il dort mais il n'arrive pas à récupérer et donc ce sommeil là, il n'est pas suffisamment réparateur.
 0:44 Après il peut y avoir d'autres aspects, est-ce que vraiment le sommeil n'est pas réparateur ou est-ce qu'il y a d'autres problématiques qui se dégagent pour cet étudiant là ?
 0:56 On va observer comme ça des fatigues qui sont un peu particulières, c'est-à-dire des fatigues où même si on a l'impression de dormir, finalement on sent bien que dans la journée, on n'y arrive pas, on n'a pas d'énergie, on n'a pas envie.
@@ -15,8 +18,8 @@ export const transcriptionFatigue = `
 2:19 Et puis si toute cause physiologique est écartée, à ce moment-là, on pourra se pencher sur des aspects psychologiques.
 2:26 Parce qu'on sait très bien que des pathologies comme la dépression, comme l'anxiété, comme des troubles attentionnels, peuvent générer aussi ce type de fatigue.
 2:35 Alors les signes à prendre au sérieux qui nous permettent de comprendre que le corps envoie un message, ça va être ce qui est un peu décrit ici.
-2:46 C'est-à-dire à la fois le fait de dormir, mais de sentir qu'on ne récupère pas de dormir.
-2:51 Et en même temps, on n'a plus d'envie, plus d'énergie.
+2:46 C'est-à-dire à la fois le fait de dormir, mais de sentir qu'on ne récupère pas
+2:51 De dormir et en même temps, on n'a plus d'envie, plus d'énergie dans la journée.
 2:57 On est peut-être plus irritable aussi.
 3:00 Peut-être que le corps va aussi manifester dans le cadre de troubles du sommeil.
 3:05 Comme ça, on va observer soit des somnolences dans la journée, soit des problèmes de concentration, des problèmes d'attention, des tremblements aussi qui peuvent émerger, mais aussi des troubles de la mémoire qui peuvent apparaître.

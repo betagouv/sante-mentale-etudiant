@@ -1,16 +1,16 @@
 export const transcription3040 = `
-0:00 Bonjour, je suis Inaé Benabin, la cofondatrice d'En Avant Tout qui gère le 30-40.
+0:00 Bonjour, je suis Ynaée Benaben, la cofondatrice d'En Avant Toutes qui gère le 30-40.
 0:05 Le 30-40, c'est le numéro pour les étudiants et étudiantes
 0:09 qui sont dans des situations de mal-être, de souffrance
 0:12 ou qui subissent des violences sexistes et sexuelles ou des discriminations.
 0:16 Le 30-40 est une ligne du ministère de l'Enseignement supérieur
-0:19 qui est opérée par En Avant Tout.
+0:19 qui est opérée par En Avant Toutes.
 0:20 C'est gratuit, c'est anonyme, c'est opéré par des professionnels
 0:25 qui sont bienveillants et qui sont là pour vous écouter.
 0:28 Et la ligne est ouverte du lundi au vendredi de 10h à 21h
 0:32 et les samedis de 10h à 14h.
 0:34 Pour nous joindre, il suffit de composer le 30-40
-0:36 et ça permet d'être tout de suite mis en relation avec une de nos professionnels
+0:36 et ça permet d'être tout de suite mis en relation avec une de nos professionnelles
 0:40 qui sont des psychologues, des juristes ou des éducatrices spécialisées.
 0:45 Et on peut appeler dans toutes les situations.
 0:48 On a souvent l'impression que ce n'est pas assez grave pour obtenir de l'aide,
