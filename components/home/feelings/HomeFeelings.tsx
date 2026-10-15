@@ -7,18 +7,18 @@ export default function HomeFeelings() {
   return (
     <FullBleedSection aria-labelledby="feelings-grid-title" bgColor="purple" borderColor="green">
       <div className={styles.header}>
-        <h2>Mettre des mots sur ce que tu ressens</h2>
+        <h2 id="feelings-grid-title">Mettre des mots sur ce que tu ressens</h2>
         <p>Des fiches pour identifier ce que tu ressens, mieux comprendre et trouver de l'aide</p>
       </div>
 
       <ul className={styles.grid}>
-        {feelings.map((feeling) => {
-          return (
+        {feelings.map((feeling) => (
+          <li key={`feeling_${feeling.slug}`}>
             <Tile
               className={styles.tile}
-              key={`feeling_${feeling.slug}`}
               enlargeLinkOrButton
               imageUrl={`/images/pictograms/${feeling.slug}.svg`}
+              imageAlt=""
               linkProps={{
                 href: `je-ressens/${feeling.slug}`,
               }}
@@ -26,8 +26,8 @@ export default function HomeFeelings() {
               title={feeling.name}
               titleAs="h3"
             />
-          );
-        })}
+          </li>
+        ))}
       </ul>
     </FullBleedSection>
   );

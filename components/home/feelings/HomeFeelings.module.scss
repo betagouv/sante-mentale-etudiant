@@ -27,16 +27,9 @@
   list-style: none;
 }
 
-.item {
-  height: 248px;
-}
-
-// 4th first tiles
-.item:nth-child(-n + 4) {
-  height: 184px;
-}
-
 .tile {
+  max-height: 248px;
+
   a:focus-visible::before {
     outline: 2px solid #fff;
     outline-offset: 2px;
