@@ -42,7 +42,7 @@ export default function FeelingTips({ feeling }: Props) {
             />
           ))}
           <WhatIfCard whatIf={feeling.whatIf} />
-          <readMoreModal.Component title={activeTip?.title ?? ""}>
+          <readMoreModal.Component title={activeTip?.title ?? "En savoir plus"}>
             {activeTip && (
               <div className={styles.tips}>
                 {activeTip.items.map((tipItem, idx) => (
