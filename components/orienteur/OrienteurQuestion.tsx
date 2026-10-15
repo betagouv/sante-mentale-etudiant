@@ -51,12 +51,12 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
   const buttonsList: ButtonProps[] = [
     ...(skip
       ? [
-          {
-            children: skip.label,
-            priority: "secondary" as const,
-            onClick: () => onAnswer({ next: skip.next, patchAnswers: { [node.id]: skip.value } }),
-          },
-        ]
+        {
+          children: skip.label,
+          priority: "secondary" as const,
+          onClick: () => onAnswer({ next: skip.next, patchAnswers: { [node.id]: skip.value } }),
+        },
+      ]
       : []),
     {
       children: "Continuer",
@@ -83,6 +83,7 @@ export default function OrienteurQuestion({ node, onAnswer, defaultAnswer }: Pro
       <p>{node.legend}</p>
 
       <RadioButtons
+        legend={node.legend}
         name={node.id}
         state="default"
         options={node.options.map((option) => {
