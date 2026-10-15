@@ -17,12 +17,12 @@ export default function PodcastPlayer({
       <iframe
         src={podcastUrl}
         title={`Lecteur audio : ${title}`}
-        width="100%"
+        className={styles.player}
         height="200"
         loading="lazy"
       />
       {transcription && (
-        <Accordion label="Transcription">
+        <Accordion label="Transcription" titleAs="h2" className={styles.accordion}>
           <p className={styles.transcription}>{transcription}</p>
         </Accordion>
       )}
