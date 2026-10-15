@@ -52,16 +52,16 @@ export default function WhyThisSite() {
             d’écoute de nuit par des étudiants)...
           </div>
           <div className={styles.card}>
-            Les dispositifs sont là, mais ils sont peu lisibles. Les étudiants nous ont répondu (3) : ce qu’ils veulent, c’est passer de l’information à
-            l’action.
+            Les dispositifs sont là, mais ils sont peu lisibles. Les étudiants nous ont répondu (3)
+            : ce qu’ils veulent, c’est passer de l’information à l’action.
             <br />
             <br />
             C'est ce constat qui a guidé la construction de Santé Mentale Étudiant.
             <br />
             <br />
             <i>
-              (3) enquête Santé Psy Etudiant, Février 2026 (320 répondants) ; enquête mesure
-              d’impact Santé Psy Etudiant, Juin 2026 (1413 répondants), 45 entretiens individuels
+              (3) enquête Santé Psy Étudiant, Février 2026 (320 répondants) ; enquête mesure
+              d’impact Santé Psy Étudiant, Juin 2026 (1413 répondants), 45 entretiens individuels
               (d’avril à juin 2026)
             </i>
           </div>

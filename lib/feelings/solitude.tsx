@@ -56,15 +56,13 @@ export const FEELING_SOLITUDE: Feeling = {
             </p>
             <p>
               En France, 62 % des 18-24 ans déclarent se sentir régulièrement seuls, selon une{" "}
-              <ExternalLink
-                href="https://www.ifopgroup.com/article/limpact-de-la-solitude-sur-la-vie-des-francais/"
-              >
+              <ExternalLink href="https://www.ifopgroup.com/article/limpact-de-la-solitude-sur-la-vie-des-francais/">
                 étude de l'IFOP en 2024
               </ExternalLink>
               .
             </p>
             <p>
-              Chez Santé Psy Etudiant, le sentiment de solitude / l’isolement est le 5e motif de
+              Chez Santé Psy Étudiant, le sentiment de solitude / l’isolement est le 5e motif de
               consultation (après l’anxiété, l’épuisement, la tristesse, l’envie de mieux se
               comprendre) - Source : enquête SPE Juin 2026.
             </p>
@@ -93,9 +91,7 @@ export const FEELING_SOLITUDE: Feeling = {
             <p>
               Les réseaux sociaux peuvent également accentuer ce sentiment. Paradoxalement, les
               jeunes n’ont jamais été aussi connectés, et ils ne se sont jamais sentis aussi seuls{" "}
-              <ExternalLink
-                href="https://www.info.gouv.fr/actualite/hyperconnectes-mais-seuls-la-solitude-chez-les-jeunes"
-              >
+              <ExternalLink href="https://www.info.gouv.fr/actualite/hyperconnectes-mais-seuls-la-solitude-chez-les-jeunes">
                 Voir article : "Jeunes : hyperconnectés, mais seuls"
               </ExternalLink>
               . En voyant les autres partager leurs sorties, leurs “réussites” ou leurs “amitiés”,
@@ -113,9 +109,7 @@ export const FEELING_SOLITUDE: Feeling = {
             <p>
               Quand on se sent seul, on a 2,5 fois plus de risques de souffrir de détresse
               psychologique (
-              <ExternalLink
-                href="https://etude-mentalo.fr/diplemeo/"
-              >
+              <ExternalLink href="https://etude-mentalo.fr/diplemeo/">
                 Etude participative Mentalo
               </ExternalLink>
               sur la santé mentale des jeunes de 11 à 24 ans).

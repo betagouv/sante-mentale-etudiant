@@ -12,6 +12,9 @@ export const DISPOSITIF_SSE: Dispositif = {
   videoKey: "SSE",
   button: {
     text: "Trouver mon SSE",
+    linkProps: {
+      href: "/trouver-du-soutien?what-i-need=psy&format=campus",
+    },
   },
   audience: {
     title: "À qui s'adressent les SSE ?",
@@ -56,11 +59,14 @@ export const DISPOSITIF_SSE: Dispositif = {
         desc: (
           <>
             Les coordonnées de ton Service de santé étudiante sont disponibles auprès de ton
-            établissement ou juste ici (lien page SME).
+            établissement ou juste ici, en précisant ta localisation.
           </>
         ),
         badge: "01",
         picto: "Map",
+        linkProps: {
+          href: "/trouver-du-soutien?what-i-need=psy&format=campus",
+        },
       },
       {
         title: "Prends rendez-vous",

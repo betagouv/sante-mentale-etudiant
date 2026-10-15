@@ -13,6 +13,9 @@ export const DISPOSITIF_BAPU: Dispositif = {
   videoKey: "BAPU",
   button: {
     text: "Trouver mon BAPU",
+    linkProps: {
+      href: "/trouver-du-soutien?what-i-need=psy&format=campus",
+    },
   },
   audience: {
     title: "À qui s'adresse un BAPU ?",
@@ -55,12 +58,16 @@ export const DISPOSITIF_BAPU: Dispositif = {
         title: "Trouve le BAPU le plus proche",
         desc: (
           <>
-            Les BAPU sont implantés dans différentes villes universitaires. Tu peux rechercher ici
-            (lien page SME) celui qui se trouve à proximité de ton lieu d'études ou de résidence.
+            Les BAPU sont implantés dans différentes villes universitaires. Tu peux rechercher ici,
+            en précisant ta localisation celui qui se trouve à proximité de ton lieu d'études ou de
+            résidence.
           </>
         ),
         badge: "01",
         picto: "Map",
+        linkProps: {
+          href: "/trouver-du-soutien?what-i-need=psy&format=campus",
+        },
       },
       {
         title: "Contacte directement le BAPU",

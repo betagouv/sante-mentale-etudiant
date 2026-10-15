@@ -12,7 +12,11 @@ export const DISPOSITIF_NIGHTLINE: Dispositif = {
   },
   videoKey: "nightline",
   button: {
-    text: "Contacter Nightline",
+    text: "Découvrir Nightline",
+    linkProps: {
+      href: "https://www.nightline.fr/ma-nightline",
+      "aria-label": "Naviguer vers Nightline",
+    },
   },
   audience: {
     title: "À qui s’adresse Nightline ?",
@@ -60,6 +64,10 @@ export const DISPOSITIF_NIGHTLINE: Dispositif = {
         ),
         badge: "Tous les soirs",
         picto: "Smartphone",
+        linkProps: {
+          href: "tel:0 809 104 104",
+          "aria-label": "Appeler Nightline",
+        },
       },
       {
         title: "Par Tchat",
@@ -71,6 +79,10 @@ export const DISPOSITIF_NIGHTLINE: Dispositif = {
           </>
         ),
         picto: "Smartphone",
+        linkProps: {
+          href: "https://www.nightline.fr/ma-nightline",
+          "aria-label": "Naviguer vers Nightline",
+        },
       },
     ],
   },

@@ -5,13 +5,17 @@ export const DISPOSITIF_SPE: Dispositif = {
   catchPhrase: "12 séances gratuites avec un psychologue",
   menuPhrase: "séances gratuites chez un psy de ton choix",
   metadata: {
-    title: "Santé Psy Etudiant",
+    title: "Santé Psy Étudiant",
     description:
       "Étudiant en souffrance psychique ? Santé Psy Étudiant propose jusqu'à 12 séances gratuites chez un psychologue partenaire. Découvrez comment en bénéficier.",
   },
   videoKey: "SPE",
   button: {
-    text: "Trouver un psychologue",
+    text: "Découvrir Santé Psy Étudiant",
+    linkProps: {
+      href: process.env.NEXT_PUBLIC_SPE_URL || "https://santepsy.etudiant.gouv.fr/",
+      "aria-label": "Naviguer vers Santé Psy Étudiant",
+    },
   },
   audience: {
     title: "À qui s'adresse Santé Psy Étudiant ?",
@@ -59,6 +63,10 @@ export const DISPOSITIF_SPE: Dispositif = {
         ),
         badge: "01",
         picto: "SelfTraining",
+        linkProps: {
+          href: "https://santepsy.etudiant.gouv.fr/inscription",
+          "aria-label": "Crée un espace sur Santé Psy Étudiant",
+        },
       },
       {
         title: "Choisis ton psychologue",

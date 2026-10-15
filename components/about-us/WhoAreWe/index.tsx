@@ -40,7 +40,7 @@ export default function WhoAreWe() {
             <i>(2) OVE, Repères Bien être santé des étudiants, 2024</i>
           </li>
           <li>
-            <i>(3) Enquête Santé Psy Etudiant, juin 2026 (1413 répondants)</i>
+            <i>(3) Enquête Santé Psy Étudiant, juin 2026 (1413 répondants)</i>
           </li>
         </ul>
       </div>
@@ -88,8 +88,8 @@ function Objectives() {
         <li>Agir, grâce à des outils concrets à mobiliser au quotidien.</li>
       </ul>
       <p>
-        Le site s'adresse aux étudiants directement concernés ainsi qu'à ceux
-        qui souhaiteraient aider un proche.
+        Le site s'adresse aux étudiants directement concernés ainsi qu'à ceux qui souhaiteraient
+        aider un proche.
       </p>
     </div>
   );

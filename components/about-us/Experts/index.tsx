@@ -31,7 +31,7 @@ const experts: Expert[] = [
   },
   {
     name: "Jérôme Lacinga",
-    desc: "Psychologue de Santé Psy Etudiant",
+    desc: "Psychologue de Santé Psy Étudiant",
   },
   {
     name: "Katell Le Scouarnec",
