@@ -1,12 +1,12 @@
 import { Tag } from "@codegouvfr/react-dsfr/Tag";
 import { Button } from "@codegouvfr/react-dsfr/Button";
-import { InternalArticleMeta, PodcastArticleMeta } from "@/lib/articles/types";
+import { InternalArticleMeta } from "@/lib/articles/types";
 import styles from "./ArticleInfo.module.scss";
 import { displayDate } from "@/utils/misc";
 import { getFeelingBySlug } from "@/lib/feelings";
 
 type Props = {
-  article: InternalArticleMeta | PodcastArticleMeta;
+  article: InternalArticleMeta;
 };
 export default function ArticleInfo({ article }: Props) {
   const mainFeeling = getFeelingBySlug(article.mainFeelingSlug);

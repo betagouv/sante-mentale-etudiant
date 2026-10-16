@@ -15,7 +15,7 @@ export default function Articles({ defaultFeelingSlug }: Props) {
         <p className={styles.desc}>
           Des informations et des témoignages pour t’accompagner&nbsp;:
           <br />
-          sites, articles, vidéos, podcasts
+          sites, articles, vidéos
         </p>
         <ArticlesSearch
           allArticles={articles}

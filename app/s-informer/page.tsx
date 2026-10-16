@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "S’informer",
   description:
-    "Articles, podcasts et contenus clairs pour mieux comprendre la santé mentale, pensés pour les étudiants et rédigés avec des sources fiables.",
+    "Articles et contenus clairs pour mieux comprendre la santé mentale, pensés pour les étudiants et rédigés avec des sources fiables.",
 };
 
 type SearchParams = { [key: string]: string | string[] | undefined };

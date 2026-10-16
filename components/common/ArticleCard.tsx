@@ -14,12 +14,11 @@ type Props = {
 const TYPE_LABELS: Record<ArticleMeta["type"], string> = {
   internal: "Article",
   external: "Article",
-  podcast: "Podcast",
 };
 
 export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
   const link =
-    article.type === "internal" || article.type === "podcast"
+    article.type === "internal"
       ? { href: `/s-informer/${article.slug}` }
       : {
         href: article.url,

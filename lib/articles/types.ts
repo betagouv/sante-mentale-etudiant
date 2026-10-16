@@ -25,12 +25,4 @@ export interface ExternalArticleMeta extends BaseArticleMeta {
   pdfWeight?: number;
 }
 
-export interface PodcastArticleMeta extends BaseArticleMeta {
-  type: "podcast";
-  podcastUrl: string;
-  transcription: string;
-  publishedAt: string;
-  markdownFile: string; // filename inside content/articles/
-}
-
-export type ArticleMeta = InternalArticleMeta | ExternalArticleMeta | PodcastArticleMeta;
+export type ArticleMeta = InternalArticleMeta | ExternalArticleMeta;
