@@ -20,7 +20,7 @@ export default async function FeelingArticles({ feeling }: Props) {
             className={styles.button}
             priority="tertiary"
             linkProps={{
-              href: `/s-informer?feeling=${feeling.slug}`,
+              href: moreArticles.length > 0 ? `/s-informer?feeling=${feeling.slug}` : "/s-informer",
               "aria-label": "Consulter des articles sur ce thème",
             }}
           >
