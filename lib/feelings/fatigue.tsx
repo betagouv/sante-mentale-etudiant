@@ -70,13 +70,7 @@ export const FEELING_FATIGUE: Feeling = {
                 Santé publique France, Baromètre 2024
               </ExternalLink>
               ). Chez les étudiants, 21 % jugent leur sommeil mauvais ou très mauvais, et un tiers
-              déclarent avoir rencontré des difficultés dans leurs études à cause de leur sommeil (
-              <ExternalLink
-                href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
-              >
-                OVE, enquête Bien-être et santé 2024, PDF
-              </ExternalLink>
-              ).
+              déclarent avoir rencontré des difficultés dans leurs études à cause de leur sommeil (OVE, enquête Bien-être et santé 2024).
             </p>
             <p>
               Chez les étudiants qui consultent un psychologue via Santé Psy Étudiant, l'épuisement
@@ -125,14 +119,7 @@ export const FEELING_FATIGUE: Feeling = {
               vide qui dure plus de deux semaines, ce n'est plus seulement de la fatigue. Un tiers
               des étudiants présentent les signes d’une détresse psychologique et la moitié a vécu
               une période d’au moins deux semaines consécutives pendant laquelle ils se sont sentis
-              tristes, déprimés, sans espoir, au cours des 12 derniers mois (
-              <ExternalLink
-                href="https://www.ove-national.education.fr/wp-content/uploads/2024/05/OVE-Reperes-Bien-etre-Sante-2024.pdf"
-              >
-                OVE 2024, PDF
-                <span className="fr-sr-only">étude sur le bien-être des jeunes - nouvelle fenêtre</span>
-              </ExternalLink>
-              ). Cette fatigue peut se soigner, il faut en parler.
+              tristes, déprimés, sans espoir, au cours des 12 derniers mois (OVE 2024). Cette fatigue peut se soigner, il faut en parler.
             </p>
             <h4>5. Une cause physique.</h4>
             <p>
@@ -142,7 +129,6 @@ export const FEELING_FATIGUE: Feeling = {
                 href="https://www.ameli.fr/assure/sante/themes/asthenie-fatigue/consultation-medicale-traitement"
               >
                 Assurance Maladie
-                <span className="fr-sr-only">information sur l'asthénie - nouvelle fenêtre</span>
               </ExternalLink>
               ). C'est une étape à ne pas sauter.
             </p>
@@ -340,7 +326,6 @@ export const FEELING_FATIGUE: Feeling = {
                 href="https://reseau-morphee.fr/sommeil-et-activite-physique"
               >
                 Réseau Morphée
-                <span className="fr-sr-only">information sur le lien entre activité physique et sommeil - nouvelle fenêtre</span>
               </ExternalLink>
               ), et un exercice modéré une heure avant le coucher n'altère que légèrement le sommeil
               (
@@ -348,7 +333,6 @@ export const FEELING_FATIGUE: Feeling = {
                 href="https://www.inserm.fr/actualite/un-exercice-physique-modere-avant-la-nuit-nempeche-pas-de-bien-dormir/"
               >
                 Inserm
-                <span className="fr-sr-only">article sur le lien entre sommeil et exercice physique modéré - nouvelle fenêtre</span>
               </ExternalLink>
               )
             </>
