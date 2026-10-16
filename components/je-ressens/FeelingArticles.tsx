@@ -16,7 +16,14 @@ export default async function FeelingArticles({ feeling }: Props) {
         <h2>Pour aller plus loin</h2>
         <ArticlesList articles={moreArticles.slice(0, 3)} />
         <div className={styles.buttonWrapper}>
-          <Button className={styles.button} priority="tertiary">
+          <Button
+            className={styles.button}
+            priority="tertiary"
+            linkProps={{
+              href: `/s-informer?feeling=${feeling.slug}`,
+              "aria-label": "Consulter des articles sur ce thème",
+            }}
+          >
             Plus d’articles
           </Button>
         </div>
