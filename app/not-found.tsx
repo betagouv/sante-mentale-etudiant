@@ -1,5 +1,6 @@
 import Button from "@codegouvfr/react-dsfr/Button";
 import { Metadata } from "next";
+import TechnicalError from "@codegouvfr/react-dsfr/picto/TechnicalError";
 
 export const metadata: Metadata = {
   title: "Page non trouvée",
@@ -33,6 +34,9 @@ export default function NotFound() {
                 </Button>
               </li>
             </ul>
+          </div>
+          <div className="fr-col-12 fr-col-md-3 fr-col-offset-md-1 fr-px-6w fr-px-md-0 fr-py-0">
+            <TechnicalError fontSize="12rem" />
           </div>
         </div>
       </div>
