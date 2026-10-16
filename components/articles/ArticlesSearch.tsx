@@ -12,17 +12,21 @@ import {
   IllustrationArticlesLeft2,
   IllustrationArticlesRight,
 } from "../illustrations";
+import { FeelingSlug } from "@/lib/feelings/data";
 
 type Props = {
   allArticles: ArticleMeta[];
   feelings: Feeling[];
+  defaultFeelingSlug?: FeelingSlug;
 };
-export default function ArticlesSearch({ allArticles, feelings }: Props) {
+export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSlug }: Props) {
   const [inputValue, setInputValue] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedFeelingSlugs, setSelectedFeelingSlugs] = useState<string[]>([]);
+  const [selectedFeelingSlugs, setSelectedFeelingSlugs] = useState<FeelingSlug[]>(
+    defaultFeelingSlug ? [defaultFeelingSlug] : []
+  );
 
-  const toggleFeelingSlug = (slug: string) => {
+  const toggleFeelingSlug = (slug: FeelingSlug) => {
     if (selectedFeelingSlugs.includes(slug)) {
       setSelectedFeelingSlugs([...selectedFeelingSlugs.filter((s) => s !== slug)]);
     } else {

@@ -2,9 +2,12 @@ import { articles } from "@/lib/articles/data";
 import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./Articles.module.scss";
 import ArticlesSearch from "./ArticlesSearch";
-import { feelings } from "@/lib/feelings/data";
+import { feelings, FeelingSlug } from "@/lib/feelings/data";
 
-export default function Articles() {
+type Props = {
+  defaultFeelingSlug?: FeelingSlug;
+};
+export default function Articles({ defaultFeelingSlug }: Props) {
   return (
     <FullBleedSection bgColor="grey">
       <div className={styles.pageContainer}>
@@ -14,7 +17,11 @@ export default function Articles() {
           <br />
           sites, articles, vidéos, podcasts
         </p>
-        <ArticlesSearch allArticles={articles} feelings={feelings} />
+        <ArticlesSearch
+          allArticles={articles}
+          feelings={feelings}
+          defaultFeelingSlug={defaultFeelingSlug}
+        />
       </div>
     </FullBleedSection>
   );
