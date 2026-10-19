@@ -1,7 +1,7 @@
 @use "@/styles/breakpoints" as *;
 
 .card {
-  width: 420px;
+  width: 26.25em;
   max-width: 100%;
   background-color: white;
   display: flex;
@@ -63,7 +63,7 @@
   }
 
   .card {
-    width: 588px;
+    width: 36.75em;
     padding: 2.25rem 3rem 2rem 3rem;
     max-width: 100%;
   }
