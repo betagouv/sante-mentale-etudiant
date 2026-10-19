@@ -15,7 +15,7 @@ export default function FeelingRecap({ feeling }: Props) {
       <h2>À retenir de cette vidéo</h2>
       <Disclaimer>
         Cette page et cette vidéo donnent des repères et conseils généraux et ne remplacent pas un
-        échange individuel avec un professionnel qui tiendra compte de ta situation.
+        échange individuel avec un professionnel qui tiendra compte de ta situation spécifique.
       </Disclaimer>
       <div className={styles.list}>
         {feeling.recap.map((r, index) => (
