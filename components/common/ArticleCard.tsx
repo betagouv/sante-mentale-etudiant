@@ -58,7 +58,7 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
         <>
           {article.readingTime && renderReadingTime(article.readingTime)}
           {isExternal && article.pdfWeight && `PDF, ${article.pdfWeight} Mo`}
-          {isExternal && " • Lien externe (nouvelle fenêtre)"}
+          {isExternal && "Lien externe (nouvelle fenêtre)"}
         </>
       }
     />
