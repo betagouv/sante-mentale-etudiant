@@ -6,6 +6,7 @@
   align-items: center;
   gap: 1rem;
   color: #fff;
+  margin-top: 5rem;
   h2,
   p {
     text-align: center;
@@ -49,6 +50,9 @@
 }
 
 @media (max-width: 768px) {
+  .content {
+    margin-top: 0;
+  }
   .title {
     font-size: x-large;
   }
