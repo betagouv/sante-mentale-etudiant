@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .header {
   text-align: center;
   margin: 0 auto 3.5rem;
@@ -49,7 +51,7 @@
   font-size: 1.25rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: $md) {
   .content {
     flex-direction: row;
     align-items: flex-start;

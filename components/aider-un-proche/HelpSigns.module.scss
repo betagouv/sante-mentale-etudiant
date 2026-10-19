@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .container {
   text-align: center;
 }
@@ -63,7 +65,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $xl) {
   .title {
     font-size: 3rem;
     line-height: 3.5rem;

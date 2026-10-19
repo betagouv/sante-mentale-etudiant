@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .container {
   display: flex;
   flex-direction: column;
@@ -19,13 +21,13 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: $xl) {
   .container {
     padding: 2rem;
   }
 }
 
-@media (max-width: 728px) {
+@media (max-width: $md) {
   .container {
     padding: 0px;
     .title {

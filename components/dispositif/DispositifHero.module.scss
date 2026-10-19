@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .container {
   min-height: 540px;
   display: flex;
@@ -26,7 +28,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .container {
     padding-bottom: 289px;
   }

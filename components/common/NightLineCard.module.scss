@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .card {
   width: 340px;
   margin: auto;
@@ -41,13 +43,13 @@
   row-gap: 0.75rem;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: $md) {
   .card {
     margin-left: 0;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .card {
     width: 100%;
     flex-direction: row;

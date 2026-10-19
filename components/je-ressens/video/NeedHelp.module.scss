@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .container {
   width: 384px;
   height: 628px;
@@ -53,7 +55,7 @@
   font-size: 0.875rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .title {
     font-size: 2rem;
   }

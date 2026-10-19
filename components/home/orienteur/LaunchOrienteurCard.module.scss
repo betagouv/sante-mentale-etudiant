@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .cardWrapper {
   height: 100%;
   width: 100%;
@@ -33,7 +35,7 @@
   justify-content: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: $lg) {
   .cardWrapper {
     display: flex;
     align-items: center;

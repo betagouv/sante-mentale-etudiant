@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .content {
   max-width: 832px;
   margin: auto;
@@ -49,7 +51,7 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .content {
     margin-top: 0;
   }

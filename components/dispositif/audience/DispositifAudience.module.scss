@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -25,7 +27,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .cardBody {
     padding: 0.5rem 2rem;
   }

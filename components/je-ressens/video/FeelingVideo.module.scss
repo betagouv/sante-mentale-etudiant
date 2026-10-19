@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .innerContainer {
   padding: 0px 1rem;
 }
@@ -42,7 +44,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .content {
     flex-direction: row;
   }
