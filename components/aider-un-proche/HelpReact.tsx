@@ -11,15 +11,15 @@ export default function HelpReact() {
         <LightPinkBadge>Étape 2</LightPinkBadge>
         <h2 id="react-title">Comment réagir ?</h2>
         <p className={styles.subtitle}>
-          <b>Voici 4 gestes simples, résumés par le mot L.I.E.N.</b>, inspirés des
-          approches de prévention par les pairs. <br /> Tu n'as pas besoin d'être expert, ta
-          présence compte énormément.
+          <b>Voici 4 gestes simples, résumés par le mot L.I.E.N.</b>, inspirés des approches de
+          prévention par les pairs. <br /> Tu n'as pas besoin d'être expert, ta présence compte
+          énormément.
         </p>
       </div>
 
       <div className={styles.content}>
         <Image
-          src="/images/pictures/help.jpg"
+          src="/images/pictures/help.svg"
           alt=""
           className={styles.photo}
           width={408}

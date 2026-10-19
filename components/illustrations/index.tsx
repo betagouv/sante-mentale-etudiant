@@ -23,7 +23,7 @@ const RenderImage = ({ src, width, height, alt = "", className }: Props) => (
 
 export const IllustrationNeedToTalkSittingLeft = () => (
   <RenderImage
-    src="/images/illustrations/needToTalkBanner/sitting-left.png"
+    src="/images/illustrations/needToTalkBanner/sitting-left.svg"
     width={213}
     height={239}
     className={styles.needToTalkSittingLeft}
@@ -32,7 +32,7 @@ export const IllustrationNeedToTalkSittingLeft = () => (
 
 export const IllustrationNeedToTalkStandingLeft = () => (
   <RenderImage
-    src="/images/illustrations/needToTalkBanner/standing-left.png"
+    src="/images/illustrations/needToTalkBanner/standing-left.svg"
     width={110}
     height={425}
     className={styles.needToTalkStandingLeft}
@@ -40,7 +40,7 @@ export const IllustrationNeedToTalkStandingLeft = () => (
 );
 export const IllustrationNeedToTalkSittingRight = () => (
   <RenderImage
-    src="/images/illustrations/needToTalkBanner/sitting-right.png"
+    src="/images/illustrations/needToTalkBanner/sitting-right.svg"
     width={294}
     height={214}
     className={styles.needToTalkSittingRight}
@@ -49,7 +49,7 @@ export const IllustrationNeedToTalkSittingRight = () => (
 
 export const IllustrationNeedToTalkStandingRight = () => (
   <RenderImage
-    src="/images/illustrations/needToTalkBanner/standing-right.png"
+    src="/images/illustrations/needToTalkBanner/standing-right.svg"
     width={129}
     height={430}
     className={styles.needToTalkStandingRight}
@@ -76,7 +76,7 @@ export const IllustrationHomeMozaic = () => (
 
 export const IllustrationHomePeopleDesktop = () => (
   <RenderImage
-    src="/images/illustrations/home/people-desktop.png"
+    src="/images/illustrations/home/people-desktop.svg"
     width={562}
     height={344}
     className={styles.homePeopleDesktop}
@@ -85,7 +85,7 @@ export const IllustrationHomePeopleDesktop = () => (
 
 export const IllustrationHomePeopleMobile = () => (
   <RenderImage
-    src="/images/illustrations/home/mobile.png"
+    src="/images/illustrations/home/mobile.svg"
     width={327}
     height={147}
     className={styles.homePeopleMobile}
@@ -94,7 +94,7 @@ export const IllustrationHomePeopleMobile = () => (
 
 export const IllustrationHomeGirlDesktop = () => (
   <RenderImage
-    src="/images/illustrations/home/girl-desktop.png"
+    src="/images/illustrations/home/girl-desktop.svg"
     width={313}
     height={392}
     className={styles.homeGirlDesktop}
