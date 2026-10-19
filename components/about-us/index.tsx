@@ -27,14 +27,14 @@ export default function AboutUs() {
           <>
             ou en écrivant à{" "}
             <Link
-              href="mailto:santementaleetudiant@enseignementsup.gouv.fr"
+              href="mailto:santementale.etudiant@enseignementsup.gouv.fr"
             >
-              santementaleetudiant@enseignementsup.gouv.fr
+              santementale.etudiant@enseignementsup.gouv.fr
             </Link>
           </>
         }
         button={
-          <Button className={styles.button} linkProps={{ href: "mailto:santementaleetudiant@enseignementsup.gouv.fr" }}>
+          <Button className={styles.button} linkProps={{ href: "mailto:santementale.etudiant@enseignementsup.gouv.fr" }}>
             Contacter l’équipe
           </Button>
         }
