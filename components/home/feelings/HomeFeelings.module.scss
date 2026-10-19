@@ -30,7 +30,7 @@
 }
 
 .tile {
-  max-height: 248px;
+  max-height: 15.5em;
 
   a:focus-visible::before {
     outline: 2px solid #fff;
@@ -63,7 +63,7 @@
   font-style: italic;
 }
 
-@media (max-width: $md) {
+@media (max-width: $lg) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
