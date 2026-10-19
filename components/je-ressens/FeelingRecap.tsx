@@ -20,14 +20,12 @@ export default function FeelingRecap({ feeling }: Props) {
       <div className={styles.list}>
         {feeling.recap.map((r, index) => (
           <div key={`recap__${index}`} className={styles.recap}>
-            <div>
-              <img
-                src={`/images/pictograms/${RECAP_PICTOS[index]}.svg`}
-                alt=""
-                width={50}
-                height={50}
-              />
-            </div>
+            <img
+              src={`/images/pictograms/${RECAP_PICTOS[index]}.svg`}
+              alt=""
+              width={50}
+              height={50}
+            />
             <h3>{r}</h3>
           </div>
         ))}
