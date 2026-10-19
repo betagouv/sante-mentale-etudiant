@@ -9,8 +9,8 @@
 }
 
 .recap {
-  width: 282px;
-  min-height: 252px;
+  width: 17.625em;
+  min-height: 15.75em;
   border: 1px solid #dfdfdf;
   background-color: white;
   padding: 1.75rem 2rem;
@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .list {
     justify-content: center;
   }
