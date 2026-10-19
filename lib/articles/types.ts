@@ -21,7 +21,6 @@ export interface InternalArticleMeta extends BaseArticleMeta {
 export interface ExternalArticleMeta extends BaseArticleMeta {
   type: "external";
   url: string;
-  intro: string;
   pdfWeight?: number;
 }
 
