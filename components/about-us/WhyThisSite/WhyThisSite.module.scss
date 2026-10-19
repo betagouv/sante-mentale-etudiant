@@ -14,7 +14,7 @@
 }
 
 .tile {
-  max-width: 333px;
+  max-width: 21em;
   color: black;
   :global(.fr-tile__desc) {
     color: #666666;
@@ -64,7 +64,7 @@
   }
   .card {
     padding: 2rem 3rem;
-    width: 600px;
+    width: 37.5em;
   }
   .cards {
     flex-direction: row;
