@@ -14,7 +14,7 @@ export const CARD_3040 = (
   <CustomCard
     title="Appelle le 3040"
     subtitle="Le numéro pour la santé mentale des étudiants"
-    description="Des psychologues et travailleurs sociaux à ton écoute pour t'informer et t'orienter vers les services adaptés."
+    description="Des équipes professionnelles disponibles pour t'écouter avec bienveillance, t'informer et t'orienter selon tes besoins."
     image={logo_3040}
     button={
       <Button
@@ -53,8 +53,8 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
   return (
     <CustomCard
       title="Consulte un psychologue libéral"
-      subtitle="Consultations gratuites avec le psy de ton choix"
-      description="12 séances gratuites avec un psychologue de ton choix parmi plus de 1500 partout en France, en présentiel ou à distance"
+      subtitle="Consultations gratuites avec le psy que tu choisis"
+      description="12 séances gratuites avec un psychologue que tu choisis parmi plus de 1500 partout en France, en présentiel ou à distance"
       image={logo_spe}
       button={
         <Button
