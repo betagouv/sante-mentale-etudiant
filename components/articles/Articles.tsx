@@ -3,6 +3,8 @@ import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./Articles.module.scss";
 import ArticlesSearch from "./ArticlesSearch";
 import { feelings, FeelingSlug } from "@/lib/feelings/data";
+import { Disclaimer } from "../typography/Disclaimer";
+import Link from "next/link";
 
 type Props = {
   defaultFeelingSlug?: FeelingSlug;
@@ -22,6 +24,16 @@ export default function Articles({ defaultFeelingSlug }: Props) {
           feelings={feelings}
           defaultFeelingSlug={defaultFeelingSlug}
         />
+        <Disclaimer className={styles.disclaimer}>
+          Ces ressources t'aident à t'informer et à mettre des mots sur ce que tu vis.
+          Elles ne couvrent pas tout et ne remplacent pas l'avis d'un professionnel.
+          Une ressource à nous suggérer ? Écris-nous à{" "}
+          <Link
+            href="mailto:santementale.etudiant@enseignementsup.gouv.fr"
+          >
+            santementale.etudiant@enseignementsup.gouv.fr
+          </Link>
+        </Disclaimer>
       </div>
     </FullBleedSection>
   );
