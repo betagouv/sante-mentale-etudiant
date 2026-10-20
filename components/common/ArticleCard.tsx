@@ -1,4 +1,4 @@
-import { ArticleMeta } from "@/lib/articles/types";
+import { ArticleMeta, ExternalContentFormat } from "@/lib/articles/types";
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import { Card } from "@codegouvfr/react-dsfr/Card";
 import { Tag } from "@codegouvfr/react-dsfr/Tag";
@@ -11,10 +11,10 @@ type Props = {
   titleAs?: "h3" | "h2" | "h4" | "h5" | "h6" | undefined;
 };
 
-const TYPE_LABELS: Record<ArticleMeta["type"], string> = {
-  internal: "Article",
-  external: "Article",
-};
+const getBadgeLabel = (article: ArticleMeta): string =>
+  article.type === "external" && article.format === "podcast"
+    ? "Podcast"
+    : "Article";
 
 export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
   const link =
@@ -36,7 +36,7 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       background
       badge={
         <Badge severity="new" noIcon>
-          {TYPE_LABELS[article.type]}
+          {getBadgeLabel(article)}
         </Badge>
       }
       border
@@ -57,7 +57,7 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       endDetail={
         <>
           {article.readingTime && renderReadingTime(article.readingTime)}
-          {isExternal && article.pdfWeight && `PDF, ${article.pdfWeight} Mo`}
+          {isExternal && article.pdfWeight && `PDF, ${article.pdfWeight} Mo • `}
           {isExternal && "Lien externe (nouvelle fenêtre)"}
         </>
       }
