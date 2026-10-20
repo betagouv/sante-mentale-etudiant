@@ -135,7 +135,7 @@ export const FEELING_DRUGS: Feeling = {
         ),
       },
       {
-        question: "Comment ça se manifeste concrètement",
+        question: "Comment ça peut se manifester concrètement",
         answer: (
           <ul>
             <li>J’ai besoin d’une substance pour me détendre.</li>
