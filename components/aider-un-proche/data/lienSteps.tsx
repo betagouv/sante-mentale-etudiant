@@ -46,7 +46,9 @@ export const lienSteps: LienStep[] = [
     letter: "E",
     title: "Encourager l'aide",
     description:
-      "Propose des pistes : ligne d'écoute, médecin, service de santé étudiants, psychologue. Tu peux l'aider à prendre rendez-vous si besoin.",
+      "Propose des pistes : ligne d'écoute (ex. 3114 - numéro national de prévention du suicide, 
+      3040 - ligne d'écoute pour les étudiants en situation de mal-être),
+    médecin, service de santé étudiants, psychologue. Tu peux l'aider à prendre rendez-vous si besoin.",
   },
   {
     step: 4,
