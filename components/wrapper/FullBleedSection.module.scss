@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .section {
   &.grey {
     background-color: var(--bg-light-grey);
@@ -35,7 +37,7 @@
   padding: 3.5rem 7.5rem;
 }
 
-@media (max-width: 728px) {
+@media (max-width: $md) {
   .innerContainer {
     padding: 1.5rem;
   }

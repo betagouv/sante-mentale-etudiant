@@ -1,9 +1,11 @@
+@use "@/styles/breakpoints" as *;
+
 .top {
   * {
     color: white;
     line-height: 2rem;
   }
-  max-width: 890px;
+  max-width: 56em;
 }
 .title {
   font-size: 1.5rem;
@@ -23,8 +25,8 @@
   justify-content: center;
 }
 .expert {
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 25em;
+  min-width: 25em;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -45,7 +47,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .title {
     font-size: 3rem;
   }

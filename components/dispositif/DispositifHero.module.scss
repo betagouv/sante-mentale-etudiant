@@ -1,8 +1,10 @@
+@use "@/styles/breakpoints" as *;
+
 .container {
-  min-height: 540px;
+  min-height: 33.75em;
   display: flex;
   flex-direction: column;
-  max-width: 550px;
+  max-width: 34.375em;
   justify-content: center;
 }
 
@@ -26,7 +28,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .container {
     padding-bottom: 289px;
   }

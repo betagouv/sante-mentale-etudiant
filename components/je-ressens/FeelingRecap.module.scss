@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .list {
   display: flex;
   flex-direction: row;
@@ -7,8 +9,8 @@
 }
 
 .recap {
-  width: 282px;
-  min-height: 252px;
+  width: 17.625em;
+  min-height: 15.75em;
   border: 1px solid #dfdfdf;
   background-color: white;
   padding: 1.75rem 2rem;
@@ -26,13 +28,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .container {
     padding-bottom: 0;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .list {
     justify-content: center;
   }

@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .container {
   h2 {
     text-align: center;
@@ -7,7 +9,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .container {
     h2 {
       font-size: 2.5rem;
@@ -17,7 +19,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .container {
     h2 {
       font-size: 1.5rem;

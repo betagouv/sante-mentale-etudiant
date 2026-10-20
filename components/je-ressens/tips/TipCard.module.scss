@@ -1,7 +1,7 @@
 .card {
   background-color: white;
-  max-width: 588px;
-  max-height: 291px;
+  max-width: 36.75em;
+  max-height: 18.2em;
   padding: 1.5rem 2.5rem 2rem 2.5rem;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   img {
     margin-bottom: 0.5rem;
   }
-  
+
   h4 {
     font-size: 1.5rem;
     flex-shrink: 0;

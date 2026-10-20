@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .filters {
   border: 1px solid var(--border-default-grey);
   border-radius: 0.25rem;
@@ -10,7 +12,7 @@
 }
 
 /* --- desktop --- */
-@media (min-width: 768px) {
+@media (min-width: $md) {
   .container {
     padding: 2rem 6.66rem;
   }

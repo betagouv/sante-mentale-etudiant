@@ -1,6 +1,8 @@
+@use "@/styles/breakpoints" as *;
+
 .container {
-  width: 384px;
-  height: 628px;
+  width: 24em;
+  height: 39.25em;
   background-color: white;
   z-index: 1;
   display: flex;
@@ -53,7 +55,7 @@
   font-size: 0.875rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .title {
     font-size: 2rem;
   }

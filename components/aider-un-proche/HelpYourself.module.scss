@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .textColumn {
   display: flex;
   flex: 1;
@@ -25,7 +27,7 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .textColumn {
     max-width: 100%;
 

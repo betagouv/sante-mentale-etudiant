@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -8,7 +10,7 @@
 }
 
 .card {
-  width: 377px;
+  width: 23.56em;
   border: 1px solid #dfdfdf;
   background-color: white;
 }
@@ -25,7 +27,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .cardBody {
     padding: 0.5rem 2rem;
   }

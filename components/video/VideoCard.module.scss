@@ -1,4 +1,3 @@
-
 .card {
   display: flex;
   flex-direction: column;
@@ -7,7 +6,9 @@
   cursor: pointer;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .card:focus-visible {
@@ -59,7 +60,7 @@
 .citation {
   display: flex;
   align-items: center;
-  height: 112px;
+  height: 7em;
   padding: 1rem;
   font-weight: 700;
   font-size: 1.5rem;

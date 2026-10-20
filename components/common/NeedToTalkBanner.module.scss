@@ -1,5 +1,7 @@
+@use "@/styles/breakpoints" as *;
+
 .content {
-  max-width: 832px;
+  max-width: 52em;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -49,7 +51,7 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .content {
     margin-top: 0;
   }

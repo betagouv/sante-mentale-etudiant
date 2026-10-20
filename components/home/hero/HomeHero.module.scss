@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .heroContainer {
   display: flex;
   flex-direction: column;
@@ -26,13 +28,13 @@
   color: var(--bg-yellow);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $md) {
   .orienteur {
     min-width: 454px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $lg) {
   .title {
     text-align: left;
     h1 {

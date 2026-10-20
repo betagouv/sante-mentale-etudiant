@@ -1,9 +1,11 @@
+@use "@/styles/breakpoints" as *;
+
 .innerContainer {
   padding: 0px 1rem;
 }
 
 .content {
-  max-width: 1200px;
+  max-width: 75em;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
@@ -15,7 +17,7 @@
 }
 
 .desc {
-  max-width: 360px;
+  max-width: 22.5em;
   * {
     color: white;
   }
@@ -42,7 +44,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .content {
     flex-direction: row;
   }

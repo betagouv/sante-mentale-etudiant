@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .title {
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -12,7 +14,7 @@
   display: flex;
   gap: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: $md) {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -46,7 +48,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .title {
     font-size: x-large;
   }

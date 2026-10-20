@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints" as *;
+
 .illustration {
   display: none;
   position: absolute;
@@ -13,13 +15,13 @@
   }
 }
 
-@media (min-width: 1385px) {
+@media (min-width: $xxl) {
   .illustration {
     display: inline-block;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $md) {
   .homePeopleMobile {
     display: none !important;
   }
