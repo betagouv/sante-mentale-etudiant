@@ -20,9 +20,8 @@ export const FEELING_SUICIDE: Feeling = {
           mettre fin à ta vie.
         </p>
         <p>
-          Avoir des idées suicidaires peut faire très peur. Si elles ne signifient pas que tu es
-          "faible" ou que tu veux forcément mourir, ces idées sont à prendre au sérieux. Elles sont
-          souvent le signe d'une souffrance devenue trop difficile à porter seul.
+          Avoir des idées suicidaires peut faire très peur. Ces idées sont à prendre au sérieux : elles sont souvent 
+          le signe d'une souffrance devenue trop difficile à porter seul. 
         </p>
         <p>Tu n'as pas à traverser ça sans aide.</p>
       </>
@@ -30,7 +29,7 @@ export const FEELING_SUICIDE: Feeling = {
   },
   videoKey: "suicidal-thoughts",
   recap: [
-    "Les idées suicidaires sont le signe d'une souffrance, pas d'une faiblesse.",
+    "Les idées suicidaires sont le signe d'une souffrance.",
     "Elles peuvent concerner beaucoup plus de personnes qu'on ne l'imagine.",
     "Avoir des idées suicidaires ne veut pas forcément dire que tu veux mourir.",
     "Si tu te sens en danger, demande de l'aide immédiatement.",
@@ -79,7 +78,8 @@ export const FEELING_SUICIDE: Feeling = {
               Cette souffrance peut être liée à de nombreux facteurs : une dépression, un deuil, une
               rupture, un stress intense, une accumulation de difficultés, un sentiment de solitude
               ou un autre événement de vie. La consommation d’alcool ou d’autres produits peut
-              également déclencher ou intensifier cette souffrance.
+              également déclencher ou intensifier cette souffrance. Chaque situation est différente :
+              ta souffrance est légitime, même si tu ne te retrouves dans aucun des exemples.
             </p>
             <p>
               → Voir aussi les pages <FeelingLink slug="painful-event" />,{" "}
@@ -119,7 +119,7 @@ export const FEELING_SUICIDE: Feeling = {
             </p>
             <p>
               Avec un accompagnement adapté, il est possible de retrouver progressivement des
-              solutions, même lorsque l'on a aujourd'hui l'impression qu'il n'en existe aucune.
+              perspectives, même lorsque l'on a aujourd'hui l'impression qu'il n'en existe aucune.
             </p>
             <p>
               Certaines choses peuvent aider à tenir, par exemple des liens avec des personnes en
@@ -131,7 +131,7 @@ export const FEELING_SUICIDE: Feeling = {
         ),
       },
       {
-        question: "Comment ça se manifeste concrètement",
+        question: "Comment ça peut se manifester concrètement",
         answer: (
           <ul>
             <li>J'ai parfois l'impression que la vie n'a plus de sens.</li>
@@ -173,7 +173,7 @@ export const FEELING_SUICIDE: Feeling = {
           title: "L’action",
           desc: (
             <>
-              <p>Demander de l'aide est une démarche de protection, pas un échec.</p>
+              <p>Demander de l'aide est une démarche de protection.</p>
               <p>
                 Commence petit&nbsp;: enregistre dans ton téléphone les ressources qui pourront
                 t'aider si tu en ressens le besoin&nbsp;:
