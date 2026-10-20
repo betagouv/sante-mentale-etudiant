@@ -32,7 +32,7 @@ export function Newsletter() {
   return (
     <Follow
       newsletter={{
-        title: "Du soutien directement dans ta boîte mail",
+        title: "Des infos et des ressources directement dans ta boîte mail",
         desc: "On partage régulièrement des conseils, des ressources et des témoignages pour prendre soin de ta santé mentale. Inscris-toi pour les recevoir directement dans ta boîte mail.",
         buttonProps: {
           disabled: status === "loading",
