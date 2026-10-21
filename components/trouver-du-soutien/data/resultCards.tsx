@@ -1,8 +1,9 @@
 import CustomCard from "@/components/common/CustomCard";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import logo_3040 from "@/public/images/logos/3040.png";
+import logo_3114 from "@/public/images/logos/3114.png";
 import logo_spe from "@/public/images/logos/SPE.png";
-import { BADGE_DAY, BADGE_PROFESSIONELS } from "@/components/common/Badges";
+import { BADGE_DAY, BADGE_H24, BADGE_PROFESSIONELS } from "@/components/common/Badges";
 import { SSE } from "@/lib/sse";
 import { Coordinate } from "@/services/address";
 import { sseModal, bapuModal } from "@/components/modals";
@@ -30,6 +31,29 @@ export const CARD_3040 = (
     badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
     location="A distance"
     openingHours="Lun-ven: 10h-21h • Sam: 10h-14h"
+  />
+);
+
+export const CARD_3114 = (
+  <CustomCard
+    title="Appelle le 3114"
+    subtitle="Le numéro national de prévention du suicide"
+    description="Pensées suicidaires, détresse ou inquiétude pour un proche : des professionnels t'écoutent et t'orientent. En cas d’urgence vitale : appelle le 15 ou contacte le 114 (sourds et malentendants)."
+    image={logo_3114}
+    button={
+      <Button
+        priority="secondary"
+        linkProps={{
+          href: "tel:3114",
+          "aria-label": "Appeler le 3114, le numéro national de prévention du suicide",
+        }}
+      >
+        Appeler le 3114
+      </Button>
+    }
+    badges={[BADGE_PROFESSIONELS, BADGE_H24]}
+    location="A distance"
+    openingHours="7j/7 • 24h/24"
   />
 );
 

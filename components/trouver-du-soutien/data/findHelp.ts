@@ -7,6 +7,7 @@ import {
 import { JSX, ReactNode } from "react";
 import {
   CARD_3040,
+  CARD_3114,
   CARD_DEFAULT_BAPU,
   CARD_DEFAULT_SSE,
   CARD_DOCTOR,
@@ -106,6 +107,12 @@ export const getResults = async (
       ...([FORMAT_CHOOSE, FORMAT_ALL].includes(format) ? [CARD_SPE] : []),
     ];
   }
+
+  //if no response add 3114 in first section
+  if (!whatINeed && (!format || format === FORMAT_ALL) && !addressLabel) {
+    recommandations.push(CARD_3114);
+  }
+
   results.push({
     title: "D'après tes réponses, voici les professionnels qu'on te recommande",
     cards: recommandations,
