@@ -25,7 +25,7 @@ export const DISPOSITIF_3040: Dispositif = {
         title: "Je traverse une période difficile",
         desc: (
           <>
-            Mal-être, anxiété, isolement, difficultés personnelles ou étudiantes… Tu ressens le
+            Doutes, sentiment de solitude, tristesse, difficultés à trouver le sommeil… Tu ressens le
             besoin de parler.
           </>
         ),
@@ -34,8 +34,7 @@ export const DISPOSITIF_3040: Dispositif = {
         title: "Je vis une situation de violence ou de discrimination",
         desc: (
           <>
-            Violences sexistes ou sexuelles, harcèlement, discrimination… Tu peux être écouté,
-            conseillé et accompagné dans tes démarches.
+            Harcèlement, violences sexistes et sexuelles, discrimination… Nous t'écoutons et t'accompagnons dans tes démarches.
           </>
         ),
       },
@@ -43,7 +42,7 @@ export const DISPOSITIF_3040: Dispositif = {
         title: "J’ai besoin d’être orienté",
         desc: (
           <>
-            Tu cherches un psychologue, une structure ou simplement le bon interlocuteur ? Le 3040
+            Tu es à la recherche d'une structure locale pour t'accompagner ou répondre à un de tes besoins ? Le 3040
             peut t’aider à identifier la solution adaptée à ta situation.
           </>
         ),

@@ -30,7 +30,7 @@ export const TILE_SAMU = (
         en cas d'urgence vitale
       </Badge>
     }
-    title="Appeler le 15 (Samu)"
+    title="Appelle le 15 (Samu)"
     titleAs="h2"
     desc="Mise en relation rapide avec un soignant."
     noIcon
@@ -46,9 +46,9 @@ export const TILE_114 = (
     pictogram={<EarOff color="blue-ecume" />}
     orientation="horizontal"
     start={BADGE_DEAFS}
-    title="Appelle le 114"
+    title="Contacte le 114"
     titleAs="h2"
-    desc="Disponible également par SMS."
+    desc="Numéro d'urgence accessible par SMS, tchat ou visio."
     noIcon
     linkProps={{
       href: "tel:114",

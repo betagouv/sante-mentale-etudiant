@@ -21,7 +21,7 @@ export const PinkBadge = ({ children }: { children: string }) => (
 );
 export const BADGE_DEAFS = (
   <Badge key="deafs" className={styles.mustard}>
-    sourds et malentendants
+    si tu es sourd ou malentendant
   </Badge>
 );
 export const BADGE_SUICIDAL_THOUGHTS = (
