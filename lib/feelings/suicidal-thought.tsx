@@ -20,8 +20,8 @@ export const FEELING_SUICIDE: Feeling = {
           mettre fin à ta vie.
         </p>
         <p>
-          Avoir des idées suicidaires peut faire très peur. Ces idées sont à prendre au sérieux : elles sont souvent 
-          le signe d'une souffrance devenue trop difficile à porter seul. 
+          Avoir des idées suicidaires peut faire très peur. Ces idées sont à prendre au sérieux : elles sont souvent
+          le signe d'une souffrance devenue trop difficile à porter seul.
         </p>
         <p>Tu n'as pas à traverser ça sans aide.</p>
       </>
