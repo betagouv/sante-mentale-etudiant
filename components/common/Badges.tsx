@@ -6,6 +6,13 @@ export const BADGE_DAY = (
     De jour
   </Badge>
 );
+
+export const BADGE_H24 = (
+  <Badge key="24-24" className={styles.h24}>
+    24h/24
+  </Badge>
+);
+
 export const BADGE_PROFESSIONELS = (
   <Badge key="professionels" className={styles.pro}>
     Professionnels
