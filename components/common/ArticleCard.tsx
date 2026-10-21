@@ -1,4 +1,4 @@
-import { ArticleMeta, ExternalContentFormat } from "@/lib/articles/types";
+import { ArticleMeta } from "@/lib/articles/types";
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import { Card } from "@codegouvfr/react-dsfr/Card";
 import { Tag } from "@codegouvfr/react-dsfr/Tag";
@@ -27,7 +27,9 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
         rel: "noopener noreferrer",
       };
 
-  const mainFeeling = getFeelingBySlug(article.mainFeelingSlug);
+  const mainFeeling = article.mainFeelingSlug
+    ? getFeelingBySlug(article.mainFeelingSlug)
+    : undefined;
   const isExternal = article.type === "external";
 
   return (
@@ -46,11 +48,13 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       linkProps={link}
       size="small"
       start={
-        <ul className="fr-tags-group">
-          <li>
-            <Tag>{mainFeeling?.name}</Tag>
-          </li>
-        </ul>
+        mainFeeling && (
+          <ul className="fr-tags-group">
+            <li>
+              <Tag>{mainFeeling.name}</Tag>
+            </li>
+          </ul>
+        )
       }
       title={article.title}
       titleAs={titleAs}

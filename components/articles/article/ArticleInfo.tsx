@@ -9,7 +9,9 @@ type Props = {
   article: InternalArticleMeta;
 };
 export default function ArticleInfo({ article }: Props) {
-  const mainFeeling = getFeelingBySlug(article.mainFeelingSlug);
+  const mainFeeling = article.mainFeelingSlug
+    ? getFeelingBySlug(article.mainFeelingSlug)
+    : undefined;
   const updatedAt = article.type === "internal" ? article.updatedAt : undefined
 
   return (

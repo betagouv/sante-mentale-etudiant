@@ -3,8 +3,8 @@ import { FeelingSlug } from "../feelings/data";
 interface BaseArticleMeta {
   slug: string;
   title: string;
-  mainFeelingSlug: FeelingSlug;
   heroImage: string;
+  mainFeelingSlug?: FeelingSlug;
   readingTime?: number; // in minutes
   featured?: boolean;
 }
