@@ -11,7 +11,7 @@ export const articles: ArticleMeta[] = [
   //  author: "Vikie Ache",
   //  publishedAt: "2026-07-20",
   //  markdownFile: "stress-avant-un-examen.md",
-  //  heroImage: "/articles/stress-avant-un-examen/hero.jpg",
+  //  heroImage: "/articles/stress-avant-un-examen.jpg",
   //  heroCredits:
   //    "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
   //  readingTime: 4,
@@ -26,7 +26,7 @@ export const articles: ArticleMeta[] = [
   //  author: "Vickie Ache",
   //  publishedAt: "2026-07-20",
   //  markdownFile: "le-blues-du-dimanche-soir.md",
-  //  heroImage: "/articles/le-blues-du-dimanche-soir/hero.jpg",
+  //  heroImage: "/articles/le-blues-du-dimanche-soir.jpg",
   //  heroCredits:
   //    "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
   //  readingTime: 5,
@@ -40,7 +40,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.santepsyjeunes.fr/media/pages/troubles-psychiques/trouble-anxieux-generalise/23472fbf89-1751032348/bat-trouble-anxieux_5.10.2023.pdf",
     title: "Santé Psy Jeunes - Mieux vivre avec un trouble anxieux",
     mainFeelingSlug: "anxiety",
-    heroImage: "/articles/mieux-vivre-avec-un-trouble-anxieux/hero.jpg",
+    heroImage: "/articles/mieux-vivre-avec-un-trouble-anxieux.jpg",
     pdfWeight: 11,
     featured: true,
   },
@@ -50,7 +50,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.psycom.org/sinformer/la-sante-mentale/les-troubles-psy/troubles-anxieux-et-phobies/#peur-anxiete-de-quoi-parle-t-on-6ab3a53c6a9ba",
     title: "Psycom - Troubles anxieux et phobies",
     mainFeelingSlug: "anxiety",
-    heroImage: "/articles/troubles-anxieux-et-phobies/hero.jpg",
+    heroImage: "/articles/troubles-anxieux-et-phobies.jpg",
     featured: true,
   },
   {
@@ -60,7 +60,7 @@ export const articles: ArticleMeta[] = [
     title:
       "Santé Mentale Info Service - Les techniques de relaxation : des exercices simples pour s’apaiser",
     mainFeelingSlug: "anxiety",
-    heroImage: "/articles/les-techniques-de-relaxation/hero.jpg",
+    heroImage: "/articles/logos/sante-mentale-info-service.jpg",
     featured: true,
   },
   {
@@ -69,7 +69,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.ameli.fr/llle-et-vilaine/assure/sante/themes/troubles-anxieux-anxiete",
     title: "Ameli - Troubles anxieux ou anxiété grave",
     mainFeelingSlug: "anxiety",
-    heroImage: "/articles/troubles-anxieux-ou-anxiete-grave/hero.jpg",
+    heroImage: "/articles/logos/ameli.jpg",
   },
   {
     type: "external",
@@ -77,7 +77,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.santementale-info-service.fr/troubles-anxieux-comment-les-reconnaitre-comment-agir",
     title: "Santé Mentale Info Service - Les troubles anxieux : comment reconnaître et agir",
     mainFeelingSlug: "anxiety",
-    heroImage: "/articles/les-troubles-anxieux-comment-reconnaitre-et-agir/hero.jpg",
+    heroImage: "/articles/logos/sante-mentale-info-service.jpg",
   },
 
   // Fatigue 
@@ -87,7 +87,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.psycom.org/sinformer/la-sante-mentale/quand-le-sommeil-sen-mele/",
     title: "Psycom - Quand le sommeil s'en mêle",
     mainFeelingSlug: "fatigue",
-    heroImage: "/articles/quand-le-sommeil-s-en-mele/hero.jpg",
+    heroImage: "/articles/quand-le-sommeil-s-en-mele.jpg",
     featured: true,
   },
   {
@@ -96,7 +96,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.santepsyjeunes.fr/media/pages/brochures/sommeil/852026e224-1728398769/bat-sommeil-ado_2024.pdf",
     title: "Santé Psy Jeunes - Mieux comprendre le sommeil à l’adolescence & chez le jeune adulte",
     mainFeelingSlug: "fatigue",
-    heroImage: "/articles/mieux-comprendre-le-sommeil/hero.jpg",
+    heroImage: "/articles/mieux-comprendre-le-sommeil.jpg",
     pdfWeight: 13,
     featured: true,
   },
@@ -107,7 +107,7 @@ export const articles: ArticleMeta[] = [
     title:
       "Santé Publique France - Sommeil : temps moyen sur 24 heures et plainte d’insomnie (édition 2024)",
     mainFeelingSlug: "fatigue",
-    heroImage: "/articles/sommeil-temps-moyen-sur/hero.jpg",
+    heroImage: "/articles/sommeil-temps-moyen-sur.jpg",
   },
   {
     type: "external",
@@ -115,7 +115,7 @@ export const articles: ArticleMeta[] = [
     url: "https://reseau-morphee.fr/le-sommeil-et-ses-troubles-informations",
     title: "Réseau Morphée - Le sommeil et ses troubles",
     mainFeelingSlug: "fatigue",
-    heroImage: "/articles/le-sommeil-et-ses-troubles/hero.jpg",
+    heroImage: "/articles/le-sommeil-et-ses-troubles.jpg",
   },
   {
     type: "external",
@@ -123,7 +123,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.ameli.fr/llle-et-vilaine/assure/sante/themes/asthenie-fatigue/bons-reflexes-cas-faut-consulter",
     title: "Assurance maladie - Asthénie (fatigue) : que faire et quand consulter ?",
     mainFeelingSlug: "fatigue",
-    heroImage: "/articles/asthenie/hero.jpg",
+    heroImage: "/articles/logos/ameli.jpg",
   },
   {
     type: "external",
@@ -131,7 +131,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.info.gouv.fr/actualite/sommeil-comment-en-prendre-soin",
     title: "Info.gouv - Sommeil : comment en prendre soin",
     mainFeelingSlug: "fatigue",
-    heroImage: "/articles/sommeil-comment-en-prendre-soin/hero.jpg",
+    heroImage: "/articles/logos/info-gouv.jpg",
   },
   {
     type: "external",
@@ -139,7 +139,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/sommeil-et-sante-mentale-des-liens-forts",
     title: "Santé Mentale Info Service - Sommeil et santé mentale : des liens forts",
     mainFeelingSlug: "fatigue",
-    heroImage: "/articles/sommeil-et-sante-mentale/hero.jpg",
+    heroImage: "/articles/logos/sante-mentale-info-service.jpg",
     featured: true,
   },
   {
@@ -148,7 +148,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.santementale-info-service.fr/depression-comment-la-reconnaitre-comment-agir",
     title: "Santé Mentale Info Service - Dépression : comment la reconnaitre et agir",
     mainFeelingSlug: "fatigue",
-    heroImage: "/articles/depression-comment-la-reconnaitre-et-agir/hero.jpg",
+    heroImage: "/articles/logos/sante-mentale-info-service.jpg",
   },
 
   // Addictions 
@@ -158,7 +158,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.santepsyjeunes.fr/media/pages/brochures/mieux-comprendre-les-addictions/068a5da6a8-1776351896/lmp_brochures_addiction_bat-digital.pdf",
     title: "Santé Psy Jeunes - Mieux comprendre les addictions",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/comprendre-les-addictions/hero.jpg",
+    heroImage: "/articles/logos/alcool-info-service.jpg",
     pdfWeight: 13,
     featured: true,
   },
@@ -169,15 +169,15 @@ export const articles: ArticleMeta[] = [
     title:
       "Drogues Info Service - Service national d’aide à distance en matière de drogues et de dépendances",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/drogues-info-service/hero.jpg",
+    heroImage: "/articles/logos/drogues-info-service.jpg",
   },
   {
     type: "external",
-    slug: "les-trouves-addictifs",
+    slug: "les-troubles-addictifs",
     url: "https://www.psycom.org/sinformer/la-sante-mentale/les-troubles-psy/troubles-addictifs/",
     title: "Psycom - Les troubles addictifs",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/les-trouves-addictifs/hero.jpg",
+    heroImage: "/articles/les-troubles-addictifs.jpg",
     featured: true,
   },
   {
@@ -186,7 +186,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.alcool-info-service.fr/",
     title: "Alcool Info Service",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/alcool-info-service/hero.jpg",
+    heroImage: "/articles/logos/alcool-info-service.jpg",
   },
   {
     type: "external",
@@ -194,7 +194,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.tabac-info-service.fr/",
     title: "Tabac Info Service",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/tabac-info-service/hero.jpg",
+    heroImage: "/articles/logos/tabac-info-service.jpg",
   },
   {
     type: "external",
@@ -202,7 +202,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.psycom.org/sorienter/les-lignes-decoute/#troubles-addictifs-6ac8ed901f1c9",
     title: "Psycom - Lignes d’écoute - troubles addictifs",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/lignes-d-ecoute-troubles-addictifs/hero.jpg",
+    heroImage: "/articles/logos/psycom.jpg",
   },
   {
     type: "external",
@@ -211,7 +211,7 @@ export const articles: ArticleMeta[] = [
     title:
       "Santé Mentale Info Service - Tabac, alcool, drogues illicites : leur impact sur la santé mentale",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/tabac-alcool-drogues-illicites/hero.jpg",
+    heroImage: "/articles/logos/sante-mentale-info-service.jpg",
     featured: true,
   },
   {
@@ -221,7 +221,7 @@ export const articles: ArticleMeta[] = [
     title:
       "Info Gouv - Consommation de drogue : quelles conséquences sur votre santé et votre vie quotidienne ?",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/consommation-de-drogues-consequences/hero.jpg",
+    heroImage: "/articles/logos/info-gouv.jpg",
   },
 
   // Gestion des émotions 
@@ -232,7 +232,7 @@ export const articles: ArticleMeta[] = [
     title:
       "Santé Mentale Info Service - Apprendre à reconnaître et nommer ses émotions pour se sentir mieux",
     mainFeelingSlug: "feeling-management",
-    heroImage: "/articles/reconnaitre-et-nommer-ses-feeling-management/hero.jpg",
+    heroImage: "/articles/logos/sante-mentale-info-service.jpg",
     featured: true,
   },
   {
@@ -241,7 +241,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.psycom.org/sinformer/lauto-support/ce-quon-peut-faire-pour-sa-sante-mentale/",
     title: "Psycom - S'aider soi-même, des outils pour tous",
     mainFeelingSlug: "feeling-management",
-    heroImage: "/articles/s-aider-soi-meme/hero.jpg",
+    heroImage: "/articles/logos/psycom.jpg",
     featured: true,
   },
   {
@@ -250,7 +250,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.nightline.fr/kit-de-vie/identifier-ses-feeling-management",
     title: "Nightline - Kit de vie : identifier ses émotions",
     mainFeelingSlug: "feeling-management",
-    heroImage: "/articles/kit-de-vie-identifier-ses-feeling-management/hero.jpg",
+    heroImage: "/articles/logos/nightline.jpg",
   },
   {
     type: "external",
@@ -258,7 +258,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.filsantejeunes.com/les-feeling-management-a-quoi-ca-sert-21334",
     title: "Fil Santé Jeunes - Les émotions, à quoi ça sert ?",
     mainFeelingSlug: "feeling-management",
-    heroImage: "/articles/les-feeling-management-a-quoi-ca-sert/hero.jpg",
+    heroImage: "/articles/logos/fil-sante-jeunes.jpg",
     featured: true,
   },
 
@@ -269,7 +269,7 @@ export const articles: ArticleMeta[] = [
     url: "https://3114.fr/je-suis-en-souffrance/comment-prendre-soin-de-moi/",
     title: "3114 - Je suis en souffrance, comment prendre soin de moi",
     mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/3114-comment-prendre-soin-de-moi/hero.jpg",
+    heroImage: "/articles/logos/3114.jpg",
     featured: true,
   },
   {
@@ -278,16 +278,16 @@ export const articles: ArticleMeta[] = [
     url: "https://www.psycom.org/sinformer/la-sante-mentale/quand-on-a-des-pensees-suicidaires/",
     title: "Psycom - Quand on a des pensées suicidaires",
     mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/quand-on-a-des-pensees-suicidaires/hero.jpg",
+    heroImage: "/articles/logos/psycom.jpg",
     featured: true,
   },
   {
     type: "external",
     slug: "3114-ils-et-elles-sont-passe-e-s-par-la",
     url: "https://3114.fr/je-suis-en-souffrance/ils-elles-sont-passe-e-s-par-la/",
-    title: "3114 - Ils et elles sont passé.e.s par là",
+    title: "3114 - Ils et elles sont passé·e·s par là",
     mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/3114-ils-et-elles-sont-passe-e-s-par-la/hero.jpg",
+    heroImage: "/articles/logos/3114.jpg",
   },
   {
     type: "external",
@@ -295,7 +295,7 @@ export const articles: ArticleMeta[] = [
     url: "https://3114.fr/je-minquiete-pour-quelquun/",
     title: "3114 - Je m'inquiète pour quelqu'un",
     mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/3114-je-m-inquiete-pour-quelqu-un/hero.jpg",
+    heroImage: "/articles/logos/3114.jpg",
     featured: true,
   },
   {
@@ -304,7 +304,7 @@ export const articles: ArticleMeta[] = [
     url: "https://sante.gouv.fr/prevention-en-sante/sante-mentale/la-prevention-du-suicide/article/que-faire-et-a-qui-s-adresser-face-a-une-crise-suicidaire",
     title: "Ministère de la Santé - Que faire et à qui s’adresser face à une crise suicidaire ?",
     mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/que-faire-face-a-une-crise-suicidaire/hero.jpg",
+    heroImage: "/articles/logos/sante-gouv.jpg",
   },
   {
     type: "external",
@@ -312,7 +312,7 @@ export const articles: ArticleMeta[] = [
     url: "https://sos-suicide-phenix.org/",
     title: "SOS Suicide Phénix - Ligne d’écoute idées suicidaires",
     mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/sos-suicide-phenix/hero.jpg",
+    heroImage: "/articles/logos/sos-suicide-phenix.jpg",
   },
   {
     type: "external",
@@ -320,7 +320,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.suicide-ecoute.fr/",
     title: "Suicide Ecoute - Ligne d’écoute idées suicidaires",
     mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/suicide-ecoute/hero.jpg",
+    heroImage: "/articles/logos/suicide-ecoute.jpg",
   },
 
   // Nourriture 
@@ -330,7 +330,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/notre-alimentation-joue-aussi-sur-notre-sante-mentale",
     title: "Santé Mentale Info Service - Notre alimentation joue aussi sur notre santé mentale",
     mainFeelingSlug: "eating-disorder",
-    heroImage: "/articles/alimentation-et-sante-mentale/hero.jpg",
+    heroImage: "/articles/logos/sante-mentale-info-service.jpg",
     featured: true,
   },
   {
@@ -339,7 +339,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.psycom.org/sinformer/la-sante-mentale/les-troubles-psy/troubles-des-conduites-alimentaires-tca/",
     title: "Psycom - Troubles des conduites alimentaires (TCA)",
     mainFeelingSlug: "eating-disorder",
-    heroImage: "/articles/troubles-des-conduites-alimentaires/hero.jpg",
+    heroImage: "/articles/troubles-des-conduites-alimentaires.jpg",
     featured: true,
   },
   {
@@ -349,8 +349,8 @@ export const articles: ArticleMeta[] = [
     title:
       "Santé Psy Jeunes - Mieux comprendre l’impact de notre alimentation sur notre santé à l’adolescence et chez le jeune adulte",
     mainFeelingSlug: "eating-disorder",
-    heroImage: "/articles/impact-de-l-alimentation-sur-la-sante/hero.jpg",
-    //pdfWeight: à renseigner (Mo)
+    heroImage: "/articles/logos/sante-psy-jeunes.jpg",
+    pdfWeight: 38,
   },
   {
     type: "external",
@@ -358,7 +358,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.ffab.fr/",
     title: "FFAB - Site de la Fédération Française Anorexie Boulimie",
     mainFeelingSlug: "eating-disorder",
-    heroImage: "/articles/ffab/hero.jpg",
+    heroImage: "/articles/logos/ffab.jpg",
   },
   {
     type: "external",
@@ -366,7 +366,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.etudiant.gouv.fr/fr/comment-beneficier-du-repas-crous-1-eu-3123",
     title: "Etudiant.gouv - Comment bénéficier du repas Crous à 1 euro ?",
     mainFeelingSlug: "eating-disorder",
-    heroImage: "/articles/repas-crous-a-1-euro/hero.jpg",
+    heroImage: "/articles/logos/etudiant-gouv.jpg",
   },
   {
     type: "external",
@@ -374,8 +374,8 @@ export const articles: ArticleMeta[] = [
     url: "https://formation.sante-etudiante.ehesp.fr/pluginfile.php/124/mod_page/content/9/SANTE-ETUDIANTE_mep_troubles-alimentaires.pdf",
     title: "EHESP - Les troubles alimentaires en milieu estudiantin",
     mainFeelingSlug: "eating-disorder",
-    heroImage: "/articles/troubles-alimentaires-en-milieu-estudiantin/hero.jpg",
-    //pdfWeight: à renseigner (Mo)
+    heroImage: "/articles/logos/ehesp.jpg",
+    pdfWeight: 2,
     featured: true,
   },
   {
@@ -384,7 +384,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.ameli.fr/llle-et-vilaine/assure/sante/themes/anorexie-mentale/definition-frequence-causes",
     title: "Ameli - Anorexie mentale",
     mainFeelingSlug: "eating-disorder",
-    heroImage: "/articles/anorexie-mentale/hero.jpg",
+    heroImage: "/articles/logos/ameli.jpg",
   },
 
   // Solitude 
@@ -394,7 +394,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.psycom.org/actualites/revue-de-presse/solitude-les-jeunes-aussi/",
     title: "Psycom - La solitude des jeunes",
     mainFeelingSlug: "solitude",
-    heroImage: "/articles/la-solitude-des-jeunes/hero.jpg",
+    heroImage: "/articles/la-solitude-des-jeunes.jpg",
     featured: true,
   },
   {
@@ -403,7 +403,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.info.gouv.fr/actualite/hyperconnectes-mais-seuls-la-solitude-chez-les-jeunes",
     title: "Info.gouv - Jeunes : hyperconnectés mais seuls",
     mainFeelingSlug: "solitude",
-    heroImage: "/articles/hyperconnectes-mais-seuls/hero.jpg",
+    heroImage: "/articles/logos/info-gouv.jpg",
     featured: true,
   },
   {
@@ -412,7 +412,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.who.int/fr/news-room/commentaries/detail/loneliness-and-isolation-the-hidden-threat-to-global-health-we-can-no-longer-ignore",
     title: "OMS - Solitude et isolement : une menace cachée pour la santé mondiale",
     mainFeelingSlug: "solitude",
-    heroImage: "/articles/une-menace-cachee-pour/hero.jpg",
+    heroImage: "/articles/une-menace-cachee-pour.jpg",
   },
   {
     type: "external",
@@ -420,7 +420,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.etudiant.gouv.fr/fr/jeveuxaidergouvfr-la-plateforme-publique-du-benevolat-2342",
     title: "Etudiant.gouv - Deviens bénévole avec Je Veux Aider",
     mainFeelingSlug: "solitude",
-    heroImage: "/articles/deviens-benevole-avec-je-veux-aider/hero.jpg",
+    heroImage: "/articles/deviens-benevole-avec-je-veux-aider.jpg",
   },
   {
     type: "external",
@@ -429,6 +429,6 @@ export const articles: ArticleMeta[] = [
     title:
       "Santé Mentale Info Service - Parler quand ça ne va pas c'est déjà prendre soin de soi",
     mainFeelingSlug: "solitude",
-    heroImage: "/articles/parler-quand-ca-ne-va-pas/hero.jpg",
+    heroImage: "/articles/logos/sante-mentale-info-service.jpg",
   },
 ];
