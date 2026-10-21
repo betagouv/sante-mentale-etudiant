@@ -148,7 +148,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
         ),
       },
       {
-        question: "Comment ça se manifeste concrètement",
+        question: "Comment ça peut se manifester concrètement",
         answer: (
           <>
             <ul>

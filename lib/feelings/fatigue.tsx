@@ -153,7 +153,7 @@ export const FEELING_FATIGUE: Feeling = {
         ),
       },
       {
-        question: "Comment ça se manifeste concrètement",
+        question: "Comment ça peut se manifester concrètement",
         answer: (
           <div>
             <h4>Cognitif</h4>
@@ -273,7 +273,7 @@ export const FEELING_FATIGUE: Feeling = {
           title: "L’action",
           desc: (
             <>
-              Guetter un signe de somnolence pour aller au lit. Cela diminue les chances de rester
+              Guetter le premier signe de somnolence pour aller au lit. Cela diminue les chances de rester
               éveillé après être allé au lit (signes de somnolence : pensées décousues ou confuses,
               bâillements, difficultés à se concentrer ou à garder les yeux ouverts, agitation ou
               irritabilité. Ce sont des signes reconnus par les autorités de santé au travail comme

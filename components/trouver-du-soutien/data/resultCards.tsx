@@ -13,15 +13,15 @@ import { ModalSse } from "@/components/modals/ModalSse";
 export const CARD_3040 = (
   <CustomCard
     title="Appelle le 3040"
-    subtitle="Le numéro pour la santé mentale des étudiants"
-    description="Des psychologues et travailleurs sociaux à ton écoute pour t'informer et t'orienter vers les services adaptés."
+    subtitle="Ligne d'écoute pour les étudiants en situation de mal-être"
+    description="Des équipes professionnelles disponibles pour t'écouter avec bienveillance, t'informer et t'orienter selon tes besoins."
     image={logo_3040}
     button={
       <Button
         priority="secondary"
         linkProps={{
           href: "tel:3040",
-          "aria-label": "Appeler le 3040, le numéro pour la santé mentale des étudiants",
+          "aria-label": "Appeler le 3040, la ligne d'écoute pour les étudiants en situation de mal-être",
         }}
       >
         Appeler le 3040
@@ -53,8 +53,8 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
   return (
     <CustomCard
       title="Consulte un psychologue libéral"
-      subtitle="Consultations gratuites avec le psy de ton choix"
-      description="12 séances gratuites avec un psychologue de ton choix parmi plus de 1500 partout en France, en présentiel ou à distance"
+      subtitle="Consultations gratuites avec le psy que tu choisis"
+      description="12 séances gratuites avec un psychologue que tu choisis parmi plus de 1500 partout en France, en présentiel ou à distance"
       image={logo_spe}
       button={
         <Button
@@ -86,7 +86,7 @@ export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
   <>
     <CustomCard
       title={`Contacte le SSE ${sse.displayName}`}
-      subtitle={`Service de santé de ${sse.displayUniversityName}`}
+      subtitle={`Service de santé étudiante de ${sse.displayUniversityName}`}
       description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
       button={
         <Button priority="secondary" nativeButtonProps={sseModal.buttonProps}>
@@ -103,7 +103,7 @@ export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
 export const CARD_DEFAULT_SSE = (
   <CustomCard
     title="Rends-toi au SSE le plus proche"
-    subtitle="Service de santé de l'université la plus proche"
+    subtitle="Service de santé étudiante de l'université la plus proche"
     description="Viens te confier à un professionnel de santé qui t'écoute et t'oriente vers la prise en charge adaptée à ta situation."
     badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
   />

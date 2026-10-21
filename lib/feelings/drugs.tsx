@@ -14,8 +14,7 @@ export const FEELING_DRUGS: Feeling = {
     sentence: (
       <>
         <p>
-          Tu bois plus souvent qu’avant pour te détendre. Le cannabis t’aide à t’endormir. La
-          cocaïne, les cigarettes, les boissons énergisantes t’aident à tenir le coup…
+          Tu bois plus souvent qu’avant pour te détendre. Tu comptes sur le cannabis pour t’endormir. Tu as l'impression que certains produits t’aident à tenir le coup…
         </p>
         <p>S’interroger sur sa consommation, c’est aussi être attentif à soi.</p>
         <p>
@@ -37,7 +36,7 @@ export const FEELING_DRUGS: Feeling = {
     intro: (
       <>
         <p>
-          Certaines substances sont facilement accessibles et peuvent être présentes en soirée. Il
+          Certaines substances (alcool, cannabis, protoxyde d'azote, autres drogues, mais aussi certains médicaments détournés de leur usage) sont facilement accessibles et peuvent être présentes en soirée. Il
           peut aussi arriver d’en consommer pour se détendre, pimenter sa sexualité, mieux dormir ou
           gérer ses émotions : apaiser sa colère, diminuer son stress, ne pas ressentir la tristesse
           ou retrouver son calme.
@@ -136,7 +135,7 @@ export const FEELING_DRUGS: Feeling = {
         ),
       },
       {
-        question: "Comment ça se manifeste concrètement",
+        question: "Comment ça peut se manifester concrètement",
         answer: (
           <ul>
             <li>J’ai besoin d’une substance pour me détendre.</li>

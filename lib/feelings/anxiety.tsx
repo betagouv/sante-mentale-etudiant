@@ -156,7 +156,7 @@ export const FEELING_ANXIETY: Feeling = {
         ),
       },
       {
-        question: "Comment ça se manifeste concrètement",
+        question: "Comment ça peut se manifester concrètement",
         answer: (
           <ul>
             <li>Je pense constamment au pire.</li>

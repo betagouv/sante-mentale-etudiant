@@ -29,10 +29,10 @@ export const FEELING_SOLITUDE: Feeling = {
   },
   videoKey: "solitude",
   recap: [
-    "On peut se sentir seul au milieu des autres, sans forcément être isolé",
-    "Quand on se sent seul, on a tendance à moins voir les autres, et on finit par s'isoler vraiment",
-    "Examens, deuil, période difficile : certains moments de vie peuvent créer un décalage avec les autres",
-    "Si le sentiment de solitude dure ou devient trop douloureux, il est important d'en parler",
+    "On peut se sentir seul au milieu des autres, sans forcément être isolé.",
+    "Quand on se sent seul, on a tendance à moins voir les autres, et on peut finir par se replier, s'isoler vraiment.",
+    "Examens, deuil, période difficile : certains moments de vie peuvent créer un décalage avec les autres.",
+    "Si le sentiment de solitude dure ou devient trop douloureux, il est important d'en parler.",
   ],
   faq: {
     title: "Comprendre le sentiment de solitude",
@@ -83,10 +83,10 @@ export const FEELING_SOLITUDE: Feeling = {
               2023).
             </p>
             <p>
-              Certaines situations peuvent aussi renforcer le sentiment de solitude (accompagné ou
-              non d'un isolement réel) : venir d'un autre pays, vivre avec un handicap, etc. Ce sont
-              souvent les obstacles rencontrés, comme la barrière de la langue, la peur d'être jugé,
-              l’éloignement du cercle familial, qui rendent les liens plus difficiles à créer.
+              Le sentiment de solitude, qu'il s'accompagne ou non d'un isolement réel, ne dépend pas
+              seulement de soi. Certaines conditions de vie rendent les liens plus difficiles à créer :
+              être loin de sa famille ou de son pays, la barrière de la langue, des difficultés financières,
+              un emploi du temps chargé, un environnement peu accessible ou la peur d'être jugé.
             </p>
             <p>
               Les réseaux sociaux peuvent également accentuer ce sentiment. Paradoxalement, les
@@ -103,7 +103,7 @@ export const FEELING_SOLITUDE: Feeling = {
         ),
       },
       {
-        question: "La solitude influence aussi notre santé mentale",
+        question: "La solitude peut aussi influencer aussi notre santé mentale",
         answer: (
           <>
             <p>
@@ -148,7 +148,7 @@ export const FEELING_SOLITUDE: Feeling = {
         ),
       },
       {
-        question: "Comment ça se manifeste concrètement",
+        question: "Comment ça peut se manifester concrètement",
         answer: (
           <ul>
             <li>Je me sens seul, même quand je suis entouré.</li>
