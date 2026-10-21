@@ -1,45 +1,39 @@
 import type { ArticleMeta } from "./types";
 
 export const articles: ArticleMeta[] = [
-  // temporarily commented until read by experts
-  // {
-  //   type: "internal",
-  //   slug: "stress-avant-un-examen",
-  //   title: "Stress avant un examen : comment mieux le gérer ?",
-  //   intro:
-  //     "Mains moites, ventre noué, cœur qui s’accélère, pensées qui tournent en boucle…<br>Le stress avant un examen est une expérience que beaucoup d’étudiant·es connaissent.",
-  //   author: "Vikie Ache",
-  //   publishedAt: "2026-07-20",
-  //   markdownFile: "stress-avant-un-examen.md",
-  //   heroImage: "/articles/stress-avant-un-examen/hero.jpg",
-  //   heroCredits:
-  //     "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
-  //   readingTime: 4,
-  //   mainFeelingSlug: "anxiety",
-  // },
-  // {
-  //   type: "internal",
-  //   slug: "le-blues-du-dimanche-soir",
-  //   title: "Le blues du dimanche soir : pourquoi cette angoisse revient chaque semaine ?",
-  //   intro:
-  //     "Le week-end touche à sa fin, la nuit tombe, et une boule au ventre commence à apparaître.<br>Tu regardes l’heure, tu penses au réveil du lundi matin, aux cours, aux mails, aux transports, aux responsabilités qui reviennent… et l’angoisse monte progressivement.",
-  //   author: "Vickie Ache",
-  //   publishedAt: "2026-07-20",
-  //   markdownFile: "le-blues-du-dimanche-soir.md",
-  //   heroImage: "/articles/le-blues-du-dimanche-soir/hero.jpg",
-  //   heroCredits:
-  //     "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
-  //   readingTime: 5,
-  //   mainFeelingSlug: "anxiety",
-  // },
-  {
-    type: "external",
-    slug: "quand-le-sommeil-s-en-mele",
-    url: "https://www.psycom.org/sinformer/la-sante-mentale/quand-le-sommeil-sen-mele/",
-    title: "Psycom - Quand le sommeil s'en mêle",
-    mainFeelingSlug: "fatigue",
-    heroImage: "/articles/quand-le-sommeil-s-en-mele/hero.jpg",
-  },
+  //temporarily commented until read by experts
+  //{
+  //  type: "internal",
+  //  slug: "stress-avant-un-examen",
+  //  title: "Stress avant un examen : comment mieux le gérer ?",
+  //  intro:
+  //    "Mains moites, ventre noué, cœur qui s’accélère, pensées qui tournent en boucle…<br>Le stress avant un examen est une expérience que beaucoup d’étudiant·es connaissent.",
+  //  author: "Vikie Ache",
+  //  publishedAt: "2026-07-20",
+  //  markdownFile: "stress-avant-un-examen.md",
+  //  heroImage: "/articles/stress-avant-un-examen/hero.jpg",
+  //  heroCredits:
+  //    "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
+  //  readingTime: 4,
+  //  mainFeelingSlug: "anxiety",
+  //},
+  //{
+  //  type: "internal",
+  //  slug: "le-blues-du-dimanche-soir",
+  //  title: "Le blues du dimanche soir : pourquoi cette angoisse revient chaque semaine ?",
+  //  intro:
+  //    "Le week-end touche à sa fin, la nuit tombe, et une boule au ventre commence à apparaître.<br>Tu regardes l’heure, tu penses au réveil du lundi matin, aux cours, aux mails, aux transports, aux responsabilités qui reviennent… et l’angoisse monte progressivement.",
+  //  author: "Vickie Ache",
+  //  publishedAt: "2026-07-20",
+  //  markdownFile: "le-blues-du-dimanche-soir.md",
+  //  heroImage: "/articles/le-blues-du-dimanche-soir/hero.jpg",
+  //  heroCredits:
+  //    "Source : Adobe Stock<br>Média complètement généré par une IA et vérifié par un agent.",
+  //  readingTime: 5,
+  //  mainFeelingSlug: "anxiety",
+  //},
+
+  // Anxiété 
   {
     type: "external",
     slug: "mieux-vivre-avec-un-trouble-anxieux",
@@ -48,6 +42,7 @@ export const articles: ArticleMeta[] = [
     mainFeelingSlug: "anxiety",
     heroImage: "/articles/mieux-vivre-avec-un-trouble-anxieux/hero.jpg",
     pdfWeight: 11,
+    featured: true,
   },
   {
     type: "external",
@@ -56,14 +51,44 @@ export const articles: ArticleMeta[] = [
     title: "Psycom - Troubles anxieux et phobies",
     mainFeelingSlug: "anxiety",
     heroImage: "/articles/troubles-anxieux-et-phobies/hero.jpg",
+    featured: true,
   },
   {
     type: "external",
-    slug: "comment-mieux-vivre-avec-nos-angoisses",
-    url: "https://www.radiofrance.fr/franceinter/podcasts/grand-bien-vous-fasse/grand-bien-vous-fasse-du-lundi-04-novembre-2024-5814285",
-    title: "Radio France - Comment mieux vivre avec nos angoisses ?",
+    slug: "les-techniques-de-relaxation",
+    url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/les-techniques-de-relaxation-des-exercices-simples-pour-s-apaiser",
+    title:
+      "Santé Mentale Info Service - Les techniques de relaxation : des exercices simples pour s’apaiser",
     mainFeelingSlug: "anxiety",
-    heroImage: "/articles/comment-mieux-vivre-avec-nos-angoisses/hero.jpg",
+    heroImage: "/articles/les-techniques-de-relaxation/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "troubles-anxieux-ou-anxiete-grave",
+    url: "https://www.ameli.fr/llle-et-vilaine/assure/sante/themes/troubles-anxieux-anxiete",
+    title: "Ameli - Troubles anxieux ou anxiété grave",
+    mainFeelingSlug: "anxiety",
+    heroImage: "/articles/troubles-anxieux-ou-anxiete-grave/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "les-troubles-anxieux-comment-reconnaitre-et-agir",
+    url: "https://www.santementale-info-service.fr/troubles-anxieux-comment-les-reconnaitre-comment-agir",
+    title: "Santé Mentale Info Service - Les troubles anxieux : comment reconnaître et agir",
+    mainFeelingSlug: "anxiety",
+    heroImage: "/articles/les-troubles-anxieux-comment-reconnaitre-et-agir/hero.jpg",
+  },
+
+  // Fatigue 
+  {
+    type: "external",
+    slug: "quand-le-sommeil-s-en-mele",
+    url: "https://www.psycom.org/sinformer/la-sante-mentale/quand-le-sommeil-sen-mele/",
+    title: "Psycom - Quand le sommeil s'en mêle",
+    mainFeelingSlug: "fatigue",
+    heroImage: "/articles/quand-le-sommeil-s-en-mele/hero.jpg",
+    featured: true,
   },
   {
     type: "external",
@@ -73,6 +98,7 @@ export const articles: ArticleMeta[] = [
     mainFeelingSlug: "fatigue",
     heroImage: "/articles/mieux-comprendre-le-sommeil/hero.jpg",
     pdfWeight: 13,
+    featured: true,
   },
   {
     type: "external",
@@ -101,12 +127,40 @@ export const articles: ArticleMeta[] = [
   },
   {
     type: "external",
+    slug: "sommeil-comment-en-prendre-soin",
+    url: "https://www.info.gouv.fr/actualite/sommeil-comment-en-prendre-soin",
+    title: "Info.gouv - Sommeil : comment en prendre soin",
+    mainFeelingSlug: "fatigue",
+    heroImage: "/articles/sommeil-comment-en-prendre-soin/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "sommeil-et-sante-mentale",
+    url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/sommeil-et-sante-mentale-des-liens-forts",
+    title: "Santé Mentale Info Service - Sommeil et santé mentale : des liens forts",
+    mainFeelingSlug: "fatigue",
+    heroImage: "/articles/sommeil-et-sante-mentale/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "depression-comment-la-reconnaitre-et-agir",
+    url: "https://www.santementale-info-service.fr/depression-comment-la-reconnaitre-comment-agir",
+    title: "Santé Mentale Info Service - Dépression : comment la reconnaitre et agir",
+    mainFeelingSlug: "fatigue",
+    heroImage: "/articles/depression-comment-la-reconnaitre-et-agir/hero.jpg",
+  },
+
+  // Addictions 
+  {
+    type: "external",
     slug: "comprendre-les-addictions",
     url: "https://www.santepsyjeunes.fr/media/pages/brochures/mieux-comprendre-les-addictions/068a5da6a8-1776351896/lmp_brochures_addiction_bat-digital.pdf",
     title: "Santé Psy Jeunes - Mieux comprendre les addictions",
     mainFeelingSlug: "drugs",
     heroImage: "/articles/comprendre-les-addictions/hero.jpg",
     pdfWeight: 13,
+    featured: true,
   },
   {
     type: "external",
@@ -124,7 +178,216 @@ export const articles: ArticleMeta[] = [
     title: "Psycom - Les troubles addictifs",
     mainFeelingSlug: "drugs",
     heroImage: "/articles/les-trouves-addictifs/hero.jpg",
+    featured: true,
   },
+  {
+    type: "external",
+    slug: "alcool-info-service",
+    url: "https://www.alcool-info-service.fr/",
+    title: "Alcool Info Service",
+    mainFeelingSlug: "drugs",
+    heroImage: "/articles/alcool-info-service/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "tabac-info-service",
+    url: "https://www.tabac-info-service.fr/",
+    title: "Tabac Info Service",
+    mainFeelingSlug: "drugs",
+    heroImage: "/articles/tabac-info-service/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "lignes-d-ecoute-troubles-addictifs",
+    url: "https://www.psycom.org/sorienter/les-lignes-decoute/#troubles-addictifs-6ac8ed901f1c9",
+    title: "Psycom - Lignes d’écoute - troubles addictifs",
+    mainFeelingSlug: "drugs",
+    heroImage: "/articles/lignes-d-ecoute-troubles-addictifs/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "tabac-alcool-drogues-illicites",
+    url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/tabac-alcool-drogues-illicites-leur-impact-sur-la-sante-mentale",
+    title:
+      "Santé Mentale Info Service - Tabac, alcool, drogues illicites : leur impact sur la santé mentale",
+    mainFeelingSlug: "drugs",
+    heroImage: "/articles/tabac-alcool-drogues-illicites/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "consommation-de-drogues-consequences",
+    url: "https://www.info.gouv.fr/actualite/consommation-de-drogues-quelles-consequences-sur-votre-sante-et-votre-vie-quotidienne",
+    title:
+      "Info Gouv - Consommation de drogue : quelles conséquences sur votre santé et votre vie quotidienne ?",
+    mainFeelingSlug: "drugs",
+    heroImage: "/articles/consommation-de-drogues-consequences/hero.jpg",
+  },
+
+  // Gestion des émotions 
+  {
+    type: "external",
+    slug: "reconnaitre-et-nommer-ses-feeling-management",
+    url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/apprendre-reconnaitre-et-nommer-ses-feeling-management-pour-se-sentir-mieux",
+    title:
+      "Santé Mentale Info Service - Apprendre à reconnaître et nommer ses émotions pour se sentir mieux",
+    mainFeelingSlug: "feeling-management",
+    heroImage: "/articles/reconnaitre-et-nommer-ses-feeling-management/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "s-aider-soi-meme",
+    url: "https://www.psycom.org/sinformer/lauto-support/ce-quon-peut-faire-pour-sa-sante-mentale/",
+    title: "Psycom - S'aider soi-même, des outils pour tous",
+    mainFeelingSlug: "feeling-management",
+    heroImage: "/articles/s-aider-soi-meme/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "kit-de-vie-identifier-ses-feeling-management",
+    url: "https://www.nightline.fr/kit-de-vie/identifier-ses-feeling-management",
+    title: "Nightline - Kit de vie : identifier ses émotions",
+    mainFeelingSlug: "feeling-management",
+    heroImage: "/articles/kit-de-vie-identifier-ses-feeling-management/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "les-feeling-management-a-quoi-ca-sert",
+    url: "https://www.filsantejeunes.com/les-feeling-management-a-quoi-ca-sert-21334",
+    title: "Fil Santé Jeunes - Les émotions, à quoi ça sert ?",
+    mainFeelingSlug: "feeling-management",
+    heroImage: "/articles/les-feeling-management-a-quoi-ca-sert/hero.jpg",
+    featured: true,
+  },
+
+  // Idées suicidaires 
+  {
+    type: "external",
+    slug: "3114-comment-prendre-soin-de-moi",
+    url: "https://3114.fr/je-suis-en-souffrance/comment-prendre-soin-de-moi/",
+    title: "3114 - Je suis en souffrance, comment prendre soin de moi",
+    mainFeelingSlug: "suicidal-thought",
+    heroImage: "/articles/3114-comment-prendre-soin-de-moi/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "quand-on-a-des-pensees-suicidaires",
+    url: "https://www.psycom.org/sinformer/la-sante-mentale/quand-on-a-des-pensees-suicidaires/",
+    title: "Psycom - Quand on a des pensées suicidaires",
+    mainFeelingSlug: "suicidal-thought",
+    heroImage: "/articles/quand-on-a-des-pensees-suicidaires/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "3114-ils-et-elles-sont-passe-e-s-par-la",
+    url: "https://3114.fr/je-suis-en-souffrance/ils-elles-sont-passe-e-s-par-la/",
+    title: "3114 - Ils et elles sont passé.e.s par là",
+    mainFeelingSlug: "suicidal-thought",
+    heroImage: "/articles/3114-ils-et-elles-sont-passe-e-s-par-la/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "3114-je-m-inquiete-pour-quelqu-un",
+    url: "https://3114.fr/je-minquiete-pour-quelquun/",
+    title: "3114 - Je m'inquiète pour quelqu'un",
+    mainFeelingSlug: "suicidal-thought",
+    heroImage: "/articles/3114-je-m-inquiete-pour-quelqu-un/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "que-faire-face-a-une-crise-suicidaire",
+    url: "https://sante.gouv.fr/prevention-en-sante/sante-mentale/la-prevention-du-suicide/article/que-faire-et-a-qui-s-adresser-face-a-une-crise-suicidaire",
+    title: "Ministère de la Santé - Que faire et à qui s’adresser face à une crise suicidaire ?",
+    mainFeelingSlug: "suicidal-thought",
+    heroImage: "/articles/que-faire-face-a-une-crise-suicidaire/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "sos-suicide-phenix",
+    url: "https://sos-suicide-phenix.org/",
+    title: "SOS Suicide Phénix - Ligne d’écoute idées suicidaires",
+    mainFeelingSlug: "suicidal-thought",
+    heroImage: "/articles/sos-suicide-phenix/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "suicide-ecoute",
+    url: "https://www.suicide-ecoute.fr/",
+    title: "Suicide Ecoute - Ligne d’écoute idées suicidaires",
+    mainFeelingSlug: "suicidal-thought",
+    heroImage: "/articles/suicide-ecoute/hero.jpg",
+  },
+
+  // Nourriture 
+  {
+    type: "external",
+    slug: "alimentation-et-sante-mentale",
+    url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/notre-alimentation-joue-aussi-sur-notre-sante-mentale",
+    title: "Santé Mentale Info Service - Notre alimentation joue aussi sur notre santé mentale",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/alimentation-et-sante-mentale/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "troubles-des-conduites-alimentaires",
+    url: "https://www.psycom.org/sinformer/la-sante-mentale/les-troubles-psy/troubles-des-conduites-alimentaires-tca/",
+    title: "Psycom - Troubles des conduites alimentaires (TCA)",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/troubles-des-conduites-alimentaires/hero.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "impact-de-l-alimentation-sur-la-sante",
+    url: "https://www.santepsyjeunes.fr/media/pages/brochures/alimentation/9afcb6c4e7-1728399539/bat_alimentation.pdf",
+    title:
+      "Santé Psy Jeunes - Mieux comprendre l’impact de notre alimentation sur notre santé à l’adolescence et chez le jeune adulte",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/impact-de-l-alimentation-sur-la-sante/hero.jpg",
+    //pdfWeight: à renseigner (Mo)
+  },
+  {
+    type: "external",
+    slug: "ffab",
+    url: "https://www.ffab.fr/",
+    title: "FFAB - Site de la Fédération Française Anorexie Boulimie",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/ffab/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "repas-crous-a-1-euro",
+    url: "https://www.etudiant.gouv.fr/fr/comment-beneficier-du-repas-crous-1-eu-3123",
+    title: "Etudiant.gouv - Comment bénéficier du repas Crous à 1 euro ?",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/repas-crous-a-1-euro/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "troubles-alimentaires-en-milieu-estudiantin",
+    url: "https://formation.sante-etudiante.ehesp.fr/pluginfile.php/124/mod_page/content/9/SANTE-ETUDIANTE_mep_troubles-alimentaires.pdf",
+    title: "EHESP - Les troubles alimentaires en milieu estudiantin",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/troubles-alimentaires-en-milieu-estudiantin/hero.jpg",
+    //pdfWeight: à renseigner (Mo)
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "anorexie-mentale",
+    url: "https://www.ameli.fr/llle-et-vilaine/assure/sante/themes/anorexie-mentale/definition-frequence-causes",
+    title: "Ameli - Anorexie mentale",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/anorexie-mentale/hero.jpg",
+  },
+
+  // Solitude 
   {
     type: "external",
     slug: "la-solitude-des-jeunes",
@@ -132,6 +395,7 @@ export const articles: ArticleMeta[] = [
     title: "Psycom - La solitude des jeunes",
     mainFeelingSlug: "solitude",
     heroImage: "/articles/la-solitude-des-jeunes/hero.jpg",
+    featured: true,
   },
   {
     type: "external",
@@ -140,6 +404,7 @@ export const articles: ArticleMeta[] = [
     title: "Info.gouv - Jeunes : hyperconnectés mais seuls",
     mainFeelingSlug: "solitude",
     heroImage: "/articles/hyperconnectes-mais-seuls/hero.jpg",
+    featured: true,
   },
   {
     type: "external",
@@ -156,5 +421,14 @@ export const articles: ArticleMeta[] = [
     title: "Etudiant.gouv - Deviens bénévole avec Je Veux Aider",
     mainFeelingSlug: "solitude",
     heroImage: "/articles/deviens-benevole-avec-je-veux-aider/hero.jpg",
+  },
+  {
+    type: "external",
+    slug: "parler-quand-ca-ne-va-pas",
+    url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/parler-quand-ca-ne-va-pas-c-est-deja-prendre-soin-de-soi",
+    title:
+      "Santé Mentale Info Service - Parler quand ça ne va pas c'est déjà prendre soin de soi",
+    mainFeelingSlug: "solitude",
+    heroImage: "/articles/parler-quand-ca-ne-va-pas/hero.jpg",
   },
 ];

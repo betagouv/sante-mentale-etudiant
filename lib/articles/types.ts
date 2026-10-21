@@ -6,6 +6,7 @@ interface BaseArticleMeta {
   mainFeelingSlug: FeelingSlug;
   heroImage: string;
   readingTime?: number; // in minutes
+  featured?: boolean;
 }
 
 export interface InternalArticleMeta extends BaseArticleMeta {
