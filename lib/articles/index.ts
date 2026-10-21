@@ -32,6 +32,27 @@ export async function getArticleBySlug(
   };
 }
 
-export async function getArticlesByFeeling(feelingSlug: string): Promise<ArticleMeta[]> {
-  return articles.filter((a) => a.mainFeelingSlug === feelingSlug);
+function shuffle<T>(items: T[]): T[] {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+
+export function getFeaturedArticlesByFeeling(
+  feelingSlug: string,
+  limit = 3,
+): ArticleMeta[] {
+  return articles.filter((a) => a.mainFeelingSlug === feelingSlug && a.featured).slice(0, limit);
+}
+
+export function getAllArticlesShuffledFeaturedFirst(feelingSlug?: string): ArticleMeta[] {
+  const pool = feelingSlug ? articles.filter((a) => a.mainFeelingSlug === feelingSlug) : articles;
+
+  return [
+    ...shuffle(pool.filter((a) => a.featured)),
+    ...shuffle(pool.filter((a) => !a.featured)),
+  ];
 }
