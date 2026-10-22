@@ -11,10 +11,10 @@ type Props = {
   titleAs?: "h3" | "h2" | "h4" | "h5" | "h6" | undefined;
 };
 
-const TYPE_LABELS: Record<ArticleMeta["type"], string> = {
-  internal: "Article",
-  external: "Article",
-};
+const getBadgeLabel = (article: ArticleMeta): string =>
+  article.type === "external" && article.format === "podcast"
+    ? "Podcast"
+    : "Article";
 
 export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
   const link =
@@ -27,7 +27,9 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
         rel: "noopener noreferrer",
       };
 
-  const mainFeeling = getFeelingBySlug(article.mainFeelingSlug);
+  const mainFeeling = article.mainFeelingSlug
+    ? getFeelingBySlug(article.mainFeelingSlug)
+    : undefined;
   const isExternal = article.type === "external";
 
   return (
@@ -36,7 +38,7 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       background
       badge={
         <Badge severity="new" noIcon>
-          {TYPE_LABELS[article.type]}
+          {getBadgeLabel(article)}
         </Badge>
       }
       border
@@ -46,18 +48,20 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       linkProps={link}
       size="small"
       start={
-        <ul className="fr-tags-group">
-          <li>
-            <Tag>{mainFeeling?.name}</Tag>
-          </li>
-        </ul>
+        mainFeeling && (
+          <ul className="fr-tags-group">
+            <li>
+              <Tag>{mainFeeling.name}</Tag>
+            </li>
+          </ul>
+        )
       }
       title={article.title}
       titleAs={titleAs}
       endDetail={
         <>
           {article.readingTime && renderReadingTime(article.readingTime)}
-          {isExternal && article.pdfWeight && `PDF, ${article.pdfWeight} Mo`}
+          {isExternal && article.pdfWeight && `PDF, ${article.pdfWeight} Mo • `}
           {isExternal && "Lien externe (nouvelle fenêtre)"}
         </>
       }

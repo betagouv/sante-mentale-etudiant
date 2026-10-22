@@ -9,12 +9,14 @@ type Props = {
   article: InternalArticleMeta;
 };
 export default function ArticleInfo({ article }: Props) {
-  const mainFeeling = getFeelingBySlug(article.mainFeelingSlug);
-  const updatedAt = article.type === "internal" ? article.updatedAt : undefined
+  const mainFeeling = article.mainFeelingSlug
+    ? getFeelingBySlug(article.mainFeelingSlug)
+    : undefined;
+  const updatedAt = article.type === "internal" ? article.updatedAt : undefined;
 
   return (
     <div className={styles.wrapper}>
-      <Tag className={styles.tag}>{mainFeeling?.name}</Tag>
+      {mainFeeling && <Tag className={styles.tag}>{mainFeeling?.name}</Tag>}
       <div className={styles.published}>
         Publié le {displayDate(article.publishedAt)}
         {updatedAt ? ` • Mis à jour ${displayDate(updatedAt)}` : ""}

@@ -1,15 +1,16 @@
-import { articles } from "@/lib/articles/data";
 import FullBleedSection from "../wrapper/FullBleedSection";
 import styles from "./Articles.module.scss";
 import ArticlesSearch from "./ArticlesSearch";
 import { feelings, FeelingSlug } from "@/lib/feelings/data";
 import { Disclaimer } from "../typography/Disclaimer";
 import Link from "next/link";
+import { getAllArticlesShuffledFeaturedFirst } from "@/lib/articles";
 
 type Props = {
   defaultFeelingSlug?: FeelingSlug;
 };
 export default function Articles({ defaultFeelingSlug }: Props) {
+  const articles = getAllArticlesShuffledFeaturedFirst();
   return (
     <FullBleedSection bgColor="grey">
       <div className={styles.pageContainer}>
