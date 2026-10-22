@@ -37,12 +37,12 @@ export const FEELING_SOLITUDE: Feeling = {
   faq: {
     title: "Comprendre le sentiment de solitude",
     intro: (
-      <>
+      <p>
         Le sentiment de solitude est une émotion que chacun peut ressentir à un moment de sa vie.
         Elle apparaît lorsque les liens que nous avons avec les autres ne répondent plus à notre
         besoin de nous sentir compris, soutenu ou à notre place. Être entouré ne protège pas
         toujours du sentiment de solitude.
-      </>
+      </p>
     ),
     items: [
       {

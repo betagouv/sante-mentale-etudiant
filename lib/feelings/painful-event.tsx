@@ -40,12 +40,12 @@ export const FEELING_PAINFUL_EVENT: Feeling = {
   faq: {
     title: "Comprendre ce que je vis",
     intro: (
-      <>
+      <p>
         Un événement douloureux peut bouleverser notre équilibre. Il est fréquent qu'il affecte nos
         émotions, notre sommeil, notre concentration ou notre énergie. Ces réactions sont souvent
         normales : elles traduisent l'effort que notre cerveau et notre corps fournissent pour
         s'adapter à ce qui s'est passé.
-      </>
+      </p>
     ),
     items: [
       {
