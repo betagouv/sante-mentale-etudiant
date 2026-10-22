@@ -103,7 +103,7 @@ export const FEELING_SOLITUDE: Feeling = {
         ),
       },
       {
-        question: "La solitude peut aussi influencer aussi notre santé mentale",
+        question: "La solitude peut aussi influencer notre santé mentale",
         answer: (
           <>
             <p>
