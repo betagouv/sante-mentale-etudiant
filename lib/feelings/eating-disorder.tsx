@@ -37,13 +37,13 @@ export const FEELING_EATING_DISORDER: Feeling = {
   faq: {
     title: "Comprendre son rapport à la nourriture",
     intro: (
-      <>
+      <p>
         Manger ne répond pas uniquement à un besoin physique. C’est aussi un moment de partage, de
         plaisir et de vie en société. Un changement passager dans notre rapport à la nourriture
         n’est pas forcément inquiétant (on peut manger davantage lors d’une période intense de
         révisions par exemple). Ce changement mérite de l’attention lorsque la nourriture prend une
         place trop importante dans les pensées ou dans le quotidien.
-      </>
+      </p>
     ),
     items: [
       {

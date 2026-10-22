@@ -37,12 +37,12 @@ export const FEELING_SUICIDE: Feeling = {
   faq: {
     title: "Comprendre les idées suicidaires",
     intro: (
-      <>
+      <p>
         Les idées suicidaires apparaissent souvent lorsqu'une personne a le sentiment que sa
         souffrance est devenue insupportable ou qu'elle ne voit plus d'issue. Elles ne définissent
         pas qui tu es et ne signifient pas que cette situation est irréversible. Plus on en parle
         tôt, plus il est possible d'être accompagné.
-      </>
+      </p>
     ),
     items: [
       {

@@ -35,7 +35,7 @@ export const FEELING_FATIGUE: Feeling = {
   faq: {
     title: "Comprendre la fatigue",
     intro: (
-      <>
+      <p>
         La fatigue devient anormale quand elle persiste malgré le repos (
         <ExternalLink
           href="https://www.ameli.fr/assure/sante/themes/asthenie-fatigue/definition-symptomes-causes"
@@ -45,7 +45,7 @@ export const FEELING_FATIGUE: Feeling = {
         ). Elle n'a pas une cause unique : le manque de sommeil, la charge des études, l'anxiété, un
         état dépressif ou un problème physique peuvent tous produire la même sensation de fatigue.
         Comprendre laquelle te concerne change ce qu'il faut faire.
-      </>
+      </p>
     ),
     items: [
       {

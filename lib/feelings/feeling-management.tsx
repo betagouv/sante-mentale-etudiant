@@ -41,12 +41,12 @@ export const FEELING_MANAGEMENT: Feeling = {
   faq: {
     title: "Comprendre ses émotions",
     intro: (
-      <>
+      <p>
         Les émotions sont des réactions naturelles et spontanées du corps et du cerveau, qui
         apparaissent en fonction de ce que l’on vit, et qui aident à s’adapter à son environnement.
         Plutôt que de vouloir les faire taire, il est plus utile d’apprendre à les écouter, les
         comprendre ou y répondre.
-      </>
+      </p>
     ),
     items: [
       {
