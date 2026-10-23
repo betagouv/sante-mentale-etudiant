@@ -36,7 +36,46 @@
     "phone": "03.20.54.85.26",
     "email": "bapulille@gmail.com",
     "professionals": "Psychiatres;Psychologues",
-    "website": "https://bapulille.com/"
+    "website": "https://bapulille.com"
+  },
+  {
+    "name": "BAPU Corte",
+    "city": "Corte",
+    "address": "18 avenue Président Pierucci - Immeuble Pascal Paoli - 20250 Corte\n\n",
+    "latitude": 42.30441673304022,
+    "longitude": 9.151585580586719,
+    "openingHours": "Horaires d'ouverture du secrétariat d'accueil (exclusivement par téléphone ou email) :\nLundi : 8h-12h30 -13h30-16h45\nMardi : 8h-12h30\nMercredi : 8h-12h30 – 13h30-17h\nJeudi : 8h-12h30 – 13h30-17h45\nVendredi : 8h-12h30 – 13h30-17h",
+    "eligibility": "Tous les étudiants post bac sont admis, de 18 à 27 ans",
+    "phone": "04.95.30.09.72",
+    "email": "bapu@pep2b.corsica",
+    "professionals": "",
+    "website": "https://pep2b.corsica/bapu-corsica"
+  },
+  {
+    "name": "BAPU Bastia",
+    "city": "Bastia",
+    "address": "Immeuble PEP - LUPINO - 20600 Bastia",
+    "latitude": 42.68277884154699,
+    "longitude": 9.430360224788433,
+    "openingHours": "Horaires d'ouverture du secrétariat d'accueil (exclusivement par téléphone ou email) :\nLundi : 8h-12h30 -13h30-16h45\nMardi : 8h-12h30\nMercredi : 8h-12h30 – 13h30-17h\nJeudi : 8h-12h30 – 13h30-17h45\nVendredi : 8h-12h30 – 13h30-17h",
+    "eligibility": "Tous les étudiants post bac sont admis, de 18 à 27 ans",
+    "phone": "04.95.30.09.72",
+    "email": "bapu@pep2b.corsica",
+    "professionals": "",
+    "website": "https://pep2b.corsica/bapu-corsica"
+  },
+  {
+    "name": "BAPU Ajaccio",
+    "city": "Ajaccio",
+    "address": "12 avenue Noël Franchini - 20090 Ajaccio\n",
+    "latitude": 41.936168280415664,
+    "longitude": 8.75383332626018,
+    "openingHours": "Horaires d'ouverture du secrétariat d'accueil (exclusivement par téléphone ou email) :\nLundi : 8h-12h30 -13h30-16h45\nMardi : 8h-12h30\nMercredi : 8h-12h30 – 13h30-17h\nJeudi : 8h-12h30 – 13h30-17h45\nVendredi : 8h-12h30 – 13h30-17h",
+    "eligibility": "Tous les étudiants post bac sont admis, de 18 à 27 ans",
+    "phone": "04.95.30.09.72",
+    "email": "bapu@pep2b.corsica",
+    "professionals": "",
+    "website": "https://pep2b.corsica/bapu-corsica"
   },
   {
     "name": "BAPU Nice",
@@ -49,7 +88,7 @@
     "phone": "04.93.87.72.78",
     "email": "contact@bapunice.org",
     "professionals": "",
-    "website": "https://www.bapunice.org/;https://www.instagram.com/bapunice/"
+    "website": "https://www.bapunice.org/;https://www.instagram.com/bapunice"
   },
   {
     "name": "BAPU Aix-Marseille - site Marseille",
@@ -62,7 +101,7 @@
     "phone": "04.91.50.01.13 ; 07.57.01.47.03",
     "email": "bapu-marseille@wanadoo.fr",
     "professionals": "Psychiatres;Psychologues",
-    "website": "https://bapuaixmarseille.fr/"
+    "website": "https://bapuaixmarseille.fr"
   },
   {
     "name": "BAPU Aix-Marseille - site Aix",
@@ -75,7 +114,85 @@
     "phone": "04.91.50.01.13 ; 07.57.01.47.03",
     "email": "bapu-marseille@wanadoo.fr",
     "professionals": "Psychiatres;Psychologues",
-    "website": "https://bapuaixmarseille.fr/"
+    "website": "https://bapuaixmarseille.fr"
+  },
+  {
+    "name": "BAPU FSEF Paris V - antenne 5ème",
+    "city": "Paris",
+    "address": "30 rue Pascal, 75005",
+    "latitude": 48.83778881867879,
+    "longitude": 2.348920394486173,
+    "openingHours": "Paris V : Ouvert du lundi au samedi\nle lundi de 9h à 17h\nle mardi, mercredi et le jeudi de 9h à 19h\nle vendredi de 9h à 18h\nle samedi de 9h à 13h\nCité Universitaire : le lundi et le vendredi de 9h à 13h\nle mardi et le jeudi de 14h à 17h",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "01.43.31.31.32",
+    "email": "bapu.paris5@fsef.net",
+    "professionals": "",
+    "website": "https://fsef-sante-etudes.fr/wp-content/uploads/2025/09/BAT-depliantA5_BAPU_2022-planche.pdf"
+  },
+  {
+    "name": "BAPU FSEF Paris V - antenne 14ème",
+    "city": "Paris",
+    "address": "Relais social CIUP - 17 bd Jourdan 75014 ",
+    "latitude": 48.820345825366665,
+    "longitude": 2.3383445828441793,
+    "openingHours": "Paris V : Ouvert du lundi au samedi\nle lundi de 9h à 17h\nle mardi, mercredi et le jeudi de 9h à 19h\nle vendredi de 9h à 18h\nle samedi de 9h à 13h\nCité Universitaire : le lundi et le vendredi de 9h à 13h\nle mardi et le jeudi de 14h à 17h",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "01.44.16.65.62",
+    "email": "relais.social@ciup.fr",
+    "professionals": "",
+    "website": "https://fsef-sante-etudes.fr/wp-content/uploads/2025/09/BAT-depliantA5_BAPU_2022-planche.pdf"
+  },
+  {
+    "name": "BAPU Rennes",
+    "city": "Rennes",
+    "address": "11 bd de la Liberté - 35000 Rennes",
+    "latitude": 48.10740908805556,
+    "longitude": -1.6743018037103798,
+    "openingHours": "Horaires de consultation :\nDu lundi au vendredi de 9h à 19h\nLe samedi de 9h à 13h.",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "02 99 30 81 24",
+    "email": "contact@bapu-rennes.fr",
+    "professionals": "Psychologues;Psychiatres",
+    "website": "https://bapu-rennes.fr"
+  },
+  {
+    "name": "BAPU La Grange-Batelière",
+    "city": "Paris",
+    "address": "13 rue de la Grange-Batelière, 75009 Paris",
+    "latitude": 48.873112478096175,
+    "longitude": 2.34181379633991,
+    "openingHours": "8h30-19h",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "01.47.70.70.32",
+    "email": "secrétariat.cmpp.bapu@la-grange-bateliere.com",
+    "professionals": "",
+    "website": "https://la-grange-bateliere.com"
+  },
+  {
+    "name": "BAPE Metz",
+    "city": "Metz",
+    "address": "Bâtiment Simone Veil, Ile du Saulcy, 57 000 Metz (RDC)",
+    "latitude": 49.12028239749791,
+    "longitude": 6.162637863678547,
+    "openingHours": "Du lundi au jeudi : 8h30-17h30 et vendredi 8h30-12h30",
+    "eligibility": "Tous les étudiants sont admis dans la limite d'âge 18/27 ans",
+    "phone": "03.87.21.04.70 ; 06.75.17.70.33",
+    "email": "bape@peplores.org",
+    "professionals": "Psychologues;Psychiatres",
+    "website": "https: //peplorest.org/domaines/bape"
+  },
+  {
+    "name": "BAPU Saint-Maur des Fossés",
+    "city": "Saint-Maur-des-Fossés",
+    "address": "34 bis rue des Remises, 94100 Saint-maur des Fossés",
+    "latitude": 48.804918762289795,
+    "longitude": 2.472154196335393,
+    "openingHours": "Du lundi au vendredi : 8h30-19h",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "01.42.83.28.40",
+    "email": "directiongenerale@apsi.fr",
+    "professionals": "",
+    "website": "https://www.bapu94.fr"
   },
   {
     "name": "SSU Site Dolet",
@@ -104,6 +221,58 @@
     "website": ""
   },
   {
+    "name": "BAPU Tours",
+    "city": "Tours",
+    "address": "12 avenue Marcel Dassault 37200 Tours",
+    "latitude": 47.36406678048601,
+    "longitude": 0.6847301232259277,
+    "openingHours": "",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "",
+    "email": "",
+    "professionals": "",
+    "website": "https://annuaire.action-sociale.org/?p=b--a--p--u--370011074&details=caracteristiques"
+  },
+  {
+    "name": "Centre d’Accueil Médico-psychologique Universitaire de Strasbourg",
+    "city": "Strasbourg",
+    "address": "\n6 rue de Palerme, 67000 Strasbourg",
+    "latitude": 48.57691903845541,
+    "longitude": 7.7642477393877325,
+    "openingHours": "Horaires du secrétariat\nDu lundi au vendredi : 9h-12h et 14h-17h",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "03.88.52.15.51",
+    "email": "camus@unistra.fr",
+    "professionals": "Psychiatres;Psychologues",
+    "website": "http://www.camus67.fr"
+  },
+  {
+    "name": "Centre d’Accueil Médico-psychologique Universitaire de Strasbourg",
+    "city": "Strasbourg",
+    "address": "11 rue Humann, 67000 Strasbourg",
+    "latitude": 48.57662643768651,
+    "longitude": 7.739455283564953,
+    "openingHours": "Horaires du secrétariat\nDu lundi au vendredi : 9h-12h et 14h-17h",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "03.88.52.15.51",
+    "email": "camus@unistra.fr",
+    "professionals": "Psychiatres;Psychologues",
+    "website": "http://www.camus67.fr"
+  },
+  {
+    "name": "Centre d’Accueil Médico-psychologique Universitaire de Strasbourg",
+    "city": "Strasbourg",
+    "address": "72 route du Rhin, 67400 Illkirch",
+    "latitude": 48.5306887650617,
+    "longitude": 7.735714435517422,
+    "openingHours": "Horaires du secrétariat\nDu lundi au vendredi : 9h-12h et 14h-17h",
+    "eligibility": "Tous les étudiants sont admis",
+    "phone": "03.88.52.15.51",
+    "email": "camus@unistra.fr",
+    "professionals": "Psychiatres;Psychologues",
+    "website": "http://www.camus67.fr"
+  },
+  {
     "name": "CMPP-BAPU Ribéra",
     "city": "Paris",
     "address": "CMPP-BAPU Ribera, 50 rue Ribéra, 75016 PARIS",
@@ -114,7 +283,7 @@
     "phone": "01.42.24.52.29",
     "email": "cmpp@centreclaudebernard.asso.fr",
     "professionals": "Psychiatres;Psychologues",
-    "website": "https://cmpp-claudebernard.fr/"
+    "website": "https://cmpp-claudebernard.fr"
   },
   {
     "name": "CMPP-BAPU Larrey",
@@ -127,7 +296,7 @@
     "phone": "01.43.37.16.16",
     "email": "cmpp@centreclaudebernard.asso.fr",
     "professionals": "Psychiatres;Psychologues",
-    "website": "https://cmpp-claudebernard.fr/"
+    "website": "https://cmpp-claudebernard.fr"
   },
   {
     "name": "BAPU Edouard Claparede",
@@ -140,7 +309,7 @@
     "phone": "01.47.45.92.15",
     "email": "bapu@institut-claparede.fr",
     "professionals": "Psychiatres;Psychologues",
-    "website": "https://institut-claparede.fr/b-a-p-u/"
+    "website": "https://institut-claparede.fr/b-a-p-u"
   },
   {
     "name": "BAPU Luxembourg Paris",
@@ -153,7 +322,7 @@
     "phone": "01 43 29 65 72 ",
     "email": "bapu.paris@croix-rouge.fr",
     "professionals": "Psychiatres;Psychologues",
-    "website": "https://bapuluxembourg.net/"
+    "website": "https://bapuluxembourg.net"
   },
   {
     "name": "BAPU Cachan",
@@ -166,19 +335,19 @@
     "phone": "01.46.65.62.22",
     "email": "cmpp.cachan@apsi.fr",
     "professionals": "Psychiatres;Psychologues",
-    "website": "https://www.bapu94.fr/"
+    "website": "https://www.bapu94.fr"
   },
   {
-    "name": "BAPU Association Gaston Mialeret",
-    "city": "Caen",
-    "address": "Campus 1 – Bâtiment l’Oxygène\n(Face au Stadium-Arrêt de Tram CROUS/SUAPS)\n23 Avenue de Bruxelles\n14000 CAEN",
-    "latitude": 49.19627010199706,
-    "longitude": -0.36101777480274294,
-    "openingHours": "Le lundi : 8h30-12h30 et 13h-16h\nDu mardi au jeudi : 8h30-12h30 et 13h-17h\nLe vendredi : 8h30-12h30.",
-    "eligibility": "Tous les étudiants de 18 à 28 ans sont admis",
-    "phone": "02.31.26.49.00",
-    "email": "bapu@mialaret.asso.fr",
-    "professionals": "Psychiatres;Psychologues",
-    "website": "https://mialaret.asso.fr/bapu-structures/"
+    "name": "BAPU Toulon",
+    "city": "La Garde",
+    "address": "Bâtiment EVE – entrée 2, 657 avenue du 1er BIMP, Avenue de l'Université, 83130 La Garde",
+    "latitude": 43.1376759666832,
+    "longitude": 6.008600267143599,
+    "openingHours": "",
+    "eligibility": "Tous les étudiants entre 17 et 28 ans sont admis",
+    "phone": "04.94.14.24.70",
+    "email": "bapu83@univ-tln.fr",
+    "professionals": "",
+    "website": "https://www.ptsm83.codes83.org/places/bureau-daide-psychologique-universitaire-bapu-toulon"
   }
 ]
