@@ -5,7 +5,6 @@ import { transcriptionDrugs } from "./transcriptions/feelings/drugs";
 import { transcriptionEatingDisorder } from "./transcriptions/feelings/eating-disorder";
 import { transcriptionFatigue } from "./transcriptions/feelings/fatigue";
 import { transcriptionFeelingManagement } from "./transcriptions/feelings/feeling-management";
-import { transcriptionPainfulEvent } from "./transcriptions/feelings/painful-event";
 import { transcriptionSolitude } from "./transcriptions/feelings/solitude";
 import { transcriptionSuicidalThoughts } from "./transcriptions/feelings/suicidal-thought";
 
@@ -21,7 +20,6 @@ export const VIDEO_KEYS = [
   "eating-disorder",
   "fatigue",
   "feeling-management",
-  "painful-event",
   "solitude",
   "suicidal-thoughts",
 ] as const;
@@ -139,18 +137,6 @@ export const feelings: VideoTestimonial[] = [
       role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionFeelingManagement,
-  },
-  {
-    key: "painful-event",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/7FwPbevV3sLY486aB4ZLLY",
-    previewUrl: "/videos/preview/feelings/painful-event.mp4",
-    posterUrl: "/images/vignettes/feelings/painful-event.jpg",
-    duration: 8,
-    guest: {
-      name: "Jérôme Lacinga",
-      role: "Psychologue du dispositif Santé Psy Étudiant",
-    },
-    transcription: transcriptionPainfulEvent,
   },
   {
     key: "solitude",
