@@ -20,7 +20,7 @@ export default function WhyThisSite() {
           </div>
           <div className={styles.tile}>
             <Tile
-              title="Le manque de lisibilité"
+              title="Le besoin de lisibilité"
               desc="Beaucoup d'étudiants ne savent pas vers quels dispositifs se tourner, ni ce que ces dispositifs proposent réellement."
               titleAs="h3"
               orientation="vertical"
@@ -29,7 +29,7 @@ export default function WhyThisSite() {
           </div>
           <div className={styles.tile}>
             <Tile
-              title="Le sentiment d'illégitimité"
+              title="Le besoin de se sentir légitime"
               desc="Beaucoup ne se sentent pas légitimes à consulter : l'idée que « ce n'est peut-être pas assez grave » revient souvent."
               titleAs="h3"
               pictogram={<Error />}
