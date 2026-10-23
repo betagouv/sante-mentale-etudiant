@@ -21,7 +21,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md) {
   .container {
     h2 {
       text-align: center;
