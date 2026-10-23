@@ -56,7 +56,7 @@ export default function NeedHelp() {
       <CustomLink
         href="/orienteur"
         pictogram={SelfTraining}
-        title="Guidez-moi"
+        title="Être guidé"
         desc="Trouve le dispositif adapté"
       />
       <Separator />
