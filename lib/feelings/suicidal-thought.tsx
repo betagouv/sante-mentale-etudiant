@@ -155,7 +155,7 @@ export const FEELING_SUICIDE: Feeling = {
       title: "Si tu te sens en danger / si tu as des idées suicidaires",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               si tu ne te sens plus en sécurité, n'attends pas, appelle le <b>15</b> (ou envoie un
@@ -170,7 +170,7 @@ export const FEELING_SUICIDE: Feeling = {
       title: "Chercher une aide professionnelle",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               <p>Demander de l'aide est une démarche de protection.</p>
@@ -204,11 +204,11 @@ export const FEELING_SUICIDE: Feeling = {
       title: "Ne pas rester seul",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>lorsque la souffrance devient très intense, on peut avoir tendance à s’isoler.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               identifie une personne que tu pourrais contacter aujourd'hui : un proche, un ami, un
@@ -223,11 +223,11 @@ export const FEELING_SUICIDE: Feeling = {
       title: "Mettre des mots sur ce que tu ressens",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>les pensées suicidaires s'accompagnent souvent d'une grande solitude.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               si tu t'en sens capable, essaie d'écrire ce que tu ressens ou de le dire à une
