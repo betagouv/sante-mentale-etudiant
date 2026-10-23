@@ -1,5 +1,5 @@
 .container {
-  max-width: 996px;
+  max-width: 62.25em;
   margin: auto;
   color: #161616;
 
@@ -54,11 +54,11 @@
   border-bottom: 1px solid #dddddd;
   padding-bottom: 2rem; // space between the line and the text
   margin-bottom: 2rem;
-  max-width: 800px;
+  max-width: 50em;
 }
 
 .heroCredits {
-  max-width: 800px;
+  max-width: 50em;
   margin: auto;
   margin-top: 2rem;
   font-size: 0.75rem;
@@ -69,7 +69,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5em) {
   .container {
     padding-top: 1rem;
   }
