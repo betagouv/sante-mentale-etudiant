@@ -20,8 +20,8 @@ export const FEELING_SUICIDE: Feeling = {
           mettre fin à ta vie.
         </p>
         <p>
-          Avoir des idées suicidaires peut faire très peur. Ces idées sont à prendre au sérieux : elles sont souvent
-          le signe d'une souffrance devenue trop difficile à porter seul.
+          Avoir des idées suicidaires peut faire très peur. Ces idées sont à prendre au sérieux :
+          elles sont souvent le signe d'une souffrance devenue trop difficile à porter seul.
         </p>
         <p>Tu n'as pas à traverser ça sans aide.</p>
       </>
@@ -78,13 +78,12 @@ export const FEELING_SUICIDE: Feeling = {
               Cette souffrance peut être liée à de nombreux facteurs : une dépression, un deuil, une
               rupture, un stress intense, une accumulation de difficultés, un sentiment de solitude
               ou un autre événement de vie. La consommation d’alcool ou d’autres produits peut
-              également déclencher ou intensifier cette souffrance. Chaque situation est différente :
-              ta souffrance est légitime, même si tu ne te retrouves dans aucun des exemples.
+              également déclencher ou intensifier cette souffrance. Chaque situation est différente
+              : ta souffrance est légitime, même si tu ne te retrouves dans aucun des exemples.
             </p>
             <p>
-              → Voir aussi les pages <FeelingLink slug="painful-event" />,{" "}
-              <FeelingLink slug="solitude" />, <FeelingLink slug="fatigue" />,{" "}
-              <FeelingLink slug="drugs" />.
+              → Voir aussi les pages <FeelingLink slug="solitude" />, <FeelingLink slug="fatigue" />
+              , <FeelingLink slug="drugs" />.
             </p>
           </>
         ),

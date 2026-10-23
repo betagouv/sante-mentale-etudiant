@@ -7,7 +7,6 @@ import { transcriptionFatigue } from "./feelings/fatigue";
 import { transcriptionDrugs } from "./feelings/drugs";
 import { transcriptionEatingDisorder } from "./feelings/eating-disorder";
 import { transcriptionFeelingManagement } from "./feelings/feeling-management";
-import { transcriptionPainfulEvent } from "./feelings/painful-event";
 import { transcriptionSolitude } from "./feelings/solitude";
 import { transcriptionSuicidalThoughts } from "./feelings/suicidal-thought";
 import { transcriptionSPE } from "./dispositifs/SPE";
@@ -28,7 +27,6 @@ export const feelingTranscriptions = {
   "eating-disorder": transcriptionEatingDisorder,
   fatigue: transcriptionFatigue,
   "feeling-mangement": transcriptionFeelingManagement,
-  "painful-event": transcriptionPainfulEvent,
   solitude: transcriptionSolitude,
   "suicidal-thought": transcriptionSuicidalThoughts,
 } as const;
