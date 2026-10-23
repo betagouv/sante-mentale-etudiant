@@ -6,6 +6,8 @@ import FindHelpFilters from "./FindHelpFilters";
 import FindHelpResults from "./FindHelpResults";
 import { Coordinate } from "@/services/address";
 import FullBleedSection from "../wrapper/FullBleedSection";
+import { Disclaimer } from "../typography/Disclaimer";
+import ExternalLink from "../link/ExternalLink";
 
 type Props = {
   defaultAddressLabel: string;
@@ -50,6 +52,12 @@ export default function FindHelp({
         whatINeed={whatINeed}
         format={format}
       />
+      <Disclaimer>
+        Besoin d’autres ressources ?{" "}
+        <ExternalLink href="https://www.psycom.org/sorienter/les-lignes-decoute/">
+          Consulte l’annuaire des lignes d’écoute de Psycom.
+        </ExternalLink>
+      </Disclaimer>
     </FullBleedSection>
   );
 }
