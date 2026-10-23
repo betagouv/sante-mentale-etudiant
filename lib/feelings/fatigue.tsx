@@ -174,8 +174,9 @@ export const FEELING_FATIGUE: Feeling = {
 
             <h4>Émotionnel</h4>
             <ul>
-              <li>Je peux m'énerver pour rien, ou pleurer pour rien.</li>
+              <li>Je peux m'énerver pour rien, ou pleurer pour des choses qui, d'habitude, ne m'atteignent pas.</li>
               <li>Je peux me dévaloriser.</li>
+              <li>Je peux avoir plus de mal à gérer mes émotions, même pour des choses qui ne me touchent pas d'habitude.</li>
             </ul>
 
             <h4>Comportemental</h4>
@@ -186,7 +187,7 @@ export const FEELING_FATIGUE: Feeling = {
               </li>
               <li>Je peux carburer au café la semaine, je m'écroule le week-end.</li>
               <li>Je peux avoir moins envie de voir les gens.</li>
-              <li>Je peux sauter des repas ou manger n'importe quoi sans y penser.</li>
+              <li>Je peux manger n'importe quoi sans y penser.</li>
             </ul>
           </div>
         ),
@@ -349,8 +350,7 @@ export const FEELING_FATIGUE: Feeling = {
         </p>
         <p>
           Mais si la fatigue dure, si elle touche tes études, tes relations ou ton moral, tu n'as
-          pas à rester seul avec ça. Un tiers des étudiant·es présentent des signes de détresse
-          psychologique, et parmi eux, la moitié n'a consulté aucun professionnel (OVE 2024).
+          pas à rester seul avec ça.
         </p>
         <p>
           Demander de l'aide, c'est prendre soin de soi, c'est permis, et c'est même une bonne idée.
