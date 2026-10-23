@@ -36,7 +36,9 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
 
   // search by feelings also render feeling less articles at the end
   const filteredArticles = useMemo(() => {
-    const matchingSearch = allArticles.filter((a) => a.title.includes(searchTerm));
+    const matchingSearch = allArticles.filter((a) =>
+      a.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     if (selectedFeelingSlugs.length === 0) return matchingSearch;
 
