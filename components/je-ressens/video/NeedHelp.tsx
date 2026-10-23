@@ -64,8 +64,8 @@ export default function NeedHelp() {
         <p className={styles.emergency}>
           <b>En cas d’urgence</b>
           <br />
-          Si tu es en danger ou en grande détresse, appelle le <b>15</b> ou contacte le <b>114</b> ou le{" "}
-          <b>112</b>
+          Si tu es en danger ou en grande détresse, appelle le <b>15</b> ou contacte le <b>114</b>{" "}
+          ou le <b>112</b>
         </p>
       </div>
     </div>
