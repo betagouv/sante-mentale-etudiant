@@ -88,7 +88,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 6,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionAnxiety,
   },
@@ -100,7 +100,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 6,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionDrugs,
   },
@@ -112,7 +112,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionEatingDisorder,
   },
@@ -124,7 +124,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionFatigue,
   },
@@ -136,7 +136,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 7,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionFeelingManagement,
   },
@@ -148,7 +148,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 8,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionPainfulEvent,
   },
@@ -160,7 +160,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionSolitude,
   },
@@ -172,7 +172,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionSuicidalThoughts,
   },

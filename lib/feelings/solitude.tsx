@@ -84,9 +84,10 @@ export const FEELING_SOLITUDE: Feeling = {
             </p>
             <p>
               Le sentiment de solitude, qu'il s'accompagne ou non d'un isolement réel, ne dépend pas
-              seulement de soi. Certaines conditions de vie rendent les liens plus difficiles à créer :
-              être loin de sa famille ou de son pays, la barrière de la langue, des difficultés financières,
-              un emploi du temps chargé, un environnement peu accessible ou la peur d'être jugé.
+              seulement de soi. Certaines conditions de vie rendent les liens plus difficiles à
+              créer : être loin de sa famille ou de son pays, la barrière de la langue, des
+              difficultés financières, un emploi du temps chargé, un environnement peu accessible ou
+              la peur d'être jugé.
             </p>
             <p>
               Les réseaux sociaux peuvent également accentuer ce sentiment. Paradoxalement, les
