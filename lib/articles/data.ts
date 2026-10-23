@@ -33,7 +33,7 @@ export const articles: ArticleMeta[] = [
   //  mainFeelingSlug: "anxiety",
   //},
 
-  // Anxiété 
+  // Anxiété
   {
     type: "external",
     slug: "mieux-vivre-avec-un-trouble-anxieux",
@@ -80,7 +80,7 @@ export const articles: ArticleMeta[] = [
     heroImage: "/articles/logos/sante-mentale-info-service.jpg",
   },
 
-  // Fatigue 
+  // Fatigue
   {
     type: "external",
     slug: "quand-le-sommeil-s-en-mele",
@@ -151,14 +151,14 @@ export const articles: ArticleMeta[] = [
     heroImage: "/articles/logos/sante-mentale-info-service.jpg",
   },
 
-  // Addictions 
+  // Addictions
   {
     type: "external",
     slug: "comprendre-les-addictions",
     url: "https://www.santepsyjeunes.fr/media/pages/brochures/mieux-comprendre-les-addictions/068a5da6a8-1776351896/lmp_brochures_addiction_bat-digital.pdf",
     title: "Santé Psy Jeunes - Mieux comprendre les addictions",
     mainFeelingSlug: "drugs",
-    heroImage: "/articles/logos/alcool-info-service.jpg",
+    heroImage: "/articles/logos/sante-psy-jeunes.jpg",
     pdfWeight: 13,
     featured: true,
   },
@@ -224,11 +224,11 @@ export const articles: ArticleMeta[] = [
     heroImage: "/articles/logos/info-gouv.jpg",
   },
 
-  // Gestion des émotions 
+  // Gestion des émotions
   {
     type: "external",
     slug: "reconnaitre-et-nommer-ses-feeling-management",
-    url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/apprendre-reconnaitre-et-nommer-ses-feeling-management-pour-se-sentir-mieux",
+    url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/apprendre-reconnaitre-et-nommer-ses-emotions-pour-se-sentir-mieux",
     title:
       "Santé Mentale Info Service - Apprendre à reconnaître et nommer ses émotions pour se sentir mieux",
     mainFeelingSlug: "feeling-management",
@@ -247,7 +247,7 @@ export const articles: ArticleMeta[] = [
   {
     type: "external",
     slug: "kit-de-vie-identifier-ses-feeling-management",
-    url: "https://www.nightline.fr/kit-de-vie/identifier-ses-feeling-management",
+    url: "https://www.nightline.fr/kit-de-vie/identifier-ses-emotions",
     title: "Nightline - Kit de vie : identifier ses émotions",
     mainFeelingSlug: "feeling-management",
     heroImage: "/articles/logos/nightline.jpg",
@@ -262,7 +262,7 @@ export const articles: ArticleMeta[] = [
     featured: true,
   },
 
-  // Idées suicidaires 
+  // Idées suicidaires
   {
     type: "external",
     slug: "3114-comment-prendre-soin-de-moi",
@@ -323,7 +323,7 @@ export const articles: ArticleMeta[] = [
     heroImage: "/articles/logos/suicide-ecoute.jpg",
   },
 
-  // Nourriture 
+  // Nourriture
   {
     type: "external",
     slug: "alimentation-et-sante-mentale",
@@ -387,7 +387,7 @@ export const articles: ArticleMeta[] = [
     heroImage: "/articles/logos/ameli.jpg",
   },
 
-  // Solitude 
+  // Solitude
   {
     type: "external",
     slug: "la-solitude-des-jeunes",
@@ -426,8 +426,7 @@ export const articles: ArticleMeta[] = [
     type: "external",
     slug: "parler-quand-ca-ne-va-pas",
     url: "https://www.santementale-info-service.fr/en-prendre-soin/tous-les-conseils/parler-quand-ca-ne-va-pas-c-est-deja-prendre-soin-de-soi",
-    title:
-      "Santé Mentale Info Service - Parler quand ça ne va pas c'est déjà prendre soin de soi",
+    title: "Santé Mentale Info Service - Parler quand ça ne va pas c'est déjà prendre soin de soi",
     mainFeelingSlug: "solitude",
     heroImage: "/articles/logos/sante-mentale-info-service.jpg",
   },
