@@ -19,9 +19,7 @@ export const FEELING_ANXIETY: Feeling = {
         </p>
         <p>Connaître des épisodes de stress fait partie de la vie.</p>
         <p>
-          Mais lorsque ce stress est de plus en plus fréquent, intense, durable, lorsqu’il concerne
-          un futur proche ou même lointain, ou qu’il n’a plus de cause précise, il s’agit peut être
-          d’anxiété.
+          Mais lorsque ce stress devient fréquent, intense ou durable, qu’il s'accompagne d'une inquiétude face à ce qui pourrait arriver (proche ou lointain) et qu'il gêne ton quotidien, il peut s'agir d'une anxiété, ce qui mérite d'en parler à un professionnel.
         </p>
         <p>Des solutions existent pour retrouver un peu d’apaisement.</p>
       </>
