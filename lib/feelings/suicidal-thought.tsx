@@ -103,7 +103,7 @@ export const FEELING_SUICIDE: Feeling = {
             </p>
             <p>
               Les professionnels qui accompagnent ces situations sont formés pour écouter sans te
-              juger.
+              juger. Au 3114, numéro national de prévention du suicide, des professionnels formés te répondent gratuitement, 24h/24 et 7j/7.
             </p>
           </>
         ),
