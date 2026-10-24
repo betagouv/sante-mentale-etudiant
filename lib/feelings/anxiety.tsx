@@ -19,20 +19,18 @@ export const FEELING_ANXIETY: Feeling = {
         </p>
         <p>Connaître des épisodes de stress fait partie de la vie.</p>
         <p>
-          Mais lorsque ce stress est de plus en plus fréquent, intense, durable, lorsqu’il concerne
-          un futur proche ou même lointain, ou qu’il n’a plus de cause précise, il s’agit peut être
-          d’anxiété.
+          Mais lorsque ce stress devient fréquent, intense ou durable, qu’il s'accompagne d'une inquiétude face à ce qui pourrait arriver (proche ou lointain) et qu'il gêne ton quotidien, il peut s'agir d'une anxiété, ce qui mérite d'en parler à un professionnel.
         </p>
-        <p>Des solutions existent pour retrouver un peu d’apaisement.</p>
+        <p>Tu peux tester quelques outils pour essayer de retrouver un peu d'apaisement, en attendant ou en complément d'un échange avec un professionnel. Des accompagnements efficaces existent.</p>
       </>
     ),
   },
   videoKey: "anxiety",
   recap: [
-    "Le stress est une réaction normale face à une difficulté",
-    "L'anxiété est différente\u00A0: elle peut persister même sans danger immédiat",
-    "Le stress et l’anxiété agissent autant sur le corps que sur le mental",
-    "Quelques habitudes simples peuvent déjà aider à retrouver un équilibre",
+    "Le stress est une réaction normale face à une difficulté.",
+    "L'anxiété est différente\u00A0: elle peut persister même sans danger immédiat.",
+    "Stress et anxiété peuvent se ressentir à la fois dans le corps et dans les pensées.,
+    "Quelques stratégies simples peuvent t'aider à te sentir un peu mieux, sans remplacer l'avis d'un professionnel.",
   ],
   faq: {
     title: "Comprendre le stress et l'anxiété",
