@@ -197,7 +197,7 @@ export const FEELING_FATIGUE: Feeling = {
       title: "Objectiver son temps de sommeil, comprendre quel dormeur on est, viser la qualité",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               <p>Estimer quel dormeur tu es, quels sont tes besoins.</p>
@@ -224,7 +224,7 @@ export const FEELING_FATIGUE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               remplis{" "}
@@ -240,7 +240,7 @@ export const FEELING_FATIGUE: Feeling = {
       title: "Recaler son horloge interne",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               Se lever à peu près à la même heure tous les jours même le lendemain d'une mauvaise
@@ -250,7 +250,7 @@ export const FEELING_FATIGUE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               descends un arrêt de bus plus tôt, prends ton café près de la fenêtre, révise dehors.
@@ -265,7 +265,7 @@ export const FEELING_FATIGUE: Feeling = {
       title: "Attendre d'être somnolent pour aller au lit, et sortir du lit si on ne s'endort pas",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               Guetter le premier signe de somnolence pour aller au lit. Cela diminue les chances de
@@ -277,7 +277,7 @@ export const FEELING_FATIGUE: Feeling = {
           ),
         },
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               Si on ne s'est pas endormi après avoir passé plus de 15 minutes au lit, sortir du lit
@@ -302,7 +302,7 @@ export const FEELING_FATIGUE: Feeling = {
       title: "Pratiquer une activité physique",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               une activité physique régulière, sans viser la performance. Bouger dans la journée
@@ -311,7 +311,7 @@ export const FEELING_FATIGUE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               pas besoin de salle de sport ni d'abonnement. Marcher jusqu'à la fac, prendre les
