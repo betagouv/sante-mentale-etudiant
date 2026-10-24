@@ -26,7 +26,7 @@ export const ModalSse = ({ sse }: Props) => (
         splitAndCleanString(sse.website).map((w, idx) => (
           <React.Fragment key={`website__${idx}`}> {WebsiteField(w, idx)}</React.Fragment>
         ))}
-      <Disclaimer>Les conditions d'éligibilité varient selon les services. N’hésite pas à vérifier avant de te déplacer.</Disclaimer>
+      <Disclaimer>Les conditions d'éligibilité varient selon les SSE. N’hésite pas à vérifier que ton établissement est éligible avant de te déplacer.</Disclaimer>
     </div>
   </sseModal.Component>
 );
