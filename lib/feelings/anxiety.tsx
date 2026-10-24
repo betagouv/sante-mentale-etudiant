@@ -27,10 +27,10 @@ export const FEELING_ANXIETY: Feeling = {
   },
   videoKey: "anxiety",
   recap: [
-    "Le stress est une réaction normale face à une difficulté",
-    "L'anxiété est différente\u00A0: elle peut persister même sans danger immédiat",
-    "Le stress et l’anxiété agissent autant sur le corps que sur le mental",
-    "Quelques habitudes simples peuvent déjà aider à retrouver un équilibre",
+    "Le stress est une réaction normale face à une difficulté.",
+    "L'anxiété est différente\u00A0: elle peut persister même sans danger immédiat.",
+    "Stress et anxiété peuvent se ressentir à la fois dans le corps et dans les pensées.,
+    "Quelques habitudes simples peuvent déjà aider à retrouver un équilibre.",
   ],
   faq: {
     title: "Comprendre le stress et l'anxiété",
