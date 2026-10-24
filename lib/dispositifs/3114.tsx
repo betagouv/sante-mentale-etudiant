@@ -70,7 +70,7 @@ export const DISPOSITIF_3114: Dispositif = {
           adaptées.
         </p>
         <p>
-          Reste en ligne pour ne pas perdre ta place dans la file
+          Un temps d’attente est possible, reste en ligne pour ne pas perdre ta place dans la file
           d’attente.
         </p>
         <p>En cas de besoin, une intervention peut être coordonnée avec les services d’urgence.</p>
