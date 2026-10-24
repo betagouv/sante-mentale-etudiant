@@ -21,7 +21,7 @@ export const FEELING_ANXIETY: Feeling = {
         <p>
           Mais lorsque ce stress devient fréquent, intense ou durable, qu’il s'accompagne d'une inquiétude face à ce qui pourrait arriver (proche ou lointain) et qu'il gêne ton quotidien, il peut s'agir d'une anxiété, ce qui mérite d'en parler à un professionnel.
         </p>
-        <p>Des solutions existent pour retrouver un peu d’apaisement.</p>
+        <p>Tu peux tester quelques outils pour essayer de retrouver un peu d'apaisement, en attendant ou en complément d'un échange avec un professionnel. Des accompagnements efficaces existent.</p>
       </>
     ),
   },
@@ -30,7 +30,7 @@ export const FEELING_ANXIETY: Feeling = {
     "Le stress est une réaction normale face à une difficulté.",
     "L'anxiété est différente\u00A0: elle peut persister même sans danger immédiat.",
     "Stress et anxiété peuvent se ressentir à la fois dans le corps et dans les pensées.,
-    "Quelques habitudes simples peuvent déjà aider à retrouver un équilibre.",
+    "Quelques stratégies simples peuvent t'aider à te sentir un peu mieux, sans remplacer l'avis d'un professionnel.",
   ],
   faq: {
     title: "Comprendre le stress et l'anxiété",
