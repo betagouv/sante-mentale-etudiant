@@ -15,14 +15,12 @@ export const FEELING_EATING_DISORDER: Feeling = {
     sentence: (
       <>
         <p>
-          Tu penses sans cesse à ce que tu as mangé / à ce que tu devrais manger ? Manger te fait
-          culpabiliser ou génère des frustrations ? Il t’arrive de te priver de manger ou au
-          contraire de ressentir le “besoin de te remplir” ?
+          Tu n'as pas faim ? Tu n'as pas envie de manger ? Tu es dégouté ? Tu penses sans cesse à ce que tu as mangé / à ce que tu devrais manger ou ne pas manger ? Tu as toujours envie de manger ? Tu ne peux pas manger ou tu ne peux pas t'empêcher de manger ? Tu ne peux pas t'arrêter de manger ? Tu sautes des repas ou tu évites de manger ? Tu ressens le "besoin de te remplir" ?
         </p>
         <p>
-          Notre façon de manger varie naturellement selon les périodes. Mais lorsque la nourriture
-          prend trop de place dans ta vie, qu’elle empiète sur tes projets, tes études, tes
-          activités, cela mérite qu’on s’en occupe.
+          Notre façon de manger varie naturellement selon les périodes. Mais lorsqu'on ne peut pas manger, que la nourriture
+          prend trop de place dans ta vie, qu’elle enavhit les pensées au point qu'elles t'empêchent de réaliser tes projets, tes études, tes
+          activités, cela mérite que tu t’en occupes.
         </p>
       </>
     ),
