@@ -179,7 +179,7 @@ export const FEELING_ANXIETY: Feeling = {
       title: "Repérer ce qui déclenche ton stress",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               pendant quelques jours, essaie d'identifier les moments où ton stress augmente : avant
@@ -188,7 +188,7 @@ export const FEELING_ANXIETY: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               note simplement dans ton téléphone ce qui s'est passé juste avant que ton stress
@@ -202,15 +202,14 @@ export const FEELING_ANXIETY: Feeling = {
       title: "Ramener ton attention au présent",
       items: [
         {
-          title: "L’action",
-          desc: <>quand les pensées tournent en boucle, essaie de revenir à ce qui t'entoure.</>,
+          title: "L’idée",
+          desc: <>quand les pensées tournent en boucle, tu peux essayer de prendre du recul : une pensée n'est pas un fait, et tu peux choisir ce que tu fais maintenant.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
-              observe cinq choses que tu vois, quatre que tu peux toucher, trois que tu entends,
-              deux que tu peux sentir et une que tu peux goûter.
+              quand une pensée revient, essaie de te dire "là, je me dis que,..." (là, je me dis que je vais échouer"). Puis reviens à ce que tu es en train de faire : la page que tu lis, ce que tu vois, ce que tu entends. Si une idée ne te convient pas, tu peux en essayer une autre.
             </>
           ),
         },
@@ -220,7 +219,7 @@ export const FEELING_ANXIETY: Feeling = {
       title: "Faire redescendre la tension",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               le stress se vit aussi dans le corps. Bouger, marcher ou ralentir sa respiration aide
@@ -229,7 +228,7 @@ export const FEELING_ANXIETY: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               fais une marche de dix minutes ou prends une minute pour respirer lentement en
@@ -243,7 +242,7 @@ export const FEELING_ANXIETY: Feeling = {
       title: "En parler",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               partager ce que tu ressens permet souvent de prendre du recul et d'éviter que le
@@ -252,7 +251,7 @@ export const FEELING_ANXIETY: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               envoie un message à une personne de confiance ou prends rendez-vous avec un
