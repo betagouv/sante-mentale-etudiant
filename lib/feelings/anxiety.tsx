@@ -109,11 +109,11 @@ export const FEELING_ANXIETY: Feeling = {
               très irréguliers peuvent renforcer des situations d'anxiété, même cela peut donner
               l’impression d’aider à se détendre sur le moment.{" "}
             </p>
-            <h4>3. Les pensées qui tournent en boucle.</h4>
+            <h4>3. Les pensées qui tournent en boucle </h4>
             <p>
-              Quand on est stressé ou anxieux, il est fréquent de ressasser sans cesse les mêmes
-              pensées, sans réussir à les arrêter : « Et si j'échoue ? », « Et si je déçois mes
-              proches ? », « Et si quelque chose se passe mal ? ».{" "}
+              Quand on est stressé ou anxieux, il est fréquent de ressasser les mêmes
+              pensées, sans réussir à les arrêter. Elles peuvent porter sur ce qui pourrait arriver : « Et si j'échoue ? », « Et si je déçois mes
+              proches ? », ou sur ce qui s'est passé : "Pourquoi j'ai dit ça ?", 'J'aurais dû faire autrement".{" "}
             </p>
             <p>
               On a parfois l'impression de se préparer à l'avenir. En réalité, ces pensées
@@ -125,7 +125,7 @@ export const FEELING_ANXIETY: Feeling = {
               professionnel de santé. Lui seul peut évaluer ta situation et, si besoin, poser un
               diagnostic.
             </p>
-            <h4>4. L'anxiété peut révéler autre chose</h4>
+            <h4>4. L'anxiété peut révéler autre chose </h4>
             <p>
               L'anxiété peut aussi parfois être le signe d’autres types de troubles, comme la
               dépression.
@@ -138,7 +138,7 @@ export const FEELING_ANXIETY: Feeling = {
               quotidien, il est important d'en parler avec un professionnel : c’est lui qui pourra
               évaluer ta situation.
             </p>
-            <h4>5. L'anxiété peut parfois cacher autre chose.</h4>
+            <h4>5. L'anxiété peut parfois cacher autre chose </h4>
             <p>
               L'anxiété peut apparaître seule, mais elle accompagne aussi parfois une dépression, un
               trouble anxieux ou certaines maladies physiques. Si elle dure plusieurs semaines,
@@ -215,8 +215,8 @@ export const FEELING_ANXIETY: Feeling = {
           title: "L’idée",
           desc: (
             <>
-              le stress se vit aussi dans le corps. Bouger, marcher ou ralentir sa respiration aide
-              progressivement ton organisme à sortir de l'état d'alerte.
+              le stress se vit aussi dans le corps. Bouger, marcher, faire de l'exercice physique ou ralentir sa respiration peuvent aider
+              progressivement ton organisme à sortir d'un état d'alerte.
             </>
           ),
         },
