@@ -1,4 +1,4 @@
-import { Feeling } from "./types";
+ximport { Feeling } from "./types";
 import { FeelingLink } from ".";
 
 export const FEELING_ANXIETY: Feeling = {
@@ -60,29 +60,20 @@ export const FEELING_ANXIETY: Feeling = {
         question: "Mais alors, d’où ça peut venir ?",
         answer: (
           <>
-            <h4>1. Le stress est une réaction normale de l’organisme </h4>{" "}
+            <h4>1. Le stress est une réaction normale, mais qui peut devenir pesante </h4>{" "}
             <p>
-              Face à un examen, un oral, un conflit ou une situation nouvelle, ton cerveau déclenche
-              une alerte pour permettre à ton corps de réagir vite : ton rythme cardiaque
-              s’accélère, tes muscles se tendent.
+              Face à un examen, un oral, un conflit ou une situation nouvelle, ton esprit déclenche
+              une alerte pour que ton corps puisse réagir vite : ton coeur peut s'accélérer, tes muscles se tendent.
             </p>
             <p>
-              Bien dosé, le stress peut devenir un allié : la veille d’un oral, il t’aide à rester
-              concentré. Beaucoup de musiciens, comédiens, sportifs ressentent du trac avant une
-              performance.{" "}
+              A petite dose, le stress peut même devenir un allié : avant un oral, un peu de tension peut t'aider à te mobiliser et à rester concentré. Beaucoup de musiciens, de comédiens et de sportifs ressentent du trac avant de se produire. Cette réaction est utile... tant qu'elle reste ponctuelle. {" "}
             </p>
             <p>
-              Sarah Bernhardt aurait même dit à une jeune comédienne qui se vantait de ne pas avoir
-              de trac : « Ne vous en faites pas, le trac, cela viendra avec le talent ».
-            </p>
-            <p>
-              Ce qui se complique, c’est quand cette alerte ne s’éteint plus ou qu’elle ne se
-              contrôle plus. Il peut alors s’agir d’anxiété.
+              Ce qui se complique, c’est quand cette alerte se déclenche trop souvent, de manière trop forte et trop longtemps. On peut alors se sentir constamment sous tension, et ces sensations comme l'inquiétude peuvent s'installer et gêner ton quotidien. 
             </p>
             <h4>2. Au-delà des études : des sources multiples de stress et d’anxiété</h4>
             <p>
-              Le stress ou l’anxiété ne viennent pas uniquement des cours, mais peuvent être la
-              conséquence de plusieurs situations qui s’accumulent.
+              Le stress et l’anxiété ne viennent pas uniquement des cours. Ils émergent souvent en lien avec plusieurs situations qui se cumulent, et chacun n'y réagit pas de la même façon.
             </p>
             <div>
               Dans notre enquête Santé Psy Étudiant (Juin 2026), les étudiants évoquent
