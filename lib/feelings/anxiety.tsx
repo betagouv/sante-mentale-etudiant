@@ -36,10 +36,8 @@ export const FEELING_ANXIETY: Feeling = {
     title: "Comprendre le stress et l'anxiété",
     intro: (
       <p>
-        Le stress est une réaction normale de notre organisme face à une difficulté ou à une menace.
-        Si cela dure dans le temps, ou apparaît sans raison apparente, on parle plutôt d’anxiété ou
-        d’angoisse. Cela peut être difficile à vivre, et comprendre ce qui se passe dans ton corps
-        permet souvent de moins en avoir peur.
+        Le stress est la réaction normale de ton organisme face à une situation qui te met sous pression, comme un examen ou un oral. Il s'apaise en général quand la situation passe. L'anxiété, c'est l'inquiétude face à ce qui pourrait arriver, souvent avec des tensions dans le corps. Elle est aussi normale : tout le monde en ressent de temps en temps. Elle peut devenir difficile à vivre quand elle est fréquente, intense ou durable, et qu'elle gêne ton quotidien (sommeil, études, relations). Comprendre et accepter ce qui se passe dans ton corps et dans ton esprit aide souvent à mieux gérer ces sensations et ces pensées sans avoir à lutter contre ce que tu ressens.
+        Si c'est trop difficile, un professionnel de santé mentale peut t'accompagner.
       </p>
     ),
     items: [
@@ -49,10 +47,7 @@ export const FEELING_ANXIETY: Feeling = {
           <>
             <p>Le stress et l'anxiété sont loin d'être des situations isolées.</p>
             <p>
-              Selon l'enquête Bien-être et santé de l'OVE (2024), un tiers des étudiants présentent
-              des signes de détresse psychologique. Les difficultés liées au stress, à l'anxiété et
-              à la charge mentale sont parmi les raisons les plus fréquentes qui conduisent à
-              consulter.
+              Selon l'enquête Conditions de vie des étudiants de l'OVE (2023), 45% des étudiants déclarent se sentir nerveux souvent ou en permanence au cours des quatre dernières semaines ayant précédé l'enquête. Dans l'enquête Bien-être et santé de l'OVE (2024), 28% présentent des symptômes d'anxiété modérés à sévères au cours des deux dernières semaines (échelle GAD-7, seuil ≥ 10).
             </p>
             <p>
               Chez les bénéficiaires de Santé Psy Étudiant (enquête Juin 2026), le stress et
