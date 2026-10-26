@@ -127,10 +127,12 @@ export const getResults = async (
     ];
   }
 
+  let index = 1;
+
   results.push({
     title: {
       title: "D'après tes réponses, voici les professionnels qu'on te recommande",
-      index: 1,
+      index,
     },
     cards: recommandations,
   });
@@ -147,10 +149,14 @@ export const getResults = async (
       ...([FORMAT_CHOOSE].includes(format) ? [CARD_SSE, CARD_BAPU] : []),
     ];
   }
+
+  if (otherRecommandations.length > 0) {
+    index = index + 1;
+  }
   results.push({
     title: {
       title: "Également adaptés à ta situation",
-      index: 2,
+      index,
     },
     cards: otherRecommandations,
   });
@@ -169,10 +175,13 @@ export const getResults = async (
   } else {
     rest = [];
   }
+  if (rest.length > 0) {
+    index = index + 1;
+  }
   results.push({
     title: {
       title: "Toutes les autres ressources disponibles",
-      index: 3,
+      index,
     },
     cards: rest,
   });
