@@ -163,11 +163,11 @@ export const FEELING_MANAGEMENT: Feeling = {
       title: "Nommer ce que tu ressens",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>mettre un mot sur une émotion aide souvent à mieux la comprendre.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               demande-toi : "Qu'est-ce que je ressens exactement ?". Tu peux t'aider d'une roue des
@@ -181,11 +181,11 @@ export const FEELING_MANAGEMENT: Feeling = {
       title: "Observer ton émotion",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>prends quelques instants pour observer ton émotion avec curiosité.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               demande-toi : Que se passe-t-il dans mon corps ? Quelles pensées me viennent ?
@@ -200,11 +200,11 @@ export const FEELING_MANAGEMENT: Feeling = {
       title: "Laisser l'émotion passer",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>au lieu de lutter contre ton émotion, essaie de lui laisser un peu de place.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               respire quelques instants et rappelle-toi : "Je peux ressentir cette émotion sans
@@ -219,7 +219,7 @@ export const FEELING_MANAGEMENT: Feeling = {
       title: "Choisir comment y répondre",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               tu ne peux pas toujours choisir ce que tu ressens, mais tu peux progressivement
@@ -228,7 +228,7 @@ export const FEELING_MANAGEMENT: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               demande-toi : "Quelle serait la réponse la plus aidante pour moi, maintenant ?".

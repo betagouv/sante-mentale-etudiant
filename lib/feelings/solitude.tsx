@@ -172,7 +172,7 @@ export const FEELING_SOLITUDE: Feeling = {
       title: "Faire la différence entre être seul et se sentir seul",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               la solitude ne dépend pas seulement du nombre de personnes autour de toi. Essaie
@@ -181,7 +181,7 @@ export const FEELING_SOLITUDE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               demande-toi : Est-ce que j'aimerais avoir quelqu'un à qui parler ? Est-ce que
@@ -198,7 +198,7 @@ export const FEELING_SOLITUDE: Feeling = {
       title: "Faire un premier pas",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               lorsqu'on se sent isolé, on attend souvent que les autres viennent vers nous. On peut
@@ -207,7 +207,7 @@ export const FEELING_SOLITUDE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               envoie un message à une personne que tu apprécies, propose un café après les cours ou
@@ -225,7 +225,7 @@ export const FEELING_SOLITUDE: Feeling = {
       title: "Limiter les comparaisons",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               rappelle-toi que les réseaux sociaux montrent rarement les moments de solitude, de
@@ -234,7 +234,7 @@ export const FEELING_SOLITUDE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               lorsque tu te surprends à penser « tout le monde a une vie sociale parfaite »,
@@ -249,11 +249,11 @@ export const FEELING_SOLITUDE: Feeling = {
       title: "Trouver un espace où parler",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>la solitude devient souvent moins lourde lorsqu'elle peut être partagée.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               parle de ce que tu ressens à une personne de confiance. Dire simplement « je me sens
