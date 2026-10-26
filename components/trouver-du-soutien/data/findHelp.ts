@@ -65,9 +65,15 @@ export const OPTIONS_I_NEED: MAIN_OPTIONS = {
   },
 };
 
-export type Result = {
+type TitleSection = {
   title: string;
-  cards: ReactNode[];
+  index: number;
+};
+
+export type Result = {
+  title?: TitleSection;
+  cards?: ReactNode[];
+  isNightline?: boolean;
 };
 
 export const getResults = async (
@@ -91,6 +97,19 @@ export const getResults = async (
   const CARD_SPE = get_CARD_SPE(addressLabel, coordinates);
   const results = [] as Result[];
 
+  const isNoResponse = !whatINeed && (!format || format === FORMAT_ALL) && !addressLabel;
+
+  if (isNoResponse) {
+    // SSE - BAPU - SPE - 3114
+    // Nightline
+    // Medecin
+    return [
+      { cards: [CARD_SSE, CARD_BAPU, CARD_SPE, CARD_3114] },
+      { isNightline: true },
+      { cards: [CARD_DOCTOR] },
+    ];
+  }
+
   if (!format) {
     format = FORMAT_ALL;
   }
@@ -108,13 +127,13 @@ export const getResults = async (
     ];
   }
 
-  //if no response add 3114 in first section
-  if (!whatINeed && (!format || format === FORMAT_ALL) && !addressLabel) {
-    recommandations.push(CARD_3114);
-  }
+  let index = 1;
 
   results.push({
-    title: "D'après tes réponses, voici les professionnels qu'on te recommande",
+    title: {
+      title: "D'après tes réponses, voici les professionnels qu'on te recommande",
+      index,
+    },
     cards: recommandations,
   });
 
@@ -130,9 +149,21 @@ export const getResults = async (
       ...([FORMAT_CHOOSE].includes(format) ? [CARD_SSE, CARD_BAPU] : []),
     ];
   }
+
+  if (otherRecommandations.length > 0) {
+    index = index + 1;
+  }
   results.push({
-    title: "Également adaptés à ta situation",
+    title: {
+      title: "Également adaptés à ta situation",
+      index,
+    },
     cards: otherRecommandations,
+  });
+
+  // insert nightline between sections 2 and 3
+  results.push({
+    isNightline: true,
   });
 
   // third section
@@ -144,8 +175,14 @@ export const getResults = async (
   } else {
     rest = [];
   }
+  if (rest.length > 0) {
+    index = index + 1;
+  }
   results.push({
-    title: "Toutes les autres ressources disponibles",
+    title: {
+      title: "Toutes les autres ressources disponibles",
+      index,
+    },
     cards: rest,
   });
 

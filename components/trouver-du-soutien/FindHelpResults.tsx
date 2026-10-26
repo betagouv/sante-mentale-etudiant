@@ -26,20 +26,25 @@ export default function FindHelpResults({ addressLabel, coordinates, whatINeed, 
   }, [addressLabel, whatINeed, format, coordinates]);
 
   return results
-    .filter((result) => result.cards.length > 0)
-    .map((result, index) => (
-      <div key={`result__${index.toString()}`}>
-        <h2 className={styles.title}>
-          <span className={styles.index}>{String(index + 1).padStart(2, "0")}</span> {result.title}
-        </h2>
-        <div className={styles.results}>{result.cards.map((card) => card)}</div>
-        <div className={styles.separator} />
-        {index === 1 && (
-          <div className={styles.nightline}>
-            {<NightLineCard />}
-            <div className={styles.separator} />
-          </div>
-        )}
-      </div>
-    ));
+    .filter((result) => result.isNightline || (result.cards && result.cards?.length > 0))
+    .map(({ title, cards, isNightline }, index) => {
+      return (
+        <div key={`result__${index.toString()}`}>
+          {title ? (
+            <h2 className={styles.title}>
+              <span className={styles.index}>{String(title.index).padStart(2, "0")}</span>{" "}
+              {title.title}
+            </h2>
+          ) : (
+            <div className={styles.emptyTitle} />
+          )}
+          {isNightline ? (
+            <NightLineCard />
+          ) : (
+            <div className={styles.results}>{cards?.map((card) => card)}</div>
+          )}
+          <div className={styles.separator} />
+        </div>
+      );
+    });
 }

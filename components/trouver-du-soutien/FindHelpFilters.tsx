@@ -45,6 +45,7 @@ export default function FindHelpFilters({
         nativeSelectProps={{
           onChange: (event) => handleWhatINeedChange(event.target.value),
           value: whatINeed,
+          autoComplete: "off",
         }}
       >
         <option value="" disabled hidden>
@@ -62,6 +63,7 @@ export default function FindHelpFilters({
           nativeSelectProps={{
             onChange: (event) => setFormat(event.target.value),
             value: format,
+            autoComplete: "off",
           }}
         >
           <option value="" disabled hidden>
