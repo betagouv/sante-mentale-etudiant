@@ -66,8 +66,9 @@ export const OPTIONS_I_NEED: MAIN_OPTIONS = {
 };
 
 export type Result = {
-  title: string;
-  cards: ReactNode[];
+  title?: string;
+  cards?: ReactNode[];
+  isNightline?: boolean;
 };
 
 export const getResults = async (
@@ -91,6 +92,19 @@ export const getResults = async (
   const CARD_SPE = get_CARD_SPE(addressLabel, coordinates);
   const results = [] as Result[];
 
+  const isNoResponse = !whatINeed && (!format || format === FORMAT_ALL) && !addressLabel;
+
+  if (isNoResponse) {
+    // SSE - BAPU - SPE - 3114
+    // Nightline
+    // Medecin
+    return [
+      { cards: [CARD_SSE, CARD_BAPU, CARD_SPE, CARD_3114] },
+      { isNightline: true },
+      { cards: [CARD_DOCTOR] },
+    ];
+  }
+
   if (!format) {
     format = FORMAT_ALL;
   }
@@ -106,11 +120,6 @@ export const getResults = async (
       ...(!format || [FORMAT_CAMPUS, FORMAT_ALL].includes(format) ? [CARD_SSE, CARD_BAPU] : []),
       ...([FORMAT_CHOOSE, FORMAT_ALL].includes(format) ? [CARD_SPE] : []),
     ];
-  }
-
-  //if no response add 3114 in first section
-  if (!whatINeed && (!format || format === FORMAT_ALL) && !addressLabel) {
-    recommandations.push(CARD_3114);
   }
 
   results.push({
@@ -133,6 +142,11 @@ export const getResults = async (
   results.push({
     title: "Également adaptés à ta situation",
     cards: otherRecommandations,
+  });
+
+  // insert nightline between sections 2 and 3
+  results.push({
+    isNightline: true,
   });
 
   // third section
