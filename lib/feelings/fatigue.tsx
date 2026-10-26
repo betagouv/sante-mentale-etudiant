@@ -153,8 +153,7 @@ export const FEELING_FATIGUE: Feeling = {
               <li>Je peux relire le même paragraphe sans le comprendre.</li>
               <li>Je peux mettre deux heures à faire ce qui m'en prenait une.</li>
               <li>
-                Je peux ne pas réfléchir comme d'habitude, perdre en capacité de raisonnement
-                logique.
+                Je n'arrive pas à réfléchir comme d'habitude.
               </li>
             </ul>
 
