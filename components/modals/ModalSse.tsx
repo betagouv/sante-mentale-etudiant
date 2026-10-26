@@ -1,7 +1,13 @@
 import { SSE } from "@/lib/sse";
 import { sseModal } from ".";
 import styles from "./Modals.module.scss";
-import { AddressField, EmailField, PhoneField, WebsiteField } from "../common/InfoFields";
+import {
+  AddressField,
+  EmailField,
+  MoreInfoField,
+  PhoneField,
+  WebsiteField,
+} from "../common/InfoFields";
 import React from "react";
 import { splitAndCleanString } from "@/utils/misc";
 import { Disclaimer } from "../typography/Disclaimer";
@@ -26,7 +32,15 @@ export const ModalSse = ({ sse }: Props) => (
         splitAndCleanString(sse.website).map((w, idx) => (
           <React.Fragment key={`website__${idx}`}> {WebsiteField(w, idx)}</React.Fragment>
         ))}
-      <Disclaimer>Les conditions d'éligibilité varient selon les SSE. N’hésite pas à vérifier que ton établissement est éligible avant de te déplacer.</Disclaimer>
+      {sse.instagram &&
+        splitAndCleanString(sse.instagram).map((w, idx) => (
+          <React.Fragment key={`instagram__${idx}`}> {WebsiteField(w, idx)}</React.Fragment>
+        ))}
+      {sse.moreInfo && MoreInfoField(sse.moreInfo)}
+      <Disclaimer>
+        Les conditions d'éligibilité varient selon les services. N’hésite pas à vérifier avant de te
+        déplacer.
+      </Disclaimer>
     </div>
   </sseModal.Component>
 );
