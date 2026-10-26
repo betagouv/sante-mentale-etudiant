@@ -6,15 +6,16 @@ import path from "path";
 const filePath = path.join(process.cwd(), "data/sse.json");
 
 export type SSE = {
-  universityId: string;
   displayName: string;
   displayUniversityName: string;
   address: string;
   phone: string;
   email?: string;
   website?: string;
+  instagram?: string;
   latitude: number;
   longitude: number;
+  moreInfo?: string;
 };
 
 async function getSSEs(): Promise<SSE[]> {

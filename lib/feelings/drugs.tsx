@@ -149,7 +149,7 @@ export const FEELING_DRUGS: Feeling = {
             <li>Je continue à consommer alors que cela me pose déjà des problèmes.</li>
             <li>Je me dis souvent : « Ce sera la dernière fois. ».</li>
             <li>Mes consommations sont responsables de disputes/ conflits avec mes proches.</li>
-            <li>Mes proches m’ont fait des remarques.</li>
+            <li>Mes proches s’inquiètent de ma consommation ou m’en ont déjà parlé.</li>
           </ul>
         ),
       },
@@ -160,7 +160,7 @@ export const FEELING_DRUGS: Feeling = {
       title: "Observer ta consommation",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               avant de vouloir changer tes habitudes, essaie simplement de mieux comprendre ta
@@ -169,7 +169,7 @@ export const FEELING_DRUGS: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               pendant quelques jours, demande-toi : À quel moment est-ce que je consomme ? Dans quel
@@ -184,11 +184,11 @@ export const FEELING_DRUGS: Feeling = {
       title: "Identifier le besoin derrière",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>la consommation répond souvent à un besoin.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               Une question simple : Qu’est-ce que je pourrais faire pour obtenir le même effet
@@ -203,11 +203,11 @@ export const FEELING_DRUGS: Feeling = {
       title: "Découvrir d’autres façons de t’apaiser",
       items: [
         {
-          title: "L’action",
+          title: "L'idée",
           desc: <>une seule solution ne répond pas toujours à tous les besoins.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               dans une situation où tu consommes habituellement tu peux te demander : "Qu'est-ce que
@@ -222,7 +222,7 @@ export const FEELING_DRUGS: Feeling = {
       title: "En parler sans attendre",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               il est souvent plus facile de demander de l'aide lorsque les difficultés commencent,
@@ -231,7 +231,7 @@ export const FEELING_DRUGS: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               parles-en à une personne de confiance ou à un professionnel, même si tu ne te

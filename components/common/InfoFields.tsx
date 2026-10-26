@@ -65,3 +65,10 @@ export const OpeningHoursField = (openingHours: string) => (
     <p className={styles.paragraph}>{openingHours}</p>
   </div>
 );
+
+export const MoreInfoField = (moreInfo: string) => (
+  <div>
+    <span className={styles.title}>Informations supplémentaires</span>
+    <p className={styles.paragraph}>{moreInfo}</p>
+  </div>
+);
