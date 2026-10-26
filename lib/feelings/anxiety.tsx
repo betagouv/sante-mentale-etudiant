@@ -29,7 +29,7 @@ export const FEELING_ANXIETY: Feeling = {
   recap: [
     "Le stress est une réaction normale face à une difficulté.",
     "L'anxiété est différente\u00A0: elle peut persister même sans danger immédiat.",
-    "Stress et anxiété peuvent se ressentir à la fois dans le corps et dans les pensées.,
+    "Stress et anxiété peuvent se ressentir à la fois dans le corps et dans les pensées.",
     "Quelques stratégies simples peuvent t'aider à te sentir un peu mieux, sans remplacer l'avis d'un professionnel.",
   ],
   faq: {
