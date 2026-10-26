@@ -65,8 +65,13 @@ export const OPTIONS_I_NEED: MAIN_OPTIONS = {
   },
 };
 
+type TitleSection = {
+  title: string;
+  index: number;
+};
+
 export type Result = {
-  title?: string;
+  title?: TitleSection;
   cards?: ReactNode[];
   isNightline?: boolean;
 };
@@ -123,7 +128,10 @@ export const getResults = async (
   }
 
   results.push({
-    title: "D'après tes réponses, voici les professionnels qu'on te recommande",
+    title: {
+      title: "D'après tes réponses, voici les professionnels qu'on te recommande",
+      index: 1,
+    },
     cards: recommandations,
   });
 
@@ -140,7 +148,10 @@ export const getResults = async (
     ];
   }
   results.push({
-    title: "Également adaptés à ta situation",
+    title: {
+      title: "Également adaptés à ta situation",
+      index: 2,
+    },
     cards: otherRecommandations,
   });
 
@@ -159,7 +170,10 @@ export const getResults = async (
     rest = [];
   }
   results.push({
-    title: "Toutes les autres ressources disponibles",
+    title: {
+      title: "Toutes les autres ressources disponibles",
+      index: 3,
+    },
     cards: rest,
   });
 
