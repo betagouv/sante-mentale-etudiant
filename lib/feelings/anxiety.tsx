@@ -19,7 +19,7 @@ export const FEELING_ANXIETY: Feeling = {
         </p>
         <p>Connaître des épisodes de stress fait partie de la vie.</p>
         <p>
-          Mais lorsque ce stress devient fréquent, intense ou durable, qu’il s'accompagne d'une inquiétude face à ce qui pourrait arriver (proche ou lointain) et qu'il gêne ton quotidien, il peut s'agir d'une anxiété, ce qui mérite d'en parler à un professionnel.
+          Mais lorsque ce stress est de plus en plus fréquent, intense ou durable, qu'il s'accompagne d'une inquiétude face à ce qui pourrait arriver (proche ou lointain), et qu'il gêne ton quotidien, il peut s'agir d'une anxiété qui mérite d'en parler à un professionnel.
         </p>
         <p>Tu peux tester quelques outils pour essayer de retrouver un peu d'apaisement, en attendant ou en complément d'un échange avec un professionnel. Des accompagnements efficaces existent.</p>
       </>
@@ -36,10 +36,8 @@ export const FEELING_ANXIETY: Feeling = {
     title: "Comprendre le stress et l'anxiété",
     intro: (
       <p>
-        Le stress est une réaction normale de notre organisme face à une difficulté ou à une menace.
-        Si cela dure dans le temps, ou apparaît sans raison apparente, on parle plutôt d’anxiété ou
-        d’angoisse. Cela peut être difficile à vivre, et comprendre ce qui se passe dans ton corps
-        permet souvent de moins en avoir peur.
+        Le stress est la réaction normale de ton organisme face à une situation qui te met sous pression, comme un examen ou un oral. Il s'apaise en général quand la situation passe. L'anxiété, c'est l'inquiétude face à ce qui pourrait arriver, souvent avec des tensions dans le corps. Elle est aussi normale : tout le monde en ressent de temps en temps. Elle peut devenir difficile à vivre quand elle est fréquente, intense ou durable, et qu'elle gêne ton quotidien (sommeil, études, relations). Comprendre et accepter ce qui se passe dans ton corps et dans ton esprit aide souvent à mieux gérer ces sensations et ces pensées sans avoir à lutter contre ce que tu ressens.
+        Si c'est trop difficile, un professionnel de santé mentale peut t'accompagner.
       </p>
     ),
     items: [
@@ -49,10 +47,7 @@ export const FEELING_ANXIETY: Feeling = {
           <>
             <p>Le stress et l'anxiété sont loin d'être des situations isolées.</p>
             <p>
-              Selon l'enquête Bien-être et santé de l'OVE (2024), un tiers des étudiants présentent
-              des signes de détresse psychologique. Les difficultés liées au stress, à l'anxiété et
-              à la charge mentale sont parmi les raisons les plus fréquentes qui conduisent à
-              consulter.
+              Selon l'enquête Conditions de vie des étudiants de l'OVE (2023), 45% des étudiants déclarent se sentir nerveux souvent ou en permanence au cours des quatre dernières semaines ayant précédé l'enquête. Dans l'enquête Bien-être et santé de l'OVE (2024), 28% présentent des symptômes d'anxiété modérés à sévères au cours des deux dernières semaines (échelle GAD-7, seuil ≥ 10).
             </p>
             <p>
               Chez les bénéficiaires de Santé Psy Étudiant (enquête Juin 2026), le stress et
@@ -65,29 +60,20 @@ export const FEELING_ANXIETY: Feeling = {
         question: "Mais alors, d’où ça peut venir ?",
         answer: (
           <>
-            <h4>1. Le stress est une réaction normale de l’organisme </h4>{" "}
+            <h4>1. Le stress est une réaction normale, mais qui peut devenir pesante </h4>{" "}
             <p>
-              Face à un examen, un oral, un conflit ou une situation nouvelle, ton cerveau déclenche
-              une alerte pour permettre à ton corps de réagir vite : ton rythme cardiaque
-              s’accélère, tes muscles se tendent.
+              Face à un examen, un oral, un conflit ou une situation nouvelle, ton esprit déclenche
+              une alerte pour que ton corps puisse réagir vite : ton coeur peut s'accélérer, tes muscles se tendent.
             </p>
             <p>
-              Bien dosé, le stress peut devenir un allié : la veille d’un oral, il t’aide à rester
-              concentré. Beaucoup de musiciens, comédiens, sportifs ressentent du trac avant une
-              performance.{" "}
+              A petite dose, le stress peut même devenir un allié : avant un oral, un peu de tension peut t'aider à te mobiliser et à rester concentré. Beaucoup de musiciens, de comédiens et de sportifs ressentent du trac avant de se produire. Cette réaction est utile... tant qu'elle reste ponctuelle. {" "}
             </p>
             <p>
-              Sarah Bernhardt aurait même dit à une jeune comédienne qui se vantait de ne pas avoir
-              de trac : « Ne vous en faites pas, le trac, cela viendra avec le talent ».
-            </p>
-            <p>
-              Ce qui se complique, c’est quand cette alerte ne s’éteint plus ou qu’elle ne se
-              contrôle plus. Il peut alors s’agir d’anxiété.
+              Ce qui se complique, c’est quand cette alerte se déclenche trop souvent, de manière trop forte et trop longtemps. On peut alors se sentir constamment sous tension, et ces sensations comme l'inquiétude peuvent s'installer et gêner ton quotidien.
             </p>
             <h4>2. Au-delà des études : des sources multiples de stress et d’anxiété</h4>
             <p>
-              Le stress ou l’anxiété ne viennent pas uniquement des cours, mais peuvent être la
-              conséquence de plusieurs situations qui s’accumulent.
+              Le stress et l’anxiété ne viennent pas uniquement des cours. Ils émergent souvent en lien avec plusieurs situations qui se cumulent, et chacun n'y réagit pas de la même façon.
             </p>
             <div>
               Dans notre enquête Santé Psy Étudiant (Juin 2026), les étudiants évoquent
@@ -114,11 +100,11 @@ export const FEELING_ANXIETY: Feeling = {
               très irréguliers peuvent renforcer des situations d'anxiété, même cela peut donner
               l’impression d’aider à se détendre sur le moment.{" "}
             </p>
-            <h4>3. Les pensées qui tournent en boucle.</h4>
+            <h4>3. Les pensées qui tournent en boucle </h4>
             <p>
-              Quand on est stressé ou anxieux, il est fréquent de ressasser sans cesse les mêmes
-              pensées, sans réussir à les arrêter : « Et si j'échoue ? », « Et si je déçois mes
-              proches ? », « Et si quelque chose se passe mal ? ».{" "}
+              Quand on est stressé ou anxieux, il est fréquent de ressasser les mêmes
+              pensées, sans réussir à les arrêter. Elles peuvent porter sur ce qui pourrait arriver : « Et si j'échoue ? », « Et si je déçois mes
+              proches ? », ou sur ce qui s'est passé : "Pourquoi j'ai dit ça ?", 'J'aurais dû faire autrement".{" "}
             </p>
             <p>
               On a parfois l'impression de se préparer à l'avenir. En réalité, ces pensées
@@ -130,7 +116,7 @@ export const FEELING_ANXIETY: Feeling = {
               professionnel de santé. Lui seul peut évaluer ta situation et, si besoin, poser un
               diagnostic.
             </p>
-            <h4>4. L'anxiété peut révéler autre chose</h4>
+            <h4>4. L'anxiété peut révéler autre chose </h4>
             <p>
               L'anxiété peut aussi parfois être le signe d’autres types de troubles, comme la
               dépression.
@@ -143,7 +129,7 @@ export const FEELING_ANXIETY: Feeling = {
               quotidien, il est important d'en parler avec un professionnel : c’est lui qui pourra
               évaluer ta situation.
             </p>
-            <h4>5. L'anxiété peut parfois cacher autre chose.</h4>
+            <h4>5. L'anxiété peut parfois cacher autre chose </h4>
             <p>
               L'anxiété peut apparaître seule, mais elle accompagne aussi parfois une dépression, un
               trouble anxieux ou certaines maladies physiques. Si elle dure plusieurs semaines,
@@ -177,7 +163,7 @@ export const FEELING_ANXIETY: Feeling = {
       title: "Repérer ce qui déclenche ton stress",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               pendant quelques jours, essaie d'identifier les moments où ton stress augmente : avant
@@ -186,7 +172,7 @@ export const FEELING_ANXIETY: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               note simplement dans ton téléphone ce qui s'est passé juste avant que ton stress
@@ -200,15 +186,14 @@ export const FEELING_ANXIETY: Feeling = {
       title: "Ramener ton attention au présent",
       items: [
         {
-          title: "L’action",
-          desc: <>quand les pensées tournent en boucle, essaie de revenir à ce qui t'entoure.</>,
+          title: "L’idée",
+          desc: <>quand les pensées tournent en boucle, tu peux essayer de prendre du recul : une pensée n'est pas un fait, et tu peux choisir ce que tu fais maintenant.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
-              observe cinq choses que tu vois, quatre que tu peux toucher, trois que tu entends,
-              deux que tu peux sentir et une que tu peux goûter.
+              quand une pensée revient, essaie de te dire "là, je me dis que,..." (là, je me dis que je vais échouer"). Puis reviens à ce que tu es en train de faire : la page que tu lis, ce que tu vois, ce que tu entends. Si une idée ne te convient pas, tu peux en essayer une autre.
             </>
           ),
         },
@@ -218,16 +203,16 @@ export const FEELING_ANXIETY: Feeling = {
       title: "Faire redescendre la tension",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
-              le stress se vit aussi dans le corps. Bouger, marcher ou ralentir sa respiration aide
-              progressivement ton organisme à sortir de l'état d'alerte.
+              le stress se vit aussi dans le corps. Bouger, marcher, faire de l'exercice physique ou ralentir sa respiration peuvent aider
+              progressivement ton organisme à sortir d'un état d'alerte.
             </>
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               fais une marche de dix minutes ou prends une minute pour respirer lentement en
@@ -241,7 +226,7 @@ export const FEELING_ANXIETY: Feeling = {
       title: "En parler",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               partager ce que tu ressens permet souvent de prendre du recul et d'éviter que le
@@ -250,7 +235,7 @@ export const FEELING_ANXIETY: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               envoie un message à une personne de confiance ou prends rendez-vous avec un
