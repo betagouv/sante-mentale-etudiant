@@ -1,4 +1,4 @@
-ximport { Feeling } from "./types";
+import { Feeling } from "./types";
 import { FeelingLink } from ".";
 
 export const FEELING_ANXIETY: Feeling = {
@@ -69,7 +69,7 @@ export const FEELING_ANXIETY: Feeling = {
               A petite dose, le stress peut même devenir un allié : avant un oral, un peu de tension peut t'aider à te mobiliser et à rester concentré. Beaucoup de musiciens, de comédiens et de sportifs ressentent du trac avant de se produire. Cette réaction est utile... tant qu'elle reste ponctuelle. {" "}
             </p>
             <p>
-              Ce qui se complique, c’est quand cette alerte se déclenche trop souvent, de manière trop forte et trop longtemps. On peut alors se sentir constamment sous tension, et ces sensations comme l'inquiétude peuvent s'installer et gêner ton quotidien. 
+              Ce qui se complique, c’est quand cette alerte se déclenche trop souvent, de manière trop forte et trop longtemps. On peut alors se sentir constamment sous tension, et ces sensations comme l'inquiétude peuvent s'installer et gêner ton quotidien.
             </p>
             <h4>2. Au-delà des études : des sources multiples de stress et d’anxiété</h4>
             <p>
