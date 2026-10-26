@@ -1,7 +1,8 @@
 import { Dispositif } from "./types";
 
 export const DISPOSITIF_SPE: Dispositif = {
-  slug: "Santé Psy Étudiant",
+  slug: "SPE",
+  menuTitle: "Santé Psy Étudiant",
   catchPhrase: "12 séances gratuites avec un psychologue",
   menuPhrase: "séances gratuites chez un psy de ton choix",
   metadata: {
@@ -9,7 +10,7 @@ export const DISPOSITIF_SPE: Dispositif = {
     description:
       "Étudiant en souffrance psychique ? Santé Psy Étudiant propose jusqu'à 12 séances gratuites chez un psychologue partenaire. Découvrez comment en bénéficier.",
   },
-  videoKey: "Santé Psy Étudiant",
+  videoKey: "SPE",
   button: {
     text: "Découvrir Santé Psy Étudiant",
     linkProps: {
