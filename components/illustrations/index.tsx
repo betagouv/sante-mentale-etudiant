@@ -76,7 +76,7 @@ export const IllustrationHomeMozaic = () => (
 
 export const IllustrationHomePeopleDesktop = () => (
   <RenderImage
-    src="/images/illustrations/home/people-desktop.svg"
+    src="/images/illustrations/home/people-desktop.png"
     width={562}
     height={344}
     className={styles.homePeopleDesktop}
@@ -94,7 +94,7 @@ export const IllustrationHomePeopleMobile = () => (
 
 export const IllustrationHomeGirlDesktop = () => (
   <RenderImage
-    src="/images/illustrations/home/girl-desktop.svg"
+    src="/images/illustrations/home/girl-desktop.png"
     width={313}
     height={392}
     className={styles.homeGirlDesktop}

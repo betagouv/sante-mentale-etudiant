@@ -5,7 +5,6 @@ import { transcriptionDrugs } from "./transcriptions/feelings/drugs";
 import { transcriptionEatingDisorder } from "./transcriptions/feelings/eating-disorder";
 import { transcriptionFatigue } from "./transcriptions/feelings/fatigue";
 import { transcriptionFeelingManagement } from "./transcriptions/feelings/feeling-management";
-import { transcriptionPainfulEvent } from "./transcriptions/feelings/painful-event";
 import { transcriptionSolitude } from "./transcriptions/feelings/solitude";
 import { transcriptionSuicidalThoughts } from "./transcriptions/feelings/suicidal-thought";
 
@@ -21,7 +20,6 @@ export const VIDEO_KEYS = [
   "eating-disorder",
   "fatigue",
   "feeling-management",
-  "painful-event",
   "solitude",
   "suicidal-thoughts",
 ] as const;
@@ -88,7 +86,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 6,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionAnxiety,
   },
@@ -100,7 +98,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 6,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionDrugs,
   },
@@ -112,7 +110,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionEatingDisorder,
   },
@@ -124,7 +122,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionFatigue,
   },
@@ -136,21 +134,9 @@ export const feelings: VideoTestimonial[] = [
     duration: 7,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionFeelingManagement,
-  },
-  {
-    key: "painful-event",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/7FwPbevV3sLY486aB4ZLLY",
-    previewUrl: "/videos/preview/feelings/painful-event.mp4",
-    posterUrl: "/images/vignettes/feelings/painful-event.jpg",
-    duration: 8,
-    guest: {
-      name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
-    },
-    transcription: transcriptionPainfulEvent,
   },
   {
     key: "solitude",
@@ -160,7 +146,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionSolitude,
   },
@@ -172,7 +158,7 @@ export const feelings: VideoTestimonial[] = [
     duration: 5,
     guest: {
       name: "Jérôme Lacinga",
-      role: "Psychologue clinicien",
+      role: "Psychologue du dispositif Santé Psy Étudiant",
     },
     transcription: transcriptionSuicidalThoughts,
   },

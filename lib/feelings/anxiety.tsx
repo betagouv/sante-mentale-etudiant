@@ -37,12 +37,12 @@ export const FEELING_ANXIETY: Feeling = {
   faq: {
     title: "Comprendre le stress et l'anxiété",
     intro: (
-      <>
+      <p>
         Le stress est une réaction normale de notre organisme face à une difficulté ou à une menace.
         Si cela dure dans le temps, ou apparaît sans raison apparente, on parle plutôt d’anxiété ou
         d’angoisse. Cela peut être difficile à vivre, et comprendre ce qui se passe dans ton corps
         permet souvent de moins en avoir peur.
-      </>
+      </p>
     ),
     items: [
       {

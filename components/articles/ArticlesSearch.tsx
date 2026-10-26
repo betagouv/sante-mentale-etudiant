@@ -34,16 +34,21 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
     }
   };
 
-  const filteredArticles = useMemo(
-    () =>
-      allArticles
-        .filter((a) => a.title.includes(searchTerm))
-        .filter(
-          (a) =>
-            selectedFeelingSlugs.length === 0 || selectedFeelingSlugs.includes(a.mainFeelingSlug)
-        ),
-    [searchTerm, allArticles, selectedFeelingSlugs]
-  );
+  // search by feelings also render feeling less articles at the end
+  const filteredArticles = useMemo(() => {
+    const matchingSearch = allArticles.filter((a) =>
+      a.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    if (selectedFeelingSlugs.length === 0) return matchingSearch;
+
+    const forSelectedFeelings = matchingSearch.filter(
+      (a) => a.mainFeelingSlug && selectedFeelingSlugs.includes(a.mainFeelingSlug)
+    );
+    const general = matchingSearch.filter((a) => !a.mainFeelingSlug);
+
+    return [...forSelectedFeelings, ...general];
+  }, [searchTerm, allArticles, selectedFeelingSlugs]);
   return (
     <>
       <div className={styles.wrapper}>

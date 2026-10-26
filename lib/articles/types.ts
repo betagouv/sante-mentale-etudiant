@@ -3,9 +3,10 @@ import { FeelingSlug } from "../feelings/data";
 interface BaseArticleMeta {
   slug: string;
   title: string;
-  mainFeelingSlug: FeelingSlug;
   heroImage: string;
+  mainFeelingSlug?: FeelingSlug;
   readingTime?: number; // in minutes
+  featured?: boolean;
 }
 
 export interface InternalArticleMeta extends BaseArticleMeta {
@@ -18,10 +19,13 @@ export interface InternalArticleMeta extends BaseArticleMeta {
   heroCredits: string;
 }
 
+export type ExternalContentFormat = "article" | "podcast";
+
 export interface ExternalArticleMeta extends BaseArticleMeta {
   type: "external";
   url: string;
   pdfWeight?: number;
+  format?: ExternalContentFormat;
 }
 
 export type ArticleMeta = InternalArticleMeta | ExternalArticleMeta;

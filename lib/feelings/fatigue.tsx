@@ -35,17 +35,15 @@ export const FEELING_FATIGUE: Feeling = {
   faq: {
     title: "Comprendre la fatigue",
     intro: (
-      <>
+      <p>
         La fatigue devient anormale quand elle persiste malgré le repos (
-        <ExternalLink
-          href="https://www.ameli.fr/assure/sante/themes/asthenie-fatigue/definition-symptomes-causes"
-        >
+        <ExternalLink href="https://www.ameli.fr/assure/sante/themes/asthenie-fatigue/definition-symptomes-causes">
           Assurance Maladie
         </ExternalLink>
         ). Elle n'a pas une cause unique : le manque de sommeil, la charge des études, l'anxiété, un
         état dépressif ou un problème physique peuvent tous produire la même sensation de fatigue.
         Comprendre laquelle te concerne change ce qu'il faut faire.
-      </>
+      </p>
     ),
     items: [
       {
@@ -54,9 +52,7 @@ export const FEELING_FATIGUE: Feeling = {
           <>
             <p>
               Les 18-29 ans dorment en moyenne 7h48 par nuit, plus que le reste de la population (
-              <ExternalLink
-                href="https://www.santepubliquefrance.fr/sommeil/rapportsynthese/sommeil-temps-moyen-sur-24-heures-et-plainte-dinsomnie-barometre-de-sante-publique-france-resultats"
-              >
+              <ExternalLink href="https://www.santepubliquefrance.fr/sommeil/rapportsynthese/sommeil-temps-moyen-sur-24-heures-et-plainte-dinsomnie-barometre-de-sante-publique-france-resultats">
                 Santé publique France, Baromètre 2024
               </ExternalLink>
               ).
@@ -64,13 +60,12 @@ export const FEELING_FATIGUE: Feeling = {
             <p>
               Sauf que la moyenne cache tout le reste : 18,9 % des 18-29 ans dorment 6 heures ou
               moins, et 29 % déclarent avoir des difficultés à s'endormir ou des réveils nocturnes (
-              <ExternalLink
-                href="https://www.santepubliquefrance.fr/sommeil/rapportsynthese/sommeil-temps-moyen-sur-24-heures-et-plainte-dinsomnie-barometre-de-sante-publique-france-resultats"
-              >
+              <ExternalLink href="https://www.santepubliquefrance.fr/sommeil/rapportsynthese/sommeil-temps-moyen-sur-24-heures-et-plainte-dinsomnie-barometre-de-sante-publique-france-resultats">
                 Santé publique France, Baromètre 2024
               </ExternalLink>
               ). Chez les étudiants, 21 % jugent leur sommeil mauvais ou très mauvais, et un tiers
-              déclarent avoir rencontré des difficultés dans leurs études à cause de leur sommeil (OVE, enquête Bien-être et santé 2024).
+              déclarent avoir rencontré des difficultés dans leurs études à cause de leur sommeil
+              (OVE, enquête Bien-être et santé 2024).
             </p>
             <p>
               Chez les étudiants qui consultent un psychologue via Santé Psy Étudiant, l'épuisement
@@ -91,9 +86,7 @@ export const FEELING_FATIGUE: Feeling = {
               Nous avons tous une horloge interne. Le soir, elle déclenche la mélatonine, l'hormone
               qui donne le signal du sommeil. Jusqu'à une vingtaine d'années, ce signal arrive plus
               tard dans la soirée (
-              <ExternalLink
-                href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Carnet-11-Sommeil-des-jeunes-15-25-ans.pdf"
-              >
+              <ExternalLink href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Carnet-11-Sommeil-des-jeunes-15-25-ans.pdf">
                 Institut National Sommeil Vigilance, Le Sommeil des Jeunes, PDF, 11 Mo
               </ExternalLink>
               ). Sauf que les cours, eux, commencent tôt. Les nuits de semaine sont écourtées, le
@@ -119,15 +112,14 @@ export const FEELING_FATIGUE: Feeling = {
               vide qui dure plus de deux semaines, ce n'est plus seulement de la fatigue. Un tiers
               des étudiants présentent les signes d’une détresse psychologique et la moitié a vécu
               une période d’au moins deux semaines consécutives pendant laquelle ils se sont sentis
-              tristes, déprimés, sans espoir, au cours des 12 derniers mois (OVE 2024). Cette fatigue peut se soigner, il faut en parler.
+              tristes, déprimés, sans espoir, au cours des 12 derniers mois (OVE 2024). Cette
+              fatigue peut se soigner, il faut en parler.
             </p>
             <h4>5. Une cause physique.</h4>
             <p>
               La fatigue peut aussi venir du corps : anémie, trouble de la thyroïde, apnées du
               sommeil… Un médecin peut le vérifier avec un examen et, si besoin, une prise de sang ({" "}
-              <ExternalLink
-                href="https://www.ameli.fr/assure/sante/themes/asthenie-fatigue/consultation-medicale-traitement"
-              >
+              <ExternalLink href="https://www.ameli.fr/assure/sante/themes/asthenie-fatigue/consultation-medicale-traitement">
                 Assurance Maladie
               </ExternalLink>
               ). C'est une étape à ne pas sauter.
@@ -174,8 +166,15 @@ export const FEELING_FATIGUE: Feeling = {
 
             <h4>Émotionnel</h4>
             <ul>
-              <li>Je peux m'énerver pour rien, ou pleurer pour rien.</li>
+              <li>
+                Je peux m'énerver pour rien, ou pleurer pour des choses qui, d'habitude, ne
+                m'atteignent pas.
+              </li>
               <li>Je peux me dévaloriser.</li>
+              <li>
+                Je peux avoir plus de mal à gérer mes émotions, même pour des choses qui ne me
+                touchent pas d'habitude.
+              </li>
             </ul>
 
             <h4>Comportemental</h4>
@@ -186,7 +185,7 @@ export const FEELING_FATIGUE: Feeling = {
               </li>
               <li>Je peux carburer au café la semaine, je m'écroule le week-end.</li>
               <li>Je peux avoir moins envie de voir les gens.</li>
-              <li>Je peux sauter des repas ou manger n'importe quoi sans y penser.</li>
+              <li>Je peux manger n'importe quoi sans y penser.</li>
             </ul>
           </div>
         ),
@@ -198,7 +197,7 @@ export const FEELING_FATIGUE: Feeling = {
       title: "Objectiver son temps de sommeil, comprendre quel dormeur on est, viser la qualité",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               <p>Estimer quel dormeur tu es, quels sont tes besoins.</p>
@@ -209,9 +208,7 @@ export const FEELING_FATIGUE: Feeling = {
                 Engle-Friedman, 1981). Attention à ne pas vouloir trop bien faire et le remplir la
                 nuit, l'idée est de le remplir le matin au réveil, même si cela est approximatif.
                 Cela peut aussi permettre de préparer une consultation à laquelle on amène l'agenda.{" "}
-                <ExternalLink
-                  href="https://www.reseau-morphee.fr/wp-content/uploads/2009/01/agenda_2p.pdf"
-                >
+                <ExternalLink href="https://www.reseau-morphee.fr/wp-content/uploads/2009/01/agenda_2p.pdf">
                   Agenda du sommeil (Réseau Morphée), PDF, 126 Ko
                 </ExternalLink>
               </p>
@@ -227,13 +224,11 @@ export const FEELING_FATIGUE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               remplis{" "}
-              <ExternalLink
-                href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/ASTEN_depliant-sommeil_INSV.pdf"
-              >
+              <ExternalLink href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/ASTEN_depliant-sommeil_INSV.pdf">
                 ton agenda du sommeil, PDF, 1 Mo
               </ExternalLink>
             </>
@@ -245,7 +240,7 @@ export const FEELING_FATIGUE: Feeling = {
       title: "Recaler son horloge interne",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               Se lever à peu près à la même heure tous les jours même le lendemain d'une mauvaise
@@ -255,7 +250,7 @@ export const FEELING_FATIGUE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               descends un arrêt de bus plus tôt, prends ton café près de la fenêtre, révise dehors.
@@ -270,19 +265,19 @@ export const FEELING_FATIGUE: Feeling = {
       title: "Attendre d'être somnolent pour aller au lit, et sortir du lit si on ne s'endort pas",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
-              Guetter le premier signe de somnolence pour aller au lit. Cela diminue les chances de rester
-              éveillé après être allé au lit (signes de somnolence : pensées décousues ou confuses,
-              bâillements, difficultés à se concentrer ou à garder les yeux ouverts, agitation ou
-              irritabilité. Ce sont des signes reconnus par les autorités de santé au travail comme
-              indicateurs que le cerveau approche de l'endormissement).
+              Guetter le premier signe de somnolence pour aller au lit. Cela diminue les chances de
+              rester éveillé après être allé au lit (signes de somnolence : pensées décousues ou
+              confuses, bâillements, difficultés à se concentrer ou à garder les yeux ouverts,
+              agitation ou irritabilité. Ce sont des signes reconnus par les autorités de santé au
+              travail comme indicateurs que le cerveau approche de l'endormissement).
             </>
           ),
         },
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               Si on ne s'est pas endormi après avoir passé plus de 15 minutes au lit, sortir du lit
@@ -307,7 +302,7 @@ export const FEELING_FATIGUE: Feeling = {
       title: "Pratiquer une activité physique",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               une activité physique régulière, sans viser la performance. Bouger dans la journée
@@ -316,22 +311,18 @@ export const FEELING_FATIGUE: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               pas besoin de salle de sport ni d'abonnement. Marcher jusqu'à la fac, prendre les
               escaliers, faire un trajet à vélo : ça compte. Et si le seul créneau possible est tard
               le soir, garde-le quand même. Bouger tard reste préférable à ne pas bouger du tout (
-              <ExternalLink
-                href="https://reseau-morphee.fr/sommeil-et-activite-physique"
-              >
+              <ExternalLink href="https://reseau-morphee.fr/sommeil-et-activite-physique">
                 Réseau Morphée
               </ExternalLink>
               ), et un exercice modéré une heure avant le coucher n'altère que légèrement le sommeil
               (
-              <ExternalLink
-                href="https://www.inserm.fr/actualite/un-exercice-physique-modere-avant-la-nuit-nempeche-pas-de-bien-dormir/"
-              >
+              <ExternalLink href="https://www.inserm.fr/actualite/un-exercice-physique-modere-avant-la-nuit-nempeche-pas-de-bien-dormir/">
                 Inserm
               </ExternalLink>
               )
@@ -349,8 +340,7 @@ export const FEELING_FATIGUE: Feeling = {
         </p>
         <p>
           Mais si la fatigue dure, si elle touche tes études, tes relations ou ton moral, tu n'as
-          pas à rester seul avec ça. Un tiers des étudiant·es présentent des signes de détresse
-          psychologique, et parmi eux, la moitié n'a consulté aucun professionnel (OVE 2024).
+          pas à rester seul avec ça.
         </p>
         <p>
           Demander de l'aide, c'est prendre soin de soi, c'est permis, et c'est même une bonne idée.

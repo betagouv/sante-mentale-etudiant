@@ -2,7 +2,7 @@
   "name": "sante-mentale",
   "version": "0.1.0",
   "engines": {
-    "node": "24.x"
+    "node": ">=24.22.1"
   },
   "packageManager": "pnpm@11.24.0",
   "private": true,

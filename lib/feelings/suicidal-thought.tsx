@@ -20,8 +20,8 @@ export const FEELING_SUICIDE: Feeling = {
           mettre fin à ta vie.
         </p>
         <p>
-          Avoir des idées suicidaires peut faire très peur. Ces idées sont à prendre au sérieux : elles sont souvent
-          le signe d'une souffrance devenue trop difficile à porter seul.
+          Avoir des idées suicidaires peut faire très peur. Ces idées sont à prendre au sérieux :
+          elles sont souvent le signe d'une souffrance devenue trop difficile à porter seul.
         </p>
         <p>Tu n'as pas à traverser ça sans aide.</p>
       </>
@@ -37,12 +37,12 @@ export const FEELING_SUICIDE: Feeling = {
   faq: {
     title: "Comprendre les idées suicidaires",
     intro: (
-      <>
+      <p>
         Les idées suicidaires apparaissent souvent lorsqu'une personne a le sentiment que sa
         souffrance est devenue insupportable ou qu'elle ne voit plus d'issue. Elles ne définissent
         pas qui tu es et ne signifient pas que cette situation est irréversible. Plus on en parle
         tôt, plus il est possible d'être accompagné.
-      </>
+      </p>
     ),
     items: [
       {
@@ -78,13 +78,12 @@ export const FEELING_SUICIDE: Feeling = {
               Cette souffrance peut être liée à de nombreux facteurs : une dépression, un deuil, une
               rupture, un stress intense, une accumulation de difficultés, un sentiment de solitude
               ou un autre événement de vie. La consommation d’alcool ou d’autres produits peut
-              également déclencher ou intensifier cette souffrance. Chaque situation est différente :
-              ta souffrance est légitime, même si tu ne te retrouves dans aucun des exemples.
+              également déclencher ou intensifier cette souffrance. Chaque situation est différente
+              : ta souffrance est légitime, même si tu ne te retrouves dans aucun des exemples.
             </p>
             <p>
-              → Voir aussi les pages <FeelingLink slug="painful-event" />,{" "}
-              <FeelingLink slug="solitude" />, <FeelingLink slug="fatigue" />,{" "}
-              <FeelingLink slug="drugs" />.
+              → Voir aussi les pages <FeelingLink slug="solitude" />, <FeelingLink slug="fatigue" />
+              , <FeelingLink slug="drugs" />.
             </p>
           </>
         ),
@@ -155,7 +154,7 @@ export const FEELING_SUICIDE: Feeling = {
       title: "Si tu te sens en danger / si tu as des idées suicidaires",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               si tu ne te sens plus en sécurité, n'attends pas, appelle le <b>15</b> (ou envoie un
@@ -170,7 +169,7 @@ export const FEELING_SUICIDE: Feeling = {
       title: "Chercher une aide professionnelle",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               <p>Demander de l'aide est une démarche de protection.</p>
@@ -204,11 +203,11 @@ export const FEELING_SUICIDE: Feeling = {
       title: "Ne pas rester seul",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>lorsque la souffrance devient très intense, on peut avoir tendance à s’isoler.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               identifie une personne que tu pourrais contacter aujourd'hui : un proche, un ami, un
@@ -223,11 +222,11 @@ export const FEELING_SUICIDE: Feeling = {
       title: "Mettre des mots sur ce que tu ressens",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: <>les pensées suicidaires s'accompagnent souvent d'une grande solitude.</>,
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               si tu t'en sens capable, essaie d'écrire ce que tu ressens ou de le dire à une

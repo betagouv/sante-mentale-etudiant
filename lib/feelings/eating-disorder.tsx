@@ -15,14 +15,12 @@ export const FEELING_EATING_DISORDER: Feeling = {
     sentence: (
       <>
         <p>
-          Tu penses sans cesse à ce que tu as mangé / à ce que tu devrais manger ? Manger te fait
-          culpabiliser ou génère des frustrations ? Il t’arrive de te priver de manger ou au
-          contraire de ressentir le “besoin de te remplir” ?
+          Tu n'as pas faim ? Tu n'as pas envie de manger ? Tu es dégouté ? Tu penses sans cesse à ce que tu as mangé / à ce que tu devrais manger ou ne pas manger ? Tu as toujours envie de manger ? Tu ne peux pas manger ou tu ne peux pas t'empêcher de manger ? Tu ne peux pas t'arrêter de manger ? Tu sautes des repas ou tu évites de manger ? Tu ressens le "besoin de te remplir" ?
         </p>
         <p>
-          Notre façon de manger varie naturellement selon les périodes. Mais lorsque la nourriture
-          prend trop de place dans ta vie, qu’elle empiète sur tes projets, tes études, tes
-          activités, cela mérite qu’on s’en occupe.
+          Notre façon de manger varie naturellement selon les périodes. Mais lorsqu'on ne peut pas manger, que la nourriture
+          prend trop de place dans ta vie, qu’elle enavhit les pensées au point qu'elles t'empêchent de réaliser tes projets, tes études, tes
+          activités, cela mérite que tu t’en occupes.
         </p>
       </>
     ),
@@ -37,13 +35,13 @@ export const FEELING_EATING_DISORDER: Feeling = {
   faq: {
     title: "Comprendre son rapport à la nourriture",
     intro: (
-      <>
+      <p>
         Manger ne répond pas uniquement à un besoin physique. C’est aussi un moment de partage, de
         plaisir et de vie en société. Un changement passager dans notre rapport à la nourriture
         n’est pas forcément inquiétant (on peut manger davantage lors d’une période intense de
         révisions par exemple). Ce changement mérite de l’attention lorsque la nourriture prend une
         place trop importante dans les pensées ou dans le quotidien.
-      </>
+      </p>
     ),
     items: [
       {
@@ -185,7 +183,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
       title: "Ne pas garder ça pour toi",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               les difficultés alimentaires se développent souvent dans le secret et la honte. En
@@ -194,7 +192,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               choisis une personne avec laquelle tu te sens en sécurité. Tu peux aussi aller voir
@@ -210,7 +208,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
       title: "Observer sans compter ni te juger",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               pendant quelques jours, essaie de repérer les moments où ton rapport à la nourriture
@@ -219,7 +217,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               note uniquement le contexte et ton ressenti : « Qu’est-ce qui s’est passé ? » «
@@ -236,7 +234,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
       title: "Remettre un peu de régularité",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               lorsque les repas deviennent très irréguliers, les signaux de faim et de satiété
@@ -245,7 +243,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               choisis un seul repas ou une collation que tu essaieras de maintenir à une heure
@@ -261,7 +259,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
       title: "Faire une pause avant d’agir",
       items: [
         {
-          title: "L’action",
+          title: "L’idée",
           desc: (
             <>
               quand tu sens que tu vas sauter un repas, manger pour calmer une émotion ou chercher à
@@ -270,7 +268,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
           ),
         },
         {
-          title: "Commence petit",
+          title: "Un premier pas",
           desc: (
             <>
               pose-toi trois questions : Est-ce que j’ai faim physiquement ? Qu’est-ce que je

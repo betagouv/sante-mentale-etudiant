@@ -28,7 +28,10 @@ export default function FeelingTips({ feeling }: Props) {
       <IllustrationFeelingsPeople />
       <div className={styles.innerContainer}>
         <h2>Quelques idées que tu peux tester</h2>
-        <Disclaimer className={styles.disclaimer}>Ces idées peuvent t’aider à aller un peu mieux. Mais quand les difficultés durent ou te font souffrir, elles ne suffisent pas : c’est le moment d’en parler à un professionnel.</Disclaimer>
+        <Disclaimer>
+          Ces idées peuvent t’aider à aller un peu mieux. Mais quand les difficultés durent ou te
+          font souffrir, elles ne suffisent pas : c’est le moment d’en parler à un professionnel.
+        </Disclaimer>
         <div className={styles.cardsList}>
           {feeling.tips.map((tip, index) => (
             <TipCard
