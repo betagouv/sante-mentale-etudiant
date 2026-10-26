@@ -96,9 +96,8 @@ export const FEELING_ANXIETY: Feeling = {
               l’avion).
             </p>
             <p>
-              Certaines habitudes jouent aussi : l'alcool, le cannabis ou des horaires de sommeil
-              très irréguliers peuvent renforcer des situations d'anxiété, même cela peut donner
-              l’impression d’aider à se détendre sur le moment.{" "}
+              Certaines habitudes de vie peuvent entretenir l'anxiété. L'alcool peut donner l'impression de détendre sur le moment, mais l'anxiété peut revenir de manière plus forte ensuite. Le cannabis peut aussi, selon la dose et la fréquence, provoquer ou accentuer l'anxiété. La caféine ou les boissons énergisantes (surtout à forte dose), ainsi que le manque de sommeil ou des horaires très irréguliers, peuvent également avoir des effets. 
+              {" "}
             </p>
             <h4>3. Les pensées qui tournent en boucle </h4>
             <p>
@@ -176,7 +175,7 @@ export const FEELING_ANXIETY: Feeling = {
           desc: (
             <>
               note simplement dans ton téléphone ce qui s'est passé juste avant que ton stress
-              augmente.
+              augmente, ce que tu as ressenti et ce que tu t'es dit à toi-même
             </>
           ),
         },
