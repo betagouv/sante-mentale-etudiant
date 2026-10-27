@@ -106,8 +106,7 @@ export const FEELING_ANXIETY: Feeling = {
               proches ? », ou sur ce qui s'est passé : "Pourquoi j'ai dit ça ?", 'J'aurais dû faire autrement".{" "}
             </p>
             <p>
-              On a parfois l'impression de se préparer à l'avenir. En réalité, ces pensées
-              entretiennent souvent l'inquiétude et rendent le retour au calme plus difficile.
+              On a parfois l'impression de se préparer ou de chercher à comprendre. Mais souvent, ces pensées tournent en rond : elles entretiennent l'inquiétude et rendent le retour au calme plus difficile. Quand une action concrète est possible, mieux vaut la noter. Quand on ne peut rien y changer, ces pensées n'aident pas à avancer. Si ces pensées s'installent depuis plusieurs semaines ou t'empêchent de suivre tes cours, de dormir ou de voir tes proches, parles-en à un médecin ou à un psychologue, qui pourra évaluer ta situation. 
             </p>
             <p>
               Si elles s'installent depuis plusieurs semaines, deviennent très envahissantes ou
@@ -228,8 +227,7 @@ export const FEELING_ANXIETY: Feeling = {
           title: "L’idée",
           desc: (
             <>
-              partager ce que tu ressens permet souvent de prendre du recul et d'éviter que le
-              stress ne s'installe durablement.
+              partager ce que tu ressens peut aider à prendre du recul et à te sentir moins seul.
             </>
           ),
         },
@@ -237,8 +235,7 @@ export const FEELING_ANXIETY: Feeling = {
           title: "Un premier pas",
           desc: (
             <>
-              envoie un message à une personne de confiance ou prends rendez-vous avec un
-              professionnel si tu sens que cela devient difficile à gérer seul.
+              dire à une personne de confiance que tu ne vas pas bien, même sans tout expliquer. Si tu préfères parler à quelqu'un d'extérieur, ou si c'est trop lourd à porter seul, des professionnels et des services d'écoute existent.
             </>
           ),
         },
