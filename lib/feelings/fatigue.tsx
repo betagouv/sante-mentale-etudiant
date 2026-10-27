@@ -1,6 +1,7 @@
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
 import ExternalLink from "@/components/link/ExternalLink";
+import { Disclaimer } from "./helper";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -148,6 +149,7 @@ export const FEELING_FATIGUE: Feeling = {
         question: "Comment ça peut se manifester concrètement",
         answer: (
           <div>
+            <Disclaimer />
             <h4>Cognitif</h4>
             <ul>
               <li>Je peux relire le même paragraphe sans le comprendre.</li>

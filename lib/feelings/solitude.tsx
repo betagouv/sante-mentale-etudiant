@@ -1,6 +1,7 @@
 import ExternalLink from "@/components/link/ExternalLink";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
+import { Disclaimer } from "./helper";
 
 export const FEELING_SOLITUDE: Feeling = {
   slug: "solitude",
@@ -151,18 +152,21 @@ export const FEELING_SOLITUDE: Feeling = {
       {
         question: "Comment ça peut se manifester concrètement",
         answer: (
-          <ul>
-            <li>Je me sens seul, même quand je suis entouré.</li>
-            <li>J'ai l'impression que tout le monde a trouvé sa place sauf moi.</li>
-            <li>Je n'ose pas proposer de voir des gens.</li>
-            <li>Je réponds de moins en moins aux messages.</li>
-            <li>Je refuse souvent les invitations.</li>
-            <li>Je passe beaucoup de temps seul alors que je n'en ai pas vraiment envie.</li>
-            <li>Je me compare souvent aux autres.</li>
-            <li>J'ai le sentiment de ne pas être compris.</li>
-            <li>Je me demande parfois si le problème vient de moi.</li>
-            <li>J'ai l'impression d'être invisible.</li>
-          </ul>
+          <>
+            <Disclaimer />
+            <ul>
+              <li>Je me sens seul, même quand je suis entouré.</li>
+              <li>J'ai l'impression que tout le monde a trouvé sa place sauf moi.</li>
+              <li>Je n'ose pas proposer de voir des gens.</li>
+              <li>Je réponds de moins en moins aux messages.</li>
+              <li>Je refuse souvent les invitations.</li>
+              <li>Je passe beaucoup de temps seul alors que je n'en ai pas vraiment envie.</li>
+              <li>Je me compare souvent aux autres.</li>
+              <li>J'ai le sentiment de ne pas être compris.</li>
+              <li>Je me demande parfois si le problème vient de moi.</li>
+              <li>J'ai l'impression d'être invisible.</li>
+            </ul>
+          </>
         ),
       },
     ],

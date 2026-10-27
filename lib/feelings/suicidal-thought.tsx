@@ -1,4 +1,5 @@
 import { FeelingLink } from ".";
+import { Disclaimer } from "./helper";
 import { Feeling } from "./types";
 
 export const FEELING_SUICIDE: Feeling = {
@@ -133,19 +134,22 @@ export const FEELING_SUICIDE: Feeling = {
       {
         question: "Comment ça peut se manifester concrètement",
         answer: (
-          <ul>
-            <li>J'ai parfois l'impression que la vie n'a plus de sens.</li>
-            <li>Je me dis que les autres seraient mieux sans moi.</li>
-            <li>J'aimerais simplement que tout s'arrête.</li>
-            <li>J'ai l'impression qu'il n'y a plus d'issue.</li>
-            <li>Je me sens submergé par ma souffrance.</li>
-            <li>Je n'arrive plus à imaginer un avenir.</li>
-            <li>Je me replie de plus en plus sur moi-même.</li>
-            <li>J'ai du mal à demander de l'aide.</li>
-            <li>Je cache ce que je ressens à mon entourage.</li>
-            <li>Je me sens seul face à mes pensées.</li>
-            <li>J’ai envie de dire au revoir.</li>
-          </ul>
+          <>
+            <Disclaimer />
+            <ul>
+              <li>J'ai parfois l'impression que la vie n'a plus de sens.</li>
+              <li>Je me dis que les autres seraient mieux sans moi.</li>
+              <li>J'aimerais simplement que tout s'arrête.</li>
+              <li>J'ai l'impression qu'il n'y a plus d'issue.</li>
+              <li>Je me sens submergé par ma souffrance.</li>
+              <li>Je n'arrive plus à imaginer un avenir.</li>
+              <li>Je me replie de plus en plus sur moi-même.</li>
+              <li>J'ai du mal à demander de l'aide.</li>
+              <li>Je cache ce que je ressens à mon entourage.</li>
+              <li>Je me sens seul face à mes pensées.</li>
+              <li>J’ai envie de dire au revoir.</li>
+            </ul>
+          </>
         ),
       },
     ],

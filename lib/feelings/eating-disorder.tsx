@@ -1,6 +1,7 @@
 import ExternalLink from "@/components/link/ExternalLink";
 import { Feeling } from "./types";
 import Link from "next/link";
+import { Disclaimer } from "./helper";
 
 export const FEELING_EATING_DISORDER: Feeling = {
   slug: "eating-disorder",
@@ -176,6 +177,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
         question: "Comment cela peut se manifester concrètement ?",
         answer: (
           <>
+            <Disclaimer />
             <ul>
               <li>Je n’ai plus envie de manger.</li>
               <li>J’ai envie de vomir à l’idée de manger ou dès que je mange.</li>

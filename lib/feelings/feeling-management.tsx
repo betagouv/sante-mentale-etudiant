@@ -1,3 +1,4 @@
+import { Disclaimer } from "./helper";
 import { Feeling } from "./types";
 
 export const FEELING_MANAGEMENT: Feeling = {
@@ -61,7 +62,8 @@ export const FEELING_MANAGEMENT: Feeling = {
               "anormales".
             </p>
             <p>
-              Pourtant, ressentir de la tristesse, de la peur ou de la colère est normal : cela fait partie de la vie de chacun.
+              Pourtant, ressentir de la tristesse, de la peur ou de la colère est normal : cela fait
+              partie de la vie de chacun.
             </p>
             <p>
               Ces émotions ont une utilité : elles cherchent souvent à attirer ton attention sur
@@ -84,9 +86,10 @@ export const FEELING_MANAGEMENT: Feeling = {
               </ul>
             </div>
             <p>
-              Sur le moment, il est souvent difficile de prendre du recul : l'essentiel est de laisser passer l'émotion.
-              Une fois que c'est plus calme, tu peux te demander : "De quoi avais-je besoin à ce moment-là ?".
-              C'est parfois plus utile que de chercher à savoir pourquoi tu as ressenti cela.
+              Sur le moment, il est souvent difficile de prendre du recul : l'essentiel est de
+              laisser passer l'émotion. Une fois que c'est plus calme, tu peux te demander : "De
+              quoi avais-je besoin à ce moment-là ?". C'est parfois plus utile que de chercher à
+              savoir pourquoi tu as ressenti cela.
             </p>
           </>
         ),
@@ -144,16 +147,19 @@ export const FEELING_MANAGEMENT: Feeling = {
       {
         question: "Comment ça peut se manifester concrètement",
         answer: (
-          <ul>
-            <li>Je pleure facilement.</li>
-            <li>Je m'énerve puis je culpabilise.</li>
-            <li>Je garde tout pour moi jusqu'à exploser.</li>
-            <li>J'ai du mal à mettre des mots sur ce que je ressens.</li>
-            <li>Je ne comprends pas toujours mes réactions.</li>
-            <li>Je me juge parce que je ressens certaines émotions.</li>
-            <li>J'évite les situations qui me font ressentir des émotions désagréables.</li>
-            <li>J'ai l'impression que mes émotions prennent toute la place.</li>
-          </ul>
+          <>
+            <Disclaimer />
+            <ul>
+              <li>Je pleure facilement.</li>
+              <li>Je m'énerve puis je culpabilise.</li>
+              <li>Je garde tout pour moi jusqu'à exploser.</li>
+              <li>J'ai du mal à mettre des mots sur ce que je ressens.</li>
+              <li>Je ne comprends pas toujours mes réactions.</li>
+              <li>Je me juge parce que je ressens certaines émotions.</li>
+              <li>J'évite les situations qui me font ressentir des émotions désagréables.</li>
+              <li>J'ai l'impression que mes émotions prennent toute la place.</li>
+            </ul>
+          </>
         ),
       },
     ],
