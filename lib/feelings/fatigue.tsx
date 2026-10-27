@@ -152,9 +152,7 @@ export const FEELING_FATIGUE: Feeling = {
             <ul>
               <li>Je peux relire le même paragraphe sans le comprendre.</li>
               <li>Je peux mettre deux heures à faire ce qui m'en prenait une.</li>
-              <li>
-                Je n'arrive pas à réfléchir comme d'habitude.
-              </li>
+              <li>Je n'arrive pas à réfléchir comme d'habitude.</li>
             </ul>
 
             <h4>Physique</h4>
@@ -358,7 +356,8 @@ export const FEELING_FATIGUE: Feeling = {
           <li>Elle t'empêche de suivre tes cours, de travailler, de voir des gens.</li>
           <li>
             Tu as des idées noires. → Dans ce cas, ne reste pas seul : voir la page{" "}
-            <FeelingLink slug="suicidal-thought" />, et le 3114 est joignable 24h/24, gratuitement.
+            <FeelingLink slug="suicidal-thought" />, et le 3114 (numéro national de prévention du
+            suicide) est joignable 24h/24, gratuitement.
           </li>
         </ul>
         <p>L'épuisement est un signal. L'écouter, c'est déjà agir.</p>

@@ -34,10 +34,10 @@ export const lienSteps: LienStep[] = [
         <br />
         Cette question est souvent plus difficile à poser qu'à entendre. Comme le rappelle le{" "}
         <ExternalLink href="https://3114.fr/je-minquiete-pour-quelquun/le-bon-moment-et-les-bons-mots/">
-          3114
+          3114 - numéro national de prévention du suicide
         </ExternalLink>
-        , poser la question du suicide ne lui suggère pas l'idée : cela ouvre au contraire la porte à
-        l'expression de la souffrance.
+        , poser la question du suicide ne lui suggère pas l'idée : cela ouvre au contraire la porte
+        à l'expression de la souffrance.
       </>
     ),
   },

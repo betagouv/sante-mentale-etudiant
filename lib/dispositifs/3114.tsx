@@ -3,7 +3,7 @@ import { Dispositif } from "./types";
 export const DISPOSITIF_3114: Dispositif = {
   slug: "3114",
   catchPhrase: "Le numéro national de prévention du suicide",
-  menuPhrase: "ligne de prévention du suicide",
+  menuPhrase: "numéro national de prévention du suicide",
   metadata: {
     title: "3114",
     description:
@@ -69,10 +69,7 @@ export const DISPOSITIF_3114: Dispositif = {
           L’objectif : écouter, soutenir, évaluer la situation et orienter vers les solutions
           adaptées.
         </p>
-        <p>
-          Un temps d’attente est possible, reste en ligne pour ne pas perdre ta place dans la file
-          d’attente.
-        </p>
+        <p>Reste en ligne pour ne pas perdre ta place dans la file d’attente.</p>
         <p>En cas de besoin, une intervention peut être coordonnée avec les services d’urgence.</p>
         <p>En cas d’urgence vitale, contacter le 15 (ou le 114 pour les malentendants).</p>
       </>

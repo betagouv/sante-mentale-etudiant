@@ -17,8 +17,8 @@ export default function HelpCall() {
           subtitle="Numéro national de prévention du suicide"
           description={
             <>
-              Un professionnel de santé formé à la prévention du suicide sera à ton écoute. Ça peut
-              prendre plusieurs minutes. Reste en ligne, tu fais bien d'appeler.
+              Un professionnel de santé formé à la prévention du suicide sera à ton écoute. Reste en
+              ligne, tu fais bien d'appeler.
               <br />
               En danger immédiat ? Appelle le 15 (SAMU) sans attendre.
             </>
