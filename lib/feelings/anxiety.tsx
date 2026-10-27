@@ -251,9 +251,7 @@ export const FEELING_ANXIETY: Feeling = {
         <p>
           <b>
             Il est normal de traverser des périodes de stress, surtout pendant les études. En
-            revanche, si ton anxiété dure plusieurs semaines, t'empêche de dormir, de suivre tes
-            cours, de passer tes examens ou de profiter de ton quotidien, il est important de ne pas
-            rester seul.
+            revanche, si ton anxiété dure depuis plusieurs semaines, si elle te fait beaucoup souffrir ou si elle gêne ton sommeil, tes cours, tes examens ou ton quotidien, tu n'as pas à traverser cela sans aide. Parles-en à un médecin ou à un psychologue : des dispositifs adaptés aux étudiants existent. 
           </b>
         </p>
         <p>
@@ -263,7 +261,7 @@ export const FEELING_ANXIETY: Feeling = {
           améliorer leur santé mentale.
         </p>
         <p>
-          Demander de l'aide n'est pas un aveu de faiblesse. C'est une façon de prendre soin de toi
+          Demander de l'aide, c'est une façon de prendre soin de toi
           avant que la situation ne devienne plus difficile.
         </p>
       </>
