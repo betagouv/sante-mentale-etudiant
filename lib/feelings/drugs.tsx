@@ -1,4 +1,5 @@
 import { FeelingLink } from ".";
+import { Disclaimer } from "./helper";
 import { Feeling } from "./types";
 
 export const FEELING_DRUGS: Feeling = {
@@ -14,7 +15,8 @@ export const FEELING_DRUGS: Feeling = {
     sentence: (
       <>
         <p>
-          Tu bois plus souvent qu’avant pour te détendre. Tu comptes sur le cannabis pour t’endormir. Tu as l'impression que certains produits t’aident à tenir le coup…
+          Tu bois plus souvent qu’avant pour te détendre. Tu comptes sur le cannabis pour
+          t’endormir. Tu as l'impression que certains produits t’aident à tenir le coup…
         </p>
         <p>S’interroger sur sa consommation, c’est aussi être attentif à soi.</p>
         <p>
@@ -36,10 +38,11 @@ export const FEELING_DRUGS: Feeling = {
     intro: (
       <>
         <p>
-          Certaines substances (alcool, cannabis, protoxyde d'azote, autres drogues, mais aussi certains médicaments détournés de leur usage) sont facilement accessibles et peuvent être présentes en soirée. Il
-          peut aussi arriver d’en consommer pour se détendre, pimenter sa sexualité, mieux dormir ou
-          gérer ses émotions : apaiser sa colère, diminuer son stress, ne pas ressentir la tristesse
-          ou retrouver son calme.
+          Certaines substances (alcool, cannabis, protoxyde d'azote, autres drogues, mais aussi
+          certains médicaments détournés de leur usage) sont facilement accessibles et peuvent être
+          présentes en soirée. Il peut aussi arriver d’en consommer pour se détendre, pimenter sa
+          sexualité, mieux dormir ou gérer ses émotions : apaiser sa colère, diminuer son stress, ne
+          pas ressentir la tristesse ou retrouver son calme.
         </p>
         <p>
           Au-delà de la substance elle-même, il peut être intéressant de s’interroger sur la place
@@ -137,20 +140,23 @@ export const FEELING_DRUGS: Feeling = {
       {
         question: "Comment ça peut se manifester concrètement",
         answer: (
-          <ul>
-            <li>J’ai besoin d’une substance pour me détendre.</li>
-            <li>Je consomme plus qu'avant.</li>
-            <li>J'ai essayé de réduire, mais c'est difficile.</li>
-            <li>Je bois ou je fume pour gérer mon stress ou mes émotions.</li>
-            <li>Je culpabilise après avoir consommé.</li>
-            <li>J'ai déjà été en retard un lendemain de consommation.</li>
-            <li>Mes consommations me coûtent de plus en plus cher.</li>
-            <li>Je cache parfois ma consommation à mes proches.</li>
-            <li>Je continue à consommer alors que cela me pose déjà des problèmes.</li>
-            <li>Je me dis souvent : « Ce sera la dernière fois. ».</li>
-            <li>Mes consommations sont responsables de disputes/ conflits avec mes proches.</li>
-            <li>Mes proches s’inquiètent de ma consommation ou m’en ont déjà parlé.</li>
-          </ul>
+          <>
+            <Disclaimer />
+            <ul>
+              <li>J’ai besoin d’une substance pour me détendre.</li>
+              <li>Je consomme plus qu'avant.</li>
+              <li>J'ai essayé de réduire, mais c'est difficile.</li>
+              <li>Je bois ou je fume pour gérer mon stress ou mes émotions.</li>
+              <li>Je culpabilise après avoir consommé.</li>
+              <li>J'ai déjà été en retard un lendemain de consommation.</li>
+              <li>Mes consommations me coûtent de plus en plus cher.</li>
+              <li>Je cache parfois ma consommation à mes proches.</li>
+              <li>Je continue à consommer alors que cela me pose déjà des problèmes.</li>
+              <li>Je me dis souvent : « Ce sera la dernière fois. ».</li>
+              <li>Mes consommations sont responsables de disputes/ conflits avec mes proches.</li>
+              <li>Mes proches s’inquiètent de ma consommation ou m’en ont déjà parlé.</li>
+            </ul>
+          </>
         ),
       },
     ],

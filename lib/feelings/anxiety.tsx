@@ -1,5 +1,6 @@
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
+import { Disclaimer } from "./helper";
 
 export const FEELING_ANXIETY: Feeling = {
   slug: "anxiety",
@@ -19,9 +20,16 @@ export const FEELING_ANXIETY: Feeling = {
         </p>
         <p>Connaître des épisodes de stress fait partie de la vie.</p>
         <p>
-          Mais lorsque ce stress est de plus en plus fréquent, intense ou durable, qu'il s'accompagne d'une inquiétude face à ce qui pourrait arriver (proche ou lointain), et qu'il gêne ton quotidien, il peut s'agir d'une anxiété qui mérite d'en parler à un professionnel.
+          Mais lorsque ce stress est de plus en plus fréquent, intense ou durable, qu'il
+          s'accompagne d'une inquiétude face à ce qui pourrait arriver (proche ou lointain), et
+          qu'il gêne ton quotidien, il peut s'agir d'une anxiété qui mérite d'en parler à un
+          professionnel.
         </p>
-        <p>Tu peux tester quelques outils pour essayer de retrouver un peu d'apaisement, en attendant ou en complément d'un échange avec un professionnel. Des accompagnements efficaces existent.</p>
+        <p>
+          Tu peux tester quelques outils pour essayer de retrouver un peu d'apaisement, en attendant
+          ou en complément d'un échange avec un professionnel. Des accompagnements efficaces
+          existent.
+        </p>
       </>
     ),
   },
@@ -36,8 +44,15 @@ export const FEELING_ANXIETY: Feeling = {
     title: "Comprendre le stress et l'anxiété",
     intro: (
       <p>
-        Le stress est la réaction normale de ton organisme face à une situation qui te met sous pression, comme un examen ou un oral. Il s'apaise en général quand la situation passe. L'anxiété, c'est l'inquiétude face à ce qui pourrait arriver, souvent avec des tensions dans le corps. Elle est aussi normale : tout le monde en ressent de temps en temps. Elle peut devenir difficile à vivre quand elle est fréquente, intense ou durable, et qu'elle gêne ton quotidien (sommeil, études, relations). Comprendre et accepter ce qui se passe dans ton corps et dans ton esprit aide souvent à mieux gérer ces sensations et ces pensées sans avoir à lutter contre ce que tu ressens.
-        Si c'est trop difficile, un professionnel de santé mentale peut t'accompagner.
+        Le stress est la réaction normale de ton organisme face à une situation qui te met sous
+        pression, comme un examen ou un oral. Il s'apaise en général quand la situation passe.
+        L'anxiété, c'est l'inquiétude face à ce qui pourrait arriver, souvent avec des tensions dans
+        le corps. Elle est aussi normale : tout le monde en ressent de temps en temps. Elle peut
+        devenir difficile à vivre quand elle est fréquente, intense ou durable, et qu'elle gêne ton
+        quotidien (sommeil, études, relations). Comprendre et accepter ce qui se passe dans ton
+        corps et dans ton esprit aide souvent à mieux gérer ces sensations et ces pensées sans avoir
+        à lutter contre ce que tu ressens. Si c'est trop difficile, un professionnel de santé
+        mentale peut t'accompagner.
       </p>
     ),
     items: [
@@ -47,7 +62,11 @@ export const FEELING_ANXIETY: Feeling = {
           <>
             <p>Le stress et l'anxiété sont loin d'être des situations isolées.</p>
             <p>
-              Selon l'enquête Conditions de vie des étudiants de l'OVE (2023), 45% des étudiants déclarent se sentir nerveux souvent ou en permanence au cours des quatre dernières semaines ayant précédé l'enquête. Dans l'enquête Bien-être et santé de l'OVE (2024), 28% présentent des symptômes d'anxiété modérés à sévères au cours des deux dernières semaines (échelle GAD-7, seuil ≥ 10).
+              Selon l'enquête Conditions de vie des étudiants de l'OVE (2023), 45% des étudiants
+              déclarent se sentir nerveux souvent ou en permanence au cours des quatre dernières
+              semaines ayant précédé l'enquête. Dans l'enquête Bien-être et santé de l'OVE (2024),
+              28% présentent des symptômes d'anxiété modérés à sévères au cours des deux dernières
+              semaines (échelle GAD-7, seuil ≥ 10).
             </p>
             <p>
               Chez les bénéficiaires de Santé Psy Étudiant (enquête Juin 2026), le stress et
@@ -63,17 +82,25 @@ export const FEELING_ANXIETY: Feeling = {
             <h4>1. Le stress est une réaction normale, mais qui peut devenir pesante </h4>{" "}
             <p>
               Face à un examen, un oral, un conflit ou une situation nouvelle, ton esprit déclenche
-              une alerte pour que ton corps puisse réagir vite : ton coeur peut s'accélérer, tes muscles se tendent.
+              une alerte pour que ton corps puisse réagir vite : ton coeur peut s'accélérer, tes
+              muscles se tendent.
             </p>
             <p>
-              A petite dose, le stress peut même devenir un allié : avant un oral, un peu de tension peut t'aider à te mobiliser et à rester concentré. Beaucoup de musiciens, de comédiens et de sportifs ressentent du trac avant de se produire. Cette réaction est utile... tant qu'elle reste ponctuelle. {" "}
+              A petite dose, le stress peut même devenir un allié : avant un oral, un peu de tension
+              peut t'aider à te mobiliser et à rester concentré. Beaucoup de musiciens, de comédiens
+              et de sportifs ressentent du trac avant de se produire. Cette réaction est utile...
+              tant qu'elle reste ponctuelle.{" "}
             </p>
             <p>
-              Ce qui se complique, c’est quand cette alerte se déclenche trop souvent, de manière trop forte et trop longtemps. On peut alors se sentir constamment sous tension, et ces sensations comme l'inquiétude peuvent s'installer et gêner ton quotidien.
+              Ce qui se complique, c’est quand cette alerte se déclenche trop souvent, de manière
+              trop forte et trop longtemps. On peut alors se sentir constamment sous tension, et ces
+              sensations comme l'inquiétude peuvent s'installer et gêner ton quotidien.
             </p>
             <h4>2. Au-delà des études : des sources multiples de stress et d’anxiété</h4>
             <p>
-              Le stress et l’anxiété ne viennent pas uniquement des cours. Ils émergent souvent en lien avec plusieurs situations qui se cumulent, et chacun n'y réagit pas de la même façon.
+              Le stress et l’anxiété ne viennent pas uniquement des cours. Ils émergent souvent en
+              lien avec plusieurs situations qui se cumulent, et chacun n'y réagit pas de la même
+              façon.
             </p>
             <div>
               Dans notre enquête Santé Psy Étudiant (Juin 2026), les étudiants évoquent
@@ -89,20 +116,40 @@ export const FEELING_ANXIETY: Feeling = {
               </ul>
             </div>
             <p>
-              L’anxiété peut prendre aussi différentes formes. On peut s'inquiéter de beaucoup de choses à la fois, comme de l'avenir. Elle peut être liée à des situations précises, comme l'anxiété sociale (peur du jugement des autres, par exemple devant un amphi plein). Elle peut aussi prendre la forme de crises d'angoisse (attaques de panique), avec le coeur qui s'emballe et le souffle qui manque. C'est très impressionnant, mais cela passe en général en quelques minutes. Si c'est la première fois, ou si cela se répète, il est important d'en parler à un médecin. Certaines peurs très ciblées relèvent de la phobie (araignées, avion) et se prennent en charge avec des professionnels de santé mentale. S'inquiéter pour l'état de la planète (éco-anxiété) est aussi très répandu : ce n'est pas une maladie, mais cela peut peser. 
+              L’anxiété peut prendre aussi différentes formes. On peut s'inquiéter de beaucoup de
+              choses à la fois, comme de l'avenir. Elle peut être liée à des situations précises,
+              comme l'anxiété sociale (peur du jugement des autres, par exemple devant un amphi
+              plein). Elle peut aussi prendre la forme de crises d'angoisse (attaques de panique),
+              avec le coeur qui s'emballe et le souffle qui manque. C'est très impressionnant, mais
+              cela passe en général en quelques minutes. Si c'est la première fois, ou si cela se
+              répète, il est important d'en parler à un médecin. Certaines peurs très ciblées
+              relèvent de la phobie (araignées, avion) et se prennent en charge avec des
+              professionnels de santé mentale. S'inquiéter pour l'état de la planète (éco-anxiété)
+              est aussi très répandu : ce n'est pas une maladie, mais cela peut peser.
             </p>
             <p>
-              Certaines habitudes de vie peuvent entretenir l'anxiété. L'alcool peut donner l'impression de détendre sur le moment, mais l'anxiété peut revenir de manière plus forte ensuite. Le cannabis peut aussi, selon la dose et la fréquence, provoquer ou accentuer l'anxiété. La caféine ou les boissons énergisantes (surtout à forte dose), ainsi que le manque de sommeil ou des horaires très irréguliers, peuvent également avoir des effets. 
-              {" "}
+              Certaines habitudes de vie peuvent entretenir l'anxiété. L'alcool peut donner
+              l'impression de détendre sur le moment, mais l'anxiété peut revenir de manière plus
+              forte ensuite. Le cannabis peut aussi, selon la dose et la fréquence, provoquer ou
+              accentuer l'anxiété. La caféine ou les boissons énergisantes (surtout à forte dose),
+              ainsi que le manque de sommeil ou des horaires très irréguliers, peuvent également
+              avoir des effets.{" "}
             </p>
             <h4>3. Les pensées qui tournent en boucle </h4>
             <p>
-              Quand on est stressé ou anxieux, il est fréquent de ressasser les mêmes
-              pensées, sans réussir à les arrêter. Elles peuvent porter sur ce qui pourrait arriver : « Et si j'échoue ? », « Et si je déçois mes
-              proches ? », ou sur ce qui s'est passé : "Pourquoi j'ai dit ça ?", 'J'aurais dû faire autrement".{" "}
+              Quand on est stressé ou anxieux, il est fréquent de ressasser les mêmes pensées, sans
+              réussir à les arrêter. Elles peuvent porter sur ce qui pourrait arriver : « Et si
+              j'échoue ? », « Et si je déçois mes proches ? », ou sur ce qui s'est passé : "Pourquoi
+              j'ai dit ça ?", 'J'aurais dû faire autrement".{" "}
             </p>
             <p>
-              On a parfois l'impression de se préparer ou de chercher à comprendre. Mais souvent, ces pensées tournent en rond : elles entretiennent l'inquiétude et rendent le retour au calme plus difficile. Quand une action concrète est possible, mieux vaut la noter. Quand on ne peut rien y changer, ces pensées n'aident pas à avancer. Si ces pensées s'installent depuis plusieurs semaines ou t'empêchent de suivre tes cours, de dormir ou de voir tes proches, parles-en à un médecin ou à un psychologue, qui pourra évaluer ta situation. 
+              On a parfois l'impression de se préparer ou de chercher à comprendre. Mais souvent,
+              ces pensées tournent en rond : elles entretiennent l'inquiétude et rendent le retour
+              au calme plus difficile. Quand une action concrète est possible, mieux vaut la noter.
+              Quand on ne peut rien y changer, ces pensées n'aident pas à avancer. Si ces pensées
+              s'installent depuis plusieurs semaines ou t'empêchent de suivre tes cours, de dormir
+              ou de voir tes proches, parles-en à un médecin ou à un psychologue, qui pourra évaluer
+              ta situation.
             </p>
             <p>
               Si elles s'installent depuis plusieurs semaines, deviennent très envahissantes ou
@@ -136,18 +183,32 @@ export const FEELING_ANXIETY: Feeling = {
       {
         question: "Comment ça peut se manifester concrètement",
         answer: (
-          <ul>
-            <li>Je pense constamment au pire.</li>
-            <li>Mon cerveau ne s'arrête jamais.</li>
-            <li>J'ai une boule au ventre avant les cours ou les examens.</li>
-            <li>Mon cœur bat très vite sans raison apparente.</li>
-            <li>J'ai du mal à respirer ou j'ai l'impression de manquer d'air.</li>
-            <li>Je dors mal parce que je réfléchis encore en me couchant.</li>
-            <li>Je suis tendu presque toute la journée.</li>
-            <li>J'ai du mal à me concentrer.</li>
-            <li>J'évite certaines situations parce qu'elles m'angoissent.</li>
-            <li>Je me sens constamment "sur le qui-vive".</li>
-          </ul>
+          <>
+            <Disclaimer />
+            <h4>Dans la tête</h4>
+            <ul>
+              <li>J’anticipe souvent le pire.</li>
+              <li>J’ai l’impression que mon esprit ne s’arrête jamais.</li>
+              <li>Je repense en boucle à ce que j’ai dit ou fait.</li>
+              <li>J’ai du mal à arrêter de m’inquiéter et à me concentrer.</li>
+            </ul>
+
+            <h4>Dans le corps</h4>
+            <ul>
+              <li>J’ai une boule au ventre avant les cours ou les examens.</li>
+              <li>Mon cœur s’accélère ou j’ai l’impression de manquer d’air.</li>
+              <li>Je ressens de la tension et j’ai du mal à me détendre.</li>
+              <li>J’ai du mal à m’endormir à cause de mes pensées.</li>
+            </ul>
+
+            <h4>Dans les comportements et les émotions</h4>
+            <ul>
+              <li>J’évite certaines situations parce qu’elles m’angoissent.</li>
+              <li>Par peur de me tromper, je vérifie plusieurs fois ou j’ai du mal à décider.</li>
+              <li>Je me sens souvent en alerte, sur le qui-vive.</li>
+              <li>Je m’énerve ou je m’emporte plus facilement que d’habitude</li>
+            </ul>
+          </>
         ),
       },
     ],
@@ -181,13 +242,21 @@ export const FEELING_ANXIETY: Feeling = {
       items: [
         {
           title: "L’idée",
-          desc: <>quand les pensées tournent en boucle, tu peux essayer de prendre du recul : une pensée n'est pas un fait, et tu peux choisir ce que tu fais maintenant.</>,
+          desc: (
+            <>
+              quand les pensées tournent en boucle, tu peux essayer de prendre du recul : une pensée
+              n'est pas un fait, et tu peux choisir ce que tu fais maintenant.
+            </>
+          ),
         },
         {
           title: "Un premier pas",
           desc: (
             <>
-              quand une pensée revient, essaie de te dire "là, je me dis que,..." (là, je me dis que je vais échouer"). Puis reviens à ce que tu es en train de faire : la page que tu lis, ce que tu vois, ce que tu entends. Si une idée ne te convient pas, tu peux en essayer une autre.
+              quand une pensée revient, essaie de te dire "là, je me dis que,..." (là, je me dis que
+              je vais échouer"). Puis reviens à ce que tu es en train de faire : la page que tu lis,
+              ce que tu vois, ce que tu entends. Si une idée ne te convient pas, tu peux en essayer
+              une autre.
             </>
           ),
         },
@@ -200,8 +269,9 @@ export const FEELING_ANXIETY: Feeling = {
           title: "L’idée",
           desc: (
             <>
-              le stress se vit aussi dans le corps. Bouger, marcher, faire de l'exercice physique ou ralentir sa respiration peuvent aider
-              progressivement ton organisme à sortir d'un état d'alerte.
+              le stress se vit aussi dans le corps. Bouger, marcher, faire de l'exercice physique ou
+              ralentir sa respiration peuvent aider progressivement ton organisme à sortir d'un état
+              d'alerte.
             </>
           ),
         },
@@ -222,16 +292,16 @@ export const FEELING_ANXIETY: Feeling = {
         {
           title: "L’idée",
           desc: (
-            <>
-              partager ce que tu ressens peut aider à prendre du recul et à te sentir moins seul.
-            </>
+            <>partager ce que tu ressens peut aider à prendre du recul et à te sentir moins seul.</>
           ),
         },
         {
           title: "Un premier pas",
           desc: (
             <>
-              dire à une personne de confiance que tu ne vas pas bien, même sans tout expliquer. Si tu préfères parler à quelqu'un d'extérieur, ou si c'est trop lourd à porter seul, des professionnels et des services d'écoute existent.
+              dire à une personne de confiance que tu ne vas pas bien, même sans tout expliquer. Si
+              tu préfères parler à quelqu'un d'extérieur, ou si c'est trop lourd à porter seul, des
+              professionnels et des services d'écoute existent.
             </>
           ),
         },
@@ -244,7 +314,10 @@ export const FEELING_ANXIETY: Feeling = {
         <p>
           <b>
             Il est normal de traverser des périodes de stress, surtout pendant les études. En
-            revanche, si ton anxiété dure depuis plusieurs semaines, si elle te fait beaucoup souffrir ou si elle gêne ton sommeil, tes cours, tes examens ou ton quotidien, tu n'as pas à traverser cela sans aide. Parles-en à un médecin ou à un psychologue : des dispositifs adaptés aux étudiants existent. 
+            revanche, si ton anxiété dure depuis plusieurs semaines, si elle te fait beaucoup
+            souffrir ou si elle gêne ton sommeil, tes cours, tes examens ou ton quotidien, tu n'as
+            pas à traverser cela sans aide. Parles-en à un médecin ou à un psychologue : des
+            dispositifs adaptés aux étudiants existent.
           </b>
         </p>
         <p>
@@ -254,8 +327,8 @@ export const FEELING_ANXIETY: Feeling = {
           améliorer leur santé mentale.
         </p>
         <p>
-          Demander de l'aide, c'est une façon de prendre soin de toi
-          avant que la situation ne devienne plus difficile.
+          Demander de l'aide, c'est une façon de prendre soin de toi avant que la situation ne
+          devienne plus difficile.
         </p>
       </>
     ),

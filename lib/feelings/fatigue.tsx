@@ -1,6 +1,7 @@
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
 import ExternalLink from "@/components/link/ExternalLink";
+import { Disclaimer } from "./helper";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -148,20 +149,21 @@ export const FEELING_FATIGUE: Feeling = {
         question: "Comment ça peut se manifester concrètement",
         answer: (
           <div>
-            <h4>Cognitif</h4>
+            <Disclaimer />
+            <h4>Dans la tête</h4>
             <ul>
               <li>Je peux relire le même paragraphe sans le comprendre.</li>
               <li>Je peux mettre deux heures à faire ce qui m'en prenait une.</li>
               <li>Je n'arrive pas à réfléchir comme d'habitude.</li>
             </ul>
 
-            <h4>Physique</h4>
+            <h4>Dans le corps</h4>
             <ul>
               <li>Je peux me réveiller déjà fatigué, même après une longue nuit.</li>
               <li>Je peux m'endormir en cours l'après-midi, mais impossible de dormir le soir.</li>
             </ul>
 
-            <h4>Émotionnel</h4>
+            <h4>Dans les comportements et les émotions</h4>
             <ul>
               <li>
                 Je peux m'énerver pour rien, ou pleurer pour des choses qui, d'habitude, ne
@@ -172,10 +174,6 @@ export const FEELING_FATIGUE: Feeling = {
                 Je peux avoir plus de mal à gérer mes émotions, même pour des choses qui ne me
                 touchent pas d'habitude.
               </li>
-            </ul>
-
-            <h4>Comportemental</h4>
-            <ul>
               <li>
                 Je peux repousser des tâches simples pendant des jours : un mail, un rendez-vous,
                 une inscription.
