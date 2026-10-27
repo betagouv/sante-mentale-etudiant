@@ -185,17 +185,28 @@ export const FEELING_ANXIETY: Feeling = {
         answer: (
           <>
             <Disclaimer />
+            <h4>Dans la tête</h4>
             <ul>
-              <li>Je pense constamment au pire.</li>
-              <li>Mon cerveau ne s'arrête jamais.</li>
-              <li>J'ai une boule au ventre avant les cours ou les examens.</li>
-              <li>Mon cœur bat très vite sans raison apparente.</li>
-              <li>J'ai du mal à respirer ou j'ai l'impression de manquer d'air.</li>
-              <li>Je dors mal parce que je réfléchis encore en me couchant.</li>
-              <li>Je suis tendu presque toute la journée.</li>
-              <li>J'ai du mal à me concentrer.</li>
-              <li>J'évite certaines situations parce qu'elles m'angoissent.</li>
-              <li>Je me sens constamment "sur le qui-vive".</li>
+              <li>J’anticipe souvent le pire.</li>
+              <li>J’ai l’impression que mon esprit ne s’arrête jamais.</li>
+              <li>Je repense en boucle à ce que j’ai dit ou fait.</li>
+              <li>J’ai du mal à arrêter de m’inquiéter et à me concentrer.</li>
+            </ul>
+
+            <h4>Dans le corps</h4>
+            <ul>
+              <li>J’ai une boule au ventre avant les cours ou les examens.</li>
+              <li>Mon cœur s’accélère ou j’ai l’impression de manquer d’air.</li>
+              <li>Je ressens de la tension et j’ai du mal à me détendre.</li>
+              <li>J’ai du mal à m’endormir à cause de mes pensées.</li>
+            </ul>
+
+            <h4>Dans les comportements et les émotions</h4>
+            <ul>
+              <li>J’évite certaines situations parce qu’elles m’angoissent.</li>
+              <li>Par peur de me tromper, je vérifie plusieurs fois ou j’ai du mal à décider.</li>
+              <li>Je me sens souvent en alerte, sur le qui-vive.</li>
+              <li>Je m’énerve ou je m’emporte plus facilement que d’habitude</li>
             </ul>
           </>
         ),
