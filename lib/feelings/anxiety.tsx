@@ -89,11 +89,7 @@ export const FEELING_ANXIETY: Feeling = {
               </ul>
             </div>
             <p>
-              L’anxiété prend, elle aussi, différentes formes : on peut être anxieux de manière
-              générale (peur de l’avenir, éco-anxieux, etc.), ou nourrir des anxiétés spécifiques,
-              comme l’anxiété sociale (peur du jugement de l’autre, peur de passer devant un amphi
-              plein de monde). D’autres peurs relèvent de la phobie (voir une araignée, prendre
-              l’avion).
+              L’anxiété peut prendre aussi différentes formes. On peut s'inquiéter de beaucoup de choses à la fois, comme de l'avenir. Elle peut être liée à des situations précises, comme l'anxiété sociale (peur du jugement des autres, par exemple devant un amphi plein). Elle peut aussi prendre la forme de crises d'angoisse (attaques de panique), avec le coeur qui s'emballe et le souffle qui manque. C'est très impressionnant, mais cela passe en général en quelques minutes. Si c'est la première fois, ou si cela se répète, il est important d'en parler à un médecin. Certaines peurs très ciblées relèvent de la phobie (araignées, avion) et se prennent en charge avec des professionnels de santé mentale. S'inquiéter pour l'état de la planète (éco-anxiété) est aussi très répandu : ce n'est pas une maladie, mais cela peut peser. 
             </p>
             <p>
               Certaines habitudes de vie peuvent entretenir l'anxiété. L'alcool peut donner l'impression de détendre sur le moment, mais l'anxiété peut revenir de manière plus forte ensuite. Le cannabis peut aussi, selon la dose et la fréquence, provoquer ou accentuer l'anxiété. La caféine ou les boissons énergisantes (surtout à forte dose), ainsi que le manque de sommeil ou des horaires très irréguliers, peuvent également avoir des effets. 
