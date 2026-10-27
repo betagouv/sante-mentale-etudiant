@@ -10,10 +10,10 @@ export const DISPOSITIFS_SLUGS = ["3114", "3040", "SPE", "nightline", "SSE", "BA
 export type DispositifSlug = (typeof DISPOSITIFS_SLUGS)[number];
 
 export const dispositifs = [
-  DISPOSITIF_3114,
-  DISPOSITIF_3040,
   DISPOSITIF_SSE,
   DISPOSITIF_BAPU,
   DISPOSITIF_SPE,
+  DISPOSITIF_3040,
+  DISPOSITIF_3114,
   DISPOSITIF_NIGHTLINE,
 ];
