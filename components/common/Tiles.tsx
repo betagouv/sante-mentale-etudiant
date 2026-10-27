@@ -10,9 +10,9 @@ export const TILE_3114 = (
     pictogram={<Community color="blue-ecume" />}
     orientation="horizontal"
     start={BADGE_SUICIDAL_THOUGHTS}
-    title="Appelle le 3114"
+    title="Appelle le 3114 (numéro national de prévention du suicide)"
     titleAs="h2"
-    desc="Temps d'attente possible. Reste en ligne, un professionnel te répondra dès que possible. En cas d'urgence ou d'impossibilité d'attendre, appelle le 15."
+    desc="Reste en ligne, un professionnel te répondra dès que possible. En cas d'urgence ou d'impossibilité d'attendre, appelle le 15."
     noIcon
     linkProps={{
       href: "tel:3114",

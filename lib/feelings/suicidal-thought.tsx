@@ -103,7 +103,8 @@ export const FEELING_SUICIDE: Feeling = {
             </p>
             <p>
               Les professionnels qui accompagnent ces situations sont formés pour écouter sans te
-              juger. Au 3114, numéro national de prévention du suicide, des professionnels formés te répondent gratuitement, 24h/24 et 7j/7.
+              juger. Au 3114, numéro national de prévention du suicide, des professionnels formés te
+              répondent gratuitement, 24h/24 et 7j/7.
             </p>
           </>
         ),
@@ -159,7 +160,7 @@ export const FEELING_SUICIDE: Feeling = {
             <>
               si tu ne te sens plus en sécurité, n'attends pas, appelle le <b>15</b> (ou envoie un
               SMS au 114 - pour les malentendants). Si tu as des idées suicidaires ou que tu as
-              besoin de parler, appelle le 3114.
+              besoin de parler, appelle le 3114 (numéro national de prévention du suicide).
             </>
           ),
         },
@@ -179,8 +180,9 @@ export const FEELING_SUICIDE: Feeling = {
               </p>
               <ul>
                 <li>
-                  Pour parler maintenant, de jour comme de nuit&nbsp;: le 3114 &nbsp;: gratuit,
-                  24h/24, 7j/7. Des professionnels formés à la prévention du suicide te répondent.
+                  Pour parler maintenant, de jour comme de nuit&nbsp;: le 3114 (numéro national de
+                  prévention du suicide)&nbsp;: gratuit, 24h/24, 7j/7. Des professionnels formés à
+                  la prévention du suicide te répondent.
                 </li>
                 <li>
                   Pour être accompagné, orienté&nbsp;:
@@ -249,10 +251,10 @@ export const FEELING_SUICIDE: Feeling = {
           </b>
         </p>
         <p>
-          Le 3114 est joignable 24h/24, 7j/7, gratuitement, partout en France. Des professionnels
-          formés peuvent t'écouter, t'accompagner et t'aider à trouver des solutions adaptées. En
-          cas de danger immédiat, appelle les services d'urgence ou rends-toi aux urgences les plus
-          proches.
+          Le 3114 (numéro national de prévention du suicide) est joignable 24h/24, 7j/7,
+          gratuitement, partout en France. Des professionnels formés peuvent t'écouter,
+          t'accompagner et t'aider à trouver des solutions adaptées. En cas de danger immédiat,
+          appelle les services d'urgence ou rends-toi aux urgences les plus proches.
         </p>
         <p>Tu n'as pas à porter cette souffrance seul.</p>
       </>
