@@ -140,21 +140,28 @@ export const CARD_DEFAULT_SSE = (
   />
 );
 
-export const get_CARD_BAPU = (bapu: BAPU, addressLabel: string) => (
+export const get_CARD_BAPU = (
+  bapu: BAPU,
+  addressLabel: string,
+  setSelectedBapu: (bapu: BAPU) => void
+) => (
   <>
     <CustomCard
       title={`Contacte le ${bapu.name}`}
       subtitle={`Bureau d'aide psychologique universitaire de ${bapu.city}`}
       description="Consultations gratuites avec des psychologues et psychiatres, sans limite de séances, prises en charge à 100% par la Sécu."
       button={
-        <Button priority="secondary" nativeButtonProps={bapuModal.buttonProps}>
+        <Button
+          priority="secondary"
+          nativeButtonProps={bapuModal.buttonProps}
+          onClick={() => setSelectedBapu(bapu)}
+        >
           Infos et contacts
         </Button>
       }
       badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
       location={`Près de ${addressLabel}`}
     />
-    <ModalBapu bapu={bapu} />
   </>
 );
 

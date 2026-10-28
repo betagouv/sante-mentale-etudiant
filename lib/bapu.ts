@@ -24,11 +24,9 @@ async function getBAPUs(): Promise<BAPU[]> {
   return JSON.parse(raw);
 }
 
-export async function getClosestBAPU(c: Coordinate): Promise<BAPU | null> {
+export async function getClosestBAPUs(c: Coordinate): Promise<BAPU[] | null> {
   const bapus = await getBAPUs();
   if (bapus.length === 0) return null;
 
-  const closests = getClosestItems(c, bapus);
-
-  return closests ? closests[0] : null;
+  return getClosestItems(c, bapus);
 }

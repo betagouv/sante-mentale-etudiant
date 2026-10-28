@@ -16,8 +16,9 @@ import {
   get_CARD_SSE,
 } from "./resultCards";
 import { Coordinate } from "@/services/address";
-import { fetchClosestBAPU, fetchClosestSSEs } from "@/app/actions";
+import { fetchClosestBAPUs, fetchClosestSSEs } from "@/app/actions";
 import { SSE } from "@/lib/sse";
+import { BAPU } from "@/lib/bapu";
 
 type OPTION = {
   label: string;
@@ -82,13 +83,16 @@ export const getResults = async (
   whatINeed: string,
   format: string,
   setSelectedSse: (sse: SSE) => void,
+  setSelectedBapu: (bapu: BAPU) => void,
   coordinates?: Coordinate
 ): Promise<Result[]> => {
   let CARD_SSEs = [];
-  let CARD_BAPU = null;
+  let CARD_BAPUs = [];
   if (coordinates) {
-    const closestBAPU = await fetchClosestBAPU(coordinates);
-    CARD_BAPU = closestBAPU ? get_CARD_BAPU(closestBAPU, addressLabel) : null;
+    const closestBAPUs = await fetchClosestBAPUs(coordinates);
+    CARD_BAPUs = closestBAPUs
+      ? closestBAPUs.map((c) => get_CARD_BAPU(c, addressLabel, setSelectedBapu))
+      : [];
 
     const closestSSEs = await fetchClosestSSEs(coordinates);
     CARD_SSEs = closestSSEs
@@ -96,7 +100,7 @@ export const getResults = async (
       : [];
   } else {
     CARD_SSEs = [CARD_DEFAULT_SSE];
-    CARD_BAPU = CARD_DEFAULT_BAPU;
+    CARD_BAPUs = [CARD_DEFAULT_BAPU];
   }
   const CARD_SPE = get_CARD_SPE(addressLabel, coordinates);
   const results = [] as Result[];
@@ -108,7 +112,7 @@ export const getResults = async (
     // Nightline
     // Medecin
     return [
-      { cards: [...CARD_SSEs, CARD_BAPU, CARD_SPE, CARD_3114] },
+      { cards: [...CARD_SSEs, ...CARD_BAPUs, CARD_SPE, CARD_3114] },
       { isNightline: true },
       { cards: [CARD_DOCTOR] },
     ];
@@ -126,7 +130,9 @@ export const getResults = async (
     recommandations = [CARD_DOCTOR, ...CARD_SSEs, CARD_3040];
   } else {
     recommandations = [
-      ...(!format || [FORMAT_CAMPUS, FORMAT_ALL].includes(format) ? [...CARD_SSEs, CARD_BAPU] : []),
+      ...(!format || [FORMAT_CAMPUS, FORMAT_ALL].includes(format)
+        ? [...CARD_SSEs, ...CARD_BAPUs]
+        : []),
       ...([FORMAT_CHOOSE, FORMAT_ALL].includes(format) ? [CARD_SPE] : []),
     ];
   }
@@ -146,11 +152,11 @@ export const getResults = async (
   if (whatINeed === NEED_COUNSELING) {
     otherRecommandations = [...CARD_SSEs, CARD_DOCTOR];
   } else if (!whatINeed || whatINeed === I_NEED_DEFAULT) {
-    otherRecommandations = [CARD_SPE, CARD_BAPU];
+    otherRecommandations = [CARD_SPE, ...CARD_BAPUs];
   } else {
     otherRecommandations = [
       ...(!format || [FORMAT_CAMPUS].includes(format) ? [CARD_SPE] : []),
-      ...([FORMAT_CHOOSE].includes(format) ? [...CARD_SSEs, CARD_BAPU] : []),
+      ...([FORMAT_CHOOSE].includes(format) ? [...CARD_SSEs, ...CARD_BAPUs] : []),
     ];
   }
 
@@ -173,7 +179,7 @@ export const getResults = async (
   // third section
   let rest: (JSX.Element | null)[];
   if (whatINeed === NEED_COUNSELING) {
-    rest = [CARD_SPE, CARD_BAPU];
+    rest = [CARD_SPE, ...CARD_BAPUs];
   } else if (whatINeed === NEED_PSY) {
     rest = [CARD_3040, CARD_DOCTOR];
   } else {

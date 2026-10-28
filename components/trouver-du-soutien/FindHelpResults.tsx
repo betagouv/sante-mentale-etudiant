@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import NightLineCard from "../common/NightLineCard";
 import { SSE } from "@/lib/sse";
 import { ModalSse } from "../modals/ModalSse";
+import { BAPU } from "@/lib/bapu";
+import { ModalBapu } from "../modals/ModalBapu";
 type Props = {
   addressLabel: string;
   coordinates?: Coordinate;
@@ -15,13 +17,16 @@ type Props = {
 export default function FindHelpResults({ addressLabel, coordinates, whatINeed, format }: Props) {
   const [results, setResults] = useState<Result[]>([]);
   const [selectedSse, setSelectedSse] = useState<SSE | null>(null);
+  const [selectedBapu, setSelectedBapu] = useState<BAPU | null>(null);
 
   useEffect(() => {
     let cancelled = false;
 
-    getResults(addressLabel, whatINeed, format, setSelectedSse, coordinates).then((r) => {
-      if (!cancelled) setResults(r);
-    });
+    getResults(addressLabel, whatINeed, format, setSelectedSse, setSelectedBapu, coordinates).then(
+      (r) => {
+        if (!cancelled) setResults(r);
+      }
+    );
 
     return () => {
       cancelled = true;
@@ -31,6 +36,7 @@ export default function FindHelpResults({ addressLabel, coordinates, whatINeed, 
   return (
     <>
       {selectedSse && <ModalSse sse={selectedSse} />}
+      {selectedBapu && <ModalBapu bapu={selectedBapu} />}
       {results
         .filter((result) => result.isNightline || (result.cards && result.cards?.length > 0))
         .map(({ title, cards, isNightline }, index) => {
