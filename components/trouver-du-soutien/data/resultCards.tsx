@@ -9,7 +9,6 @@ import { Coordinate } from "@/services/address";
 import { sseModal, bapuModal } from "@/components/modals";
 import { BAPU } from "@/lib/bapu";
 import { ModalBapu } from "@/components/modals/ModalBapu";
-import { ModalSse } from "@/components/modals/ModalSse";
 
 export const CARD_3040 = (
   <CustomCard
@@ -22,7 +21,8 @@ export const CARD_3040 = (
         priority="secondary"
         linkProps={{
           href: "tel:3040",
-          "aria-label": "Appeler le 3040, la ligne d'écoute pour les étudiants en situation de mal-être",
+          "aria-label":
+            "Appeler le 3040, la ligne d'écoute pour les étudiants en situation de mal-être",
         }}
       >
         Appeler le 3040
@@ -106,21 +106,28 @@ export const CARD_DOCTOR = (
   />
 );
 
-export const get_CARD_SSE = (sse: SSE, addressLabel: string) => (
+export const get_CARD_SSE = (
+  sse: SSE,
+  addressLabel: string,
+  setSelectedSse: (sse: SSE) => void
+) => (
   <>
     <CustomCard
       title={`Contacte le SSE ${sse.displayName}`}
       subtitle={`Service de santé étudiante de ${sse.displayUniversityName}`}
       description="Consultations avec des psychologue et psychiatres, sans limite de séances, en présentiel dans ton académie."
       button={
-        <Button priority="secondary" nativeButtonProps={sseModal.buttonProps}>
+        <Button
+          priority="secondary"
+          nativeButtonProps={sseModal.buttonProps}
+          onClick={() => setSelectedSse(sse)}
+        >
           Infos et contacts
         </Button>
       }
       badges={[BADGE_PROFESSIONELS, BADGE_DAY]}
       location={`Près de ${addressLabel}`}
     />
-    <ModalSse sse={sse} />
   </>
 );
 

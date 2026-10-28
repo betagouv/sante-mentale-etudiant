@@ -17,6 +17,7 @@ import {
 } from "./resultCards";
 import { Coordinate } from "@/services/address";
 import { fetchClosestBAPU, fetchClosestSSEs } from "@/app/actions";
+import { SSE } from "@/lib/sse";
 
 type OPTION = {
   label: string;
@@ -80,6 +81,7 @@ export const getResults = async (
   addressLabel: string,
   whatINeed: string,
   format: string,
+  setSelectedSse: (sse: SSE) => void,
   coordinates?: Coordinate
 ): Promise<Result[]> => {
   let CARD_SSEs = [];
@@ -89,7 +91,9 @@ export const getResults = async (
     CARD_BAPU = closestBAPU ? get_CARD_BAPU(closestBAPU, addressLabel) : null;
 
     const closestSSEs = await fetchClosestSSEs(coordinates);
-    CARD_SSEs = closestSSEs ? closestSSEs.map((c) => get_CARD_SSE(c, addressLabel)) : [];
+    CARD_SSEs = closestSSEs
+      ? closestSSEs.map((c) => get_CARD_SSE(c, addressLabel, setSelectedSse))
+      : [];
   } else {
     CARD_SSEs = [CARD_DEFAULT_SSE];
     CARD_BAPU = CARD_DEFAULT_BAPU;
