@@ -434,7 +434,6 @@ export const articles: ArticleMeta[] = [
   // Podcast
   {
     type: "external",
-    format: "podcast",
     slug: "kaavan-podcast-sante-psy-etudiant",
     url: "https://shows.acast.com/kaavan-podcast",
     title: "Kaavan - le podcast de Santé Psy Étudiant",
@@ -443,7 +442,6 @@ export const articles: ArticleMeta[] = [
   },
   {
     type: "external",
-    format: "podcast",
     slug: "podcast-tempete-mentale",
     url: "https://shows.acast.com/tempete-mentale",
     title: "Tempête mentale - le podcast du Gouvernement sur la santé mentale",
@@ -452,7 +450,6 @@ export const articles: ArticleMeta[] = [
   },
   {
     type: "external",
-    format: "podcast",
     slug: "podcast-pssm-apprendre-aider",
     url: "https://www.pssmfrance.fr/podcasts/apprendre-a-aider-le-podcast/",
     title: "Apprendre à aider - le podcast de PSSM",
@@ -461,7 +458,6 @@ export const articles: ArticleMeta[] = [
   },
   {
     type: "external",
-    format: "podcast",
     slug: "podcast-sante-mentale-etudiant-preserver-equilibre",
     url: "https://www.info.gouv.fr/actualite/sante-mentale-des-etudiants-preserver-son-equilibre",
     title: "Santé mentale des étudiants : préserver son équilibre",

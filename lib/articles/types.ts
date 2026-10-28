@@ -20,13 +20,11 @@ export interface InternalArticleMeta extends BaseArticleMeta {
   heroCredits: string;
 }
 
-export type ExternalContentFormat = "article" | "podcast";
 
 export interface ExternalArticleMeta extends BaseArticleMeta {
   type: "external";
   url: string;
   pdfWeight?: number;
-  format?: ExternalContentFormat;
 }
 
 export type ArticleMeta = InternalArticleMeta | ExternalArticleMeta;

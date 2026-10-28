@@ -12,7 +12,7 @@ type Props = {
 };
 
 const getBadgeLabel = (article: ArticleMeta): string =>
-  article.type === "external" && article.format === "podcast"
+  article.type === "external" && article.tag === "podcast"
     ? "Podcast"
     : "Article";
 
