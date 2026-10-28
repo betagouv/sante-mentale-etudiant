@@ -439,6 +439,7 @@ export const articles: ArticleMeta[] = [
     url: "https://shows.acast.com/kaavan-podcast",
     title: "Kaavan - le podcast de Santé Psy Étudiant",
     heroImage: "/articles/logos/kaavan.jpg",
+    tag: "podcast",
   },
   {
     type: "external",
@@ -447,6 +448,7 @@ export const articles: ArticleMeta[] = [
     url: "https://shows.acast.com/tempete-mentale",
     title: "Tempête mentale - le podcast du Gouvernement sur la santé mentale",
     heroImage: "/articles/logos/tempete-mentale.jpg",
+    tag: "podcast",
   },
   {
     type: "external",
@@ -455,6 +457,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.pssmfrance.fr/podcasts/apprendre-a-aider-le-podcast/",
     title: "Apprendre à aider - le podcast de PSSM",
     heroImage: "/articles/logos/pssm.jpg",
+    tag: "podcast",
   },
   {
     type: "external",
@@ -463,6 +466,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.info.gouv.fr/actualite/sante-mentale-des-etudiants-preserver-son-equilibre",
     title: "Santé mentale des étudiants : préserver son équilibre",
     heroImage: "/articles/logos/info-gouv.jpg",
+    tag: "podcast",
   },
   {
     type: "external",
@@ -470,6 +474,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.info.gouv.fr/grand-dossier/parlons-sante-mentale",
     title: "Parlons Santé Mentale",
     heroImage: "/articles/logos/info-gouv.jpg",
+    tag: "mental-health",
   },
   {
     type: "external",
@@ -477,6 +482,7 @@ export const articles: ArticleMeta[] = [
     url: "https://www.santementale-info-service.fr/",
     title: "Santé Mentale Info Service",
     heroImage: "/articles/logos/sante-mentale-info-service.jpg",
+    tag: "mental-health",
   },
   {
     type: "external",
@@ -484,5 +490,6 @@ export const articles: ArticleMeta[] = [
     url: "https://www.nightline.fr/la-fresque-de-la-sante-mentale",
     title: "Fresque Santé Mentale de Nightline",
     heroImage: "/articles/logos/nightline.jpg",
+    tag: "mental-health",
   },
 ];

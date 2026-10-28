@@ -7,6 +7,7 @@ interface BaseArticleMeta {
   mainFeelingSlug?: FeelingSlug;
   readingTime?: number; // in minutes
   featured?: boolean;
+  tag?: string;
 }
 
 export interface InternalArticleMeta extends BaseArticleMeta {
@@ -29,3 +30,8 @@ export interface ExternalArticleMeta extends BaseArticleMeta {
 }
 
 export type ArticleMeta = InternalArticleMeta | ExternalArticleMeta;
+
+export const TAG_LABELS: Record<string, string> = {
+  podcast: "Podcast",
+  "mental-health": "Santé mentale",
+};
