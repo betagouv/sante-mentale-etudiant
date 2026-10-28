@@ -78,7 +78,7 @@ export const get_CARD_SPE = (addressLabel: string, coordinates?: Coordinate) => 
     <CustomCard
       title="Consulte un psychologue libéral"
       subtitle="Consultations gratuites avec le psy que tu choisis"
-      description="12 séances gratuites avec un psychologue que tu choisis parmi plus de 1500 partout en France, en présentiel ou à distance"
+      description="12 séances gratuites avec un psychologue conventionné que tu choisis parmi plus de 1500 partout en France, en présentiel ou à distance"
       image={logo_spe}
       button={
         <Button
