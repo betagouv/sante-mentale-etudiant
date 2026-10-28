@@ -1,5 +1,5 @@
 import { Coordinate } from "@/services/address";
-import { getClosestItem } from "@/utils/distance";
+import { getClosestItems } from "@/utils/distance";
 import fs from "fs/promises";
 import path from "path";
 
@@ -28,7 +28,7 @@ export async function getClosestBAPU(c: Coordinate): Promise<BAPU | null> {
   const bapus = await getBAPUs();
   if (bapus.length === 0) return null;
 
-  const closest = getClosestItem(c, bapus);
+  const closests = getClosestItems(c, bapus);
 
-  return closest;
+  return closests ? closests[0] : null;
 }

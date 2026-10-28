@@ -1,5 +1,5 @@
 import { Coordinate } from "@/services/address";
-import { getClosestItem } from "@/utils/distance";
+import { getClosestItems } from "@/utils/distance";
 import fs from "fs/promises";
 import path from "path";
 
@@ -23,11 +23,9 @@ async function getSSEs(): Promise<SSE[]> {
   return JSON.parse(raw);
 }
 
-export async function getClosestSSE(c: Coordinate): Promise<SSE | null> {
+export async function getClosestSSEs(c: Coordinate): Promise<SSE[] | null> {
   const sses = await getSSEs();
   if (sses.length === 0) return null;
 
-  const closest = getClosestItem(c, sses);
-
-  return closest;
+  return getClosestItems(c, sses);
 }
