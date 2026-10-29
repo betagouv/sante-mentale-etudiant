@@ -39,9 +39,6 @@ export default function CustomCard({
             src={image}
             alt={imageAlt}
             className={styles.logo}
-            width={87}
-            height={0}
-            style={{ width: "87px", height: "auto" }}
             sizes="87px"
           />
         )}

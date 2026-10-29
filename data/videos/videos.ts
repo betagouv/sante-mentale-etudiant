@@ -28,6 +28,30 @@ export type VideoKey = (typeof VIDEO_KEYS)[number];
 
 export const testimonials: VideoTestimonial[] = [
   {
+    key: "SSE",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9tcsChqX84VCs6QNjcnyK9",
+    previewUrl: "/videos/preview/SSE.mp4",
+    posterUrl: "/images/vignettes/SSE.jpg",
+    citation: "C’est un lieu de repère et de soutien",
+    transcription: dispositifsTranscriptions["SSE"],
+  },
+  {
+    key: "BAPU",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/mC7EjD3tY5XwkbhdCVQiQQ",
+    previewUrl: "/videos/preview/BAPU.mp4",
+    posterUrl: "/images/vignettes/BAPU.jpg",
+    citation: "Ça fait du bien de sentir qu’on n’est pas seul",
+    transcription: dispositifsTranscriptions["BAPU"],
+  },
+  {
+    key: "SPE",
+    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/uWG4X3ejBaQaEkc8wvu1Z3",
+    previewUrl: "/videos/preview/SPE.mp4",
+    posterUrl: "/images/vignettes/SPE.jpg",
+    citation: "Vos problèmes ne sont pas moins importants",
+    transcription: dispositifsTranscriptions["SPE"],
+  },
+  {
     key: "3040",
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/nsCCWRdPyKzz3dzqUJf47P",
     previewUrl: "/videos/preview/3040.mp4",
@@ -42,30 +66,6 @@ export const testimonials: VideoTestimonial[] = [
     posterUrl: "/images/vignettes/3114.jpg",
     citation: "N’attendez pas d’être dans une situation grave",
     transcription: dispositifsTranscriptions["3114"],
-  },
-  {
-    key: "BAPU",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/mC7EjD3tY5XwkbhdCVQiQQ",
-    previewUrl: "/videos/preview/BAPU.mp4",
-    posterUrl: "/images/vignettes/BAPU.jpg",
-    citation: "Ça fait du bien de sentir qu’on n’est pas seul",
-    transcription: dispositifsTranscriptions["BAPU"],
-  },
-  {
-    key: "SSE",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/9tcsChqX84VCs6QNjcnyK9",
-    previewUrl: "/videos/preview/SSE.mp4",
-    posterUrl: "/images/vignettes/SSE.jpg",
-    citation: "C’est un lieu de repère et de soutien",
-    transcription: dispositifsTranscriptions["SSE"],
-  },
-  {
-    key: "SPE",
-    videoUrl: "https://tube.numerique.gouv.fr/videos/embed/uWG4X3ejBaQaEkc8wvu1Z3",
-    previewUrl: "/videos/preview/SPE.mp4",
-    posterUrl: "/images/vignettes/SPE.jpg",
-    citation: "Vos problèmes ne sont pas moins importants",
-    transcription: dispositifsTranscriptions["SPE"],
   },
   {
     key: "nightline",
