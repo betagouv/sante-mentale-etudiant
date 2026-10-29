@@ -14,36 +14,40 @@ import { splitAndCleanString } from "@/utils/misc";
 import { Tag } from "@codegouvfr/react-dsfr/Tag";
 
 type Props = {
-  bapu: BAPU;
+  bapu: BAPU | null;
 };
-export const ModalBapu = ({ bapu }: Props) => (
-  <bapuModal.Component title={bapu.name}>
-    <p>Bureau d'aide psychologique universitaire de {bapu.city}</p>
-    {bapu.professionals && (
-      <div className={styles.tagList}>
-        {splitAndCleanString(bapu.professionals).map((pro) => (
-          <Tag className={styles.tag} key={`tag__${pro}`}>
-            {pro}
-          </Tag>
-        ))}
+export const ModalBapu = ({ bapu }: Props) => {
+  if (!bapu) return <bapuModal.Component title="">{null}</bapuModal.Component>;
+
+  return (
+    <bapuModal.Component title={bapu.name}>
+      <p>Bureau d'aide psychologique universitaire de {bapu.city}</p>
+      {bapu.professionals && (
+        <div className={styles.tagList}>
+          {splitAndCleanString(bapu.professionals).map((pro) => (
+            <Tag className={styles.tag} key={`tag__${pro}`}>
+              {pro}
+            </Tag>
+          ))}
+        </div>
+      )}
+      <div className={styles.list}>
+        {bapu.openingHours && OpeningHoursField(bapu.openingHours)}
+        {bapu.address && AddressField(bapu.address, bapu.latitude, bapu.longitude)}
+        {bapu.email &&
+          splitAndCleanString(bapu.email).map((e, idx) => (
+            <React.Fragment key={`email__${idx}`}> {EmailField(e, idx)}</React.Fragment>
+          ))}
+        {bapu.phone &&
+          splitAndCleanString(bapu.phone).map((p, idx) => (
+            <React.Fragment key={`phone__${idx}`}> {PhoneField(p, idx)}</React.Fragment>
+          ))}
+        {bapu.website &&
+          splitAndCleanString(bapu.website).map((w, idx) => (
+            <React.Fragment key={`website__${idx}`}> {WebsiteField(w, idx)}</React.Fragment>
+          ))}
+        {bapu.eligibility && EligibilityField(bapu.eligibility)}
       </div>
-    )}
-    <div className={styles.list}>
-      {bapu.openingHours && OpeningHoursField(bapu.openingHours)}
-      {bapu.address && AddressField(bapu.address, bapu.latitude, bapu.longitude)}
-      {bapu.email &&
-        splitAndCleanString(bapu.email).map((e, idx) => (
-          <React.Fragment key={`email__${idx}`}> {EmailField(e, idx)}</React.Fragment>
-        ))}
-      {bapu.phone &&
-        splitAndCleanString(bapu.phone).map((p, idx) => (
-          <React.Fragment key={`phone__${idx}`}> {PhoneField(p, idx)}</React.Fragment>
-        ))}
-      {bapu.website &&
-        splitAndCleanString(bapu.website).map((w, idx) => (
-          <React.Fragment key={`website__${idx}`}> {WebsiteField(w, idx)}</React.Fragment>
-        ))}
-      {bapu.eligibility && EligibilityField(bapu.eligibility)}
-    </div>
-  </bapuModal.Component>
-);
+    </bapuModal.Component>
+  );
+};
