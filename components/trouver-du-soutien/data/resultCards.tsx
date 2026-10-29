@@ -8,7 +8,6 @@ import { SSE } from "@/lib/sse";
 import { Coordinate } from "@/services/address";
 import { sseModal, bapuModal } from "@/components/modals";
 import { BAPU } from "@/lib/bapu";
-import { ModalBapu } from "@/components/modals/ModalBapu";
 
 export const CARD_3040 = (
   <CustomCard
