@@ -2,7 +2,7 @@
 import styles from "./findHelpResults.module.scss";
 import { getResults, Result } from "./data/findHelp";
 import { Coordinate } from "@/services/address";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import NightLineCard from "../common/NightLineCard";
 import { SSE } from "@/lib/sse";
 import { ModalSse } from "../modals/ModalSse";
@@ -67,7 +67,11 @@ export default function FindHelpResults({ addressLabel, coordinates, whatINeed, 
               {isNightline ? (
                 <NightLineCard />
               ) : (
-                <div className={styles.results}>{cards?.map((card) => card)}</div>
+                <div className={styles.results}>
+                  {cards?.map((card, i) => (
+                    <Fragment key={i}>{card}</Fragment>
+                  ))}
+                </div>
               )}
               <div className={styles.separator} />
             </div>
