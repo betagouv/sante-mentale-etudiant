@@ -19,16 +19,10 @@ export const useMatomo = () => {
     push(["trackEvent", "SSE", "open-modal", sse.displayName]);
   };
 
-  const trackCall3314 = () => {
-    console.log("matomo 3114");
-    push(["trackEvent", "Urgent", "call", "3314"]);
-  };
-
   return {
     trackArticlesSearchFree,
     trackArticlesSearchTag,
     trackBapuOpenModal,
     trackSseOpenModal,
-    trackCall3314,
   };
 };
