@@ -8,6 +8,7 @@ import { SSE } from "@/lib/sse";
 import { ModalSse } from "../modals/ModalSse";
 import { BAPU } from "@/lib/bapu";
 import { ModalBapu } from "../modals/ModalBapu";
+import { useMatomo } from "@/hooks/useMatomo";
 type Props = {
   addressLabel: string;
   coordinates?: Coordinate;
@@ -18,6 +19,19 @@ export default function FindHelpResults({ addressLabel, coordinates, whatINeed, 
   const [results, setResults] = useState<Result[]>([]);
   const [selectedSse, setSelectedSse] = useState<SSE | null>(null);
   const [selectedBapu, setSelectedBapu] = useState<BAPU | null>(null);
+  const { trackBapuOpenModal, trackSseOpenModal } = useMatomo();
+
+  useEffect(() => {
+    if (selectedSse) {
+      trackSseOpenModal(selectedSse);
+    }
+  }, [selectedSse, trackSseOpenModal]);
+
+  useEffect(() => {
+    if (selectedBapu) {
+      trackBapuOpenModal(selectedBapu);
+    }
+  }, [selectedBapu, trackBapuOpenModal]);
 
   useEffect(() => {
     let cancelled = false;

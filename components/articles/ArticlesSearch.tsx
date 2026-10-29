@@ -13,6 +13,7 @@ import {
   IllustrationArticlesRight,
 } from "../illustrations";
 import { FeelingSlug } from "@/lib/feelings/data";
+import { useMatomo } from "@/hooks/useMatomo";
 
 type Props = {
   allArticles: ArticleMeta[];
@@ -28,10 +29,20 @@ const matchesSlug = (article: ArticleMeta, slug: string) =>
 export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSlug }: Props) {
   const [inputValue, setInputValue] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedFilters, setSelectedFilters] = useState<string[]>(defaultFeelingSlug ? [defaultFeelingSlug] : []);
+  const [selectedFilters, setSelectedFilters] = useState<string[]>(
+    defaultFeelingSlug ? [defaultFeelingSlug] : []
+  );
 
-  const toggle = (slug: string) =>
-    setSelectedFilters((prev) => (prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]));
+  const { trackArticlesSearchFree, trackArticlesSearchTag } = useMatomo();
+
+  const toggle = (slug: string) => {
+    if (!selectedFilters.includes(slug)) {
+      trackArticlesSearchTag(slug);
+    }
+    setSelectedFilters((prev) =>
+      prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
+    );
+  };
 
   // search by feelings also render feeling less articles at the end
   const filteredArticles = useMemo(() => {
@@ -44,9 +55,14 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
     return matchingSearch.filter((a) => selectedFilters.some((s) => matchesSlug(a, s)));
   }, [searchTerm, allArticles, selectedFilters]);
 
-  const allFilters = [...feelings.map((f) => (
-    { slug: f.slug, name: f.name }
-  )), ...EXTRA_FILTERS];
+  const allFilters = [...feelings.map((f) => ({ slug: f.slug, name: f.name })), ...EXTRA_FILTERS];
+
+  const onSearch = () => {
+    setSearchTerm(inputValue);
+    if (inputValue.length >= 2) {
+      trackArticlesSearchFree(inputValue);
+    }
+  };
 
   return (
     <>
@@ -57,12 +73,12 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
         <Input
           label="Recherche dans tous les contenus du site"
           className={styles.search}
-          addon={<Button onClick={() => setSearchTerm(inputValue)}>Rechercher</Button>}
+          addon={<Button onClick={onSearch}>Rechercher</Button>}
           nativeInputProps={{
             onChange: (e) => setInputValue(e.target.value),
             onKeyDown: (e) => {
               if (e.key === "Enter") {
-                setSearchTerm(inputValue);
+                onSearch();
               }
             },
             value: inputValue,
@@ -73,7 +89,7 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
             <li key={f.slug}>
               <Tag
                 nativeButtonProps={{
-                  onClick: () => toggle(f.slug)
+                  onClick: () => toggle(f.slug),
                 }}
                 pressed={selectedFilters.includes(f.slug)}
               >
