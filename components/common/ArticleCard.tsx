@@ -1,4 +1,4 @@
-import { ArticleMeta } from "@/lib/articles/types";
+import { ArticleMeta, TAG_LABELS } from "@/lib/articles/types";
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import { Card } from "@codegouvfr/react-dsfr/Card";
 import { Tag } from "@codegouvfr/react-dsfr/Tag";
@@ -12,7 +12,7 @@ type Props = {
 };
 
 const getBadgeLabel = (article: ArticleMeta): string =>
-  article.type === "external" && article.format === "podcast"
+  article.type === "external" && article.tag === "podcast"
     ? "Podcast"
     : "Article";
 
@@ -32,6 +32,8 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
     : undefined;
   const isExternal = article.type === "external";
 
+  const startLabel = mainFeeling?.name ?? (article.tag && TAG_LABELS[article.tag]);
+
   return (
     <Card
       className={styles.card}
@@ -48,10 +50,10 @@ export const ArticleCard = ({ article, titleAs = "h3" }: Props) => {
       linkProps={link}
       size="small"
       start={
-        mainFeeling && (
+        startLabel && (
           <ul className="fr-tags-group">
             <li>
-              <Tag>{mainFeeling.name}</Tag>
+              <Tag>{startLabel}</Tag>
             </li>
           </ul>
         )

@@ -2,7 +2,7 @@
 import { Input } from "@codegouvfr/react-dsfr/Input";
 import { Button } from "@codegouvfr/react-dsfr/Button";
 import { Tag } from "@codegouvfr/react-dsfr/Tag";
-import { ArticleMeta } from "@/lib/articles/types";
+import { ArticleMeta, TAG_LABELS } from "@/lib/articles/types";
 import { useMemo, useState } from "react";
 import { ArticlesList } from "../common/ArticlesList";
 import styles from "./ArticlesSearch.module.scss";
@@ -19,20 +19,19 @@ type Props = {
   feelings: Feeling[];
   defaultFeelingSlug?: FeelingSlug;
 };
+
+const EXTRA_FILTERS = Object.entries(TAG_LABELS).map(([slug, name]) => ({ slug, name }));
+
+const matchesSlug = (article: ArticleMeta, slug: string) =>
+  article.mainFeelingSlug === slug || article.tag === slug;
+
 export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSlug }: Props) {
   const [inputValue, setInputValue] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedFeelingSlugs, setSelectedFeelingSlugs] = useState<FeelingSlug[]>(
-    defaultFeelingSlug ? [defaultFeelingSlug] : []
-  );
+  const [selectedFilters, setSelectedFilters] = useState<string[]>(defaultFeelingSlug ? [defaultFeelingSlug] : []);
 
-  const toggleFeelingSlug = (slug: FeelingSlug) => {
-    if (selectedFeelingSlugs.includes(slug)) {
-      setSelectedFeelingSlugs([...selectedFeelingSlugs.filter((s) => s !== slug)]);
-    } else {
-      setSelectedFeelingSlugs([...selectedFeelingSlugs, slug]);
-    }
-  };
+  const toggle = (slug: string) =>
+    setSelectedFilters((prev) => (prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]));
 
   // search by feelings also render feeling less articles at the end
   const filteredArticles = useMemo(() => {
@@ -40,15 +39,15 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
       a.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    if (selectedFeelingSlugs.length === 0) return matchingSearch;
+    if (selectedFilters.length === 0) return matchingSearch;
 
-    const forSelectedFeelings = matchingSearch.filter(
-      (a) => a.mainFeelingSlug && selectedFeelingSlugs.includes(a.mainFeelingSlug)
-    );
-    const general = matchingSearch.filter((a) => !a.mainFeelingSlug);
+    return matchingSearch.filter((a) => selectedFilters.some((s) => matchesSlug(a, s)));
+  }, [searchTerm, allArticles, selectedFilters]);
 
-    return [...forSelectedFeelings, ...general];
-  }, [searchTerm, allArticles, selectedFeelingSlugs]);
+  const allFilters = [...feelings.map((f) => (
+    { slug: f.slug, name: f.name }
+  )), ...EXTRA_FILTERS];
+
   return (
     <>
       <div className={styles.wrapper}>
@@ -70,13 +69,13 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
           }}
         />
         <ul className={`${styles.tags} fr-tags-group`}>
-          {feelings.map((f) => (
+          {allFilters.map((f) => (
             <li key={f.slug}>
               <Tag
                 nativeButtonProps={{
-                  onClick: () => toggleFeelingSlug(f.slug),
+                  onClick: () => toggle(f.slug)
                 }}
-                pressed={selectedFeelingSlugs.includes(f.slug)}
+                pressed={selectedFilters.includes(f.slug)}
               >
                 {f.name}
               </Tag>
