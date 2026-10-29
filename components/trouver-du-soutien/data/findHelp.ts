@@ -112,9 +112,8 @@ export const getResults = async (
     // Nightline
     // Medecin
     return [
-      { cards: [...CARD_SSEs, ...CARD_BAPUs, CARD_SPE, CARD_3114] },
+      { cards: [...CARD_SSEs, ...CARD_BAPUs, CARD_SPE, CARD_3040, CARD_3114, CARD_DOCTOR] },
       { isNightline: true },
-      { cards: [CARD_DOCTOR] },
     ];
   }
 
