@@ -1,3 +1,5 @@
+import { BAPU } from "@/lib/bapu";
+import { SSE } from "@/lib/sse";
 import { push } from "@socialgouv/matomo-next";
 
 export const useMatomo = () => {
@@ -9,5 +11,12 @@ export const useMatomo = () => {
     push(["trackEvent", "Articles", "recherche-tag", slug]);
   };
 
-  return { trackArticlesSearchFree, trackArticlesSearchTag };
+  const trackBapuOpenModal = (bapu: BAPU) => {
+    push(["trackEvent", "BAPU", "open-modal", bapu.name]);
+  };
+  const trackSseOpenModal = (sse: SSE) => {
+    push(["trackEvent", "SSE", "open-modal", sse.displayName]);
+  };
+
+  return { trackArticlesSearchFree, trackArticlesSearchTag, trackBapuOpenModal, trackSseOpenModal };
 };
