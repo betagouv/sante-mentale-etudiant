@@ -40,7 +40,7 @@ export function VideoCard({ testimonial, showCitation = true, onOpen }: VideoCar
             src={testimonial.posterUrl}
             alt=""
             width={320}
-            height={500}
+            height={569}
             className={styles.poster}
           />
         )}

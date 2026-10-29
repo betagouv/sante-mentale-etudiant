@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Orienteur.module.scss";
 import OrienteurLocation from "./OrienteurLocation";
 import OrienteurQuestion from "./OrienteurQuestion";
@@ -40,7 +41,13 @@ export default function OrienteurWrapper({ node, backButton, onAnswer, answers }
   return (
     <section className={styles.section}>
       <div className={styles.imageWrapper}>
-        <img src={node.image} alt="" className={styles.image} />
+        <Image
+          src={node.image}
+          alt=""
+          width={900}
+          height={900}
+          className={styles.image}
+        />
       </div>
       <div className={styles.content}>
         {backButton}
