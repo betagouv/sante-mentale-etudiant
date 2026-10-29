@@ -13,7 +13,7 @@ import {
   IllustrationArticlesRight,
 } from "../illustrations";
 import { FeelingSlug } from "@/lib/feelings/data";
-import { useMatomo } from "@/utils/matomo";
+import { useMatomo } from "@/hooks/useMatomo";
 
 type Props = {
   allArticles: ArticleMeta[];

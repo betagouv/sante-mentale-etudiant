@@ -8,7 +8,7 @@ import { SSE } from "@/lib/sse";
 import { ModalSse } from "../modals/ModalSse";
 import { BAPU } from "@/lib/bapu";
 import { ModalBapu } from "../modals/ModalBapu";
-import { useMatomo } from "@/utils/matomo";
+import { useMatomo } from "@/hooks/useMatomo";
 type Props = {
   addressLabel: string;
   coordinates?: Coordinate;
