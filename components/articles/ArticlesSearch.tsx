@@ -13,7 +13,7 @@ import {
   IllustrationArticlesRight,
 } from "../illustrations";
 import { FeelingSlug } from "@/lib/feelings/data";
-import { push } from "@socialgouv/matomo-next";
+import { useMatomo } from "@/utils/matomo";
 
 type Props = {
   allArticles: ArticleMeta[];
@@ -33,9 +33,11 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
     defaultFeelingSlug ? [defaultFeelingSlug] : []
   );
 
+  const { trackArticlesSearchFree, trackArticlesSearchTag } = useMatomo();
+
   const toggle = (slug: string) => {
     if (!selectedFilters.includes(slug)) {
-      push(["trackEvent", "Articles", "recherche-tag", slug]);
+      trackArticlesSearchTag(slug);
     }
     setSelectedFilters((prev) =>
       prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
@@ -58,7 +60,7 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
   const onSearch = () => {
     setSearchTerm(inputValue);
     if (inputValue.length >= 2) {
-      push(["trackEvent", "Articles", "recherche-libre", inputValue]);
+      trackArticlesSearchFree(inputValue);
     }
   };
 
