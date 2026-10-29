@@ -18,22 +18,24 @@ export default function WhyThisSite() {
               <b>En interrogeant les étudiants, nous avons constaté deux freins majeurs.</b>
             </p>
           </div>
-          <div className={styles.tile}>
-            <Tile
-              title="Le besoin de lisibilité"
-              desc="Beaucoup d'étudiants ne savent pas vers quels dispositifs se tourner, ni ce que ces dispositifs proposent réellement."
-              titleAs="h3"
-              orientation="vertical"
-              pictogram={<EyeOff />}
-            />
-          </div>
-          <div className={styles.tile}>
-            <Tile
-              title="Le besoin de se sentir légitime"
-              desc="Beaucoup ne se sentent pas légitimes à consulter : l'idée que « ce n'est peut-être pas assez grave » revient souvent."
-              titleAs="h3"
-              pictogram={<Error />}
-            />
+          <div className={styles.tiles}>
+            <div className={styles.tile}>
+              <Tile
+                title="Le besoin de lisibilité"
+                desc="Beaucoup d'étudiants ne savent pas vers quels dispositifs se tourner, ni ce que ces dispositifs proposent réellement."
+                titleAs="h3"
+                orientation="vertical"
+                pictogram={<EyeOff />}
+              />
+            </div>
+            <div className={styles.tile}>
+              <Tile
+                title="Le besoin de se sentir légitime"
+                desc="Beaucoup ne se sentent pas légitimes à consulter : l'idée que « ce n'est peut-être pas assez grave » revient souvent."
+                titleAs="h3"
+                pictogram={<Error />}
+              />
+            </div>
           </div>
         </div>
 
