@@ -33,10 +33,14 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
     defaultFeelingSlug ? [defaultFeelingSlug] : []
   );
 
-  const toggle = (slug: string) =>
+  const toggle = (slug: string) => {
+    if (!selectedFilters.includes(slug)) {
+      push(["trackEvent", "Articles", "recherche-tag", slug]);
+    }
     setSelectedFilters((prev) =>
       prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
     );
+  };
 
   // search by feelings also render feeling less articles at the end
   const filteredArticles = useMemo(() => {
@@ -54,7 +58,7 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
   const onSearch = () => {
     setSearchTerm(inputValue);
     if (inputValue.length >= 2) {
-      push(["trackEvent", "Recherche", "Articles", inputValue]);
+      push(["trackEvent", "Articles", "recherche-libre", inputValue]);
     }
   };
 
