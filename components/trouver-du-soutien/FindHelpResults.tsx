@@ -35,8 +35,8 @@ export default function FindHelpResults({ addressLabel, coordinates, whatINeed, 
 
   return (
     <>
-      {selectedSse && <ModalSse sse={selectedSse} />}
-      {selectedBapu && <ModalBapu bapu={selectedBapu} />}
+      <ModalSse sse={selectedSse} />
+      <ModalBapu bapu={selectedBapu} />
       {results
         .filter((result) => result.isNightline || (result.cards && result.cards?.length > 0))
         .map(({ title, cards, isNightline }, index) => {
