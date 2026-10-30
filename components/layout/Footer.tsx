@@ -18,7 +18,7 @@ export function Footer() {
         {
           text: "Gérer mes cookies",
           buttonProps: {
-            onClick: () => (window as any).tarteaucitron?.userInterface.openPanel(),
+            onClick: () => window.tarteaucitron?.userInterface.openPanel(),
           },
         },
         {
