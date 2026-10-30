@@ -2,14 +2,33 @@
 
 import Script from "next/script";
 
+type TarteaucitronService = {
+  key: string;
+  type: string;
+  name: string;
+  needConsent: boolean;
+  cookies: string[];
+  uri: string;
+  js: () => void;
+  fallback: () => void;
+};
+
+type TarteaucitronApi = {
+  init: (params: Record<string, unknown>) => void;
+  services: Record<string, TarteaucitronService>;
+  job?: string[];
+  userInterface: { openPanel: () => void };
+};
+
 declare global {
   interface Window {
-    tarteaucitron: any;
+    tarteaucitron?: TarteaucitronApi;
   }
 }
 
 function initTarteaucitron() {
   const t = window.tarteaucitron;
+  if (!t) return;
 
   t.init({
     privacyUrl: "/donnees-personnelles",
@@ -52,7 +71,8 @@ function initTarteaucitron() {
     },
     fallback: function () { },
   };
-  (t.job = t.job || []).push("dentsu");
+  t.job = t.job ?? [];
+  t.job.push("dentsu");
 }
 
 export default function Tarteaucitron() {
