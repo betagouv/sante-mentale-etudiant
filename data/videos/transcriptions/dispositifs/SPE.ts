@@ -24,7 +24,7 @@ export const transcriptionSPE = `
   1:53 Si j'ai un seul conseil à donner aux étudiants, c'est surtout prenez soin de vous et soyez toujours à l'écoute de vos envies et de vos besoins.
   2:00 N'hésitez jamais à parler, soit à un proche, ça peut être un ami, votre famille, votre petit copain, petite copine ou même un professeur.
   2:08 Et si jamais, n'hésitez jamais à parler directement à un professionnel de santé qui, pour le coup, sera un peu plus neutre.
-  2:13 Vous pouvez prendre rendez-vous avec un psychologue du dispositif Santé psy Étudiant à tout moment, peu importe le mal-être ressenti,
+  2:13 Vous pouvez prendre rendez-vous avec un psychologue du dispositif Santé Psy Étudiant à tout moment, peu importe le mal-être ressenti,
   2:20 que ce soit de l'anxiété, un épisode dépressif, n'hésitez surtout pas à demander de l'aide et le professionnel sera là pour vous orienter si besoin vers un autre professionnel de santé.
   2:29 Ça peut être parfois difficile de passer le cap d'aller voir un psychologue, ça peut être parfois un peu tabou et on peut y aller un peu à reculons, mais vraiment n'hésitez pas à le faire, vous ne le regretterez pas.
 `;
