@@ -83,7 +83,7 @@ export const feelings: VideoTestimonial[] = [
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/5p6Wfe49tFvSfHhcTrcfVK",
     previewUrl: "/videos/preview/feelings/anxiety.mp4",
     posterUrl: "/images/vignettes/feelings/anxiety.jpg",
-    duration: 6,
+    duration: 3,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue du dispositif Santé Psy Étudiant",
@@ -95,7 +95,7 @@ export const feelings: VideoTestimonial[] = [
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/iW2x9TFyXeJgapwp6U1V8L",
     previewUrl: "/videos/preview/feelings/drugs.mp4",
     posterUrl: "/images/vignettes/feelings/drugs.jpg",
-    duration: 6,
+    duration: 3,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue du dispositif Santé Psy Étudiant",
@@ -107,7 +107,7 @@ export const feelings: VideoTestimonial[] = [
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/5UPt8hCCUz56Eu1hG6v4kT",
     previewUrl: "/videos/preview/feelings/eating-disorder.mp4",
     posterUrl: "/images/vignettes/feelings/eating-disorder.jpg",
-    duration: 5,
+    duration: 3,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue du dispositif Santé Psy Étudiant",
@@ -119,7 +119,7 @@ export const feelings: VideoTestimonial[] = [
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/cSoQL9VmXEWr8Tg7DpRZd4",
     previewUrl: "/videos/preview/feelings/fatigue.mp4",
     posterUrl: "/images/vignettes/feelings/fatigue.jpg",
-    duration: 5,
+    duration: 2,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue du dispositif Santé Psy Étudiant",
@@ -131,7 +131,7 @@ export const feelings: VideoTestimonial[] = [
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/5WWrBEWUrdzoB8kttU63p6",
     previewUrl: "/videos/preview/feelings/feeling-management.mp4",
     posterUrl: "/images/vignettes/feelings/feeling-management.jpg",
-    duration: 7,
+    duration: 3,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue du dispositif Santé Psy Étudiant",
@@ -143,7 +143,7 @@ export const feelings: VideoTestimonial[] = [
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/3jiTRx7QkTtJxscaEdpUaW",
     previewUrl: "/videos/preview/feelings/solitude.mp4",
     posterUrl: "/images/vignettes/feelings/solitude.jpg",
-    duration: 5,
+    duration: 3,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue du dispositif Santé Psy Étudiant",
@@ -155,7 +155,7 @@ export const feelings: VideoTestimonial[] = [
     videoUrl: "https://tube.numerique.gouv.fr/videos/embed/ub4SUHp8p4SgFh6vx6VBid",
     previewUrl: "/videos/preview/feelings/suicidal-thoughts.mp4",
     posterUrl: "/images/vignettes/feelings/suicidal-thoughts.jpg",
-    duration: 5,
+    duration: 3,
     guest: {
       name: "Jérôme Lacinga",
       role: "Psychologue du dispositif Santé Psy Étudiant",
