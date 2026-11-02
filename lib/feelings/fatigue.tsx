@@ -28,10 +28,10 @@ export const FEELING_FATIGUE: Feeling = {
   },
   videoKey: "fatigue",
   recap: [
-    "La fatigue ne se règle pas toujours en dormant plus.",
-    "Un stress qui dure use le corps autant que la tête.",
-    "Des leviers simples existent, à commencer par la régularité de tes horaires.",
-    "Si ça ne passe pas, n'hésite pas à en parler à un médecin, un psy ou à un proche.",
+    "Une fatigue persistante peut être un signal d'alerte.",
+    "Dormir suffisamment ne signifie pas toujours avoir un sommeil réparateur.",
+    "Une fatigue inhabituelle peut avoir des causes physiques ou psychologiques.",
+    "Si la fatigue pèse sur ton quotidien, parles-en à un médecin.",
   ],
   faq: {
     title: "Comprendre la fatigue",
