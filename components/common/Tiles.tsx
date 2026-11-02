@@ -51,8 +51,10 @@ export const TILE_114 = (
     desc="Numéro d'urgence accessible par SMS, tchat ou visio."
     noIcon
     linkProps={{
-      href: "tel:114",
-      "aria-label": "Appeler le 114",
+      href: "https://info.urgence114.fr/",
+      "aria-label": "Naviguer vers le site du 114",
+      target: "_blank",
+      rel: "noopener noreferrer",
     }}
   />
 );
