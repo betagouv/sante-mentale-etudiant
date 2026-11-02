@@ -15,20 +15,16 @@ export const transcriptionSPE = `
   1:07 et vous allez ainsi pouvoir suivre le décompte de vos séances jusqu'à arriver aux 12 séances
   1:12 qui, comme je le rappelle, vont pouvoir se renouveler à chaque nouvelle année scolaire.
   1:15 Si jamais vous rencontrez la moindre difficulté pour créer votre espace étudiant ou pour choisir votre psychologue,
-  1:21 pas d'inquiétude, il y a une équipe support derrière Santé psyétudiant qui pourra vous aider et vous accompagner.
+  1:21 pas d'inquiétude, il y a une équipe support derrière Santé Psy Étudiant qui pourra vous aider et vous accompagner.
   1:26 Pour prendre rendez-vous avec un psychologue, il ne faut pas forcément attendre d'aller très mal.
   1:30 Et surtout ne vous comparez pas aux autres et ne pensez pas que vos problèmes sont moins importants.
   1:34 Dès que vous ressentez le besoin de parler, vous pouvez prendre rendez-vous avec un professionnel de santé qui pourra vous accompagner.
-  1:40 Vous allez pouvoir retrouver une liste de psychologues cliniciens qui sont partenaires du dispositif Santé psyétudiant
+  1:40 Vous allez pouvoir retrouver une liste de psychologues cliniciens qui sont partenaires du dispositif Santé Psy Étudiant
   1:45 et qui pourront soit vous recevoir en présentiel dans leur cabinet, soit directement vous recevoir en visio si vous êtes plus à l'aise de le faire à distance.
   1:53 Si j'ai un seul conseil à donner aux étudiants, c'est surtout prenez soin de vous et soyez toujours à l'écoute de vos envies et de vos besoins.
-  2:00 Surtout ne vous forcez jamais à faire quelque chose que vous n'avez pas envie de faire.
-  2:04 Par exemple, ce n'est pas très grave si vous loupez la soirée ce soir ou si vous n'allez pas boire le café avec votre ami.
-  2:09 Et surtout, n'hésitez jamais à parler soit à un proche, ça peut être un ami, votre famille, votre petit copain, petite copine ou même un professeur.
-  2:18 Et si jamais, n'hésitez jamais à parler directement à un professionnel de santé qui pour le coup sera un peu plus neutre.
-  2:24 Vous pouvez prendre rendez-vous avec un psychologue du dispositif Santé psyétudiant à tout moment, peu importe le mal-être ressenti.
-  2:30 Que ce soit de l'anxiété, un épisode dépressif, n'hésitez surtout pas à demander de l'aide
-  2:34 et le professionnel sera là pour vous orienter si besoin vers un autre professionnel de santé.
-  2:40 Ça peut être parfois difficile de passer le cap d'aller voir un psychologue, ça peut être parfois un peu tabou et on peut y aller un peu à reculons.
-  2:46 Mais vraiment, n'hésitez pas à le faire, vous ne le regretterez pas.
+  2:00 N'hésitez jamais à parler, soit à un proche, ça peut être un ami, votre famille, votre petit copain, petite copine ou même un professeur.
+  2:08 Et si jamais, n'hésitez jamais à parler directement à un professionnel de santé qui, pour le coup, sera un peu plus neutre.
+  2:13 Vous pouvez prendre rendez-vous avec un psychologue du dispositif Santé Psy Étudiant à tout moment, peu importe le mal-être ressenti,
+  2:20 que ce soit de l'anxiété, un épisode dépressif, n'hésitez surtout pas à demander de l'aide et le professionnel sera là pour vous orienter si besoin vers un autre professionnel de santé.
+  2:29 Ça peut être parfois difficile de passer le cap d'aller voir un psychologue, ça peut être parfois un peu tabou et on peut y aller un peu à reculons, mais vraiment n'hésitez pas à le faire, vous ne le regretterez pas.
 `;
