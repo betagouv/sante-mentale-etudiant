@@ -29,9 +29,9 @@ export const FEELING_DRUGS: Feeling = {
   videoKey: "drugs",
   recap: [
     "Consommer une substance ne signifie pas forcément être dépendant.",
-    "Ne pas réussir à s’arrêter seul est fréquent. Ce n’est pas une faiblesse.",
-    "Utiliser une substance de manière “thérapeutique” (pour dormir, se calmer, …) est un signal d’alerte.",
-    "En parler, c’est déjà prendre soin de soi. Tu peux demander de l’aide, sans jugement et à ton rythme.",
+    "Quand consommer devient un besoin, il est important de s'interroger.",
+    "Avoir besoin d'aide pour réduire sa consommation n'est pas une faiblesse.",
+    "Dès les premiers doutes sur ta consommation, tu peux demander de l'aide.",
   ],
   faq: {
     title: "Comprendre sa consommation",

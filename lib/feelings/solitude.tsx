@@ -30,10 +30,10 @@ export const FEELING_SOLITUDE: Feeling = {
   },
   videoKey: "solitude",
   recap: [
-    "On peut se sentir seul au milieu des autres, sans forcément être isolé.",
-    "Quand on se sent seul, on a tendance à moins voir les autres, et on peut finir par se replier, s'isoler vraiment.",
-    "Examens, deuil, période difficile : certains moments de vie peuvent créer un décalage avec les autres.",
-    "Si le sentiment de solitude dure ou devient trop douloureux, il est important d'en parler.",
+    "On peut se sentir seul, même lorsqu'on est entouré.",
+    "Un événement difficile peut renforcer le sentiment de solitude.",
+    "Le sentiment de solitude peut progressivement conduire à un réel isolement.",
+    "Parler à ses proches et reprendre de petites activités peut aider à recréer du lien.",
   ],
   faq: {
     title: "Comprendre le sentiment de solitude",

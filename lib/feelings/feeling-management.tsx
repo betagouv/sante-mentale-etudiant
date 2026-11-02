@@ -34,10 +34,10 @@ export const FEELING_MANAGEMENT: Feeling = {
   },
   videoKey: "feeling-management",
   recap: [
-    "Les émotions ont, de manière générale, une fonction.",
-    "Les accueillir est souvent plus efficace que de chercher à les repousser.",
-    "Il est possible d'apprendre à mieux les comprendre et les réguler.",
-    "Si cela te fait souffrir ou impacte ton quotidien, tu peux demander de l'aide.",
+    "Chaque émotion a un rôle et peut nous aider à comprendre ce que l'on vit.",
+    "Il est normal de ressentir plusieurs émotions, parfois très différentes.",
+    "Apprendre à accepter ses émotions permet de mieux vivre avec elles.",
+    "Si tes émotions deviennent trop envahissantes, tu peux en parler à un professionnel.",
   ],
   faq: {
     title: "Comprendre ses émotions",

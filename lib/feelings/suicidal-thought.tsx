@@ -30,10 +30,10 @@ export const FEELING_SUICIDE: Feeling = {
   },
   videoKey: "suicidal-thoughts",
   recap: [
-    "Les idées suicidaires sont le signe d'une souffrance.",
-    "Elles peuvent concerner beaucoup plus de personnes qu'on ne l'imagine.",
-    "Avoir des idées suicidaires ne veut pas forcément dire que tu veux mourir.",
-    "Si tu te sens en danger, demande de l'aide immédiatement.",
+    "Les idées suicidaires sont plus fréquentes qu'on ne pourrait l'imaginer.",
+    "Avoir des idées suicidaires ne signifie pas forcément vouloir mourir.",
+    "Si tu as des idées suicidaires, ne reste pas seul avec ces pensées.",
+    "Si tu te sens en danger immédiat, appelle les urgences au 15 ou au 112.",
   ],
   faq: {
     title: "Comprendre les idées suicidaires",

@@ -33,10 +33,10 @@ export const FEELING_EATING_DISORDER: Feeling = {
   },
   videoKey: "eating-disorder",
   recap: [
-    "Manger est d'abord une source de plaisir, de partage et d'habitudes.",
-    "Le rapport à la nourriture peut changer lors des périodes difficiles.",
-    "Un besoin de se priver ou de se remplir peut devenir un signal d'alerte.",
-    "Quand la nourriture fait souffrir, en parler à un professionnel aide à comprendre ce qui se passe.",
+    "Le stress et les émotions peuvent modifier ton rapport à la nourriture.",
+    "Observer tes habitudes alimentaires peut t'aider à mieux les comprendre.",
+    "Manger davantage ou perdre l'appétit peut être une réaction à une période difficile.",
+    "Si l'alimentation devient une source de mal-être, parles-en à un professionnel.",
   ],
   faq: {
     title: "Comprendre son rapport à la nourriture",
