@@ -458,11 +458,11 @@ export const articles: ArticleMeta[] = [
   },
   {
     type: "external",
-    slug: "podcast-sante-mentale-etudiant-preserver-equilibre",
+    slug: "info-gouv-sante-mentale-etudiant-preserver-equilibre",
     url: "https://www.info.gouv.fr/actualite/sante-mentale-des-etudiants-preserver-son-equilibre",
     title: "Santé mentale des étudiants : préserver son équilibre",
     heroImage: "/articles/logos/info-gouv.jpg",
-    tag: "podcast",
+    tag: "mental-health",
   },
   {
     type: "external",
