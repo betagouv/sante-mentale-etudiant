@@ -75,13 +75,7 @@ export function Newsletter() {
         buttons: [
           {
             linkProps: {
-              href: "https://www.facebook.com/profile.php?id=100075880725429",
-            },
-            type: "facebook",
-          },
-          {
-            linkProps: {
-              href: "https://www.instagram.com/sante_psyetudiant/",
+              href: "https://www.instagram.com/santementale_etudiant/",
             },
             type: "instagram",
           },
@@ -93,7 +87,7 @@ export function Newsletter() {
           },
           {
             linkProps: {
-              href: "https://www.tiktok.com/@sante.psy.etudiant",
+              href: "https://www.tiktok.com/@sante.mentale.etudiant",
             },
             type: "tiktok",
           },
