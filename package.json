@@ -15,7 +15,7 @@
   "dependencies": {
     "@codegouvfr/react-dsfr": "^1.32.2",
     "@socialgouv/matomo-next": "^1.14.2",
-    "next": "16.2.7",
+    "next": "16.4.4",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "remark": "^15.0.1",
@@ -26,7 +26,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.7",
+    "eslint-config-next": "16.4.4",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.8.3",
     "sass": "^1.100.0",
