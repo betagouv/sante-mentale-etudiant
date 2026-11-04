@@ -66,7 +66,7 @@ export const articles: ArticleMeta[] = [
   {
     type: "external",
     slug: "troubles-anxieux-ou-anxiete-grave",
-    url: "https://www.ameli.fr/llle-et-vilaine/assure/sante/themes/troubles-anxieux-anxiete",
+    url: "https://www.ameli.fr/assure/sante/themes/troubles-anxieux-anxiete",
     title: "Ameli - Troubles anxieux ou anxiété grave",
     mainFeelingSlug: "anxiety",
     heroImage: "/articles/logos/ameli.jpg",
@@ -223,6 +223,22 @@ export const articles: ArticleMeta[] = [
     mainFeelingSlug: "drugs",
     heroImage: "/articles/logos/info-gouv.jpg",
   },
+  {
+    type: "external",
+    slug: "ameli-addictions",
+    url: "https://www.ameli.fr/assure/sante/themes/addictions",
+    title: "Ameli - Addictions",
+    mainFeelingSlug: "drugs",
+    heroImage: "/articles/logos/ameli.jpg",
+  },
+  {
+    type: "external",
+    slug: "mildeca-comprendre-addictions",
+    url: "https://www.drogues.gouv.fr/comprendre",
+    title: "MILDECA - Comprendre les addictions",
+    mainFeelingSlug: "drugs",
+    heroImage: "/articles/logos/mildeca.jpg",
+  },
 
   // Gestion des émotions
   {
@@ -283,14 +299,6 @@ export const articles: ArticleMeta[] = [
   },
   {
     type: "external",
-    slug: "3114-ils-et-elles-sont-passe-e-s-par-la",
-    url: "https://3114.fr/je-suis-en-souffrance/ils-elles-sont-passe-e-s-par-la/",
-    title: "3114 - Ils et elles sont passé·e·s par là",
-    mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/logos/3114.jpg",
-  },
-  {
-    type: "external",
     slug: "3114-je-m-inquiete-pour-quelqu-un",
     url: "https://3114.fr/je-minquiete-pour-quelquun/",
     title: "3114 - Je m'inquiète pour quelqu'un",
@@ -305,22 +313,6 @@ export const articles: ArticleMeta[] = [
     title: "Ministère de la Santé - Que faire et à qui s’adresser face à une crise suicidaire ?",
     mainFeelingSlug: "suicidal-thought",
     heroImage: "/articles/logos/sante-gouv.jpg",
-  },
-  {
-    type: "external",
-    slug: "sos-suicide-phenix",
-    url: "https://sos-suicide-phenix.org/",
-    title: "SOS Suicide Phénix - Ligne d’écoute idées suicidaires",
-    mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/logos/sos-suicide-phenix.jpg",
-  },
-  {
-    type: "external",
-    slug: "suicide-ecoute",
-    url: "https://www.suicide-ecoute.fr/",
-    title: "Suicide Ecoute - Ligne d’écoute idées suicidaires",
-    mainFeelingSlug: "suicidal-thought",
-    heroImage: "/articles/logos/suicide-ecoute.jpg",
   },
 
   // Nourriture
@@ -385,6 +377,34 @@ export const articles: ArticleMeta[] = [
     title: "Ameli - Anorexie mentale",
     mainFeelingSlug: "eating-disorder",
     heroImage: "/articles/logos/ameli.jpg",
+  },
+  {
+    type: "external",
+    slug: "etudiant-gouv-alimentation",
+    url: "https://www.etudiant.gouv.fr/fr/alimentation",
+    title: "Etudiant.gouv - Alimentation",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/logos/etudiant-gouv.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "has-boulimie-hyperphagie-boulimique",
+    url: "https://www.has-sante.fr/jcms/c_2581436/fr/boulimie-et-hyperphagie-boulimique-reperage-et-elements-generaux-de-prise-en-charge",
+    title: "Haute Autorité de Santé - Boulimie et hyperphagie boulimique",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/logos/has.jpg",
+    featured: true,
+  },
+  {
+    type: "external",
+    slug: "has-boulimie-hyperphagie-boulimique-en-parler",
+    url: "https://www.has-sante.fr/upload/docs/application/pdf/2019-09/fs_boulimie_commentenparler_v2.pdf",
+    title: "Haute Autorité de Santé - Boulimie et hyperphagie boulimique. Comment en parler ?",
+    mainFeelingSlug: "eating-disorder",
+    heroImage: "/articles/logos/has.jpg",
+    featured: true,
+    pdfWeight: 2,
   },
 
   // Solitude
