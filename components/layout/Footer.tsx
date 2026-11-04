@@ -16,7 +16,7 @@ export function Footer() {
           linkProps: { href: "/donnees-personnelles" },
         },
         {
-          text: "Gérer mes cookies",
+          text: "Gestion des cookies",
           buttonProps: {
             onClick: () => window.tarteaucitron?.userInterface.openPanel(),
           },
