@@ -10,7 +10,8 @@
     "dev": "react-dsfr update-icons && next dev --turbopack",
     "build": "react-dsfr update-icons && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "node scripts/copy-tarteaucitron.mjs"
   },
   "dependencies": {
     "@codegouvfr/react-dsfr": "^1.32.2",
