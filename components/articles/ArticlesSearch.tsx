@@ -26,6 +26,9 @@ const EXTRA_FILTERS = Object.entries(TAG_LABELS).map(([slug, name]) => ({ slug, 
 const matchesSlug = (article: ArticleMeta, slug: string) =>
   article.mainFeelingSlug === slug || article.tag === slug;
 
+//this converts é to e, û to u, etc.
+const normalize = (str: string) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
 export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSlug }: Props) {
   const [inputValue, setInputValue] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
@@ -44,16 +47,21 @@ export default function ArticlesSearch({ allArticles, feelings, defaultFeelingSl
     );
   };
 
+  const articlesWithNormalizedTitles = allArticles.map((a) => ({
+    ...a,
+    normalizedTitle: normalize(a.title).toLowerCase(),
+  }));
+
   // search by feelings also render feeling less articles at the end
   const filteredArticles = useMemo(() => {
-    const matchingSearch = allArticles.filter((a) =>
-      a.title.toLowerCase().includes(searchTerm.toLowerCase())
+    const matchingSearch = articlesWithNormalizedTitles.filter((a) =>
+      a.normalizedTitle.includes(normalize(searchTerm))
     );
 
     if (selectedFilters.length === 0) return matchingSearch;
 
     return matchingSearch.filter((a) => selectedFilters.some((s) => matchesSlug(a, s)));
-  }, [searchTerm, allArticles, selectedFilters]);
+  }, [searchTerm, articlesWithNormalizedTitles, selectedFilters]);
 
   const allFilters = [...feelings.map((f) => ({ slug: f.slug, name: f.name })), ...EXTRA_FILTERS];
 
