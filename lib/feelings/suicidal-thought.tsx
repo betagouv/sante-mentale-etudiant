@@ -25,6 +25,10 @@ export const FEELING_SUICIDE: Feeling = {
           elles sont souvent le signe d'une souffrance devenue trop difficile à porter seul.
         </p>
         <p>Tu n'as pas à traverser ça sans aide.</p>
+        <p>
+          Si tu as besoin d’en parler maintenant, appelle le 3114, le numéro national de prévention
+          du suicide : gratuit, confidentiel et joignable 24h/24, 7j/7.
+        </p>
       </>
     ),
   },
