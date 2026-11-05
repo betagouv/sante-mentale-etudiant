@@ -1,5 +1,5 @@
 import { FeelingLink } from ".";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End_Drugs } from "./helper";
 import { Feeling } from "./types";
 
 export const FEELING_DRUGS: Feeling = {
@@ -156,6 +156,7 @@ export const FEELING_DRUGS: Feeling = {
               <li>Mes consommations sont responsables de disputes/ conflits avec mes proches.</li>
               <li>Mes proches s’inquiètent de ma consommation ou m’en ont déjà parlé.</li>
             </ul>
+            <Disclaimer_End_Drugs />
           </>
         ),
       },

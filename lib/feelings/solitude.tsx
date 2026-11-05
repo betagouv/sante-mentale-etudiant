@@ -1,7 +1,7 @@
 import ExternalLink from "@/components/link/ExternalLink";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End1 } from "./helper";
 
 export const FEELING_SOLITUDE: Feeling = {
   slug: "solitude",
@@ -166,6 +166,7 @@ export const FEELING_SOLITUDE: Feeling = {
               <li>Je me demande parfois si le problème vient de moi.</li>
               <li>J'ai l'impression d'être invisible.</li>
             </ul>
+            <Disclaimer_End1 />
           </>
         ),
       },

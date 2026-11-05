@@ -1,7 +1,7 @@
 import ExternalLink from "@/components/link/ExternalLink";
 import { Feeling } from "./types";
 import Link from "next/link";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End_Eating } from "./helper";
 
 export const FEELING_EATING_DISORDER: Feeling = {
   slug: "eating-disorder",
@@ -206,6 +206,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
               Ces signes ne permettent pas de poser seul un diagnostic. Ils peuvent cependant
               indiquer que ta relation à la nourriture mérite d’être prise au sérieux.
             </p>
+            <Disclaimer_End_Eating />
           </>
         ),
       },

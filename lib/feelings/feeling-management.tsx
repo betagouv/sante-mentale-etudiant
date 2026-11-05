@@ -1,4 +1,4 @@
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End1 } from "./helper";
 import { Feeling } from "./types";
 
 export const FEELING_MANAGEMENT: Feeling = {
@@ -159,6 +159,7 @@ export const FEELING_MANAGEMENT: Feeling = {
               <li>J'évite les situations qui me font ressentir des émotions désagréables.</li>
               <li>J'ai l'impression que mes émotions prennent toute la place.</li>
             </ul>
+            <Disclaimer_End1 />
           </>
         ),
       },

@@ -1,7 +1,7 @@
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
 import ExternalLink from "@/components/link/ExternalLink";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End1 } from "./helper";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -182,6 +182,7 @@ export const FEELING_FATIGUE: Feeling = {
               <li>Je peux avoir moins envie de voir les gens.</li>
               <li>Je peux manger n'importe quoi sans y penser.</li>
             </ul>
+            <Disclaimer_End1 />
           </div>
         ),
       },

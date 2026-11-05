@@ -1,6 +1,6 @@
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End_Anxiety } from "./helper";
 
 export const FEELING_ANXIETY: Feeling = {
   slug: "anxiety",
@@ -208,6 +208,7 @@ export const FEELING_ANXIETY: Feeling = {
               <li>Je me sens souvent en alerte, sur le qui-vive.</li>
               <li>Je m’énerve ou je m’emporte plus facilement que d’habitude</li>
             </ul>
+            <Disclaimer_End_Anxiety />
           </>
         ),
       },

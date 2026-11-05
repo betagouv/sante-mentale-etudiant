@@ -1,5 +1,5 @@
 import { FeelingLink } from ".";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End_Suicide } from "./helper";
 import { Feeling } from "./types";
 
 export const FEELING_SUICIDE: Feeling = {
@@ -149,6 +149,7 @@ export const FEELING_SUICIDE: Feeling = {
               <li>Je me sens seul face à mes pensées.</li>
               <li>J’ai envie de dire au revoir.</li>
             </ul>
+            <Disclaimer_End_Suicide />
           </>
         ),
       },
