@@ -1,3 +1,4 @@
+import ExternalLink from "@/components/link/ExternalLink";
 import { Dispositif } from "./types";
 
 export const DISPOSITIF_3040: Dispositif = {
@@ -25,8 +26,8 @@ export const DISPOSITIF_3040: Dispositif = {
         title: "Je traverse une période difficile",
         desc: (
           <>
-            Doutes, sentiment de solitude, tristesse, difficultés à trouver le sommeil… Tu ressens le
-            besoin de parler.
+            Doutes, sentiment de solitude, tristesse, difficultés à trouver le sommeil… Tu ressens
+            le besoin de parler.
           </>
         ),
       },
@@ -34,7 +35,8 @@ export const DISPOSITIF_3040: Dispositif = {
         title: "Je vis une situation de violence ou de discrimination",
         desc: (
           <>
-            Harcèlement, violences sexistes et sexuelles, discrimination… Nous t'écoutons et t'accompagnons dans tes démarches.
+            Harcèlement, violences sexistes et sexuelles, discrimination… Nous t'écoutons et
+            t'accompagnons dans tes démarches.
           </>
         ),
       },
@@ -42,8 +44,8 @@ export const DISPOSITIF_3040: Dispositif = {
         title: "J’ai besoin d’être orienté",
         desc: (
           <>
-            Tu es à la recherche d'une structure locale pour t'accompagner ou répondre à un de tes besoins ? Le 3040
-            peut t’aider à identifier la solution adaptée à ta situation.
+            Tu es à la recherche d'une structure locale pour t'accompagner ou répondre à un de tes
+            besoins ? Le 3040 peut t’aider à identifier la solution adaptée à ta situation.
           </>
         ),
       },
@@ -101,6 +103,14 @@ export const DISPOSITIF_3040: Dispositif = {
           Le 3040 permet également de signaler des situations de discrimination, de harcèlement ou
           de violences sexistes et sexuelles. Pour rappel, un signalement représente un fait
           pénalement répréhensible (violence sexiste et sexuelle, harcèlement, ...).
+        </p>
+        <p>
+          Les étudiants sourds ou malentendants peuvent échanger facilement avec nous grâce à notre
+          prestataire{" "}
+          <ExternalLink href="https://app.acce-o.fr/client/en-avant-toute-s">
+            Acceo Tadeo
+          </ExternalLink>
+          .
         </p>
       </>
     ),
