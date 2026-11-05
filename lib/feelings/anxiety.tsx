@@ -20,10 +20,9 @@ export const FEELING_ANXIETY: Feeling = {
         </p>
         <p>Connaître des épisodes de stress fait partie de la vie.</p>
         <p>
-          Mais lorsque ce stress est de plus en plus fréquent, intense ou durable, qu'il
-          s'accompagne d'une inquiétude face à ce qui pourrait arriver (proche ou lointain), et
-          qu'il gêne ton quotidien, il peut s'agir d'une anxiété qui mérite d'en parler à un
-          professionnel.
+          Mais lorsque ce stress devient plus fréquent, plus intense ou plus durable, qu’il
+          s’accompagne d’une inquiétude face à ce qui pourrait arriver et qu’il gêne ton quotidien,
+          il peut s’agir d’anxiété. Dans ce cas, il est utile d’en parler à un professionnel.
         </p>
         <p>
           Tu peux tester quelques outils pour essayer de retrouver un peu d'apaisement, en attendant
@@ -43,17 +42,23 @@ export const FEELING_ANXIETY: Feeling = {
   faq: {
     title: "Comprendre le stress et l'anxiété",
     intro: (
-      <p>
-        Le stress est la réaction normale de ton organisme face à une situation qui te met sous
-        pression, comme un examen ou un oral. Il s'apaise en général quand la situation passe.
-        L'anxiété, c'est l'inquiétude face à ce qui pourrait arriver, souvent avec des tensions dans
-        le corps. Elle est aussi normale : tout le monde en ressent de temps en temps. Elle peut
-        devenir difficile à vivre quand elle est fréquente, intense ou durable, et qu'elle gêne ton
-        quotidien (sommeil, études, relations). Comprendre et accepter ce qui se passe dans ton
-        corps et dans ton esprit aide souvent à mieux gérer ces sensations et ces pensées sans avoir
-        à lutter contre ce que tu ressens. Si c'est trop difficile, un professionnel de santé
-        mentale peut t'accompagner.
-      </p>
+      <>
+        <p>
+          Le stress est la réaction normale de ton organisme face à une situation qui te met sous
+          pression, comme un examen ou un oral. Il s'apaise en général quand la situation passe.
+        </p>
+        <p>
+          L'anxiété, c'est l'inquiétude face à ce qui pourrait arriver, souvent avec des tensions
+          dans le corps. Elle est aussi normale : tout le monde en ressent de temps en temps. Elle
+          peut devenir difficile à vivre quand elle est fréquente, intense ou durable, et qu'elle
+          gêne ton quotidien (sommeil, études, relations).
+        </p>
+        <p>
+          Comprendre et accepter ce qui se passe dans ton corps et dans ton esprit aide souvent à
+          mieux gérer ces sensations et ces pensées sans avoir à lutter contre ce que tu ressens.
+        </p>
+        <p>Si c'est trop difficile, un professionnel de santé mentale peut t'accompagner.</p>
+      </>
     ),
     items: [
       {
@@ -159,23 +164,18 @@ export const FEELING_ANXIETY: Feeling = {
             </p>
             <h4>4. L'anxiété peut révéler autre chose </h4>
             <p>
-              L'anxiété peut aussi parfois être le signe d’autres types de troubles, comme la
-              dépression.
+              L’anxiété peut apparaître seule. Elle peut aussi accompagner une dépression (par
+              exemple avec une tristesse persistante, une perte d’envie ou une grande fatigue),
+              correspondre à un trouble anxieux, ou encore être associée à un problème de santé
+              somatique.
             </p>
             <p>
               → Voir la page <FeelingLink slug="fatigue" />
             </p>
             <p>
-              Si ton anxiété dure depuis plusieurs semaines, devient très intense, impacte ton
-              quotidien, il est important d'en parler avec un professionnel : c’est lui qui pourra
-              évaluer ta situation.
-            </p>
-            <h4>5. L'anxiété peut parfois cacher autre chose </h4>
-            <p>
-              L'anxiété peut apparaître seule, mais elle accompagne aussi parfois une dépression, un
-              trouble anxieux ou certaines maladies physiques. Si elle dure plusieurs semaines,
-              devient très intense ou t'empêche de vivre normalement, il est important d'en parler
-              avec un professionnel.
+              Si elle dure depuis plusieurs semaines, devient intense ou t’empêche de vivre
+              normalement, parles-en à un médecin ou à un psychologue : il pourra évaluer ta
+              situation, et des accompagnements efficaces existent.
             </p>
           </>
         ),
