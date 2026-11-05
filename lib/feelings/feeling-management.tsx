@@ -16,7 +16,7 @@ export const FEELING_MANAGEMENT: Feeling = {
         <p>
           Tu as parfois l'impression que tes émotions débordent et prennent toute la place : tu
           t'énerves facilement, tu pleures souvent, tu as du mal à te calmer. À d’autres moments, tu
-          as le sentiment de ne plus rien ressentir. Les deux peuvent aussi se succéder.
+          as le sentiment de ne plus rien ressentir.
         </p>
         <p>
           On aimerait parfois pouvoir appuyer sur « pause » ou « retour en arrière ». Quand les
@@ -24,11 +24,8 @@ export const FEELING_MANAGEMENT: Feeling = {
           à vivre.
         </p>
         <p>
-          Pourtant, les émotions ont une fonction : elles nous préparent à agir, nous indiquent
-          comment nous vivons une situation et peuvent aider les autres à nous comprendre. Elles
-          dépendent à la fois de ce que ressent le corps, de la situation et de nos expériences
-          passées. Apprendre à mieux les reconnaître et les nommer peut aider à comprendre ce
-          qu'elles indiquent et à avoir plus de choix pour y répondre.
+          Pourtant, les émotions ont une fonction, et apprendre à mieux les reconnaître peut aider à
+          comprendre ce qu'elles indiquent et à avoir plus de choix pour y répondre.
         </p>
         <p>
           Si ces difficultés sont fréquentes, intenses ou durables, ou si elles gênent ton
