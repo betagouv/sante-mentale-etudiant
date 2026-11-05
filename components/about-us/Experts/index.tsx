@@ -47,7 +47,7 @@ const experts: Expert[] = [
   },
   {
     name: "Romain Sicot",
-    desc: "Psychiatre spécialisé en addictologie ; Praticien hospitalier, responsable de l’Unité de Liaison et Urgence de Psychiatrie et d’Addictologie (APHP Nord, ou Assistance Publique des Hôpitaux de Paris NORD)",
+    desc: "Psychiatre spécialisé en addictologie ; Praticien hospitalier, responsable de l’Unité de Liaison et Urgence de Psychiatrie et d’Addictologie (APHP Nord)",
   },
   {
     name: "Hélène Vulser",
@@ -71,10 +71,6 @@ export default function Experts() {
             suicide, la psychologie clinique, la recherche en santé publique et l'accompagnement en
             service de santé étudiante.
           </b>
-        </p>
-        <p className={styles.desc}>
-          Le comité donne un avis sur les grands choix du site, relit les contenus les plus
-          sensibles, participe à la rédaction de contenus et à la création de vidéos.
         </p>
       </div>
       <div className={styles.experts}>

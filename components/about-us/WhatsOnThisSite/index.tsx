@@ -29,7 +29,7 @@ export default function WhatsOnThisSite() {
             />
             <Tile
               title="Du contenu fiable"
-              desc="Sur les ressentis les plus partagés par les étudiants - la fatigue, le stress / l’anxiété, l’isolement, l’addiction, la gestion des émotions, le deuil, une rupture… mais aussi sur le bien-être en général et comment celui-ci s’entretient (à venir)."
+              desc="Des informations sur les difficultés et les situations que les étudiants peuvent rencontrer (fatigue, stress, solitude, consommations, émotions…), des conseils pour y faire face et, prochainement, des repères pour prendre soin de son bien-être au quotidien."
               pictogram={<Success />}
             />
           </div>
@@ -39,17 +39,17 @@ export default function WhatsOnThisSite() {
           <div className={styles.cards}>
             <Tile
               title="Fiabilité"
-              desc="L'ensemble des contenus est relu et validé par un comité d'experts (psychiatres, psychologues, chercheurs, professionnels de terrain)."
+              desc="Les pages sur les ressentis sont co-écrites avec un comité d’experts (psychiatres, psychologues, chercheurs, professionnels de terrain)."
               pictogram={<Contract />}
             />
             <Tile
               title="Simplicité"
-              desc="Le site s'adresse aux étudiants avec des mots clairs, sans jargon. On a privilégié la simplicité à l’exhaustivité de l’information. Ce site est une introduction à la thématique ‘santé mentale’ : pour aller plus loin, nous invitons les étudiants à aller consulter des sites référencés plus spécialisés."
+              desc="Un site simple et sans jargon, pensé comme une première porte d’entrée sur la santé mentale. Pour aller plus loin, il renvoie vers des sites spécialisés de référence, des témoignages / podcasts ou des initiatives."
               pictogram={<System />}
             />
             <Tile
-              title="Par et pour les étudiants"
-              desc="Des dizaines d'étudiants nous ont aidé à construire ce site - par leurs réponses à nos enquêtes ou les tests utilisateurs que nous avons faits (3). Leurs retours ont directement façonné le contenu et l'organisation du site et continueront à le faire."
+              title="Construit avec les étudiants"
+              desc="Des dizaines d'étudiants nous ont aidé à construire ce site - par leurs réponses à nos enquêtes ou les tests utilisateurs que nous avons faits. Leurs retours ont directement façonné le contenu et l'organisation du site et continueront à le faire."
               pictogram={<Ecosystem />}
             />
           </div>

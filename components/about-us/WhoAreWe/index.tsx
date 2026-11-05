@@ -40,7 +40,7 @@ export default function WhoAreWe() {
             <i>(2) OVE, Repères Bien être santé des étudiants, 2024</i>
           </li>
           <li>
-            <i>(3) Enquête Santé Psy Étudiant, juin 2026 (1413 répondants)</i>
+            <i>(3) Enquête Santé Psy Étudiant, juin 2026</i>
           </li>
         </ul>
       </div>
@@ -69,10 +69,12 @@ function Who() {
         </b>
       </p>
       <p>
-        Ce site ne s'ajoute pas aux ressources existantes : il a été conçu spécifiquement pour les
-        étudiants et pour les réalités propres à cette période de vie. Il s'appuie sur les
-        ressources fiables déjà disponibles lorsqu'elles existent et propose des contenus adaptés
-        lorsque les problématiques rencontrées par les étudiants ne sont pas encore couvertes.
+        Ce site a été conçu spécifiquement pour les étudiants et pour les réalités propres à cette
+        période de vie. Il vient en complément des ressources existantes : il rassemble les
+        informations fiables déjà disponibles, donne de la visibilité aux dispositifs d’écoute et
+        d’accompagnement et aide chaque étudiant à identifier celui qui correspond à sa situation.
+        Il propose aussi des témoignages et des conseils de professionnels pour mieux comprendre ce
+        que l’on peut ressentir au quotidien, ainsi que des repères pour aider un proche.
       </p>
     </div>
   );
