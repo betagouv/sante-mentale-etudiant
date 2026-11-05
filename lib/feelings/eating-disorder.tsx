@@ -33,10 +33,10 @@ export const FEELING_EATING_DISORDER: Feeling = {
   },
   videoKey: "eating-disorder",
   recap: [
-    "Le stress et les émotions peuvent modifier ton rapport à la nourriture.",
-    "Observer tes habitudes alimentaires peut t'aider à mieux les comprendre.",
-    "Manger davantage ou perdre l'appétit peut être une réaction à une période difficile.",
-    "Si l'alimentation devient une source de mal-être, parles-en à un professionnel.",
+    "L’appétit et nos habitudes alimentaires peuvent varier avec le temps, nos besoins, le contexte.",
+    "Manger davantage ou perdre l'appétit peut être le signal d’un problème de santé.",
+    "Ces difficultés ne sont pas un manque de volonté : elles peuvent se soigner.",
+    "En parler à un professionnel aide à comprendre et à trouver des solutions.",
   ],
   faq: {
     title: "Comprendre son rapport à la nourriture",

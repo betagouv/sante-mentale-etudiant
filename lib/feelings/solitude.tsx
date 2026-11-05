@@ -30,10 +30,10 @@ export const FEELING_SOLITUDE: Feeling = {
   },
   videoKey: "solitude",
   recap: [
-    "On peut se sentir seul, même lorsqu'on est entouré.",
-    "Un événement difficile peut renforcer le sentiment de solitude.",
-    "Le sentiment de solitude peut progressivement conduire à un réel isolement.",
-    "Parler à ses proches et reprendre de petites activités peut aider à recréer du lien.",
+    "On peut se sentir seul, même entouré : cela peut toucher tout le monde.",
+    "Certains moments ou conditions de vie peuvent créer un décalage avec les autres.",
+    "Le sentiment de solitude peut parfois conduire à se replier sur soi.",
+    "Parler à quelqu’un ou rejoindre une activité peut aider à recréer du lien.",
   ],
   faq: {
     title: "Comprendre le sentiment de solitude",

@@ -29,9 +29,9 @@ export const FEELING_DRUGS: Feeling = {
   videoKey: "drugs",
   recap: [
     "Consommer une substance ne signifie pas forcément être dépendant.",
-    "Quand consommer devient un besoin, il est important de s'interroger.",
-    "Avoir besoin d'aide pour réduire sa consommation n'est pas une faiblesse.",
-    "Dès les premiers doutes sur ta consommation, tu peux demander de l'aide.",
+    "Ne pas réussir à arrêter seul est fréquent : demander de l’aide est courageux.",
+    "Consommer pour dormir ou se calmer peut être un signe de dépendance.",
+    "En parler, c’est déjà prendre soin de soi, sans jugement et à son rythme.",
   ],
   faq: {
     title: "Comprendre sa consommation",

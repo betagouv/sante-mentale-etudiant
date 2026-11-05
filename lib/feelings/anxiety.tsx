@@ -35,9 +35,9 @@ export const FEELING_ANXIETY: Feeling = {
   videoKey: "anxiety",
   recap: [
     "Le stress est une réaction normale face à une difficulté.",
-    "L’anxiété peut s’installer dans la durée, sans cause toujours identifiable.",
-    "Si l’anxiété devient trop envahissante, il faut en parler à un professionnel.",
-    "Prendre du temps pour toi peut t’aider à te sentir mieux.",
+    "L’anxiété est tournée vers l’avenir : on s’inquiète de ce qui pourrait arriver.",
+    "Stress et anxiété se ressentent à la fois dans le corps et dans les pensées.",
+    "Quelques stratégies simples peuvent aider, sans remplacer un professionnel.",
   ],
   faq: {
     title: "Comprendre le stress et l'anxiété",

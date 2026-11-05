@@ -39,10 +39,10 @@ export const FEELING_MANAGEMENT: Feeling = {
   },
   videoKey: "feeling-management",
   recap: [
-    "Chaque émotion a un rôle et peut nous aider à comprendre ce que l'on vit.",
-    "Il est normal de ressentir plusieurs émotions, parfois très différentes.",
-    "Apprendre à accepter ses émotions permet de mieux vivre avec elles.",
-    "Si tes émotions deviennent trop envahissantes, tu peux en parler à un professionnel.",
+    "Les émotions nous renseignent sur ce que l’on vit et nous préparent à agir.",
+    "Une émotion forte n’est pas figée : en général, elle finit par retomber.",
+    "Nommer ses émotions plutôt que les éviter donne plus de choix pour y répondre.",
+    "Si elles durent, sont intenses ou gênent ton quotidien, demande de l’aide.",
   ],
   faq: {
     title: "Comprendre ses émotions",

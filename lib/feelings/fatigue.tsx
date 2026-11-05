@@ -28,10 +28,10 @@ export const FEELING_FATIGUE: Feeling = {
   },
   videoKey: "fatigue",
   recap: [
-    "Une fatigue persistante peut être un signal d'alerte.",
-    "Dormir suffisamment ne signifie pas toujours avoir un sommeil réparateur.",
-    "Une fatigue inhabituelle peut avoir des causes physiques ou psychologiques.",
-    "Si la fatigue pèse sur ton quotidien, parles-en à un médecin.",
+    "Être fatigué de temps en temps est normal, surtout en période chargée.",
+    "Dormir assez ne garantit pas un sommeil réparateur : le rythme compte aussi.",
+    "Une fatigue inhabituelle peut avoir une cause physique ou psychologique.",
+    "Si la fatigue dure ou pèse sur ton quotidien, parles-en à un médecin.",
   ],
   faq: {
     title: "Comprendre la fatigue",
