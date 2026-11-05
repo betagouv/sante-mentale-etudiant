@@ -72,8 +72,8 @@ export const FEELING_FATIGUE: Feeling = {
               Chez les étudiants qui consultent un psychologue via Santé Psy Étudiant, l'épuisement
               mental et le sentiment d'être à bout constituent le deuxième motif de consultation (18
               % des réponses), et les troubles du sommeil sont un motif non négligeable de
-              consultation (8 % - enquête auprès des bénéficiaires de Santé Psy Étudiant, juin 2026,
-              1 416 répondants).
+              consultation (8 % - enquête auprès des bénéficiaires de Santé Psy Étudiant, juin
+              2026).
             </p>
           </>
         ),
