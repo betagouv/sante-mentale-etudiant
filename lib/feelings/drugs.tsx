@@ -1,5 +1,5 @@
 import { FeelingLink } from ".";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End_Drugs } from "./helper";
 import { Feeling } from "./types";
 
 export const FEELING_DRUGS: Feeling = {
@@ -29,9 +29,9 @@ export const FEELING_DRUGS: Feeling = {
   videoKey: "drugs",
   recap: [
     "Consommer une substance ne signifie pas forcément être dépendant.",
-    "Quand consommer devient un besoin, il est important de s'interroger.",
-    "Avoir besoin d'aide pour réduire sa consommation n'est pas une faiblesse.",
-    "Dès les premiers doutes sur ta consommation, tu peux demander de l'aide.",
+    "Ne pas réussir à arrêter seul est fréquent : demander de l’aide est courageux.",
+    "Consommer pour dormir ou se calmer peut être un signe de dépendance.",
+    "En parler, c’est déjà prendre soin de soi, sans jugement et à son rythme.",
   ],
   faq: {
     title: "Comprendre sa consommation",
@@ -156,6 +156,7 @@ export const FEELING_DRUGS: Feeling = {
               <li>Mes consommations sont responsables de disputes/ conflits avec mes proches.</li>
               <li>Mes proches s’inquiètent de ma consommation ou m’en ont déjà parlé.</li>
             </ul>
+            <Disclaimer_End_Drugs />
           </>
         ),
       },

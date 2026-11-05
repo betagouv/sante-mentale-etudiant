@@ -1,7 +1,7 @@
 import ExternalLink from "@/components/link/ExternalLink";
 import { FeelingLink } from ".";
 import { Feeling } from "./types";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End1 } from "./helper";
 
 export const FEELING_SOLITUDE: Feeling = {
   slug: "solitude",
@@ -30,10 +30,10 @@ export const FEELING_SOLITUDE: Feeling = {
   },
   videoKey: "solitude",
   recap: [
-    "On peut se sentir seul, même lorsqu'on est entouré.",
-    "Un événement difficile peut renforcer le sentiment de solitude.",
-    "Le sentiment de solitude peut progressivement conduire à un réel isolement.",
-    "Parler à ses proches et reprendre de petites activités peut aider à recréer du lien.",
+    "On peut se sentir seul, même entouré : cela peut toucher tout le monde.",
+    "Certains moments ou conditions de vie peuvent créer un décalage avec les autres.",
+    "Le sentiment de solitude peut parfois conduire à se replier sur soi.",
+    "Parler à quelqu’un ou rejoindre une activité peut aider à recréer du lien.",
   ],
   faq: {
     title: "Comprendre le sentiment de solitude",
@@ -75,13 +75,9 @@ export const FEELING_SOLITUDE: Feeling = {
         answer: (
           <>
             <p>
-              L’entrée dans l’enseignement supérieur correspond souvent à une phase de
-              transition.{" "}
-            </p>
-            <p>
-              C’est souvent un moment où l'on quitte son foyer familial, on change d’environnement,
-              de rythme. En 2023, deux tiers des étudiants vivent hors du domicile familial (ESR,
-              2023).
+              L’entrée dans l’enseignement supérieur est souvent une période de transition : on
+              quitte le foyer familial, on change d’environnement et de rythme. Deux tiers des
+              étudiants vivent aujourd’hui hors du domicile familial (ESR, 2023).
             </p>
             <p>
               Le sentiment de solitude, qu'il s'accompagne ou non d'un isolement réel, ne dépend pas
@@ -91,8 +87,13 @@ export const FEELING_SOLITUDE: Feeling = {
               la peur d'être jugé.
             </p>
             <p>
+              La solitude peut aussi s’installer sans raison apparente ni événement particulier, y
+              compris lorsqu’on est entouré. Elle n’en est pas moins réelle, et elle peut toucher
+              tout le monde.
+            </p>
+            <p>
               Les réseaux sociaux peuvent également accentuer ce sentiment. Paradoxalement, les
-              jeunes n’ont jamais été aussi connectés, et ils ne se sont jamais sentis aussi seuls{" "}
+              jeunes n’ont jamais été aussi connectés, et beaucoup se sentent seuls.{" "}
               <ExternalLink href="https://www.info.gouv.fr/actualite/hyperconnectes-mais-seuls-la-solitude-chez-les-jeunes">
                 Voir article : "Jeunes : hyperconnectés, mais seuls"
               </ExternalLink>
@@ -166,6 +167,7 @@ export const FEELING_SOLITUDE: Feeling = {
               <li>Je me demande parfois si le problème vient de moi.</li>
               <li>J'ai l'impression d'être invisible.</li>
             </ul>
+            <Disclaimer_End1 />
           </>
         ),
       },

@@ -1,7 +1,7 @@
 import { Feeling } from "./types";
 import { FeelingLink } from ".";
 import ExternalLink from "@/components/link/ExternalLink";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End1 } from "./helper";
 
 export const FEELING_FATIGUE: Feeling = {
   slug: "fatigue",
@@ -28,10 +28,10 @@ export const FEELING_FATIGUE: Feeling = {
   },
   videoKey: "fatigue",
   recap: [
-    "Une fatigue persistante peut être un signal d'alerte.",
-    "Dormir suffisamment ne signifie pas toujours avoir un sommeil réparateur.",
-    "Une fatigue inhabituelle peut avoir des causes physiques ou psychologiques.",
-    "Si la fatigue pèse sur ton quotidien, parles-en à un médecin.",
+    "Être fatigué de temps en temps est normal, surtout en période chargée.",
+    "Dormir assez ne garantit pas un sommeil réparateur : le rythme compte aussi.",
+    "Une fatigue inhabituelle peut avoir une cause physique ou psychologique.",
+    "Si la fatigue dure ou pèse sur ton quotidien, parles-en à un médecin.",
   ],
   faq: {
     title: "Comprendre la fatigue",
@@ -72,8 +72,8 @@ export const FEELING_FATIGUE: Feeling = {
               Chez les étudiants qui consultent un psychologue via Santé Psy Étudiant, l'épuisement
               mental et le sentiment d'être à bout constituent le deuxième motif de consultation (18
               % des réponses), et les troubles du sommeil sont un motif non négligeable de
-              consultation (8 % - enquête auprès des bénéficiaires de Santé Psy Étudiant, juin 2026,
-              1 416 répondants).
+              consultation (8 % - enquête auprès des bénéficiaires de Santé Psy Étudiant, juin
+              2026).
             </p>
           </>
         ),
@@ -182,6 +182,7 @@ export const FEELING_FATIGUE: Feeling = {
               <li>Je peux avoir moins envie de voir les gens.</li>
               <li>Je peux manger n'importe quoi sans y penser.</li>
             </ul>
+            <Disclaimer_End1 />
           </div>
         ),
       },

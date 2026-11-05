@@ -28,7 +28,7 @@ export default function PersonalData() {
         <section>
           <h2>Pourquoi traitons-nous des données à caractère personnel ?</h2>
           <p>
-            Santé Mentale Étudiante traite des données à caractère personnel dans le cadre de la
+            Santé Mentale Étudiant traite des données à caractère personnel dans le cadre de la
             réponse aux demandes de contact et de l'envoi d'actualités aux personnes ayant renseigné
             leur adresse courriel.
           </p>
@@ -96,8 +96,7 @@ export default function PersonalData() {
           </ul>
           <p>
             Vous pouvez prendre attache avec le délégué à la protection des données à l&apos;adresse
-            suivante :{" "}
-            <Link href="mailto:dpd@education.gouv.fr">dpd@education.gouv.fr</Link>
+            suivante : <Link href="mailto:dpd@education.gouv.fr">dpd@education.gouv.fr</Link>
           </p>
           <p>
             Ou écrire par voie postale à :
@@ -144,17 +143,13 @@ export default function PersonalData() {
           <ul>
             <li>
               Scalingo - France - hébergement -{" "}
-              <ExternalLink
-                href="https://scalingo.com/fr/contrat-gestion-traitements-donnees-personnelles"
-              >
+              <ExternalLink href="https://scalingo.com/fr/contrat-gestion-traitements-donnees-personnelles">
                 Garanties
               </ExternalLink>
             </li>
             <li>
               Brevo - France - infolettre -{" "}
-              <ExternalLink
-                href="https://www.brevo.com/fr/legal/termsofuse/#accord-sur-le-traitement-des-donnees-a-caractere-personnel-dpa"
-              >
+              <ExternalLink href="https://www.brevo.com/fr/legal/termsofuse/#accord-sur-le-traitement-des-donnees-a-caractere-personnel-dpa">
                 Garanties
               </ExternalLink>
             </li>
@@ -177,9 +172,7 @@ export default function PersonalData() {
               </ExternalLink>
             </li>
             <li>
-              <ExternalLink
-                href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/comment-se-proteger/maitriser-votre-navigateur"
-              >
+              <ExternalLink href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/comment-se-proteger/maitriser-votre-navigateur">
                 Cookies : les outils pour les maîtriser
               </ExternalLink>
             </li>

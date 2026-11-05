@@ -1,5 +1,5 @@
 import { FeelingLink } from ".";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End_Suicide } from "./helper";
 import { Feeling } from "./types";
 
 export const FEELING_SUICIDE: Feeling = {
@@ -25,15 +25,19 @@ export const FEELING_SUICIDE: Feeling = {
           elles sont souvent le signe d'une souffrance devenue trop difficile à porter seul.
         </p>
         <p>Tu n'as pas à traverser ça sans aide.</p>
+        <p>
+          Si tu as besoin d’en parler maintenant, appelle le 3114, le numéro national de prévention
+          du suicide : gratuit, confidentiel et joignable 24h/24, 7j/7.
+        </p>
       </>
     ),
   },
   videoKey: "suicidal-thoughts",
   recap: [
     "Les idées suicidaires sont plus fréquentes qu'on ne pourrait l'imaginer.",
-    "Avoir des idées suicidaires ne signifie pas forcément vouloir mourir.",
-    "Si tu as des idées suicidaires, ne reste pas seul avec ces pensées.",
-    "Si tu te sens en danger immédiat, appelle les urgences au 15 ou au 112.",
+    "Elles sont souvent le signe d’une souffrance devenue trop lourde à porter seul.",
+    "Ces idées sont à prendre au sérieux : tu n’as pas à rester seul avec elles",
+    "Pour en parler : le 3114, 24 h/24. En cas de danger immédiat : le 15.",
   ],
   faq: {
     title: "Comprendre les idées suicidaires",
@@ -149,6 +153,7 @@ export const FEELING_SUICIDE: Feeling = {
               <li>Je me sens seul face à mes pensées.</li>
               <li>J’ai envie de dire au revoir.</li>
             </ul>
+            <Disclaimer_End_Suicide />
           </>
         ),
       },

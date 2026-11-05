@@ -12,7 +12,7 @@ const RECAP_PICTOS = ["anxiety", "feeling-management", "solitude", "fatigue"];
 export default function FeelingRecap({ feeling }: Props) {
   return (
     <FullBleedSection innerContainerClassName={styles.container} bgColor="grey">
-      <h2>À retenir de cette vidéo</h2>
+      <h2>À retenir de cette page</h2>
       <Disclaimer>
         Cette page et cette vidéo donnent des repères et conseils généraux et ne remplacent pas un
         échange individuel avec un professionnel qui tiendra compte de ta situation spécifique.

@@ -1,7 +1,7 @@
 import ExternalLink from "@/components/link/ExternalLink";
 import { Feeling } from "./types";
 import Link from "next/link";
-import { Disclaimer } from "./helper";
+import { Disclaimer, Disclaimer_End_Eating } from "./helper";
 
 export const FEELING_EATING_DISORDER: Feeling = {
   slug: "eating-disorder",
@@ -33,10 +33,10 @@ export const FEELING_EATING_DISORDER: Feeling = {
   },
   videoKey: "eating-disorder",
   recap: [
-    "Le stress et les émotions peuvent modifier ton rapport à la nourriture.",
-    "Observer tes habitudes alimentaires peut t'aider à mieux les comprendre.",
-    "Manger davantage ou perdre l'appétit peut être une réaction à une période difficile.",
-    "Si l'alimentation devient une source de mal-être, parles-en à un professionnel.",
+    "L’appétit et nos habitudes alimentaires peuvent varier avec le temps, nos besoins, le contexte.",
+    "Manger davantage ou perdre l'appétit peut être le signal d’un problème de santé.",
+    "Ces difficultés ne sont pas un manque de volonté : elles peuvent se soigner.",
+    "En parler à un professionnel aide à comprendre et à trouver des solutions.",
   ],
   faq: {
     title: "Comprendre son rapport à la nourriture",
@@ -206,6 +206,7 @@ export const FEELING_EATING_DISORDER: Feeling = {
               Ces signes ne permettent pas de poser seul un diagnostic. Ils peuvent cependant
               indiquer que ta relation à la nourriture mérite d’être prise au sérieux.
             </p>
+            <Disclaimer_End_Eating />
           </>
         ),
       },

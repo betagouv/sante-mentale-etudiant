@@ -29,8 +29,10 @@ export default function FeelingTips({ feeling }: Props) {
       <div className={styles.innerContainer}>
         <h2>Quelques idées que tu peux tester</h2>
         <Disclaimer>
-          Ces idées peuvent t’aider à te sentir un peu mieux. Elles ne remplacent pas un accompagnement : quand les difficultés durent ou te
-          font souffrir, c’est le moment d’en parler à un professionnel.
+          Ces idées peuvent t’aider à te sentir un peu mieux. Elles ne conviennent pas forcément à
+          tout le monde, et tu n'as pas à toutes les essayer. Elles ne remplacent pas un
+          accompagnement : quand les difficultés durent, sont intenses ou gênent ton quotidien,
+          c'est le moment d'en parler à un professionnel.
         </Disclaimer>
         <div className={styles.cardsList}>
           {feeling.tips.map((tip, index) => (

@@ -43,19 +43,17 @@ export default function WhyThisSite() {
           <div className={styles.card}>
             <b>Résultat : une grande partie des étudiants concernés ne parle pas de sa détresse.</b>
             <br />
-            Pourtant, des solutions existent : les <b>SSE</b> (services de santé étudiante), le{" "}
-            <b>3040 </b>
-            (ligne d’écoute de jour pour les étudiants en situation de mal être), le <b>
-              3114
-            </b>{" "}
-            (numéro national de prévention du suicide), les <b>BAPU</b> (bureaux d’aide
-            psychologique universitaire), <b>Santé Psy Étudiant</b> (dispositif d’accompagnement
-            psychologique avec des psychologues libéraux), l’association <b>Nightline</b> (ligne
-            d’écoute de nuit par des étudiants)...
+            Pourtant, des dispositifs - gratuits et confidentiels - existent : les <b>SSE</b>{" "}
+            (services de santé étudiante), le <b>3040</b> (ligne d’écoute de jour pour les étudiants
+            en situation de mal-être), le <b>3114</b> (numéro national de prévention du suicide),
+            les <b>BAPU</b> (bureaux d’aide psychologique universitaire), <b>Santé Psy Étudiant</b>{" "}
+            (accompagnement psychologique avec des psychologues libéraux), l’association{" "}
+            <b>Nightline</b> (ligne d’écoute de nuit tenue par des étudiants)...
           </div>
           <div className={styles.card}>
-            Les dispositifs sont là, mais ils sont peu lisibles. Les étudiants nous ont répondu (3)
-            : ce qu’ils veulent, c’est passer de l’information à l’action.
+            Mais les étudiants interrogés nous l’ont dit (3) : ils ont du mal à comprendre ces
+            dispositifs et à savoir vers lequel se tourner selon leur situation. Ce qu’ils
+            attendent, c’est de pouvoir passer de l’information à l’action.
             <br />
             <br />
             C'est ce constat qui a guidé la construction de Santé Mentale Étudiant.
