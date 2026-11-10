@@ -19,10 +19,15 @@ export const useMatomo = () => {
     push(["trackEvent", "SSE", "open-modal", sse.displayName]);
   };
 
+  const trackOrienteurHelp = () => {
+    push(["trackEvent", "Orienteur", "exit", "need-help"]);
+  };
+
   return {
     trackArticlesSearchFree,
     trackArticlesSearchTag,
     trackBapuOpenModal,
     trackSseOpenModal,
+    trackOrienteurHelp,
   };
 };
