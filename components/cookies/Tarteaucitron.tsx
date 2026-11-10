@@ -59,8 +59,8 @@ function initTarteaucitron() {
     readmoreLink: "",
     mandatory: true,
     mandatoryCta: false,
-    DenyAllCta: true, // bouton "Tout refuser"
-    AcceptAllCta: true, // bouton "Tout accepter"
+    DenyAllCta: true,
+    AcceptAllCta: true,
     cookieDomain: process.env.NEXT_PUBLIC_COOKIE_DOMAIN ?? "",
   });
 
@@ -93,7 +93,7 @@ function initTarteaucitron() {
   };
 
   t.services.metapixel = {
-    key: "facebook",
+    key: "metapixel",
     type: "ads",
     name: "Meta",
     needConsent: true,
