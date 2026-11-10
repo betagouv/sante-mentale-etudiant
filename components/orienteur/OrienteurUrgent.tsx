@@ -3,8 +3,16 @@ import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import { Title } from "../typography/Title";
 import { TILE_3114 } from "../common/Tiles";
 import Hospital from "@codegouvfr/react-dsfr/picto/Hospital";
+import { useEffect } from "react";
+import { useMatomo } from "@/hooks/useMatomo";
 
 export default function OrienteurUrgent() {
+  const { trackOrienteurHelp } = useMatomo();
+
+  useEffect(() => {
+    trackOrienteurHelp();
+  }, [trackOrienteurHelp]);
+
   return (
     <>
       <Title>Parlons-en tout de suite.</Title>
