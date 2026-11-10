@@ -26,6 +26,13 @@ declare global {
   }
 }
 
+function loadScript(src: string) {
+  const s = document.createElement("script");
+  s.src = src;
+  s.async = true;
+  document.head.appendChild(s);
+}
+
 function initTarteaucitron() {
   const t = window.tarteaucitron;
   if (!t) return;
@@ -52,27 +59,54 @@ function initTarteaucitron() {
     readmoreLink: "",
     mandatory: true,
     mandatoryCta: false,
-    DenyAllCta: true, // bouton "Tout refuser"
-    AcceptAllCta: true, // bouton "Tout accepter"
+    DenyAllCta: true,
+    AcceptAllCta: true,
     cookieDomain: process.env.NEXT_PUBLIC_COOKIE_DOMAIN ?? "",
   });
 
-  // Dentsu
-  t.services.dentsu = {
-    key: "dentsu",
+  t.services.adform = {
+    key: "adform",
     type: "ads",
-    name: "Dentsu (mesure de campagne)",
+    name: "Adform",
     needConsent: true,
     cookies: [],
-    uri: "",
+    uri: "https://site.adform.com/privacy-center/adform-cookies",
     js: function () {
       "use strict";
-      // Mettre script fourni par Dentsu ici
+      loadScript("/tags/adform.js");
+    },
+    fallback: function () { },
+  };
+
+  t.services.snapchat = {
+    key: "snapchat",
+    type: "ads",
+    name: "Snap",
+    needConsent: true,
+    cookies: ["_scid"],
+    uri: "https://www.snap.com/cookie-policy?lang=fr-FR",
+    js: function () {
+      "use strict";
+      loadScript("/tags/snapchat.js");
+    },
+    fallback: function () { },
+  };
+
+  t.services.metapixel = {
+    key: "metapixel",
+    type: "ads",
+    name: "Meta",
+    needConsent: true,
+    cookies: ["_fbp"],
+    uri: "https://www.facebook.com/privacy/policies/cookies/",
+    js: function () {
+      "use strict";
+      loadScript("/tags/metapixel.js");
     },
     fallback: function () { },
   };
   t.job = t.job ?? [];
-  t.job.push("dentsu");
+  t.job.push("adform", "snapchat", "metapixel");
 }
 
 export default function Tarteaucitron() {
