@@ -13,20 +13,19 @@ const nonConformities = [
   "[2.2] Le titre d'un cadre au moins (iframe) n'est pas pertinent.",
   "[4.2] La transcription textuelle ou l'audiodescription d'un contenu multimédia au moins n'est pas pertinente.",
   "[6.1] Un lien au moins a un intitulé qui n'est pas pertinent.",
-  "[7.1] Une fonctionnalité JavaScript au moins n'est pas compatible avec les technologies d'assistance ou fait un usage inapproprié de propriétés ARIA.",
+  "[7.1] Une fonctionnalité JavaScript au moins n'est pas compatible avec les technologies d’assistance ou fait un usage inapproprié de propriétés ARIA.",
   "[7.3] Une fonctionnalité JavaScript au moins n'est pas contrôlable par le clavier ou tout autre dispositif de pointage.",
-  "[7.5] Un message de statut au moins n'est pas restitué par les technologies d'assistance.",
+  "[7.5] Un message de statut au moins n'est pas restitué par les technologies d’assistance.",
   "[8.9] Une balise au moins est utilisée à des fins de présentation (par exemple des paragraphes vides et/ou des textes non structurés dans des balises de paragraphes).",
   "[9.1] La hiérarchie des titres d'une page au moins n'est pas pertinente.",
   "[9.2] La structure du document d'une page au moins n'est pas cohérente.",
   "[9.3] Une liste au moins n'est pas correctement structurée.",
   "[9.4] Une citation au moins n'est pas identifiée.",
-  "[10.2] Une information insérée en CSS au moins n'est pas restituée par les technologies d'assistance.",
+  "[10.2] Une information insérée en CSS au moins n'est pas restituée par les technologies d’assistance.",
   "[10.3] Un contenu au moins ne se présente pas dans un ordre logique dans le code source.",
-  "[10.11] Un contenu au moins ne peut être présenté sans défilement horizontal et/ou présente des pertes d'informations lorsque le texte est agrandi à 400%.",
-  "[10.12] Un contenu au moins présente des pertes d'information et de lisibilité lorsque des propriétés d'espacement sont appliquées.",
+  "[10.11] Un contenu au moins ne peut être présenté sans défilement horizontal et/ou présente des pertes d’informations lorsque le texte est agrandi à 400%.",
+  "[10.12] Un contenu au moins présente des pertes d’information et de lisibilité lorsque des propriétés d'espacement sont appliquées.",
   "[11.11] Un message d'erreur au moins ne présente pas de suggestions facilitant la correction des erreurs de saisie, ou présente des suggestions non pertinentes.",
-  "[13.3] Un document bureautique au moins (doc, odt ou PDF) n'est pas accessible et ne possède pas d'alternative.",
   "[13.10] Une fonctionnalité au moins, utilisable au moyen d'un geste complexe, n'a pas d'alternative au moyen d'un geste simple.",
 ];
 
@@ -70,12 +69,6 @@ export default async function AccessibilityDeclaration() {
           au fur et à mesure afin d&apos;améliorer progressivement l&apos;accessibilité du site.
         </p>
         <p>
-          Les documents PDF et les autres contenus accessibles via des liens vers des sites tiers
-          (notamment les brochures hébergées sur{" "}
-          <ExternalLink href="http://santepsyjeunes.fr/">santepsyjeunes.fr</ExternalLink>) sont des
-          contenus tiers, non produits ni financés par Santé Mentale Étudiant.
-        </p>
-        <p>
           La présente déclaration d&apos;accessibilité s&apos;applique au site « Santé Mentale
           Étudiant ».
         </p>
@@ -97,20 +90,24 @@ export default async function AccessibilityDeclaration() {
           à 73,13% au RGAA version 4.1.
         </p>
 
-        <h2>Contenus inaccessibles</h2>
+        <h3>Contenus inaccessibles</h3>
         <p>Les contenus listés ci-dessous ne sont pas accessibles pour les raisons suivantes.</p>
-        <h3>Non-conformités</h3>
+        <h4>Non-conformités</h4>
         <ul>
           {nonConformities.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
 
-        <h2>Dérogations pour charge disproportionnée</h2>
+        <h4>Dérogations pour charge disproportionnée</h4>
         <p>Aucune dérogation identifiée.</p>
 
-        <h2>Contenus non soumis à l&apos;obligation d&apos;accessibilité</h2>
-        <p>Aucun contenu exempté identifié.</p>
+        <h4>Contenus non soumis à l&apos;obligation d&apos;accessibilité</h4>
+        <p>Exemples :</p>
+        <ul>
+          <li>Santé Psy Jeunes</li>
+          <li>Haute Autorité de Santé</li>
+        </ul>
 
         <h2>Établissement de cette déclaration d&apos;accessibilité</h2>
         <p>Cette déclaration a été établie le 23 octobre 2026.</p>
@@ -166,7 +163,8 @@ export default async function AccessibilityDeclaration() {
           que le contenu fasse l&apos;objet d&apos;une dérogation ou non.
         </p>
         <p>
-          Le Ministère invite les personnes qui rencontreraient des difficultés à le contacter [
+          Le Ministère de l'Enseignement Supérieur, de la Recherche et de l'Espace invite les personnes
+          qui rencontreraient des difficultés à le contacter [
           <a href="mailto:santementale.etudiant@enseignementsup.gouv.fr">
             santementale.etudiant@enseignementsup.gouv.fr
           </a>
@@ -191,15 +189,6 @@ export default async function AccessibilityDeclaration() {
               formulaire de contact
             </ExternalLink>{" "}
             ;
-          </li>
-          <li>
-            la{" "}
-            <ExternalLink
-              href="http://www.defenseurdesdroits.fr/office/"
-            >
-              liste du ou des délégués de votre région
-            </ExternalLink>{" "}
-            avec leurs informations de contact direct ;
           </li>
           <li>un numéro de téléphone : 09 69 39 00 00 ;</li>
           <li>
