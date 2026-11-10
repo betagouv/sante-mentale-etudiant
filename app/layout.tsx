@@ -10,6 +10,7 @@ import "@/styles/colors.scss";
 import { VideoTestimonialModalProvider } from "@/components/video/VideoTestimonialModalProvider";
 import { MatomoAnalytics } from "@/analytics/Matomo";
 import { SkipLinks } from "@codegouvfr/react-dsfr/SkipLinks";
+import Tarteaucitron from "@/components/cookies/Tarteaucitron";
 
 export const metadata: Metadata = {
   title: {
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Suspense fallback={null}>
           <MatomoAnalytics />
         </Suspense>
+        <Tarteaucitron />
       </body>
     </html>
   );

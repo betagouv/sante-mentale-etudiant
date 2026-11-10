@@ -16,6 +16,12 @@ export function Footer() {
           linkProps: { href: "/donnees-personnelles" },
         },
         {
+          text: "Gestion des cookies",
+          buttonProps: {
+            onClick: () => window.tarteaucitron?.userInterface.openPanel(),
+          },
+        },
+        {
           text: "Qui sommes-nous",
           linkProps: { href: "/qui-sommes-nous" },
         },

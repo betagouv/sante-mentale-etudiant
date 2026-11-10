@@ -40,6 +40,9 @@ importers:
       remark-html:
         specifier: ^16.0.1
         version: 16.0.1
+      tarteaucitronjs:
+        specifier: ^1.37.0
+        version: 1.37.0
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -1994,6 +1997,9 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  tarteaucitronjs@1.37.0:
+    resolution: {integrity: sha512-RINdH7PLmSORavrQXx5LTmpKgYs+ZEH48/uXyskehSKThTZE8srvhG8UqNxeYgbsuBqbpnMVAkvfU+ohaW7C2A==}
 
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
@@ -4354,6 +4360,8 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tarteaucitronjs@1.37.0: {}
 
   tinyglobby@0.2.17:
     dependencies:
