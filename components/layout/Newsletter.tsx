@@ -81,7 +81,7 @@ export function Newsletter() {
           },
           {
             linkProps: {
-              href: "https://www.linkedin.com/company/sant%C3%A9-psy-%C3%A9tudiant/",
+              href: "https://www.linkedin.com/company/sante-mentale-etudiant/",
             },
             type: "linkedin",
           },
