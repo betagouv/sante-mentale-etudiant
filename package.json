@@ -11,7 +11,10 @@
     "build": "react-dsfr update-icons && next build",
     "start": "next start",
     "lint": "eslint",
-    "postinstall": "node scripts/copy-tarteaucitron.mjs"
+    "copy:tarteaucitron": "node scripts/copy-tarteaucitron.mjs",
+    "postinstall": "pnpm run copy:tarteaucitron",
+    "predev": "pnpm run copy:tarteaucitron",
+    "prebuild": "pnpm run copy:tarteaucitron"
   },
   "dependencies": {
     "@codegouvfr/react-dsfr": "^1.32.2",
