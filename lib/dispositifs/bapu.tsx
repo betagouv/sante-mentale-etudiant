@@ -34,7 +34,9 @@ export const DISPOSITIF_BAPU: Dispositif = {
         title: "J'ai besoin d'un accompagnement dans la durée",
         desc: (
           <>
-            Certaines difficultés nécessitent plus que quelques rendez-vous. Le suivi en BAPU n'est pas limité à un nombre prédéfini de séances : sa durée est déterminée en fonction de ta situation et de tes besoins, évalués par le BAPU.
+            Certaines difficultés nécessitent plus que quelques rendez-vous. Le suivi en BAPU n'est
+            pas limité à un nombre prédéfini de séances : sa durée est déterminée en fonction de ta
+            situation et de tes besoins, évalués par le BAPU.
           </>
         ),
       },
