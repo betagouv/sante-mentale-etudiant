@@ -19,10 +19,12 @@ export default function PersonalData() {
           <h2>Qui sommes-nous ?</h2>
           <p>
             Santé Mentale Étudiant est un service numérique porté par le ministère chargé de
-            l'Enseignement supérieur et de la Recherche et de l’Espace (MESRE). Il vise à informer
+            l'Enseignement supérieur, de la Recherche et de l’Espace (MESRE). Il vise à informer
             les étudiants sur les enjeux de santé mentale et à les aider à s'orienter vers les
             dispositifs d’écoute ou d'accompagnement psychologique existants.
           </p>
+          <p>Le responsable de traitement est la direction générale de l'enseignement supérieur (DGESup),
+            représentée par Olivier Ginez, en sa qualité de Directeur Général.</p>
         </section>
 
         <section>
@@ -126,7 +128,7 @@ export default function PersonalData() {
           <p>
             Le responsable de traitement s'engage à ce que les données à caractère personnel soient
             traitées par les seules personnes autorisées, à savoir les membres de l'équipe Santé
-            Mentale Étudiant et les agents de la DGESIP pour les messages reçus, et les membres de
+            Mentale Étudiant et les agents de la DGESup pour les messages reçus, et les membres de
             l'équipe Santé Mentale Étudiant pour les adresses courriel des personnes inscrites aux
             actualités.
           </p>
@@ -158,25 +160,24 @@ export default function PersonalData() {
         <section>
           <h2>Témoins de connexion et traceurs</h2>
           <p>
-            Nous utilisons l’outil de mesure d’audience Matomo, configuré en mode “exempté” et ne
-            nécessitant pas le recueil de votre consentement conformément aux recommandations de la
-            CNIL.
+            Un traceur (ou cookie) est un fichier déposé sur votre terminal lors de la consultation du Site. Conformément
+            à l'article 82 de la loi n° 78-17 du 6 janvier 1978, certains traceurs sont dispensés de consentement ;
+            les autres ne sont déposés qu'avec votre accord préalable.
           </p>
+          <h3>Traceurs exemptés de consentement</h3>
+          <p>Nous utilisons l’outil de mesure d’audience Matomo, configuré en mode “exempté” et ne nécessitant
+            pas le recueil de votre consentement conformément aux recommandations de la CNIL. Les données ainsi
+            collectées servent exclusivement à produire des statistiques anonymes de fréquentation et ne sont pas
+            croisées avec d'autres traitements.</p>
+          <h3>
+            Traceurs soumis à votre consentement
+          </h3>
           <p>
-            Pour en savoir plus, vous pouvez consulter les fiches suivantes proposées par la CNIL :
+            Si vous acceptez le dépôt de traceur de connexion via le bandeau prévu à cet effet, ceux-ci sont
+            déposés afin de mesurer et d'optimiser les campagnes d'information de Santé Mentale Étudiant diffusées
+            sur les réseaux sociaux et sites partenaires : nombre de personnes ayant vu une publicité, visites du Site
+            qui en résultent, limitation de la répétition des publicités.
           </p>
-          <ul>
-            <li>
-              <ExternalLink href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/que-dit-la-loi">
-                Cookies et traceurs : que dit la loi ?
-              </ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/comment-se-proteger/maitriser-votre-navigateur">
-                Cookies : les outils pour les maîtriser
-              </ExternalLink>
-            </li>
-          </ul>
         </section>
       </section>
     </FullBleedSection>
