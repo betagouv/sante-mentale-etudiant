@@ -87,7 +87,7 @@ export default async function AccessibilityDeclaration() {
         <h2>Résultats des tests</h2>
         <p>
           L&apos;audit de conformité réalisé par la société Access42 révèle que le site est conforme
-          à 73,13% au RGAA version 4.1.
+          à 74,63,% au RGAA version 4.1.
         </p>
 
         <h3>Contenus inaccessibles</h3>
