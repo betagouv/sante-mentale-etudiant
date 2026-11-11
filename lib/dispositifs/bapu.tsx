@@ -111,7 +111,7 @@ export const DISPOSITIF_BAPU: Dispositif = {
         </p>
         <p>
           Le suivi en BAPU n'est pas limité à un nombre prédéfini de séances : sa durée est
-          déterminée en fonction de ta situation et de tes besoins. Les consultations sont prises en
+          déterminée en fonction de ta situation et de tes besoins, évalués par le BAPU. Les consultations sont prises en
           charge à 100 %, sans avance de frais, mais tu auras besoin de ta carte vitale.
         </p>
       </>
