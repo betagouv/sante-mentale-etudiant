@@ -1,5 +1,6 @@
 import ExternalLink from "@/components/link/ExternalLink";
 import FullBleedSection from "@/components/wrapper/FullBleedSection";
+import { Table } from "@codegouvfr/react-dsfr/Table";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -178,6 +179,66 @@ export default function PersonalData() {
             sur les réseaux sociaux et sites partenaires : nombre de personnes ayant vu une publicité, visites du Site
             qui en résultent, limitation de la répétition des publicités.
           </p>
+          <Table
+            caption="Traceurs soumis à votre consentement"
+            noCaption
+            headers={[
+              "Outil",
+              "Éditeur / Société responsable",
+              "Pays",
+              "Finalité",
+              "Cookies déposés",
+              "Durée de conservation",
+            ]}
+            data={[
+              [
+                "Adform",
+                "Adform A/S",
+                "Danemark",
+                "Suivi publicitaire, mesure des impressions et conversions, attribution des clics, limitation de la répétition des publicités et ciblage publicitaire.",
+                "uid, C, TPC, GCM, CM, CM14, CT*, EBFC*",
+                "60 jours",
+              ],
+              [
+                "Meta (Facebook / Instagram)",
+                "Meta Platforms Ireland Limited",
+                "Irlande",
+                "Identification du navigateur, mesure des conversions publicitaires, attribution des campagnes et ciblage publicitaire.",
+                "_fbp, _fbc",
+                "90 jours (3 mois)",
+              ],
+              [
+                "Snapchat",
+                "Snap Group Limited",
+                "Royaume-Uni",
+                "Identification des visiteurs, suivi des interactions avec les publicités, attribution et mesure des conversions publicitaires.",
+                "_scid, _sctr, sc_at",
+                "1 an",
+              ],
+            ]}
+          />
+          <h3>Gérer vos choix</h3>
+          <p>
+            Lors de votre première visite, un bandeau vous permet d'accepter ou de refuser ces traceurs.
+            Vous pouvez modifier vos choix à tout moment depuis le lien « Gestion des cookies » présent en bas de
+            chaque page du Site.
+            Votre choix est conservé pendant une durée de 6 mois.
+            Les traceurs ne sont jamais conservés au delà de 13 mois.
+
+            Pour en savoir plus, vous pouvez consulter les fiches suivantes proposées par la CNIL :
+          </p>
+          <ul>
+            <li>
+              <ExternalLink href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/que-dit-la-loi">
+                Cookies et traceurs : que dit la loi ?
+              </ExternalLink>
+            </li>
+            <li>
+              <ExternalLink href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/comment-se-proteger/maitriser-votre-navigateur">
+                Cookies : les outils pour les maîtriser
+              </ExternalLink>
+            </li>
+          </ul>
         </section>
       </section>
     </FullBleedSection>
