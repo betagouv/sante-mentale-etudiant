@@ -1,6 +1,5 @@
 "use client";
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
-import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import type { MainNavigationProps } from "@codegouvfr/react-dsfr/MainNavigation/MainNavigation";
 import { usePathname } from "next/navigation";
 import { needHelpModal } from "@/components/modals";
