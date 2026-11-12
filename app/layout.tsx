@@ -13,7 +13,6 @@ import { SkipLinks } from "@codegouvfr/react-dsfr/SkipLinks";
 import Tarteaucitron from "@/components/cookies/Tarteaucitron";
 
 const smeUrl = process.env.NEXT_PUBLIC_SME_URL ?? "http://localhost:3000";
-const isProduction = process.env.NEXT_PUBLIC_ENV === "production";
 
 export const metadata: Metadata = {
   metadataBase: new URL(smeUrl),
@@ -28,8 +27,6 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     type: "website",
   },
-  // with that, staging wont be referenced on browsers
-  robots: isProduction ? undefined : { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
