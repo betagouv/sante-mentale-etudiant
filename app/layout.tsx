@@ -12,7 +12,10 @@ import { MatomoAnalytics } from "@/analytics/Matomo";
 import { SkipLinks } from "@codegouvfr/react-dsfr/SkipLinks";
 import Tarteaucitron from "@/components/cookies/Tarteaucitron";
 
+const smeUrl = process.env.NEXT_PUBLIC_SME_URL ?? "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(smeUrl),
   title: {
     default: "Santé Mentale Étudiant | Soutien, Ressources et Orientation",
     template: "%s | Santé Mentale Étudiant",
