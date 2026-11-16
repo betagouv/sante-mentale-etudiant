@@ -26,6 +26,32 @@ declare global {
   }
 }
 
+// keys must be named with sme before so they never collide with tarteaucitron's 
+// built-in catalog
+const AD_SERVICES = [
+  {
+    key: "smeadform",
+    name: "Adform",
+    script: "/tags/adform.js",
+    cookies: [],
+    uri: "https://site.adform.com/privacy-center/adform-cookies",
+  },
+  {
+    key: "smesnapchat",
+    name: "Snap",
+    script: "/tags/snapchat.js",
+    cookies: ["_scid"],
+    uri: "https://www.snap.com/cookie-policy?lang=fr-FR",
+  },
+  {
+    key: "smemeta",
+    name: "Meta",
+    script: "/tags/meta.js",
+    cookies: ["_fbp"],
+    uri: "https://www.facebook.com/privacy/policies/cookies/",
+  },
+];
+
 function loadScript(src: string) {
   const s = document.createElement("script");
   s.src = src;
@@ -56,7 +82,7 @@ function initTarteaucitron() {
     moreInfoLink: true,
     useExternalCss: false,
     useExternalJs: false,
-    readmoreLink: "",
+    readmoreLink: "/donnees-personnelles",
     mandatory: true,
     mandatoryCta: false,
     DenyAllCta: true,
@@ -64,49 +90,21 @@ function initTarteaucitron() {
     cookieDomain: process.env.NEXT_PUBLIC_COOKIE_DOMAIN ?? "",
   });
 
-  t.services.adform = {
-    key: "adform",
-    type: "ads",
-    name: "Adform",
-    needConsent: true,
-    cookies: [],
-    uri: "https://site.adform.com/privacy-center/adform-cookies",
-    js: function () {
-      "use strict";
-      loadScript("/tags/adform.js");
-    },
-    fallback: function () { },
-  };
+  for (const { key, name, script, cookies, uri } of AD_SERVICES) {
+    t.services[key] = {
+      key,
+      type: "ads",
+      name,
+      needConsent: true,
+      cookies,
+      uri,
+      js: () => loadScript(script),
+      fallback: () => { },
+    };
+  }
 
-  t.services.snapchat = {
-    key: "snapchat",
-    type: "ads",
-    name: "Snap",
-    needConsent: true,
-    cookies: ["_scid"],
-    uri: "https://www.snap.com/cookie-policy?lang=fr-FR",
-    js: function () {
-      "use strict";
-      loadScript("/tags/snapchat.js");
-    },
-    fallback: function () { },
-  };
-
-  t.services.metapixel = {
-    key: "metapixel",
-    type: "ads",
-    name: "Meta",
-    needConsent: true,
-    cookies: ["_fbp"],
-    uri: "https://www.facebook.com/privacy/policies/cookies/",
-    js: function () {
-      "use strict";
-      loadScript("/tags/metapixel.js");
-    },
-    fallback: function () { },
-  };
   t.job = t.job ?? [];
-  t.job.push("adform", "snapchat", "metapixel");
+  t.job.push(...AD_SERVICES.map(({ key }) => key));
 }
 
 export default function Tarteaucitron() {
