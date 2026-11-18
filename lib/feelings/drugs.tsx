@@ -218,7 +218,7 @@ export const FEELING_DRUGS: Feeling = {
           desc: (
             <>
               dans une situation où tu consommes habituellement tu peux te demander : "Qu'est-ce que
-              je pourrais essayer d'autre, juste cette fois ?". Il ne s'agit pas de tout changer
+              je pourrais essayer d'autre, sans consommer de substances, juste cette fois ?". Il ne s'agit pas de tout changer
               d'un coup, mais d'élargir progressivement tes ressources.
             </>
           ),

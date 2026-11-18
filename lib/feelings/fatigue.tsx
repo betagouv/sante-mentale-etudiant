@@ -199,14 +199,9 @@ export const FEELING_FATIGUE: Feeling = {
               <p>Estimer quel dormeur tu es, quels sont tes besoins.</p>
               <p>
                 Le recueil, via un agenda du sommeil, permet de savoir comment on dort, d'avoir un
-                regard objectif sur son propre sommeil. C'est une pratique dont l'usage en
-                évaluation comportementale du sommeil est ancien et bien établi (Bootzin &
-                Engle-Friedman, 1981). Attention à ne pas vouloir trop bien faire et le remplir la
+                regard objectif sur son propre sommeil. Attention à ne pas vouloir trop bien faire et le remplir la
                 nuit, l'idée est de le remplir le matin au réveil, même si cela est approximatif.
                 Cela peut aussi permettre de préparer une consultation à laquelle on amène l'agenda.{" "}
-                <ExternalLink href="https://www.reseau-morphee.fr/wp-content/uploads/2009/01/agenda_2p.pdf">
-                  Agenda du sommeil (Réseau Morphée), PDF, 126 Ko
-                </ExternalLink>
               </p>
               <p>
                 La qualité du sommeil ne tient pas nécessairement à la quantité : ne pas chercher à
