@@ -21,7 +21,10 @@ export const metadata: Metadata = {
     template: "%s | Santé Mentale Étudiant",
   },
   description:
-    "Soutien, ressources fiables et orientation adaptée : prenez soin de votre santé mentale d'étudiant",
+    "Stress, anxiété, fatigue, solitude... " +
+    "Le site Santé Mentale Étudiant vous informe, vous oriente et vous accompagne " +
+    "pour identifier rapidement les dispositifs d'aide gratuits ou pris en charge, " +
+    "que vous soyez vous-même en difficulté ou que vous cherchiez à soutenir un proche.",
   openGraph: {
     siteName: "Santé Mentale Étudiant",
     locale: "fr_FR",
