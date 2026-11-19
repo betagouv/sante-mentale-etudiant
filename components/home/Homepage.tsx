@@ -11,7 +11,7 @@ const jsonLd = {
   "@type": "WebSite",
   name: "Santé Mentale Étudiant",
   alternateName: ["Santé Mentale Etudiant"],
-  url: process.env.NEXT_PUBLIC_SME_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SME_URL,
 };
 
 export default function Homepage() {
